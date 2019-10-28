@@ -1,0 +1,1410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A91B625-85D8-42E9-A503-F062CE8EBB2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>NPRINT</RootNamespace>
+    <AssemblyName>NPRINT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DXBASE">
+      <HintPath>..\..\DXBASE\bin\DXBASE.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=3.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <HintPath>..\..\DXBASE\bin\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanSca.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BanSca.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BilCee.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilCee.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BilClFo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilClFo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BilGis.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilGis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BilProg.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilProg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BilSem.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilSem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BilSppp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilSppp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BilSpppCDC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilSpppCDC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClFoSca.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClFoSca.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CliRic.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CliRic.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConfSppp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfSppp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RegIvaPdf2019.vb" />
+    <Compile Include="RegIvaAghi2019.vb" />
+    <Compile Include="DsPiaLDP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPiaLDP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DxStPiaLDP.Designer.vb">
+      <DependentUpon>DxStPiaLDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStPiaLDP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DsSkLDP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsSkLDP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsSkLDP.vb">
+      <DependentUpon>DsSkLDP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DxSpartiLDP.Designer.vb">
+      <DependentUpon>DxSpartiLDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSpartiLDP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxBilCee.Designer.vb">
+      <DependentUpon>DxBilCee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBilCee.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxNoClass.Designer.vb">
+      <DependentUpon>DxNoClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxNoClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StEstrattoFR.vb">
+      <DependentUpon>StEstrattoFR.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DsL8.vb">
+      <DependentUpon>DsL8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsLetC.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsLetC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DxRegLetInt.Designer.vb">
+      <DependentUpon>DxRegLetInt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxRegLetInt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStaEstratto.Designer.vb">
+      <DependentUpon>DxStaEstratto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStaEstratto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LibroCespPDF.vb" />
+    <Compile Include="DsAcq.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAcq.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsArtP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsArtP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsBil.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsBil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsBil.vb">
+      <DependentUpon>DsBil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsBilCdc.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsBilCdc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsBilCdc.vb">
+      <DependentUpon>DsBilCdc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsBus.vb">
+      <DependentUpon>DsBus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsBus1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsBus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCee.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCee.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCert.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCert.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCert.vb">
+      <DependentUpon>DsCert.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCespM.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCespM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCoIva.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCoIva.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCoIva.vb">
+      <DependentUpon>DsCoIva.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsComCe.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsComCe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsComCe.vb">
+      <DependentUpon>DsComCe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsCorr.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCorr.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsGrMondo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsGrMondo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsH7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsH7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsH7Iva.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsH7Iva.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsH8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsH8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsL8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsL8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsPia.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsProQuo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsProQuo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsSkC.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsSkC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsVend.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsVend.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsVent.vb">
+      <DependentUpon>DsVent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsVent1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsVent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsVersam.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsVersam.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsVersam.vb">
+      <DependentUpon>DsVersam.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DxAccontoIva.Designer.vb">
+      <DependentUpon>DxAccontoIva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxAccontoIva.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxBilSppp.Designer.vb">
+      <DependentUpon>DxBilSppp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBilSppp.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxCertRit.Designer.vb">
+      <DependentUpon>DxCertRit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxCertRit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxCommesse.Designer.vb">
+      <DependentUpon>DxCommesse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxCommesse.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxControlliva.Designer.vb">
+      <DependentUpon>DxControlliva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxControlliva.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxDetAcquisti.Designer.vb">
+      <DependentUpon>DxDetAcquisti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxDetAcquisti.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxDetCorr.Designer.vb">
+      <DependentUpon>DxDetCorr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxDetCorr.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxDetVendite.Designer.vb">
+      <DependentUpon>DxDetVendite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxDetVendite.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxGrMondo.Designer.vb">
+      <DependentUpon>DxGrMondo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxGrMondo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxSpartiComm.Designer.vb">
+      <DependentUpon>DxSpartiComm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSpartiComm.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStaArt.Designer.vb">
+      <DependentUpon>DxStaArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStaArt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStaCespMin.Designer.vb">
+      <DependentUpon>DxStaCespMin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStaCespMin.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DXStaVersam.Designer.vb">
+      <DependentUpon>DXStaVersam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DXStaVersam.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStBilCdc.Designer.vb">
+      <DependentUpon>DxStBilCdc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStBilCdc.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStCee.Designer.vb">
+      <DependentUpon>DxStCee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStCee.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStH7Iv.Designer.vb">
+      <DependentUpon>DxStH7Iv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStH7Iv.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStH7PN.Designer.vb">
+      <DependentUpon>DxStH7PN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStH7PN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStL8.Designer.vb">
+      <DependentUpon>DxStL8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStL8.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStPia.Designer.vb">
+      <DependentUpon>DxStPia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStPia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DxStProQuo.Designer.vb">
+      <DependentUpon>DxStProQuo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStProQuo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EleCes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EleCes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EleRic.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EleRic.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GiornaleAghi.vb" />
+    <Compile Include="GiornalePdf.vb" />
+    <Compile Include="Intra1bis.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Intra1bis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Invent.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Invent.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InvNoCf.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvNoCf.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InvPart.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvPart.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IvaPeriodoAghi.vb" />
+    <Compile Include="IvaPeriodoPdf.vb" />
+    <Compile Include="IvaSim.vb" />
+    <Compile Include="LibroCesp.vb" />
+    <Compile Include="LpBuste.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LpBuste.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RegIvaAghi.vb" />
+    <Compile Include="RegIvaPdf.vb" />
+    <Compile Include="RSFatFisc.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSFatFisc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RSRicevuta.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSRicevuta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RSRubInd.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSRubInd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RSRubrica.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSRubrica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Scade.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Scade.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SinCespi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinCespi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SkeAlfaApe.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkeAlfaApe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SkeAlfaConti.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkeAlfaConti.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SkeAlfaPagina.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkeAlfaPagina.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SkeConti.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkeConti.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SkeEnasarco.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkeEnasarco.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SkePagina.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkePagina.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SkePAperte.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkePAperte.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SkePSaldo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkePSaldo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SkeScadenze.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkeScadenze.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StArcCesp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StArcCesp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StaTotIva.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaTotIva.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StCon770.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StCon770.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StConAge.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StConAge.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StConPar.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StConPar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StE14.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StE14.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StEstLib.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StEstLib.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StEstratto.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StEstratto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StIvaAnn.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StIvaAnn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StL8.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StL8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StPiCfPe.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StPiCfPe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StServizi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StServizi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StTabSCli.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StTabSCli.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StVentila.Designer.vb">
+      <DependentUpon>StVentila.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StVentila.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabRic.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TabRic.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XBilSez.Designer.vb">
+      <DependentUpon>XBilSez.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XBilSez.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XScaClAge.Designer.vb">
+      <DependentUpon>XScaClAge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XScaClAge.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BanSca.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BanSca.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilCee.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BilCee.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilClFo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BilClFo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilGis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BilGis.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilProg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BilProg.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilSem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BilSem.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilSppp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BilSppp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilSpppCDC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BilSpppCDC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClFoSca.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClFoSca.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CliRic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CliRic.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfSppp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConfSppp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStPiaLDP.resx">
+      <DependentUpon>DxStPiaLDP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSpartiLDP.resx">
+      <DependentUpon>DxSpartiLDP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBilCee.resx">
+      <DependentUpon>DxBilCee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxNoClass.resx">
+      <DependentUpon>DxNoClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StEstrattoFR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StEstrattoFR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxAccontoIva.resx">
+      <DependentUpon>DxAccontoIva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBilSppp.resx">
+      <DependentUpon>DxBilSppp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxCertRit.resx">
+      <DependentUpon>DxCertRit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxCommesse.resx">
+      <DependentUpon>DxCommesse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxControlliva.resx">
+      <DependentUpon>DxControlliva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxDetAcquisti.resx">
+      <DependentUpon>DxDetAcquisti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxDetCorr.resx">
+      <DependentUpon>DxDetCorr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxDetVendite.resx">
+      <DependentUpon>DxDetVendite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxGrMondo.resx">
+      <DependentUpon>DxGrMondo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxRegLetInt.resx">
+      <DependentUpon>DxRegLetInt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSpartiComm.resx">
+      <DependentUpon>DxSpartiComm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStaArt.resx">
+      <DependentUpon>DxStaArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStaCespMin.resx">
+      <DependentUpon>DxStaCespMin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStaEstratto.resx">
+      <DependentUpon>DxStaEstratto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXStaVersam.resx">
+      <DependentUpon>DXStaVersam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStBilCdc.resx">
+      <DependentUpon>DxStBilCdc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStCee.resx">
+      <DependentUpon>DxStCee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStH7Iv.resx">
+      <DependentUpon>DxStH7Iv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStH7PN.resx">
+      <DependentUpon>DxStH7PN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStL8.resx">
+      <DependentUpon>DxStL8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStPia.resx">
+      <DependentUpon>DxStPia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStProQuo.resx">
+      <DependentUpon>DxStProQuo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EleCes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EleCes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EleRic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EleRic.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intra1bis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Intra1bis.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Invent.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvNoCf.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvNoCf.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvPart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvPart.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LpBuste.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LpBuste.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSFatFisc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RSFatFisc.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSRicevuta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RSRicevuta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSRubInd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RSRubInd.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSRubrica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RSRubrica.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scade.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Scade.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinCespi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SinCespi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkeAlfaApe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SkeAlfaApe.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkeAlfaConti.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SkeAlfaConti.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkeAlfaPagina.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SkeAlfaPagina.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkeConti.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SkeConti.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkeEnasarco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SkeEnasarco.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkePagina.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SkePagina.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkePAperte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SkePAperte.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkePSaldo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SkePSaldo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkeScadenze.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SkeScadenze.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StArcCesp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StArcCesp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaTotIva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StaTotIva.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StCon770.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StCon770.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StConAge.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StConAge.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StConPar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StConPar.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StE14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StE14.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StEstLib.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StEstLib.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StEstratto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StEstratto.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StIvaAnn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StIvaAnn.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StL8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StL8.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StPiCfPe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StPiCfPe.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StServizi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StServizi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StTabSCli.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StTabSCli.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StVentila.resx">
+      <DependentUpon>StVentila.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabRic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TabRic.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XBilSez.resx">
+      <DependentUpon>XBilSez.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XScaClAge.resx">
+      <DependentUpon>XScaClAge.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DsAcq.xsc">
+      <DependentUpon>DsAcq.xsd</DependentUpon>
+    </None>
+    <None Include="DsAcq.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAcq.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsAcq.xss">
+      <DependentUpon>DsAcq.xsd</DependentUpon>
+    </None>
+    <None Include="DsArtP.xsc">
+      <DependentUpon>DsArtP.xsd</DependentUpon>
+    </None>
+    <None Include="DsArtP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsArtP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsArtP.xss">
+      <DependentUpon>DsArtP.xsd</DependentUpon>
+    </None>
+    <None Include="DsB8.xsc">
+      <DependentUpon>DsB8.xsd</DependentUpon>
+    </None>
+    <None Include="DsB8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsB8.xss">
+      <DependentUpon>DsB8.xsd</DependentUpon>
+    </None>
+    <None Include="DsB8.xsx">
+      <DependentUpon>DsB8.xsd</DependentUpon>
+    </None>
+    <None Include="DsBil.xsc">
+      <DependentUpon>DsBil.xsd</DependentUpon>
+    </None>
+    <None Include="DsBil.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsBil.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsBil.xss">
+      <DependentUpon>DsBil.xsd</DependentUpon>
+    </None>
+    <None Include="DsBilCdc.xsc">
+      <DependentUpon>DsBilCdc.xsd</DependentUpon>
+    </None>
+    <None Include="DsBilCdc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsBilCdc.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsBilCdc.xss">
+      <DependentUpon>DsBilCdc.xsd</DependentUpon>
+    </None>
+    <None Include="DsBus.xsc">
+      <DependentUpon>DsBus.xsd</DependentUpon>
+    </None>
+    <None Include="DsBus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsBus1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsBus.xss">
+      <DependentUpon>DsBus.xsd</DependentUpon>
+    </None>
+    <None Include="DsBus.xsx">
+      <DependentUpon>DsBus.xsd</DependentUpon>
+    </None>
+    <None Include="DsCee.xsc">
+      <DependentUpon>DsCee.xsd</DependentUpon>
+    </None>
+    <None Include="DsCee.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCee.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsCee.xss">
+      <DependentUpon>DsCee.xsd</DependentUpon>
+    </None>
+    <None Include="DsCert.xsc">
+      <DependentUpon>DsCert.xsd</DependentUpon>
+    </None>
+    <None Include="DsCert.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCert.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsCert.xss">
+      <DependentUpon>DsCert.xsd</DependentUpon>
+    </None>
+    <None Include="DsCespM.xsc">
+      <DependentUpon>DsCespM.xsd</DependentUpon>
+    </None>
+    <None Include="DsCespM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCespM.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsCespM.xss">
+      <DependentUpon>DsCespM.xsd</DependentUpon>
+    </None>
+    <None Include="DsCoIva.xsc">
+      <DependentUpon>DsCoIva.xsd</DependentUpon>
+    </None>
+    <None Include="DsCoIva.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCoIva.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsCoIva.xss">
+      <DependentUpon>DsCoIva.xsd</DependentUpon>
+    </None>
+    <None Include="DsComCe.xsc">
+      <DependentUpon>DsComCe.xsd</DependentUpon>
+    </None>
+    <None Include="DsComCe.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsComCe.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsComCe.xss">
+      <DependentUpon>DsComCe.xsd</DependentUpon>
+    </None>
+    <None Include="DsCorr.xsc">
+      <DependentUpon>DsCorr.xsd</DependentUpon>
+    </None>
+    <None Include="DsCorr.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCorr.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsCorr.xss">
+      <DependentUpon>DsCorr.xsd</DependentUpon>
+    </None>
+    <None Include="DsDifEle.xss" />
+    <None Include="DsEle.xss" />
+    <None Include="DsG1.xss" />
+    <None Include="DsGrMondo.xsc">
+      <DependentUpon>DsGrMondo.xsd</DependentUpon>
+    </None>
+    <None Include="DsGrMondo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsGrMondo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsGrMondo.xss">
+      <DependentUpon>DsGrMondo.xsd</DependentUpon>
+    </None>
+    <None Include="DsH7.xsc">
+      <DependentUpon>DsH7.xsd</DependentUpon>
+    </None>
+    <None Include="DsH7.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsH7.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsH7.xss">
+      <DependentUpon>DsH7.xsd</DependentUpon>
+    </None>
+    <None Include="DsH7Iva.xsc">
+      <DependentUpon>DsH7Iva.xsd</DependentUpon>
+    </None>
+    <None Include="DsH7Iva.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsH7Iva.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsH7Iva.xss">
+      <DependentUpon>DsH7Iva.xsd</DependentUpon>
+    </None>
+    <None Include="DsH8.xsc">
+      <DependentUpon>DsH8.xsd</DependentUpon>
+    </None>
+    <None Include="DsH8.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsH8.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsH8.xss">
+      <DependentUpon>DsH8.xsd</DependentUpon>
+    </None>
+    <None Include="DsL8.xsc">
+      <DependentUpon>DsL8.xsd</DependentUpon>
+    </None>
+    <None Include="DsL8.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsL8.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsL8.xss">
+      <DependentUpon>DsL8.xsd</DependentUpon>
+    </None>
+    <None Include="DsLetC.xsc">
+      <DependentUpon>DsLetC.xsd</DependentUpon>
+    </None>
+    <None Include="DsLetC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsLetC.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsLetC.xss">
+      <DependentUpon>DsLetC.xsd</DependentUpon>
+    </None>
+    <None Include="DsPc.xss" />
+    <None Include="DsPia.xsc">
+      <DependentUpon>DsPia.xsd</DependentUpon>
+    </None>
+    <None Include="DsPia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPia.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsPia.xss">
+      <DependentUpon>DsPia.xsd</DependentUpon>
+    </None>
+    <None Include="DsPiaLDP.xsc">
+      <DependentUpon>DsPiaLDP.xsd</DependentUpon>
+    </None>
+    <None Include="DsPiaLDP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPiaLDP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsPiaLDP.xss">
+      <DependentUpon>DsPiaLDP.xsd</DependentUpon>
+    </None>
+    <None Include="DsProQuo.xsc">
+      <DependentUpon>DsProQuo.xsd</DependentUpon>
+    </None>
+    <None Include="DsProQuo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsProQuo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsProQuo.xss">
+      <DependentUpon>DsProQuo.xsd</DependentUpon>
+    </None>
+    <None Include="DSRSCA.xss" />
+    <None Include="DsSkC.xsc">
+      <DependentUpon>DsSkC.xsd</DependentUpon>
+    </None>
+    <None Include="DsSkC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsSkC.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsSkC.xss">
+      <DependentUpon>DsSkC.xsd</DependentUpon>
+    </None>
+    <None Include="DsSkLDP.xsc">
+      <DependentUpon>DsSkLDP.xsd</DependentUpon>
+    </None>
+    <None Include="DsSkLDP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsSkLDP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsSkLDP.xss">
+      <DependentUpon>DsSkLDP.xsd</DependentUpon>
+    </None>
+    <None Include="DsVend.xsc">
+      <DependentUpon>DsVend.xsd</DependentUpon>
+    </None>
+    <None Include="DsVend.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsVend.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsVend.xss">
+      <DependentUpon>DsVend.xsd</DependentUpon>
+    </None>
+    <None Include="DsVent.xsc">
+      <DependentUpon>DsVent.xsd</DependentUpon>
+    </None>
+    <None Include="DsVent.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsVent1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsVent.xss">
+      <DependentUpon>DsVent.xsd</DependentUpon>
+    </None>
+    <None Include="DsVersam.xsc">
+      <DependentUpon>DsVersam.xsd</DependentUpon>
+    </None>
+    <None Include="DsVersam.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsVersam.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsVersam.xss">
+      <DependentUpon>DsVersam.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCCOM\NCCOM.vbproj">
+      <Project>{83CA8095-1EF5-4A9C-96EA-CDE3EE1D4DAB}</Project>
+      <Name>NCCOM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

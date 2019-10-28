@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsH7" targetNamespace="http://tempuri.org/DsH7.xsd" xmlns:mstns="http://tempuri.org/DsH7.xsd" xmlns="http://tempuri.org/DsH7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="COGEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="COGEConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.COGEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CRH7PNTableAdapter" GeneratorDataComponentClassName="CRH7PNTableAdapter" Name="CRH7PN" UserDataComponentName="CRH7PNTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="COGEConnectionString (MySettings)" DbObjectName="COGE.dbo.CRH7PN" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PriId, PriProg, PriDataGio, PriCausale, PriCoDare, PriCoAvere, PriNumProt, PriBisRet, PriCodIva, PriRegIva, PriImpDare, PriImpAvere, PriDesc, PriDocEst, PriMeseSk, PriDataEst, PriDescB, PriFl04, PriFl05, PriFl06, PriNsRif, PriSos, PriLinea, PriDocAnn, PriCodPag, PriValuta, PriArtFisc, PriIvaPrint, PriGStampa, CiiCod, CiiAli, CiiInd, CiiTp, CiiCmp, CiiDes, CiiCau, DAREDESC, AVEREDESC, Expr1 FROM dbo.CRH7PN</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PriId" DataSetColumn="PriId" />
+              <Mapping SourceColumn="PriProg" DataSetColumn="PriProg" />
+              <Mapping SourceColumn="PriDataGio" DataSetColumn="PriDataGio" />
+              <Mapping SourceColumn="PriCausale" DataSetColumn="PriCausale" />
+              <Mapping SourceColumn="PriCoDare" DataSetColumn="PriCoDare" />
+              <Mapping SourceColumn="PriCoAvere" DataSetColumn="PriCoAvere" />
+              <Mapping SourceColumn="PriNumProt" DataSetColumn="PriNumProt" />
+              <Mapping SourceColumn="PriBisRet" DataSetColumn="PriBisRet" />
+              <Mapping SourceColumn="PriCodIva" DataSetColumn="PriCodIva" />
+              <Mapping SourceColumn="PriRegIva" DataSetColumn="PriRegIva" />
+              <Mapping SourceColumn="PriImpDare" DataSetColumn="PriImpDare" />
+              <Mapping SourceColumn="PriImpAvere" DataSetColumn="PriImpAvere" />
+              <Mapping SourceColumn="PriDesc" DataSetColumn="PriDesc" />
+              <Mapping SourceColumn="PriDocEst" DataSetColumn="PriDocEst" />
+              <Mapping SourceColumn="PriMeseSk" DataSetColumn="PriMeseSk" />
+              <Mapping SourceColumn="PriDataEst" DataSetColumn="PriDataEst" />
+              <Mapping SourceColumn="PriDescB" DataSetColumn="PriDescB" />
+              <Mapping SourceColumn="PriFl04" DataSetColumn="PriFl04" />
+              <Mapping SourceColumn="PriFl05" DataSetColumn="PriFl05" />
+              <Mapping SourceColumn="PriFl06" DataSetColumn="PriFl06" />
+              <Mapping SourceColumn="PriNsRif" DataSetColumn="PriNsRif" />
+              <Mapping SourceColumn="PriSos" DataSetColumn="PriSos" />
+              <Mapping SourceColumn="PriLinea" DataSetColumn="PriLinea" />
+              <Mapping SourceColumn="PriDocAnn" DataSetColumn="PriDocAnn" />
+              <Mapping SourceColumn="PriCodPag" DataSetColumn="PriCodPag" />
+              <Mapping SourceColumn="PriValuta" DataSetColumn="PriValuta" />
+              <Mapping SourceColumn="PriArtFisc" DataSetColumn="PriArtFisc" />
+              <Mapping SourceColumn="PriIvaPrint" DataSetColumn="PriIvaPrint" />
+              <Mapping SourceColumn="PriGStampa" DataSetColumn="PriGStampa" />
+              <Mapping SourceColumn="CiiCod" DataSetColumn="CiiCod" />
+              <Mapping SourceColumn="CiiAli" DataSetColumn="CiiAli" />
+              <Mapping SourceColumn="CiiInd" DataSetColumn="CiiInd" />
+              <Mapping SourceColumn="CiiTp" DataSetColumn="CiiTp" />
+              <Mapping SourceColumn="CiiCmp" DataSetColumn="CiiCmp" />
+              <Mapping SourceColumn="CiiDes" DataSetColumn="CiiDes" />
+              <Mapping SourceColumn="CiiCau" DataSetColumn="CiiCau" />
+              <Mapping SourceColumn="DAREDESC" DataSetColumn="DAREDESC" />
+              <Mapping SourceColumn="AVEREDESC" DataSetColumn="AVEREDESC" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsH7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsH7" msprop:Generator_UserDSName="DsH7" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CRH7PN" msprop:Generator_UserTableName="CRH7PN" msprop:Generator_RowDeletedName="CRH7PNRowDeleted" msprop:Generator_TableClassName="CRH7PNDataTable" msprop:Generator_RowChangedName="CRH7PNRowChanged" msprop:Generator_RowClassName="CRH7PNRow" msprop:Generator_RowChangingName="CRH7PNRowChanging" msprop:Generator_RowEvArgName="CRH7PNRowChangeEvent" msprop:Generator_RowEvHandlerName="CRH7PNRowChangeEventHandler" msprop:Generator_TablePropName="CRH7PN" msprop:Generator_TableVarName="tableCRH7PN" msprop:Generator_RowDeletingName="CRH7PNRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PriId" msprop:Generator_UserColumnName="PriId" msprop:Generator_ColumnPropNameInRow="PriId" msprop:Generator_ColumnVarNameInTable="columnPriId" msprop:Generator_ColumnPropNameInTable="PriIdColumn" type="xs:int" />
+              <xs:element name="PriProg" msprop:Generator_UserColumnName="PriProg" msprop:Generator_ColumnPropNameInRow="PriProg" msprop:Generator_ColumnVarNameInTable="columnPriProg" msprop:Generator_ColumnPropNameInTable="PriProgColumn" type="xs:short" />
+              <xs:element name="PriDataGio" msprop:Generator_UserColumnName="PriDataGio" msprop:Generator_ColumnPropNameInRow="PriDataGio" msprop:Generator_ColumnVarNameInTable="columnPriDataGio" msprop:Generator_ColumnPropNameInTable="PriDataGioColumn" type="xs:dateTime" />
+              <xs:element name="PriCausale" msprop:Generator_UserColumnName="PriCausale" msprop:Generator_ColumnPropNameInRow="PriCausale" msprop:Generator_ColumnVarNameInTable="columnPriCausale" msprop:Generator_ColumnPropNameInTable="PriCausaleColumn" type="xs:short" />
+              <xs:element name="PriCoDare" msprop:Generator_UserColumnName="PriCoDare" msprop:Generator_ColumnPropNameInRow="PriCoDare" msprop:Generator_ColumnVarNameInTable="columnPriCoDare" msprop:Generator_ColumnPropNameInTable="PriCoDareColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriCoAvere" msprop:Generator_UserColumnName="PriCoAvere" msprop:Generator_ColumnPropNameInRow="PriCoAvere" msprop:Generator_ColumnVarNameInTable="columnPriCoAvere" msprop:Generator_ColumnPropNameInTable="PriCoAvereColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriNumProt" msprop:Generator_UserColumnName="PriNumProt" msprop:Generator_ColumnPropNameInRow="PriNumProt" msprop:Generator_ColumnVarNameInTable="columnPriNumProt" msprop:Generator_ColumnPropNameInTable="PriNumProtColumn" type="xs:int" />
+              <xs:element name="PriBisRet" msprop:Generator_UserColumnName="PriBisRet" msprop:Generator_ColumnPropNameInRow="PriBisRet" msprop:Generator_ColumnVarNameInTable="columnPriBisRet" msprop:Generator_ColumnPropNameInTable="PriBisRetColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriCodIva" msprop:Generator_UserColumnName="PriCodIva" msprop:Generator_ColumnPropNameInRow="PriCodIva" msprop:Generator_ColumnVarNameInTable="columnPriCodIva" msprop:Generator_ColumnPropNameInTable="PriCodIvaColumn" type="xs:short" />
+              <xs:element name="PriRegIva" msprop:Generator_UserColumnName="PriRegIva" msprop:Generator_ColumnPropNameInRow="PriRegIva" msprop:Generator_ColumnVarNameInTable="columnPriRegIva" msprop:Generator_ColumnPropNameInTable="PriRegIvaColumn" type="xs:short" />
+              <xs:element name="PriImpDare" msprop:Generator_UserColumnName="PriImpDare" msprop:Generator_ColumnPropNameInRow="PriImpDare" msprop:Generator_ColumnVarNameInTable="columnPriImpDare" msprop:Generator_ColumnPropNameInTable="PriImpDareColumn" type="xs:decimal" />
+              <xs:element name="PriImpAvere" msprop:Generator_UserColumnName="PriImpAvere" msprop:Generator_ColumnPropNameInRow="PriImpAvere" msprop:Generator_ColumnVarNameInTable="columnPriImpAvere" msprop:Generator_ColumnPropNameInTable="PriImpAvereColumn" type="xs:decimal" />
+              <xs:element name="PriDesc" msprop:Generator_UserColumnName="PriDesc" msprop:Generator_ColumnPropNameInRow="PriDesc" msprop:Generator_ColumnVarNameInTable="columnPriDesc" msprop:Generator_ColumnPropNameInTable="PriDescColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriDocEst" msprop:Generator_UserColumnName="PriDocEst" msprop:Generator_ColumnPropNameInRow="PriDocEst" msprop:Generator_ColumnVarNameInTable="columnPriDocEst" msprop:Generator_ColumnPropNameInTable="PriDocEstColumn" type="xs:int" />
+              <xs:element name="PriMeseSk" msprop:Generator_UserColumnName="PriMeseSk" msprop:Generator_ColumnPropNameInRow="PriMeseSk" msprop:Generator_ColumnVarNameInTable="columnPriMeseSk" msprop:Generator_ColumnPropNameInTable="PriMeseSkColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriDataEst" msprop:Generator_UserColumnName="PriDataEst" msprop:Generator_ColumnPropNameInRow="PriDataEst" msprop:Generator_ColumnVarNameInTable="columnPriDataEst" msprop:Generator_ColumnPropNameInTable="PriDataEstColumn" type="xs:dateTime" />
+              <xs:element name="PriDescB" msprop:Generator_UserColumnName="PriDescB" msprop:Generator_ColumnPropNameInRow="PriDescB" msprop:Generator_ColumnVarNameInTable="columnPriDescB" msprop:Generator_ColumnPropNameInTable="PriDescBColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriFl04" msprop:Generator_UserColumnName="PriFl04" msprop:Generator_ColumnPropNameInRow="PriFl04" msprop:Generator_ColumnVarNameInTable="columnPriFl04" msprop:Generator_ColumnPropNameInTable="PriFl04Column" type="xs:short" />
+              <xs:element name="PriFl05" msprop:Generator_UserColumnName="PriFl05" msprop:Generator_ColumnPropNameInRow="PriFl05" msprop:Generator_ColumnVarNameInTable="columnPriFl05" msprop:Generator_ColumnPropNameInTable="PriFl05Column" type="xs:short" />
+              <xs:element name="PriFl06" msprop:Generator_UserColumnName="PriFl06" msprop:Generator_ColumnPropNameInRow="PriFl06" msprop:Generator_ColumnVarNameInTable="columnPriFl06" msprop:Generator_ColumnPropNameInTable="PriFl06Column" type="xs:short" />
+              <xs:element name="PriNsRif" msprop:Generator_UserColumnName="PriNsRif" msprop:Generator_ColumnPropNameInRow="PriNsRif" msprop:Generator_ColumnVarNameInTable="columnPriNsRif" msprop:Generator_ColumnPropNameInTable="PriNsRifColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriSos" msprop:Generator_UserColumnName="PriSos" msprop:Generator_ColumnPropNameInRow="PriSos" msprop:Generator_ColumnVarNameInTable="columnPriSos" msprop:Generator_ColumnPropNameInTable="PriSosColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriLinea" msprop:Generator_UserColumnName="PriLinea" msprop:Generator_ColumnPropNameInRow="PriLinea" msprop:Generator_ColumnVarNameInTable="columnPriLinea" msprop:Generator_ColumnPropNameInTable="PriLineaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriDocAnn" msprop:Generator_UserColumnName="PriDocAnn" msprop:Generator_ColumnPropNameInRow="PriDocAnn" msprop:Generator_ColumnVarNameInTable="columnPriDocAnn" msprop:Generator_ColumnPropNameInTable="PriDocAnnColumn" type="xs:short" />
+              <xs:element name="PriCodPag" msprop:Generator_UserColumnName="PriCodPag" msprop:Generator_ColumnPropNameInRow="PriCodPag" msprop:Generator_ColumnVarNameInTable="columnPriCodPag" msprop:Generator_ColumnPropNameInTable="PriCodPagColumn" type="xs:short" />
+              <xs:element name="PriValuta" msprop:Generator_UserColumnName="PriValuta" msprop:Generator_ColumnPropNameInRow="PriValuta" msprop:Generator_ColumnVarNameInTable="columnPriValuta" msprop:Generator_ColumnPropNameInTable="PriValutaColumn" type="xs:decimal" />
+              <xs:element name="PriArtFisc" msprop:Generator_UserColumnName="PriArtFisc" msprop:Generator_ColumnPropNameInRow="PriArtFisc" msprop:Generator_ColumnVarNameInTable="columnPriArtFisc" msprop:Generator_ColumnPropNameInTable="PriArtFiscColumn" type="xs:int" />
+              <xs:element name="PriIvaPrint" msprop:Generator_UserColumnName="PriIvaPrint" msprop:Generator_ColumnPropNameInRow="PriIvaPrint" msprop:Generator_ColumnVarNameInTable="columnPriIvaPrint" msprop:Generator_ColumnPropNameInTable="PriIvaPrintColumn" type="xs:boolean" />
+              <xs:element name="PriGStampa" msprop:Generator_UserColumnName="PriGStampa" msprop:Generator_ColumnPropNameInRow="PriGStampa" msprop:Generator_ColumnVarNameInTable="columnPriGStampa" msprop:Generator_ColumnPropNameInTable="PriGStampaColumn" type="xs:boolean" />
+              <xs:element name="CiiCod" msprop:Generator_UserColumnName="CiiCod" msprop:Generator_ColumnPropNameInRow="CiiCod" msprop:Generator_ColumnVarNameInTable="columnCiiCod" msprop:Generator_ColumnPropNameInTable="CiiCodColumn" type="xs:short" />
+              <xs:element name="CiiAli" msprop:Generator_UserColumnName="CiiAli" msprop:Generator_ColumnPropNameInRow="CiiAli" msprop:Generator_ColumnVarNameInTable="columnCiiAli" msprop:Generator_ColumnPropNameInTable="CiiAliColumn" type="xs:short" />
+              <xs:element name="CiiInd" msprop:Generator_UserColumnName="CiiInd" msprop:Generator_ColumnPropNameInRow="CiiInd" msprop:Generator_ColumnVarNameInTable="columnCiiInd" msprop:Generator_ColumnPropNameInTable="CiiIndColumn" type="xs:short" />
+              <xs:element name="CiiTp" msprop:Generator_UserColumnName="CiiTp" msprop:Generator_ColumnPropNameInRow="CiiTp" msprop:Generator_ColumnVarNameInTable="columnCiiTp" msprop:Generator_ColumnPropNameInTable="CiiTpColumn" type="xs:short" />
+              <xs:element name="CiiCmp" msprop:Generator_UserColumnName="CiiCmp" msprop:Generator_ColumnPropNameInRow="CiiCmp" msprop:Generator_ColumnVarNameInTable="columnCiiCmp" msprop:Generator_ColumnPropNameInTable="CiiCmpColumn" type="xs:short" />
+              <xs:element name="CiiDes" msprop:Generator_UserColumnName="CiiDes" msprop:Generator_ColumnPropNameInRow="CiiDes" msprop:Generator_ColumnVarNameInTable="columnCiiDes" msprop:Generator_ColumnPropNameInTable="CiiDesColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CiiCau" msprop:Generator_UserColumnName="CiiCau" msprop:Generator_ColumnPropNameInRow="CiiCau" msprop:Generator_ColumnVarNameInTable="columnCiiCau" msprop:Generator_ColumnPropNameInTable="CiiCauColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAREDESC" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DAREDESC" msprop:Generator_ColumnPropNameInRow="DAREDESC" msprop:Generator_ColumnVarNameInTable="columnDAREDESC" msprop:Generator_ColumnPropNameInTable="DAREDESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AVEREDESC" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AVEREDESC" msprop:Generator_ColumnPropNameInRow="AVEREDESC" msprop:Generator_ColumnVarNameInTable="columnAVEREDESC" msprop:Generator_ColumnPropNameInTable="AVEREDESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msprop:Generator_UserColumnName="Expr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInTable="Expr1Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CRH7PN" />
+      <xs:field xpath="mstns:PriId" />
+      <xs:field xpath="mstns:PriProg" />
+      <xs:field xpath="mstns:CiiCod" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

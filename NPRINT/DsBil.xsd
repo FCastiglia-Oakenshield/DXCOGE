@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsBil" targetNamespace="http://tempuri.org/DsBil.xsd" xmlns:mstns="http://tempuri.org/DsBil.xsd" xmlns="http://tempuri.org/DsBil.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="COGEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="COGEConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.COGEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CRBILPROGTableAdapter" GeneratorDataComponentClassName="CRBILPROGTableAdapter" Name="CRBILPROG" UserDataComponentName="CRBILPROGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="COGEConnectionString (MySettings)" DbObjectName="COGE.dbo.CRBILPROG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TMSBLOCK, TMSCONTO, TMSDESC, TMSFLAG, TMSDARE, TMSAVERE, TMSSALDO, TMSDAREP, TMSAVEREP, TMSSALDOP, TMSMASTRO, TMSSPPP, TMSDEMAS FROM dbo.CRBILPROG</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TMSBLOCK" DataSetColumn="TMSBLOCK" />
+              <Mapping SourceColumn="TMSCONTO" DataSetColumn="TMSCONTO" />
+              <Mapping SourceColumn="TMSDESC" DataSetColumn="TMSDESC" />
+              <Mapping SourceColumn="TMSFLAG" DataSetColumn="TMSFLAG" />
+              <Mapping SourceColumn="TMSDARE" DataSetColumn="TMSDARE" />
+              <Mapping SourceColumn="TMSAVERE" DataSetColumn="TMSAVERE" />
+              <Mapping SourceColumn="TMSSALDO" DataSetColumn="TMSSALDO" />
+              <Mapping SourceColumn="TMSDAREP" DataSetColumn="TMSDAREP" />
+              <Mapping SourceColumn="TMSAVEREP" DataSetColumn="TMSAVEREP" />
+              <Mapping SourceColumn="TMSSALDOP" DataSetColumn="TMSSALDOP" />
+              <Mapping SourceColumn="TMSMASTRO" DataSetColumn="TMSMASTRO" />
+              <Mapping SourceColumn="TMSSPPP" DataSetColumn="TMSSPPP" />
+              <Mapping SourceColumn="TMSDEMAS" DataSetColumn="TMSDEMAS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsBil" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsBil" msprop:Generator_UserDSName="DsBil">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CRBILPROG" msprop:Generator_TableClassName="CRBILPROGDataTable" msprop:Generator_TableVarName="tableCRBILPROG" msprop:Generator_TablePropName="CRBILPROG" msprop:Generator_RowDeletingName="CRBILPROGRowDeleting" msprop:Generator_UserTableName="CRBILPROG" msprop:Generator_RowChangingName="CRBILPROGRowChanging" msprop:Generator_RowEvHandlerName="CRBILPROGRowChangeEventHandler" msprop:Generator_RowDeletedName="CRBILPROGRowDeleted" msprop:Generator_RowEvArgName="CRBILPROGRowChangeEvent" msprop:Generator_RowChangedName="CRBILPROGRowChanged" msprop:Generator_RowClassName="CRBILPROGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TMSBLOCK" msprop:Generator_ColumnVarNameInTable="columnTMSBLOCK" msprop:Generator_ColumnPropNameInRow="TMSBLOCK" msprop:Generator_ColumnPropNameInTable="TMSBLOCKColumn" msprop:Generator_UserColumnName="TMSBLOCK" type="xs:int" />
+              <xs:element name="TMSCONTO" msprop:Generator_ColumnVarNameInTable="columnTMSCONTO" msprop:Generator_ColumnPropNameInRow="TMSCONTO" msprop:Generator_ColumnPropNameInTable="TMSCONTOColumn" msprop:Generator_UserColumnName="TMSCONTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TMSDESC" msprop:Generator_ColumnVarNameInTable="columnTMSDESC" msprop:Generator_ColumnPropNameInRow="TMSDESC" msprop:Generator_ColumnPropNameInTable="TMSDESCColumn" msprop:Generator_UserColumnName="TMSDESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TMSFLAG" msprop:Generator_ColumnVarNameInTable="columnTMSFLAG" msprop:Generator_ColumnPropNameInRow="TMSFLAG" msprop:Generator_ColumnPropNameInTable="TMSFLAGColumn" msprop:Generator_UserColumnName="TMSFLAG" type="xs:short" minOccurs="0" />
+              <xs:element name="TMSDARE" msprop:Generator_ColumnVarNameInTable="columnTMSDARE" msprop:Generator_ColumnPropNameInRow="TMSDARE" msprop:Generator_ColumnPropNameInTable="TMSDAREColumn" msprop:Generator_UserColumnName="TMSDARE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TMSAVERE" msprop:Generator_ColumnVarNameInTable="columnTMSAVERE" msprop:Generator_ColumnPropNameInRow="TMSAVERE" msprop:Generator_ColumnPropNameInTable="TMSAVEREColumn" msprop:Generator_UserColumnName="TMSAVERE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TMSSALDO" msprop:Generator_ColumnVarNameInTable="columnTMSSALDO" msprop:Generator_ColumnPropNameInRow="TMSSALDO" msprop:Generator_ColumnPropNameInTable="TMSSALDOColumn" msprop:Generator_UserColumnName="TMSSALDO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TMSDAREP" msprop:Generator_ColumnVarNameInTable="columnTMSDAREP" msprop:Generator_ColumnPropNameInRow="TMSDAREP" msprop:Generator_ColumnPropNameInTable="TMSDAREPColumn" msprop:Generator_UserColumnName="TMSDAREP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TMSAVEREP" msprop:Generator_ColumnVarNameInTable="columnTMSAVEREP" msprop:Generator_ColumnPropNameInRow="TMSAVEREP" msprop:Generator_ColumnPropNameInTable="TMSAVEREPColumn" msprop:Generator_UserColumnName="TMSAVEREP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TMSSALDOP" msprop:Generator_ColumnVarNameInTable="columnTMSSALDOP" msprop:Generator_ColumnPropNameInRow="TMSSALDOP" msprop:Generator_ColumnPropNameInTable="TMSSALDOPColumn" msprop:Generator_UserColumnName="TMSSALDOP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TMSMASTRO" msprop:Generator_ColumnVarNameInTable="columnTMSMASTRO" msprop:Generator_ColumnPropNameInRow="TMSMASTRO" msprop:Generator_ColumnPropNameInTable="TMSMASTROColumn" msprop:Generator_UserColumnName="TMSMASTRO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TMSSPPP" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTMSSPPP" msprop:Generator_ColumnPropNameInRow="TMSSPPP" msprop:Generator_ColumnPropNameInTable="TMSSPPPColumn" msprop:Generator_UserColumnName="TMSSPPP" type="xs:int" minOccurs="0" />
+              <xs:element name="TMSDEMAS" msprop:Generator_ColumnVarNameInTable="columnTMSDEMAS" msprop:Generator_ColumnPropNameInRow="TMSDEMAS" msprop:Generator_ColumnPropNameInTable="TMSDEMASColumn" msprop:Generator_UserColumnName="TMSDEMAS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

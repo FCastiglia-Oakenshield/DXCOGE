@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsCorr" targetNamespace="http://tempuri.org/DsCorr.xsd" xmlns:mstns="http://tempuri.org/DsCorr.xsd" xmlns="http://tempuri.org/DsCorr.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="COGEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="COGEConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.COGEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CRQUADCORRISPTableAdapter" GeneratorDataComponentClassName="CRQUADCORRISPTableAdapter" Name="CRQUADCORRISP" UserDataComponentName="CRQUADCORRISPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="COGEConnectionString (MySettings)" DbObjectName="COGE.dbo.CRQUADCORRISP" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PriCoAvere, ANNO, imponibile, AVEREDESC FROM dbo.CRQUADCORRISP</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PriCoAvere" DataSetColumn="PriCoAvere" />
+              <Mapping SourceColumn="ANNO" DataSetColumn="ANNO" />
+              <Mapping SourceColumn="imponibile" DataSetColumn="imponibile" />
+              <Mapping SourceColumn="AVEREDESC" DataSetColumn="AVEREDESC" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsCorr" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsCorr" msprop:Generator_UserDSName="DsCorr">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CRQUADCORRISP" msprop:Generator_TableClassName="CRQUADCORRISPDataTable" msprop:Generator_TableVarName="tableCRQUADCORRISP" msprop:Generator_TablePropName="CRQUADCORRISP" msprop:Generator_RowDeletingName="CRQUADCORRISPRowDeleting" msprop:Generator_UserTableName="CRQUADCORRISP" msprop:Generator_RowChangingName="CRQUADCORRISPRowChanging" msprop:Generator_RowEvHandlerName="CRQUADCORRISPRowChangeEventHandler" msprop:Generator_RowDeletedName="CRQUADCORRISPRowDeleted" msprop:Generator_RowEvArgName="CRQUADCORRISPRowChangeEvent" msprop:Generator_RowChangedName="CRQUADCORRISPRowChanged" msprop:Generator_RowClassName="CRQUADCORRISPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PriCoAvere" msprop:Generator_ColumnVarNameInTable="columnPriCoAvere" msprop:Generator_ColumnPropNameInRow="PriCoAvere" msprop:Generator_ColumnPropNameInTable="PriCoAvereColumn" msprop:Generator_UserColumnName="PriCoAvere">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ANNO" msprop:Generator_ColumnVarNameInTable="columnANNO" msprop:Generator_ColumnPropNameInRow="ANNO" msprop:Generator_ColumnPropNameInTable="ANNOColumn" msprop:Generator_UserColumnName="ANNO" type="xs:int" minOccurs="0" />
+              <xs:element name="imponibile" msprop:Generator_ColumnVarNameInTable="columnimponibile" msprop:Generator_ColumnPropNameInRow="imponibile" msprop:Generator_ColumnPropNameInTable="imponibileColumn" msprop:Generator_UserColumnName="imponibile" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AVEREDESC" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAVEREDESC" msprop:Generator_ColumnPropNameInRow="AVEREDESC" msprop:Generator_ColumnPropNameInTable="AVEREDESCColumn" msprop:Generator_UserColumnName="AVEREDESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

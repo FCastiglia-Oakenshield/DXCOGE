@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsVersam" targetNamespace="http://tempuri.org/DsVersam.xsd" xmlns:mstns="http://tempuri.org/DsVersam.xsd" xmlns="http://tempuri.org/DsVersam.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="COGEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="COGEConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.COGEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DXVERSAMTableAdapter" GeneratorDataComponentClassName="DXVERSAMTableAdapter" Name="DXVERSAM" UserDataComponentName="DXVERSAMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="COGEConnectionString (MySettings)" DbObjectName="COGE.dbo.DXVERSAM" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IvaVAnno, IvaVMese, IvaVVersam, IvaVLiquida, IvaVData, IvaVAbi, IvaVCab, IvaVDelega, IvaVChiusura, IvaVCrImUt, IvaVInteressi, IvaVImpDaVers, IvaVVersato, MESE FROM dbo.DXVERSAM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IvaVAnno" DataSetColumn="IvaVAnno" />
+              <Mapping SourceColumn="IvaVMese" DataSetColumn="IvaVMese" />
+              <Mapping SourceColumn="IvaVVersam" DataSetColumn="IvaVVersam" />
+              <Mapping SourceColumn="IvaVLiquida" DataSetColumn="IvaVLiquida" />
+              <Mapping SourceColumn="IvaVData" DataSetColumn="IvaVData" />
+              <Mapping SourceColumn="IvaVAbi" DataSetColumn="IvaVAbi" />
+              <Mapping SourceColumn="IvaVCab" DataSetColumn="IvaVCab" />
+              <Mapping SourceColumn="IvaVDelega" DataSetColumn="IvaVDelega" />
+              <Mapping SourceColumn="IvaVChiusura" DataSetColumn="IvaVChiusura" />
+              <Mapping SourceColumn="IvaVCrImUt" DataSetColumn="IvaVCrImUt" />
+              <Mapping SourceColumn="IvaVInteressi" DataSetColumn="IvaVInteressi" />
+              <Mapping SourceColumn="IvaVImpDaVers" DataSetColumn="IvaVImpDaVers" />
+              <Mapping SourceColumn="IvaVVersato" DataSetColumn="IvaVVersato" />
+              <Mapping SourceColumn="MESE" DataSetColumn="MESE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsVersam" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DsVersam" msprop:Generator_DataSetName="DsVersam" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DXVERSAM" msprop:Generator_UserTableName="DXVERSAM" msprop:Generator_RowDeletedName="DXVERSAMRowDeleted" msprop:Generator_RowChangedName="DXVERSAMRowChanged" msprop:Generator_RowClassName="DXVERSAMRow" msprop:Generator_RowChangingName="DXVERSAMRowChanging" msprop:Generator_RowEvArgName="DXVERSAMRowChangeEvent" msprop:Generator_RowEvHandlerName="DXVERSAMRowChangeEventHandler" msprop:Generator_TableClassName="DXVERSAMDataTable" msprop:Generator_TableVarName="tableDXVERSAM" msprop:Generator_RowDeletingName="DXVERSAMRowDeleting" msprop:Generator_TablePropName="DXVERSAM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IvaVAnno" msprop:Generator_UserColumnName="IvaVAnno" msprop:Generator_ColumnVarNameInTable="columnIvaVAnno" msprop:Generator_ColumnPropNameInRow="IvaVAnno" msprop:Generator_ColumnPropNameInTable="IvaVAnnoColumn" type="xs:short" />
+              <xs:element name="IvaVMese" msprop:Generator_UserColumnName="IvaVMese" msprop:Generator_ColumnVarNameInTable="columnIvaVMese" msprop:Generator_ColumnPropNameInRow="IvaVMese" msprop:Generator_ColumnPropNameInTable="IvaVMeseColumn" type="xs:short" />
+              <xs:element name="IvaVVersam" msprop:Generator_UserColumnName="IvaVVersam" msprop:Generator_ColumnVarNameInTable="columnIvaVVersam" msprop:Generator_ColumnPropNameInRow="IvaVVersam" msprop:Generator_ColumnPropNameInTable="IvaVVersamColumn" type="xs:decimal" />
+              <xs:element name="IvaVLiquida" msprop:Generator_UserColumnName="IvaVLiquida" msprop:Generator_ColumnVarNameInTable="columnIvaVLiquida" msprop:Generator_ColumnPropNameInRow="IvaVLiquida" msprop:Generator_ColumnPropNameInTable="IvaVLiquidaColumn" type="xs:decimal" />
+              <xs:element name="IvaVData" msprop:Generator_UserColumnName="IvaVData" msprop:Generator_ColumnVarNameInTable="columnIvaVData" msprop:Generator_ColumnPropNameInRow="IvaVData" msprop:Generator_ColumnPropNameInTable="IvaVDataColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IvaVAbi" msprop:Generator_UserColumnName="IvaVAbi" msprop:Generator_ColumnVarNameInTable="columnIvaVAbi" msprop:Generator_ColumnPropNameInRow="IvaVAbi" msprop:Generator_ColumnPropNameInTable="IvaVAbiColumn" type="xs:int" />
+              <xs:element name="IvaVCab" msprop:Generator_UserColumnName="IvaVCab" msprop:Generator_ColumnVarNameInTable="columnIvaVCab" msprop:Generator_ColumnPropNameInRow="IvaVCab" msprop:Generator_ColumnPropNameInTable="IvaVCabColumn" type="xs:int" />
+              <xs:element name="IvaVDelega" msprop:Generator_UserColumnName="IvaVDelega" msprop:Generator_ColumnVarNameInTable="columnIvaVDelega" msprop:Generator_ColumnPropNameInRow="IvaVDelega" msprop:Generator_ColumnPropNameInTable="IvaVDelegaColumn" type="xs:boolean" />
+              <xs:element name="IvaVChiusura" msprop:Generator_UserColumnName="IvaVChiusura" msprop:Generator_ColumnVarNameInTable="columnIvaVChiusura" msprop:Generator_ColumnPropNameInRow="IvaVChiusura" msprop:Generator_ColumnPropNameInTable="IvaVChiusuraColumn" type="xs:boolean" />
+              <xs:element name="IvaVCrImUt" msprop:Generator_UserColumnName="IvaVCrImUt" msprop:Generator_ColumnVarNameInTable="columnIvaVCrImUt" msprop:Generator_ColumnPropNameInRow="IvaVCrImUt" msprop:Generator_ColumnPropNameInTable="IvaVCrImUtColumn" type="xs:decimal" />
+              <xs:element name="IvaVInteressi" msprop:Generator_UserColumnName="IvaVInteressi" msprop:Generator_ColumnVarNameInTable="columnIvaVInteressi" msprop:Generator_ColumnPropNameInRow="IvaVInteressi" msprop:Generator_ColumnPropNameInTable="IvaVInteressiColumn" type="xs:decimal" />
+              <xs:element name="IvaVImpDaVers" msprop:Generator_UserColumnName="IvaVImpDaVers" msprop:Generator_ColumnVarNameInTable="columnIvaVImpDaVers" msprop:Generator_ColumnPropNameInRow="IvaVImpDaVers" msprop:Generator_ColumnPropNameInTable="IvaVImpDaVersColumn" type="xs:decimal" />
+              <xs:element name="IvaVVersato" msprop:Generator_UserColumnName="IvaVVersato" msprop:Generator_ColumnVarNameInTable="columnIvaVVersato" msprop:Generator_ColumnPropNameInRow="IvaVVersato" msprop:Generator_ColumnPropNameInTable="IvaVVersatoColumn" type="xs:decimal" />
+              <xs:element name="MESE" msdata:ReadOnly="true" msprop:Generator_UserColumnName="MESE" msprop:Generator_ColumnVarNameInTable="columnMESE" msprop:Generator_ColumnPropNameInRow="MESE" msprop:Generator_ColumnPropNameInTable="MESEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAGATO" msprop:Generator_UserColumnName="PAGATO" msprop:Generator_ColumnPropNameInRow="PAGATO" msprop:Generator_ColumnVarNameInTable="columnPAGATO" msprop:Generator_ColumnPropNameInTable="PAGATOColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

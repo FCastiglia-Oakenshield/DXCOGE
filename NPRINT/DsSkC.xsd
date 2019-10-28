@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsSkC" targetNamespace="http://tempuri.org/DsSkC.xsd" xmlns:mstns="http://tempuri.org/DsSkC.xsd" xmlns="http://tempuri.org/DsSkC.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DCDCConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DCDCConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.DCDCConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VCOMMH8TableAdapter" GeneratorDataComponentClassName="VCOMMH8TableAdapter" Name="VCOMMH8" UserDataComponentName="VCOMMH8TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DCDCConnectionString1 (MySettings)" DbObjectName="DCDC.dbo.VCOMMH8" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PriArtFisc, MCCCogConto, PrkTipoCo, PRKDESC, PriDataGio, PriDataEst, Causale, PriNumProt, PriRegIva, PriDocEst, CPT, CPTDESC, DARE, AVERE, descriz, PrkAammgg, PIAFL, PriCausale, MCPT, MCCCogLdp, TcmOggetto, TcmSigla FROM dbo.VCOMMH8</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PriArtFisc" DataSetColumn="PriArtFisc" />
+              <Mapping SourceColumn="MCCCogConto" DataSetColumn="MCCCogConto" />
+              <Mapping SourceColumn="PrkTipoCo" DataSetColumn="PrkTipoCo" />
+              <Mapping SourceColumn="PRKDESC" DataSetColumn="PRKDESC" />
+              <Mapping SourceColumn="PriDataGio" DataSetColumn="PriDataGio" />
+              <Mapping SourceColumn="PriDataEst" DataSetColumn="PriDataEst" />
+              <Mapping SourceColumn="Causale" DataSetColumn="Causale" />
+              <Mapping SourceColumn="PriNumProt" DataSetColumn="PriNumProt" />
+              <Mapping SourceColumn="PriRegIva" DataSetColumn="PriRegIva" />
+              <Mapping SourceColumn="PriDocEst" DataSetColumn="PriDocEst" />
+              <Mapping SourceColumn="CPT" DataSetColumn="CPT" />
+              <Mapping SourceColumn="CPTDESC" DataSetColumn="CPTDESC" />
+              <Mapping SourceColumn="DARE" DataSetColumn="DARE" />
+              <Mapping SourceColumn="AVERE" DataSetColumn="AVERE" />
+              <Mapping SourceColumn="descriz" DataSetColumn="descriz" />
+              <Mapping SourceColumn="PrkAammgg" DataSetColumn="PrkAammgg" />
+              <Mapping SourceColumn="PIAFL" DataSetColumn="PIAFL" />
+              <Mapping SourceColumn="PriCausale" DataSetColumn="PriCausale" />
+              <Mapping SourceColumn="MCPT" DataSetColumn="MCPT" />
+              <Mapping SourceColumn="MCCCogLdp" DataSetColumn="MCCCogLdp" />
+              <Mapping SourceColumn="TcmOggetto" DataSetColumn="TcmOggetto" />
+              <Mapping SourceColumn="TcmSigla" DataSetColumn="TcmSigla" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsSkC" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DsSkC" msprop:Generator_DataSetName="DsSkC" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VCOMMH8" msprop:Generator_UserTableName="VCOMMH8" msprop:Generator_RowDeletedName="VCOMMH8RowDeleted" msprop:Generator_RowChangedName="VCOMMH8RowChanged" msprop:Generator_RowClassName="VCOMMH8Row" msprop:Generator_RowChangingName="VCOMMH8RowChanging" msprop:Generator_RowEvArgName="VCOMMH8RowChangeEvent" msprop:Generator_RowEvHandlerName="VCOMMH8RowChangeEventHandler" msprop:Generator_TableClassName="VCOMMH8DataTable" msprop:Generator_TableVarName="tableVCOMMH8" msprop:Generator_RowDeletingName="VCOMMH8RowDeleting" msprop:Generator_TablePropName="VCOMMH8">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PriArtFisc" msprop:Generator_UserColumnName="PriArtFisc" msprop:Generator_ColumnVarNameInTable="columnPriArtFisc" msprop:Generator_ColumnPropNameInRow="PriArtFisc" msprop:Generator_ColumnPropNameInTable="PriArtFiscColumn" type="xs:int" />
+              <xs:element name="MCCCogConto" msprop:Generator_UserColumnName="MCCCogConto" msprop:Generator_ColumnVarNameInTable="columnMCCCogConto" msprop:Generator_ColumnPropNameInRow="MCCCogConto" msprop:Generator_ColumnPropNameInTable="MCCCogContoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrkTipoCo" msprop:Generator_UserColumnName="PrkTipoCo" msprop:Generator_ColumnVarNameInTable="columnPrkTipoCo" msprop:Generator_ColumnPropNameInRow="PrkTipoCo" msprop:Generator_ColumnPropNameInTable="PrkTipoCoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRKDESC" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PRKDESC" msprop:Generator_ColumnVarNameInTable="columnPRKDESC" msprop:Generator_ColumnPropNameInRow="PRKDESC" msprop:Generator_ColumnPropNameInTable="PRKDESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriDataGio" msprop:Generator_UserColumnName="PriDataGio" msprop:Generator_ColumnVarNameInTable="columnPriDataGio" msprop:Generator_ColumnPropNameInRow="PriDataGio" msprop:Generator_ColumnPropNameInTable="PriDataGioColumn" type="xs:dateTime" />
+              <xs:element name="PriDataEst" msprop:Generator_UserColumnName="PriDataEst" msprop:Generator_ColumnVarNameInTable="columnPriDataEst" msprop:Generator_ColumnPropNameInRow="PriDataEst" msprop:Generator_ColumnPropNameInTable="PriDataEstColumn" type="xs:dateTime" />
+              <xs:element name="Causale" msprop:Generator_UserColumnName="Causale" msprop:Generator_ColumnVarNameInTable="columnCausale" msprop:Generator_ColumnPropNameInRow="Causale" msprop:Generator_ColumnPropNameInTable="CausaleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriNumProt" msprop:Generator_UserColumnName="PriNumProt" msprop:Generator_ColumnVarNameInTable="columnPriNumProt" msprop:Generator_ColumnPropNameInRow="PriNumProt" msprop:Generator_ColumnPropNameInTable="PriNumProtColumn" type="xs:int" />
+              <xs:element name="PriRegIva" msprop:Generator_UserColumnName="PriRegIva" msprop:Generator_ColumnVarNameInTable="columnPriRegIva" msprop:Generator_ColumnPropNameInRow="PriRegIva" msprop:Generator_ColumnPropNameInTable="PriRegIvaColumn" type="xs:short" />
+              <xs:element name="PriDocEst" msprop:Generator_UserColumnName="PriDocEst" msprop:Generator_ColumnVarNameInTable="columnPriDocEst" msprop:Generator_ColumnPropNameInRow="PriDocEst" msprop:Generator_ColumnPropNameInTable="PriDocEstColumn" type="xs:int" />
+              <xs:element name="CPT" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CPT" msprop:Generator_ColumnVarNameInTable="columnCPT" msprop:Generator_ColumnPropNameInRow="CPT" msprop:Generator_ColumnPropNameInTable="CPTColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CPTDESC" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CPTDESC" msprop:Generator_ColumnVarNameInTable="columnCPTDESC" msprop:Generator_ColumnPropNameInRow="CPTDESC" msprop:Generator_ColumnPropNameInTable="CPTDESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DARE" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DARE" msprop:Generator_ColumnVarNameInTable="columnDARE" msprop:Generator_ColumnPropNameInRow="DARE" msprop:Generator_ColumnPropNameInTable="DAREColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AVERE" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AVERE" msprop:Generator_ColumnVarNameInTable="columnAVERE" msprop:Generator_ColumnPropNameInRow="AVERE" msprop:Generator_ColumnPropNameInTable="AVEREColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="descriz" msdata:ReadOnly="true" msprop:Generator_UserColumnName="descriz" msprop:Generator_ColumnVarNameInTable="columndescriz" msprop:Generator_ColumnPropNameInRow="descriz" msprop:Generator_ColumnPropNameInTable="descrizColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="56" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrkAammgg" msprop:Generator_UserColumnName="PrkAammgg" msprop:Generator_ColumnVarNameInTable="columnPrkAammgg" msprop:Generator_ColumnPropNameInRow="PrkAammgg" msprop:Generator_ColumnPropNameInTable="PrkAammggColumn" type="xs:dateTime" />
+              <xs:element name="PIAFL" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PIAFL" msprop:Generator_ColumnVarNameInTable="columnPIAFL" msprop:Generator_ColumnPropNameInRow="PIAFL" msprop:Generator_ColumnPropNameInTable="PIAFLColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="PriCausale" msprop:Generator_UserColumnName="PriCausale" msprop:Generator_ColumnVarNameInTable="columnPriCausale" msprop:Generator_ColumnPropNameInRow="PriCausale" msprop:Generator_ColumnPropNameInTable="PriCausaleColumn" type="xs:short" />
+              <xs:element name="MCPT" msdata:ReadOnly="true" msprop:Generator_UserColumnName="MCPT" msprop:Generator_ColumnVarNameInTable="columnMCPT" msprop:Generator_ColumnPropNameInRow="MCPT" msprop:Generator_ColumnPropNameInTable="MCPTColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MCCCogLdp" msprop:Generator_UserColumnName="MCCCogLdp" msprop:Generator_ColumnVarNameInTable="columnMCCCogLdp" msprop:Generator_ColumnPropNameInRow="MCCCogLdp" msprop:Generator_ColumnPropNameInTable="MCCCogLdpColumn" type="xs:short" />
+              <xs:element name="TcmOggetto" msprop:Generator_UserColumnName="TcmOggetto" msprop:Generator_ColumnVarNameInTable="columnTcmOggetto" msprop:Generator_ColumnPropNameInRow="TcmOggetto" msprop:Generator_ColumnPropNameInTable="TcmOggettoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TcmSigla" msprop:Generator_UserColumnName="TcmSigla" msprop:Generator_ColumnVarNameInTable="columnTcmSigla" msprop:Generator_ColumnPropNameInRow="TcmSigla" msprop:Generator_ColumnPropNameInTable="TcmSiglaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TcmNum" msprop:Generator_UserColumnName="TcmNum" msprop:Generator_ColumnPropNameInRow="TcmNum" msprop:Generator_ColumnVarNameInTable="columnTcmNum" msprop:Generator_ColumnPropNameInTable="TcmNumColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

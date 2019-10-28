@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsB8" targetNamespace="http://tempuri.org/DsB8.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DsB8.xsd" xmlns:mstns="http://tempuri.org/DsB8.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsB8" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="VB8">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="prkconto" type="xs:string" />
+							<xs:element name="prkTipoCo" type="xs:string" />
+							<xs:element name="PRKDESC" type="xs:string" minOccurs="0" />
+							<xs:element name="pridataest" type="xs:dateTime" />
+							<xs:element name="Causale" type="xs:string" minOccurs="0" />
+							<xs:element name="PriNumProt" type="xs:int" />
+							<xs:element name="PriregIva" type="xs:short" />
+							<xs:element name="PrkDocEst" type="xs:int" />
+							<xs:element name="DARE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="AVERE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="descriz" type="xs:string" />
+							<xs:element name="PRICAUSALE" type="xs:short" />
+							<xs:element name="PrkDocAnn" type="xs:short" />
+							<xs:element name="PRKAAMMGG" type="xs:dateTime" />
+							<xs:element name="PARTITARIO" type="xs:int" minOccurs="0" />
+							<xs:element name="PrkPAperta" type="xs:unsignedByte" />
+							<xs:element name="PRIID" type="xs:int" />
+							<xs:element name="PRKAST" type="xs:string" />
+							<xs:element name="FORMULA" type="xs:string"></xs:element>
+							<xs:element name="PRKINDI" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

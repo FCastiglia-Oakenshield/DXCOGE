@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsCert" targetNamespace="http://tempuri.org/DsCert.xsd" xmlns:mstns="http://tempuri.org/DsCert.xsd" xmlns="http://tempuri.org/DsCert.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="COGEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="COGEConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.COGEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CRCERTIFICTableAdapter" GeneratorDataComponentClassName="CRCERTIFICTableAdapter" Name="CRCERTIFIC" UserDataComponentName="CRCERTIFICTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="COGEConnectionString (MySettings)" DbObjectName="COGE.dbo.CRCERTIFIC" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT RitCodFor, RitDataFat, RitProtFat, RitDataPag, RitTributo, RitSospesa, RitCompenso, RitPerc, RitRitenuta, RitContrInps, RitRimborsi, RitRivalsa, RitRimbConv, RitIva, RitPrevPerc, RitDataVer, RitEsCc, RitNumQB, RitImpVersam, RitPerAtDa, RitPerAtAa, TribDesc, TribCaus, AnaCfis, AnaDesc, AnaIndirizzo, AnaCap, AnaCitta, AnaProv, AnaRag1, AnaRag2, DAYCOMP, MESECOMP, ANNOCOMP, ANNOVER, ANNOC, COMUNE, PROV, GG, MM, AA, ENASARCO FROM dbo.CRCERTIFIC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RitCodFor" DataSetColumn="RitCodFor" />
+              <Mapping SourceColumn="RitDataFat" DataSetColumn="RitDataFat" />
+              <Mapping SourceColumn="RitProtFat" DataSetColumn="RitProtFat" />
+              <Mapping SourceColumn="RitDataPag" DataSetColumn="RitDataPag" />
+              <Mapping SourceColumn="RitTributo" DataSetColumn="RitTributo" />
+              <Mapping SourceColumn="RitSospesa" DataSetColumn="RitSospesa" />
+              <Mapping SourceColumn="RitCompenso" DataSetColumn="RitCompenso" />
+              <Mapping SourceColumn="RitPerc" DataSetColumn="RitPerc" />
+              <Mapping SourceColumn="RitRitenuta" DataSetColumn="RitRitenuta" />
+              <Mapping SourceColumn="RitContrInps" DataSetColumn="RitContrInps" />
+              <Mapping SourceColumn="RitRimborsi" DataSetColumn="RitRimborsi" />
+              <Mapping SourceColumn="RitRivalsa" DataSetColumn="RitRivalsa" />
+              <Mapping SourceColumn="RitRimbConv" DataSetColumn="RitRimbConv" />
+              <Mapping SourceColumn="RitIva" DataSetColumn="RitIva" />
+              <Mapping SourceColumn="RitPrevPerc" DataSetColumn="RitPrevPerc" />
+              <Mapping SourceColumn="RitDataVer" DataSetColumn="RitDataVer" />
+              <Mapping SourceColumn="RitEsCc" DataSetColumn="RitEsCc" />
+              <Mapping SourceColumn="RitNumQB" DataSetColumn="RitNumQB" />
+              <Mapping SourceColumn="RitImpVersam" DataSetColumn="RitImpVersam" />
+              <Mapping SourceColumn="RitPerAtDa" DataSetColumn="RitPerAtDa" />
+              <Mapping SourceColumn="RitPerAtAa" DataSetColumn="RitPerAtAa" />
+              <Mapping SourceColumn="TribDesc" DataSetColumn="TribDesc" />
+              <Mapping SourceColumn="TribCaus" DataSetColumn="TribCaus" />
+              <Mapping SourceColumn="AnaCfis" DataSetColumn="AnaCfis" />
+              <Mapping SourceColumn="AnaDesc" DataSetColumn="AnaDesc" />
+              <Mapping SourceColumn="AnaIndirizzo" DataSetColumn="AnaIndirizzo" />
+              <Mapping SourceColumn="AnaCap" DataSetColumn="AnaCap" />
+              <Mapping SourceColumn="AnaCitta" DataSetColumn="AnaCitta" />
+              <Mapping SourceColumn="AnaProv" DataSetColumn="AnaProv" />
+              <Mapping SourceColumn="AnaRag1" DataSetColumn="AnaRag1" />
+              <Mapping SourceColumn="AnaRag2" DataSetColumn="AnaRag2" />
+              <Mapping SourceColumn="DAYCOMP" DataSetColumn="DAYCOMP" />
+              <Mapping SourceColumn="MESECOMP" DataSetColumn="MESECOMP" />
+              <Mapping SourceColumn="ANNOCOMP" DataSetColumn="ANNOCOMP" />
+              <Mapping SourceColumn="ANNOVER" DataSetColumn="ANNOVER" />
+              <Mapping SourceColumn="ANNOC" DataSetColumn="ANNOC" />
+              <Mapping SourceColumn="COMUNE" DataSetColumn="COMUNE" />
+              <Mapping SourceColumn="PROV" DataSetColumn="PROV" />
+              <Mapping SourceColumn="GG" DataSetColumn="GG" />
+              <Mapping SourceColumn="MM" DataSetColumn="MM" />
+              <Mapping SourceColumn="AA" DataSetColumn="AA" />
+              <Mapping SourceColumn="ENASARCO" DataSetColumn="ENASARCO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsCert" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsCert" msprop:Generator_UserDSName="DsCert">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CRCERTIFIC" msprop:Generator_TableClassName="CRCERTIFICDataTable" msprop:Generator_RowEvArgName="CRCERTIFICRowChangeEvent" msprop:Generator_TableVarName="tableCRCERTIFIC" msprop:Generator_TablePropName="CRCERTIFIC" msprop:Generator_RowDeletingName="CRCERTIFICRowDeleting" msprop:Generator_UserTableName="CRCERTIFIC" msprop:Generator_RowChangingName="CRCERTIFICRowChanging" msprop:Generator_RowDeletedName="CRCERTIFICRowDeleted" msprop:Generator_RowChangedName="CRCERTIFICRowChanged" msprop:Generator_RowEvHandlerName="CRCERTIFICRowChangeEventHandler" msprop:Generator_RowClassName="CRCERTIFICRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RitCodFor" msprop:Generator_ColumnVarNameInTable="columnRitCodFor" msprop:Generator_ColumnPropNameInRow="RitCodFor" msprop:Generator_ColumnPropNameInTable="RitCodForColumn" msprop:Generator_UserColumnName="RitCodFor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RitDataFat" msprop:Generator_ColumnVarNameInTable="columnRitDataFat" msprop:Generator_ColumnPropNameInRow="RitDataFat" msprop:Generator_ColumnPropNameInTable="RitDataFatColumn" msprop:Generator_UserColumnName="RitDataFat" type="xs:dateTime" />
+              <xs:element name="RitProtFat" msprop:Generator_ColumnVarNameInTable="columnRitProtFat" msprop:Generator_ColumnPropNameInRow="RitProtFat" msprop:Generator_ColumnPropNameInTable="RitProtFatColumn" msprop:Generator_UserColumnName="RitProtFat" type="xs:int" />
+              <xs:element name="RitDataPag" msprop:Generator_ColumnVarNameInTable="columnRitDataPag" msprop:Generator_ColumnPropNameInRow="RitDataPag" msprop:Generator_ColumnPropNameInTable="RitDataPagColumn" msprop:Generator_UserColumnName="RitDataPag" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RitTributo" msprop:Generator_ColumnVarNameInTable="columnRitTributo" msprop:Generator_ColumnPropNameInRow="RitTributo" msprop:Generator_ColumnPropNameInTable="RitTributoColumn" msprop:Generator_UserColumnName="RitTributo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RitSospesa" msprop:Generator_ColumnVarNameInTable="columnRitSospesa" msprop:Generator_ColumnPropNameInRow="RitSospesa" msprop:Generator_ColumnPropNameInTable="RitSospesaColumn" msprop:Generator_UserColumnName="RitSospesa" type="xs:decimal" />
+              <xs:element name="RitCompenso" msprop:Generator_ColumnVarNameInTable="columnRitCompenso" msprop:Generator_ColumnPropNameInRow="RitCompenso" msprop:Generator_ColumnPropNameInTable="RitCompensoColumn" msprop:Generator_UserColumnName="RitCompenso" type="xs:decimal" />
+              <xs:element name="RitPerc" msprop:Generator_ColumnVarNameInTable="columnRitPerc" msprop:Generator_ColumnPropNameInRow="RitPerc" msprop:Generator_ColumnPropNameInTable="RitPercColumn" msprop:Generator_UserColumnName="RitPerc" type="xs:decimal" />
+              <xs:element name="RitRitenuta" msprop:Generator_ColumnVarNameInTable="columnRitRitenuta" msprop:Generator_ColumnPropNameInRow="RitRitenuta" msprop:Generator_ColumnPropNameInTable="RitRitenutaColumn" msprop:Generator_UserColumnName="RitRitenuta" type="xs:decimal" />
+              <xs:element name="RitContrInps" msprop:Generator_ColumnVarNameInTable="columnRitContrInps" msprop:Generator_ColumnPropNameInRow="RitContrInps" msprop:Generator_ColumnPropNameInTable="RitContrInpsColumn" msprop:Generator_UserColumnName="RitContrInps" type="xs:decimal" />
+              <xs:element name="RitRimborsi" msprop:Generator_ColumnVarNameInTable="columnRitRimborsi" msprop:Generator_ColumnPropNameInRow="RitRimborsi" msprop:Generator_ColumnPropNameInTable="RitRimborsiColumn" msprop:Generator_UserColumnName="RitRimborsi" type="xs:decimal" />
+              <xs:element name="RitRivalsa" msprop:Generator_ColumnVarNameInTable="columnRitRivalsa" msprop:Generator_ColumnPropNameInRow="RitRivalsa" msprop:Generator_ColumnPropNameInTable="RitRivalsaColumn" msprop:Generator_UserColumnName="RitRivalsa" type="xs:decimal" />
+              <xs:element name="RitRimbConv" msprop:Generator_ColumnVarNameInTable="columnRitRimbConv" msprop:Generator_ColumnPropNameInRow="RitRimbConv" msprop:Generator_ColumnPropNameInTable="RitRimbConvColumn" msprop:Generator_UserColumnName="RitRimbConv" type="xs:decimal" />
+              <xs:element name="RitIva" msprop:Generator_ColumnVarNameInTable="columnRitIva" msprop:Generator_ColumnPropNameInRow="RitIva" msprop:Generator_ColumnPropNameInTable="RitIvaColumn" msprop:Generator_UserColumnName="RitIva" type="xs:decimal" />
+              <xs:element name="RitPrevPerc" msprop:Generator_ColumnVarNameInTable="columnRitPrevPerc" msprop:Generator_ColumnPropNameInRow="RitPrevPerc" msprop:Generator_ColumnPropNameInTable="RitPrevPercColumn" msprop:Generator_UserColumnName="RitPrevPerc" type="xs:decimal" />
+              <xs:element name="RitDataVer" msprop:Generator_ColumnVarNameInTable="columnRitDataVer" msprop:Generator_ColumnPropNameInRow="RitDataVer" msprop:Generator_ColumnPropNameInTable="RitDataVerColumn" msprop:Generator_UserColumnName="RitDataVer" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RitEsCc" msprop:Generator_ColumnVarNameInTable="columnRitEsCc" msprop:Generator_ColumnPropNameInRow="RitEsCc" msprop:Generator_ColumnPropNameInTable="RitEsCcColumn" msprop:Generator_UserColumnName="RitEsCc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RitNumQB" msprop:Generator_ColumnVarNameInTable="columnRitNumQB" msprop:Generator_ColumnPropNameInRow="RitNumQB" msprop:Generator_ColumnPropNameInTable="RitNumQBColumn" msprop:Generator_UserColumnName="RitNumQB">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RitImpVersam" msprop:Generator_ColumnVarNameInTable="columnRitImpVersam" msprop:Generator_ColumnPropNameInRow="RitImpVersam" msprop:Generator_ColumnPropNameInTable="RitImpVersamColumn" msprop:Generator_UserColumnName="RitImpVersam" type="xs:decimal" />
+              <xs:element name="RitPerAtDa" msprop:Generator_ColumnVarNameInTable="columnRitPerAtDa" msprop:Generator_ColumnPropNameInRow="RitPerAtDa" msprop:Generator_ColumnPropNameInTable="RitPerAtDaColumn" msprop:Generator_UserColumnName="RitPerAtDa" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RitPerAtAa" msprop:Generator_ColumnVarNameInTable="columnRitPerAtAa" msprop:Generator_ColumnPropNameInRow="RitPerAtAa" msprop:Generator_ColumnPropNameInTable="RitPerAtAaColumn" msprop:Generator_UserColumnName="RitPerAtAa" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TribDesc" msprop:Generator_ColumnVarNameInTable="columnTribDesc" msprop:Generator_ColumnPropNameInRow="TribDesc" msprop:Generator_ColumnPropNameInTable="TribDescColumn" msprop:Generator_UserColumnName="TribDesc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TribCaus" msprop:Generator_ColumnVarNameInTable="columnTribCaus" msprop:Generator_ColumnPropNameInRow="TribCaus" msprop:Generator_ColumnPropNameInTable="TribCausColumn" msprop:Generator_UserColumnName="TribCaus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaCfis" msprop:Generator_ColumnVarNameInTable="columnAnaCfis" msprop:Generator_ColumnPropNameInRow="AnaCfis" msprop:Generator_ColumnPropNameInTable="AnaCfisColumn" msprop:Generator_UserColumnName="AnaCfis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaDesc" msprop:Generator_ColumnVarNameInTable="columnAnaDesc" msprop:Generator_ColumnPropNameInRow="AnaDesc" msprop:Generator_ColumnPropNameInTable="AnaDescColumn" msprop:Generator_UserColumnName="AnaDesc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaIndirizzo" msprop:Generator_ColumnVarNameInTable="columnAnaIndirizzo" msprop:Generator_ColumnPropNameInRow="AnaIndirizzo" msprop:Generator_ColumnPropNameInTable="AnaIndirizzoColumn" msprop:Generator_UserColumnName="AnaIndirizzo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaCap" msprop:Generator_ColumnVarNameInTable="columnAnaCap" msprop:Generator_ColumnPropNameInRow="AnaCap" msprop:Generator_ColumnPropNameInTable="AnaCapColumn" msprop:Generator_UserColumnName="AnaCap" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaCitta" msprop:Generator_ColumnVarNameInTable="columnAnaCitta" msprop:Generator_ColumnPropNameInRow="AnaCitta" msprop:Generator_ColumnPropNameInTable="AnaCittaColumn" msprop:Generator_UserColumnName="AnaCitta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaProv" msprop:Generator_ColumnVarNameInTable="columnAnaProv" msprop:Generator_ColumnPropNameInRow="AnaProv" msprop:Generator_ColumnPropNameInTable="AnaProvColumn" msprop:Generator_UserColumnName="AnaProv" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaRag1" msprop:Generator_ColumnVarNameInTable="columnAnaRag1" msprop:Generator_ColumnPropNameInRow="AnaRag1" msprop:Generator_ColumnPropNameInTable="AnaRag1Column" msprop:Generator_UserColumnName="AnaRag1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="28" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaRag2" msprop:Generator_ColumnVarNameInTable="columnAnaRag2" msprop:Generator_ColumnPropNameInRow="AnaRag2" msprop:Generator_ColumnPropNameInTable="AnaRag2Column" msprop:Generator_UserColumnName="AnaRag2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="28" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAYCOMP" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAYCOMP" msprop:Generator_ColumnPropNameInRow="DAYCOMP" msprop:Generator_ColumnPropNameInTable="DAYCOMPColumn" msprop:Generator_UserColumnName="DAYCOMP" type="xs:int" minOccurs="0" />
+              <xs:element name="MESECOMP" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMESECOMP" msprop:Generator_ColumnPropNameInRow="MESECOMP" msprop:Generator_ColumnPropNameInTable="MESECOMPColumn" msprop:Generator_UserColumnName="MESECOMP" type="xs:int" minOccurs="0" />
+              <xs:element name="ANNOCOMP" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnANNOCOMP" msprop:Generator_ColumnPropNameInRow="ANNOCOMP" msprop:Generator_ColumnPropNameInTable="ANNOCOMPColumn" msprop:Generator_UserColumnName="ANNOCOMP" type="xs:int" minOccurs="0" />
+              <xs:element name="ANNOVER" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnANNOVER" msprop:Generator_ColumnPropNameInRow="ANNOVER" msprop:Generator_ColumnPropNameInTable="ANNOVERColumn" msprop:Generator_UserColumnName="ANNOVER" type="xs:int" minOccurs="0" />
+              <xs:element name="ANNOC" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnANNOC" msprop:Generator_ColumnPropNameInRow="ANNOC" msprop:Generator_ColumnPropNameInTable="ANNOCColumn" msprop:Generator_UserColumnName="ANNOC" type="xs:int" minOccurs="0" />
+              <xs:element name="COMUNE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCOMUNE" msprop:Generator_ColumnPropNameInRow="COMUNE" msprop:Generator_ColumnPropNameInTable="COMUNEColumn" msprop:Generator_UserColumnName="COMUNE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROV" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPROV" msprop:Generator_ColumnPropNameInRow="PROV" msprop:Generator_ColumnPropNameInTable="PROVColumn" msprop:Generator_UserColumnName="PROV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GG" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGG" msprop:Generator_ColumnPropNameInRow="GG" msprop:Generator_ColumnPropNameInTable="GGColumn" msprop:Generator_UserColumnName="GG" type="xs:int" minOccurs="0" />
+              <xs:element name="MM" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMM" msprop:Generator_ColumnPropNameInRow="MM" msprop:Generator_ColumnPropNameInTable="MMColumn" msprop:Generator_UserColumnName="MM" type="xs:int" minOccurs="0" />
+              <xs:element name="AA" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAA" msprop:Generator_ColumnPropNameInRow="AA" msprop:Generator_ColumnPropNameInTable="AAColumn" msprop:Generator_UserColumnName="AA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENASARCO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnENASARCO" msprop:Generator_ColumnPropNameInRow="ENASARCO" msprop:Generator_ColumnPropNameInTable="ENASARCOColumn" msprop:Generator_UserColumnName="ENASARCO" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

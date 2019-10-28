@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsBus" targetNamespace="http://tempuri.org/DsBus.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DsBus.xsd" xmlns:mstns="http://tempuri.org/DsBus.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsBus" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TbAna">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AnaDesc" type="xs:string" />
+							<xs:element name="AnaIndirizzo" type="xs:string" />
+							<xs:element name="AnaCap" type="xs:string" />
+							<xs:element name="AnaCitta" type="xs:string" />
+							<xs:element name="AnaProv" type="xs:string" />
+							<xs:element name="AnaCod" type="xs:string" />
+							<xs:element name="AnaRag1" type="xs:string" />
+							<xs:element name="AnaRag2" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66BE26C1-5FF3-4936-B7CF-936EB49F2B20}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>NCDCO</RootNamespace>
+    <AssemblyName>NCDCO</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DXBASE">
+      <HintPath>..\..\DXBASE\bin\DXBASE.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DevExpress.XtraDataLayout" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LDPReportX.Designer.vb">
+      <DependentUpon>LDPReportX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LDPReportX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxAgeingLDP.Designer.vb">
+      <DependentUpon>DxAgeingLDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxAgeingLDP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDPSchedLDP.Designer.vb">
+      <DependentUpon>LDPSchedLDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LDPSchedLDP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDPRiparto.Designer.vb">
+      <DependentUpon>LDPRiparto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LDPRiparto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDPPop.Designer.vb">
+      <DependentUpon>LDPPop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LDPPop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDPArc.Designer.vb">
+      <DependentUpon>LDPArc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LDPArc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDPSigla.Designer.vb">
+      <DependentUpon>LDPSigla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LDPSigla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxBCommesse.Designer.vb">
+      <DependentUpon>DxBCommesse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBCommesse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxBilCdc.Designer.vb">
+      <DependentUpon>DxBilCdc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBilCdc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxAgeing.Designer.vb">
+      <DependentUpon>DxAgeing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxAgeing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxCronArgo.Designer.vb">
+      <DependentUpon>DxCronArgo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxCronArgo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxDisplay.Designer.vb">
+      <DependentUpon>DxDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxReportX.Designer.vb">
+      <DependentUpon>DxReportX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxReportX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxRiparto.Designer.vb">
+      <DependentUpon>DxRiparto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxRiparto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MONDOSbilve.Designer.vb">
+      <DependentUpon>MONDOSbilve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MONDOSbilve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MONDOPOP.Designer.vb">
+      <DependentUpon>MONDOPOP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MONDOPOP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MondoRipCdc.Designer.vb">
+      <DependentUpon>MondoRipCdc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MondoRipCdc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MONDOSiglaC.Designer.vb">
+      <DependentUpon>MONDOSiglaC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MONDOSiglaC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MONDOSchedC.Designer.vb">
+      <DependentUpon>MONDOSchedC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MONDOSchedC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LDPReportX.resx">
+      <DependentUpon>LDPReportX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxAgeingLDP.resx">
+      <DependentUpon>DxAgeingLDP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDPSchedLDP.resx">
+      <DependentUpon>LDPSchedLDP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDPRiparto.resx">
+      <DependentUpon>LDPRiparto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDPPop.resx">
+      <DependentUpon>LDPPop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDPArc.resx">
+      <DependentUpon>LDPArc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDPSigla.resx">
+      <DependentUpon>LDPSigla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBCommesse.resx">
+      <DependentUpon>DxBCommesse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBilCdc.resx">
+      <DependentUpon>DxBilCdc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxAgeing.resx">
+      <DependentUpon>DxAgeing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxCronArgo.resx">
+      <DependentUpon>DxCronArgo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxDisplay.resx">
+      <DependentUpon>DxDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxReportX.resx">
+      <DependentUpon>DxReportX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxRiparto.resx">
+      <DependentUpon>DxRiparto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MONDOSbilve.resx">
+      <DependentUpon>MONDOSbilve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MONDOPOP.resx">
+      <DependentUpon>MONDOPOP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MondoRipCdc.resx">
+      <DependentUpon>MondoRipCdc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MONDOSiglaC.resx">
+      <DependentUpon>MONDOSiglaC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MONDOSchedC.resx">
+      <DependentUpon>MONDOSchedC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCCOM\NCCOM.vbproj">
+      <Project>{83CA8095-1EF5-4A9C-96EA-CDE3EE1D4DAB}</Project>
+      <Name>NCCOM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NPRINT\NPRINT.vbproj">
+      <Project>{2A91B625-85D8-42E9-A503-F062CE8EBB2A}</Project>
+      <Name>NPRINT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knowledgebasearticle_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knowledgebasearticle_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historyitem_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

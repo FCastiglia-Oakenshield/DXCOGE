@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsProQuo" targetNamespace="http://tempuri.org/DsProQuo.xsd" xmlns:mstns="http://tempuri.org/DsProQuo.xsd" xmlns="http://tempuri.org/DsProQuo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="COGEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="COGEConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.COGEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CRPROGQUOTableAdapter" GeneratorDataComponentClassName="CRPROGQUOTableAdapter" Name="CRPROGQUO" UserDataComponentName="CRPROGQUOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="COGEConnectionString (MySettings)" DbObjectName="COGE.dbo.CRPROGQUO" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProQuoNum, ProQuoCat, ProQuoAnnoA, ProQuoAliTab, ProQuoAliFis, ProQuoAliLib, ProContoQuo, ProContoFondo, ProQuoCoAmm, ProQuoAmmortam, ProQuoAnticip, ProQuoMeta, ProQuoAmmLib, ProQuoDescr, PROQUOFONDO, CespNum, CespAnnoA, CespCat, CespContoStorico, CespAliFis, CespDescr, CespDataFat, CespProtFat, CespCostoStorico, CespContoQuota, CespContoQuotaAnt, CespContoFondo, CespAliTab, CespDataCessione, CespUltAnnoAmm, CspDesc, CspGru, CspSpe1, CspSpe2, CespCp, CspCp, Cp, ceduto, QuoNum, QuoAnno, QuoCoStorIni, QuoCoAmmIni, QuoFondoIni, QuoResiduoIni, QuoNoDetraIni, QuoCoStor, QuoCoAmm, QuoTipoAmm, QuoAli, QuoQuota, QuoFondo, QuoResiduo, QuoNoDetra FROM dbo.CRPROGQUO</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProQuoNum" DataSetColumn="ProQuoNum" />
+              <Mapping SourceColumn="ProQuoCat" DataSetColumn="ProQuoCat" />
+              <Mapping SourceColumn="ProQuoAnnoA" DataSetColumn="ProQuoAnnoA" />
+              <Mapping SourceColumn="ProQuoAliTab" DataSetColumn="ProQuoAliTab" />
+              <Mapping SourceColumn="ProQuoAliFis" DataSetColumn="ProQuoAliFis" />
+              <Mapping SourceColumn="ProQuoAliLib" DataSetColumn="ProQuoAliLib" />
+              <Mapping SourceColumn="ProContoQuo" DataSetColumn="ProContoQuo" />
+              <Mapping SourceColumn="ProContoFondo" DataSetColumn="ProContoFondo" />
+              <Mapping SourceColumn="ProQuoCoAmm" DataSetColumn="ProQuoCoAmm" />
+              <Mapping SourceColumn="ProQuoAmmortam" DataSetColumn="ProQuoAmmortam" />
+              <Mapping SourceColumn="ProQuoAnticip" DataSetColumn="ProQuoAnticip" />
+              <Mapping SourceColumn="ProQuoMeta" DataSetColumn="ProQuoMeta" />
+              <Mapping SourceColumn="ProQuoAmmLib" DataSetColumn="ProQuoAmmLib" />
+              <Mapping SourceColumn="ProQuoDescr" DataSetColumn="ProQuoDescr" />
+              <Mapping SourceColumn="PROQUOFONDO" DataSetColumn="PROQUOFONDO" />
+              <Mapping SourceColumn="CespNum" DataSetColumn="CespNum" />
+              <Mapping SourceColumn="CespAnnoA" DataSetColumn="CespAnnoA" />
+              <Mapping SourceColumn="CespCat" DataSetColumn="CespCat" />
+              <Mapping SourceColumn="CespContoStorico" DataSetColumn="CespContoStorico" />
+              <Mapping SourceColumn="CespAliFis" DataSetColumn="CespAliFis" />
+              <Mapping SourceColumn="CespDescr" DataSetColumn="CespDescr" />
+              <Mapping SourceColumn="CespDataFat" DataSetColumn="CespDataFat" />
+              <Mapping SourceColumn="CespProtFat" DataSetColumn="CespProtFat" />
+              <Mapping SourceColumn="CespCostoStorico" DataSetColumn="CespCostoStorico" />
+              <Mapping SourceColumn="CespContoQuota" DataSetColumn="CespContoQuota" />
+              <Mapping SourceColumn="CespContoQuotaAnt" DataSetColumn="CespContoQuotaAnt" />
+              <Mapping SourceColumn="CespContoFondo" DataSetColumn="CespContoFondo" />
+              <Mapping SourceColumn="CespAliTab" DataSetColumn="CespAliTab" />
+              <Mapping SourceColumn="CespDataCessione" DataSetColumn="CespDataCessione" />
+              <Mapping SourceColumn="CespUltAnnoAmm" DataSetColumn="CespUltAnnoAmm" />
+              <Mapping SourceColumn="CspDesc" DataSetColumn="CspDesc" />
+              <Mapping SourceColumn="CspGru" DataSetColumn="CspGru" />
+              <Mapping SourceColumn="CspSpe1" DataSetColumn="CspSpe1" />
+              <Mapping SourceColumn="CspSpe2" DataSetColumn="CspSpe2" />
+              <Mapping SourceColumn="CespCp" DataSetColumn="CespCp" />
+              <Mapping SourceColumn="CspCp" DataSetColumn="CspCp" />
+              <Mapping SourceColumn="Cp" DataSetColumn="Cp" />
+              <Mapping SourceColumn="ceduto" DataSetColumn="ceduto" />
+              <Mapping SourceColumn="QuoNum" DataSetColumn="QuoNum" />
+              <Mapping SourceColumn="QuoAnno" DataSetColumn="QuoAnno" />
+              <Mapping SourceColumn="QuoCoStorIni" DataSetColumn="QuoCoStorIni" />
+              <Mapping SourceColumn="QuoCoAmmIni" DataSetColumn="QuoCoAmmIni" />
+              <Mapping SourceColumn="QuoFondoIni" DataSetColumn="QuoFondoIni" />
+              <Mapping SourceColumn="QuoResiduoIni" DataSetColumn="QuoResiduoIni" />
+              <Mapping SourceColumn="QuoNoDetraIni" DataSetColumn="QuoNoDetraIni" />
+              <Mapping SourceColumn="QuoCoStor" DataSetColumn="QuoCoStor" />
+              <Mapping SourceColumn="QuoCoAmm" DataSetColumn="QuoCoAmm" />
+              <Mapping SourceColumn="QuoTipoAmm" DataSetColumn="QuoTipoAmm" />
+              <Mapping SourceColumn="QuoAli" DataSetColumn="QuoAli" />
+              <Mapping SourceColumn="QuoQuota" DataSetColumn="QuoQuota" />
+              <Mapping SourceColumn="QuoFondo" DataSetColumn="QuoFondo" />
+              <Mapping SourceColumn="QuoResiduo" DataSetColumn="QuoResiduo" />
+              <Mapping SourceColumn="QuoNoDetra" DataSetColumn="QuoNoDetra" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsProQuo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsProQuo" msprop:Generator_UserDSName="DsProQuo" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CRPROGQUO" msprop:Generator_UserTableName="CRPROGQUO" msprop:Generator_RowDeletedName="CRPROGQUORowDeleted" msprop:Generator_TableClassName="CRPROGQUODataTable" msprop:Generator_RowChangedName="CRPROGQUORowChanged" msprop:Generator_RowClassName="CRPROGQUORow" msprop:Generator_RowChangingName="CRPROGQUORowChanging" msprop:Generator_RowEvArgName="CRPROGQUORowChangeEvent" msprop:Generator_RowEvHandlerName="CRPROGQUORowChangeEventHandler" msprop:Generator_TablePropName="CRPROGQUO" msprop:Generator_TableVarName="tableCRPROGQUO" msprop:Generator_RowDeletingName="CRPROGQUORowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProQuoNum" msprop:Generator_UserColumnName="ProQuoNum" msprop:Generator_ColumnPropNameInRow="ProQuoNum" msprop:Generator_ColumnVarNameInTable="columnProQuoNum" msprop:Generator_ColumnPropNameInTable="ProQuoNumColumn" type="xs:int" />
+              <xs:element name="ProQuoCat" msprop:Generator_UserColumnName="ProQuoCat" msprop:Generator_ColumnPropNameInRow="ProQuoCat" msprop:Generator_ColumnVarNameInTable="columnProQuoCat" msprop:Generator_ColumnPropNameInTable="ProQuoCatColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProQuoAnnoA" msprop:Generator_UserColumnName="ProQuoAnnoA" msprop:Generator_ColumnPropNameInRow="ProQuoAnnoA" msprop:Generator_ColumnVarNameInTable="columnProQuoAnnoA" msprop:Generator_ColumnPropNameInTable="ProQuoAnnoAColumn" type="xs:short" />
+              <xs:element name="ProQuoAliTab" msprop:Generator_UserColumnName="ProQuoAliTab" msprop:Generator_ColumnPropNameInRow="ProQuoAliTab" msprop:Generator_ColumnVarNameInTable="columnProQuoAliTab" msprop:Generator_ColumnPropNameInTable="ProQuoAliTabColumn" type="xs:decimal" />
+              <xs:element name="ProQuoAliFis" msprop:Generator_UserColumnName="ProQuoAliFis" msprop:Generator_ColumnPropNameInRow="ProQuoAliFis" msprop:Generator_ColumnVarNameInTable="columnProQuoAliFis" msprop:Generator_ColumnPropNameInTable="ProQuoAliFisColumn" type="xs:decimal" />
+              <xs:element name="ProQuoAliLib" msprop:Generator_UserColumnName="ProQuoAliLib" msprop:Generator_ColumnPropNameInRow="ProQuoAliLib" msprop:Generator_ColumnVarNameInTable="columnProQuoAliLib" msprop:Generator_ColumnPropNameInTable="ProQuoAliLibColumn" type="xs:decimal" />
+              <xs:element name="ProContoQuo" msprop:Generator_UserColumnName="ProContoQuo" msprop:Generator_ColumnPropNameInRow="ProContoQuo" msprop:Generator_ColumnVarNameInTable="columnProContoQuo" msprop:Generator_ColumnPropNameInTable="ProContoQuoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProContoFondo" msprop:Generator_UserColumnName="ProContoFondo" msprop:Generator_ColumnPropNameInRow="ProContoFondo" msprop:Generator_ColumnVarNameInTable="columnProContoFondo" msprop:Generator_ColumnPropNameInTable="ProContoFondoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProQuoCoAmm" msprop:Generator_UserColumnName="ProQuoCoAmm" msprop:Generator_ColumnPropNameInRow="ProQuoCoAmm" msprop:Generator_ColumnVarNameInTable="columnProQuoCoAmm" msprop:Generator_ColumnPropNameInTable="ProQuoCoAmmColumn" type="xs:decimal" />
+              <xs:element name="ProQuoAmmortam" msprop:Generator_UserColumnName="ProQuoAmmortam" msprop:Generator_ColumnPropNameInRow="ProQuoAmmortam" msprop:Generator_ColumnVarNameInTable="columnProQuoAmmortam" msprop:Generator_ColumnPropNameInTable="ProQuoAmmortamColumn" type="xs:decimal" />
+              <xs:element name="ProQuoAnticip" msprop:Generator_UserColumnName="ProQuoAnticip" msprop:Generator_ColumnPropNameInRow="ProQuoAnticip" msprop:Generator_ColumnVarNameInTable="columnProQuoAnticip" msprop:Generator_ColumnPropNameInTable="ProQuoAnticipColumn" type="xs:decimal" />
+              <xs:element name="ProQuoMeta" msprop:Generator_UserColumnName="ProQuoMeta" msprop:Generator_ColumnPropNameInRow="ProQuoMeta" msprop:Generator_ColumnVarNameInTable="columnProQuoMeta" msprop:Generator_ColumnPropNameInTable="ProQuoMetaColumn" type="xs:decimal" />
+              <xs:element name="ProQuoAmmLib" msprop:Generator_UserColumnName="ProQuoAmmLib" msprop:Generator_ColumnPropNameInRow="ProQuoAmmLib" msprop:Generator_ColumnVarNameInTable="columnProQuoAmmLib" msprop:Generator_ColumnPropNameInTable="ProQuoAmmLibColumn" type="xs:decimal" />
+              <xs:element name="ProQuoDescr" msprop:Generator_UserColumnName="ProQuoDescr" msprop:Generator_ColumnPropNameInRow="ProQuoDescr" msprop:Generator_ColumnVarNameInTable="columnProQuoDescr" msprop:Generator_ColumnPropNameInTable="ProQuoDescrColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="110" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROQUOFONDO" msprop:Generator_UserColumnName="PROQUOFONDO" msprop:Generator_ColumnPropNameInRow="PROQUOFONDO" msprop:Generator_ColumnVarNameInTable="columnPROQUOFONDO" msprop:Generator_ColumnPropNameInTable="PROQUOFONDOColumn" type="xs:decimal" />
+              <xs:element name="CespNum" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CespNum" msprop:Generator_ColumnPropNameInRow="CespNum" msprop:Generator_ColumnVarNameInTable="columnCespNum" msprop:Generator_ColumnPropNameInTable="CespNumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CespAnnoA" msprop:Generator_UserColumnName="CespAnnoA" msprop:Generator_ColumnPropNameInRow="CespAnnoA" msprop:Generator_ColumnVarNameInTable="columnCespAnnoA" msprop:Generator_ColumnPropNameInTable="CespAnnoAColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CespCat" msprop:Generator_UserColumnName="CespCat" msprop:Generator_ColumnPropNameInRow="CespCat" msprop:Generator_ColumnVarNameInTable="columnCespCat" msprop:Generator_ColumnPropNameInTable="CespCatColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CespContoStorico" msprop:Generator_UserColumnName="CespContoStorico" msprop:Generator_ColumnPropNameInRow="CespContoStorico" msprop:Generator_ColumnVarNameInTable="columnCespContoStorico" msprop:Generator_ColumnPropNameInTable="CespContoStoricoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CespAliFis" msprop:Generator_UserColumnName="CespAliFis" msprop:Generator_ColumnPropNameInRow="CespAliFis" msprop:Generator_ColumnVarNameInTable="columnCespAliFis" msprop:Generator_ColumnPropNameInTable="CespAliFisColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CespDescr" msprop:Generator_UserColumnName="CespDescr" msprop:Generator_ColumnPropNameInRow="CespDescr" msprop:Generator_ColumnVarNameInTable="columnCespDescr" msprop:Generator_ColumnPropNameInTable="CespDescrColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="110" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CespDataFat" msprop:Generator_UserColumnName="CespDataFat" msprop:Generator_ColumnPropNameInRow="CespDataFat" msprop:Generator_ColumnVarNameInTable="columnCespDataFat" msprop:Generator_ColumnPropNameInTable="CespDataFatColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CespProtFat" msprop:Generator_UserColumnName="CespProtFat" msprop:Generator_ColumnPropNameInRow="CespProtFat" msprop:Generator_ColumnVarNameInTable="columnCespProtFat" msprop:Generator_ColumnPropNameInTable="CespProtFatColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CespCostoStorico" msprop:Generator_UserColumnName="CespCostoStorico" msprop:Generator_ColumnPropNameInRow="CespCostoStorico" msprop:Generator_ColumnVarNameInTable="columnCespCostoStorico" msprop:Generator_ColumnPropNameInTable="CespCostoStoricoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CespContoQuota" msprop:Generator_UserColumnName="CespContoQuota" msprop:Generator_ColumnPropNameInRow="CespContoQuota" msprop:Generator_ColumnVarNameInTable="columnCespContoQuota" msprop:Generator_ColumnPropNameInTable="CespContoQuotaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CespContoQuotaAnt" msprop:Generator_UserColumnName="CespContoQuotaAnt" msprop:Generator_ColumnPropNameInRow="CespContoQuotaAnt" msprop:Generator_ColumnVarNameInTable="columnCespContoQuotaAnt" msprop:Generator_ColumnPropNameInTable="CespContoQuotaAntColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CespContoFondo" msprop:Generator_UserColumnName="CespContoFondo" msprop:Generator_ColumnPropNameInRow="CespContoFondo" msprop:Generator_ColumnVarNameInTable="columnCespContoFondo" msprop:Generator_ColumnPropNameInTable="CespContoFondoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CespAliTab" msprop:Generator_UserColumnName="CespAliTab" msprop:Generator_ColumnPropNameInRow="CespAliTab" msprop:Generator_ColumnVarNameInTable="columnCespAliTab" msprop:Generator_ColumnPropNameInTable="CespAliTabColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CespDataCessione" msprop:Generator_UserColumnName="CespDataCessione" msprop:Generator_ColumnPropNameInRow="CespDataCessione" msprop:Generator_ColumnVarNameInTable="columnCespDataCessione" msprop:Generator_ColumnPropNameInTable="CespDataCessioneColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CespUltAnnoAmm" msprop:Generator_UserColumnName="CespUltAnnoAmm" msprop:Generator_ColumnPropNameInRow="CespUltAnnoAmm" msprop:Generator_ColumnVarNameInTable="columnCespUltAnnoAmm" msprop:Generator_ColumnPropNameInTable="CespUltAnnoAmmColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="CspDesc" msprop:Generator_UserColumnName="CspDesc" msprop:Generator_ColumnPropNameInRow="CspDesc" msprop:Generator_ColumnVarNameInTable="columnCspDesc" msprop:Generator_ColumnPropNameInTable="CspDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CspGru" msprop:Generator_UserColumnName="CspGru" msprop:Generator_ColumnPropNameInRow="CspGru" msprop:Generator_ColumnVarNameInTable="columnCspGru" msprop:Generator_ColumnPropNameInTable="CspGruColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CspSpe1" msprop:Generator_UserColumnName="CspSpe1" msprop:Generator_ColumnPropNameInRow="CspSpe1" msprop:Generator_ColumnVarNameInTable="columnCspSpe1" msprop:Generator_ColumnPropNameInTable="CspSpe1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CspSpe2" msprop:Generator_UserColumnName="CspSpe2" msprop:Generator_ColumnPropNameInRow="CspSpe2" msprop:Generator_ColumnVarNameInTable="columnCspSpe2" msprop:Generator_ColumnPropNameInTable="CspSpe2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CespCp" msprop:Generator_UserColumnName="CespCp" msprop:Generator_ColumnPropNameInRow="CespCp" msprop:Generator_ColumnVarNameInTable="columnCespCp" msprop:Generator_ColumnPropNameInTable="CespCpColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CspCp" msprop:Generator_UserColumnName="CspCp" msprop:Generator_ColumnPropNameInRow="CspCp" msprop:Generator_ColumnVarNameInTable="columnCspCp" msprop:Generator_ColumnPropNameInTable="CspCpColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Cp" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Cp" msprop:Generator_ColumnPropNameInRow="Cp" msprop:Generator_ColumnVarNameInTable="columnCp" msprop:Generator_ColumnPropNameInTable="CpColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ceduto" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ceduto" msprop:Generator_ColumnPropNameInRow="ceduto" msprop:Generator_ColumnVarNameInTable="columnceduto" msprop:Generator_ColumnPropNameInTable="cedutoColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="QuoNum" msprop:Generator_UserColumnName="QuoNum" msprop:Generator_ColumnPropNameInRow="QuoNum" msprop:Generator_ColumnVarNameInTable="columnQuoNum" msprop:Generator_ColumnPropNameInTable="QuoNumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuoAnno" msprop:Generator_UserColumnName="QuoAnno" msprop:Generator_ColumnPropNameInRow="QuoAnno" msprop:Generator_ColumnVarNameInTable="columnQuoAnno" msprop:Generator_ColumnPropNameInTable="QuoAnnoColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="QuoCoStorIni" msprop:Generator_UserColumnName="QuoCoStorIni" msprop:Generator_ColumnPropNameInRow="QuoCoStorIni" msprop:Generator_ColumnVarNameInTable="columnQuoCoStorIni" msprop:Generator_ColumnPropNameInTable="QuoCoStorIniColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoCoAmmIni" msprop:Generator_UserColumnName="QuoCoAmmIni" msprop:Generator_ColumnPropNameInRow="QuoCoAmmIni" msprop:Generator_ColumnVarNameInTable="columnQuoCoAmmIni" msprop:Generator_ColumnPropNameInTable="QuoCoAmmIniColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoFondoIni" msprop:Generator_UserColumnName="QuoFondoIni" msprop:Generator_ColumnPropNameInRow="QuoFondoIni" msprop:Generator_ColumnVarNameInTable="columnQuoFondoIni" msprop:Generator_ColumnPropNameInTable="QuoFondoIniColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoResiduoIni" msprop:Generator_UserColumnName="QuoResiduoIni" msprop:Generator_ColumnPropNameInRow="QuoResiduoIni" msprop:Generator_ColumnVarNameInTable="columnQuoResiduoIni" msprop:Generator_ColumnPropNameInTable="QuoResiduoIniColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoNoDetraIni" msprop:Generator_UserColumnName="QuoNoDetraIni" msprop:Generator_ColumnPropNameInRow="QuoNoDetraIni" msprop:Generator_ColumnVarNameInTable="columnQuoNoDetraIni" msprop:Generator_ColumnPropNameInTable="QuoNoDetraIniColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoCoStor" msprop:Generator_UserColumnName="QuoCoStor" msprop:Generator_ColumnPropNameInRow="QuoCoStor" msprop:Generator_ColumnVarNameInTable="columnQuoCoStor" msprop:Generator_ColumnPropNameInTable="QuoCoStorColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoCoAmm" msprop:Generator_UserColumnName="QuoCoAmm" msprop:Generator_ColumnPropNameInRow="QuoCoAmm" msprop:Generator_ColumnVarNameInTable="columnQuoCoAmm" msprop:Generator_ColumnPropNameInTable="QuoCoAmmColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoTipoAmm" msprop:Generator_UserColumnName="QuoTipoAmm" msprop:Generator_ColumnPropNameInRow="QuoTipoAmm" msprop:Generator_ColumnVarNameInTable="columnQuoTipoAmm" msprop:Generator_ColumnPropNameInTable="QuoTipoAmmColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="QuoAli" msprop:Generator_UserColumnName="QuoAli" msprop:Generator_ColumnPropNameInRow="QuoAli" msprop:Generator_ColumnVarNameInTable="columnQuoAli" msprop:Generator_ColumnPropNameInTable="QuoAliColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoQuota" msprop:Generator_UserColumnName="QuoQuota" msprop:Generator_ColumnPropNameInRow="QuoQuota" msprop:Generator_ColumnVarNameInTable="columnQuoQuota" msprop:Generator_ColumnPropNameInTable="QuoQuotaColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoFondo" msprop:Generator_UserColumnName="QuoFondo" msprop:Generator_ColumnPropNameInRow="QuoFondo" msprop:Generator_ColumnVarNameInTable="columnQuoFondo" msprop:Generator_ColumnPropNameInTable="QuoFondoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoResiduo" msprop:Generator_UserColumnName="QuoResiduo" msprop:Generator_ColumnPropNameInRow="QuoResiduo" msprop:Generator_ColumnVarNameInTable="columnQuoResiduo" msprop:Generator_ColumnPropNameInTable="QuoResiduoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuoNoDetra" msprop:Generator_UserColumnName="QuoNoDetra" msprop:Generator_ColumnPropNameInRow="QuoNoDetra" msprop:Generator_ColumnVarNameInTable="columnQuoNoDetra" msprop:Generator_ColumnPropNameInTable="QuoNoDetraColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

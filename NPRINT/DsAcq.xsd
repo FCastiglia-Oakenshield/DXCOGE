@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsAcq" targetNamespace="http://tempuri.org/DsAcq.xsd" xmlns:mstns="http://tempuri.org/DsAcq.xsd" xmlns="http://tempuri.org/DsAcq.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="COGEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="COGEConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.COGEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CRQUADIVACQTableAdapter" GeneratorDataComponentClassName="CRQUADIVACQTableAdapter" Name="CRQUADIVACQ" UserDataComponentName="CRQUADIVACQTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="COGEConnectionString (MySettings)" DbObjectName="COGE.dbo.CRQUADIVACQ" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PriCoDare, ANNO, imponibile, iva, DAREDESC FROM dbo.CRQUADIVACQ</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PriCoDare" DataSetColumn="PriCoDare" />
+              <Mapping SourceColumn="ANNO" DataSetColumn="ANNO" />
+              <Mapping SourceColumn="imponibile" DataSetColumn="imponibile" />
+              <Mapping SourceColumn="iva" DataSetColumn="iva" />
+              <Mapping SourceColumn="DAREDESC" DataSetColumn="DAREDESC" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsAcq" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsAcq" msprop:Generator_UserDSName="DsAcq">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CRQUADIVACQ" msprop:Generator_TableClassName="CRQUADIVACQDataTable" msprop:Generator_TableVarName="tableCRQUADIVACQ" msprop:Generator_TablePropName="CRQUADIVACQ" msprop:Generator_RowDeletingName="CRQUADIVACQRowDeleting" msprop:Generator_UserTableName="CRQUADIVACQ" msprop:Generator_RowChangingName="CRQUADIVACQRowChanging" msprop:Generator_RowEvHandlerName="CRQUADIVACQRowChangeEventHandler" msprop:Generator_RowDeletedName="CRQUADIVACQRowDeleted" msprop:Generator_RowEvArgName="CRQUADIVACQRowChangeEvent" msprop:Generator_RowChangedName="CRQUADIVACQRowChanged" msprop:Generator_RowClassName="CRQUADIVACQRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PriCoDare" msprop:Generator_ColumnVarNameInTable="columnPriCoDare" msprop:Generator_ColumnPropNameInRow="PriCoDare" msprop:Generator_ColumnPropNameInTable="PriCoDareColumn" msprop:Generator_UserColumnName="PriCoDare">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ANNO" msprop:Generator_ColumnVarNameInTable="columnANNO" msprop:Generator_ColumnPropNameInRow="ANNO" msprop:Generator_ColumnPropNameInTable="ANNOColumn" msprop:Generator_UserColumnName="ANNO" type="xs:int" minOccurs="0" />
+              <xs:element name="imponibile" msprop:Generator_ColumnVarNameInTable="columnimponibile" msprop:Generator_ColumnPropNameInRow="imponibile" msprop:Generator_ColumnPropNameInTable="imponibileColumn" msprop:Generator_UserColumnName="imponibile" type="xs:decimal" minOccurs="0" />
+              <xs:element name="iva" msprop:Generator_ColumnVarNameInTable="columniva" msprop:Generator_ColumnPropNameInRow="iva" msprop:Generator_ColumnPropNameInTable="ivaColumn" msprop:Generator_UserColumnName="iva" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DAREDESC" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAREDESC" msprop:Generator_ColumnPropNameInRow="DAREDESC" msprop:Generator_ColumnPropNameInTable="DAREDESCColumn" msprop:Generator_UserColumnName="DAREDESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

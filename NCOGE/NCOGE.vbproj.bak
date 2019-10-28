@@ -1,0 +1,1000 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C28F28B1-A2E2-4DE6-8E6B-60E4EEDC822E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>NCOGE</RootNamespace>
+    <AssemblyName>NCOGE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Wizard, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Reporting.Extensions, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DXBASE">
+      <HintPath>..\..\DXBASE\bin\DXBASE.dll</HintPath>
+    </Reference>
+    <Reference Include="DXFTELE">
+      <HintPath>..\..\DXFTELETTRONICA\DXFTELE\bin\DXFTELE.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoLiTrim.Designer.vb">
+      <DependentUpon>CoLiTrim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CoLiTrim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxInFtCF2018.Designer.vb">
+      <DependentUpon>DxInFtCF2018.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxInFtCF2018.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatiIntPF.Designer.vb">
+      <DependentUpon>DatiIntPF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DatiIntPF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxEstrattoNew.Designer.vb">
+      <DependentUpon>DxEstrattoNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxEstrattoNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSp2016.Designer.vb">
+      <DependentUpon>DxSp2016.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSp2016.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSp2015.Designer.vb">
+      <DependentUpon>DxSp2015.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSp2015.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSp2014.Designer.vb">
+      <DependentUpon>DxSp2014.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSp2014.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxPaindex.Designer.vb">
+      <DependentUpon>DxPaindex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxPaindex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSp2013.Designer.vb">
+      <DependentUpon>DxSp2013.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSp2013.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSp2012.Designer.vb">
+      <DependentUpon>DxSp2012.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSp2012.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxInvest.Designer.vb">
+      <DependentUpon>DxInvest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxInvest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxLetInt.Designer.vb">
+      <DependentUpon>DxLetInt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxLetInt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSp2017.designer.vb">
+      <DependentUpon>DxSp2017.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSp2017.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSp2018.designer.vb">
+      <DependentUpon>DxSp2018.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSp2018.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSp2019.Designer.vb">
+      <DependentUpon>DxSp2019.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSp2019.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSpartiGS.Designer.vb">
+      <DependentUpon>DxSpartiGS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSpartiGS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxElenIva3000.Designer.vb">
+      <DependentUpon>DxElenIva3000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxElenIva3000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxAccessi.Designer.vb">
+      <DependentUpon>DxAccessi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxAccessi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxAzzero.Designer.vb">
+      <DependentUpon>DxAzzero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxAzzero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxBlack.Designer.vb">
+      <DependentUpon>DxBlack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBlack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxBusteCo.Designer.vb">
+      <DependentUpon>DxBusteCo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBusteCo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxCer770.Designer.vb">
+      <DependentUpon>DxCer770.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxCer770.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxCntIva.Designer.vb">
+      <DependentUpon>DxCntIva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxCntIva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxAccIva.Designer.vb">
+      <DependentUpon>DxAccIva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxAccIva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxArtPers.Designer.vb">
+      <DependentUpon>DxArtPers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxArtPers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxAtecoD.Designer.vb">
+      <DependentUpon>DxAtecoD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxAtecoD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxAziForm.Designer.vb">
+      <DependentUpon>DxAziForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxAziForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxBilAnn.Designer.vb">
+      <DependentUpon>DxBilAnn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBilAnn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxBilBil.Designer.vb">
+      <DependentUpon>DxBilBil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBilBil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxBilInv.Designer.vb">
+      <DependentUpon>DxBilInv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBilInv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxBsConti.Designer.vb">
+      <DependentUpon>DxBsConti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxBsConti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxCeeConti.Designer.vb">
+      <DependentUpon>DxCeeConti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxCeeConti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxChiApe.Designer.vb">
+      <DependentUpon>DxChiApe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxChiApe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxChPeIv.Designer.vb">
+      <DependentUpon>DxChPeIv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxChPeIv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxComForm.Designer.vb">
+      <DependentUpon>DxComForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxComForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxCon770.Designer.vb">
+      <DependentUpon>DxCon770.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxCon770.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxConAge.Designer.vb">
+      <DependentUpon>DxConAge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxConAge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxConPar.Designer.vb">
+      <DependentUpon>DxConPar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxConPar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxCorIva.Designer.vb">
+      <DependentUpon>DxCorIva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxCorIva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxElenIva.Designer.vb">
+      <DependentUpon>DxElenIva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxElenIva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxEnasarco.Designer.vb">
+      <DependentUpon>DxEnasarco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxEnasarco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxEstratto.Designer.vb">
+      <DependentUpon>DxEstratto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxEstratto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxInFtCF.Designer.vb">
+      <DependentUpon>DxInFtCF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxInFtCF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxInFtCo.Designer.vb">
+      <DependentUpon>DxInFtCo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxInFtCo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxInPrNo.Designer.vb">
+      <DependentUpon>DxInPrNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxInPrNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxInsCesp.Designer.vb">
+      <DependentUpon>DxInsCesp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxInsCesp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxInsClGrCo.Designer.vb">
+      <DependentUpon>DxInsClGrCo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxInsClGrCo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxIstatForm.Designer.vb">
+      <DependentUpon>DxIstatForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxIstatForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxLibroCesp.Designer.vb">
+      <DependentUpon>DxLibroCesp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxLibroCesp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxPianoForm.Designer.vb">
+      <DependentUpon>DxPianoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxPianoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxProgQuo.Designer.vb">
+      <DependentUpon>DxProgQuo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxProgQuo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxProRit.Designer.vb">
+      <DependentUpon>DxProRit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxProRit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxPrtCes.Designer.vb">
+      <DependentUpon>DxPrtCes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxPrtCes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxQui770.Designer.vb">
+      <DependentUpon>DxQui770.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxQui770.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxRegIva.Designer.vb">
+      <DependentUpon>DxRegIva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxRegIva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxRegQuo.Designer.vb">
+      <DependentUpon>DxRegQuo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxRegQuo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxRicArc.Designer.vb">
+      <DependentUpon>DxRicArc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxRicArc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSaldaC.Designer.vb">
+      <DependentUpon>DxSaldaC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSaldaC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSaldaS.Designer.vb">
+      <DependentUpon>DxSaldaS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSaldaS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSbilveR.Designer.vb">
+      <DependentUpon>DxSbilveR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSbilveR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxScaden.Designer.vb">
+      <DependentUpon>DxScaden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxScaden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxScriRet.Designer.vb">
+      <DependentUpon>DxScriRet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxScriRet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxScriRPn.Designer.vb">
+      <DependentUpon>DxScriRPn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxScriRPn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSeleSta.Designer.vb">
+      <DependentUpon>DxSeleSta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSeleSta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSkeClFo.Designer.vb">
+      <DependentUpon>DxSkeClFo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSkeClFo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSparti.Designer.vb">
+      <DependentUpon>DxSparti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSparti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxScaClf.Designer.vb">
+      <DependentUpon>DxScaClf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxScaClf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxSchedC.Designer.vb">
+      <DependentUpon>DxSchedC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSchedC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxStaH7Iva.Designer.vb">
+      <DependentUpon>DxStaH7Iva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStaH7Iva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxStaPiv.Designer.vb">
+      <DependentUpon>DxStaPiv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStaPiv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxStaScaden.Designer.vb">
+      <DependentUpon>DxStaScaden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStaScaden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxStaSic.Designer.vb">
+      <DependentUpon>DxStaSic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStaSic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxStGioG.Designer.vb">
+      <DependentUpon>DxStGioG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStGioG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxStReg.Designer.vb">
+      <DependentUpon>DxStReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxStReIv.Designer.vb">
+      <DependentUpon>DxStReIv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStReIv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxStTotIcf.Designer.vb">
+      <DependentUpon>DxStTotIcf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxStTotIcf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxTribForm.Designer.vb">
+      <DependentUpon>DxTribForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxTribForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxVendIntra.Designer.vb">
+      <DependentUpon>DxVendIntra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxVendIntra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxVentAnn.Designer.vb">
+      <DependentUpon>DxVentAnn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxVentAnn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxVersam.Designer.vb">
+      <DependentUpon>DxVersam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxVersam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiroCRPn.vb" />
+    <Compile Include="InsFoFte.Designer.vb">
+      <DependentUpon>InsFoFte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsFoFte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DxQuadriva.Designer.vb">
+      <DependentUpon>DxQuadriva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxQuadriva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DxPwdDialog.Designer.vb">
+      <DependentUpon>DxPwdDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxPwdDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScaClAge.Designer.vb">
+      <DependentUpon>ScaClAge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScaClAge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TbPaesi.Designer.vb">
+      <DependentUpon>TbPaesi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TbPaesi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.vb">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CoLiTrim.resx">
+      <DependentUpon>CoLiTrim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxInFtCF2018.resx">
+      <DependentUpon>DxInFtCF2018.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatiIntPF.resx">
+      <DependentUpon>DatiIntPF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxEstrattoNew.resx">
+      <DependentUpon>DxEstrattoNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSp2016.resx">
+      <DependentUpon>DxSp2016.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSp2015.resx">
+      <DependentUpon>DxSp2015.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSp2014.resx">
+      <DependentUpon>DxSp2014.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxPaindex.resx">
+      <DependentUpon>DxPaindex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSp2013.resx">
+      <DependentUpon>DxSp2013.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSp2012.resx">
+      <DependentUpon>DxSp2012.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxInvest.resx">
+      <DependentUpon>DxInvest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxLetInt.resx">
+      <DependentUpon>DxLetInt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSp2017.resx">
+      <DependentUpon>DxSp2017.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSp2018.resx">
+      <DependentUpon>DxSp2018.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSp2019.resx">
+      <DependentUpon>DxSp2019.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSpartiGS.resx">
+      <DependentUpon>DxSpartiGS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxElenIva3000.resx">
+      <DependentUpon>DxElenIva3000.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxAccessi.resx">
+      <DependentUpon>DxAccessi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxAzzero.resx">
+      <DependentUpon>DxAzzero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBlack.resx">
+      <DependentUpon>DxBlack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBusteCo.resx">
+      <DependentUpon>DxBusteCo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxCer770.resx">
+      <DependentUpon>DxCer770.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxCntIva.resx">
+      <DependentUpon>DxCntIva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxAccIva.resx">
+      <DependentUpon>DxAccIva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxArtPers.resx">
+      <DependentUpon>DxArtPers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxAtecoD.resx">
+      <DependentUpon>DxAtecoD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxAziForm.resx">
+      <DependentUpon>DxAziForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBilAnn.resx">
+      <DependentUpon>DxBilAnn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBilBil.resx">
+      <DependentUpon>DxBilBil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBilInv.resx">
+      <DependentUpon>DxBilInv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxBsConti.resx">
+      <DependentUpon>DxBsConti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxCeeConti.resx">
+      <DependentUpon>DxCeeConti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxChiApe.resx">
+      <DependentUpon>DxChiApe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxChPeIv.resx">
+      <DependentUpon>DxChPeIv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxComForm.resx">
+      <DependentUpon>DxComForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxCon770.resx">
+      <DependentUpon>DxCon770.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxConAge.resx">
+      <DependentUpon>DxConAge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxConPar.resx">
+      <DependentUpon>DxConPar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxCorIva.resx">
+      <DependentUpon>DxCorIva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxElenIva.resx">
+      <DependentUpon>DxElenIva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxEnasarco.resx">
+      <DependentUpon>DxEnasarco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxEstratto.resx">
+      <DependentUpon>DxEstratto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxInFtCF.resx">
+      <DependentUpon>DxInFtCF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxInFtCo.resx">
+      <DependentUpon>DxInFtCo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxInPrNo.resx">
+      <DependentUpon>DxInPrNo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxInsCesp.resx">
+      <DependentUpon>DxInsCesp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxInsClGrCo.resx">
+      <DependentUpon>DxInsClGrCo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxIstatForm.resx">
+      <DependentUpon>DxIstatForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxLibroCesp.resx">
+      <DependentUpon>DxLibroCesp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxPianoForm.resx">
+      <DependentUpon>DxPianoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxProgQuo.resx">
+      <DependentUpon>DxProgQuo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxProRit.resx">
+      <DependentUpon>DxProRit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxPrtCes.resx">
+      <DependentUpon>DxPrtCes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxPwdDialog.resx">
+      <DependentUpon>DxPwdDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxQui770.resx">
+      <DependentUpon>DxQui770.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxRegIva.resx">
+      <DependentUpon>DxRegIva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxRegQuo.resx">
+      <DependentUpon>DxRegQuo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxRicArc.resx">
+      <DependentUpon>DxRicArc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSaldaC.resx">
+      <DependentUpon>DxSaldaC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSaldaS.resx">
+      <DependentUpon>DxSaldaS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSbilveR.resx">
+      <DependentUpon>DxSbilveR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxScaden.resx">
+      <DependentUpon>DxScaden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxScriRet.resx">
+      <DependentUpon>DxScriRet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxScriRPn.resx">
+      <DependentUpon>DxScriRPn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSeleSta.resx">
+      <DependentUpon>DxSeleSta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSkeClFo.resx">
+      <DependentUpon>DxSkeClFo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSparti.resx">
+      <DependentUpon>DxSparti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxScaClf.resx">
+      <DependentUpon>DxScaClf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSchedC.resx">
+      <DependentUpon>DxSchedC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStaH7Iva.resx">
+      <DependentUpon>DxStaH7Iva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStaPiv.resx">
+      <DependentUpon>DxStaPiv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStaScaden.resx">
+      <DependentUpon>DxStaScaden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStaSic.resx">
+      <DependentUpon>DxStaSic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStGioG.resx">
+      <DependentUpon>DxStGioG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStReg.resx">
+      <DependentUpon>DxStReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStReIv.resx">
+      <DependentUpon>DxStReIv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxStTotIcf.resx">
+      <DependentUpon>DxStTotIcf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxTribForm.resx">
+      <DependentUpon>DxTribForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxVendIntra.resx">
+      <DependentUpon>DxVendIntra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxVentAnn.resx">
+      <DependentUpon>DxVentAnn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxVersam.resx">
+      <DependentUpon>DxVersam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsFoFte.resx">
+      <DependentUpon>InsFoFte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxQuadriva.resx">
+      <DependentUpon>DxQuadriva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScaClAge.resx">
+      <DependentUpon>ScaClAge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TbPaesi.resx">
+      <DependentUpon>TbPaesi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="comunicazioneIvp_2017_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fornituraIvp_2017_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="intestazioneIvp_2017_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCCOM\NCCOM.vbproj">
+      <Project>{83CA8095-1EF5-4A9C-96EA-CDE3EE1D4DAB}</Project>
+      <Name>NCCOM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCDCO\NCDCO.vbproj">
+      <Project>{66BE26C1-5FF3-4936-B7CF-936EB49F2B20}</Project>
+      <Name>NCDCO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NPRINT\NPRINT.vbproj">
+      <Project>{2A91B625-85D8-42E9-A503-F062CE8EBB2A}</Project>
+      <Name>NPRINT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_warning_toxic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

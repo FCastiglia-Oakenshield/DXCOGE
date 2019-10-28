@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsLetC" targetNamespace="http://tempuri.org/DsLetC.xsd" xmlns:mstns="http://tempuri.org/DsLetC.xsd" xmlns="http://tempuri.org/DsLetC.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VDichCliTableAdapter" GeneratorDataComponentClassName="VDichCliTableAdapter" Name="VDichCli" UserDataComponentName="VDichCliTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectName="COGE.dbo.VDichCli" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DDiCId, DDiCAnno, DDiCNProgInterno, DDiCNProgDichiar, DDiCCli, DDiCCodEse, DDiCOpDa3, DDiCOpAa3, DDiCDataDoc, DDiCRicev, DDiCRegBollo, DDiCUPag,DDiImporto,AnaProg, AnaDesc, AnaPiva, AnaCfis, AnaIndirizzo, AnaCap, AnaCitta, AnaProv, AnaTel1, AnaTel2, AnaTel3, AnaWww, AnaEmail, AnaGrp, AnaCod, AnaResp, AnaNote, AnaFax, AnaRag1, AnaRag2, AnaPivaEst, AnaNoRubrica, CiiCod, CiiAli, CiiInd, CiiTp, CiiCmp, CiiDes, CiiCau, Anagrafica FROM dbo.VDichCli</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DDiCId" DataSetColumn="DDiCId" />
+              <Mapping SourceColumn="DDiCAnno" DataSetColumn="DDiCAnno" />
+              <Mapping SourceColumn="DDiCNProgInterno" DataSetColumn="DDiCNProgInterno" />
+              <Mapping SourceColumn="DDiCNProgDichiar" DataSetColumn="DDiCNProgDichiar" />
+              <Mapping SourceColumn="DDiCCli" DataSetColumn="DDiCCli" />
+              <Mapping SourceColumn="DDiCCodEse" DataSetColumn="DDiCCodEse" />
+              <Mapping SourceColumn="DDiCOpDa3" DataSetColumn="DDiCOpDa3" />
+              <Mapping SourceColumn="DDiCOpAa3" DataSetColumn="DDiCOpAa3" />
+              <Mapping SourceColumn="DDiCDataDoc" DataSetColumn="DDiCDataDoc" />
+              <Mapping SourceColumn="DDiCRicev" DataSetColumn="DDiCRicev" />
+              <Mapping SourceColumn="DDiCRegBollo" DataSetColumn="DDiCRegBollo" />
+              <Mapping SourceColumn="DDiCUPag" DataSetColumn="DDiCUPag" />
+              <Mapping SourceColumn="AnaProg" DataSetColumn="AnaProg" />
+              <Mapping SourceColumn="AnaDesc" DataSetColumn="AnaDesc" />
+              <Mapping SourceColumn="AnaPiva" DataSetColumn="AnaPiva" />
+              <Mapping SourceColumn="AnaCfis" DataSetColumn="AnaCfis" />
+              <Mapping SourceColumn="AnaIndirizzo" DataSetColumn="AnaIndirizzo" />
+              <Mapping SourceColumn="AnaCap" DataSetColumn="AnaCap" />
+              <Mapping SourceColumn="AnaCitta" DataSetColumn="AnaCitta" />
+              <Mapping SourceColumn="AnaProv" DataSetColumn="AnaProv" />
+              <Mapping SourceColumn="AnaTel1" DataSetColumn="AnaTel1" />
+              <Mapping SourceColumn="AnaTel2" DataSetColumn="AnaTel2" />
+              <Mapping SourceColumn="AnaTel3" DataSetColumn="AnaTel3" />
+              <Mapping SourceColumn="AnaWww" DataSetColumn="AnaWww" />
+              <Mapping SourceColumn="AnaEmail" DataSetColumn="AnaEmail" />
+              <Mapping SourceColumn="AnaGrp" DataSetColumn="AnaGrp" />
+              <Mapping SourceColumn="AnaCod" DataSetColumn="AnaCod" />
+              <Mapping SourceColumn="AnaResp" DataSetColumn="AnaResp" />
+              <Mapping SourceColumn="AnaNote" DataSetColumn="AnaNote" />
+              <Mapping SourceColumn="AnaFax" DataSetColumn="AnaFax" />
+              <Mapping SourceColumn="AnaRag1" DataSetColumn="AnaRag1" />
+              <Mapping SourceColumn="AnaRag2" DataSetColumn="AnaRag2" />
+              <Mapping SourceColumn="AnaPivaEst" DataSetColumn="AnaPivaEst" />
+              <Mapping SourceColumn="AnaNoRubrica" DataSetColumn="AnaNoRubrica" />
+              <Mapping SourceColumn="CiiCod" DataSetColumn="CiiCod" />
+              <Mapping SourceColumn="CiiAli" DataSetColumn="CiiAli" />
+              <Mapping SourceColumn="CiiInd" DataSetColumn="CiiInd" />
+              <Mapping SourceColumn="CiiTp" DataSetColumn="CiiTp" />
+              <Mapping SourceColumn="CiiCmp" DataSetColumn="CiiCmp" />
+              <Mapping SourceColumn="CiiDes" DataSetColumn="CiiDes" />
+              <Mapping SourceColumn="CiiCau" DataSetColumn="CiiCau" />
+              <Mapping SourceColumn="Anagrafica" DataSetColumn="Anagrafica" />
+              <Mapping SourceColumn="DDiImporto" DataSetColumn="DDiImporto" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsLetC" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsLetC" msprop:Generator_UserDSName="DsLetC">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VDichCli" msprop:Generator_TableClassName="VDichCliDataTable" msprop:Generator_TableVarName="tableVDichCli" msprop:Generator_RowChangedName="VDichCliRowChanged" msprop:Generator_TablePropName="VDichCli" msprop:Generator_RowDeletingName="VDichCliRowDeleting" msprop:Generator_RowChangingName="VDichCliRowChanging" msprop:Generator_RowEvHandlerName="VDichCliRowChangeEventHandler" msprop:Generator_RowDeletedName="VDichCliRowDeleted" msprop:Generator_RowClassName="VDichCliRow" msprop:Generator_UserTableName="VDichCli" msprop:Generator_RowEvArgName="VDichCliRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DDiCId" msprop:Generator_ColumnVarNameInTable="columnDDiCId" msprop:Generator_ColumnPropNameInRow="DDiCId" msprop:Generator_ColumnPropNameInTable="DDiCIdColumn" msprop:Generator_UserColumnName="DDiCId" type="xs:int" />
+              <xs:element name="DDiCAnno" msprop:Generator_ColumnVarNameInTable="columnDDiCAnno" msprop:Generator_ColumnPropNameInRow="DDiCAnno" msprop:Generator_ColumnPropNameInTable="DDiCAnnoColumn" msprop:Generator_UserColumnName="DDiCAnno" type="xs:short" />
+              <xs:element name="DDiCNProgInterno" msprop:Generator_ColumnVarNameInTable="columnDDiCNProgInterno" msprop:Generator_ColumnPropNameInRow="DDiCNProgInterno" msprop:Generator_ColumnPropNameInTable="DDiCNProgInternoColumn" msprop:Generator_UserColumnName="DDiCNProgInterno" type="xs:short" />
+              <xs:element name="DDiCNProgDichiar" msprop:Generator_ColumnVarNameInTable="columnDDiCNProgDichiar" msprop:Generator_ColumnPropNameInRow="DDiCNProgDichiar" msprop:Generator_ColumnPropNameInTable="DDiCNProgDichiarColumn" msprop:Generator_UserColumnName="DDiCNProgDichiar" type="xs:short" />
+              <xs:element name="DDiCCli" msprop:Generator_ColumnVarNameInTable="columnDDiCCli" msprop:Generator_ColumnPropNameInRow="DDiCCli" msprop:Generator_ColumnPropNameInTable="DDiCCliColumn" msprop:Generator_UserColumnName="DDiCCli">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DDiCCodEse" msprop:Generator_ColumnVarNameInTable="columnDDiCCodEse" msprop:Generator_ColumnPropNameInRow="DDiCCodEse" msprop:Generator_ColumnPropNameInTable="DDiCCodEseColumn" msprop:Generator_UserColumnName="DDiCCodEse" type="xs:unsignedByte" />
+              <xs:element name="DDiCOpDa3" msprop:Generator_ColumnVarNameInTable="columnDDiCOpDa3" msprop:Generator_ColumnPropNameInRow="DDiCOpDa3" msprop:Generator_ColumnPropNameInTable="DDiCOpDa3Column" msprop:Generator_UserColumnName="DDiCOpDa3" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DDiCOpAa3" msprop:Generator_ColumnVarNameInTable="columnDDiCOpAa3" msprop:Generator_ColumnPropNameInRow="DDiCOpAa3" msprop:Generator_ColumnPropNameInTable="DDiCOpAa3Column" msprop:Generator_UserColumnName="DDiCOpAa3" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DDiCDataDoc" msprop:Generator_ColumnVarNameInTable="columnDDiCDataDoc" msprop:Generator_ColumnPropNameInRow="DDiCDataDoc" msprop:Generator_ColumnPropNameInTable="DDiCDataDocColumn" msprop:Generator_UserColumnName="DDiCDataDoc" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DDiCRicev" msprop:Generator_ColumnVarNameInTable="columnDDiCRicev" msprop:Generator_ColumnPropNameInRow="DDiCRicev" msprop:Generator_ColumnPropNameInTable="DDiCRicevColumn" msprop:Generator_UserColumnName="DDiCRicev" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DDiCRegBollo" msprop:Generator_ColumnVarNameInTable="columnDDiCRegBollo" msprop:Generator_ColumnPropNameInRow="DDiCRegBollo" msprop:Generator_ColumnPropNameInTable="DDiCRegBolloColumn" msprop:Generator_UserColumnName="DDiCRegBollo" type="xs:boolean" />
+              <xs:element name="DDiCUPag" msprop:Generator_ColumnVarNameInTable="columnDDiCUPag" msprop:Generator_ColumnPropNameInRow="DDiCUPag" msprop:Generator_ColumnPropNameInTable="DDiCUPagColumn" msprop:Generator_UserColumnName="DDiCUPag" type="xs:short" />
+              <xs:element name="AnaProg" msprop:Generator_ColumnVarNameInTable="columnAnaProg" msprop:Generator_ColumnPropNameInRow="AnaProg" msprop:Generator_ColumnPropNameInTable="AnaProgColumn" msprop:Generator_UserColumnName="AnaProg" type="xs:int" />
+              <xs:element name="AnaDesc" msprop:Generator_ColumnVarNameInTable="columnAnaDesc" msprop:Generator_ColumnPropNameInRow="AnaDesc" msprop:Generator_ColumnPropNameInTable="AnaDescColumn" msprop:Generator_UserColumnName="AnaDesc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaPiva" msprop:Generator_ColumnVarNameInTable="columnAnaPiva" msprop:Generator_ColumnPropNameInRow="AnaPiva" msprop:Generator_ColumnPropNameInTable="AnaPivaColumn" msprop:Generator_UserColumnName="AnaPiva">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaCfis" msprop:Generator_ColumnVarNameInTable="columnAnaCfis" msprop:Generator_ColumnPropNameInRow="AnaCfis" msprop:Generator_ColumnPropNameInTable="AnaCfisColumn" msprop:Generator_UserColumnName="AnaCfis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaIndirizzo" msprop:Generator_ColumnVarNameInTable="columnAnaIndirizzo" msprop:Generator_ColumnPropNameInRow="AnaIndirizzo" msprop:Generator_ColumnPropNameInTable="AnaIndirizzoColumn" msprop:Generator_UserColumnName="AnaIndirizzo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaCap" msprop:Generator_ColumnVarNameInTable="columnAnaCap" msprop:Generator_ColumnPropNameInRow="AnaCap" msprop:Generator_ColumnPropNameInTable="AnaCapColumn" msprop:Generator_UserColumnName="AnaCap">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaCitta" msprop:Generator_ColumnVarNameInTable="columnAnaCitta" msprop:Generator_ColumnPropNameInRow="AnaCitta" msprop:Generator_ColumnPropNameInTable="AnaCittaColumn" msprop:Generator_UserColumnName="AnaCitta">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaProv" msprop:Generator_ColumnVarNameInTable="columnAnaProv" msprop:Generator_ColumnPropNameInRow="AnaProv" msprop:Generator_ColumnPropNameInTable="AnaProvColumn" msprop:Generator_UserColumnName="AnaProv">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaTel1" msprop:Generator_ColumnVarNameInTable="columnAnaTel1" msprop:Generator_ColumnPropNameInRow="AnaTel1" msprop:Generator_ColumnPropNameInTable="AnaTel1Column" msprop:Generator_UserColumnName="AnaTel1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaTel2" msprop:Generator_ColumnVarNameInTable="columnAnaTel2" msprop:Generator_ColumnPropNameInRow="AnaTel2" msprop:Generator_ColumnPropNameInTable="AnaTel2Column" msprop:Generator_UserColumnName="AnaTel2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaTel3" msprop:Generator_ColumnVarNameInTable="columnAnaTel3" msprop:Generator_ColumnPropNameInRow="AnaTel3" msprop:Generator_ColumnPropNameInTable="AnaTel3Column" msprop:Generator_UserColumnName="AnaTel3">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaWww" msprop:Generator_ColumnVarNameInTable="columnAnaWww" msprop:Generator_ColumnPropNameInRow="AnaWww" msprop:Generator_ColumnPropNameInTable="AnaWwwColumn" msprop:Generator_UserColumnName="AnaWww">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaEmail" msprop:Generator_ColumnVarNameInTable="columnAnaEmail" msprop:Generator_ColumnPropNameInRow="AnaEmail" msprop:Generator_ColumnPropNameInTable="AnaEmailColumn" msprop:Generator_UserColumnName="AnaEmail">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaGrp" msprop:Generator_ColumnVarNameInTable="columnAnaGrp" msprop:Generator_ColumnPropNameInRow="AnaGrp" msprop:Generator_ColumnPropNameInTable="AnaGrpColumn" msprop:Generator_UserColumnName="AnaGrp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaCod" msprop:Generator_ColumnVarNameInTable="columnAnaCod" msprop:Generator_ColumnPropNameInRow="AnaCod" msprop:Generator_ColumnPropNameInTable="AnaCodColumn" msprop:Generator_UserColumnName="AnaCod">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaResp" msprop:Generator_ColumnVarNameInTable="columnAnaResp" msprop:Generator_ColumnPropNameInRow="AnaResp" msprop:Generator_ColumnPropNameInTable="AnaRespColumn" msprop:Generator_UserColumnName="AnaResp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaNote" msprop:Generator_ColumnVarNameInTable="columnAnaNote" msprop:Generator_ColumnPropNameInRow="AnaNote" msprop:Generator_ColumnPropNameInTable="AnaNoteColumn" msprop:Generator_UserColumnName="AnaNote">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaFax" msprop:Generator_ColumnVarNameInTable="columnAnaFax" msprop:Generator_ColumnPropNameInRow="AnaFax" msprop:Generator_ColumnPropNameInTable="AnaFaxColumn" msprop:Generator_UserColumnName="AnaFax">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaRag1" msprop:Generator_ColumnVarNameInTable="columnAnaRag1" msprop:Generator_ColumnPropNameInRow="AnaRag1" msprop:Generator_ColumnPropNameInTable="AnaRag1Column" msprop:Generator_UserColumnName="AnaRag1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="28" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaRag2" msprop:Generator_ColumnVarNameInTable="columnAnaRag2" msprop:Generator_ColumnPropNameInRow="AnaRag2" msprop:Generator_ColumnPropNameInTable="AnaRag2Column" msprop:Generator_UserColumnName="AnaRag2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="28" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaPivaEst" msprop:Generator_ColumnVarNameInTable="columnAnaPivaEst" msprop:Generator_ColumnPropNameInRow="AnaPivaEst" msprop:Generator_ColumnPropNameInTable="AnaPivaEstColumn" msprop:Generator_UserColumnName="AnaPivaEst" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaNoRubrica" msprop:Generator_ColumnVarNameInTable="columnAnaNoRubrica" msprop:Generator_ColumnPropNameInRow="AnaNoRubrica" msprop:Generator_ColumnPropNameInTable="AnaNoRubricaColumn" msprop:Generator_UserColumnName="AnaNoRubrica" type="xs:boolean" />
+              <xs:element name="CiiCod" msprop:Generator_ColumnVarNameInTable="columnCiiCod" msprop:Generator_ColumnPropNameInRow="CiiCod" msprop:Generator_ColumnPropNameInTable="CiiCodColumn" msprop:Generator_UserColumnName="CiiCod" type="xs:short" />
+              <xs:element name="CiiAli" msprop:Generator_ColumnVarNameInTable="columnCiiAli" msprop:Generator_ColumnPropNameInRow="CiiAli" msprop:Generator_ColumnPropNameInTable="CiiAliColumn" msprop:Generator_UserColumnName="CiiAli" type="xs:short" />
+              <xs:element name="CiiInd" msprop:Generator_ColumnVarNameInTable="columnCiiInd" msprop:Generator_ColumnPropNameInRow="CiiInd" msprop:Generator_ColumnPropNameInTable="CiiIndColumn" msprop:Generator_UserColumnName="CiiInd" type="xs:short" />
+              <xs:element name="CiiTp" msprop:Generator_ColumnVarNameInTable="columnCiiTp" msprop:Generator_ColumnPropNameInRow="CiiTp" msprop:Generator_ColumnPropNameInTable="CiiTpColumn" msprop:Generator_UserColumnName="CiiTp" type="xs:short" />
+              <xs:element name="CiiCmp" msprop:Generator_ColumnVarNameInTable="columnCiiCmp" msprop:Generator_ColumnPropNameInRow="CiiCmp" msprop:Generator_ColumnPropNameInTable="CiiCmpColumn" msprop:Generator_UserColumnName="CiiCmp" type="xs:short" />
+              <xs:element name="CiiDes" msprop:Generator_ColumnVarNameInTable="columnCiiDes" msprop:Generator_ColumnPropNameInRow="CiiDes" msprop:Generator_ColumnPropNameInTable="CiiDesColumn" msprop:Generator_UserColumnName="CiiDes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CiiCau" msprop:Generator_ColumnVarNameInTable="columnCiiCau" msprop:Generator_ColumnPropNameInRow="CiiCau" msprop:Generator_ColumnPropNameInTable="CiiCauColumn" msprop:Generator_UserColumnName="CiiCau">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Anagrafica" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAnagrafica" msprop:Generator_ColumnPropNameInRow="Anagrafica" msprop:Generator_ColumnPropNameInTable="AnagraficaColumn" msprop:Generator_UserColumnName="Anagrafica" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="191" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DDiImporto" msprop:Generator_ColumnVarNameInTable="columnDDiImporto" msprop:Generator_ColumnPropNameInRow="DDiImporto" msprop:Generator_ColumnPropNameInTable="DDiImportoColumn" msprop:Generator_UserColumnName="DDiImporto" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VDichCli" />
+      <xs:field xpath="mstns:DDiCId" />
+      <xs:field xpath="mstns:AnaProg" />
+      <xs:field xpath="mstns:CiiCod" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

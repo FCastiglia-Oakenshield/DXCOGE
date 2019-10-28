@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsPiaLDP" targetNamespace="http://tempuri.org/DsPiaLDP.xsd" xmlns:mstns="http://tempuri.org/DsPiaLDP.xsd" xmlns="http://tempuri.org/DsPiaLDP.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DCDCConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DCDCConnectionString2 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.DCDCConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CRPIACDCTableAdapter" GeneratorDataComponentClassName="CRPIACDCTableAdapter" Name="CRPIACDC" UserDataComponentName="CRPIACDCTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DCDCConnectionString2 (MySettings)" DbObjectName="DCDC.dbo.CRPIACDC" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT CodiceSottoconto, Descrizione, MASTRO, PiaCodCo, PiaAnaCo, PiaFl01, PiaFl02, PiaFl03, PiaFl04, PiaFl05, PiaFl06, PiaFl07, PiaFl08, PiaFl09, PiaFl10, PiaFl11, PiaFl12, Cdc FROM dbo.CRPIACDC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodiceSottoconto" DataSetColumn="CodiceSottoconto" />
+              <Mapping SourceColumn="Descrizione" DataSetColumn="Descrizione" />
+              <Mapping SourceColumn="MASTRO" DataSetColumn="MASTRO" />
+              <Mapping SourceColumn="PiaCodCo" DataSetColumn="PiaCodCo" />
+              <Mapping SourceColumn="PiaAnaCo" DataSetColumn="PiaAnaCo" />
+              <Mapping SourceColumn="PiaFl01" DataSetColumn="PiaFl01" />
+              <Mapping SourceColumn="PiaFl02" DataSetColumn="PiaFl02" />
+              <Mapping SourceColumn="PiaFl03" DataSetColumn="PiaFl03" />
+              <Mapping SourceColumn="PiaFl04" DataSetColumn="PiaFl04" />
+              <Mapping SourceColumn="PiaFl05" DataSetColumn="PiaFl05" />
+              <Mapping SourceColumn="PiaFl06" DataSetColumn="PiaFl06" />
+              <Mapping SourceColumn="PiaFl07" DataSetColumn="PiaFl07" />
+              <Mapping SourceColumn="PiaFl08" DataSetColumn="PiaFl08" />
+              <Mapping SourceColumn="PiaFl09" DataSetColumn="PiaFl09" />
+              <Mapping SourceColumn="PiaFl10" DataSetColumn="PiaFl10" />
+              <Mapping SourceColumn="PiaFl11" DataSetColumn="PiaFl11" />
+              <Mapping SourceColumn="PiaFl12" DataSetColumn="PiaFl12" />
+              <Mapping SourceColumn="Cdc" DataSetColumn="Cdc" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsPiaLDP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsPiaLDP" msprop:Generator_UserDSName="DsPiaLDP">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CRPIACDC" msprop:Generator_TableClassName="CRPIACDCDataTable" msprop:Generator_TableVarName="tableCRPIACDC" msprop:Generator_TablePropName="CRPIACDC" msprop:Generator_RowDeletingName="CRPIACDCRowDeleting" msprop:Generator_RowChangingName="CRPIACDCRowChanging" msprop:Generator_RowEvHandlerName="CRPIACDCRowChangeEventHandler" msprop:Generator_RowDeletedName="CRPIACDCRowDeleted" msprop:Generator_UserTableName="CRPIACDC" msprop:Generator_RowChangedName="CRPIACDCRowChanged" msprop:Generator_RowEvArgName="CRPIACDCRowChangeEvent" msprop:Generator_RowClassName="CRPIACDCRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodiceSottoconto" msprop:Generator_ColumnVarNameInTable="columnCodiceSottoconto" msprop:Generator_ColumnPropNameInRow="CodiceSottoconto" msprop:Generator_ColumnPropNameInTable="CodiceSottocontoColumn" msprop:Generator_UserColumnName="CodiceSottoconto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descrizione" msprop:Generator_ColumnVarNameInTable="columnDescrizione" msprop:Generator_ColumnPropNameInRow="Descrizione" msprop:Generator_ColumnPropNameInTable="DescrizioneColumn" msprop:Generator_UserColumnName="Descrizione">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MASTRO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMASTRO" msprop:Generator_ColumnPropNameInRow="MASTRO" msprop:Generator_ColumnPropNameInTable="MASTROColumn" msprop:Generator_UserColumnName="MASTRO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PiaCodCo" msprop:Generator_ColumnVarNameInTable="columnPiaCodCo" msprop:Generator_ColumnPropNameInRow="PiaCodCo" msprop:Generator_ColumnPropNameInTable="PiaCodCoColumn" msprop:Generator_UserColumnName="PiaCodCo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PiaAnaCo" msprop:Generator_ColumnVarNameInTable="columnPiaAnaCo" msprop:Generator_ColumnPropNameInRow="PiaAnaCo" msprop:Generator_ColumnPropNameInTable="PiaAnaCoColumn" msprop:Generator_UserColumnName="PiaAnaCo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PiaFl01" msprop:Generator_ColumnVarNameInTable="columnPiaFl01" msprop:Generator_ColumnPropNameInRow="PiaFl01" msprop:Generator_ColumnPropNameInTable="PiaFl01Column" msprop:Generator_UserColumnName="PiaFl01" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl02" msprop:Generator_ColumnVarNameInTable="columnPiaFl02" msprop:Generator_ColumnPropNameInRow="PiaFl02" msprop:Generator_ColumnPropNameInTable="PiaFl02Column" msprop:Generator_UserColumnName="PiaFl02" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl03" msprop:Generator_ColumnVarNameInTable="columnPiaFl03" msprop:Generator_ColumnPropNameInRow="PiaFl03" msprop:Generator_ColumnPropNameInTable="PiaFl03Column" msprop:Generator_UserColumnName="PiaFl03" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl04" msprop:Generator_ColumnVarNameInTable="columnPiaFl04" msprop:Generator_ColumnPropNameInRow="PiaFl04" msprop:Generator_ColumnPropNameInTable="PiaFl04Column" msprop:Generator_UserColumnName="PiaFl04" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl05" msprop:Generator_ColumnVarNameInTable="columnPiaFl05" msprop:Generator_ColumnPropNameInRow="PiaFl05" msprop:Generator_ColumnPropNameInTable="PiaFl05Column" msprop:Generator_UserColumnName="PiaFl05" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl06" msprop:Generator_ColumnVarNameInTable="columnPiaFl06" msprop:Generator_ColumnPropNameInRow="PiaFl06" msprop:Generator_ColumnPropNameInTable="PiaFl06Column" msprop:Generator_UserColumnName="PiaFl06" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl07" msprop:Generator_ColumnVarNameInTable="columnPiaFl07" msprop:Generator_ColumnPropNameInRow="PiaFl07" msprop:Generator_ColumnPropNameInTable="PiaFl07Column" msprop:Generator_UserColumnName="PiaFl07" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl08" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPiaFl08" msprop:Generator_ColumnPropNameInRow="PiaFl08" msprop:Generator_ColumnPropNameInTable="PiaFl08Column" msprop:Generator_UserColumnName="PiaFl08" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl09" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPiaFl09" msprop:Generator_ColumnPropNameInRow="PiaFl09" msprop:Generator_ColumnPropNameInTable="PiaFl09Column" msprop:Generator_UserColumnName="PiaFl09" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl10" msprop:Generator_ColumnVarNameInTable="columnPiaFl10" msprop:Generator_ColumnPropNameInRow="PiaFl10" msprop:Generator_ColumnPropNameInTable="PiaFl10Column" msprop:Generator_UserColumnName="PiaFl10" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl11" msprop:Generator_ColumnVarNameInTable="columnPiaFl11" msprop:Generator_ColumnPropNameInRow="PiaFl11" msprop:Generator_ColumnPropNameInTable="PiaFl11Column" msprop:Generator_UserColumnName="PiaFl11" type="xs:short" minOccurs="0" />
+              <xs:element name="PiaFl12" msprop:Generator_ColumnVarNameInTable="columnPiaFl12" msprop:Generator_ColumnPropNameInRow="PiaFl12" msprop:Generator_ColumnPropNameInTable="PiaFl12Column" msprop:Generator_UserColumnName="PiaFl12" type="xs:short" minOccurs="0" />
+              <xs:element name="Cdc" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCdc" msprop:Generator_ColumnPropNameInRow="Cdc" msprop:Generator_ColumnPropNameInTable="CdcColumn" msprop:Generator_UserColumnName="Cdc" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:CRPIACDC" />
+      <xs:field xpath="mstns:CodiceSottoconto" />
+      <xs:field xpath="mstns:PiaCodCo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

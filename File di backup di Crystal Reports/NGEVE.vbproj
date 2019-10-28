@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8717DCD-AD4B-4381-A846-D75D22B35C40}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>NGEVE</RootNamespace>
+    <AssemblyName>NGEVE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DXBASE">
+      <HintPath>..\..\DXBASE\bin\DXBASE.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArcImm.Designer.vb">
+      <DependentUpon>ArcImm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArcImm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BienneChiusura.vb" />
+    <Compile Include="ClieComunita.Designer.vb">
+      <DependentUpon>ClieComunita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClieComunita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DsFat1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsFat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmRicSer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Immobili.Designer.vb">
+      <DependentUpon>Immobili.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Immobili.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inquilini.Designer.vb">
+      <DependentUpon>Inquilini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inquilini.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NAffitti.Designer.vb">
+      <DependentUpon>NAffitti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NAffitti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RicDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RicevPag.Designer.vb">
+      <DependentUpon>RicevPag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RicevPag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSChiusura.vb" />
+    <Compile Include="Clienti.Designer.vb">
+      <DependentUpon>Clienti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clienti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DsFat.Designer.vb">
+      <DependentUpon>DsFat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DsFat.vb">
+      <DependentUpon>DsFat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FatNcr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornitori.Designer.vb">
+      <DependentUpon>Fornitori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornitori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="BiEnneFat.Designer.vb">
+      <DependentUpon>BiEnneFat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BiEnneFat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query.vb" />
+    <Compile Include="RSIndici.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSProspetto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSStaCli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servizi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CifreLettere.vb" />
+    <Compile Include="StImmobili.Designer.vb">
+      <DependentUpon>StImmobili.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StImmobili.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StInquilini.Designer.vb">
+      <DependentUpon>StInquilini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StInquilini.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabVend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestComunita.Designer.vb">
+      <DependentUpon>TestComunita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestComunita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XBienneFat.Designer.vb">
+      <DependentUpon>XBienneFat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XBienneFat.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ArcImm.resx">
+      <DependentUpon>ArcImm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClieComunita.resx">
+      <DependentUpon>ClieComunita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRicSer.resx">
+      <DependentUpon>frmRicSer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Immobili.resx">
+      <DependentUpon>Immobili.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inquilini.resx">
+      <DependentUpon>Inquilini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NAffitti.resx">
+      <DependentUpon>NAffitti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RicDoc.resx">
+      <DependentUpon>RicDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RicevPag.resx">
+      <DependentUpon>RicevPag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSChiusura.resx">
+      <DependentUpon>RSChiusura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clienti.resx">
+      <DependentUpon>Clienti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FatNcr.resx">
+      <DependentUpon>FatNcr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornitori.resx">
+      <DependentUpon>Fornitori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiEnneFat.resx">
+      <DependentUpon>BiEnneFat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSIndici.resx">
+      <DependentUpon>RSIndici.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSProspetto.resx">
+      <DependentUpon>RSProspetto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSStaCli.resx">
+      <DependentUpon>RSStaCli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servizi.resx">
+      <DependentUpon>Servizi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StImmobili.resx">
+      <DependentUpon>StImmobili.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StInquilini.resx">
+      <DependentUpon>StInquilini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabVend.resx">
+      <DependentUpon>TabVend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestComunita.resx">
+      <DependentUpon>TestComunita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XBienneFat.resx">
+      <DependentUpon>XBienneFat.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DsFat.xsc">
+      <DependentUpon>DsFat.xsd</DependentUpon>
+    </None>
+    <None Include="DsFat.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsFat1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsFat.xss">
+      <DependentUpon>DsFat.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCCOM\NCCOM.vbproj">
+      <Project>{83CA8095-1EF5-4A9C-96EA-CDE3EE1D4DAB}</Project>
+      <Name>NCCOM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NPRINT\NPRINT.vbproj">
+      <Project>{2A91B625-85D8-42E9-A503-F062CE8EBB2A}</Project>
+      <Name>NPRINT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

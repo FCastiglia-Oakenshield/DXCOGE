@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsFat" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=SVRSELCO;Initial Catalog=GEVE;Persist Security Info=True;User ID=selco;Password=master" IsAppSettingsProperty="false" Modifier="Assembly" Name="Connection" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VPRINTFATAdapter" GeneratorDataComponentClassName="VPRINTFATAdapter" Name="VPRINTFAT" UserDataComponentName="VPRINTFATAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Connection" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT FatRif, FatTipoDoc, FatNum, FatData, FatCliCons, FatPagCod, FatAbi, FatCab, FatEsespe, FatNimp, FatCau, FatCliFat, FatNumReg, FatBanca, FatTrasf, FatDiff, FatLibera, FatComRif, FatRifOrdine, FatCodBan, FatBollo, FatNonImpDesc, ClCod, ClCntRid, ClCodBan, ClFt1, ClFt2, ClFt3, ClFt4, ClFt5, ClCC, ClCinEur, ClCin, CorDesc, CorImporto, CorCiva, DcgImp1, DcgCodIva1,DcgIva1D, DcgIva1, DcgImp2, DcgCodIva2,DcgIva2D, DcgIva2, DcgRieTotImp, DcgRieTotEse, DcgRieTotIva, DcgRieTotFat,AnaPiva,AnaCfis,AnaPivaEst,FatPagam ,Partita , BAppoggio,CaPaese ,BanCin , BanCinEur,CaAbi,CaCab,BANCC,CaBic FROM dbo.VPRINTFAT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FatRif" DataSetColumn="FatRif" />
+              <Mapping SourceColumn="FatTipoDoc" DataSetColumn="FatTipoDoc" />
+              <Mapping SourceColumn="FatNum" DataSetColumn="FatNum" />
+              <Mapping SourceColumn="FatData" DataSetColumn="FatData" />
+              <Mapping SourceColumn="FatCliCons" DataSetColumn="FatCliCons" />
+              <Mapping SourceColumn="FatPagCod" DataSetColumn="FatPagCod" />
+              <Mapping SourceColumn="FatAbi" DataSetColumn="FatAbi" />
+              <Mapping SourceColumn="FatCab" DataSetColumn="FatCab" />
+              <Mapping SourceColumn="FatEsespe" DataSetColumn="FatEsespe" />
+              <Mapping SourceColumn="FatNimp" DataSetColumn="FatNimp" />
+              <Mapping SourceColumn="FatCau" DataSetColumn="FatCau" />
+              <Mapping SourceColumn="FatCliFat" DataSetColumn="FatCliFat" />
+              <Mapping SourceColumn="FatNumReg" DataSetColumn="FatNumReg" />
+              <Mapping SourceColumn="FatBanca" DataSetColumn="FatBanca" />
+              <Mapping SourceColumn="FatTrasf" DataSetColumn="FatTrasf" />
+              <Mapping SourceColumn="FatDiff" DataSetColumn="FatDiff" />
+              <Mapping SourceColumn="FatLibera" DataSetColumn="FatLibera" />
+              <Mapping SourceColumn="FatComRif" DataSetColumn="FatComRif" />
+              <Mapping SourceColumn="FatRifOrdine" DataSetColumn="FatRifOrdine" />
+              <Mapping SourceColumn="FatCodBan" DataSetColumn="FatCodBan" />
+              <Mapping SourceColumn="FatBollo" DataSetColumn="FatBollo" />
+              <Mapping SourceColumn="FatNonImpDesc" DataSetColumn="FatNonImpDesc" />
+              <Mapping SourceColumn="ClCod" DataSetColumn="ClCod" />
+              <Mapping SourceColumn="ClCntRid" DataSetColumn="ClCntRid" />
+              <Mapping SourceColumn="ClCodBan" DataSetColumn="ClCodBan" />
+              <Mapping SourceColumn="ClFt1" DataSetColumn="ClFt1" />
+              <Mapping SourceColumn="ClFt2" DataSetColumn="ClFt2" />
+              <Mapping SourceColumn="ClFt3" DataSetColumn="ClFt3" />
+              <Mapping SourceColumn="ClFt4" DataSetColumn="ClFt4" />
+              <Mapping SourceColumn="ClFt5" DataSetColumn="ClFt5" />
+              <Mapping SourceColumn="ClCC" DataSetColumn="ClCC" />
+              <Mapping SourceColumn="ClCinEur" DataSetColumn="ClCinEur" />
+              <Mapping SourceColumn="ClCin" DataSetColumn="ClCin" />
+              <Mapping SourceColumn="CorDesc" DataSetColumn="CorDesc" />
+              <Mapping SourceColumn="CorImporto" DataSetColumn="CorImporto" />
+              <Mapping SourceColumn="CorCiva" DataSetColumn="CorCiva" />
+              <Mapping SourceColumn="DcgImp1" DataSetColumn="DcgImp1" />
+              <Mapping SourceColumn="DcgIva1D" DataSetColumn="DcgIva1D" />
+              <Mapping SourceColumn="DcgIva1" DataSetColumn="DcgIva1" />
+              <Mapping SourceColumn="DcgImp2" DataSetColumn="DcgImp2" />
+              <Mapping SourceColumn="DcgIva2D" DataSetColumn="DcgIva2D" />
+              <Mapping SourceColumn="DcgIva2" DataSetColumn="DcgIva2" />
+              <Mapping SourceColumn="DcgRieTotImp" DataSetColumn="DcgRieTotImp" />
+              <Mapping SourceColumn="DcgRieTotEse" DataSetColumn="DcgRieTotEse" />
+              <Mapping SourceColumn="DcgRieTotIva" DataSetColumn="DcgRieTotIva" />
+              <Mapping SourceColumn="DcgRieTotFat" DataSetColumn="DcgRieTotFat" />
+              <Mapping SourceColumn="AnaPiva" DataSetColumn="AnaPiva" />
+              <Mapping SourceColumn="AnaCfis" DataSetColumn="AnaCfis" />
+              <Mapping SourceColumn="AnaPivaEst" DataSetColumn="AnaPivaEst" />
+              <Mapping SourceColumn="FatPagam" DataSetColumn="FatPagam" />
+              <Mapping SourceColumn="DcgCodIva1" DataSetColumn="DcgCodIva1" />
+              <Mapping SourceColumn="DcgCodIva2" DataSetColumn="DcgCodIva2" />
+              <Mapping SourceColumn="Partita" DataSetColumn="Partita" />
+              <Mapping SourceColumn="BAppoggio" DataSetColumn="BAppoggio" />
+              <Mapping SourceColumn="CaPaese" DataSetColumn="CaPaese" />
+              <Mapping SourceColumn="BanCin" DataSetColumn="BanCin" />
+              <Mapping SourceColumn="BanCinEur" DataSetColumn="BanCinEur" />
+              <Mapping SourceColumn="CaAbi" DataSetColumn="CaAbi" />
+              <Mapping SourceColumn="CaCab" DataSetColumn="CaCab" />
+              <Mapping SourceColumn="BANCC" DataSetColumn="BANCC" />
+              <Mapping SourceColumn="CaBic" DataSetColumn="CaBic" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsFat" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DsFat" msprop:Generator_DataSetName="DsFat">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VPRINTFAT" msprop:Generator_UserTableName="VPRINTFAT" msprop:Generator_RowDeletedName="VPRINTFATRowDeleted" msprop:Generator_RowChangedName="VPRINTFATRowChanged" msprop:Generator_RowClassName="VPRINTFATRow" msprop:Generator_RowChangingName="VPRINTFATRowChanging" msprop:Generator_RowEvArgName="VPRINTFATRowChangeEvent" msprop:Generator_RowEvHandlerName="VPRINTFATRowChangeEventHandler" msprop:Generator_TableClassName="VPRINTFATDataTable" msprop:Generator_TableVarName="tableVPRINTFAT" msprop:Generator_RowDeletingName="VPRINTFATRowDeleting" msprop:Generator_TablePropName="VPRINTFAT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FatRif" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="FatRif" msprop:Generator_ColumnVarNameInTable="columnFatRif" msprop:Generator_ColumnPropNameInRow="FatRif" msprop:Generator_ColumnPropNameInTable="FatRifColumn" type="xs:int" />
+              <xs:element name="FatTipoDoc" msprop:Generator_UserColumnName="FatTipoDoc" msprop:Generator_ColumnVarNameInTable="columnFatTipoDoc" msprop:Generator_ColumnPropNameInRow="FatTipoDoc" msprop:Generator_ColumnPropNameInTable="FatTipoDocColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatNum" msprop:Generator_UserColumnName="FatNum" msprop:Generator_ColumnVarNameInTable="columnFatNum" msprop:Generator_ColumnPropNameInRow="FatNum" msprop:Generator_ColumnPropNameInTable="FatNumColumn" type="xs:int" />
+              <xs:element name="FatData" msprop:Generator_UserColumnName="FatData" msprop:Generator_ColumnVarNameInTable="columnFatData" msprop:Generator_ColumnPropNameInRow="FatData" msprop:Generator_ColumnPropNameInTable="FatDataColumn" type="xs:dateTime" />
+              <xs:element name="FatCliCons" msprop:Generator_UserColumnName="FatCliCons" msprop:Generator_ColumnVarNameInTable="columnFatCliCons" msprop:Generator_ColumnPropNameInRow="FatCliCons" msprop:Generator_ColumnPropNameInTable="FatCliConsColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatPagCod" msprop:Generator_UserColumnName="FatPagCod" msprop:Generator_ColumnVarNameInTable="columnFatPagCod" msprop:Generator_ColumnPropNameInRow="FatPagCod" msprop:Generator_ColumnPropNameInTable="FatPagCodColumn" type="xs:short" />
+              <xs:element name="FatAbi" msprop:Generator_UserColumnName="FatAbi" msprop:Generator_ColumnVarNameInTable="columnFatAbi" msprop:Generator_ColumnPropNameInRow="FatAbi" msprop:Generator_ColumnPropNameInTable="FatAbiColumn" type="xs:int" />
+              <xs:element name="FatCab" msprop:Generator_UserColumnName="FatCab" msprop:Generator_ColumnVarNameInTable="columnFatCab" msprop:Generator_ColumnPropNameInRow="FatCab" msprop:Generator_ColumnPropNameInTable="FatCabColumn" type="xs:int" />
+              <xs:element name="FatEsespe" msprop:Generator_UserColumnName="FatEsespe" msprop:Generator_ColumnVarNameInTable="columnFatEsespe" msprop:Generator_ColumnPropNameInRow="FatEsespe" msprop:Generator_ColumnPropNameInTable="FatEsespeColumn" type="xs:short" />
+              <xs:element name="FatNimp" msprop:Generator_UserColumnName="FatNimp" msprop:Generator_ColumnVarNameInTable="columnFatNimp" msprop:Generator_ColumnPropNameInRow="FatNimp" msprop:Generator_ColumnPropNameInTable="FatNimpColumn" type="xs:short" />
+              <xs:element name="FatCau" msprop:Generator_UserColumnName="FatCau" msprop:Generator_ColumnVarNameInTable="columnFatCau" msprop:Generator_ColumnPropNameInRow="FatCau" msprop:Generator_ColumnPropNameInTable="FatCauColumn" type="xs:short" />
+              <xs:element name="FatCliFat" msprop:Generator_UserColumnName="FatCliFat" msprop:Generator_ColumnVarNameInTable="columnFatCliFat" msprop:Generator_ColumnPropNameInRow="FatCliFat" msprop:Generator_ColumnPropNameInTable="FatCliFatColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatNumReg" msprop:Generator_UserColumnName="FatNumReg" msprop:Generator_ColumnVarNameInTable="columnFatNumReg" msprop:Generator_ColumnPropNameInRow="FatNumReg" msprop:Generator_ColumnPropNameInTable="FatNumRegColumn" type="xs:short" />
+              <xs:element name="FatBanca" msprop:Generator_UserColumnName="FatBanca" msprop:Generator_ColumnVarNameInTable="columnFatBanca" msprop:Generator_ColumnPropNameInRow="FatBanca" msprop:Generator_ColumnPropNameInTable="FatBancaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatTrasf" msprop:Generator_UserColumnName="FatTrasf" msprop:Generator_ColumnVarNameInTable="columnFatTrasf" msprop:Generator_ColumnPropNameInRow="FatTrasf" msprop:Generator_ColumnPropNameInTable="FatTrasfColumn" type="xs:boolean" />
+              <xs:element name="FatDiff" msprop:Generator_UserColumnName="FatDiff" msprop:Generator_ColumnVarNameInTable="columnFatDiff" msprop:Generator_ColumnPropNameInRow="FatDiff" msprop:Generator_ColumnPropNameInTable="FatDiffColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatLibera" msprop:Generator_UserColumnName="FatLibera" msprop:Generator_ColumnVarNameInTable="columnFatLibera" msprop:Generator_ColumnPropNameInRow="FatLibera" msprop:Generator_ColumnPropNameInTable="FatLiberaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatComRif" msprop:Generator_UserColumnName="FatComRif" msprop:Generator_ColumnVarNameInTable="columnFatComRif" msprop:Generator_ColumnPropNameInRow="FatComRif" msprop:Generator_ColumnPropNameInTable="FatComRifColumn" type="xs:int" />
+              <xs:element name="FatRifOrdine" msprop:Generator_UserColumnName="FatRifOrdine" msprop:Generator_ColumnVarNameInTable="columnFatRifOrdine" msprop:Generator_ColumnPropNameInRow="FatRifOrdine" msprop:Generator_ColumnPropNameInTable="FatRifOrdineColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatCodBan" msprop:Generator_UserColumnName="FatCodBan" msprop:Generator_ColumnVarNameInTable="columnFatCodBan" msprop:Generator_ColumnPropNameInRow="FatCodBan" msprop:Generator_ColumnPropNameInTable="FatCodBanColumn" type="xs:short" />
+              <xs:element name="FatBollo" msprop:Generator_UserColumnName="FatBollo" msprop:Generator_ColumnVarNameInTable="columnFatBollo" msprop:Generator_ColumnPropNameInRow="FatBollo" msprop:Generator_ColumnPropNameInTable="FatBolloColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FatNonImpDesc" msprop:Generator_UserColumnName="FatNonImpDesc" msprop:Generator_ColumnVarNameInTable="columnFatNonImpDesc" msprop:Generator_ColumnPropNameInRow="FatNonImpDesc" msprop:Generator_ColumnPropNameInTable="FatNonImpDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClCod" msprop:Generator_UserColumnName="ClCod" msprop:Generator_ColumnVarNameInTable="columnClCod" msprop:Generator_ColumnPropNameInRow="ClCod" msprop:Generator_ColumnPropNameInTable="ClCodColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClCntRid" msprop:Generator_UserColumnName="ClCntRid" msprop:Generator_ColumnVarNameInTable="columnClCntRid" msprop:Generator_ColumnPropNameInRow="ClCntRid" msprop:Generator_ColumnPropNameInTable="ClCntRidColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClCodBan" msprop:Generator_UserColumnName="ClCodBan" msprop:Generator_ColumnVarNameInTable="columnClCodBan" msprop:Generator_ColumnPropNameInRow="ClCodBan" msprop:Generator_ColumnPropNameInTable="ClCodBanColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="ClFt1" msprop:Generator_UserColumnName="ClFt1" msprop:Generator_ColumnVarNameInTable="columnClFt1" msprop:Generator_ColumnPropNameInRow="ClFt1" msprop:Generator_ColumnPropNameInTable="ClFt1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClFt2" msprop:Generator_UserColumnName="ClFt2" msprop:Generator_ColumnVarNameInTable="columnClFt2" msprop:Generator_ColumnPropNameInRow="ClFt2" msprop:Generator_ColumnPropNameInTable="ClFt2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClFt3" msprop:Generator_UserColumnName="ClFt3" msprop:Generator_ColumnVarNameInTable="columnClFt3" msprop:Generator_ColumnPropNameInRow="ClFt3" msprop:Generator_ColumnPropNameInTable="ClFt3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClFt4" msprop:Generator_UserColumnName="ClFt4" msprop:Generator_ColumnVarNameInTable="columnClFt4" msprop:Generator_ColumnPropNameInRow="ClFt4" msprop:Generator_ColumnPropNameInTable="ClFt4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClFt5" msprop:Generator_UserColumnName="ClFt5" msprop:Generator_ColumnVarNameInTable="columnClFt5" msprop:Generator_ColumnPropNameInRow="ClFt5" msprop:Generator_ColumnPropNameInTable="ClFt5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClCC" msprop:Generator_UserColumnName="ClCC" msprop:Generator_ColumnVarNameInTable="columnClCC" msprop:Generator_ColumnPropNameInRow="ClCC" msprop:Generator_ColumnPropNameInTable="ClCCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClCinEur" msprop:Generator_UserColumnName="ClCinEur" msprop:Generator_ColumnVarNameInTable="columnClCinEur" msprop:Generator_ColumnPropNameInRow="ClCinEur" msprop:Generator_ColumnPropNameInTable="ClCinEurColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClCin" msprop:Generator_UserColumnName="ClCin" msprop:Generator_ColumnVarNameInTable="columnClCin" msprop:Generator_ColumnPropNameInRow="ClCin" msprop:Generator_ColumnPropNameInTable="ClCinColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CorDesc" msprop:Generator_UserColumnName="CorDesc" msprop:Generator_ColumnVarNameInTable="columnCorDesc" msprop:Generator_ColumnPropNameInRow="CorDesc" msprop:Generator_ColumnPropNameInTable="CorDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CorImporto" msprop:Generator_UserColumnName="CorImporto" msprop:Generator_ColumnVarNameInTable="columnCorImporto" msprop:Generator_ColumnPropNameInRow="CorImporto" msprop:Generator_ColumnPropNameInTable="CorImportoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CorCiva" msprop:Generator_UserColumnName="CorCiva" msprop:Generator_ColumnVarNameInTable="columnCorCiva" msprop:Generator_ColumnPropNameInRow="CorCiva" msprop:Generator_ColumnPropNameInTable="CorCivaColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="DcgImp1" msprop:Generator_UserColumnName="DcgImp1" msprop:Generator_ColumnVarNameInTable="columnDcgImp1" msprop:Generator_ColumnPropNameInRow="DcgImp1" msprop:Generator_ColumnPropNameInTable="DcgImp1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DcgIva1D" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DcgIva1D" msprop:Generator_ColumnVarNameInTable="columnDcgIva1D" msprop:Generator_ColumnPropNameInRow="DcgIva1D" msprop:Generator_ColumnPropNameInTable="DcgIva1DColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DcgIva1" msprop:Generator_UserColumnName="DcgIva1" msprop:Generator_ColumnVarNameInTable="columnDcgIva1" msprop:Generator_ColumnPropNameInRow="DcgIva1" msprop:Generator_ColumnPropNameInTable="DcgIva1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DcgImp2" msprop:Generator_UserColumnName="DcgImp2" msprop:Generator_ColumnVarNameInTable="columnDcgImp2" msprop:Generator_ColumnPropNameInRow="DcgImp2" msprop:Generator_ColumnPropNameInTable="DcgImp2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DcgIva2D" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DcgIva2D" msprop:Generator_ColumnVarNameInTable="columnDcgIva2D" msprop:Generator_ColumnPropNameInRow="DcgIva2D" msprop:Generator_ColumnPropNameInTable="DcgIva2DColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DcgIva2" msprop:Generator_UserColumnName="DcgIva2" msprop:Generator_ColumnVarNameInTable="columnDcgIva2" msprop:Generator_ColumnPropNameInRow="DcgIva2" msprop:Generator_ColumnPropNameInTable="DcgIva2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DcgRieTotImp" msprop:Generator_UserColumnName="DcgRieTotImp" msprop:Generator_ColumnVarNameInTable="columnDcgRieTotImp" msprop:Generator_ColumnPropNameInRow="DcgRieTotImp" msprop:Generator_ColumnPropNameInTable="DcgRieTotImpColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DcgRieTotEse" msprop:Generator_UserColumnName="DcgRieTotEse" msprop:Generator_ColumnVarNameInTable="columnDcgRieTotEse" msprop:Generator_ColumnPropNameInRow="DcgRieTotEse" msprop:Generator_ColumnPropNameInTable="DcgRieTotEseColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DcgRieTotIva" msprop:Generator_UserColumnName="DcgRieTotIva" msprop:Generator_ColumnVarNameInTable="columnDcgRieTotIva" msprop:Generator_ColumnPropNameInRow="DcgRieTotIva" msprop:Generator_ColumnPropNameInTable="DcgRieTotIvaColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DcgRieTotFat" msprop:Generator_UserColumnName="DcgRieTotFat" msprop:Generator_ColumnVarNameInTable="columnDcgRieTotFat" msprop:Generator_ColumnPropNameInRow="DcgRieTotFat" msprop:Generator_ColumnPropNameInTable="DcgRieTotFatColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AnaPiva" msprop:Generator_UserColumnName="AnaPiva" msprop:Generator_ColumnVarNameInTable="columnAnaPiva" msprop:Generator_ColumnPropNameInRow="AnaPiva" msprop:Generator_ColumnPropNameInTable="AnaPivaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaCfis" msprop:Generator_UserColumnName="AnaCfis" msprop:Generator_ColumnVarNameInTable="columnAnaCfis" msprop:Generator_ColumnPropNameInRow="AnaCfis" msprop:Generator_ColumnPropNameInTable="AnaCfisColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaPivaEst" msprop:Generator_UserColumnName="AnaPivaEst" msprop:Generator_ColumnVarNameInTable="columnAnaPivaEst" msprop:Generator_ColumnPropNameInRow="AnaPivaEst" msprop:Generator_ColumnPropNameInTable="AnaPivaEstColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatPagam" msdata:ReadOnly="true" msprop:Generator_UserColumnName="FatPagam" msprop:Generator_ColumnPropNameInRow="FatPagam" msprop:Generator_ColumnVarNameInTable="columnFatPagam" msprop:Generator_ColumnPropNameInTable="FatPagamColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DcgCodIva1" msprop:Generator_UserColumnName="DcgCodIva1" msprop:Generator_ColumnVarNameInTable="columnDcgCodIva1" msprop:Generator_ColumnPropNameInRow="DcgCodIva1" msprop:Generator_ColumnPropNameInTable="DcgCodIva1Column" type="xs:short" minOccurs="0" />
+              <xs:element name="DcgCodIva2" msprop:Generator_UserColumnName="DcgCodIva2" msprop:Generator_ColumnVarNameInTable="columnDcgCodIva2" msprop:Generator_ColumnPropNameInRow="DcgCodIva2" msprop:Generator_ColumnPropNameInTable="DcgCodIva2Column" type="xs:short" minOccurs="0" />
+              <xs:element name="Partita" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Partita" msprop:Generator_ColumnPropNameInRow="Partita" msprop:Generator_ColumnVarNameInTable="columnPartita" msprop:Generator_ColumnPropNameInTable="PartitaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAppoggio" msdata:ReadOnly="true" msprop:Generator_UserColumnName="BAppoggio" msprop:Generator_ColumnVarNameInTable="columnBAppoggio" msprop:Generator_ColumnPropNameInRow="BAppoggio" msprop:Generator_ColumnPropNameInTable="BAppoggioColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaPaese" msprop:Generator_UserColumnName="CaPaese" msprop:Generator_ColumnPropNameInRow="CaPaese" msprop:Generator_ColumnVarNameInTable="columnCaPaese" msprop:Generator_ColumnPropNameInTable="CaPaeseColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BanCin" msprop:Generator_UserColumnName="BanCin" msprop:Generator_ColumnPropNameInRow="BanCin" msprop:Generator_ColumnVarNameInTable="columnBanCin" msprop:Generator_ColumnPropNameInTable="BanCinColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BanCinEur" msprop:Generator_UserColumnName="BanCinEur" msprop:Generator_ColumnPropNameInRow="BanCinEur" msprop:Generator_ColumnVarNameInTable="columnBanCinEur" msprop:Generator_ColumnPropNameInTable="BanCinEurColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaAbi" msprop:Generator_UserColumnName="CaAbi" msprop:Generator_ColumnPropNameInRow="CaAbi" msprop:Generator_ColumnVarNameInTable="columnCaAbi" msprop:Generator_ColumnPropNameInTable="CaAbiColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CaCab" msprop:Generator_UserColumnName="CaCab" msprop:Generator_ColumnPropNameInRow="CaCab" msprop:Generator_ColumnVarNameInTable="columnCaCab" msprop:Generator_ColumnPropNameInTable="CaCabColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BANCC" msprop:Generator_UserColumnName="BANCC" msprop:Generator_ColumnPropNameInRow="BANCC" msprop:Generator_ColumnVarNameInTable="columnBANCC" msprop:Generator_ColumnPropNameInTable="BANCCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaBic" msprop:Generator_UserColumnName="CaBic" msprop:Generator_ColumnPropNameInRow="CaBic" msprop:Generator_ColumnVarNameInTable="columnCaBic" msprop:Generator_ColumnPropNameInTable="CaBicColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

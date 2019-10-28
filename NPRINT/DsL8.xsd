@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsL8" targetNamespace="http://tempuri.org/DsL8.xsd" xmlns:mstns="http://tempuri.org/DsL8.xsd" xmlns="http://tempuri.org/DsL8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="COGEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="COGEConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.COGEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CRL8TableAdapter" GeneratorDataComponentClassName="CRL8TableAdapter" Name="CRL8" UserDataComponentName="CRL8TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="COGEConnectionString (MySettings)" DbObjectName="COGE.dbo.CRL8" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CodiceIva, Datagio, COAVERE, CODARE, numpro, bis, RegIva, Imponibile, Ndoc, DataDoc, DESCAVERE, DESCDARE, PriCausale, PriImpAvere, PriFl04, PriFl06, desiva, desCAU FROM dbo.CRL8</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodiceIva" DataSetColumn="CodiceIva" />
+              <Mapping SourceColumn="Datagio" DataSetColumn="Datagio" />
+              <Mapping SourceColumn="COAVERE" DataSetColumn="COAVERE" />
+              <Mapping SourceColumn="CODARE" DataSetColumn="CODARE" />
+              <Mapping SourceColumn="numpro" DataSetColumn="numpro" />
+              <Mapping SourceColumn="bis" DataSetColumn="bis" />
+              <Mapping SourceColumn="RegIva" DataSetColumn="RegIva" />
+              <Mapping SourceColumn="Imponibile" DataSetColumn="Imponibile" />
+              <Mapping SourceColumn="Ndoc" DataSetColumn="Ndoc" />
+              <Mapping SourceColumn="DataDoc" DataSetColumn="DataDoc" />
+              <Mapping SourceColumn="DESCAVERE" DataSetColumn="DESCAVERE" />
+              <Mapping SourceColumn="DESCDARE" DataSetColumn="DESCDARE" />
+              <Mapping SourceColumn="PriCausale" DataSetColumn="PriCausale" />
+              <Mapping SourceColumn="PriImpAvere" DataSetColumn="PriImpAvere" />
+              <Mapping SourceColumn="PriFl04" DataSetColumn="PriFl04" />
+              <Mapping SourceColumn="PriFl06" DataSetColumn="PriFl06" />
+              <Mapping SourceColumn="desiva" DataSetColumn="desiva" />
+              <Mapping SourceColumn="desCAU" DataSetColumn="desCAU" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsL8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsL8" msprop:Generator_UserDSName="DsL8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CRL8" msprop:Generator_TableClassName="CRL8DataTable" msprop:Generator_RowEvArgName="CRL8RowChangeEvent" msprop:Generator_TablePropName="CRL8" msprop:Generator_TableVarName="tableCRL8" msprop:Generator_RowEvHandlerName="CRL8RowChangeEventHandler" msprop:Generator_RowDeletingName="CRL8RowDeleting" msprop:Generator_RowChangingName="CRL8RowChanging" msprop:Generator_RowDeletedName="CRL8RowDeleted" msprop:Generator_UserTableName="CRL8" msprop:Generator_RowChangedName="CRL8RowChanged" msprop:Generator_RowClassName="CRL8Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodiceIva" msprop:Generator_ColumnVarNameInTable="columnCodiceIva" msprop:Generator_ColumnPropNameInRow="CodiceIva" msprop:Generator_ColumnPropNameInTable="CodiceIvaColumn" msprop:Generator_UserColumnName="CodiceIva" type="xs:short" />
+              <xs:element name="Datagio" msprop:Generator_ColumnVarNameInTable="columnDatagio" msprop:Generator_ColumnPropNameInRow="Datagio" msprop:Generator_ColumnPropNameInTable="DatagioColumn" msprop:Generator_UserColumnName="Datagio" type="xs:dateTime" />
+              <xs:element name="COAVERE" msprop:Generator_ColumnVarNameInTable="columnCOAVERE" msprop:Generator_ColumnPropNameInRow="COAVERE" msprop:Generator_ColumnPropNameInTable="COAVEREColumn" msprop:Generator_UserColumnName="COAVERE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CODARE" msprop:Generator_ColumnVarNameInTable="columnCODARE" msprop:Generator_ColumnPropNameInRow="CODARE" msprop:Generator_ColumnPropNameInTable="CODAREColumn" msprop:Generator_UserColumnName="CODARE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="numpro" msprop:Generator_ColumnVarNameInTable="columnnumpro" msprop:Generator_ColumnPropNameInRow="numpro" msprop:Generator_ColumnPropNameInTable="numproColumn" msprop:Generator_UserColumnName="numpro" type="xs:int" />
+              <xs:element name="bis" msprop:Generator_ColumnVarNameInTable="columnbis" msprop:Generator_ColumnPropNameInRow="bis" msprop:Generator_ColumnPropNameInTable="bisColumn" msprop:Generator_UserColumnName="bis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegIva" msprop:Generator_ColumnVarNameInTable="columnRegIva" msprop:Generator_ColumnPropNameInRow="RegIva" msprop:Generator_ColumnPropNameInTable="RegIvaColumn" msprop:Generator_UserColumnName="RegIva" type="xs:short" />
+              <xs:element name="Imponibile" msprop:Generator_ColumnVarNameInTable="columnImponibile" msprop:Generator_ColumnPropNameInRow="Imponibile" msprop:Generator_ColumnPropNameInTable="ImponibileColumn" msprop:Generator_UserColumnName="Imponibile" type="xs:decimal" />
+              <xs:element name="Ndoc" msprop:Generator_ColumnVarNameInTable="columnNdoc" msprop:Generator_ColumnPropNameInRow="Ndoc" msprop:Generator_ColumnPropNameInTable="NdocColumn" msprop:Generator_UserColumnName="Ndoc" type="xs:int" />
+              <xs:element name="DataDoc" msprop:Generator_ColumnVarNameInTable="columnDataDoc" msprop:Generator_ColumnPropNameInRow="DataDoc" msprop:Generator_ColumnPropNameInTable="DataDocColumn" msprop:Generator_UserColumnName="DataDoc" type="xs:dateTime" />
+              <xs:element name="DESCAVERE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDESCAVERE" msprop:Generator_ColumnPropNameInRow="DESCAVERE" msprop:Generator_ColumnPropNameInTable="DESCAVEREColumn" msprop:Generator_UserColumnName="DESCAVERE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESCDARE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDESCDARE" msprop:Generator_ColumnPropNameInRow="DESCDARE" msprop:Generator_ColumnPropNameInTable="DESCDAREColumn" msprop:Generator_UserColumnName="DESCDARE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriCausale" msprop:Generator_ColumnVarNameInTable="columnPriCausale" msprop:Generator_ColumnPropNameInRow="PriCausale" msprop:Generator_ColumnPropNameInTable="PriCausaleColumn" msprop:Generator_UserColumnName="PriCausale" type="xs:short" />
+              <xs:element name="PriImpAvere" msprop:Generator_ColumnVarNameInTable="columnPriImpAvere" msprop:Generator_ColumnPropNameInRow="PriImpAvere" msprop:Generator_ColumnPropNameInTable="PriImpAvereColumn" msprop:Generator_UserColumnName="PriImpAvere" type="xs:decimal" />
+              <xs:element name="PriFl04" msprop:Generator_ColumnVarNameInTable="columnPriFl04" msprop:Generator_ColumnPropNameInRow="PriFl04" msprop:Generator_ColumnPropNameInTable="PriFl04Column" msprop:Generator_UserColumnName="PriFl04" type="xs:short" />
+              <xs:element name="PriFl06" msprop:Generator_ColumnVarNameInTable="columnPriFl06" msprop:Generator_ColumnPropNameInRow="PriFl06" msprop:Generator_ColumnPropNameInTable="PriFl06Column" msprop:Generator_UserColumnName="PriFl06" type="xs:short" />
+              <xs:element name="desiva" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndesiva" msprop:Generator_ColumnPropNameInRow="desiva" msprop:Generator_ColumnPropNameInTable="desivaColumn" msprop:Generator_UserColumnName="desiva" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="desCAU" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndesCAU" msprop:Generator_ColumnPropNameInRow="desCAU" msprop:Generator_ColumnPropNameInTable="desCAUColumn" msprop:Generator_UserColumnName="desCAU" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriCodPag" msprop:Generator_ColumnVarNameInTable="columnPriCodPag" msprop:Generator_ColumnPropNameInRow="PriCodPag" msprop:Generator_ColumnPropNameInTable="PriCodPagColumn" msprop:Generator_UserColumnName="PriCodPag" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsArtP" targetNamespace="http://tempuri.org/DsArtP.xsd" xmlns:mstns="http://tempuri.org/DsArtP.xsd" xmlns="http://tempuri.org/DsArtP.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="COGEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="COGEConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NPRINT.My.MySettings.GlobalReference.Default.COGEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VArtPTableAdapter" GeneratorDataComponentClassName="VArtPTableAdapter" Name="VArtP" UserDataComponentName="VArtPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="COGEConnectionString (MySettings)" DbObjectName="COGE.dbo.VArtP" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ArtPId, ArtPSigla, ArtPProg, ArtPCausale, CiiCau, ArtPDare, DescDare, ArtPAvere, DescAvere, ArtPDesc1, ArtPDesc2 FROM dbo.VArtP</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ArtPId" DataSetColumn="ArtPId" />
+              <Mapping SourceColumn="ArtPSigla" DataSetColumn="ArtPSigla" />
+              <Mapping SourceColumn="ArtPProg" DataSetColumn="ArtPProg" />
+              <Mapping SourceColumn="ArtPCausale" DataSetColumn="ArtPCausale" />
+              <Mapping SourceColumn="CiiCau" DataSetColumn="CiiCau" />
+              <Mapping SourceColumn="ArtPDare" DataSetColumn="ArtPDare" />
+              <Mapping SourceColumn="DescDare" DataSetColumn="DescDare" />
+              <Mapping SourceColumn="ArtPAvere" DataSetColumn="ArtPAvere" />
+              <Mapping SourceColumn="DescAvere" DataSetColumn="DescAvere" />
+              <Mapping SourceColumn="ArtPDesc1" DataSetColumn="ArtPDesc1" />
+              <Mapping SourceColumn="ArtPDesc2" DataSetColumn="ArtPDesc2" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsArtP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsArtP" msprop:Generator_UserDSName="DsArtP" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VArtP" msprop:Generator_UserTableName="VArtP" msprop:Generator_RowDeletedName="VArtPRowDeleted" msprop:Generator_TableClassName="VArtPDataTable" msprop:Generator_RowChangedName="VArtPRowChanged" msprop:Generator_RowClassName="VArtPRow" msprop:Generator_RowChangingName="VArtPRowChanging" msprop:Generator_RowEvArgName="VArtPRowChangeEvent" msprop:Generator_RowEvHandlerName="VArtPRowChangeEventHandler" msprop:Generator_TablePropName="VArtP" msprop:Generator_TableVarName="tableVArtP" msprop:Generator_RowDeletingName="VArtPRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ArtPId" msprop:Generator_UserColumnName="ArtPId" msprop:Generator_ColumnPropNameInRow="ArtPId" msprop:Generator_ColumnVarNameInTable="columnArtPId" msprop:Generator_ColumnPropNameInTable="ArtPIdColumn" type="xs:int" />
+              <xs:element name="ArtPSigla" msprop:Generator_UserColumnName="ArtPSigla" msprop:Generator_ColumnPropNameInRow="ArtPSigla" msprop:Generator_ColumnVarNameInTable="columnArtPSigla" msprop:Generator_ColumnPropNameInTable="ArtPSiglaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArtPProg" msprop:Generator_UserColumnName="ArtPProg" msprop:Generator_ColumnPropNameInRow="ArtPProg" msprop:Generator_ColumnVarNameInTable="columnArtPProg" msprop:Generator_ColumnPropNameInTable="ArtPProgColumn" type="xs:short" />
+              <xs:element name="ArtPCausale" msprop:Generator_UserColumnName="ArtPCausale" msprop:Generator_ColumnPropNameInRow="ArtPCausale" msprop:Generator_ColumnVarNameInTable="columnArtPCausale" msprop:Generator_ColumnPropNameInTable="ArtPCausaleColumn" type="xs:short" />
+              <xs:element name="CiiCau" msprop:Generator_UserColumnName="CiiCau" msprop:Generator_ColumnPropNameInRow="CiiCau" msprop:Generator_ColumnVarNameInTable="columnCiiCau" msprop:Generator_ColumnPropNameInTable="CiiCauColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArtPDare" msprop:Generator_UserColumnName="ArtPDare" msprop:Generator_ColumnPropNameInRow="ArtPDare" msprop:Generator_ColumnVarNameInTable="columnArtPDare" msprop:Generator_ColumnPropNameInTable="ArtPDareColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DescDare" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DescDare" msprop:Generator_ColumnPropNameInRow="DescDare" msprop:Generator_ColumnVarNameInTable="columnDescDare" msprop:Generator_ColumnPropNameInTable="DescDareColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArtPAvere" msprop:Generator_UserColumnName="ArtPAvere" msprop:Generator_ColumnPropNameInRow="ArtPAvere" msprop:Generator_ColumnVarNameInTable="columnArtPAvere" msprop:Generator_ColumnPropNameInTable="ArtPAvereColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DescAvere" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DescAvere" msprop:Generator_ColumnPropNameInRow="DescAvere" msprop:Generator_ColumnVarNameInTable="columnDescAvere" msprop:Generator_ColumnPropNameInTable="DescAvereColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArtPDesc1" msprop:Generator_UserColumnName="ArtPDesc1" msprop:Generator_ColumnPropNameInRow="ArtPDesc1" msprop:Generator_ColumnVarNameInTable="columnArtPDesc1" msprop:Generator_ColumnPropNameInTable="ArtPDesc1Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArtPDesc2" msprop:Generator_UserColumnName="ArtPDesc2" msprop:Generator_ColumnPropNameInRow="ArtPDesc2" msprop:Generator_ColumnVarNameInTable="columnArtPDesc2" msprop:Generator_ColumnPropNameInTable="ArtPDesc2Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VArtP" />
+      <xs:field xpath="mstns:ArtPId" />
+      <xs:field xpath="mstns:ArtPProg" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
