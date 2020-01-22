@@ -180,7 +180,7 @@ Public Class DxSp2019
             Exit Sub
         End If
 
-        For P = 0 To UltChiuso
+        For P = 0 To UltChiuso - 1
             RadioGroup1.Properties.Items(P).Enabled = True
         Next
 
