@@ -966,7 +966,7 @@ Partial Class Insoluti
         Me.ButtonFF11.Location = New System.Drawing.Point(273, 191)
         Me.ButtonFF11.Name = "ButtonFF11"
         Me.ButtonFF11.Size = New System.Drawing.Size(32, 32)
-        Me.ButtonFF11.TabIndex = 5
+        Me.ButtonFF11.TabIndex = 3
         Me.ButtonFF11.TabStop = False
         Me.ButtonFF11.ToolTip = "F11-REGISTRA"
         '
@@ -979,7 +979,7 @@ Partial Class Insoluti
         Me.GroupControl99.Location = New System.Drawing.Point(127, 186)
         Me.GroupControl99.Name = "GroupControl99"
         Me.GroupControl99.Size = New System.Drawing.Size(139, 44)
-        Me.GroupControl99.TabIndex = 3
+        Me.GroupControl99.TabIndex = 2
         Me.GroupControl99.Text = "DATA OPERAZIONE"
         '
         'DateEdit2
@@ -1157,6 +1157,7 @@ Partial Class Insoluti
         Me.ImageComboBoxEdit2.Properties.ReadOnly = True
         Me.ImageComboBoxEdit2.Size = New System.Drawing.Size(205, 20)
         Me.ImageComboBoxEdit2.TabIndex = 0
+        Me.ImageComboBoxEdit2.TabStop = False
         '
         'GroupControl33
         '
@@ -1203,6 +1204,7 @@ Partial Class Insoluti
         Me.TextEdit20.Properties.ReadOnly = True
         Me.TextEdit20.Size = New System.Drawing.Size(43, 20)
         Me.TextEdit20.TabIndex = 0
+        Me.TextEdit20.TabStop = False
         '
         'TbLeggi1
         '

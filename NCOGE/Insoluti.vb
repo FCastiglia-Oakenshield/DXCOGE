@@ -387,8 +387,16 @@ Oltre:
             TextEdit20.Focus()
             Exit Sub
         End If
-        RegistraMovimenti()
+        Dim articolo As Int32 = 0
+        articolo = RegistraMovimenti()
+        LanciaProgramma(articolo)
         Pulizia()
+    End Sub
+    Sub LanciaProgramma(n)
+        Dim Gesterna As New DxInPrNo
+        DxInPrNo.NRifArt = n
+        Gesterna.WindowState = FormWindowState.Maximized
+        Gesterna.ShowDialog()
     End Sub
     Sub Messaggio(ByVal Tipo As Int16, ByVal Mexage As String)
         Dim msg(1) As String
@@ -405,7 +413,7 @@ Oltre:
         If Mid(CodCo, 3, 3) = ".00" Then Exit Function '' mastri e transitorio
         ControllaConto = LeggiConto(CodCo, Anagraf)
     End Function
-    Sub RegistraMovimenti()
+    Function RegistraMovimenti()
         Dim K, M As Int32
         Dim Scheggia As Int16 = 0
         Dim Articolo As Int32 = RileggoLocked()
@@ -419,43 +427,24 @@ Oltre:
             Wmd.Parameters.Clear()
             If K < M Or P = 0 Then
                 RwPno = TbPno.Rows(K - 1)
-                p12.Value = RwPno("PrkDocEst")
-                p22.Value = RwPno("PrkDocAnn")
-                If Val(RwPno("PrkConto")) > MiglioFo Then
-                    p3.Value = RwPno("PrkConto")
-                    p9.Value = RwPno("SCOPERTO")
-                    p4.Value = "00.10"
-                    p10.Value = 0
-                    Total = Total + RwPno("SCOPERTO")
-                    If P = 0 Then
-                        p4.Value = TextEdit20.EditValue
-                        p10.Value = RwPno("SCOPERTO")
-                    End If
-                Else
-                    p3.Value = "00.10"
-                    p9.Value = 0
-                    p4.Value = RwPno("PrkConto")
-                    p10.Value = RwPno("Scoperto")
-                    Total = Total + RwPno("SCOPERTO")
-                    If P = 0 Then
-                        p3.Value = TextEdit20.EditValue
-                        p9.Value = RwPno("SCOPERTO")
-                    End If
+                p12.Value = RwPno("RicNfat")
+                p22.Value = RwPno("ANNO")
+                p3.Value = RwPno("CLIENTE")
+                p9.Value = RwPno("IMPRATA")
+                p4.Value = "00.10"
+                p10.Value = 0
+                Total = Total + RwPno("IMPRATA")
+                If P = 0 Then
+                    p4.Value = TextEdit20.EditValue
+                    p10.Value = RwPno("IMPRATA")
                 End If
             Else
                 p12.Value = 0
                 p22.Value = 0
-                If Val(RwPno("PrkConto")) > MiglioFo Then
-                    p3.Value = "00.10"
-                    p9.Value = 0
-                    p4.Value = TextEdit20.EditValue
-                    p10.Value = Total
-                Else
-                    p3.Value = TextEdit20.EditValue
-                    p9.Value = Total
-                    p4.Value = "00.10"
-                    p10.Value = 0
-                End If
+                p3.Value = "00.10"
+                p9.Value = 0
+                p4.Value = TextEdit20.EditValue
+                p10.Value = Total
             End If
             p1.Value = CDate(DateEdit1.EditValue)
             p2.Value = ImageComboBoxEdit2.EditValue
@@ -515,10 +504,8 @@ Oltre:
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         ResetIdP()
         EsegueSql(" EXEC RiChiudePartita  @Id = " & ProgId & ",@Miglio=" & MiglioFo, cnCo)
-        Dim ProgCdc As Int32
-        ProgCdc = ProgId
-
-    End Sub
+        Return Articolo
+    End Function
     Private Function LeggiUltimo(ByVal dataGio As Date) As Boolean
         Dim ultimo As String = "INSERT INTO TbIDP (IDdata) values(@PriDataGio)"
         Dim UltimaRiga As New SqlCommand("SELECT  @@IDENTITY ", cnCo)
@@ -567,13 +554,5 @@ Attesa:
         PulisciPNota()
         DisBottoni()
     End Sub
-    Sub Partita(ByVal Tipo As Int16, ByVal AZ As Int32)
-        If Tipo = 0 Then
-            EsegueSql(" EXEC RiAprePartita  @Id = " & ProgId & ",@Az=" & AZ & ",@Miglio=" & MiglioFo, cnCo)
-        Else
-            EsegueSql(" EXEC RiChiudePartita  @Id = " & ProgId & ",@Miglio=" & MiglioFo, cnCo)
-        End If
-    End Sub
-
 
 End Class

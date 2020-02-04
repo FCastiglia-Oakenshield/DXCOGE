@@ -488,7 +488,7 @@ Partial Class DxSparti
         Me.GroupControlC.Location = New System.Drawing.Point(0, 0)
         Me.GroupControlC.Name = "GroupControlC"
         Me.GroupControlC.ShowCaption = False
-        Me.GroupControlC.Size = New System.Drawing.Size(1002, 650)
+        Me.GroupControlC.Size = New System.Drawing.Size(1006, 654)
         Me.GroupControlC.TabIndex = 1
         Me.GroupControlC.TabStop = True
         Me.GroupControlC.Text = "GroupControl8"
@@ -500,7 +500,7 @@ Partial Class DxSparti
         Me.GroupControl2.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.ShowCaption = False
-        Me.GroupControl2.Size = New System.Drawing.Size(998, 408)
+        Me.GroupControl2.Size = New System.Drawing.Size(1002, 412)
         Me.GroupControl2.TabIndex = 17
         Me.GroupControl2.Text = "GroupControl2"
         '
@@ -509,11 +509,10 @@ Partial Class DxSparti
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl2.FormsUseDefaultLookAndFeel = True
         Me.GridControl2.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl2.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
-        Me.GridControl2.Size = New System.Drawing.Size(994, 404)
+        Me.GridControl2.Size = New System.Drawing.Size(998, 408)
         Me.GridControl2.TabIndex = 8
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -985,10 +984,10 @@ Partial Class DxSparti
         Me.GroupControlB.Controls.Add(Me.GroupControl5)
         Me.GroupControlB.Controls.Add(Me.GroupControl1)
         Me.GroupControlB.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControlB.Location = New System.Drawing.Point(2, 410)
+        Me.GroupControlB.Location = New System.Drawing.Point(2, 414)
         Me.GroupControlB.Name = "GroupControlB"
         Me.GroupControlB.ShowCaption = False
-        Me.GroupControlB.Size = New System.Drawing.Size(998, 238)
+        Me.GroupControlB.Size = New System.Drawing.Size(1002, 238)
         Me.GroupControlB.TabIndex = 16
         Me.GroupControlB.Text = "GroupControlB"
         '
@@ -1011,13 +1010,14 @@ Partial Class DxSparti
         Me.GroupControl5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl5.Location = New System.Drawing.Point(511, 2)
         Me.GroupControl5.Name = "GroupControl5"
-        Me.GroupControl5.Size = New System.Drawing.Size(485, 234)
+        Me.GroupControl5.Size = New System.Drawing.Size(489, 234)
         Me.GroupControl5.TabIndex = 21
         Me.GroupControl5.Text = "SELEZIONA PERIODO"
         '
         'CheckEdit4
         '
         Me.CheckEdit4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit4.EnterMoveNextControl = True
         Me.CheckEdit4.Location = New System.Drawing.Point(16, 27)
         Me.CheckEdit4.Name = "CheckEdit4"
         Me.CheckEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1051,7 +1051,7 @@ Partial Class DxSparti
         Me.GroupControl33.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupControl33.Location = New System.Drawing.Point(2, 187)
         Me.GroupControl33.Name = "GroupControl33"
-        Me.GroupControl33.Size = New System.Drawing.Size(481, 45)
+        Me.GroupControl33.Size = New System.Drawing.Size(485, 45)
         Me.GroupControl33.TabIndex = 5
         Me.GroupControl33.Text = "CONTO DIRETTO"
         '
@@ -1060,7 +1060,7 @@ Partial Class DxSparti
         Me.TextEdit21.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit21.EditValue = ""
         Me.TextEdit21.EnterMoveNextControl = True
-        Me.TextEdit21.Location = New System.Drawing.Point(51, 21)
+        Me.TextEdit21.Location = New System.Drawing.Point(51, 23)
         Me.TextEdit21.Name = "TextEdit21"
         Me.TextEdit21.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit21.Properties.Appearance.Options.UseFont = True
@@ -1068,7 +1068,7 @@ Partial Class DxSparti
         Me.TextEdit21.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit21.Properties.MaxLength = 32
         Me.TextEdit21.Properties.ReadOnly = True
-        Me.TextEdit21.Size = New System.Drawing.Size(428, 22)
+        Me.TextEdit21.Size = New System.Drawing.Size(432, 22)
         Me.TextEdit21.TabIndex = 1
         Me.TextEdit21.TabStop = False
         '
@@ -1077,7 +1077,7 @@ Partial Class DxSparti
         Me.TextEdit20.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit20.EditValue = ""
         Me.TextEdit20.EnterMoveNextControl = True
-        Me.TextEdit20.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit20.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit20.Name = "TextEdit20"
         Me.TextEdit20.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit20.Properties.Appearance.Options.UseFont = True
@@ -1149,6 +1149,7 @@ Partial Class DxSparti
         'CheckEdit3
         '
         Me.CheckEdit3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit3.EnterMoveNextControl = True
         Me.CheckEdit3.Location = New System.Drawing.Point(16, 103)
         Me.CheckEdit3.Name = "CheckEdit3"
         Me.CheckEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1169,9 +1170,9 @@ Partial Class DxSparti
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(371, 148)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -1198,6 +1199,7 @@ Partial Class DxSparti
         'CheckEdit2
         '
         Me.CheckEdit2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit2.EnterMoveNextControl = True
         Me.CheckEdit2.Location = New System.Drawing.Point(16, 83)
         Me.CheckEdit2.Name = "CheckEdit2"
         Me.CheckEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1218,9 +1220,9 @@ Partial Class DxSparti
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(322, 148)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -1231,6 +1233,7 @@ Partial Class DxSparti
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
         Me.CheckEdit1.Location = New System.Drawing.Point(16, 62)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1251,9 +1254,9 @@ Partial Class DxSparti
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(419, 148)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -1275,7 +1278,6 @@ Partial Class DxSparti
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
         Me.GridControl1.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
