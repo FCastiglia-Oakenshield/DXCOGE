@@ -69,6 +69,7 @@ Partial Class DxChiApe
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
         CType(Me.TextEdit11.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,24 +86,24 @@ Partial Class DxChiApe
         CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl9.SuspendLayout()
-        CType(Me.DateEdit4.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit4.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl10.SuspendLayout()
         CType(Me.ImageComboBoxEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl11.SuspendLayout()
-        CType(Me.DateEdit3.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit3.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl6.SuspendLayout()
         CType(Me.GroupControl63, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl63.SuspendLayout()
-        CType(Me.DateEdit104.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit104.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit104.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl62, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl62.SuspendLayout()
-        CType(Me.DateEdit103.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit103.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit103.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextEdit102.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -117,24 +118,24 @@ Partial Class DxChiApe
         CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl66, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl66.SuspendLayout()
-        CType(Me.DateEdit2.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit2.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl87, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl87.SuspendLayout()
         CType(Me.ImageComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl99, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl99.SuspendLayout()
-        CType(Me.DateEdit1.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl3.SuspendLayout()
         CType(Me.GroupControl61, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl61.SuspendLayout()
-        CType(Me.DateEdit102.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit102.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit102.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl60, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl60.SuspendLayout()
-        CType(Me.DateEdit101.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit101.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit101.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextEdit101.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -396,7 +397,6 @@ Partial Class DxChiApe
         'XtraTabPage1
         '
         Me.XtraTabPage1.Controls.Add(Me.GroupControl1)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1002, 650)
         '
         'ImageDx24
         '
@@ -464,6 +464,35 @@ Partial Class DxChiApe
         Me.ImageS16.Images.SetKeyName(10, "selection16_reset.png")
         Me.ImageS16.Images.SetKeyName(11, "F11.png")
         '
+        'ImageDxList32
+        '
+        Me.ImageDxList32.ImageStream = CType(resources.GetObject("ImageDxList32.ImageStream"), DevExpress.Utils.ImageCollectionStreamer)
+        Me.ImageDxList32.Images.SetKeyName(0, "F1_right.png")
+        Me.ImageDxList32.Images.SetKeyName(1, "F2_left.png")
+        Me.ImageDxList32.Images.SetKeyName(2, "F3_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(3, "F4.png")
+        Me.ImageDxList32.Images.SetKeyName(4, "F5_refresh.png")
+        Me.ImageDxList32.Images.SetKeyName(5, "F6_edit_edit.png")
+        Me.ImageDxList32.Images.SetKeyName(6, "F7_new.png")
+        Me.ImageDxList32.Images.SetKeyName(7, "F8_view.png")
+        Me.ImageDxList32.Images.SetKeyName(8, "F9_print.png")
+        Me.ImageDxList32.Images.SetKeyName(9, "keyboard_key_plus.png")
+        Me.ImageDxList32.Images.SetKeyName(10, "F11_ok.png")
+        Me.ImageDxList32.Images.SetKeyName(11, "information.png")
+        Me.ImageDxList32.Images.SetKeyName(12, "printer.png")
+        Me.ImageDxList32.Images.SetKeyName(13, "checkbox.png")
+        Me.ImageDxList32.Images.SetKeyName(14, "checkbox_unchecked.png")
+        Me.ImageDxList32.Images.SetKeyName(15, "Excel.png")
+        Me.ImageDxList32.Images.SetKeyName(16, "floppy_disk.png")
+        Me.ImageDxList32.Images.SetKeyName(17, "checks.png")
+        Me.ImageDxList32.Images.SetKeyName(18, "nav_refresh.png")
+        Me.ImageDxList32.Images.SetKeyName(19, "nav_undo.png")
+        Me.ImageDxList32.Images.SetKeyName(20, "scanner.png")
+        Me.ImageDxList32.Images.SetKeyName(21, "selection_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(22, "Scan Document 32 h p_add.png")
+        Me.ImageDxList32.Images.SetKeyName(23, "Scan Document 32 h p_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(24, "ok.png")
+        '
         'GroupControl1
         '
         Me.GroupControl1.Controls.Add(Me.LabelControl14)
@@ -482,6 +511,7 @@ Partial Class DxChiApe
         'LabelControl14
         '
         Me.LabelControl14.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl14.Appearance.Options.UseFont = True
         Me.LabelControl14.Location = New System.Drawing.Point(536, 264)
         Me.LabelControl14.Name = "LabelControl14"
         Me.LabelControl14.Size = New System.Drawing.Size(209, 19)
@@ -523,7 +553,7 @@ Partial Class DxChiApe
         Me.TextEdit103.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit103.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit103.EnterMoveNextControl = True
-        Me.TextEdit103.Location = New System.Drawing.Point(2, 28)
+        Me.TextEdit103.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit103.Name = "TextEdit103"
         Me.TextEdit103.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit103.Properties.Appearance.Options.UseFont = True
@@ -566,9 +596,9 @@ Partial Class DxChiApe
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(11, 60)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -586,9 +616,9 @@ Partial Class DxChiApe
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(11, 9)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -619,7 +649,7 @@ Partial Class DxChiApe
         Me.GroupControl8.Name = "GroupControl8"
         Me.GroupControl8.Size = New System.Drawing.Size(474, 53)
         Me.GroupControl8.TabIndex = 2
-        Me.GroupControl8.Text = "PATRIMONIO - DESCRIZIONE AGGIUNTIVA                                              " & _
+        Me.GroupControl8.Text = "PATRIMONIO - DESCRIZIONE AGGIUNTIVA                                              " &
     "               NR. DOC."
         '
         'TextEdit10
@@ -660,7 +690,7 @@ Partial Class DxChiApe
         Me.DateEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit4.EditValue = Nothing
         Me.DateEdit4.EnterMoveNextControl = True
-        Me.DateEdit4.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit4.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit4.Name = "DateEdit4"
         Me.DateEdit4.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -671,8 +701,8 @@ Partial Class DxChiApe
         Me.DateEdit4.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit4.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit4.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit4.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.DateEdit4.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit4.Size = New System.Drawing.Size(106, 20)
         Me.DateEdit4.TabIndex = 0
         '
@@ -690,7 +720,7 @@ Partial Class DxChiApe
         Me.ImageComboBoxEdit2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit2.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 22)
+        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit2.Name = "ImageComboBoxEdit2"
         Me.ImageComboBoxEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImageComboBoxEdit2.Properties.Appearance.Options.UseFont = True
@@ -720,7 +750,7 @@ Partial Class DxChiApe
         Me.DateEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit3.EditValue = Nothing
         Me.DateEdit3.EnterMoveNextControl = True
-        Me.DateEdit3.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit3.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit3.Name = "DateEdit3"
         Me.DateEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -731,9 +761,9 @@ Partial Class DxChiApe
         Me.DateEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit3.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.DateEdit3.Properties.ReadOnly = True
-        Me.DateEdit3.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit3.Size = New System.Drawing.Size(106, 20)
         Me.DateEdit3.TabIndex = 0
         Me.DateEdit3.TabStop = False
@@ -765,7 +795,7 @@ Partial Class DxChiApe
         Me.DateEdit104.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit104.EditValue = Nothing
         Me.DateEdit104.EnterMoveNextControl = True
-        Me.DateEdit104.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit104.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit104.Name = "DateEdit104"
         Me.DateEdit104.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit104.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -776,9 +806,9 @@ Partial Class DxChiApe
         Me.DateEdit104.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit104.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit104.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit104.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit104.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.DateEdit104.Properties.ReadOnly = True
-        Me.DateEdit104.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit104.Size = New System.Drawing.Size(106, 22)
         Me.DateEdit104.TabIndex = 1
         Me.DateEdit104.TabStop = False
@@ -799,7 +829,7 @@ Partial Class DxChiApe
         Me.DateEdit103.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit103.EditValue = Nothing
         Me.DateEdit103.EnterMoveNextControl = True
-        Me.DateEdit103.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit103.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit103.Name = "DateEdit103"
         Me.DateEdit103.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit103.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -810,9 +840,9 @@ Partial Class DxChiApe
         Me.DateEdit103.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit103.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit103.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit103.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit103.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.DateEdit103.Properties.ReadOnly = True
-        Me.DateEdit103.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit103.Size = New System.Drawing.Size(106, 22)
         Me.DateEdit103.TabIndex = 1
         Me.DateEdit103.TabStop = False
@@ -857,7 +887,7 @@ Partial Class DxChiApe
         Me.GroupControl7.Name = "GroupControl7"
         Me.GroupControl7.Size = New System.Drawing.Size(474, 53)
         Me.GroupControl7.TabIndex = 3
-        Me.GroupControl7.Text = "CONTO ECONOMICO - DESCRIZIONE AGGIUNTIVA                                         " & _
+        Me.GroupControl7.Text = "CONTO ECONOMICO - DESCRIZIONE AGGIUNTIVA                                         " &
     "        NR. DOC."
         '
         'TextEdit6
@@ -890,7 +920,7 @@ Partial Class DxChiApe
         Me.GroupControl64.Name = "GroupControl64"
         Me.GroupControl64.Size = New System.Drawing.Size(474, 53)
         Me.GroupControl64.TabIndex = 2
-        Me.GroupControl64.Text = "PATRIMONIO - DESCRIZIONE AGGIUNTIVA                                              " & _
+        Me.GroupControl64.Text = "PATRIMONIO - DESCRIZIONE AGGIUNTIVA                                              " &
     "               NR. DOC."
         '
         'TextEdit4
@@ -931,7 +961,7 @@ Partial Class DxChiApe
         Me.DateEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit2.EditValue = Nothing
         Me.DateEdit2.EnterMoveNextControl = True
-        Me.DateEdit2.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit2.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit2.Name = "DateEdit2"
         Me.DateEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -942,8 +972,8 @@ Partial Class DxChiApe
         Me.DateEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit2.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.DateEdit2.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit2.Size = New System.Drawing.Size(106, 20)
         Me.DateEdit2.TabIndex = 0
         '
@@ -961,7 +991,7 @@ Partial Class DxChiApe
         Me.ImageComboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit1.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 22)
+        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit1.Name = "ImageComboBoxEdit1"
         Me.ImageComboBoxEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImageComboBoxEdit1.Properties.Appearance.Options.UseFont = True
@@ -991,7 +1021,7 @@ Partial Class DxChiApe
         Me.DateEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit1.EditValue = Nothing
         Me.DateEdit1.EnterMoveNextControl = True
-        Me.DateEdit1.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit1.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit1.Name = "DateEdit1"
         Me.DateEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1002,9 +1032,9 @@ Partial Class DxChiApe
         Me.DateEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.DateEdit1.Properties.ReadOnly = True
-        Me.DateEdit1.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit1.Size = New System.Drawing.Size(106, 20)
         Me.DateEdit1.TabIndex = 0
         Me.DateEdit1.TabStop = False
@@ -1036,7 +1066,7 @@ Partial Class DxChiApe
         Me.DateEdit102.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit102.EditValue = Nothing
         Me.DateEdit102.EnterMoveNextControl = True
-        Me.DateEdit102.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit102.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit102.Name = "DateEdit102"
         Me.DateEdit102.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit102.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1047,9 +1077,9 @@ Partial Class DxChiApe
         Me.DateEdit102.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit102.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit102.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit102.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit102.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.DateEdit102.Properties.ReadOnly = True
-        Me.DateEdit102.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit102.Size = New System.Drawing.Size(106, 22)
         Me.DateEdit102.TabIndex = 1
         Me.DateEdit102.TabStop = False
@@ -1070,7 +1100,7 @@ Partial Class DxChiApe
         Me.DateEdit101.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit101.EditValue = Nothing
         Me.DateEdit101.EnterMoveNextControl = True
-        Me.DateEdit101.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit101.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit101.Name = "DateEdit101"
         Me.DateEdit101.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit101.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1081,9 +1111,9 @@ Partial Class DxChiApe
         Me.DateEdit101.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit101.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit101.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit101.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit101.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.DateEdit101.Properties.ReadOnly = True
-        Me.DateEdit101.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit101.Size = New System.Drawing.Size(106, 22)
         Me.DateEdit101.TabIndex = 1
         Me.DateEdit101.TabStop = False
@@ -1117,6 +1147,7 @@ Partial Class DxChiApe
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl1.ResumeLayout(False)
         Me.GroupControl1.PerformLayout()
@@ -1134,24 +1165,24 @@ Partial Class DxChiApe
         CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl9.ResumeLayout(False)
-        CType(Me.DateEdit4.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit4.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl10.ResumeLayout(False)
         CType(Me.ImageComboBoxEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl11.ResumeLayout(False)
-        CType(Me.DateEdit3.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit3.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl6.ResumeLayout(False)
         CType(Me.GroupControl63, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl63.ResumeLayout(False)
-        CType(Me.DateEdit104.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit104.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit104.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl62, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl62.ResumeLayout(False)
-        CType(Me.DateEdit103.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit103.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit103.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextEdit102.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1166,24 +1197,24 @@ Partial Class DxChiApe
         CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl66, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl66.ResumeLayout(False)
-        CType(Me.DateEdit2.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit2.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl87, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl87.ResumeLayout(False)
         CType(Me.ImageComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl99, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl99.ResumeLayout(False)
-        CType(Me.DateEdit1.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl3.ResumeLayout(False)
         CType(Me.GroupControl61, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl61.ResumeLayout(False)
-        CType(Me.DateEdit102.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit102.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit102.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl60, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl60.ResumeLayout(False)
-        CType(Me.DateEdit101.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit101.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit101.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextEdit101.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

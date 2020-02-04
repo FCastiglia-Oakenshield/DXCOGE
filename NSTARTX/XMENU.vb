@@ -905,4 +905,7 @@ esci:
         DXMenu(New LDPReportX, e.Item.Caption)
     End Sub
 
+    Private Sub BarButtonItem112_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BarButtonItem112.ItemClick
+        DXMenu(New Insoluti, e.Item.Caption)
+    End Sub
 End Class

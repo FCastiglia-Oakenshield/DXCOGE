@@ -367,7 +367,6 @@ Partial Class DxSbilveR
         Me.XtraTabPage1.Controls.Add(Me.GroupControl8)
         Me.XtraTabPage1.Controls.Add(Me.PictureEdit1)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl1)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1000, 648)
         '
         'ImageDx24
         '
@@ -485,6 +484,7 @@ Partial Class DxSbilveR
         'CheckEdit11
         '
         Me.CheckEdit11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit11.EnterMoveNextControl = True
         Me.CheckEdit11.Location = New System.Drawing.Point(295, 108)
         Me.CheckEdit11.Name = "CheckEdit11"
         Me.CheckEdit11.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -509,6 +509,7 @@ Partial Class DxSbilveR
         'CheckEdit7
         '
         Me.CheckEdit7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit7.EnterMoveNextControl = True
         Me.CheckEdit7.Location = New System.Drawing.Point(8, 90)
         Me.CheckEdit7.Name = "CheckEdit7"
         Me.CheckEdit7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -532,7 +533,7 @@ Partial Class DxSbilveR
         '
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 24)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit1.Properties.Appearance.Options.UseFont = True
@@ -544,6 +545,7 @@ Partial Class DxSbilveR
         'CheckEdit6
         '
         Me.CheckEdit6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit6.EnterMoveNextControl = True
         Me.CheckEdit6.Location = New System.Drawing.Point(8, 5)
         Me.CheckEdit6.Name = "CheckEdit6"
         Me.CheckEdit6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -575,6 +577,7 @@ Partial Class DxSbilveR
         'CheckEdit12
         '
         Me.CheckEdit12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit12.EnterMoveNextControl = True
         Me.CheckEdit12.Location = New System.Drawing.Point(264, 163)
         Me.CheckEdit12.Name = "CheckEdit12"
         Me.CheckEdit12.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -586,6 +589,7 @@ Partial Class DxSbilveR
         'CheckEdit10
         '
         Me.CheckEdit10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit10.EnterMoveNextControl = True
         Me.CheckEdit10.Location = New System.Drawing.Point(264, 57)
         Me.CheckEdit10.Name = "CheckEdit10"
         Me.CheckEdit10.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -597,6 +601,7 @@ Partial Class DxSbilveR
         'CheckEdit8
         '
         Me.CheckEdit8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit8.EnterMoveNextControl = True
         Me.CheckEdit8.Location = New System.Drawing.Point(8, 163)
         Me.CheckEdit8.Name = "CheckEdit8"
         Me.CheckEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -608,6 +613,7 @@ Partial Class DxSbilveR
         'CheckEdit4
         '
         Me.CheckEdit4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit4.EnterMoveNextControl = True
         Me.CheckEdit4.Location = New System.Drawing.Point(27, 133)
         Me.CheckEdit4.Name = "CheckEdit4"
         Me.CheckEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -619,6 +625,7 @@ Partial Class DxSbilveR
         'CheckEdit3
         '
         Me.CheckEdit3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit3.EnterMoveNextControl = True
         Me.CheckEdit3.Location = New System.Drawing.Point(8, 110)
         Me.CheckEdit3.Name = "CheckEdit3"
         Me.CheckEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -630,6 +637,7 @@ Partial Class DxSbilveR
         'CheckEdit5
         '
         Me.CheckEdit5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit5.EnterMoveNextControl = True
         Me.CheckEdit5.Location = New System.Drawing.Point(27, 80)
         Me.CheckEdit5.Name = "CheckEdit5"
         Me.CheckEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -641,6 +649,7 @@ Partial Class DxSbilveR
         'CheckEdit2
         '
         Me.CheckEdit2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit2.EnterMoveNextControl = True
         Me.CheckEdit2.Location = New System.Drawing.Point(8, 57)
         Me.CheckEdit2.Name = "CheckEdit2"
         Me.CheckEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -652,6 +661,7 @@ Partial Class DxSbilveR
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
         Me.CheckEdit1.Location = New System.Drawing.Point(8, 27)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -681,9 +691,9 @@ Partial Class DxSbilveR
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(11, 8)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -731,7 +741,7 @@ Partial Class DxSbilveR
         Me.DateEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit3.EditValue = Nothing
         Me.DateEdit3.EnterMoveNextControl = True
-        Me.DateEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit3.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit3.Name = "DateEdit3"
         Me.DateEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -765,7 +775,7 @@ Partial Class DxSbilveR
         Me.DateEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit2.EditValue = Nothing
         Me.DateEdit2.EnterMoveNextControl = True
-        Me.DateEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit2.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit2.Name = "DateEdit2"
         Me.DateEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -860,7 +870,7 @@ Partial Class DxSbilveR
         '
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 24)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit2.Properties.Appearance.Options.UseFont = True
@@ -874,6 +884,7 @@ Partial Class DxSbilveR
         '
         Me.CheckEdit9.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckEdit9.Dock = System.Windows.Forms.DockStyle.Top
+        Me.CheckEdit9.EnterMoveNextControl = True
         Me.CheckEdit9.Location = New System.Drawing.Point(2, 2)
         Me.CheckEdit9.Name = "CheckEdit9"
         Me.CheckEdit9.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

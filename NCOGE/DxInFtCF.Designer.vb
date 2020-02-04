@@ -22,10 +22,26 @@ Partial Class DxInFtCF
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DxInFtCF))
         Dim GridLevelNode1 As DevExpress.XtraGrid.GridLevelNode = New DevExpress.XtraGrid.GridLevelNode()
+        Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim EditorButtonImageOptions3 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject9 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject10 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject11 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject12 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim EditorButtonImageOptions4 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject13 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject14 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject15 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject16 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
         Me.CheckEdit2 = New DevExpress.XtraEditors.CheckEdit()
         Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
@@ -713,13 +729,14 @@ Partial Class DxInFtCF
         Me.GroupControl1.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(1002, 65)
+        Me.GroupControl1.Size = New System.Drawing.Size(1006, 65)
         Me.GroupControl1.TabIndex = 0
         Me.GroupControl1.Text = "GroupControl1"
         '
         'CheckEdit2
         '
         Me.CheckEdit2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit2.EnterMoveNextControl = True
         Me.CheckEdit2.Location = New System.Drawing.Point(339, 23)
         Me.CheckEdit2.Name = "CheckEdit2"
         Me.CheckEdit2.Properties.Caption = ""
@@ -966,9 +983,9 @@ Partial Class DxInFtCF
         Me.ButtonEXP.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonEXP.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonEXP.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonEXP.ImageIndex = 81
-        Me.ButtonEXP.ImageList = Me.ImageGly
-        Me.ButtonEXP.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonEXP.ImageOptions.ImageIndex = 81
+        Me.ButtonEXP.ImageOptions.ImageList = Me.ImageGly
+        Me.ButtonEXP.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonEXP.Location = New System.Drawing.Point(44, 98)
         Me.ButtonEXP.Name = "ButtonEXP"
         Me.ButtonEXP.Size = New System.Drawing.Size(32, 32)
@@ -989,7 +1006,7 @@ Partial Class DxInFtCF
         Me.GroupControl5.Location = New System.Drawing.Point(0, 65)
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.ShowCaption = False
-        Me.GroupControl5.Size = New System.Drawing.Size(1002, 150)
+        Me.GroupControl5.Size = New System.Drawing.Size(1006, 150)
         Me.GroupControl5.TabIndex = 1
         Me.GroupControl5.Text = "GroupControl5"
         '
@@ -1003,9 +1020,9 @@ Partial Class DxInFtCF
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(951, 8)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -1021,9 +1038,9 @@ Partial Class DxInFtCF
         Me.ButtonF3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF3.ImageIndex = 2
-        Me.ButtonF3.ImageList = Me.ImageList32
-        Me.ButtonF3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF3.ImageOptions.ImageIndex = 2
+        Me.ButtonF3.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF3.Location = New System.Drawing.Point(951, 58)
         Me.ButtonF3.Name = "ButtonF3"
         Me.ButtonF3.Size = New System.Drawing.Size(32, 32)
@@ -1098,7 +1115,7 @@ Partial Class DxInFtCF
         Me.TextEdit25.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit25.EditValue = ""
         Me.TextEdit25.EnterMoveNextControl = True
-        Me.TextEdit25.Location = New System.Drawing.Point(37, 21)
+        Me.TextEdit25.Location = New System.Drawing.Point(37, 23)
         Me.TextEdit25.Name = "TextEdit25"
         Me.TextEdit25.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit25.Properties.Appearance.Options.UseFont = True
@@ -1115,7 +1132,7 @@ Partial Class DxInFtCF
         Me.TextEdit12.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit12.EditValue = "000"
         Me.TextEdit12.EnterMoveNextControl = True
-        Me.TextEdit12.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit12.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit12.Name = "TextEdit12"
         Me.TextEdit12.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit12.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1162,9 +1179,9 @@ Partial Class DxInFtCF
         Me.ButtonF8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF8.ImageIndex = 7
-        Me.ButtonF8.ImageList = Me.ImageList32
-        Me.ButtonF8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF8.ImageOptions.ImageIndex = 7
+        Me.ButtonF8.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF8.Location = New System.Drawing.Point(24, 50)
         Me.ButtonF8.Name = "ButtonF8"
         Me.ButtonF8.Size = New System.Drawing.Size(32, 32)
@@ -1260,9 +1277,9 @@ Partial Class DxInFtCF
         'CheckButton2
         '
         Me.CheckButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton2.ImageIndex = 18
-        Me.CheckButton2.ImageList = Me.ImageDx24
-        Me.CheckButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.CheckButton2.ImageOptions.ImageIndex = 18
+        Me.CheckButton2.ImageOptions.ImageList = Me.ImageDx24
+        Me.CheckButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.CheckButton2.Location = New System.Drawing.Point(5, 98)
         Me.CheckButton2.Name = "CheckButton2"
         Me.CheckButton2.Size = New System.Drawing.Size(32, 32)
@@ -1309,7 +1326,7 @@ Partial Class DxInFtCF
         Me.TextEdit14.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit14.EditValue = 0
         Me.TextEdit14.EnterMoveNextControl = True
-        Me.TextEdit14.Location = New System.Drawing.Point(2, 27)
+        Me.TextEdit14.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit14.Name = "TextEdit14"
         Me.TextEdit14.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit14.Properties.Appearance.Options.UseFont = True
@@ -1335,9 +1352,9 @@ Partial Class DxInFtCF
         Me.ButtonF1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF1.ImageIndex = 0
-        Me.ButtonF1.ImageList = Me.ImageList32
-        Me.ButtonF1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF1.ImageOptions.ImageIndex = 0
+        Me.ButtonF1.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF1.Location = New System.Drawing.Point(951, 108)
         Me.ButtonF1.Name = "ButtonF1"
         Me.ButtonF1.Size = New System.Drawing.Size(32, 32)
@@ -1363,7 +1380,7 @@ Partial Class DxInFtCF
         Me.TextEdit13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit13.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit13.EnterMoveNextControl = True
-        Me.TextEdit13.Location = New System.Drawing.Point(2, 27)
+        Me.TextEdit13.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit13.Name = "TextEdit13"
         Me.TextEdit13.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit13.Properties.Appearance.Options.UseFont = True
@@ -1395,10 +1412,10 @@ Partial Class DxInFtCF
         Me.GroupControl7.Controls.Add(Me.TextEdit16)
         Me.GroupControl7.Controls.Add(Me.TextEdit15)
         Me.GroupControl7.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl7.Location = New System.Drawing.Point(0, 576)
+        Me.GroupControl7.Location = New System.Drawing.Point(0, 580)
         Me.GroupControl7.Name = "GroupControl7"
         Me.GroupControl7.ShowCaption = False
-        Me.GroupControl7.Size = New System.Drawing.Size(1002, 74)
+        Me.GroupControl7.Size = New System.Drawing.Size(1006, 74)
         Me.GroupControl7.TabIndex = 2
         Me.GroupControl7.Text = "GroupControl7"
         '
@@ -1489,6 +1506,7 @@ Partial Class DxInFtCF
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
         Me.CheckEdit1.Location = New System.Drawing.Point(7, 38)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1509,9 +1527,9 @@ Partial Class DxInFtCF
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(962, 1)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -1528,9 +1546,9 @@ Partial Class DxInFtCF
         Me.ButtonFF8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonFF8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonFF8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonFF8.ImageIndex = 7
-        Me.ButtonFF8.ImageList = Me.ImageList32
-        Me.ButtonFF8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonFF8.ImageOptions.ImageIndex = 7
+        Me.ButtonFF8.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonFF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonFF8.Location = New System.Drawing.Point(574, 37)
         Me.ButtonFF8.Name = "ButtonFF8"
         Me.ButtonFF8.Size = New System.Drawing.Size(32, 32)
@@ -1548,9 +1566,9 @@ Partial Class DxInFtCF
         Me.ButtonFF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonFF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonFF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonFF5.ImageIndex = 4
-        Me.ButtonFF5.ImageList = Me.ImageList32
-        Me.ButtonFF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonFF5.ImageOptions.ImageIndex = 4
+        Me.ButtonFF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonFF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonFF5.Location = New System.Drawing.Point(963, 36)
         Me.ButtonFF5.Name = "ButtonFF5"
         Me.ButtonFF5.Size = New System.Drawing.Size(32, 32)
@@ -1655,7 +1673,7 @@ Partial Class DxInFtCF
         Me.GroupControl11.Location = New System.Drawing.Point(0, 215)
         Me.GroupControl11.Name = "GroupControl11"
         Me.GroupControl11.ShowCaption = False
-        Me.GroupControl11.Size = New System.Drawing.Size(1002, 361)
+        Me.GroupControl11.Size = New System.Drawing.Size(1006, 365)
         Me.GroupControl11.TabIndex = 3
         Me.GroupControl11.Text = "GroupControl11"
         '
@@ -1664,11 +1682,10 @@ Partial Class DxInFtCF
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
         Me.GridControl1.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(998, 357)
+        Me.GridControl1.Size = New System.Drawing.Size(1002, 361)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -1905,7 +1922,7 @@ Partial Class DxInFtCF
         Me.SPCC.Panel2.Controls.Add(Me.SplitContainerControl1)
         Me.SPCC.Panel2.Text = "Panel2"
         Me.SPCC.PanelVisibility = DevExpress.XtraEditors.SplitPanelVisibility.Panel1
-        Me.SPCC.Size = New System.Drawing.Size(1002, 650)
+        Me.SPCC.Size = New System.Drawing.Size(1006, 654)
         Me.SPCC.SplitterPosition = 997
         Me.SPCC.TabIndex = 0
         Me.SPCC.Text = "SplitContainerControl1"
@@ -2157,13 +2174,13 @@ Partial Class DxInFtCF
         Me.GridColumn19.AppearanceHeader.Options.UseImage = True
         Me.GridColumn19.Caption = "P"
         Me.GridColumn19.FieldName = "TipoStampa"
-        Me.GridColumn19.Image = CType(resources.GetObject("GridColumn19.Image"), System.Drawing.Image)
-        Me.GridColumn19.ImageAlignment = System.Drawing.StringAlignment.Center
+        Me.GridColumn19.ImageOptions.Alignment = System.Drawing.StringAlignment.Center
+        Me.GridColumn19.ImageOptions.Image = CType(resources.GetObject("GridColumn19.ImageOptions.Image"), System.Drawing.Image)
         Me.GridColumn19.Name = "GridColumn19"
         Me.GridColumn19.OptionsColumn.AllowEdit = False
         Me.GridColumn19.OptionsColumn.FixedWidth = True
         Me.GridColumn19.OptionsColumn.ReadOnly = True
-        Me.GridColumn19.ToolTip = "M=Stampa Ministeriale, A=Stampa Assosoftware, AM=Stampa Ministeriale e Assosoftwa" & _
+        Me.GridColumn19.ToolTip = "M=Stampa Ministeriale, A=Stampa Assosoftware, AM=Stampa Ministeriale e Assosoftwa" &
     "re"
         Me.GridColumn19.Width = 25
         '
@@ -2174,8 +2191,8 @@ Partial Class DxInFtCF
         Me.GridColumn22.Caption = "COGE"
         Me.GridColumn22.ColumnEdit = Me.RepositoryItemCheckEdit1
         Me.GridColumn22.FieldName = "Registrata"
-        Me.GridColumn22.Image = CType(resources.GetObject("GridColumn22.Image"), System.Drawing.Image)
-        Me.GridColumn22.ImageAlignment = System.Drawing.StringAlignment.Center
+        Me.GridColumn22.ImageOptions.Alignment = System.Drawing.StringAlignment.Center
+        Me.GridColumn22.ImageOptions.Image = CType(resources.GetObject("GridColumn22.ImageOptions.Image"), System.Drawing.Image)
         Me.GridColumn22.Name = "GridColumn22"
         Me.GridColumn22.OptionsColumn.AllowEdit = False
         Me.GridColumn22.OptionsColumn.FixedWidth = True
@@ -2197,7 +2214,11 @@ Partial Class DxInFtCF
         'RepositoryItemButtonEdit2
         '
         Me.RepositoryItemButtonEdit2.AutoHeight = False
-        Me.RepositoryItemButtonEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemButtonEdit2.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, "VISUALIZZA FATTURA PDF", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, False, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemButtonEdit2.Buttons1"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject2, "", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemButtonEdit2.Buttons2"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject3, "RESET PER REINVIO FATTURA", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemButtonEdit2.Buttons3"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject4, "ELIMINAZIONE DA SOFTWARE HUB", Nothing, Nothing, True)})
+        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
+        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
+        EditorButtonImageOptions3.Image = CType(resources.GetObject("EditorButtonImageOptions3.Image"), System.Drawing.Image)
+        EditorButtonImageOptions4.Image = CType(resources.GetObject("EditorButtonImageOptions4.Image"), System.Drawing.Image)
+        Me.RepositoryItemButtonEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "VISUALIZZA FATTURA PDF", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default]), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, False, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default]), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "RESET PER REINVIO FATTURA", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default]), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions4, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "ELIMINAZIONE DA SOFTWARE HUB", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.RepositoryItemButtonEdit2.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
         Me.RepositoryItemButtonEdit2.Name = "RepositoryItemButtonEdit2"
         Me.RepositoryItemButtonEdit2.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor
@@ -2497,8 +2518,8 @@ Partial Class DxInFtCF
         '
         Me.ButtonREC.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonREC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonREC.Image = CType(resources.GetObject("ButtonREC.Image"), System.Drawing.Image)
-        Me.ButtonREC.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft
+        Me.ButtonREC.ImageOptions.Image = CType(resources.GetObject("ButtonREC.ImageOptions.Image"), System.Drawing.Image)
+        Me.ButtonREC.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft
         Me.ButtonREC.Location = New System.Drawing.Point(1, 2)
         Me.ButtonREC.Name = "ButtonREC"
         Me.ButtonREC.Size = New System.Drawing.Size(40, 40)
@@ -2511,8 +2532,8 @@ Partial Class DxInFtCF
         Me.ButtonView.Appearance.Options.UseFont = True
         Me.ButtonView.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonView.Dock = System.Windows.Forms.DockStyle.Right
-        Me.ButtonView.Image = CType(resources.GetObject("ButtonView.Image"), System.Drawing.Image)
-        Me.ButtonView.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleRight
+        Me.ButtonView.ImageOptions.Image = CType(resources.GetObject("ButtonView.ImageOptions.Image"), System.Drawing.Image)
+        Me.ButtonView.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight
         Me.ButtonView.Location = New System.Drawing.Point(-238, 2)
         Me.ButtonView.Name = "ButtonView"
         Me.ButtonView.Size = New System.Drawing.Size(237, 40)
@@ -2548,7 +2569,7 @@ Partial Class DxInFtCF
         Me.ImageComboBoxEdit5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit5.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit5.Location = New System.Drawing.Point(2, 24)
+        Me.ImageComboBoxEdit5.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit5.Name = "ImageComboBoxEdit5"
         Me.ImageComboBoxEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!)
         Me.ImageComboBoxEdit5.Properties.Appearance.Options.UseFont = True
@@ -2592,7 +2613,7 @@ Partial Class DxInFtCF
         Me.ComboBoxEdit3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit3.EnterMoveNextControl = True
-        Me.ComboBoxEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit3.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit3.Name = "ComboBoxEdit3"
         Me.ComboBoxEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!)
         Me.ComboBoxEdit3.Properties.Appearance.Options.UseFont = True
@@ -2648,7 +2669,7 @@ Partial Class DxInFtCF
         Me.ImageComboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit1.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit1.Name = "ImageComboBoxEdit1"
         Me.ImageComboBoxEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.ImageComboBoxEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -2662,8 +2683,8 @@ Partial Class DxInFtCF
         Me.ButtonClose.Appearance.Options.UseFont = True
         Me.ButtonClose.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonClose.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonClose.Image = CType(resources.GetObject("ButtonClose.Image"), System.Drawing.Image)
-        Me.ButtonClose.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft
+        Me.ButtonClose.ImageOptions.Image = CType(resources.GetObject("ButtonClose.ImageOptions.Image"), System.Drawing.Image)
+        Me.ButtonClose.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft
         Me.ButtonClose.Location = New System.Drawing.Point(1, 2)
         Me.ButtonClose.Name = "ButtonClose"
         Me.ButtonClose.Size = New System.Drawing.Size(88, 42)
@@ -2688,8 +2709,7 @@ Partial Class DxInFtCF
         Me.ZoomT.Location = New System.Drawing.Point(2, 2)
         Me.ZoomT.Name = "ZoomT"
         Me.ZoomT.Properties.Maximum = 100
-        Me.ZoomT.Properties.Middle = 5
-        Me.ZoomT.Properties.ScrollThumbStyle = DevExpress.XtraEditors.Repository.ScrollThumbStyle.ArrowDownRight
+        Me.ZoomT.Properties.Middle = 50
         Me.ZoomT.Size = New System.Drawing.Size(196, 38)
         Me.ZoomT.TabIndex = 0
         Me.ZoomT.Value = 85
@@ -2708,9 +2728,9 @@ Partial Class DxInFtCF
         '
         Me.ButtonF9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 29
-        Me.ButtonF9.ImageList = Me.ImageList32
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 29
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(-41, 7)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)

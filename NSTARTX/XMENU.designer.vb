@@ -179,7 +179,8 @@ Partial Class XMENU
         Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
         Me.PictureEdit1 = New DevExpress.XtraEditors.PictureEdit()
         Me.BarLinkContainerItem1 = New DevExpress.XtraBars.BarLinkContainerItem()
-        Me.WorkspaceManager1 = New DevExpress.Utils.WorkspaceManager()
+        Me.WorkspaceManager1 = New DevExpress.Utils.WorkspaceManager(Me.components)
+        Me.BarButtonItem112 = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -417,9 +418,9 @@ Partial Class XMENU
         Me.BarManager1.DockControls.Add(Me.barDockControlLeft)
         Me.BarManager1.DockControls.Add(Me.barDockControlRight)
         Me.BarManager1.Form = Me
-        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MenuRiservato, Me.BarLook, Me.BarBase1, Me.BarBase3, Me.BarBase4, Me.LookA1, Me.LookA2, Me.LookA3, Me.LookA4, Me.LookA5, Me.BarBase2, Me.MenuUtenti, Me.BarUtenti1, Me.LookSkins, Me.BarCheckItem1, Me.BarRiservato1, Me.BarRiservato2, Me.BarRiservato3, Me.BarSubItem1, Me.BarSubItem2, Me.BarSubItem3, Me.BarSubItem4, Me.BarSubItem5, Me.BarSubItem7, Me.BarSubItem8, Me.BarSubItem10, Me.MenuCDCO, Me.MenuGeve, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.BarButtonItem11, Me.BarButtonItem12, Me.BarButtonItem14, Me.BarButtonItem15, Me.BarButtonItem16, Me.BarButtonItem17, Me.BarButtonItem18, Me.BarButtonItem19, Me.BarButtonItem20, Me.BarButtonItem21, Me.BarButtonItem22, Me.BarButtonItem23, Me.BarButtonItem24, Me.BarButtonItem25, Me.BarButtonItem26, Me.BarButtonItem27, Me.BarButtonItem28, Me.BarButtonItem29, Me.BarButtonItem30, Me.BarButtonItem31, Me.BarButtonItem32, Me.BarButtonItem33, Me.BarButtonItem34, Me.BarButtonItem35, Me.BarButtonItem36, Me.BarButtonItem37, Me.BarButtonItem38, Me.BarButtonItem39, Me.BarButtonItem40, Me.BarButtonItem41, Me.BarButtonItem42, Me.BarButtonItem43, Me.BarButtonItem45, Me.BarButtonItem47, Me.BarButtonItem48, Me.BarButtonItem49, Me.BarButtonItem50, Me.BarButtonItem51, Me.BarButtonItem52, Me.BarButtonItem53, Me.BarButtonItem54, Me.BarButtonItem55, Me.BarButtonItem56, Me.BarButtonItem57, Me.BarButtonItem58, Me.BarButtonItem59, Me.BarButtonItem60, Me.BarButtonItem62, Me.BarButtonItem63, Me.BarButtonItem64, Me.BarButtonItem65, Me.BarButtonItem66, Me.BarButtonItem67, Me.BarButtonItem68, Me.BarButtonItem69, Me.BarButtonItem70, Me.BarButtonItem80, Me.BarButtonItem81, Me.BarButtonItem82, Me.BarButtonItem83, Me.BarButtonItem84, Me.BarButtonItem85, Me.BarButtonItem86, Me.BarButtonItem87, Me.BarButtonItem88, Me.BarButtonItem89, Me.BarButtonItem61, Me.BarButtonItem90, Me.BarButtonItem91, Me.BarButtonItem92, Me.BarButtonItem97, Me.BarButtonItem98, Me.BarButtonItem44, Me.BarButtonItem71, Me.BarButtonItem46, Me.BarButtonItem72, Me.BarButtonItem73, Me.BarButtonItem74, Me.BarButtonItem76, Me.BarButtonItem77, Me.BarEditItem2, Me.BarButtonItem13, Me.BarButtonItem75, Me.BarButtonItem78, Me.BarButtonItem79, Me.BarButtonItem93, Me.BarButtonItem94, Me.BarWorkspaceMenuItem1, Me.BarButtonItem95, Me.BarButtonItem96, Me.BarButtonItem99, Me.BarButtonItem100, Me.BarButtonItem101, Me.BarButtonItem102, Me.BarButtonItem103, Me.BarButtonItem104, Me.BarButtonItem105, Me.MenuCOAN, Me.BarButtonItem106, Me.BarButtonItem107, Me.BarButtonItem111, Me.BarButtonItem108, Me.BarButtonItem109, Me.BarButtonItem110})
+        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.MenuRiservato, Me.BarLook, Me.BarBase1, Me.BarBase3, Me.BarBase4, Me.LookA1, Me.LookA2, Me.LookA3, Me.LookA4, Me.LookA5, Me.BarBase2, Me.MenuUtenti, Me.BarUtenti1, Me.LookSkins, Me.BarCheckItem1, Me.BarRiservato1, Me.BarRiservato2, Me.BarRiservato3, Me.BarSubItem1, Me.BarSubItem2, Me.BarSubItem3, Me.BarSubItem4, Me.BarSubItem5, Me.BarSubItem7, Me.BarSubItem8, Me.BarSubItem10, Me.MenuCDCO, Me.MenuGeve, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.BarButtonItem11, Me.BarButtonItem12, Me.BarButtonItem14, Me.BarButtonItem15, Me.BarButtonItem16, Me.BarButtonItem17, Me.BarButtonItem18, Me.BarButtonItem19, Me.BarButtonItem20, Me.BarButtonItem21, Me.BarButtonItem22, Me.BarButtonItem23, Me.BarButtonItem24, Me.BarButtonItem25, Me.BarButtonItem26, Me.BarButtonItem27, Me.BarButtonItem28, Me.BarButtonItem29, Me.BarButtonItem30, Me.BarButtonItem31, Me.BarButtonItem32, Me.BarButtonItem33, Me.BarButtonItem34, Me.BarButtonItem35, Me.BarButtonItem36, Me.BarButtonItem37, Me.BarButtonItem38, Me.BarButtonItem39, Me.BarButtonItem40, Me.BarButtonItem41, Me.BarButtonItem42, Me.BarButtonItem43, Me.BarButtonItem45, Me.BarButtonItem47, Me.BarButtonItem48, Me.BarButtonItem49, Me.BarButtonItem50, Me.BarButtonItem51, Me.BarButtonItem52, Me.BarButtonItem53, Me.BarButtonItem54, Me.BarButtonItem55, Me.BarButtonItem56, Me.BarButtonItem57, Me.BarButtonItem58, Me.BarButtonItem59, Me.BarButtonItem60, Me.BarButtonItem62, Me.BarButtonItem63, Me.BarButtonItem64, Me.BarButtonItem65, Me.BarButtonItem66, Me.BarButtonItem67, Me.BarButtonItem68, Me.BarButtonItem69, Me.BarButtonItem70, Me.BarButtonItem80, Me.BarButtonItem81, Me.BarButtonItem82, Me.BarButtonItem83, Me.BarButtonItem84, Me.BarButtonItem85, Me.BarButtonItem86, Me.BarButtonItem87, Me.BarButtonItem88, Me.BarButtonItem89, Me.BarButtonItem61, Me.BarButtonItem90, Me.BarButtonItem91, Me.BarButtonItem92, Me.BarButtonItem97, Me.BarButtonItem98, Me.BarButtonItem44, Me.BarButtonItem71, Me.BarButtonItem46, Me.BarButtonItem72, Me.BarButtonItem73, Me.BarButtonItem74, Me.BarButtonItem76, Me.BarButtonItem77, Me.BarEditItem2, Me.BarButtonItem13, Me.BarButtonItem75, Me.BarButtonItem78, Me.BarButtonItem79, Me.BarButtonItem93, Me.BarButtonItem94, Me.BarWorkspaceMenuItem1, Me.BarButtonItem95, Me.BarButtonItem96, Me.BarButtonItem99, Me.BarButtonItem100, Me.BarButtonItem101, Me.BarButtonItem102, Me.BarButtonItem103, Me.BarButtonItem104, Me.BarButtonItem105, Me.MenuCOAN, Me.BarButtonItem106, Me.BarButtonItem107, Me.BarButtonItem111, Me.BarButtonItem108, Me.BarButtonItem109, Me.BarButtonItem110, Me.BarButtonItem112})
         Me.BarManager1.MainMenu = Me.Bar2
-        Me.BarManager1.MaxItemId = 520
+        Me.BarManager1.MaxItemId = 521
         Me.BarManager1.MdiMenuMergeStyle = DevExpress.XtraBars.BarMdiMenuMergeStyle.Never
         Me.BarManager1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.SkinCombo, Me.RepositoryItemTextEdit1, Me.RepositoryItemComboBox1})
         '
@@ -563,7 +564,7 @@ Partial Class XMENU
         '
         Me.BarSubItem3.Caption = "REGISTRAZIONI"
         Me.BarSubItem3.Id = 364
-        Me.BarSubItem3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem14), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem15), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem16), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem17), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem18), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem19), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem20), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem21), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem22), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem23), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem24), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem25), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem26), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem27), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem28), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem29)})
+        Me.BarSubItem3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem14), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem15), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem16), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem112), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem17), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem18), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem19), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem20), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem21), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem22), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem23), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem24), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem25), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem26), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem27), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem28), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem29)})
         Me.BarSubItem3.Name = "BarSubItem3"
         '
         'BarButtonItem14
@@ -1237,28 +1238,32 @@ Partial Class XMENU
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(1004, 44)
+        Me.barDockControlTop.Manager = Me.BarManager1
+        Me.barDockControlTop.Size = New System.Drawing.Size(1004, 41)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.barDockControlBottom.Location = New System.Drawing.Point(0, 654)
+        Me.barDockControlBottom.Manager = Me.BarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(1004, 0)
         '
         'barDockControlLeft
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 44)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 610)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 41)
+        Me.barDockControlLeft.Manager = Me.BarManager1
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 613)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1004, 44)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 610)
+        Me.barDockControlRight.Location = New System.Drawing.Point(1004, 41)
+        Me.barDockControlRight.Manager = Me.BarManager1
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 613)
         '
         'BarCheckItem1
         '
@@ -1343,6 +1348,7 @@ Partial Class XMENU
         Me.BarWorkspaceMenuItem1.Caption = "BarWorkspaceMenuItem1"
         Me.BarWorkspaceMenuItem1.Id = 496
         Me.BarWorkspaceMenuItem1.Name = "BarWorkspaceMenuItem1"
+        Me.BarWorkspaceMenuItem1.WorkspaceManager = Me.WorkspaceManager1
         '
         'BarButtonItem103
         '
@@ -1417,6 +1423,12 @@ Partial Class XMENU
         Me.WorkspaceManager1.TargetControl = Me
         Me.WorkspaceManager1.TransitionType = PushTransition1
         '
+        'BarButtonItem112
+        '
+        Me.BarButtonItem112.Caption = "Registra Insoluti"
+        Me.BarButtonItem112.Id = 520
+        Me.BarButtonItem112.Name = "BarButtonItem112"
+        '
         'XMENU
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1428,9 +1440,8 @@ Partial Class XMENU
         Me.Controls.Add(Me.barDockControlRight)
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.IconOptions.Icon = CType(resources.GetObject("XMENU.IconOptions.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
-        Me.LookAndFeel.SkinName = "iMaginary"
         Me.Name = "XMENU"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1445,6 +1456,7 @@ Partial Class XMENU
         CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents BarManager1 As DevExpress.XtraBars.BarManager
@@ -1605,4 +1617,5 @@ Partial Class XMENU
     Friend WithEvents BarButtonItem108 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem109 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem110 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem112 As DevExpress.XtraBars.BarButtonItem
 End Class

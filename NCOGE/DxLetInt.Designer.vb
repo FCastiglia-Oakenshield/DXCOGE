@@ -418,7 +418,6 @@ Partial Class DxLetInt
         'XtraTabControl1
         '
         Me.XtraTabControl1.Location = New System.Drawing.Point(3, 11)
-        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
         '
         'XtraTabPage1
         '
