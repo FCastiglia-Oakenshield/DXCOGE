@@ -1251,6 +1251,7 @@ Partial Class Insoluti
         Me.GridView3.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView3.OptionsView.ShowGroupPanel = False
         Me.GridView3.OptionsView.ShowIndicator = False
+        Me.GridView3.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.GridColumn27, DevExpress.Data.ColumnSortOrder.Ascending)})
         '
         'GridColumn26
         '
