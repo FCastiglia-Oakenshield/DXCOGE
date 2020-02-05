@@ -38,6 +38,7 @@ Partial Class DxRicPia
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
         CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -307,7 +308,7 @@ Partial Class DxRicPia
         '
         Me.XtraTabPage1.Controls.Add(Me.GridControl1)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl1)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(628, 542)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(632, 546)
         '
         'ImageDx24
         '
@@ -370,6 +371,35 @@ Partial Class DxRicPia
         Me.ImageS16.Images.SetKeyName(10, "selection16_reset.png")
         Me.ImageS16.Images.SetKeyName(11, "F11.png")
         '
+        'ImageDxList32
+        '
+        Me.ImageDxList32.ImageStream = CType(resources.GetObject("ImageDxList32.ImageStream"), DevExpress.Utils.ImageCollectionStreamer)
+        Me.ImageDxList32.Images.SetKeyName(0, "F1_right.png")
+        Me.ImageDxList32.Images.SetKeyName(1, "F2_left.png")
+        Me.ImageDxList32.Images.SetKeyName(2, "F3_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(3, "F4.png")
+        Me.ImageDxList32.Images.SetKeyName(4, "F5_refresh.png")
+        Me.ImageDxList32.Images.SetKeyName(5, "F6_edit_edit.png")
+        Me.ImageDxList32.Images.SetKeyName(6, "F7_new.png")
+        Me.ImageDxList32.Images.SetKeyName(7, "F8_view.png")
+        Me.ImageDxList32.Images.SetKeyName(8, "F9_print.png")
+        Me.ImageDxList32.Images.SetKeyName(9, "keyboard_key_plus.png")
+        Me.ImageDxList32.Images.SetKeyName(10, "F11_ok.png")
+        Me.ImageDxList32.Images.SetKeyName(11, "information.png")
+        Me.ImageDxList32.Images.SetKeyName(12, "printer.png")
+        Me.ImageDxList32.Images.SetKeyName(13, "checkbox.png")
+        Me.ImageDxList32.Images.SetKeyName(14, "checkbox_unchecked.png")
+        Me.ImageDxList32.Images.SetKeyName(15, "Excel.png")
+        Me.ImageDxList32.Images.SetKeyName(16, "floppy_disk.png")
+        Me.ImageDxList32.Images.SetKeyName(17, "checks.png")
+        Me.ImageDxList32.Images.SetKeyName(18, "nav_refresh.png")
+        Me.ImageDxList32.Images.SetKeyName(19, "nav_undo.png")
+        Me.ImageDxList32.Images.SetKeyName(20, "scanner.png")
+        Me.ImageDxList32.Images.SetKeyName(21, "selection_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(22, "Scan Document 32 h p_add.png")
+        Me.ImageDxList32.Images.SetKeyName(23, "Scan Document 32 h p_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(24, "ok.png")
+        '
         'GroupControl1
         '
         Me.GroupControl1.Controls.Add(Me.TextEdit2)
@@ -378,7 +408,7 @@ Partial Class DxRicPia
         Me.GroupControl1.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(628, 28)
+        Me.GroupControl1.Size = New System.Drawing.Size(632, 28)
         Me.GroupControl1.TabIndex = 1
         Me.GroupControl1.TabStop = True
         '
@@ -390,7 +420,7 @@ Partial Class DxRicPia
         Me.TextEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit2.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit2.Size = New System.Drawing.Size(499, 20)
-        Me.TextEdit2.TabIndex = 1
+        Me.TextEdit2.TabIndex = 0
         '
         'TextEdit1
         '
@@ -402,18 +432,17 @@ Partial Class DxRicPia
         Me.TextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit1.Size = New System.Drawing.Size(100, 20)
-        Me.TextEdit1.TabIndex = 0
+        Me.TextEdit1.TabIndex = 1
         '
         'GridControl1
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
         Me.GridControl1.Location = New System.Drawing.Point(0, 28)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(628, 514)
+        Me.GridControl1.Size = New System.Drawing.Size(632, 518)
         Me.GridControl1.TabIndex = 2
         Me.GridControl1.TabStop = False
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1, Me.GridView2})
@@ -425,7 +454,6 @@ Partial Class DxRicPia
         Me.GridView1.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
         Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None
         Me.GridView1.GridControl = Me.GridControl1
-        Me.GridView1.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsNavigation.EnterMoveNextColumn = True
         Me.GridView1.OptionsPrint.ExpandAllGroups = False
@@ -435,8 +463,8 @@ Partial Class DxRicPia
         Me.GridView1.OptionsSelection.UseIndicatorForSelection = False
         Me.GridView1.OptionsView.EnableAppearanceEvenRow = True
         Me.GridView1.OptionsView.EnableAppearanceOddRow = True
+        Me.GridView1.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView1.OptionsView.ShowGroupPanel = False
-        Me.GridView1.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.[Default]
         '
         'GridColumn1
         '
@@ -521,6 +549,7 @@ Partial Class DxRicPia
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl1.ResumeLayout(False)
         CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()

@@ -46,6 +46,7 @@ Partial Class Insoluti
         Me.DateEdit3 = New DevExpress.XtraEditors.DateEdit()
         Me.GroupControl7 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
+        Me.ButtonF8 = New DevExpress.XtraEditors.SimpleButton()
         Me.ButtonFF11 = New DevExpress.XtraEditors.SimpleButton()
         Me.GroupControl99 = New DevExpress.XtraEditors.GroupControl()
         Me.DateEdit2 = New DevExpress.XtraEditors.DateEdit()
@@ -933,6 +934,7 @@ Partial Class Insoluti
         '
         'GroupControl8
         '
+        Me.GroupControl8.Controls.Add(Me.ButtonF8)
         Me.GroupControl8.Controls.Add(Me.ButtonFF11)
         Me.GroupControl8.Controls.Add(Me.GroupControl99)
         Me.GroupControl8.Controls.Add(Me.GroupControl66)
@@ -948,6 +950,27 @@ Partial Class Insoluti
         Me.GroupControl8.Size = New System.Drawing.Size(316, 271)
         Me.GroupControl8.TabIndex = 0
         Me.GroupControl8.Text = "GroupControl2"
+        '
+        'ButtonF8
+        '
+        Me.ButtonF8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonF8.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.ButtonF8.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.ButtonF8.Appearance.Options.UseFont = True
+        Me.ButtonF8.Appearance.Options.UseForeColor = True
+        Me.ButtonF8.Appearance.Options.UseTextOptions = True
+        Me.ButtonF8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.ButtonF8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.ButtonF8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonF8.ImageOptions.ImageIndex = 7
+        Me.ButtonF8.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF8.Location = New System.Drawing.Point(271, 103)
+        Me.ButtonF8.Name = "ButtonF8"
+        Me.ButtonF8.Size = New System.Drawing.Size(32, 32)
+        Me.ButtonF8.TabIndex = 15
+        Me.ButtonF8.TabStop = False
+        Me.ButtonF8.ToolTip = "F8-RICERCA CONTO"
         '
         'ButtonFF11
         '
@@ -1168,7 +1191,7 @@ Partial Class Insoluti
         Me.GroupControl33.Location = New System.Drawing.Point(3, 228)
         Me.GroupControl33.Name = "GroupControl33"
         Me.GroupControl33.Size = New System.Drawing.Size(310, 44)
-        Me.GroupControl33.TabIndex = 4
+        Me.GroupControl33.TabIndex = 3
         Me.GroupControl33.Text = "CONTO"
         '
         'TextEdit21
@@ -1201,10 +1224,8 @@ Partial Class Insoluti
         Me.TextEdit20.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit20.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextEdit20.Properties.MaxLength = 5
-        Me.TextEdit20.Properties.ReadOnly = True
         Me.TextEdit20.Size = New System.Drawing.Size(43, 20)
         Me.TextEdit20.TabIndex = 0
-        Me.TextEdit20.TabStop = False
         '
         'TbLeggi1
         '
@@ -1601,4 +1622,5 @@ Partial Class Insoluti
     Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents ImageComboBoxEdit1 As DevExpress.XtraEditors.ImageComboBoxEdit
+    Friend WithEvents ButtonF8 As DevExpress.XtraEditors.SimpleButton
 End Class

@@ -395,7 +395,6 @@ Partial Class DxScaClf
         'XtraTabControl1
         '
         Me.XtraTabControl1.Location = New System.Drawing.Point(4, 3)
-        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
         Me.XtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.[Default]
         Me.XtraTabControl1.Size = New System.Drawing.Size(1212, 656)
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage2})

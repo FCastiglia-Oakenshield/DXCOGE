@@ -203,6 +203,7 @@ Public Class DxTrFtXc
         If UserId = "DEFENDINI" Then LeggiTaiDefend()
         If UserId = "RICAMBI" Then LeggiTaiRicambi()
         If OkCorris = True Then VerificaCorrispettivi()
+        If UserId = "CSABOX" Then OkZeroFt = True
         PNotaMaxDat = CDate("01/01/2000")
     End Sub
     Sub LeggiTaiRicambi()

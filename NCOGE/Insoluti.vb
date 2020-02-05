@@ -63,7 +63,7 @@ Public Class Insoluti
     Dim RwY As DataRow
 
 
-    Private Sub DxSaldaS_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown, ButtonF5.Click
+    Private Sub DxSaldaS_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Shown, ButtonF5.Click
         If Sw = 0 Then
             PrimoMiglio()
             Sw = 1
@@ -266,15 +266,15 @@ Oltre:
         ShowHitInfo4(GridView4.CalcHitInfo(New Point(e.X, e.Y)))
     End Sub
 
-    Private Sub ImageComboBoxEdit1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ImageComboBoxEdit1.SelectedIndexChanged
-        If ImageComboBoxEdit1.SelectedIndex > 0 Then
-            Cmd = New SqlCommand("Select BanRb from TbBan where BanCod=" & ImageComboBoxEdit1.EditValue, cnCo)
-            TextEdit20.EditValue = Cmd.ExecuteScalar
-            LeggiConto(TextEdit20.EditValue, TextEdit21)
-        Else
-            TextEdit20.EditValue = "" : TextEdit21.EditValue = ""
-        End If
-    End Sub
+    'Private Sub ImageComboBoxEdit1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ImageComboBoxEdit1.SelectedIndexChanged
+    '    If ImageComboBoxEdit1.SelectedIndex > 0 Then
+    '        Cmd = New SqlCommand("Select BanRb from TbBan where BanCod=" & ImageComboBoxEdit1.EditValue, cnCo)
+    '        TextEdit20.EditValue = Cmd.ExecuteScalar
+    '        LeggiConto(TextEdit20.EditValue, TextEdit21)
+    '    Else
+    '        TextEdit20.EditValue = "" : TextEdit21.EditValue = ""
+    '    End If
+    'End Sub
 
     Private Sub ShowHitInfo4(ByVal hi As DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo)
         Dim cgv As DevExpress.XtraGrid.Views.Base.ColumnView = CType(GridControl4.MainView, DevExpress.XtraGrid.Views.Base.ColumnView)
@@ -290,6 +290,7 @@ Oltre:
             TotaleIn()
         End If
     End Sub
+
     Sub EliminaCheck()
         GridView3.ActiveFilterString = ""
         Dim X As Int16
@@ -301,6 +302,34 @@ Oltre:
             End If
         Next
     End Sub
+    Private Sub TbLeggi1_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles TbLeggi1.Enter
+        If LeggiConto(TextEdit20.EditValue, TextEdit21) = False Then TextEdit20.Focus() Else ButtonFF11.Focus()
+    End Sub
+    Private Sub ButtonF8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF8.Click
+        Dim Nc As String = ""
+        Nc = EstraiRicerca(TextEdit20.EditValue.ToUpper)
+        If Nc > "00.00" Then
+            TextEdit20.EditValue = Nc
+            LeggiConto(TextEdit20.EditValue, TextEdit21)
+            SelectNextControl(ButtonFF11, True, True, True, True)
+        End If
+        Exit Sub
+    End Sub
+    Function EstraiRicerca(ByVal Tipo As String) As String
+        'Dim frm As New RicercaClFo
+        'Dim CF As String = ""
+        'If Tipo <> "F" And Tipo <> "C" Then
+        EstraiRicerca = Query.CercaPia()
+        Exit Function
+        'End If
+        'If Tipo = "F" Then CF = "FO"
+        'If Tipo = "C" Then CF = "CL"
+        'frm.StartPosition = FormStartPosition.Manual
+        'frm.Location = New Point(GridControl3.Location.X, GridControl3.Location.Y + 80)
+        'frm.CliFor = CF
+        'frm.ShowDialog()
+        'EstraiRicerca = frm.Codice
+    End Function
     Function LeggiConto(ByRef CodCo As String, ByRef Anagraf As TextEdit) As Boolean
         Anagraf.Text = ""
         LeggiConto = False
@@ -348,6 +377,11 @@ Oltre:
         If e.KeyData = Keys.F5 And GroupControl8.Enabled = True Then
             e.Handled = True
             ButtonFF5.PerformClick()
+            Exit Sub
+        End If
+        If e.KeyData = Keys.F8 And GroupControl8.Enabled = True Then
+            e.Handled = True
+            ButtonF8.PerformClick()
             Exit Sub
         End If
         If e.KeyData = Keys.F11 And GroupControl8.Enabled = True Then

@@ -552,10 +552,10 @@ Partial Class DxSaldaC
         Me.GroupControlB.Controls.Add(Me.GroupControl3)
         Me.GroupControlB.Controls.Add(Me.GroupControl7)
         Me.GroupControlB.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControlB.Location = New System.Drawing.Point(321, 512)
+        Me.GroupControlB.Location = New System.Drawing.Point(321, 516)
         Me.GroupControlB.Name = "GroupControlB"
         Me.GroupControlB.ShowCaption = False
-        Me.GroupControlB.Size = New System.Drawing.Size(681, 138)
+        Me.GroupControlB.Size = New System.Drawing.Size(685, 138)
         Me.GroupControlB.TabIndex = 1
         '
         'GroupControl3
@@ -563,7 +563,7 @@ Partial Class DxSaldaC
         Me.GroupControl3.Controls.Add(Me.GroupControl5)
         Me.GroupControl3.Controls.Add(Me.RadioGroup1)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl3.Location = New System.Drawing.Point(7, 2)
+        Me.GroupControl3.Location = New System.Drawing.Point(11, 2)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.Size = New System.Drawing.Size(257, 134)
         Me.GroupControl3.TabIndex = 14
@@ -605,9 +605,9 @@ Partial Class DxSaldaC
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(206, 5)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -618,7 +618,7 @@ Partial Class DxSaldaC
         'RadioGroup1
         '
         Me.RadioGroup1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.RadioGroup1.Location = New System.Drawing.Point(2, 21)
+        Me.RadioGroup1.Location = New System.Drawing.Point(2, 23)
         Me.RadioGroup1.Name = "RadioGroup1"
         Me.RadioGroup1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioGroup1.Properties.Appearance.Options.UseFont = True
@@ -632,7 +632,7 @@ Partial Class DxSaldaC
         '
         Me.GroupControl7.Controls.Add(Me.GroupControl8)
         Me.GroupControl7.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl7.Location = New System.Drawing.Point(264, 2)
+        Me.GroupControl7.Location = New System.Drawing.Point(268, 2)
         Me.GroupControl7.Name = "GroupControl7"
         Me.GroupControl7.ShowCaption = False
         Me.GroupControl7.Size = New System.Drawing.Size(415, 134)
@@ -667,9 +667,9 @@ Partial Class DxSaldaC
         Me.ButtonFF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonFF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonFF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonFF11.ImageIndex = 10
-        Me.ButtonFF11.ImageList = Me.ImageList32
-        Me.ButtonFF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonFF11.ImageOptions.ImageIndex = 10
+        Me.ButtonFF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonFF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonFF11.Location = New System.Drawing.Point(374, 51)
         Me.ButtonFF11.Name = "ButtonFF11"
         Me.ButtonFF11.Size = New System.Drawing.Size(32, 32)
@@ -698,7 +698,7 @@ Partial Class DxSaldaC
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EditValue = 0
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 24)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit1.Properties.Appearance.Options.UseFont = True
@@ -736,7 +736,7 @@ Partial Class DxSaldaC
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EditValue = ""
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit2.Properties.Appearance.Options.UseFont = True
@@ -760,9 +760,9 @@ Partial Class DxSaldaC
         Me.ButtonFF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonFF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonFF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonFF5.ImageIndex = 4
-        Me.ButtonFF5.ImageList = Me.ImageList32
-        Me.ButtonFF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonFF5.ImageOptions.ImageIndex = 4
+        Me.ButtonFF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonFF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonFF5.Location = New System.Drawing.Point(295, 51)
         Me.ButtonFF5.Name = "ButtonFF5"
         Me.ButtonFF5.Size = New System.Drawing.Size(32, 32)
@@ -786,7 +786,7 @@ Partial Class DxSaldaC
         Me.DateEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit1.EditValue = Nothing
         Me.DateEdit1.EnterMoveNextControl = True
-        Me.DateEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit1.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit1.Name = "DateEdit1"
         Me.DateEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -812,9 +812,9 @@ Partial Class DxSaldaC
         Me.ButtonF8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF8.ImageIndex = 7
-        Me.ButtonF8.ImageList = Me.ImageList32
-        Me.ButtonF8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF8.ImageOptions.ImageIndex = 7
+        Me.ButtonF8.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF8.Location = New System.Drawing.Point(219, 51)
         Me.ButtonF8.Name = "ButtonF8"
         Me.ButtonF8.Size = New System.Drawing.Size(32, 32)
@@ -836,7 +836,7 @@ Partial Class DxSaldaC
         Me.ImageComboBoxEdit2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit2.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit2.Name = "ImageComboBoxEdit2"
         Me.ImageComboBoxEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImageComboBoxEdit2.Properties.Appearance.Options.UseFont = True
@@ -864,7 +864,7 @@ Partial Class DxSaldaC
         Me.TextEdit21.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit21.EditValue = ""
         Me.TextEdit21.EnterMoveNextControl = True
-        Me.TextEdit21.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit21.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit21.Name = "TextEdit21"
         Me.TextEdit21.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit21.Properties.Appearance.Options.UseFont = True
@@ -881,7 +881,7 @@ Partial Class DxSaldaC
         Me.TextEdit20.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit20.EditValue = ""
         Me.TextEdit20.EnterMoveNextControl = True
-        Me.TextEdit20.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit20.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit20.Name = "TextEdit20"
         Me.TextEdit20.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit20.Properties.Appearance.Options.UseFont = True
@@ -921,7 +921,7 @@ Partial Class DxSaldaC
         Me.DateEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit2.EditValue = Nothing
         Me.DateEdit2.EnterMoveNextControl = True
-        Me.DateEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit2.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit2.Name = "DateEdit2"
         Me.DateEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -944,7 +944,7 @@ Partial Class DxSaldaC
         Me.GroupControl2.Location = New System.Drawing.Point(321, 0)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.ShowCaption = False
-        Me.GroupControl2.Size = New System.Drawing.Size(681, 269)
+        Me.GroupControl2.Size = New System.Drawing.Size(685, 269)
         Me.GroupControl2.TabIndex = 16
         Me.GroupControl2.Text = "GroupControl2"
         '
@@ -953,11 +953,10 @@ Partial Class DxSaldaC
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl2.FormsUseDefaultLookAndFeel = True
         Me.GridControl2.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl2.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
-        Me.GridControl2.Size = New System.Drawing.Size(677, 265)
+        Me.GridControl2.Size = New System.Drawing.Size(681, 265)
         Me.GridControl2.TabIndex = 7
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -1411,7 +1410,7 @@ Partial Class DxSaldaC
         Me.GroupControlSx.Location = New System.Drawing.Point(0, 0)
         Me.GroupControlSx.Name = "GroupControlSx"
         Me.GroupControlSx.ShowCaption = False
-        Me.GroupControlSx.Size = New System.Drawing.Size(321, 650)
+        Me.GroupControlSx.Size = New System.Drawing.Size(321, 654)
         Me.GroupControlSx.TabIndex = 17
         Me.GroupControlSx.Text = "GroupControl4"
         '
@@ -1422,7 +1421,7 @@ Partial Class DxSaldaC
         Me.GroupControl1.Location = New System.Drawing.Point(2, 372)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(317, 276)
+        Me.GroupControl1.Size = New System.Drawing.Size(317, 280)
         Me.GroupControl1.TabIndex = 1
         '
         'GridControl1
@@ -1430,11 +1429,10 @@ Partial Class DxSaldaC
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
         Me.GridControl1.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(313, 272)
+        Me.GridControl1.Size = New System.Drawing.Size(313, 276)
         Me.GridControl1.TabIndex = 3
         Me.GridControl1.TabStop = False
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -1538,7 +1536,7 @@ Partial Class DxSaldaC
         Me.TextEdit23.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit23.EditValue = ""
         Me.TextEdit23.EnterMoveNextControl = True
-        Me.TextEdit23.Location = New System.Drawing.Point(51, 21)
+        Me.TextEdit23.Location = New System.Drawing.Point(51, 23)
         Me.TextEdit23.Name = "TextEdit23"
         Me.TextEdit23.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit23.Properties.Appearance.Options.UseFont = True
@@ -1555,7 +1553,7 @@ Partial Class DxSaldaC
         Me.TextEdit22.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit22.EditValue = ""
         Me.TextEdit22.EnterMoveNextControl = True
-        Me.TextEdit22.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit22.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit22.Name = "TextEdit22"
         Me.TextEdit22.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit22.Properties.Appearance.Options.UseFont = True
@@ -1581,7 +1579,6 @@ Partial Class DxSaldaC
         Me.GridControl3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl3.FormsUseDefaultLookAndFeel = True
         Me.GridControl3.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl3.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl3.MainView = Me.GridView3
         Me.GridControl3.Name = "GridControl3"
         Me.GridControl3.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit3})
@@ -1776,7 +1773,7 @@ Partial Class DxSaldaC
         Me.GroupControl9.Location = New System.Drawing.Point(321, 269)
         Me.GroupControl9.Name = "GroupControl9"
         Me.GroupControl9.ShowCaption = False
-        Me.GroupControl9.Size = New System.Drawing.Size(681, 210)
+        Me.GroupControl9.Size = New System.Drawing.Size(685, 210)
         Me.GroupControl9.TabIndex = 18
         Me.GroupControl9.Text = "GroupControl4"
         '
@@ -1785,11 +1782,10 @@ Partial Class DxSaldaC
         Me.GridControl4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl4.FormsUseDefaultLookAndFeel = True
         Me.GridControl4.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl4.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl4.MainView = Me.GridView4
         Me.GridControl4.Name = "GridControl4"
         Me.GridControl4.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit4})
-        Me.GridControl4.Size = New System.Drawing.Size(677, 206)
+        Me.GridControl4.Size = New System.Drawing.Size(681, 206)
         Me.GridControl4.TabIndex = 8
         Me.GridControl4.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
         '
@@ -1976,7 +1972,7 @@ Partial Class DxSaldaC
         Me.TextEdit4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit4.EditValue = ""
         Me.TextEdit4.EnterMoveNextControl = True
-        Me.TextEdit4.Location = New System.Drawing.Point(3, 6)
+        Me.TextEdit4.Location = New System.Drawing.Point(5, 8)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit4.Properties.Appearance.Options.UseFont = True
@@ -1993,7 +1989,7 @@ Partial Class DxSaldaC
         Me.TextEdit5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit5.EditValue = ""
         Me.TextEdit5.EnterMoveNextControl = True
-        Me.TextEdit5.Location = New System.Drawing.Point(59, 6)
+        Me.TextEdit5.Location = New System.Drawing.Point(61, 8)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit5.Properties.Appearance.Options.UseFont = True
@@ -2010,7 +2006,7 @@ Partial Class DxSaldaC
         Me.TextEdit6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit6.EditValue = ""
         Me.TextEdit6.EnterMoveNextControl = True
-        Me.TextEdit6.Location = New System.Drawing.Point(464, 6)
+        Me.TextEdit6.Location = New System.Drawing.Point(466, 8)
         Me.TextEdit6.Name = "TextEdit6"
         Me.TextEdit6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit6.Properties.Appearance.Options.UseFont = True
@@ -2027,7 +2023,7 @@ Partial Class DxSaldaC
         Me.TextEdit7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit7.EditValue = ""
         Me.TextEdit7.EnterMoveNextControl = True
-        Me.TextEdit7.Location = New System.Drawing.Point(504, 6)
+        Me.TextEdit7.Location = New System.Drawing.Point(506, 8)
         Me.TextEdit7.Name = "TextEdit7"
         Me.TextEdit7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit7.Properties.Appearance.Options.UseFont = True
@@ -2044,7 +2040,7 @@ Partial Class DxSaldaC
         Me.TextEdit8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit8.EditValue = 0
         Me.TextEdit8.EnterMoveNextControl = True
-        Me.TextEdit8.Location = New System.Drawing.Point(569, 6)
+        Me.TextEdit8.Location = New System.Drawing.Point(571, 8)
         Me.TextEdit8.Name = "TextEdit8"
         Me.TextEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit8.Properties.Appearance.Options.UseFont = True
@@ -2069,10 +2065,10 @@ Partial Class DxSaldaC
         '
         Me.ButtonXF11.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ButtonXF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonXF11.ImageIndex = 24
-        Me.ButtonXF11.ImageList = Me.imageList1
-        Me.ButtonXF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonXF11.Location = New System.Drawing.Point(661, 7)
+        Me.ButtonXF11.ImageOptions.ImageIndex = 24
+        Me.ButtonXF11.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonXF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF11.Location = New System.Drawing.Point(663, 9)
         Me.ButtonXF11.Name = "ButtonXF11"
         Me.ButtonXF11.Size = New System.Drawing.Size(20, 18)
         Me.ButtonXF11.TabIndex = 17
@@ -2090,7 +2086,7 @@ Partial Class DxSaldaC
         Me.GroupControl10.Location = New System.Drawing.Point(321, 479)
         Me.GroupControl10.Name = "GroupControl10"
         Me.GroupControl10.ShowCaption = False
-        Me.GroupControl10.Size = New System.Drawing.Size(681, 33)
+        Me.GroupControl10.Size = New System.Drawing.Size(685, 37)
         Me.GroupControl10.TabIndex = 19
         Me.GroupControl10.Text = "GroupControl4"
         '
