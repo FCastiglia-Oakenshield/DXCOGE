@@ -394,8 +394,10 @@ Partial Class DxScaClf
         '
         'XtraTabControl1
         '
-        Me.XtraTabControl1.Location = New System.Drawing.Point(3, 3)
+        Me.XtraTabControl1.Location = New System.Drawing.Point(4, 3)
+        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
         Me.XtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.[Default]
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1212, 656)
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage2})
         Me.XtraTabControl1.Controls.SetChildIndex(Me.XtraTabPage2, 0)
         Me.XtraTabControl1.Controls.SetChildIndex(Me.XtraTabPage1, 0)
@@ -404,7 +406,7 @@ Partial Class DxScaClf
         '
         Me.XtraTabPage1.Controls.Add(Me.GroupControl2)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl1)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1002, 628)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1210, 631)
         Me.XtraTabPage1.Text = "Dettaglio"
         '
         'ImageDx24
@@ -514,9 +516,9 @@ Partial Class DxScaClf
         Me.GroupControl1.Controls.Add(Me.GroupControl3)
         Me.GroupControl1.Controls.Add(Me.RadioGroup1)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl1.Location = New System.Drawing.Point(0, 562)
+        Me.GroupControl1.Location = New System.Drawing.Point(0, 565)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(1002, 66)
+        Me.GroupControl1.Size = New System.Drawing.Size(1210, 66)
         Me.GroupControl1.TabIndex = 1
         '
         'ButtonF1
@@ -529,9 +531,9 @@ Partial Class DxScaClf
         Me.ButtonF1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF1.ImageIndex = 0
-        Me.ButtonF1.ImageList = Me.ImageList32
-        Me.ButtonF1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF1.ImageOptions.ImageIndex = 0
+        Me.ButtonF1.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF1.Location = New System.Drawing.Point(851, 27)
         Me.ButtonF1.Name = "ButtonF1"
         Me.ButtonF1.Size = New System.Drawing.Size(32, 32)
@@ -548,9 +550,9 @@ Partial Class DxScaClf
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(959, 27)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -568,9 +570,9 @@ Partial Class DxScaClf
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(904, 27)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -580,8 +582,7 @@ Partial Class DxScaClf
         '
         'CheckedComboBoxEdit1
         '
-        Me.CheckedComboBoxEdit1.EditValue = "Tratta, Ricevuta Bancaria, Rimessa Diretta, Contanti, Bonifico, Contrassegno, R. " & _
-    "i. d., C/C Postale o Carta  C."
+        Me.CheckedComboBoxEdit1.EditValue = "1, 2, 3, 4, 5, 6, 7, 8"
         Me.CheckedComboBoxEdit1.EnterMoveNextControl = True
         Me.CheckedComboBoxEdit1.Location = New System.Drawing.Point(488, 34)
         Me.CheckedComboBoxEdit1.Name = "CheckedComboBoxEdit1"
@@ -600,9 +601,9 @@ Partial Class DxScaClf
         Me.GroupControl4.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl4.Controls.Add(Me.DateEdit2)
         Me.GroupControl4.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl4.Location = New System.Drawing.Point(368, 21)
+        Me.GroupControl4.Location = New System.Drawing.Point(368, 23)
         Me.GroupControl4.Name = "GroupControl4"
-        Me.GroupControl4.Size = New System.Drawing.Size(95, 43)
+        Me.GroupControl4.Size = New System.Drawing.Size(95, 41)
         Me.GroupControl4.TabIndex = 4
         Me.GroupControl4.Text = "ALLA DATA"
         '
@@ -611,7 +612,7 @@ Partial Class DxScaClf
         Me.DateEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit2.EditValue = New Date(2009, 4, 9, 15, 33, 42, 273)
         Me.DateEdit2.EnterMoveNextControl = True
-        Me.DateEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit2.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit2.Name = "DateEdit2"
         Me.DateEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateEdit2.Properties.Appearance.Options.UseFont = True
@@ -629,9 +630,9 @@ Partial Class DxScaClf
         Me.GroupControl3.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl3.Controls.Add(Me.DateEdit1)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl3.Location = New System.Drawing.Point(273, 21)
+        Me.GroupControl3.Location = New System.Drawing.Point(273, 23)
         Me.GroupControl3.Name = "GroupControl3"
-        Me.GroupControl3.Size = New System.Drawing.Size(95, 43)
+        Me.GroupControl3.Size = New System.Drawing.Size(95, 41)
         Me.GroupControl3.TabIndex = 3
         Me.GroupControl3.Text = "DALLA DATA"
         '
@@ -640,7 +641,7 @@ Partial Class DxScaClf
         Me.DateEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit1.EditValue = New Date(2009, 4, 9, 15, 33, 35, 288)
         Me.DateEdit1.EnterMoveNextControl = True
-        Me.DateEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit1.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit1.Name = "DateEdit1"
         Me.DateEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateEdit1.Properties.Appearance.Options.UseFont = True
@@ -660,13 +661,13 @@ Partial Class DxScaClf
         'RadioGroup1
         '
         Me.RadioGroup1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RadioGroup1.Location = New System.Drawing.Point(2, 21)
+        Me.RadioGroup1.Location = New System.Drawing.Point(2, 23)
         Me.RadioGroup1.Name = "RadioGroup1"
         Me.RadioGroup1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioGroup1.Properties.Appearance.Options.UseFont = True
         Me.RadioGroup1.Properties.Columns = 2
         Me.RadioGroup1.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem("CL", "CLIENTI"), New DevExpress.XtraEditors.Controls.RadioGroupItem("FO", "FORNITORI")})
-        Me.RadioGroup1.Size = New System.Drawing.Size(271, 43)
+        Me.RadioGroup1.Size = New System.Drawing.Size(271, 41)
         Me.RadioGroup1.TabIndex = 0
         '
         'GroupControl2
@@ -675,17 +676,17 @@ Partial Class DxScaClf
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl2.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(1002, 562)
+        Me.GroupControl2.Size = New System.Drawing.Size(1210, 565)
         Me.GroupControl2.TabIndex = 2
         Me.GroupControl2.Text = "GroupControl2"
         '
         'GridControl1
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.Location = New System.Drawing.Point(2, 21)
+        Me.GridControl1.Location = New System.Drawing.Point(2, 23)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(998, 539)
+        Me.GridControl1.Size = New System.Drawing.Size(1206, 540)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -702,7 +703,6 @@ Partial Class DxScaClf
         Me.GridView1.OptionsPrint.ExpandAllDetails = True
         Me.GridView1.OptionsPrint.PrintDetails = True
         Me.GridView1.OptionsPrint.PrintFilterInfo = True
-        Me.GridView1.OptionsView.ColumnAutoWidth = False
         Me.GridView1.OptionsView.EnableAppearanceEvenRow = True
         Me.GridView1.OptionsView.EnableAppearanceOddRow = True
         Me.GridView1.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.VisibleAlways
@@ -954,7 +954,7 @@ Partial Class DxScaClf
         Me.XtraTabPage2.Controls.Add(Me.GroupControl8)
         Me.XtraTabPage2.Controls.Add(Me.GroupControl5)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1002, 628)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1210, 631)
         Me.XtraTabPage2.Text = "Riepilogo"
         '
         'GroupControl8
@@ -964,17 +964,17 @@ Partial Class DxScaClf
         Me.GroupControl8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl8.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl8.Name = "GroupControl8"
-        Me.GroupControl8.Size = New System.Drawing.Size(1002, 581)
+        Me.GroupControl8.Size = New System.Drawing.Size(1210, 584)
         Me.GroupControl8.TabIndex = 3
         Me.GroupControl8.Text = "GroupControl8"
         '
         'GridControl2
         '
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl2.Location = New System.Drawing.Point(2, 21)
+        Me.GridControl2.Location = New System.Drawing.Point(2, 23)
         Me.GridControl2.MainView = Me.AdvBandedGridView1
         Me.GridControl2.Name = "GridControl2"
-        Me.GridControl2.Size = New System.Drawing.Size(998, 558)
+        Me.GridControl2.Size = New System.Drawing.Size(1206, 559)
         Me.GridControl2.TabIndex = 0
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.AdvBandedGridView1, Me.AdvBandedGridView2})
         '
@@ -1329,10 +1329,10 @@ Partial Class DxScaClf
         'GridControl3
         '
         Me.GridControl3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl3.Location = New System.Drawing.Point(2, 21)
+        Me.GridControl3.Location = New System.Drawing.Point(2, 23)
         Me.GridControl3.MainView = Me.AdvBandedGridView3
         Me.GridControl3.Name = "GridControl3"
-        Me.GridControl3.Size = New System.Drawing.Size(998, 558)
+        Me.GridControl3.Size = New System.Drawing.Size(1206, 559)
         Me.GridControl3.TabIndex = 1
         Me.GridControl3.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.AdvBandedGridView3, Me.AdvBandedGridView4})
         '
@@ -1589,10 +1589,10 @@ Partial Class DxScaClf
         Me.GroupControl5.Controls.Add(Me.RadioGroup3)
         Me.GroupControl5.Controls.Add(Me.RadioGroup2)
         Me.GroupControl5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl5.Location = New System.Drawing.Point(0, 581)
+        Me.GroupControl5.Location = New System.Drawing.Point(0, 584)
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.ShowCaption = False
-        Me.GroupControl5.Size = New System.Drawing.Size(1002, 47)
+        Me.GroupControl5.Size = New System.Drawing.Size(1210, 47)
         Me.GroupControl5.TabIndex = 2
         '
         'SimpleButton1
@@ -1605,9 +1605,9 @@ Partial Class DxScaClf
         Me.SimpleButton1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.SimpleButton1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.SimpleButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SimpleButton1.ImageIndex = 27
-        Me.SimpleButton1.ImageList = Me.ImageGly
-        Me.SimpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.SimpleButton1.ImageOptions.ImageIndex = 27
+        Me.SimpleButton1.ImageOptions.ImageList = Me.ImageGly
+        Me.SimpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.SimpleButton1.Location = New System.Drawing.Point(660, 8)
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.Size = New System.Drawing.Size(32, 32)
@@ -1625,9 +1625,9 @@ Partial Class DxScaClf
         Me.ButtonXF1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonXF1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonXF1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonXF1.ImageIndex = 0
-        Me.ButtonXF1.ImageList = Me.ImageList32
-        Me.ButtonXF1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF1.ImageOptions.ImageIndex = 0
+        Me.ButtonXF1.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonXF1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonXF1.Location = New System.Drawing.Point(853, 8)
         Me.ButtonXF1.Name = "ButtonXF1"
         Me.ButtonXF1.Size = New System.Drawing.Size(32, 32)
@@ -1644,9 +1644,9 @@ Partial Class DxScaClf
         Me.ButtonXF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonXF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonXF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonXF9.ImageIndex = 9
-        Me.ButtonXF9.ImageList = Me.ImageDx24
-        Me.ButtonXF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF9.ImageOptions.ImageIndex = 9
+        Me.ButtonXF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonXF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonXF9.Location = New System.Drawing.Point(961, 8)
         Me.ButtonXF9.Name = "ButtonXF9"
         Me.ButtonXF9.Size = New System.Drawing.Size(32, 32)
@@ -1664,9 +1664,9 @@ Partial Class DxScaClf
         Me.ButtonXF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonXF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonXF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonXF5.ImageIndex = 4
-        Me.ButtonXF5.ImageList = Me.ImageList32
-        Me.ButtonXF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF5.ImageOptions.ImageIndex = 4
+        Me.ButtonXF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonXF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonXF5.Location = New System.Drawing.Point(906, 8)
         Me.ButtonXF5.Name = "ButtonXF5"
         Me.ButtonXF5.Size = New System.Drawing.Size(32, 32)
@@ -1730,7 +1730,7 @@ Partial Class DxScaClf
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1008, 656)
+        Me.ClientSize = New System.Drawing.Size(1218, 656)
         Me.Name = "DxScaClf"
         Me.Text = "DxScaClf"
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
