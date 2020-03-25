@@ -109,8 +109,8 @@ Public Class XMENU
             End If
         End If
         Userwin = GetUserName()
-            AbilitaGeve()
-            'CONNESSIONIGS()
+        AbilitaGeve()
+        'CONNESSIONIGS()
     End Sub
     Private Sub XMENU_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         Dim TaskForm As Form
@@ -833,8 +833,11 @@ esci:
                 DXMenu(New DxSp2018, "Elenchi Iva Anno " & BarEditItem2.EditValue)
             Case "2019"
                 DXMenu(New DxSp2019, "Esterometro Anno " & BarEditItem2.EditValue)
+            Case "2020"
+                DXMenu(New DxSp2020, "Esterometro Anno " & BarEditItem2.EditValue)
         End Select
         BarEditItem2.EditValue = ""
+        System.Windows.Forms.SendKeys.Send("{ENTER}")
     End Sub
 
     Private Sub BarButtonItem75_ItemClick_1(sender As System.Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem75.ItemClick
@@ -908,4 +911,5 @@ esci:
     Private Sub BarButtonItem112_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BarButtonItem112.ItemClick
         DXMenu(New Insoluti, e.Item.Caption)
     End Sub
+
 End Class
