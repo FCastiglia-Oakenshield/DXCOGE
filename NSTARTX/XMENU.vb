@@ -36,7 +36,7 @@ Public Class XMENU
         Cmd = New SqlCommand("select sel8 from TbSel where SelId = 1", cnVd)
 
         Locale = Cmd.ExecuteScalar
-
+        Locale = "C:\WKCSA\"
         If Directory.Exists(Locale) = False Then
             Directory.CreateDirectory(Locale)
         End If
