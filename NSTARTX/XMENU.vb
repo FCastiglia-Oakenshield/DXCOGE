@@ -833,6 +833,8 @@ esci:
                 DXMenu(New DxSp2018, "Elenchi Iva Anno " & BarEditItem2.EditValue)
             Case "2019"
                 DXMenu(New DxSp2019, "Esterometro Anno " & BarEditItem2.EditValue)
+            Case "2020"
+                DXMenu(New DxSp2020, "Esterometro Anno " & BarEditItem2.EditValue)
         End Select
         BarEditItem2.EditValue = ""
     End Sub
