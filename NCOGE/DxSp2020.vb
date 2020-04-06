@@ -119,7 +119,7 @@ Public Class DxSp2020
         RadioGroup1.EditValue = 0 : TextEdit20.EditValue = Nothing : TextEdit21.EditValue = Nothing : ProgInvio = 0 : RadioGroup2.EditValue = ClFo : RadioGroup3.EditValue = RadioGroup2.EditValue : RadioGroup4.EditValue = RadioGroup2.EditValue : RadioGroup5.EditValue = RadioGroup2.EditValue
 
         RadioGroup1.Properties.Items(0).Enabled = False : RadioGroup1.Properties.Items(1).Enabled = False : RadioGroup1.Properties.Items(2).Enabled = False
-        RadioGroup1.Properties.Items(3).Enabled = False 
+        RadioGroup1.Properties.Items(3).Enabled = False
 
         TextEdit22.ResetBackColor()
 
@@ -152,7 +152,7 @@ Public Class DxSp2020
         While dataRd.Read
             ' P = dataRd.Item("IvaVmese") - 1
             P = (dataRd.Item("IvaVmese") / 3) - 1
-            RadioGroup1.Properties.Items(P).Enabled = True
+            If P > -1 Then RadioGroup1.Properties.Items(P).Enabled = True
         End While
         dataRd.Close()
     End Sub
@@ -183,7 +183,7 @@ Public Class DxSp2020
         Next
 
     End Sub
-  
+
     Sub Bottoni(ByVal N As Boolean)
         ButtonF1.Enabled = Not N
         XtraTabPage2.PageVisible = N And RadioGroup1.EditValue <> 0
@@ -441,7 +441,7 @@ Public Class DxSp2020
         End If
 
         Dim P As New DxPwdDialog
-        DxPwdDialog.Password = "EST2019"
+        DxPwdDialog.Password = "EST2020"
         P.ShowDialog()
         Return DxPwdDialog.Esatta
     End Function
@@ -611,7 +611,7 @@ Public Class DxSp2020
 
         DaDai = New SqlDataAdapter("SELECT * FROM TbIntPF WHERE PfClifor in (SELECT PRegClifor from TMPXMLREGIVA_EST) AND PFTIPO=@TIPO", cnCo)
         BlDai = New SqlCommandBuilder(DaDai)
-      
+
         DaDai.SelectCommand.Parameters.Add(P3)
         DaDai.SelectCommand.CommandTimeout = 300
 
@@ -1477,5 +1477,5 @@ Public Class DxSp2020
         RepositoryItemCheckEdit2.ReadOnly = (GridView2.GetFocusedDataRow("ABILITATO") = False)
     End Sub
 
-   
+
 End Class
