@@ -155,7 +155,7 @@
     <Compile Include="DxEstrattoNew.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DxSp2020.Designer.vb">
+    <Compile Include="DxSp2020.designer.vb">
       <DependentUpon>DxSp2020.vb</DependentUpon>
     </Compile>
     <Compile Include="DxSp2020.vb">

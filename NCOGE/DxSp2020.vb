@@ -82,9 +82,10 @@ Public Class DxSp2020
 
     Dim AC(5) As String
 
-    'Private Sub DxSp2017_Load(sender As Object, e As System.EventArgs) Handles Me.Load
-
-    'End Sub
+    Private Sub DxSp2017_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+        CaricaPaesi()
+        ControlloRighe()
+    End Sub
     Private Sub CaricaPaesi()
         Paesi = New Collection
 
@@ -98,15 +99,13 @@ Public Class DxSp2020
     End Sub
 
     Private Sub DxSp2016_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
-        CaricaPaesi()
-        ControlloRighe()
         SetInizio()
     End Sub
     Private Sub SetInizio()
         ComboBoxEdit1.Properties.Items.Clear()
         ComboBoxEdit1.Properties.Items.Add(ANNO)
         ComboBoxEdit1.SelectedIndex = 0
-        XtraTabControl1.SelectedTabPageIndex = -1 : XtraTabControl1.SelectedTabPageIndex = 0
+        XtraTabControl1.SelectedTabPageIndex = 0
 
         Pulizia()
         Iva_Regime()
