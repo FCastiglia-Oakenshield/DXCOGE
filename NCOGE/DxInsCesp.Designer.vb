@@ -633,7 +633,7 @@ Partial Class DxInsCesp
         '
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit2.Properties.Appearance.Options.UseFont = True
@@ -717,7 +717,7 @@ Partial Class DxInsCesp
         Me.TextEdit17.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit17.EditValue = ""
         Me.TextEdit17.EnterMoveNextControl = True
-        Me.TextEdit17.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit17.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit17.Name = "TextEdit17"
         Me.TextEdit17.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit17.Properties.Appearance.Options.UseFont = True
@@ -734,7 +734,7 @@ Partial Class DxInsCesp
         Me.TextEdit18.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit18.EditValue = ""
         Me.TextEdit18.EnterMoveNextControl = True
-        Me.TextEdit18.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit18.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit18.Name = "TextEdit18"
         Me.TextEdit18.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit18.Properties.Appearance.Options.UseFont = True
@@ -763,7 +763,7 @@ Partial Class DxInsCesp
         Me.TextEdit15.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit15.EditValue = ""
         Me.TextEdit15.EnterMoveNextControl = True
-        Me.TextEdit15.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit15.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit15.Name = "TextEdit15"
         Me.TextEdit15.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit15.Properties.Appearance.Options.UseFont = True
@@ -780,7 +780,7 @@ Partial Class DxInsCesp
         Me.TextEdit16.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit16.EditValue = ""
         Me.TextEdit16.EnterMoveNextControl = True
-        Me.TextEdit16.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit16.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit16.Name = "TextEdit16"
         Me.TextEdit16.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit16.Properties.Appearance.Options.UseFont = True
@@ -809,7 +809,7 @@ Partial Class DxInsCesp
         Me.TextEdit13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit13.EditValue = ""
         Me.TextEdit13.EnterMoveNextControl = True
-        Me.TextEdit13.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit13.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit13.Name = "TextEdit13"
         Me.TextEdit13.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit13.Properties.Appearance.Options.UseFont = True
@@ -826,7 +826,7 @@ Partial Class DxInsCesp
         Me.TextEdit14.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit14.EditValue = ""
         Me.TextEdit14.EnterMoveNextControl = True
-        Me.TextEdit14.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit14.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit14.Name = "TextEdit14"
         Me.TextEdit14.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit14.Properties.Appearance.Options.UseFont = True
@@ -854,7 +854,7 @@ Partial Class DxInsCesp
         Me.DateEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit2.EditValue = Nothing
         Me.DateEdit2.EnterMoveNextControl = True
-        Me.DateEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit2.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit2.Name = "DateEdit2"
         Me.DateEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -886,7 +886,7 @@ Partial Class DxInsCesp
         Me.TextEdit11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit11.EditValue = ""
         Me.TextEdit11.EnterMoveNextControl = True
-        Me.TextEdit11.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit11.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit11.Name = "TextEdit11"
         Me.TextEdit11.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit11.Properties.Appearance.Options.UseFont = True
@@ -903,7 +903,7 @@ Partial Class DxInsCesp
         Me.TextEdit12.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit12.EditValue = ""
         Me.TextEdit12.EnterMoveNextControl = True
-        Me.TextEdit12.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit12.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit12.Name = "TextEdit12"
         Me.TextEdit12.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit12.Properties.Appearance.Options.UseFont = True
@@ -932,7 +932,7 @@ Partial Class DxInsCesp
         '
         Me.TextEdit10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit10.EnterMoveNextControl = True
-        Me.TextEdit10.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit10.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit10.Name = "TextEdit10"
         Me.TextEdit10.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit10.Properties.Appearance.Options.UseFont = True
@@ -941,6 +941,7 @@ Partial Class DxInsCesp
         Me.TextEdit10.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit10.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit10.Properties.Mask.EditMask = "yyyy"
+        Me.TextEdit10.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.TextEdit10.Properties.MaxLength = 4
         Me.TextEdit10.Size = New System.Drawing.Size(99, 22)
         Me.TextEdit10.TabIndex = 0
@@ -963,7 +964,7 @@ Partial Class DxInsCesp
         Me.TextEdit9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit9.EditValue = 0
         Me.TextEdit9.EnterMoveNextControl = True
-        Me.TextEdit9.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit9.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit9.Name = "TextEdit9"
         Me.TextEdit9.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit9.Properties.Appearance.Options.UseFont = True
@@ -995,7 +996,7 @@ Partial Class DxInsCesp
         '
         Me.TextEdit8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit8.EnterMoveNextControl = True
-        Me.TextEdit8.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit8.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit8.Name = "TextEdit8"
         Me.TextEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit8.Properties.Appearance.Options.UseFont = True
@@ -1027,7 +1028,7 @@ Partial Class DxInsCesp
         Me.DateEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit1.EditValue = New Date(CType(0, Long))
         Me.DateEdit1.EnterMoveNextControl = True
-        Me.DateEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit1.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit1.Name = "DateEdit1"
         Me.DateEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1060,7 +1061,7 @@ Partial Class DxInsCesp
         '
         Me.TextEdit7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit7.EnterMoveNextControl = True
-        Me.TextEdit7.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit7.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit7.Name = "TextEdit7"
         Me.TextEdit7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit7.Properties.Appearance.Options.UseFont = True
@@ -1073,13 +1074,14 @@ Partial Class DxInsCesp
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
         Me.DxValidationProvider1.SetIconAlignment(Me.CheckEdit1, System.Windows.Forms.ErrorIconAlignment.TopLeft)
         Me.CheckEdit1.Location = New System.Drawing.Point(784, 13)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Caption = "COSTI PLURIENNALI"
         Me.CheckEdit1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.[Default]
         Me.CheckEdit1.Properties.ReadOnly = True
-        Me.CheckEdit1.Size = New System.Drawing.Size(131, 19)
+        Me.CheckEdit1.Size = New System.Drawing.Size(131, 20)
         Me.CheckEdit1.TabIndex = 6
         Me.CheckEdit1.TabStop = False
         Me.CheckEdit1.ToolTip = "Spuntare se è un bene ai Costi Pluriennali"
@@ -1100,7 +1102,7 @@ Partial Class DxInsCesp
         Me.TextEdit5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit5.EditValue = ""
         Me.TextEdit5.EnterMoveNextControl = True
-        Me.TextEdit5.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit5.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit5.Properties.Appearance.Options.UseFont = True
@@ -1133,7 +1135,7 @@ Partial Class DxInsCesp
         Me.TextEdit6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit6.EditValue = ""
         Me.TextEdit6.EnterMoveNextControl = True
-        Me.TextEdit6.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit6.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit6.Name = "TextEdit6"
         Me.TextEdit6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit6.Properties.Appearance.Options.UseFont = True
@@ -1165,7 +1167,7 @@ Partial Class DxInsCesp
         '
         Me.TextEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit4.EnterMoveNextControl = True
-        Me.TextEdit4.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit4.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit4.Properties.Appearance.Options.UseFont = True
@@ -1194,7 +1196,7 @@ Partial Class DxInsCesp
         '
         Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit3.EnterMoveNextControl = True
-        Me.TextEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit3.Properties.Appearance.Options.UseFont = True
@@ -1237,7 +1239,7 @@ Partial Class DxInsCesp
         '
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit1.Properties.Appearance.Options.UseFont = True
@@ -1260,7 +1262,7 @@ Partial Class DxInsCesp
         Me.GroupControlT.Location = New System.Drawing.Point(0, 0)
         Me.GroupControlT.Name = "GroupControlT"
         Me.GroupControlT.ShowCaption = False
-        Me.GroupControlT.Size = New System.Drawing.Size(1002, 216)
+        Me.GroupControlT.Size = New System.Drawing.Size(1006, 216)
         Me.GroupControlT.TabIndex = 0
         Me.GroupControlT.Text = "GroupControl2"
         '
@@ -1276,7 +1278,7 @@ Partial Class DxInsCesp
         Me.GroupControl4.Location = New System.Drawing.Point(916, 2)
         Me.GroupControl4.Name = "GroupControl4"
         Me.GroupControl4.ShowCaption = False
-        Me.GroupControl4.Size = New System.Drawing.Size(84, 212)
+        Me.GroupControl4.Size = New System.Drawing.Size(88, 212)
         Me.GroupControl4.TabIndex = 1
         Me.GroupControl4.Text = "DATI DEL CESPITE"
         '
@@ -1301,9 +1303,9 @@ Partial Class DxInsCesp
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(11, 11)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -1333,9 +1335,9 @@ Partial Class DxInsCesp
         Me.ButtonF1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF1.ImageIndex = 0
-        Me.ButtonF1.ImageList = Me.ImageList32
-        Me.ButtonF1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF1.ImageOptions.ImageIndex = 0
+        Me.ButtonF1.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF1.Location = New System.Drawing.Point(11, 84)
         Me.ButtonF1.Name = "ButtonF1"
         Me.ButtonF1.Size = New System.Drawing.Size(32, 32)
@@ -1352,9 +1354,9 @@ Partial Class DxInsCesp
         Me.ButtonF8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF8.ImageIndex = 7
-        Me.ButtonF8.ImageList = Me.ImageList32
-        Me.ButtonF8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF8.ImageOptions.ImageIndex = 7
+        Me.ButtonF8.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF8.Location = New System.Drawing.Point(11, 47)
         Me.ButtonF8.Name = "ButtonF8"
         Me.ButtonF8.Size = New System.Drawing.Size(32, 32)
@@ -1370,9 +1372,9 @@ Partial Class DxInsCesp
         Me.ButtonF3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF3.ImageIndex = 2
-        Me.ButtonF3.ImageList = Me.ImageList32
-        Me.ButtonF3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF3.ImageOptions.ImageIndex = 2
+        Me.ButtonF3.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF3.Location = New System.Drawing.Point(11, 10)
         Me.ButtonF3.Name = "ButtonF3"
         Me.ButtonF3.Size = New System.Drawing.Size(32, 32)
@@ -1389,10 +1391,10 @@ Partial Class DxInsCesp
         Me.GroupControl3.Controls.Add(Me.GroupControl25)
         Me.GroupControl3.Controls.Add(Me.GroupControl24)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl3.Location = New System.Drawing.Point(0, 501)
+        Me.GroupControl3.Location = New System.Drawing.Point(0, 505)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.ShowCaption = False
-        Me.GroupControl3.Size = New System.Drawing.Size(1002, 149)
+        Me.GroupControl3.Size = New System.Drawing.Size(1006, 149)
         Me.GroupControl3.TabIndex = 2
         Me.GroupControl3.Text = "DATI DEL CESPITE"
         '
@@ -1407,7 +1409,7 @@ Partial Class DxInsCesp
         Me.GroupControl25.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl25.Name = "GroupControl25"
         Me.GroupControl25.ShowCaption = False
-        Me.GroupControl25.Size = New System.Drawing.Size(998, 119)
+        Me.GroupControl25.Size = New System.Drawing.Size(1002, 119)
         Me.GroupControl25.TabIndex = 0
         Me.GroupControl25.Text = "DATI DEL CESPITE"
         '
@@ -1416,10 +1418,9 @@ Partial Class DxInsCesp
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl2.FormsUseDefaultLookAndFeel = True
         Me.GridControl2.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl2.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Name = "GridControl2"
-        Me.GridControl2.Size = New System.Drawing.Size(994, 115)
+        Me.GridControl2.Size = New System.Drawing.Size(998, 115)
         Me.GridControl2.TabIndex = 0
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -1719,7 +1720,7 @@ Partial Class DxInsCesp
         Me.GroupControl24.Location = New System.Drawing.Point(2, 121)
         Me.GroupControl24.Name = "GroupControl24"
         Me.GroupControl24.ShowCaption = False
-        Me.GroupControl24.Size = New System.Drawing.Size(998, 26)
+        Me.GroupControl24.Size = New System.Drawing.Size(1002, 26)
         Me.GroupControl24.TabIndex = 1
         Me.GroupControl24.Text = "DATI DEL CESPITE"
         '
@@ -1727,9 +1728,9 @@ Partial Class DxInsCesp
         '
         Me.ButtonYF3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonYF3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonYF3.ImageIndex = 23
-        Me.ButtonYF3.ImageList = Me.imageList1
-        Me.ButtonYF3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonYF3.ImageOptions.ImageIndex = 23
+        Me.ButtonYF3.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonYF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonYF3.Location = New System.Drawing.Point(982, 2)
         Me.ButtonYF3.Name = "ButtonYF3"
         Me.ButtonYF3.Size = New System.Drawing.Size(20, 22)
@@ -1741,9 +1742,9 @@ Partial Class DxInsCesp
         '
         Me.ButtonYF11.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonYF11.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonYF11.ImageIndex = 24
-        Me.ButtonYF11.ImageList = Me.imageList1
-        Me.ButtonYF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonYF11.ImageOptions.ImageIndex = 24
+        Me.ButtonYF11.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonYF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonYF11.Location = New System.Drawing.Point(962, 2)
         Me.ButtonYF11.Name = "ButtonYF11"
         Me.ButtonYF11.Size = New System.Drawing.Size(20, 22)
@@ -1920,7 +1921,7 @@ Partial Class DxInsCesp
         Me.GroupControl2.Location = New System.Drawing.Point(0, 216)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.ShowCaption = False
-        Me.GroupControl2.Size = New System.Drawing.Size(1002, 285)
+        Me.GroupControl2.Size = New System.Drawing.Size(1006, 289)
         Me.GroupControl2.TabIndex = 1
         Me.GroupControl2.Text = "DATI DEL CESPITE"
         '
@@ -1935,7 +1936,7 @@ Partial Class DxInsCesp
         Me.GroupControl23.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl23.Name = "GroupControl23"
         Me.GroupControl23.ShowCaption = False
-        Me.GroupControl23.Size = New System.Drawing.Size(998, 255)
+        Me.GroupControl23.Size = New System.Drawing.Size(1002, 259)
         Me.GroupControl23.TabIndex = 0
         Me.GroupControl23.Text = "DATI DEL CESPITE"
         '
@@ -1944,11 +1945,10 @@ Partial Class DxInsCesp
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
         Me.GridControl1.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.AdvBandedGridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(994, 251)
+        Me.GridControl1.Size = New System.Drawing.Size(998, 255)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.AdvBandedGridView1})
         '
@@ -2519,10 +2519,10 @@ Partial Class DxInsCesp
         Me.GroupControl22.Controls.Add(Me.TextEdit20)
         Me.GroupControl22.Controls.Add(Me.TextEdit19)
         Me.GroupControl22.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl22.Location = New System.Drawing.Point(2, 257)
+        Me.GroupControl22.Location = New System.Drawing.Point(2, 261)
         Me.GroupControl22.Name = "GroupControl22"
         Me.GroupControl22.ShowCaption = False
-        Me.GroupControl22.Size = New System.Drawing.Size(998, 26)
+        Me.GroupControl22.Size = New System.Drawing.Size(1002, 26)
         Me.GroupControl22.TabIndex = 0
         Me.GroupControl22.Text = "DATI DEL CESPITE"
         '
@@ -2530,9 +2530,9 @@ Partial Class DxInsCesp
         '
         Me.ButtonXF3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonXF3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonXF3.ImageIndex = 23
-        Me.ButtonXF3.ImageList = Me.imageList1
-        Me.ButtonXF3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF3.ImageOptions.ImageIndex = 23
+        Me.ButtonXF3.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonXF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonXF3.Location = New System.Drawing.Point(982, 2)
         Me.ButtonXF3.Name = "ButtonXF3"
         Me.ButtonXF3.Size = New System.Drawing.Size(20, 22)
@@ -2544,9 +2544,9 @@ Partial Class DxInsCesp
         '
         Me.ButtonXF11.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonXF11.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonXF11.ImageIndex = 24
-        Me.ButtonXF11.ImageList = Me.imageList1
-        Me.ButtonXF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF11.ImageOptions.ImageIndex = 24
+        Me.ButtonXF11.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonXF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonXF11.Location = New System.Drawing.Point(962, 2)
         Me.ButtonXF11.Name = "ButtonXF11"
         Me.ButtonXF11.Size = New System.Drawing.Size(20, 22)

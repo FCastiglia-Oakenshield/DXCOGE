@@ -69,6 +69,7 @@ Public Class DxSp2020
     Dim CambioCliFor As Boolean = False
     Dim ProgrDTE, ProgrDTR As Int32
     Dim RegimeIva As String
+    Dim Cloud As Boolean = False
 
     Private Structure RecC
         Dim c1 As String
@@ -96,6 +97,14 @@ Public Class DxSp2020
             Paesi.Add(dataRd.Item("PaSigla"), dataRd.Item("PaSigla"))
         End While
         dataRd.Close()
+        Dim Contiene As String = ""
+        Cmd = New SqlCommand("SELECT Sel8 from TbSel where SelId=1", cnVd)
+        dataRd = Cmd.ExecuteReader
+        While dataRd.Read
+            Contiene = dataRd.Item("Sel8")
+        End While
+        dataRd.Close()
+        Cloud = Contiene.Contains("\\TSCLIENT")
     End Sub
 
     Private Sub DxSp2016_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
@@ -816,7 +825,11 @@ Public Class DxSp2020
         TextEdit13.EditValue = Nothing
     End Sub
     Private Sub GiaFatti()
-        PathEle = "C:\ELECF" & ComboBoxEdit1.EditValue & "\"
+        If Cloud = True Then
+            PathEle = "\\TSCLIENT\C\ELECF" & ComboBoxEdit1.EditValue & "\"
+        Else
+            PathEle = "C:\ELECF" & ComboBoxEdit1.EditValue & "\"
+        End If
         If Not Directory.Exists(PathEle) Then
             Directory.CreateDirectory(PathEle)
         End If
@@ -839,8 +852,12 @@ Public Class DxSp2020
         GridView4.OptionsSelection.EnableAppearanceFocusedRow = False
     End Sub
     Private Sub NomeFiles()
+        If Cloud = True Then
+            PathEle = "\\TSCLIENT\C\ELECF" & ComboBoxEdit1.EditValue & "\"
+        Else
+            PathEle = "C:\ELECF" & ComboBoxEdit1.EditValue & "\"
+        End If
 
-        PathEle = "C:\ELECF" & ComboBoxEdit1.EditValue & "\"
         If Not Directory.Exists(PathEle) Then
             Directory.CreateDirectory(PathEle)
         End If

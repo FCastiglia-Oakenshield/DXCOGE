@@ -1,6 +1,8 @@
-﻿Imports DXBASE
+﻿Imports DevExpress.XtraEditors
+Imports DXBASE
 Imports System.Data.SqlClient
 Imports System.IO
+Imports System.Linq
 Imports System.Xml
 
 
@@ -29,6 +31,7 @@ Public Class CoLiTrim
     Dim Inizio, Massimo, Fine As Int16
 
     Dim PFisica As Boolean
+    Dim Cloud As Boolean = False
 
     '' XML
     Dim Xtw As XmlTextWriter
@@ -38,6 +41,7 @@ Public Class CoLiTrim
         LeggiAnagraficaAzienda()
     End Sub
     Sub SetInizio()
+        Dim Contiene As String = ""
         XtraTabControl1.SelectedTabPageIndex = 0
         BottoniIniziali()
         Dim Cmd As New SqlCommand("SELECT distinct RivaAnno from TbRegIva where RivaAnno > 2016 Order by RivaAnno desc", cnCo)
@@ -50,6 +54,13 @@ Public Class CoLiTrim
         dataRd.Close()
         If ComboBoxEdit1.Properties.Items.Count = 0 Then Exit Sub
         ComboBoxEdit1.SelectedIndex = 0
+        Cmd = New SqlCommand("SELECT Sel8 from TbSel where SelId=1", cnVd)
+        dataRd = Cmd.ExecuteReader
+        While dataRd.Read
+            Contiene = dataRd.Item("Sel8")
+        End While
+        dataRd.Close()
+        Cloud = Contiene.Contains("\\TSCLIENT")
     End Sub
     Sub LeggiAnagraficaAzienda()
         Dim Str As String = "Select  * from tbazi inner join vdox.dbo.tbana on anacod = azicod  where AziAnnoLavoro = " & ComboBoxEdit1.EditValue
@@ -73,7 +84,11 @@ Public Class CoLiTrim
         End If
     End Sub
     Private Sub NomeFiles()
-        PathEle = "C:\LIQPER" & ComboBoxEdit1.EditValue & "\"
+        If Cloud = True Then
+            PathEle = "\\TSCLIENT\C\LIQPER" & ComboBoxEdit1.EditValue & "\"
+        Else
+            PathEle = "C:\LIQPER" & ComboBoxEdit1.EditValue & "\"
+        End If
         If Not Directory.Exists(PathEle) Then
             Directory.CreateDirectory(PathEle)
         End If
@@ -81,7 +96,7 @@ Public Class CoLiTrim
         If File.Exists(Trim(FileEle)) Then
             File.Delete(Trim(FileEle))
         End If
-       
+
         TextEdit1.EditValue = FileEle
     End Sub
     Sub BottoniIniziali()
