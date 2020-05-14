@@ -101,7 +101,7 @@ Public Class DxSp2020
         Cmd = New SqlCommand("SELECT Sel8 from TbSel where SelId=1", cnVd)
         dataRd = Cmd.ExecuteReader
         While dataRd.Read
-            Contiene = dataRd.Item("Sel8")
+            Contiene = dataRd.Item("Sel8").ToString.ToUpper
         End While
         dataRd.Close()
         Cloud = Contiene.Contains("\\TSCLIENT")
