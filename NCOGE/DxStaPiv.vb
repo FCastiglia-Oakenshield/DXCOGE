@@ -11,12 +11,24 @@ Public Class DxStaPiv
     Dim DaPc As SqlDataAdapter
     Dim RwPc As DataRow
     Dim CbPc As SqlCommandBuilder
-
+    Dim Paesi As Collection
     Dim Rpt As ReportClass
     Dim Rpt1 As New StPiCfPe
     Private Sub DxStaPiv_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
+        CaricaPaesi()
         TextEdit1.EditValue = Year(Today)
         TextEdit1.Focus()
+    End Sub
+    Private Sub CaricaPaesi()
+        Paesi = New Collection
+
+        Cmd = New SqlCommand("Select distinct PaSigla from TbPaesi", cnCo)
+        dataRd = Cmd.ExecuteReader
+
+        While dataRd.Read
+            Paesi.Add(dataRd.Item("PaSigla"), dataRd.Item("PaSigla"))
+        End While
+        dataRd.Close()
     End Sub
     Private Sub ButtonF9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF9.Click
         If ControllaCampi() = False Then
@@ -52,6 +64,9 @@ Public Class DxStaPiv
             RwPc = DsPc.Tables(Ti).Rows(y - 1)
             If Codfisc(RwPc("AnaPiva")) = False Or RwPc("AnaPiva") = "" Then RwPc("ErrP") = "*"
             If Codfisc(RwPc("AnaCfis")) = False Or RwPc("AnaCfis") = "" Then RwPc("ErrC") = "*"
+            If (RwPc("AnaPivaEst").ToString.Trim <> "" And RwPc("AnaPivaEst").ToString.Trim <> "OO99999999999" And Paesi.Contains(Mid(RwPc("AnaPivaEst").ToString.Trim, 1, 2)) = False) Or (Len(RwPc("AnaPivaEst").ToString.Trim) < 5 And RwPc("AnaPivaEst").ToString.Trim <> "") Then
+                RwPc("ErrE") = "*"
+            End If
         Next
         DsPc.AcceptChanges()
     End Sub
