@@ -63,6 +63,7 @@ Partial Class Insoluti
         Me.TextEdit21 = New DevExpress.XtraEditors.TextEdit()
         Me.TextEdit20 = New DevExpress.XtraEditors.TextEdit()
         Me.TbLeggi1 = New DevExpress.XtraEditors.TextEdit()
+        Me.ButtonF9 = New DevExpress.XtraEditors.SimpleButton()
         Me.GridControl3 = New DevExpress.XtraGrid.GridControl()
         Me.GridView3 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GridColumn26 = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -409,6 +410,7 @@ Partial Class Insoluti
         '
         'XtraTabPage1
         '
+        Me.XtraTabPage1.Controls.Add(Me.ButtonF9)
         Me.XtraTabPage1.Controls.Add(Me.GridControl3)
         Me.XtraTabPage1.Controls.Add(Me.GroupControlB)
         Me.XtraTabPage1.Size = New System.Drawing.Size(1020, 654)
@@ -944,10 +946,10 @@ Partial Class Insoluti
         Me.GroupControl8.Controls.Add(Me.GroupControl87)
         Me.GroupControl8.Controls.Add(Me.GroupControl33)
         Me.GroupControl8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl8.Location = New System.Drawing.Point(2, -2)
+        Me.GroupControl8.Location = New System.Drawing.Point(2, 5)
         Me.GroupControl8.Name = "GroupControl8"
         Me.GroupControl8.ShowCaption = False
-        Me.GroupControl8.Size = New System.Drawing.Size(316, 271)
+        Me.GroupControl8.Size = New System.Drawing.Size(316, 264)
         Me.GroupControl8.TabIndex = 0
         Me.GroupControl8.Text = "GroupControl2"
         '
@@ -965,7 +967,7 @@ Partial Class Insoluti
         Me.ButtonF8.ImageOptions.ImageIndex = 7
         Me.ButtonF8.ImageOptions.ImageList = Me.ImageList32
         Me.ButtonF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF8.Location = New System.Drawing.Point(271, 103)
+        Me.ButtonF8.Location = New System.Drawing.Point(271, 96)
         Me.ButtonF8.Name = "ButtonF8"
         Me.ButtonF8.Size = New System.Drawing.Size(32, 32)
         Me.ButtonF8.TabIndex = 15
@@ -986,7 +988,7 @@ Partial Class Insoluti
         Me.ButtonFF11.ImageOptions.ImageIndex = 10
         Me.ButtonFF11.ImageOptions.ImageList = Me.ImageList32
         Me.ButtonFF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonFF11.Location = New System.Drawing.Point(273, 191)
+        Me.ButtonFF11.Location = New System.Drawing.Point(273, 184)
         Me.ButtonFF11.Name = "ButtonFF11"
         Me.ButtonFF11.Size = New System.Drawing.Size(32, 32)
         Me.ButtonFF11.TabIndex = 3
@@ -999,7 +1001,7 @@ Partial Class Insoluti
         Me.GroupControl99.AppearanceCaption.Options.UseTextOptions = True
         Me.GroupControl99.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl99.Controls.Add(Me.DateEdit2)
-        Me.GroupControl99.Location = New System.Drawing.Point(127, 186)
+        Me.GroupControl99.Location = New System.Drawing.Point(127, 179)
         Me.GroupControl99.Name = "GroupControl99"
         Me.GroupControl99.Size = New System.Drawing.Size(139, 44)
         Me.GroupControl99.TabIndex = 2
@@ -1032,7 +1034,7 @@ Partial Class Insoluti
         Me.GroupControl66.AppearanceCaption.Options.UseTextOptions = True
         Me.GroupControl66.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl66.Controls.Add(Me.DateEdit1)
-        Me.GroupControl66.Location = New System.Drawing.Point(3, 186)
+        Me.GroupControl66.Location = New System.Drawing.Point(3, 179)
         Me.GroupControl66.Name = "GroupControl66"
         Me.GroupControl66.Size = New System.Drawing.Size(123, 44)
         Me.GroupControl66.TabIndex = 1
@@ -1070,7 +1072,7 @@ Partial Class Insoluti
         Me.GroupControl16.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl16.CaptionLocation = DevExpress.Utils.Locations.Top
         Me.GroupControl16.Controls.Add(Me.TextEdit1)
-        Me.GroupControl16.Location = New System.Drawing.Point(20, 16)
+        Me.GroupControl16.Location = New System.Drawing.Point(20, 9)
         Me.GroupControl16.Name = "GroupControl16"
         Me.GroupControl16.Size = New System.Drawing.Size(285, 75)
         Me.GroupControl16.TabIndex = 14
@@ -1107,7 +1109,7 @@ Partial Class Insoluti
         '
         Me.GroupControl77.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupControl77.Controls.Add(Me.TextEdit2)
-        Me.GroupControl77.Location = New System.Drawing.Point(2, 141)
+        Me.GroupControl77.Location = New System.Drawing.Point(2, 134)
         Me.GroupControl77.Name = "GroupControl77"
         Me.GroupControl77.Size = New System.Drawing.Size(101, 44)
         Me.GroupControl77.TabIndex = 0
@@ -1146,7 +1148,7 @@ Partial Class Insoluti
         Me.ButtonFF5.ImageOptions.ImageIndex = 4
         Me.ButtonFF5.ImageOptions.ImageList = Me.ImageList32
         Me.ButtonFF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonFF5.Location = New System.Drawing.Point(154, 103)
+        Me.ButtonFF5.Location = New System.Drawing.Point(154, 96)
         Me.ButtonFF5.Name = "ButtonFF5"
         Me.ButtonFF5.Size = New System.Drawing.Size(32, 32)
         Me.ButtonFF5.TabIndex = 6
@@ -1157,7 +1159,7 @@ Partial Class Insoluti
         '
         Me.GroupControl87.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupControl87.Controls.Add(Me.ImageComboBoxEdit2)
-        Me.GroupControl87.Location = New System.Drawing.Point(104, 141)
+        Me.GroupControl87.Location = New System.Drawing.Point(104, 134)
         Me.GroupControl87.Name = "GroupControl87"
         Me.GroupControl87.Size = New System.Drawing.Size(209, 44)
         Me.GroupControl87.TabIndex = 2
@@ -1188,7 +1190,7 @@ Partial Class Insoluti
         Me.GroupControl33.Controls.Add(Me.TextEdit21)
         Me.GroupControl33.Controls.Add(Me.TextEdit20)
         Me.GroupControl33.Controls.Add(Me.TbLeggi1)
-        Me.GroupControl33.Location = New System.Drawing.Point(3, 228)
+        Me.GroupControl33.Location = New System.Drawing.Point(3, 221)
         Me.GroupControl33.Name = "GroupControl33"
         Me.GroupControl33.Size = New System.Drawing.Size(310, 44)
         Me.GroupControl33.TabIndex = 3
@@ -1240,6 +1242,27 @@ Partial Class Insoluti
         Me.TbLeggi1.Size = New System.Drawing.Size(15, 14)
         Me.TbLeggi1.TabIndex = 1
         '
+        'ButtonF9
+        '
+        Me.ButtonF9.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonF9.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.ButtonF9.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.ButtonF9.Appearance.Options.UseFont = True
+        Me.ButtonF9.Appearance.Options.UseForeColor = True
+        Me.ButtonF9.Appearance.Options.UseTextOptions = True
+        Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.SvgImage = CType(resources.GetObject("ButtonF9.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.ButtonF9.ImageOptions.SvgImageSize = New System.Drawing.Size(20, 20)
+        Me.ButtonF9.Location = New System.Drawing.Point(973, 349)
+        Me.ButtonF9.Name = "ButtonF9"
+        Me.ButtonF9.Size = New System.Drawing.Size(24, 24)
+        Me.ButtonF9.TabIndex = 16
+        Me.ButtonF9.TabStop = False
+        Me.ButtonF9.ToolTip = "F9-ANTEPRIMA STAMPA"
+        '
         'GridControl3
         '
         Me.GridControl3.Dock = System.Windows.Forms.DockStyle.Fill
@@ -1255,13 +1278,42 @@ Partial Class Insoluti
         'GridView3
         '
         Me.GridView3.ActiveFilterEnabled = False
+        Me.GridView3.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridView3.Appearance.FooterPanel.Options.UseFont = True
+        Me.GridView3.AppearancePrint.EvenRow.BackColor = System.Drawing.Color.White
+        Me.GridView3.AppearancePrint.EvenRow.Options.UseBackColor = True
+        Me.GridView3.AppearancePrint.FilterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridView3.AppearancePrint.FilterPanel.Options.UseFont = True
+        Me.GridView3.AppearancePrint.FooterPanel.BackColor = System.Drawing.Color.Gainsboro
+        Me.GridView3.AppearancePrint.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.GridView3.AppearancePrint.FooterPanel.Options.UseBackColor = True
+        Me.GridView3.AppearancePrint.FooterPanel.Options.UseFont = True
+        Me.GridView3.AppearancePrint.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridView3.AppearancePrint.GroupFooter.Options.UseFont = True
+        Me.GridView3.AppearancePrint.GroupRow.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridView3.AppearancePrint.GroupRow.Options.UseFont = True
+        Me.GridView3.AppearancePrint.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridView3.AppearancePrint.HeaderPanel.Options.UseFont = True
+        Me.GridView3.AppearancePrint.Lines.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridView3.AppearancePrint.Lines.Options.UseFont = True
+        Me.GridView3.AppearancePrint.OddRow.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GridView3.AppearancePrint.OddRow.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridView3.AppearancePrint.OddRow.Options.UseBackColor = True
+        Me.GridView3.AppearancePrint.OddRow.Options.UseFont = True
+        Me.GridView3.AppearancePrint.Preview.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridView3.AppearancePrint.Preview.Options.UseFont = True
+        Me.GridView3.AppearancePrint.Row.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridView3.AppearancePrint.Row.Options.UseFont = True
         Me.GridView3.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn26, Me.GridColumn27, Me.GridColumn22, Me.GridColumn24, Me.GridColumn28, Me.GridColumn29, Me.GridColumn30, Me.GridColumn25, Me.GridColumn31, Me.GridColumn2})
         Me.GridView3.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
         Me.GridView3.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None
         Me.GridView3.GridControl = Me.GridControl3
         Me.GridView3.Name = "GridView3"
         Me.GridView3.OptionsNavigation.EnterMoveNextColumn = True
+        Me.GridView3.OptionsPrint.EnableAppearanceEvenRow = True
+        Me.GridView3.OptionsPrint.EnableAppearanceOddRow = True
         Me.GridView3.OptionsPrint.ExpandAllGroups = False
+        Me.GridView3.OptionsPrint.PrintFilterInfo = True
         Me.GridView3.OptionsPrint.PrintGroupFooter = False
         Me.GridView3.OptionsSelection.EnableAppearanceFocusedCell = False
         Me.GridView3.OptionsSelection.EnableAppearanceFocusedRow = False
@@ -1270,6 +1322,7 @@ Partial Class Insoluti
         Me.GridView3.OptionsView.EnableAppearanceEvenRow = True
         Me.GridView3.OptionsView.EnableAppearanceOddRow = True
         Me.GridView3.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
+        Me.GridView3.OptionsView.ShowFooter = True
         Me.GridView3.OptionsView.ShowGroupPanel = False
         Me.GridView3.OptionsView.ShowIndicator = False
         Me.GridView3.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.GridColumn27, DevExpress.Data.ColumnSortOrder.Ascending)})
@@ -1313,7 +1366,7 @@ Partial Class Insoluti
         Me.GridColumn27.OptionsColumn.TabStop = False
         Me.GridColumn27.Visible = True
         Me.GridColumn27.VisibleIndex = 1
-        Me.GridColumn27.Width = 358
+        Me.GridColumn27.Width = 364
         '
         'GridColumn22
         '
@@ -1411,7 +1464,7 @@ Partial Class Insoluti
         Me.GridColumn29.OptionsColumn.TabStop = False
         Me.GridColumn29.Visible = True
         Me.GridColumn29.VisibleIndex = 5
-        Me.GridColumn29.Width = 278
+        Me.GridColumn29.Width = 284
         '
         'GridColumn30
         '
@@ -1430,9 +1483,10 @@ Partial Class Insoluti
         Me.GridColumn30.OptionsColumn.FixedWidth = True
         Me.GridColumn30.OptionsColumn.ReadOnly = True
         Me.GridColumn30.OptionsColumn.TabStop = False
+        Me.GridColumn30.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "IMPRATA", "{0:0.##}", New Decimal(New Integer() {0, 0, 0, 0}))})
         Me.GridColumn30.Visible = True
         Me.GridColumn30.VisibleIndex = 6
-        Me.GridColumn30.Width = 85
+        Me.GridColumn30.Width = 105
         '
         'GridColumn25
         '
@@ -1623,4 +1677,5 @@ Partial Class Insoluti
     Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents ImageComboBoxEdit1 As DevExpress.XtraEditors.ImageComboBoxEdit
     Friend WithEvents ButtonF8 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents ButtonF9 As DevExpress.XtraEditors.SimpleButton
 End Class

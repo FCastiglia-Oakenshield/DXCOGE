@@ -3,6 +3,7 @@ Imports NCCOM
 Imports DevExpress.XtraEditors
 Imports System.Data.SqlClient
 Imports DevExpress.XtraGrid.Views.Grid
+Imports DevExpress.XtraScheduler.iCalendar.Components
 
 Public Class Insoluti
 
@@ -291,6 +292,10 @@ Oltre:
         End If
     End Sub
 
+    Private Sub ButtonF9_Click(sender As Object, e As EventArgs) Handles ButtonF9.Click
+        DXANTEPRIMA(GridControl3, True, Printing.PaperKind.A4, "Elenco Effetti Dal " & DateEdit3.EditValue & " Al " & DateEdit4.EditValue & "  " & ImageComboBoxEdit1.Text)
+    End Sub
+
     Sub EliminaCheck()
         GridView3.ActiveFilterString = ""
         Dim X As Int16
@@ -364,6 +369,11 @@ Oltre:
         Next
     End Function
     Private Sub DxSaldaS_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyUp
+        If e.KeyData = Keys.F9 Then
+            e.Handled = True
+            ButtonF9.PerformClick()
+            Exit Sub
+        End If
         If e.KeyData = Keys.F5 And GroupControl5.Enabled = True Then
             e.Handled = True
             ButtonF5.PerformClick()
