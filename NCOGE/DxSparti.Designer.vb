@@ -43,6 +43,7 @@ Partial Class DxSparti
         Me.GridColumn18 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn19 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn20 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn28 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.GroupControlB = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl5 = New DevExpress.XtraEditors.GroupControl()
@@ -379,11 +380,13 @@ Partial Class DxSparti
         '
         'XtraTabControl1
         '
-        Me.XtraTabControl1.Location = New System.Drawing.Point(3, 3)
+        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1239, 725)
         '
         'XtraTabPage1
         '
         Me.XtraTabPage1.Controls.Add(Me.GroupControlC)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1237, 723)
         '
         'ImageDx24
         '
@@ -488,7 +491,7 @@ Partial Class DxSparti
         Me.GroupControlC.Location = New System.Drawing.Point(0, 0)
         Me.GroupControlC.Name = "GroupControlC"
         Me.GroupControlC.ShowCaption = False
-        Me.GroupControlC.Size = New System.Drawing.Size(1006, 654)
+        Me.GroupControlC.Size = New System.Drawing.Size(1237, 723)
         Me.GroupControlC.TabIndex = 1
         Me.GroupControlC.TabStop = True
         Me.GroupControlC.Text = "GroupControl8"
@@ -500,7 +503,7 @@ Partial Class DxSparti
         Me.GroupControl2.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.ShowCaption = False
-        Me.GroupControl2.Size = New System.Drawing.Size(1002, 412)
+        Me.GroupControl2.Size = New System.Drawing.Size(1233, 481)
         Me.GroupControl2.TabIndex = 17
         Me.GroupControl2.Text = "GroupControl2"
         '
@@ -512,7 +515,7 @@ Partial Class DxSparti
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
-        Me.GridControl2.Size = New System.Drawing.Size(998, 408)
+        Me.GridControl2.Size = New System.Drawing.Size(1229, 477)
         Me.GridControl2.TabIndex = 8
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -521,7 +524,7 @@ Partial Class DxSparti
         Me.GridView2.ActiveFilterEnabled = False
         Me.GridView2.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic)
         Me.GridView2.Appearance.FooterPanel.Options.UseFont = True
-        Me.GridView2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn14, Me.GridColumn15, Me.GridColumn16, Me.GridColumn22, Me.GridColumn23, Me.GridColumn4, Me.GridColumn3, Me.GridColumn11, Me.GridColumn12, Me.GridColumn5, Me.GridColumn6, Me.GridColumn9, Me.GridColumn10, Me.GridColumn13, Me.GridColumn7, Me.GridColumn17, Me.GridColumn18, Me.GridColumn19, Me.GridColumn20})
+        Me.GridView2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn14, Me.GridColumn15, Me.GridColumn16, Me.GridColumn22, Me.GridColumn23, Me.GridColumn4, Me.GridColumn3, Me.GridColumn11, Me.GridColumn12, Me.GridColumn5, Me.GridColumn6, Me.GridColumn9, Me.GridColumn10, Me.GridColumn13, Me.GridColumn7, Me.GridColumn17, Me.GridColumn18, Me.GridColumn19, Me.GridColumn20, Me.GridColumn28})
         Me.GridView2.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
         Me.GridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView2.GridControl = Me.GridControl2
@@ -685,7 +688,7 @@ Partial Class DxSparti
         Me.GridColumn3.OptionsFilter.AllowFilter = False
         Me.GridColumn3.OptionsFilter.ImmediateUpdateAutoFilter = False
         Me.GridColumn3.Visible = True
-        Me.GridColumn3.VisibleIndex = 3
+        Me.GridColumn3.VisibleIndex = 5
         Me.GridColumn3.Width = 105
         '
         'GridColumn11
@@ -716,7 +719,7 @@ Partial Class DxSparti
         Me.GridColumn11.OptionsFilter.AllowFilter = False
         Me.GridColumn11.OptionsFilter.ImmediateUpdateAutoFilter = False
         Me.GridColumn11.Visible = True
-        Me.GridColumn11.VisibleIndex = 4
+        Me.GridColumn11.VisibleIndex = 3
         Me.GridColumn11.Width = 56
         '
         'GridColumn12
@@ -748,7 +751,7 @@ Partial Class DxSparti
         Me.GridColumn12.OptionsFilter.ImmediateUpdateAutoFilter = False
         Me.GridColumn12.ToolTip = "REGISTRO IVA"
         Me.GridColumn12.Visible = True
-        Me.GridColumn12.VisibleIndex = 5
+        Me.GridColumn12.VisibleIndex = 4
         Me.GridColumn12.Width = 28
         '
         'GridColumn5
@@ -793,7 +796,7 @@ Partial Class DxSparti
         Me.GridColumn6.AppearanceHeader.Options.UseTextOptions = True
         Me.GridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GridColumn6.Caption = "Cpt"
-        Me.GridColumn6.FieldName = "CPT"
+        Me.GridColumn6.FieldName = "MMCPT"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.OptionsColumn.AllowEdit = False
         Me.GridColumn6.OptionsColumn.AllowFocus = False
@@ -834,7 +837,7 @@ Partial Class DxSparti
         Me.GridColumn9.OptionsColumn.TabStop = False
         Me.GridColumn9.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "DARE", "{0:##,###,##0.00}")})
         Me.GridColumn9.Visible = True
-        Me.GridColumn9.VisibleIndex = 8
+        Me.GridColumn9.VisibleIndex = 9
         Me.GridColumn9.Width = 105
         '
         'GridColumn10
@@ -863,7 +866,7 @@ Partial Class DxSparti
         Me.GridColumn10.OptionsColumn.TabStop = False
         Me.GridColumn10.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "AVERE", "{0:##,###,##0.00}")})
         Me.GridColumn10.Visible = True
-        Me.GridColumn10.VisibleIndex = 9
+        Me.GridColumn10.VisibleIndex = 10
         Me.GridColumn10.Width = 105
         '
         'GridColumn13
@@ -912,7 +915,7 @@ Partial Class DxSparti
         Me.GridColumn7.OptionsColumn.ReadOnly = True
         Me.GridColumn7.OptionsColumn.TabStop = False
         Me.GridColumn7.Visible = True
-        Me.GridColumn7.VisibleIndex = 10
+        Me.GridColumn7.VisibleIndex = 11
         Me.GridColumn7.Width = 225
         '
         'GridColumn17
@@ -975,6 +978,27 @@ Partial Class DxSparti
         Me.GridColumn20.OptionsColumn.ReadOnly = True
         Me.GridColumn20.OptionsColumn.TabStop = False
         '
+        'GridColumn28
+        '
+        Me.GridColumn28.AppearanceCell.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridColumn28.AppearanceCell.Options.UseFont = True
+        Me.GridColumn28.AppearanceHeader.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridColumn28.AppearanceHeader.Options.UseFont = True
+        Me.GridColumn28.Caption = "Contropartita"
+        Me.GridColumn28.FieldName = "MMDESC"
+        Me.GridColumn28.Name = "GridColumn28"
+        Me.GridColumn28.OptionsColumn.AllowEdit = False
+        Me.GridColumn28.OptionsColumn.AllowFocus = False
+        Me.GridColumn28.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.[True]
+        Me.GridColumn28.OptionsColumn.AllowMove = False
+        Me.GridColumn28.OptionsColumn.AllowSize = False
+        Me.GridColumn28.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.[False]
+        Me.GridColumn28.OptionsColumn.ReadOnly = True
+        Me.GridColumn28.OptionsColumn.TabStop = False
+        Me.GridColumn28.Visible = True
+        Me.GridColumn28.VisibleIndex = 8
+        Me.GridColumn28.Width = 240
+        '
         'RepositoryItemCheckEdit1
         '
         Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
@@ -984,10 +1008,10 @@ Partial Class DxSparti
         Me.GroupControlB.Controls.Add(Me.GroupControl5)
         Me.GroupControlB.Controls.Add(Me.GroupControl1)
         Me.GroupControlB.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControlB.Location = New System.Drawing.Point(2, 414)
+        Me.GroupControlB.Location = New System.Drawing.Point(2, 483)
         Me.GroupControlB.Name = "GroupControlB"
         Me.GroupControlB.ShowCaption = False
-        Me.GroupControlB.Size = New System.Drawing.Size(1002, 238)
+        Me.GroupControlB.Size = New System.Drawing.Size(1233, 238)
         Me.GroupControlB.TabIndex = 16
         Me.GroupControlB.Text = "GroupControlB"
         '
@@ -1008,9 +1032,9 @@ Partial Class DxSparti
         Me.GroupControl5.Controls.Add(Me.CheckEdit1)
         Me.GroupControl5.Controls.Add(Me.ButtonF11)
         Me.GroupControl5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl5.Location = New System.Drawing.Point(511, 2)
+        Me.GroupControl5.Location = New System.Drawing.Point(674, 2)
         Me.GroupControl5.Name = "GroupControl5"
-        Me.GroupControl5.Size = New System.Drawing.Size(489, 234)
+        Me.GroupControl5.Size = New System.Drawing.Size(557, 234)
         Me.GroupControl5.TabIndex = 21
         Me.GroupControl5.Text = "SELEZIONA PERIODO"
         '
@@ -1051,7 +1075,7 @@ Partial Class DxSparti
         Me.GroupControl33.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupControl33.Location = New System.Drawing.Point(2, 187)
         Me.GroupControl33.Name = "GroupControl33"
-        Me.GroupControl33.Size = New System.Drawing.Size(485, 45)
+        Me.GroupControl33.Size = New System.Drawing.Size(553, 45)
         Me.GroupControl33.TabIndex = 5
         Me.GroupControl33.Text = "CONTO DIRETTO"
         '
@@ -1068,7 +1092,7 @@ Partial Class DxSparti
         Me.TextEdit21.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit21.Properties.MaxLength = 32
         Me.TextEdit21.Properties.ReadOnly = True
-        Me.TextEdit21.Size = New System.Drawing.Size(432, 22)
+        Me.TextEdit21.Size = New System.Drawing.Size(500, 22)
         Me.TextEdit21.TabIndex = 1
         Me.TextEdit21.TabStop = False
         '
@@ -1091,7 +1115,7 @@ Partial Class DxSparti
         'GroupControl3
         '
         Me.GroupControl3.Controls.Add(Me.DateEdit1)
-        Me.GroupControl3.Location = New System.Drawing.Point(322, 29)
+        Me.GroupControl3.Location = New System.Drawing.Point(361, 29)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.Size = New System.Drawing.Size(130, 50)
         Me.GroupControl3.TabIndex = 0
@@ -1120,7 +1144,7 @@ Partial Class DxSparti
         'GroupControl4
         '
         Me.GroupControl4.Controls.Add(Me.DateEdit2)
-        Me.GroupControl4.Location = New System.Drawing.Point(321, 86)
+        Me.GroupControl4.Location = New System.Drawing.Point(360, 86)
         Me.GroupControl4.Name = "GroupControl4"
         Me.GroupControl4.Size = New System.Drawing.Size(130, 50)
         Me.GroupControl4.TabIndex = 1
@@ -1173,7 +1197,7 @@ Partial Class DxSparti
         Me.ButtonF9.ImageOptions.ImageIndex = 9
         Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
         Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF9.Location = New System.Drawing.Point(371, 148)
+        Me.ButtonF9.Location = New System.Drawing.Point(410, 148)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
         Me.ButtonF9.TabIndex = 10
@@ -1223,7 +1247,7 @@ Partial Class DxSparti
         Me.ButtonF5.ImageOptions.ImageIndex = 4
         Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
         Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF5.Location = New System.Drawing.Point(322, 148)
+        Me.ButtonF5.Location = New System.Drawing.Point(361, 148)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
         Me.ButtonF5.TabIndex = 3
@@ -1257,7 +1281,7 @@ Partial Class DxSparti
         Me.ButtonF11.ImageOptions.ImageIndex = 10
         Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
         Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF11.Location = New System.Drawing.Point(419, 148)
+        Me.ButtonF11.Location = New System.Drawing.Point(458, 148)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
         Me.ButtonF11.TabIndex = 2
@@ -1270,7 +1294,7 @@ Partial Class DxSparti
         Me.GroupControl1.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(509, 234)
+        Me.GroupControl1.Size = New System.Drawing.Size(672, 234)
         Me.GroupControl1.TabIndex = 2
         '
         'GridControl1
@@ -1281,7 +1305,7 @@ Partial Class DxSparti
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(505, 230)
+        Me.GridControl1.Size = New System.Drawing.Size(668, 230)
         Me.GridControl1.TabIndex = 3
         Me.GridControl1.TabStop = False
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -1401,7 +1425,7 @@ Partial Class DxSparti
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1008, 656)
+        Me.ClientSize = New System.Drawing.Size(1239, 727)
         Me.Name = "DxSparti"
         Me.Text = "DxSparti"
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1508,4 +1532,5 @@ Partial Class DxSparti
     Friend WithEvents TextEdit21 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents TextEdit20 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents CheckEdit4 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents GridColumn28 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

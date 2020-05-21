@@ -86,7 +86,7 @@ Public Class DxSparti
         LIMITI(5) = "1" & MiglioFo.ToString.PadLeft(5, "0")
         LIMITI(6) = "199999"
         StrD(0) = "SELECT DISTINCT PRKTIPOCO,PRKCONTO,PRKDESC,SUM(DARE) as TDARE,sum(AVERE) as TAVERE ,(SUM(DARE)-SUM(AVERE)) AS TSALDO ,max(PRKAAMMGG) as FINOAL,min(PRKAAMMGG) as DAL "
-        StrD(1) = "SELECT * ,0.00 as Tsaldo "
+        StrD(1) = "SELECT * ,0.00 as Tsaldo,MMCPT = case when Prisos<>'' then Prisos else CPT end,MMDESC = case when Prisos<>'' then MDESC else CPTDESC end "
         StrD(2) = " FROM VH8 WHERE PRKTIPOCO+PRKCONTO BETWEEN "
         StrD(3) = " AND PRKAAMMGG BETWEEN "
         StrD(4) = " FROM VH8 WHERE PRKCONTO = "
