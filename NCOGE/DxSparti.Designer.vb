@@ -380,7 +380,6 @@ Partial Class DxSparti
         '
         'XtraTabControl1
         '
-        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
         Me.XtraTabControl1.Size = New System.Drawing.Size(1239, 725)
         '
         'XtraTabPage1
