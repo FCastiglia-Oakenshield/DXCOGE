@@ -448,7 +448,7 @@ Partial Class DxStaScaden
         Me.DateEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit2.EditValue = Nothing
         Me.DateEdit2.EnterMoveNextControl = True
-        Me.DateEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit2.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit2.Name = "DateEdit2"
         Me.DateEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -480,7 +480,7 @@ Partial Class DxStaScaden
         Me.DateEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit1.EditValue = Nothing
         Me.DateEdit1.EnterMoveNextControl = True
-        Me.DateEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit1.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit1.Name = "DateEdit1"
         Me.DateEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -514,6 +514,7 @@ Partial Class DxStaScaden
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
         Me.CheckEdit1.Location = New System.Drawing.Point(118, 76)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -526,7 +527,7 @@ Partial Class DxStaScaden
         '
         Me.RadioGroup1.AutoSizeInLayoutControl = True
         Me.RadioGroup1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.RadioGroup1.Location = New System.Drawing.Point(2, 24)
+        Me.RadioGroup1.Location = New System.Drawing.Point(2, 23)
         Me.RadioGroup1.Name = "RadioGroup1"
         Me.RadioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
         Me.RadioGroup1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -548,10 +549,10 @@ Partial Class DxStaScaden
         Me.GroupControl1.Controls.Add(Me.ButtonF9)
         Me.GroupControl1.Controls.Add(Me.ButtonF5)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl1.Location = New System.Drawing.Point(342, 24)
+        Me.GroupControl1.Location = New System.Drawing.Point(342, 23)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(45, 89)
+        Me.GroupControl1.Size = New System.Drawing.Size(45, 90)
         Me.GroupControl1.TabIndex = 2
         '
         'ButtonF9
@@ -564,9 +565,9 @@ Partial Class DxStaScaden
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(5, 48)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -583,9 +584,9 @@ Partial Class DxStaScaden
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(5, 5)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
