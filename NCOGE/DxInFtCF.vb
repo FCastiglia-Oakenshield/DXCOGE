@@ -2230,6 +2230,9 @@ IIFine:
         dataRd = Cmd.ExecuteReader
         If dataRd.Read Then
             DirLocal = dataRd.Item("Sel8")
+            If DirLocal.Contains("tsclient") Then
+                DirLocal = "C:\" & dataRd.Item("Sel11")
+            End If
             DirPDF = dataRd.Item("Sel12") & dataRd.Item("Sel11")
             Pathserver = dataRd.Item("Sel12")
         End If
