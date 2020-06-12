@@ -440,7 +440,7 @@ Oltre:  TotaleIn()
         GridView4.FocusedRowHandle = DsPno.Tables(Pn).Rows.Count - 1
         TextEdit1.EditValue = CDec(Progress)
         If TextEdit8.Properties.ReadOnly = False Then TextEdit8.Focus()
-        If CDec(TextEdit1.EditValue) <> 0 Then
+        If CDec(TextEdit1.EditValue) <> 0 Or DsPno.Tables(Pn).Rows.Count > 0 Then
             GroupControl7.Enabled = True
             GroupControl3.Enabled = False
         Else
