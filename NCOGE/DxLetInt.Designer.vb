@@ -1230,7 +1230,7 @@ Partial Class DxLetInt
         Me.GroupControl7.Controls.Add(Me.ButtonF9)
         Me.GroupControl7.Controls.Add(Me.ButtonF3)
         Me.GroupControl7.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl7.Location = New System.Drawing.Point(394, 2)
+        Me.GroupControl7.Location = New System.Drawing.Point(328, 2)
         Me.GroupControl7.Name = "GroupControl7"
         Me.GroupControl7.ShowCaption = False
         Me.GroupControl7.Size = New System.Drawing.Size(323, 46)
@@ -1240,7 +1240,7 @@ Partial Class DxLetInt
         '
         Me.GroupControl6.Controls.Add(Me.TextEdit2)
         Me.GroupControl6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl6.Location = New System.Drawing.Point(717, 2)
+        Me.GroupControl6.Location = New System.Drawing.Point(651, 2)
         Me.GroupControl6.Name = "GroupControl6"
         Me.GroupControl6.Size = New System.Drawing.Size(130, 46)
         Me.GroupControl6.TabIndex = 0
@@ -1271,9 +1271,9 @@ Partial Class DxLetInt
         '
         Me.GroupControl8.Controls.Add(Me.TextEdit3)
         Me.GroupControl8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl8.Location = New System.Drawing.Point(847, 2)
+        Me.GroupControl8.Location = New System.Drawing.Point(781, 2)
         Me.GroupControl8.Name = "GroupControl8"
-        Me.GroupControl8.Size = New System.Drawing.Size(153, 46)
+        Me.GroupControl8.Size = New System.Drawing.Size(219, 46)
         Me.GroupControl8.TabIndex = 1
         Me.GroupControl8.Text = "PROTOCOLLO ADE"
         '
@@ -1290,11 +1290,9 @@ Partial Class DxLetInt
         Me.TextEdit3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.TextEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.TextEdit3.Properties.Mask.EditMask = "\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d"
-        Me.TextEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx
-        Me.TextEdit3.Properties.MaxLength = 17
+        Me.TextEdit3.Properties.MaxLength = 24
         Me.TextEdit3.Properties.ValidateOnEnterKey = True
-        Me.TextEdit3.Size = New System.Drawing.Size(149, 22)
+        Me.TextEdit3.Size = New System.Drawing.Size(215, 22)
         Me.TextEdit3.TabIndex = 0
         '
         'DxLetInt
