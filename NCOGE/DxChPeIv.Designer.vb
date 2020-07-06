@@ -388,7 +388,6 @@ Partial Class DxChPeIv
         Me.XtraTabPage1.Controls.Add(Me.ComboBoxEdit4)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl8)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl2)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1000, 648)
         '
         'ImageDx24
         '
@@ -522,6 +521,7 @@ Partial Class DxChPeIv
         'CheckEdit3
         '
         Me.CheckEdit3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit3.EnterMoveNextControl = True
         Me.CheckEdit3.Location = New System.Drawing.Point(16, 9)
         Me.CheckEdit3.Name = "CheckEdit3"
         Me.CheckEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -541,9 +541,9 @@ Partial Class DxChPeIv
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(212, 16)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -553,6 +553,7 @@ Partial Class DxChPeIv
         'CheckEdit2
         '
         Me.CheckEdit2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit2.EnterMoveNextControl = True
         Me.CheckEdit2.Location = New System.Drawing.Point(16, 36)
         Me.CheckEdit2.Name = "CheckEdit2"
         Me.CheckEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -580,7 +581,7 @@ Partial Class DxChPeIv
         Me.ComboBoxEdit3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit3.EnterMoveNextControl = True
-        Me.ComboBoxEdit3.Location = New System.Drawing.Point(2, 24)
+        Me.ComboBoxEdit3.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit3.Name = "ComboBoxEdit3"
         Me.ComboBoxEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxEdit3.Properties.Appearance.Options.UseFont = True
@@ -609,6 +610,7 @@ Partial Class DxChPeIv
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
         Me.CheckEdit1.Location = New System.Drawing.Point(14, 8)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -621,6 +623,7 @@ Partial Class DxChPeIv
         'CheckEdit4
         '
         Me.CheckEdit4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit4.EnterMoveNextControl = True
         Me.CheckEdit4.Location = New System.Drawing.Point(14, 30)
         Me.CheckEdit4.Name = "CheckEdit4"
         Me.CheckEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -649,7 +652,7 @@ Partial Class DxChPeIv
         Me.ComboBoxEdit2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit2.EnterMoveNextControl = True
-        Me.ComboBoxEdit2.Location = New System.Drawing.Point(2, 2)
+        Me.ComboBoxEdit2.Location = New System.Drawing.Point(2, 1)
         Me.ComboBoxEdit2.Name = "ComboBoxEdit2"
         Me.ComboBoxEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxEdit2.Properties.Appearance.Options.UseFont = True
@@ -805,7 +808,7 @@ Partial Class DxChPeIv
         Me.GroupControl4.Controls.Add(Me.GroupControl33)
         Me.GroupControl4.Controls.Add(Me.GroupControl99)
         Me.GroupControl4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupControl4.Location = New System.Drawing.Point(2, 72)
+        Me.GroupControl4.Location = New System.Drawing.Point(2, 71)
         Me.GroupControl4.Name = "GroupControl4"
         Me.GroupControl4.ShowCaption = False
         Me.GroupControl4.Size = New System.Drawing.Size(470, 48)
@@ -829,7 +832,7 @@ Partial Class DxChPeIv
         Me.TextEdit21.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit21.EditValue = ""
         Me.TextEdit21.EnterMoveNextControl = True
-        Me.TextEdit21.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit21.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit21.Name = "TextEdit21"
         Me.TextEdit21.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit21.Properties.Appearance.Options.UseFont = True
@@ -846,7 +849,7 @@ Partial Class DxChPeIv
         Me.TextEdit20.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit20.EditValue = ""
         Me.TextEdit20.EnterMoveNextControl = True
-        Me.TextEdit20.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit20.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit20.Name = "TextEdit20"
         Me.TextEdit20.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit20.Properties.Appearance.Options.UseFont = True
@@ -887,7 +890,7 @@ Partial Class DxChPeIv
         Me.DateEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit4.EditValue = Nothing
         Me.DateEdit4.EnterMoveNextControl = True
-        Me.DateEdit4.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit4.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit4.Name = "DateEdit4"
         Me.DateEdit4.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -909,7 +912,7 @@ Partial Class DxChPeIv
         Me.GroupControl3.Controls.Add(Me.GroupControl66)
         Me.GroupControl3.Controls.Add(Me.GroupControl77)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupControl3.Location = New System.Drawing.Point(2, 24)
+        Me.GroupControl3.Location = New System.Drawing.Point(2, 23)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.ShowCaption = False
         Me.GroupControl3.Size = New System.Drawing.Size(470, 48)
@@ -931,7 +934,7 @@ Partial Class DxChPeIv
         Me.ImageComboBoxEdit2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit2.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit2.Name = "ImageComboBoxEdit2"
         Me.ImageComboBoxEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImageComboBoxEdit2.Properties.Appearance.Options.UseFont = True
@@ -960,7 +963,7 @@ Partial Class DxChPeIv
         Me.DateEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit3.EditValue = Nothing
         Me.DateEdit3.EnterMoveNextControl = True
-        Me.DateEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit3.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit3.Name = "DateEdit3"
         Me.DateEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -991,7 +994,7 @@ Partial Class DxChPeIv
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EditValue = ""
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit2.Properties.Appearance.Options.UseFont = True
@@ -1020,7 +1023,7 @@ Partial Class DxChPeIv
         Me.TextEdit22.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit22.EditValue = ""
         Me.TextEdit22.EnterMoveNextControl = True
-        Me.TextEdit22.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit22.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit22.Name = "TextEdit22"
         Me.TextEdit22.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit22.Properties.Appearance.Options.UseFont = True

@@ -499,7 +499,7 @@ Partial Class DxEstrattoNew
         Me.DateEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit1.EditValue = New Date(2010, 4, 9, 17, 7, 49, 180)
         Me.DateEdit1.EnterMoveNextControl = True
-        Me.DateEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit1.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit1.Name = "DateEdit1"
         Me.DateEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -518,6 +518,7 @@ Partial Class DxEstrattoNew
         'CheckEdit3
         '
         Me.CheckEdit3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit3.EnterMoveNextControl = True
         Me.CheckEdit3.Location = New System.Drawing.Point(8, 114)
         Me.CheckEdit3.Name = "CheckEdit3"
         Me.CheckEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -559,6 +560,7 @@ Partial Class DxEstrattoNew
         'CheckEdit2
         '
         Me.CheckEdit2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit2.EnterMoveNextControl = True
         Me.CheckEdit2.Location = New System.Drawing.Point(179, 41)
         Me.CheckEdit2.Name = "CheckEdit2"
         Me.CheckEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -571,6 +573,7 @@ Partial Class DxEstrattoNew
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
         Me.CheckEdit1.Location = New System.Drawing.Point(13, 41)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -650,9 +653,9 @@ Partial Class DxEstrattoNew
         Me.ButtonF8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF8.ImageIndex = 7
-        Me.ButtonF8.ImageList = Me.ImageList32
-        Me.ButtonF8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF8.ImageOptions.ImageIndex = 7
+        Me.ButtonF8.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF8.Location = New System.Drawing.Point(24, 62)
         Me.ButtonF8.Name = "ButtonF8"
         Me.ButtonF8.Size = New System.Drawing.Size(32, 32)
@@ -756,10 +759,10 @@ Partial Class DxEstrattoNew
         Me.GroupControl3.Controls.Add(Me.ButtonF9)
         Me.GroupControl3.Controls.Add(Me.ButtonF5)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl3.Location = New System.Drawing.Point(351, 24)
+        Me.GroupControl3.Location = New System.Drawing.Point(351, 23)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.ShowCaption = False
-        Me.GroupControl3.Size = New System.Drawing.Size(127, 42)
+        Me.GroupControl3.Size = New System.Drawing.Size(127, 43)
         Me.GroupControl3.TabIndex = 1
         '
         'ButtonF9
@@ -772,9 +775,9 @@ Partial Class DxEstrattoNew
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(24, 7)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -791,9 +794,9 @@ Partial Class DxEstrattoNew
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(76, 7)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -927,13 +930,13 @@ Partial Class DxEstrattoNew
         '
         Me.MemoEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MemoEdit1.EnterMoveNextControl = True
-        Me.MemoEdit1.Location = New System.Drawing.Point(2, 24)
+        Me.MemoEdit1.Location = New System.Drawing.Point(2, 23)
         Me.MemoEdit1.Name = "MemoEdit1"
         Me.MemoEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.MemoEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.MemoEdit1.Properties.LinesCount = 3
         Me.MemoEdit1.Properties.MaxLength = 400
-        Me.MemoEdit1.Size = New System.Drawing.Size(476, 72)
+        Me.MemoEdit1.Size = New System.Drawing.Size(476, 73)
         Me.MemoEdit1.TabIndex = 0
         '
         'GroupControl10
@@ -953,13 +956,13 @@ Partial Class DxEstrattoNew
         '
         Me.MemoEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MemoEdit3.EnterMoveNextControl = True
-        Me.MemoEdit3.Location = New System.Drawing.Point(2, 24)
+        Me.MemoEdit3.Location = New System.Drawing.Point(2, 23)
         Me.MemoEdit3.Name = "MemoEdit3"
         Me.MemoEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.MemoEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.MemoEdit3.Properties.LinesCount = 2
         Me.MemoEdit3.Properties.MaxLength = 200
-        Me.MemoEdit3.Size = New System.Drawing.Size(476, 50)
+        Me.MemoEdit3.Size = New System.Drawing.Size(476, 51)
         Me.MemoEdit3.TabIndex = 1
         '
         'DxEstrattoNew
