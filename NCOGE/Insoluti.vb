@@ -547,6 +547,7 @@ Oltre:
         SbloccoLocked()
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         ResetIdP()
+        EsegueSql(" EXEC RiAprePartita  @Id = " & ProgId & ",@Az=" & ProgId & ",@Miglio=" & MiglioFo, cnCo)
         EsegueSql(" EXEC RiChiudePartita  @Id = " & ProgId & ",@Miglio=" & MiglioFo, cnCo)
         Return Articolo
     End Function

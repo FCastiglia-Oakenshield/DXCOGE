@@ -551,7 +551,7 @@ Partial Class MondoRipCdc
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl2.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(670, 245)
+        Me.GroupControl2.Size = New System.Drawing.Size(674, 245)
         Me.GroupControl2.TabIndex = 0
         Me.GroupControl2.Text = "RIPARTITO"
         '
@@ -559,11 +559,10 @@ Partial Class MondoRipCdc
         '
         Me.GridControl4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl4.FormsUseDefaultLookAndFeel = True
-        Me.GridControl4.Location = New System.Drawing.Point(2, 21)
-        Me.GridControl4.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl4.Location = New System.Drawing.Point(2, 23)
         Me.GridControl4.MainView = Me.GridView4
         Me.GridControl4.Name = "GridControl4"
-        Me.GridControl4.Size = New System.Drawing.Size(666, 222)
+        Me.GridControl4.Size = New System.Drawing.Size(670, 220)
         Me.GridControl4.TabIndex = 5
         Me.GridControl4.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
         '
@@ -648,7 +647,7 @@ Partial Class MondoRipCdc
         Me.GroupControl1.Location = New System.Drawing.Point(716, 2)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(284, 56)
+        Me.GroupControl1.Size = New System.Drawing.Size(288, 56)
         Me.GroupControl1.TabIndex = 1
         Me.GroupControl1.Text = "GroupControl1"
         '
@@ -672,7 +671,7 @@ Partial Class MondoRipCdc
         Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit3.EditValue = 0
         Me.TextEdit3.EnterMoveNextControl = True
-        Me.TextEdit3.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit3.Properties.Appearance.Options.UseFont = True
@@ -708,7 +707,7 @@ Partial Class MondoRipCdc
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EditValue = 0
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit2.Properties.Appearance.Options.UseFont = True
@@ -728,7 +727,7 @@ Partial Class MondoRipCdc
         '
         Me.GroupControl3.Controls.Add(Me.GridControl2)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl3.Location = New System.Drawing.Point(672, 2)
+        Me.GroupControl3.Location = New System.Drawing.Point(676, 2)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.Size = New System.Drawing.Size(328, 245)
         Me.GroupControl3.TabIndex = 2
@@ -738,12 +737,11 @@ Partial Class MondoRipCdc
         '
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl2.FormsUseDefaultLookAndFeel = True
-        Me.GridControl2.Location = New System.Drawing.Point(2, 21)
-        Me.GridControl2.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl2.Location = New System.Drawing.Point(2, 23)
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox7, Me.RepositoryItemImageComboBox8, Me.RepositoryItemCheckEdit3, Me.RepositoryItemImageComboBox9})
-        Me.GridControl2.Size = New System.Drawing.Size(324, 222)
+        Me.GridControl2.Size = New System.Drawing.Size(324, 220)
         Me.GridControl2.TabIndex = 6
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -873,10 +871,10 @@ Partial Class MondoRipCdc
         Me.GroupControl4.Controls.Add(Me.GroupControl9)
         Me.GroupControl4.Controls.Add(Me.GroupControl8)
         Me.GroupControl4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl4.Location = New System.Drawing.Point(896, 2)
+        Me.GroupControl4.Location = New System.Drawing.Point(900, 2)
         Me.GroupControl4.Name = "GroupControl4"
         Me.GroupControl4.ShowCaption = False
-        Me.GroupControl4.Size = New System.Drawing.Size(104, 337)
+        Me.GroupControl4.Size = New System.Drawing.Size(104, 341)
         Me.GroupControl4.TabIndex = 3
         Me.GroupControl4.Text = "GroupControl4"
         '
@@ -890,9 +888,9 @@ Partial Class MondoRipCdc
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(14, 294)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -930,9 +928,9 @@ Partial Class MondoRipCdc
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(65, 294)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -1098,7 +1096,7 @@ Partial Class MondoRipCdc
         '
         Me.TextEdit6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit6.EnterMoveNextControl = True
-        Me.TextEdit6.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit6.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit6.Name = "TextEdit6"
         Me.TextEdit6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit6.Properties.Appearance.Options.UseFont = True
@@ -1130,9 +1128,9 @@ Partial Class MondoRipCdc
         '
         Me.ButtonXF11.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonXF11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ButtonXF11.ImageIndex = 24
-        Me.ButtonXF11.ImageList = Me.imageList1
-        Me.ButtonXF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF11.ImageOptions.ImageIndex = 24
+        Me.ButtonXF11.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonXF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonXF11.Location = New System.Drawing.Point(523, 2)
         Me.ButtonXF11.Name = "ButtonXF11"
         Me.ButtonXF11.Size = New System.Drawing.Size(22, 52)
@@ -1159,7 +1157,7 @@ Partial Class MondoRipCdc
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EditValue = 0
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit1.Properties.Appearance.Options.UseFont = True
@@ -1192,7 +1190,7 @@ Partial Class MondoRipCdc
         '
         Me.TextEdit8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit8.EnterMoveNextControl = True
-        Me.TextEdit8.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit8.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit8.Name = "TextEdit8"
         Me.TextEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit8.Properties.Appearance.Options.UseFont = True
@@ -1224,7 +1222,7 @@ Partial Class MondoRipCdc
         '
         Me.TextEdit7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit7.EnterMoveNextControl = True
-        Me.TextEdit7.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit7.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit7.Name = "TextEdit7"
         Me.TextEdit7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit7.Properties.Appearance.Options.UseFont = True
@@ -1244,7 +1242,7 @@ Partial Class MondoRipCdc
         Me.GroupControl7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl7.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl7.Name = "GroupControl7"
-        Me.GroupControl7.Size = New System.Drawing.Size(894, 337)
+        Me.GroupControl7.Size = New System.Drawing.Size(898, 341)
         Me.GroupControl7.TabIndex = 6
         Me.GroupControl7.Text = "RIPARTO NEI CENTRI DI COSTO"
         '
@@ -1252,12 +1250,11 @@ Partial Class MondoRipCdc
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
-        Me.GridControl1.Location = New System.Drawing.Point(2, 21)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl1.Location = New System.Drawing.Point(2, 23)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox2, Me.RepositoryItemImageComboBox4, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox3})
-        Me.GridControl1.Size = New System.Drawing.Size(890, 314)
+        Me.GridControl1.Size = New System.Drawing.Size(894, 316)
         Me.GridControl1.TabIndex = 1
         Me.GridControl1.TabStop = False
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -1304,7 +1301,7 @@ Partial Class MondoRipCdc
         '
         Me.GridColumn28.Caption = "Sigla"
         Me.GridColumn28.FieldName = "TcmSigla"
-        Me.GridColumn28.ImageAlignment = System.Drawing.StringAlignment.Center
+        Me.GridColumn28.ImageOptions.Alignment = System.Drawing.StringAlignment.Center
         Me.GridColumn28.Name = "GridColumn28"
         Me.GridColumn28.OptionsColumn.AllowEdit = False
         Me.GridColumn28.OptionsColumn.AllowFocus = False
@@ -1447,7 +1444,7 @@ Partial Class MondoRipCdc
         Me.GroupControlT.Location = New System.Drawing.Point(0, 0)
         Me.GroupControlT.Name = "GroupControlT"
         Me.GroupControlT.ShowCaption = False
-        Me.GroupControlT.Size = New System.Drawing.Size(1002, 249)
+        Me.GroupControlT.Size = New System.Drawing.Size(1006, 249)
         Me.GroupControlT.TabIndex = 7
         Me.GroupControlT.Text = "GroupControl8"
         '
@@ -1460,7 +1457,7 @@ Partial Class MondoRipCdc
         Me.GroupControlC.Location = New System.Drawing.Point(0, 249)
         Me.GroupControlC.Name = "GroupControlC"
         Me.GroupControlC.ShowCaption = False
-        Me.GroupControlC.Size = New System.Drawing.Size(1002, 60)
+        Me.GroupControlC.Size = New System.Drawing.Size(1006, 60)
         Me.GroupControlC.TabIndex = 8
         Me.GroupControlC.Text = "GroupControl8"
         '
@@ -1472,7 +1469,7 @@ Partial Class MondoRipCdc
         Me.GroupControlB.Location = New System.Drawing.Point(0, 309)
         Me.GroupControlB.Name = "GroupControlB"
         Me.GroupControlB.ShowCaption = False
-        Me.GroupControlB.Size = New System.Drawing.Size(1002, 341)
+        Me.GroupControlB.Size = New System.Drawing.Size(1006, 345)
         Me.GroupControlB.TabIndex = 9
         Me.GroupControlB.Text = "GroupControl8"
         '

@@ -1382,7 +1382,7 @@ Inext:
         End While
         dataRd.Close()
         If LeggiConto = True Then Exit Function
-        Str = "SELECT * from TbAna where AnaCoD = '" & TextEdit20.EditValue & "'"
+        Str = "SELECT * from TbAna where AnaCoD = '" & TextEdit20.EditValue & "' AND (AnaGrp='CL' OR AnaGrp='FO')"
         Cmd = New SqlCommand(Str, cnVd)
         dataRd = Cmd.ExecuteReader
         While dataRd.Read
