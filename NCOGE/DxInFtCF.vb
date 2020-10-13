@@ -2604,16 +2604,18 @@ II:
         Next
         If DAT IsNot Nothing Then
             DAT = ECC.ChildNodes(0)
-            nodes = DAT.GetElementsByTagName("IdCodice")
-            If nodes.Count > 0 Then FO_PARTITAIVA = nodes(0).InnerText Else FO_PARTITAIVA = ""
-            nodes = DAT.GetElementsByTagName("CodiceFiscale") '' CodiceFiscale controllare se codice fiscale dell'azienda
-            If nodes.Count > 0 Then FO_CODICEFISCALE = nodes(0).InnerText Else FO_CODICEFISCALE = ""
-            nodes = DAT.GetElementsByTagName("Denominazione") '' Denominazione
-            If nodes.Count > 0 Then FO_DENOMINAZIONE = nodes(0).InnerText Else FO_DENOMINAZIONE = ""
-            nodes = DAT.GetElementsByTagName("Cognome") '' Cognome
-            If nodes.Count > 0 Then FO_COGNOME = nodes(0).InnerText Else FO_COGNOME = ""
-            nodes = DAT.GetElementsByTagName("Nome") '' Nome
-            If nodes.Count > 0 Then FO_NOME = nodes(0).InnerText Else FO_NOME = ""
+            If DAT IsNot Nothing Then
+                nodes = DAT.GetElementsByTagName("IdCodice")
+                If nodes.Count > 0 Then FO_PARTITAIVA = nodes(0).InnerText Else FO_PARTITAIVA = ""
+                nodes = DAT.GetElementsByTagName("CodiceFiscale") '' CodiceFiscale controllare se codice fiscale dell'azienda
+                If nodes.Count > 0 Then FO_CODICEFISCALE = nodes(0).InnerText Else FO_CODICEFISCALE = ""
+                nodes = DAT.GetElementsByTagName("Denominazione") '' Denominazione
+                If nodes.Count > 0 Then FO_DENOMINAZIONE = nodes(0).InnerText Else FO_DENOMINAZIONE = ""
+                nodes = DAT.GetElementsByTagName("Cognome") '' Cognome
+                If nodes.Count > 0 Then FO_COGNOME = nodes(0).InnerText Else FO_COGNOME = ""
+                nodes = DAT.GetElementsByTagName("Nome") '' Nome
+                If nodes.Count > 0 Then FO_NOME = nodes(0).InnerText Else FO_NOME = ""
+            End If
         End If
         DAT = ECC.ChildNodes(1)
         If DAT IsNot Nothing Then
@@ -2712,7 +2714,9 @@ II:
 
     Private Sub Radiogroup8_EditValueChanged(sender As Object, e As System.EventArgs) Handles RadioGroup8.EditValueChanged
         Try
-            VisualizzaFattura(GridView2.GetFocusedDataRow)
+            If GridView2.GetFocusedDataRow IsNot Nothing Then
+                VisualizzaFattura(GridView2.GetFocusedDataRow)
+            End If
         Catch ex As Exception
 
         End Try
