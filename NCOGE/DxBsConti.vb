@@ -113,18 +113,26 @@ Public Class DxBsConti
         End If
         AggiornoTes()
         If Esiste() = False Then
+            DsCes.Tables(Ces).NewRow()
             DsCes.Tables(Ces).Rows.Add(RwCes)
             Iset = DsCes.Tables(Ces).Rows.Count - 1
         End If
         DaCes.Update(DsCes, Ces)
         DsCes.AcceptChanges()
+        Dim Pw As Int16 = Iset
         Iset = -1
+        PopolaGrid()
         Pulizia(False)
+        GridView1.TopRowIndex = Pw
         TextBox4.Focus()
     End Sub
 
     Private Function controllo() As Boolean
         controllo = True
+        If Val(TextBox4.EditValue) = 0 Then
+            TextBox4.Focus()
+            Return False
+        End If
         If TextBox5.EditValue = "" Then
             TextBox5.Focus()
             Return False
@@ -158,13 +166,14 @@ Public Class DxBsConti
     End Sub
 
     Private Function Esiste() As Boolean
-        Iset = -1
+        Iset = -1 : Esiste = False
         For i As Int16 = 1 To GridView1.RowCount
             Rx = GridView1.GetRow(i - 1)
             If Rx("CspNum") = TextBox4.EditValue Then
                 GridView1.SelectRow(i - 1)
                 Iset = i - 1
-                Exit For
+                'Return True
+                'Exit For
             End If
         Next
         If Iset > -1 Then
@@ -413,28 +422,7 @@ Public Class DxBsConti
         TextBox4.Focus()
     End Sub
 
-    '''Private Sub TextBox6_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox6.LostFocus
-    '''    If CDec(IIf(TextBox6.EditValue = "", CDec(0.0), TextBox6.EditValue)) > 100 Then
-    '''        TextBox6.Focus()
-    '''        Exit Sub
-    '''    End If
-    '''    TextBox6.EditValue = Format(CDec(IIf(TextBox6.EditValue = "", CDec(0.0), TextBox6.EditValue)), "##0.00")
-    '''End Sub
-
-    '''Private Sub txtCod_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
-    '''    If e.KeyChar = "." Then
-    '''        For I As Int16 = 0 To TextBox6.EditValue.Length - 1
-    '''            If TextBox6.EditValue.Chars(I) = "," Then
-    '''                e.Handled = True
-    '''                Return
-    '''            End If
-    '''        Next
-    '''        If TextBox6.EditValue.Length > 0 Then TextBox6.SelectedText = ","
-    '''        e.Handled = True
-    '''    End If
-    '''End Sub
-
-    Private Sub TextBox8_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox8.LostFocus
+    Private Sub TextBox8_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox8.Leave
         If Not IsNumeric(TextBox8.EditValue) Or TextBox8.EditValue <> "" Then
             If TesTestSp > 0 Then
                 TextBox8.Visible = False
@@ -587,19 +575,19 @@ Public Class DxBsConti
         REPORT.ShowPreview()
     End Sub
 
-    Private Sub TextBox20_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox20.LostFocus
+    Private Sub TextBox20_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox20.Leave
         If Val(Mid(TextBox20.EditValue, 1, 2)) > 0 AndAlso Val(Mid(TextBox20.EditValue, 4, 2)) = 0 Then TextBox21.EditValue = "" : TextBox20.EditValue = "00.00"
         If Not TextBox20.EditValue = "00.00" Then TextBox21.EditValue = LeggiCpt(TextBox20.EditValue)
     End Sub
-    Private Sub TextBox22_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox22.LostFocus
+    Private Sub TextBox22_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox22.Leave
         If Val(Mid(TextBox22.EditValue, 1, 2)) > 0 AndAlso Val(Mid(TextBox22.EditValue, 4, 2)) = 0 Then TextBox23.EditValue = "" : TextBox22.EditValue = "00.00"
         If Not TextBox22.EditValue = "00.00" Then TextBox23.EditValue = LeggiCpt(TextBox22.EditValue)
     End Sub
-    Private Sub TextBox24_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox24.LostFocus
+    Private Sub TextBox24_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox24.Leave
         If Val(Mid(TextBox24.EditValue, 1, 2)) > 0 AndAlso Val(Mid(TextBox24.EditValue, 4, 2)) = 0 Then TextBox25.EditValue = "" : TextBox24.EditValue = "00.00"
         If Not TextBox24.EditValue = "00.00" Then TextBox25.EditValue = LeggiCpt(TextBox24.EditValue)
     End Sub
-    Private Sub TextBox26_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox26.LostFocus
+    Private Sub TextBox26_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox26.Leave
         If Val(Mid(TextBox26.EditValue, 1, 2)) > 0 AndAlso Val(Mid(TextBox26.EditValue, 4, 2)) = 0 Then TextBox27.EditValue = "" : TextBox26.EditValue = "00.00"
         If Not TextBox26.EditValue = "00.00" Then TextBox27.EditValue = LeggiCpt(TextBox26.EditValue)
     End Sub
@@ -621,7 +609,7 @@ Public Class DxBsConti
     Private Sub TextBox1_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox20.GotFocus, TextBox22.GotFocus, TextBox24.GotFocus, TextBox26.GotFocus
         where = sender
     End Sub
-    Private Sub TextBox1_LostFocus1(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox20.LostFocus, TextBox22.LostFocus, TextBox24.LostFocus, TextBox26.LostFocus
+    Private Sub TextBox1_LostFocus1(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox20.Leave, TextBox22.Leave, TextBox24.Leave, TextBox26.Leave
         where = Nothing
         If sender.text = "" Then sender.text = "00.00"
     End Sub
@@ -652,10 +640,10 @@ Public Class DxBsConti
         End If
         TextBox4.EditValue = Val(TextBox4.EditValue).ToString("00")
         MaxRig = DsCes.Tables(Ces).Rows.Count
-        If Iset > -1 Then
-            RwCes = DsCes.Tables(Ces).Rows(Iset)
-            Exit Sub
-        End If
+        'If Iset > -1 Then
+        '    RwCes = DsCes.Tables(Ces).Rows(Iset)
+        '    Exit Sub
+        'End If
         If Esiste() = False Then
             AzzeradataRow()
             TextBox5.EditValue = ""
