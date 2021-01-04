@@ -866,7 +866,8 @@ II:
     Private Sub ButtonF1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF1.Click
         If Controlli() = False Then Exit Sub
         If DoppiaFtFo() = True Then
-            ButtonF5.PerformClick()
+            TextEdit3.Focus()
+            ''ButtonF5.PerformClick()
             Exit Sub
         End If
         REM MONDOMARINE
@@ -935,12 +936,12 @@ II:
             DoppiaFtFo = False
             Exit Function
         End If
-        Messaggio(2, "FATTURA DOPPIA - PROT N. " & ProtDup & ProtDub & " - REG.IVA N. " & ProtReg & Chr(13) & " PROSEGUO LA REGISTRAZIONE ? ")
-        If Rispondi = MsgBoxResult.Yes Then
-            DoppiaFtFo = False
-        Else
-            DoppiaFtFo = True
-        End If
+        Messaggio(0, "FATTURA DOPPIA - PROT N. " & ProtDup & ProtDub & " - REG.IVA N. " & ProtReg & Chr(13) & " CAMBIARE IL NUMERO DI DOCUMENTO !!!!!")
+        '  If Rispondi = MsgBoxResult. Then
+        ' DoppiaFtFo = False
+        '  Else
+        DoppiaFtFo = True
+        '  End If
     End Function
     Function ControlloMondo() As Boolean
         REM MONDOMARINE

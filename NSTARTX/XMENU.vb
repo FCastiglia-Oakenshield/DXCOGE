@@ -639,7 +639,7 @@ esci:
     End Sub
 
     Private Sub BarButtonItem59_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem59.ItemClick
-        DXMenu(New DxEstratto, e.Item.Caption)
+        DXMenu(New DxEstrattoNew, e.Item.Caption)
     End Sub
 
     Private Sub BarButtonItem60_ItemClick_1(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem60.ItemClick

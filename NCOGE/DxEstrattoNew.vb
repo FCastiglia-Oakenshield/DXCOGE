@@ -50,7 +50,7 @@ Public Class DxEstrattoNew
             TextEdit11.EditValue = ""
             TextEdit12.EditValue = ""
             TextEdit14.EditValue = ""
-            MemoEdit1.EditValue = ""
+            'MemoEdit1.EditValue = ""
             MemoEdit3.EditValue = ""
             MemoEdit1.EnterMoveNextControl = False
             MemoEdit3.EnterMoveNextControl = False
@@ -58,7 +58,7 @@ Public Class DxEstrattoNew
             CheckEdit1.Checked = False
             CheckEdit2.Checked = False
             CheckEdit3.Checked = False
-            GroupControl9.Enabled = False
+            GroupControl9.Enabled = True
             GroupControl10.Enabled = False
             leggiazienda()
             DateEdit1.EditValue = CDate(Today)
@@ -128,7 +128,7 @@ Public Class DxEstrattoNew
         REPORT.Parameters("Corr").Value = CheckEdit1.Checked
         REPORT.Parameters("dsca").Value = dscade
         REPORT.Parameters("Libero").Value = CheckEdit3.Checked
-        REPORT.Parameters("TB15").Value = MemoEdit1.EditValue
+        REPORT.Parameters("TB15").Value = MemoEdit1.EditValue.ToString
         REPORT.Parameters("TB17").Value = MemoEdit3.EditValue
 
         REPORT.ShowPreview()

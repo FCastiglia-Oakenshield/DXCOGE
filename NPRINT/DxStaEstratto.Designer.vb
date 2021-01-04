@@ -19,36 +19,64 @@ Partial Public Class DxStaEstratto
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DxStaEstratto))
-        Dim TableQuery1 As DevExpress.DataAccess.Sql.TableQuery = New DevExpress.DataAccess.Sql.TableQuery()
-        Dim TableInfo1 As DevExpress.DataAccess.Sql.TableInfo = New DevExpress.DataAccess.Sql.TableInfo()
-        Dim ColumnInfo1 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo2 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo3 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo4 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo5 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo6 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo7 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo8 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo9 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo10 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo11 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo12 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo13 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo14 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo15 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo16 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo17 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo18 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo19 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo20 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo21 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo22 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo23 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo24 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo25 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo26 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
-        Dim ColumnInfo27 As DevExpress.DataAccess.Sql.ColumnInfo = New DevExpress.DataAccess.Sql.ColumnInfo()
+        Dim SelectQuery1 As DevExpress.DataAccess.Sql.SelectQuery = New DevExpress.DataAccess.Sql.SelectQuery()
+        Dim Column1 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression1 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Table1 As DevExpress.DataAccess.Sql.Table = New DevExpress.DataAccess.Sql.Table()
+        Dim Column2 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression2 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column3 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression3 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column4 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression4 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column5 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression5 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column6 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression6 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column7 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression7 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column8 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression8 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column9 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression9 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column10 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression10 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column11 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression11 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column12 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression12 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column13 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression13 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column14 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression14 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column15 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression15 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column16 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression16 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column17 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression17 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column18 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression18 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column19 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression19 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column20 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression20 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column21 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression21 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column22 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression22 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column23 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression23 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column24 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression24 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column25 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression25 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column26 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression26 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column27 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression27 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
         Me.XrTable4 = New DevExpress.XtraReports.UI.XRTable()
         Me.XrTableRow5 = New DevExpress.XtraReports.UI.XRTableRow()
@@ -74,7 +102,6 @@ Partial Public Class DxStaEstratto
         Me.Rag1 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.PageFooter = New DevExpress.XtraReports.UI.PageFooterBand()
         Me.XrLabel22 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.FormattingRule2 = New DevExpress.XtraReports.UI.FormattingRule()
         Me.XrPageInfo1 = New DevExpress.XtraReports.UI.XRPageInfo()
         Me.XrLabel11 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrTable3 = New DevExpress.XtraReports.UI.XRTable()
@@ -89,11 +116,8 @@ Partial Public Class DxStaEstratto
         Me.XrTableCell18 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell19 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.GroupHeader1 = New DevExpress.XtraReports.UI.GroupHeaderBand()
-        Me.XrLabel6 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel5 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel8 = New DevExpress.XtraReports.UI.XRLabel()
         Me.dsca = New DevExpress.XtraReports.Parameters.Parameter()
-        Me.XrLabel20 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel19 = New DevExpress.XtraReports.UI.XRLabel()
         Me.dluogo = New DevExpress.XtraReports.Parameters.Parameter()
         Me.XrLabel15 = New DevExpress.XtraReports.UI.XRLabel()
@@ -113,11 +137,16 @@ Partial Public Class DxStaEstratto
         Me.FormattingRule1 = New DevExpress.XtraReports.UI.FormattingRule()
         Me.TopMarginBand1 = New DevExpress.XtraReports.UI.TopMarginBand()
         Me.BottomMarginBand1 = New DevExpress.XtraReports.UI.BottomMarginBand()
-        Me.SqlDataSource1 = New DevExpress.DataAccess.Sql.SqlDataSource()
+        Me.SqlDataSource1 = New DevExpress.DataAccess.Sql.SqlDataSource(Me.components)
         Me.Corr = New DevExpress.XtraReports.Parameters.Parameter()
         Me.TB15 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.TB17 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.Libero = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.XrLabel7 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel12 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel5 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel6 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel20 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me.XrTable4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -143,7 +172,7 @@ Partial Public Class DxStaEstratto
             Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide)
         Me.XrTable4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.XrTable4.ForeColor = System.Drawing.Color.Black
-        Me.XrTable4.LocationFloat = New DevExpress.Utils.PointFloat(19.0!, 0.0!)
+        Me.XrTable4.LocationFloat = New DevExpress.Utils.PointFloat(19.0!, 0!)
         Me.XrTable4.Name = "XrTable4"
         Me.XrTable4.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow5})
         Me.XrTable4.SizeF = New System.Drawing.SizeF(728.4148!, 17.0!)
@@ -163,23 +192,24 @@ Partial Public Class DxStaEstratto
         '
         'XrTableCell21
         '
-        Me.XrTableCell21.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.Causale")})
+        Me.XrTableCell21.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Causale]")})
         Me.XrTableCell21.Name = "XrTableCell21"
         Me.XrTableCell21.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 100.0!)
         Me.XrTableCell21.StylePriority.UsePadding = False
         Me.XrTableCell21.StylePriority.UseTextAlignment = False
         Me.XrTableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
-        Me.XrTableCell21.Weight = 1.1627906976744184R
+        Me.XrTableCell21.Weight = 1.1627906976744185R
         '
         'XrTableCell22
         '
-        Me.XrTableCell22.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.Pridataest", "{0:dd/MM/yyyy}")})
+        Me.XrTableCell22.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Pridataest]")})
         Me.XrTableCell22.Name = "XrTableCell22"
+        Me.XrTableCell22.TextFormatString = "{0:dd/MM/yyyy}"
         Me.XrTableCell22.Weight = 0.93023255813953476R
         '
         'XrTableCell23
         '
-        Me.XrTableCell23.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.PrkDocEst")})
+        Me.XrTableCell23.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PrkDocEst]")})
         Me.XrTableCell23.Name = "XrTableCell23"
         Me.XrTableCell23.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 5, 0, 0, 100.0!)
         Me.XrTableCell23.StylePriority.UsePadding = False
@@ -189,13 +219,13 @@ Partial Public Class DxStaEstratto
         '
         'XrTableCell24
         '
-        Me.XrTableCell24.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.PrkDocAnn")})
+        Me.XrTableCell24.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PrkDocAnn]")})
         Me.XrTableCell24.Name = "XrTableCell24"
         Me.XrTableCell24.Weight = 0.46220930232558133R
         '
         'XrTableCell20
         '
-        Me.XrTableCell20.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.TotaleFattura")})
+        Me.XrTableCell20.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotaleFattura]")})
         Me.XrTableCell20.Name = "XrTableCell20"
         Me.XrTableCell20.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 2, 0, 0, 100.0!)
         Me.XrTableCell20.StylePriority.UsePadding = False
@@ -214,22 +244,24 @@ Partial Public Class DxStaEstratto
         '
         'XrTableCell25
         '
-        Me.XrTableCell25.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.DARE", "{0:n2}")})
+        Me.XrTableCell25.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DARE]")})
         Me.XrTableCell25.Name = "XrTableCell25"
         Me.XrTableCell25.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 2, 0, 0, 100.0!)
         Me.XrTableCell25.StylePriority.UsePadding = False
         Me.XrTableCell25.StylePriority.UseTextAlignment = False
         Me.XrTableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
+        Me.XrTableCell25.TextFormatString = "{0:n2}"
         Me.XrTableCell25.Weight = 1.1066561187264368R
         '
         'XrTableCell26
         '
-        Me.XrTableCell26.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.AVERE", "{0:n2}")})
+        Me.XrTableCell26.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AVERE]")})
         Me.XrTableCell26.Name = "XrTableCell26"
         Me.XrTableCell26.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 2, 0, 0, 100.0!)
         Me.XrTableCell26.StylePriority.UsePadding = False
         Me.XrTableCell26.StylePriority.UseTextAlignment = False
         Me.XrTableCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
+        Me.XrTableCell26.TextFormatString = "{0:n2}"
         Me.XrTableCell26.Weight = 1.1066561702038331R
         '
         'XrTableCell27
@@ -253,7 +285,7 @@ Partial Public Class DxStaEstratto
         '
         'XrLabel9
         '
-        Me.XrLabel9.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.Rag5, "Text", "")})
+        Me.XrLabel9.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Rag5")})
         Me.XrLabel9.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.XrLabel9.LocationFloat = New DevExpress.Utils.PointFloat(25.0!, 89.5!)
         Me.XrLabel9.Name = "XrLabel9"
@@ -269,7 +301,7 @@ Partial Public Class DxStaEstratto
         '
         'XrLabel4
         '
-        Me.XrLabel4.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.Rag4, "Text", "")})
+        Me.XrLabel4.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Rag4")})
         Me.XrLabel4.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.XrLabel4.LocationFloat = New DevExpress.Utils.PointFloat(25.0!, 69.625!)
         Me.XrLabel4.Name = "XrLabel4"
@@ -285,7 +317,7 @@ Partial Public Class DxStaEstratto
         '
         'XrLabel3
         '
-        Me.XrLabel3.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.Rag3, "Text", "")})
+        Me.XrLabel3.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Rag3")})
         Me.XrLabel3.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.XrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(25.0!, 49.75!)
         Me.XrLabel3.Name = "XrLabel3"
@@ -301,7 +333,7 @@ Partial Public Class DxStaEstratto
         '
         'XrLabel2
         '
-        Me.XrLabel2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.Rag2, "Text", "")})
+        Me.XrLabel2.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Rag2")})
         Me.XrLabel2.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.XrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(25.0!, 29.875!)
         Me.XrLabel2.Name = "XrLabel2"
@@ -317,7 +349,7 @@ Partial Public Class DxStaEstratto
         '
         'XrLabel1
         '
-        Me.XrLabel1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.Rag1, "Text", "")})
+        Me.XrLabel1.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Rag1")})
         Me.XrLabel1.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.XrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(25.0!, 10.0!)
         Me.XrLabel1.Name = "XrLabel1"
@@ -342,10 +374,10 @@ Partial Public Class DxStaEstratto
         '
         'XrLabel22
         '
+        Me.XrLabel22.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif([Parameters.Corr] <> True, False, ?)")})
         Me.XrLabel22.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Italic)
         Me.XrLabel22.ForeColor = System.Drawing.Color.Gray
-        Me.XrLabel22.FormattingRules.Add(Me.FormattingRule2)
-        Me.XrLabel22.LocationFloat = New DevExpress.Utils.PointFloat(87.5!, 0.0!)
+        Me.XrLabel22.LocationFloat = New DevExpress.Utils.PointFloat(87.5!, 0!)
         Me.XrLabel22.Name = "XrLabel22"
         Me.XrLabel22.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel22.SizeF = New System.Drawing.SizeF(563.8333!, 37.54165!)
@@ -355,20 +387,10 @@ Partial Public Class DxStaEstratto
         Me.XrLabel22.Text = resources.GetString("XrLabel22.Text")
         Me.XrLabel22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
         '
-        'FormattingRule2
-        '
-        Me.FormattingRule2.Condition = "[Parameters.Corr]  != True"
-        '
-        '
-        '
-        Me.FormattingRule2.Formatting.Visible = DevExpress.Utils.DefaultBoolean.[False]
-        Me.FormattingRule2.Name = "FormattingRule2"
-        '
         'XrPageInfo1
         '
         Me.XrPageInfo1.Font = New System.Drawing.Font("Calibri", 9.75!)
         Me.XrPageInfo1.ForeColor = System.Drawing.Color.Black
-        Me.XrPageInfo1.Format = "Pagina {0} di {1}"
         Me.XrPageInfo1.LocationFloat = New DevExpress.Utils.PointFloat(661.9999!, 5.666645!)
         Me.XrPageInfo1.Name = "XrPageInfo1"
         Me.XrPageInfo1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
@@ -377,11 +399,12 @@ Partial Public Class DxStaEstratto
         Me.XrPageInfo1.StylePriority.UseForeColor = False
         Me.XrPageInfo1.StylePriority.UseTextAlignment = False
         Me.XrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
+        Me.XrPageInfo1.TextFormatString = "Pagina {0} di {1}"
         '
         'XrLabel11
         '
         Me.XrLabel11.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel11.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.PrkConto")})
+        Me.XrLabel11.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PrkConto]")})
         Me.XrLabel11.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.XrLabel11.LocationFloat = New DevExpress.Utils.PointFloat(662.0!, 10.0!)
         Me.XrLabel11.Name = "XrLabel11"
@@ -423,7 +446,7 @@ Partial Public Class DxStaEstratto
         '
         Me.XrTableCell10.Name = "XrTableCell10"
         Me.XrTableCell10.Text = "Causale"
-        Me.XrTableCell10.Weight = 1.1627906976744184R
+        Me.XrTableCell10.Weight = 1.1627906976744185R
         '
         'XrTableCell11
         '
@@ -459,7 +482,7 @@ Partial Public Class DxStaEstratto
         '
         Me.XrTableCell17.Name = "XrTableCell17"
         Me.XrTableCell17.Text = "D A R E"
-        Me.XrTableCell17.Weight = 1.1066561187219623R
+        Me.XrTableCell17.Weight = 1.1066561187219624R
         '
         'XrTableCell18
         '
@@ -478,57 +501,28 @@ Partial Public Class DxStaEstratto
         Me.GroupHeader1.Borders = CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) _
             Or DevExpress.XtraPrinting.BorderSide.Right) _
             Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide)
-        Me.GroupHeader1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel6, Me.XrLabel5, Me.XrLabel8, Me.XrLabel20, Me.XrLabel19, Me.XrLabel15, Me.XrLabel11, Me.XrLabel17, Me.XrLabel10, Me.XrLabel13, Me.XrTable3})
+        Me.GroupHeader1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel7, Me.XrLabel6, Me.XrLabel5, Me.XrLabel20, Me.XrLabel19, Me.XrLabel15, Me.XrLabel11, Me.XrLabel17, Me.XrLabel10, Me.XrLabel13, Me.XrTable3})
         Me.GroupHeader1.GroupFields.AddRange(New DevExpress.XtraReports.UI.GroupField() {New DevExpress.XtraReports.UI.GroupField("PRKDESC", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)})
         Me.GroupHeader1.HeightF = 257.38!
         Me.GroupHeader1.Level = 2
         Me.GroupHeader1.Name = "GroupHeader1"
         Me.GroupHeader1.StylePriority.UseBorders = False
         '
-        'XrLabel6
-        '
-        Me.XrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel6.CanGrow = False
-        Me.XrLabel6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.XrLabel6.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 157.25!)
-        Me.XrLabel6.Name = "XrLabel6"
-        Me.XrLabel6.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel6.SizeF = New System.Drawing.SizeF(690.0!, 18.0!)
-        Me.XrLabel6.StylePriority.UseBorders = False
-        Me.XrLabel6.StylePriority.UseFont = False
-        Me.XrLabel6.StylePriority.UseTextAlignment = False
-        Me.XrLabel6.Text = "se  d'accordo,  provvedere  con  cortese  sollecitudine  in  merito  alle  partit" & _
-    "e  che  risultano  scoperte"
-        Me.XrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-        Me.XrLabel6.WordWrap = False
-        '
-        'XrLabel5
-        '
-        Me.XrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel5.CanGrow = False
-        Me.XrLabel5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.XrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 177.25!)
-        Me.XrLabel5.Name = "XrLabel5"
-        Me.XrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel5.SizeF = New System.Drawing.SizeF(22.0!, 18.0!)
-        Me.XrLabel5.StylePriority.UseBorders = False
-        Me.XrLabel5.StylePriority.UseFont = False
-        Me.XrLabel5.Text = "al"
-        '
         'XrLabel8
         '
         Me.XrLabel8.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel8.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.dsca, "Text", "{0:dd/MM/yyyy}")})
-        Me.XrLabel8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrLabel8.LocationFloat = New DevExpress.Utils.PointFloat(52.0!, 177.25!)
+        Me.XrLabel8.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?dsca")})
+        Me.XrLabel8.Font = New System.Drawing.Font("Times New Roman", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.XrLabel8.LocationFloat = New DevExpress.Utils.PointFloat(679.7065!, 9.999974!)
         Me.XrLabel8.Name = "XrLabel8"
         Me.XrLabel8.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel8.SizeF = New System.Drawing.SizeF(156.84!, 18.0!)
+        Me.XrLabel8.SizeF = New System.Drawing.SizeF(67.70831!, 23.00002!)
         Me.XrLabel8.StylePriority.UseBorders = False
         Me.XrLabel8.StylePriority.UseFont = False
         Me.XrLabel8.StylePriority.UseTextAlignment = False
         Me.XrLabel8.Text = "XrLabel8"
-        Me.XrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+        Me.XrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
+        Me.XrLabel8.TextFormatString = "{0: dd/MM/yyyy}"
         '
         'dsca
         '
@@ -536,27 +530,10 @@ Partial Public Class DxStaEstratto
         Me.dsca.Name = "dsca"
         Me.dsca.Visible = False
         '
-        'XrLabel20
-        '
-        Me.XrLabel20.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel20.CanGrow = False
-        Me.XrLabel20.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.XrLabel20.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 137.25!)
-        Me.XrLabel20.Name = "XrLabel20"
-        Me.XrLabel20.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel20.SizeF = New System.Drawing.SizeF(690.0!, 18.0!)
-        Me.XrLabel20.StylePriority.UseBorders = False
-        Me.XrLabel20.StylePriority.UseFont = False
-        Me.XrLabel20.StylePriority.UseTextAlignment = False
-        Me.XrLabel20.Text = "Vi diamo qui di seguito Estratto conto della Vostra posizione scoperta. Grati se " & _
-    "vorrete controllare e,"
-        Me.XrLabel20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-        Me.XrLabel20.WordWrap = False
-        '
         'XrLabel19
         '
         Me.XrLabel19.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel19.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.dluogo, "Text", "")})
+        Me.XrLabel19.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?dluogo")})
         Me.XrLabel19.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.XrLabel19.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 106.0!)
         Me.XrLabel19.Name = "XrLabel19"
@@ -575,7 +552,7 @@ Partial Public Class DxStaEstratto
         'XrLabel15
         '
         Me.XrLabel15.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel15.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.PRKINDI")})
+        Me.XrLabel15.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PRKINDI]")})
         Me.XrLabel15.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.XrLabel15.LocationFloat = New DevExpress.Utils.PointFloat(348.125!, 50.0!)
         Me.XrLabel15.Name = "XrLabel15"
@@ -587,7 +564,7 @@ Partial Public Class DxStaEstratto
         'XrLabel17
         '
         Me.XrLabel17.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel17.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.PRKCITTA")})
+        Me.XrLabel17.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PRKCITTA]")})
         Me.XrLabel17.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.XrLabel17.LocationFloat = New DevExpress.Utils.PointFloat(348.125!, 70.00002!)
         Me.XrLabel17.Name = "XrLabel17"
@@ -599,7 +576,7 @@ Partial Public Class DxStaEstratto
         'XrLabel10
         '
         Me.XrLabel10.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel10.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "VESTRATTO.PrkDesc")})
+        Me.XrLabel10.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PrkDesc]")})
         Me.XrLabel10.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.XrLabel10.LocationFloat = New DevExpress.Utils.PointFloat(348.125!, 29.99999!)
         Me.XrLabel10.Name = "XrLabel10"
@@ -612,7 +589,7 @@ Partial Public Class DxStaEstratto
         '
         Me.XrLabel13.BackColor = System.Drawing.Color.WhiteSmoke
         Me.XrLabel13.Font = New System.Drawing.Font("Arial", 6.0!)
-        Me.XrLabel13.LocationFloat = New DevExpress.Utils.PointFloat(337.7899!, 0.0!)
+        Me.XrLabel13.LocationFloat = New DevExpress.Utils.PointFloat(337.7899!, 0!)
         Me.XrLabel13.Name = "XrLabel13"
         Me.XrLabel13.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel13.SizeF = New System.Drawing.SizeF(409.625!, 100.0!)
@@ -622,14 +599,14 @@ Partial Public Class DxStaEstratto
         '
         'GroupFooter1
         '
-        Me.GroupFooter1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel18, Me.XrLabel16, Me.XrLabel14, Me.XrTable5})
+        Me.GroupFooter1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel12, Me.XrLabel8, Me.XrLabel18, Me.XrLabel16, Me.XrLabel14, Me.XrTable5})
         Me.GroupFooter1.HeightF = 103.2917!
         Me.GroupFooter1.Level = 2
         Me.GroupFooter1.Name = "GroupFooter1"
         '
         'XrLabel18
         '
-        Me.XrLabel18.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.firma, "Text", "")})
+        Me.XrLabel18.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?firma")})
         Me.XrLabel18.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
         Me.XrLabel18.LocationFloat = New DevExpress.Utils.PointFloat(491.3732!, 80.2917!)
         Me.XrLabel18.Name = "XrLabel18"
@@ -707,14 +684,14 @@ Partial Public Class DxStaEstratto
         'GroupHeader2
         '
         Me.GroupHeader2.GroupFields.AddRange(New DevExpress.XtraReports.UI.GroupField() {New DevExpress.XtraReports.UI.GroupField("prkconto", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending), New DevExpress.XtraReports.UI.GroupField("PrkDocAnn", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending), New DevExpress.XtraReports.UI.GroupField("Pridataest", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)})
-        Me.GroupHeader2.HeightF = 0.0!
+        Me.GroupHeader2.HeightF = 0!
         Me.GroupHeader2.Level = 1
         Me.GroupHeader2.Name = "GroupHeader2"
         '
         'GroupHeader3
         '
         Me.GroupHeader3.GroupFields.AddRange(New DevExpress.XtraReports.UI.GroupField() {New DevExpress.XtraReports.UI.GroupField("Priregiva", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending), New DevExpress.XtraReports.UI.GroupField("FORMULA", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)})
-        Me.GroupHeader3.HeightF = 0.0!
+        Me.GroupHeader3.HeightF = 0!
         Me.GroupHeader3.Name = "GroupHeader3"
         '
         'FormattingRule1
@@ -735,38 +712,118 @@ Partial Public Class DxStaEstratto
         '
         Me.SqlDataSource1.ConnectionName = "localhost_Connection"
         Me.SqlDataSource1.Name = "SqlDataSource1"
-        TableQuery1.Name = "VESTRATTO"
-        TableInfo1.Name = "VESTRATTO"
-        ColumnInfo1.Name = "ScaImpRata"
-        ColumnInfo2.Name = "ScaNrata"
-        ColumnInfo3.Name = "ScaDsca"
-        ColumnInfo4.Name = "PrkConto"
-        ColumnInfo5.Name = "PrkTipoCo"
-        ColumnInfo6.Name = "PrkDesc"
-        ColumnInfo7.Name = "Pridataest"
-        ColumnInfo8.Name = "Causale"
-        ColumnInfo9.Name = "PriNumProt"
-        ColumnInfo10.Name = "Priregiva"
-        ColumnInfo11.Name = "PrkDocEst"
-        ColumnInfo12.Name = "DARE"
-        ColumnInfo13.Name = "AVERE"
-        ColumnInfo14.Name = "Descriz"
-        ColumnInfo15.Name = "PriCausale"
-        ColumnInfo16.Name = "PrkDocAnn"
-        ColumnInfo17.Name = "Prkaammgg"
-        ColumnInfo18.Name = "Partitario"
-        ColumnInfo19.Name = "PrkPaperta"
-        ColumnInfo20.Name = "PrIID"
-        ColumnInfo21.Name = "PRKAST"
-        ColumnInfo22.Name = "FORMULA"
-        ColumnInfo23.Name = "PRKINDI"
-        ColumnInfo24.Name = "PRKCITTA"
-        ColumnInfo25.Name = "PRIPROG"
-        ColumnInfo26.Name = "PRKDA"
-        ColumnInfo27.Name = "TotaleFattura"
-        TableInfo1.SelectedColumns.AddRange(New DevExpress.DataAccess.Sql.ColumnInfo() {ColumnInfo1, ColumnInfo2, ColumnInfo3, ColumnInfo4, ColumnInfo5, ColumnInfo6, ColumnInfo7, ColumnInfo8, ColumnInfo9, ColumnInfo10, ColumnInfo11, ColumnInfo12, ColumnInfo13, ColumnInfo14, ColumnInfo15, ColumnInfo16, ColumnInfo17, ColumnInfo18, ColumnInfo19, ColumnInfo20, ColumnInfo21, ColumnInfo22, ColumnInfo23, ColumnInfo24, ColumnInfo25, ColumnInfo26, ColumnInfo27})
-        TableQuery1.Tables.AddRange(New DevExpress.DataAccess.Sql.TableInfo() {TableInfo1})
-        Me.SqlDataSource1.Queries.AddRange(New DevExpress.DataAccess.Sql.SqlQuery() {TableQuery1})
+        ColumnExpression1.ColumnName = "ScaImpRata"
+        Table1.Name = "VESTRATTO"
+        ColumnExpression1.Table = Table1
+        Column1.Expression = ColumnExpression1
+        ColumnExpression2.ColumnName = "ScaNrata"
+        ColumnExpression2.Table = Table1
+        Column2.Expression = ColumnExpression2
+        ColumnExpression3.ColumnName = "ScaDsca"
+        ColumnExpression3.Table = Table1
+        Column3.Expression = ColumnExpression3
+        ColumnExpression4.ColumnName = "PrkConto"
+        ColumnExpression4.Table = Table1
+        Column4.Expression = ColumnExpression4
+        ColumnExpression5.ColumnName = "PrkTipoCo"
+        ColumnExpression5.Table = Table1
+        Column5.Expression = ColumnExpression5
+        ColumnExpression6.ColumnName = "PrkDesc"
+        ColumnExpression6.Table = Table1
+        Column6.Expression = ColumnExpression6
+        ColumnExpression7.ColumnName = "Pridataest"
+        ColumnExpression7.Table = Table1
+        Column7.Expression = ColumnExpression7
+        ColumnExpression8.ColumnName = "Causale"
+        ColumnExpression8.Table = Table1
+        Column8.Expression = ColumnExpression8
+        ColumnExpression9.ColumnName = "PriNumProt"
+        ColumnExpression9.Table = Table1
+        Column9.Expression = ColumnExpression9
+        ColumnExpression10.ColumnName = "Priregiva"
+        ColumnExpression10.Table = Table1
+        Column10.Expression = ColumnExpression10
+        ColumnExpression11.ColumnName = "PrkDocEst"
+        ColumnExpression11.Table = Table1
+        Column11.Expression = ColumnExpression11
+        ColumnExpression12.ColumnName = "DARE"
+        ColumnExpression12.Table = Table1
+        Column12.Expression = ColumnExpression12
+        ColumnExpression13.ColumnName = "AVERE"
+        ColumnExpression13.Table = Table1
+        Column13.Expression = ColumnExpression13
+        ColumnExpression14.ColumnName = "Descriz"
+        ColumnExpression14.Table = Table1
+        Column14.Expression = ColumnExpression14
+        ColumnExpression15.ColumnName = "PriCausale"
+        ColumnExpression15.Table = Table1
+        Column15.Expression = ColumnExpression15
+        ColumnExpression16.ColumnName = "PrkDocAnn"
+        ColumnExpression16.Table = Table1
+        Column16.Expression = ColumnExpression16
+        ColumnExpression17.ColumnName = "Prkaammgg"
+        ColumnExpression17.Table = Table1
+        Column17.Expression = ColumnExpression17
+        ColumnExpression18.ColumnName = "Partitario"
+        ColumnExpression18.Table = Table1
+        Column18.Expression = ColumnExpression18
+        ColumnExpression19.ColumnName = "PrkPaperta"
+        ColumnExpression19.Table = Table1
+        Column19.Expression = ColumnExpression19
+        ColumnExpression20.ColumnName = "PrIID"
+        ColumnExpression20.Table = Table1
+        Column20.Expression = ColumnExpression20
+        ColumnExpression21.ColumnName = "PRKAST"
+        ColumnExpression21.Table = Table1
+        Column21.Expression = ColumnExpression21
+        ColumnExpression22.ColumnName = "FORMULA"
+        ColumnExpression22.Table = Table1
+        Column22.Expression = ColumnExpression22
+        ColumnExpression23.ColumnName = "PRKINDI"
+        ColumnExpression23.Table = Table1
+        Column23.Expression = ColumnExpression23
+        ColumnExpression24.ColumnName = "PRKCITTA"
+        ColumnExpression24.Table = Table1
+        Column24.Expression = ColumnExpression24
+        ColumnExpression25.ColumnName = "PRIPROG"
+        ColumnExpression25.Table = Table1
+        Column25.Expression = ColumnExpression25
+        ColumnExpression26.ColumnName = "PRKDA"
+        ColumnExpression26.Table = Table1
+        Column26.Expression = ColumnExpression26
+        ColumnExpression27.ColumnName = "TotaleFattura"
+        ColumnExpression27.Table = Table1
+        Column27.Expression = ColumnExpression27
+        SelectQuery1.Columns.Add(Column1)
+        SelectQuery1.Columns.Add(Column2)
+        SelectQuery1.Columns.Add(Column3)
+        SelectQuery1.Columns.Add(Column4)
+        SelectQuery1.Columns.Add(Column5)
+        SelectQuery1.Columns.Add(Column6)
+        SelectQuery1.Columns.Add(Column7)
+        SelectQuery1.Columns.Add(Column8)
+        SelectQuery1.Columns.Add(Column9)
+        SelectQuery1.Columns.Add(Column10)
+        SelectQuery1.Columns.Add(Column11)
+        SelectQuery1.Columns.Add(Column12)
+        SelectQuery1.Columns.Add(Column13)
+        SelectQuery1.Columns.Add(Column14)
+        SelectQuery1.Columns.Add(Column15)
+        SelectQuery1.Columns.Add(Column16)
+        SelectQuery1.Columns.Add(Column17)
+        SelectQuery1.Columns.Add(Column18)
+        SelectQuery1.Columns.Add(Column19)
+        SelectQuery1.Columns.Add(Column20)
+        SelectQuery1.Columns.Add(Column21)
+        SelectQuery1.Columns.Add(Column22)
+        SelectQuery1.Columns.Add(Column23)
+        SelectQuery1.Columns.Add(Column24)
+        SelectQuery1.Columns.Add(Column25)
+        SelectQuery1.Columns.Add(Column26)
+        SelectQuery1.Columns.Add(Column27)
+        SelectQuery1.Name = "VESTRATTO"
+        SelectQuery1.Tables.Add(Table1)
+        Me.SqlDataSource1.Queries.AddRange(New DevExpress.DataAccess.Sql.SqlQuery() {SelectQuery1})
         Me.SqlDataSource1.ResultSchemaSerializable = resources.GetString("SqlDataSource1.ResultSchemaSerializable")
         '
         'Corr
@@ -797,20 +854,99 @@ Partial Public Class DxStaEstratto
         Me.Libero.ValueInfo = "False"
         Me.Libero.Visible = False
         '
+        'XrLabel7
+        '
+        Me.XrLabel7.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrLabel7.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TB15")})
+        Me.XrLabel7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
+        Me.XrLabel7.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 137.25!)
+        Me.XrLabel7.Name = "XrLabel7"
+        Me.XrLabel7.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel7.SizeF = New System.Drawing.SizeF(695.7065!, 82.37502!)
+        Me.XrLabel7.StylePriority.UseBorders = False
+        Me.XrLabel7.StylePriority.UseFont = False
+        Me.XrLabel7.StylePriority.UseTextAlignment = False
+        Me.XrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopJustify
+        '
+        'XrLabel12
+        '
+        Me.XrLabel12.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrLabel12.CanGrow = False
+        Me.XrLabel12.Font = New System.Drawing.Font("Times New Roman", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.XrLabel12.LocationFloat = New DevExpress.Utils.PointFloat(662.0!, 10.0!)
+        Me.XrLabel12.Name = "XrLabel12"
+        Me.XrLabel12.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel12.SizeF = New System.Drawing.SizeF(17.70654!, 23.00002!)
+        Me.XrLabel12.StylePriority.UseBorders = False
+        Me.XrLabel12.StylePriority.UseFont = False
+        Me.XrLabel12.StylePriority.UseTextAlignment = False
+        Me.XrLabel12.Text = "al"
+        Me.XrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
+        Me.XrLabel12.TextFormatString = "{0}"
+        '
+        'XrLabel5
+        '
+        Me.XrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrLabel5.CanGrow = False
+        Me.XrLabel5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
+        Me.XrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 177.25!)
+        Me.XrLabel5.Name = "XrLabel5"
+        Me.XrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel5.SizeF = New System.Drawing.SizeF(22.0!, 18.0!)
+        Me.XrLabel5.StylePriority.UseBorders = False
+        Me.XrLabel5.StylePriority.UseFont = False
+        Me.XrLabel5.Text = "al"
+        Me.XrLabel5.Visible = False
+        '
+        'XrLabel6
+        '
+        Me.XrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrLabel6.CanGrow = False
+        Me.XrLabel6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
+        Me.XrLabel6.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 157.25!)
+        Me.XrLabel6.Name = "XrLabel6"
+        Me.XrLabel6.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel6.SizeF = New System.Drawing.SizeF(690.0!, 18.0!)
+        Me.XrLabel6.StylePriority.UseBorders = False
+        Me.XrLabel6.StylePriority.UseFont = False
+        Me.XrLabel6.StylePriority.UseTextAlignment = False
+        Me.XrLabel6.Text = "se  d'accordo,  provvedere  con  cortese  sollecitudine  in  merito  alle  partit" &
+    "e  che  risultano  scoperte"
+        Me.XrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+        Me.XrLabel6.Visible = False
+        Me.XrLabel6.WordWrap = False
+        '
+        'XrLabel20
+        '
+        Me.XrLabel20.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrLabel20.CanGrow = False
+        Me.XrLabel20.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
+        Me.XrLabel20.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 137.25!)
+        Me.XrLabel20.Name = "XrLabel20"
+        Me.XrLabel20.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel20.SizeF = New System.Drawing.SizeF(690.0!, 18.0!)
+        Me.XrLabel20.StylePriority.UseBorders = False
+        Me.XrLabel20.StylePriority.UseFont = False
+        Me.XrLabel20.StylePriority.UseTextAlignment = False
+        Me.XrLabel20.Text = "Vi diamo qui di seguito Estratto conto della Vostra posizione scoperta. Grati se " &
+    "vorrete controllare e,"
+        Me.XrLabel20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+        Me.XrLabel20.Visible = False
+        Me.XrLabel20.WordWrap = False
+        '
         'DxStaEstratto
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.PageHeader, Me.PageFooter, Me.GroupHeader1, Me.GroupFooter1, Me.GroupHeader2, Me.GroupHeader3, Me.TopMarginBand1, Me.BottomMarginBand1})
-        Me.ComponentStorage.Add(Me.SqlDataSource1)
+        Me.ComponentStorage.AddRange(New System.ComponentModel.IComponent() {Me.SqlDataSource1})
         Me.DataMember = "VESTRATTO"
         Me.DataSource = Me.SqlDataSource1
-        Me.FormattingRuleSheet.AddRange(New DevExpress.XtraReports.UI.FormattingRule() {Me.FormattingRule2})
         Me.Margins = New System.Drawing.Printing.Margins(25, 25, 20, 20)
         Me.PageHeight = 1169
         Me.PageWidth = 827
         Me.PaperKind = System.Drawing.Printing.PaperKind.A4
         Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {Me.Rag1, Me.Rag2, Me.Rag3, Me.Rag4, Me.Rag5, Me.dluogo, Me.firma, Me.Corr, Me.TB15, Me.TB17, Me.Libero, Me.dsca})
         Me.RequestParameters = False
-        Me.Version = "14.2"
+        Me.Version = "19.2"
         CType(Me.XrTable4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.XrTable3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.XrTable5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -868,13 +1004,11 @@ Partial Public Class DxStaEstratto
     Friend WithEvents XrLabel10 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel13 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel19 As DevExpress.XtraReports.UI.XRLabel
-    Friend WithEvents XrLabel20 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents SqlDataSource1 As DevExpress.DataAccess.Sql.SqlDataSource
     Friend WithEvents XrPageInfo1 As DevExpress.XtraReports.UI.XRPageInfo
     Friend WithEvents XrLabel14 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel16 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel18 As DevExpress.XtraReports.UI.XRLabel
-    Friend WithEvents FormattingRule2 As DevExpress.XtraReports.UI.FormattingRule
     Friend WithEvents Corr As DevExpress.XtraReports.Parameters.Parameter
     Friend WithEvents XrLabel22 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents TB15 As DevExpress.XtraReports.Parameters.Parameter
@@ -884,6 +1018,9 @@ Partial Public Class DxStaEstratto
     Friend WithEvents dsca As DevExpress.XtraReports.Parameters.Parameter
     Friend WithEvents XrTableCell2 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell1 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrLabel5 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel7 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel12 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel6 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel5 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel20 As DevExpress.XtraReports.UI.XRLabel
 End Class

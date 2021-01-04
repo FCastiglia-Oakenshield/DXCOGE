@@ -929,9 +929,12 @@ Partial Class DxEstrattoNew
         'MemoEdit1
         '
         Me.MemoEdit1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MemoEdit1.EditValue = resources.GetString("MemoEdit1.EditValue")
         Me.MemoEdit1.EnterMoveNextControl = True
         Me.MemoEdit1.Location = New System.Drawing.Point(2, 23)
         Me.MemoEdit1.Name = "MemoEdit1"
+        Me.MemoEdit1.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.MemoEdit1.Properties.Appearance.Options.UseFont = True
         Me.MemoEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.MemoEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.MemoEdit1.Properties.LinesCount = 3
@@ -958,6 +961,8 @@ Partial Class DxEstrattoNew
         Me.MemoEdit3.EnterMoveNextControl = True
         Me.MemoEdit3.Location = New System.Drawing.Point(2, 23)
         Me.MemoEdit3.Name = "MemoEdit3"
+        Me.MemoEdit3.Properties.Appearance.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.MemoEdit3.Properties.Appearance.Options.UseFont = True
         Me.MemoEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.MemoEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.MemoEdit3.Properties.LinesCount = 2
