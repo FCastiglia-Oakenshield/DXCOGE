@@ -91,14 +91,14 @@ Partial Public Class DxStaEstratto
         Me.XrTableCell27 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.PageHeader = New DevExpress.XtraReports.UI.PageHeaderBand()
         Me.XrLabel9 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.Rag5 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.XrLabel4 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.Rag4 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.XrLabel3 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.Rag3 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.XrLabel2 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.Rag2 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.XrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.Rag5 = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.Rag4 = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.Rag3 = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.Rag2 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.Rag1 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.PageFooter = New DevExpress.XtraReports.UI.PageFooterBand()
         Me.XrLabel22 = New DevExpress.XtraReports.UI.XRLabel()
@@ -116,22 +116,24 @@ Partial Public Class DxStaEstratto
         Me.XrTableCell18 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell19 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.GroupHeader1 = New DevExpress.XtraReports.UI.GroupHeaderBand()
-        Me.XrLabel8 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.dsca = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.XrLabel20 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel19 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.dluogo = New DevExpress.XtraReports.Parameters.Parameter()
         Me.XrLabel15 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel17 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel10 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel13 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel8 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.dsca = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.dluogo = New DevExpress.XtraReports.Parameters.Parameter()
         Me.GroupFooter1 = New DevExpress.XtraReports.UI.GroupFooterBand()
+        Me.XrLabel12 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel18 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.firma = New DevExpress.XtraReports.Parameters.Parameter()
         Me.XrLabel16 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel14 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrTable5 = New DevExpress.XtraReports.UI.XRTable()
         Me.XrTableRow6 = New DevExpress.XtraReports.UI.XRTableRow()
         Me.XrTableCell35 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.firma = New DevExpress.XtraReports.Parameters.Parameter()
         Me.GroupHeader2 = New DevExpress.XtraReports.UI.GroupHeaderBand()
         Me.GroupHeader3 = New DevExpress.XtraReports.UI.GroupHeaderBand()
         Me.FormattingRule1 = New DevExpress.XtraReports.UI.FormattingRule()
@@ -142,11 +144,6 @@ Partial Public Class DxStaEstratto
         Me.TB15 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.TB17 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.Libero = New DevExpress.XtraReports.Parameters.Parameter()
-        Me.XrLabel7 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel12 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel5 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel6 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel20 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me.XrTable4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -293,12 +290,6 @@ Partial Public Class DxStaEstratto
         Me.XrLabel9.SizeF = New System.Drawing.SizeF(725.0!, 19.875!)
         Me.XrLabel9.StylePriority.UseFont = False
         '
-        'Rag5
-        '
-        Me.Rag5.Description = "Ragione sociale 5"
-        Me.Rag5.Name = "Rag5"
-        Me.Rag5.Visible = False
-        '
         'XrLabel4
         '
         Me.XrLabel4.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Rag4")})
@@ -308,12 +299,6 @@ Partial Public Class DxStaEstratto
         Me.XrLabel4.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel4.SizeF = New System.Drawing.SizeF(725.0!, 19.875!)
         Me.XrLabel4.StylePriority.UseFont = False
-        '
-        'Rag4
-        '
-        Me.Rag4.Description = "Ragione sociale 4"
-        Me.Rag4.Name = "Rag4"
-        Me.Rag4.Visible = False
         '
         'XrLabel3
         '
@@ -325,12 +310,6 @@ Partial Public Class DxStaEstratto
         Me.XrLabel3.SizeF = New System.Drawing.SizeF(725.0!, 19.875!)
         Me.XrLabel3.StylePriority.UseFont = False
         '
-        'Rag3
-        '
-        Me.Rag3.Description = "Ragione sociale 3"
-        Me.Rag3.Name = "Rag3"
-        Me.Rag3.Visible = False
-        '
         'XrLabel2
         '
         Me.XrLabel2.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Rag2")})
@@ -340,12 +319,6 @@ Partial Public Class DxStaEstratto
         Me.XrLabel2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel2.SizeF = New System.Drawing.SizeF(725.0!, 19.875!)
         Me.XrLabel2.StylePriority.UseFont = False
-        '
-        'Rag2
-        '
-        Me.Rag2.Description = "Ragione sociale 2"
-        Me.Rag2.Name = "Rag2"
-        Me.Rag2.Visible = False
         '
         'XrLabel1
         '
@@ -357,6 +330,30 @@ Partial Public Class DxStaEstratto
         Me.XrLabel1.SizeF = New System.Drawing.SizeF(725.0!, 19.875!)
         Me.XrLabel1.StylePriority.UseFont = False
         Me.XrLabel1.Text = "XrLabel1"
+        '
+        'Rag5
+        '
+        Me.Rag5.Description = "Ragione sociale 5"
+        Me.Rag5.Name = "Rag5"
+        Me.Rag5.Visible = False
+        '
+        'Rag4
+        '
+        Me.Rag4.Description = "Ragione sociale 4"
+        Me.Rag4.Name = "Rag4"
+        Me.Rag4.Visible = False
+        '
+        'Rag3
+        '
+        Me.Rag3.Description = "Ragione sociale 3"
+        Me.Rag3.Name = "Rag3"
+        Me.Rag3.Visible = False
+        '
+        'Rag2
+        '
+        Me.Rag2.Description = "Ragione sociale 2"
+        Me.Rag2.Name = "Rag2"
+        Me.Rag2.Visible = False
         '
         'Rag1
         '
@@ -501,34 +498,29 @@ Partial Public Class DxStaEstratto
         Me.GroupHeader1.Borders = CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) _
             Or DevExpress.XtraPrinting.BorderSide.Right) _
             Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide)
-        Me.GroupHeader1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel7, Me.XrLabel6, Me.XrLabel5, Me.XrLabel20, Me.XrLabel19, Me.XrLabel15, Me.XrLabel11, Me.XrLabel17, Me.XrLabel10, Me.XrLabel13, Me.XrTable3})
+        Me.GroupHeader1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel20, Me.XrLabel19, Me.XrLabel15, Me.XrLabel11, Me.XrLabel17, Me.XrLabel10, Me.XrLabel13, Me.XrTable3})
         Me.GroupHeader1.GroupFields.AddRange(New DevExpress.XtraReports.UI.GroupField() {New DevExpress.XtraReports.UI.GroupField("PRKDESC", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)})
         Me.GroupHeader1.HeightF = 257.38!
         Me.GroupHeader1.Level = 2
         Me.GroupHeader1.Name = "GroupHeader1"
         Me.GroupHeader1.StylePriority.UseBorders = False
         '
-        'XrLabel8
+        'XrLabel20
         '
-        Me.XrLabel8.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel8.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?dsca")})
-        Me.XrLabel8.Font = New System.Drawing.Font("Times New Roman", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrLabel8.LocationFloat = New DevExpress.Utils.PointFloat(679.7065!, 9.999974!)
-        Me.XrLabel8.Name = "XrLabel8"
-        Me.XrLabel8.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel8.SizeF = New System.Drawing.SizeF(67.70831!, 23.00002!)
-        Me.XrLabel8.StylePriority.UseBorders = False
-        Me.XrLabel8.StylePriority.UseFont = False
-        Me.XrLabel8.StylePriority.UseTextAlignment = False
-        Me.XrLabel8.Text = "XrLabel8"
-        Me.XrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
-        Me.XrLabel8.TextFormatString = "{0: dd/MM/yyyy}"
-        '
-        'dsca
-        '
-        Me.dsca.Description = "ALLA DATA DEL"
-        Me.dsca.Name = "dsca"
-        Me.dsca.Visible = False
+        Me.XrLabel20.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrLabel20.CanGrow = False
+        Me.XrLabel20.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TB15")})
+        Me.XrLabel20.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
+        Me.XrLabel20.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 137.25!)
+        Me.XrLabel20.Name = "XrLabel20"
+        Me.XrLabel20.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel20.SizeF = New System.Drawing.SizeF(695.7065!, 82.5833!)
+        Me.XrLabel20.StylePriority.UseBorders = False
+        Me.XrLabel20.StylePriority.UseFont = False
+        Me.XrLabel20.StylePriority.UseTextAlignment = False
+        Me.XrLabel20.Text = "Vi diamo qui di seguito Estratto conto della Vostra posizione scoperta. Grati se " &
+    "vorrete controllare e,"
+        Me.XrLabel20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
         '
         'XrLabel19
         '
@@ -542,12 +534,6 @@ Partial Public Class DxStaEstratto
         Me.XrLabel19.StylePriority.UseBorders = False
         Me.XrLabel19.StylePriority.UseFont = False
         Me.XrLabel19.Text = "XrLabel19"
-        '
-        'dluogo
-        '
-        Me.dluogo.Description = "Luogo"
-        Me.dluogo.Name = "dluogo"
-        Me.dluogo.Visible = False
         '
         'XrLabel15
         '
@@ -597,12 +583,56 @@ Partial Public Class DxStaEstratto
         Me.XrLabel13.StylePriority.UseFont = False
         Me.XrLabel13.Text = "SPETT.LE"
         '
+        'XrLabel8
+        '
+        Me.XrLabel8.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrLabel8.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?dsca")})
+        Me.XrLabel8.Font = New System.Drawing.Font("Times New Roman", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.XrLabel8.LocationFloat = New DevExpress.Utils.PointFloat(679.7065!, 9.999974!)
+        Me.XrLabel8.Name = "XrLabel8"
+        Me.XrLabel8.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel8.SizeF = New System.Drawing.SizeF(67.70831!, 23.00002!)
+        Me.XrLabel8.StylePriority.UseBorders = False
+        Me.XrLabel8.StylePriority.UseFont = False
+        Me.XrLabel8.StylePriority.UseTextAlignment = False
+        Me.XrLabel8.Text = "XrLabel8"
+        Me.XrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
+        Me.XrLabel8.TextFormatString = "{0: dd/MM/yyyy}"
+        '
+        'dsca
+        '
+        Me.dsca.Description = "ALLA DATA DEL"
+        Me.dsca.Name = "dsca"
+        Me.dsca.Visible = False
+        '
+        'dluogo
+        '
+        Me.dluogo.Description = "Luogo"
+        Me.dluogo.Name = "dluogo"
+        Me.dluogo.Visible = False
+        '
         'GroupFooter1
         '
         Me.GroupFooter1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel12, Me.XrLabel8, Me.XrLabel18, Me.XrLabel16, Me.XrLabel14, Me.XrTable5})
         Me.GroupFooter1.HeightF = 103.2917!
         Me.GroupFooter1.Level = 2
         Me.GroupFooter1.Name = "GroupFooter1"
+        '
+        'XrLabel12
+        '
+        Me.XrLabel12.Borders = DevExpress.XtraPrinting.BorderSide.None
+        Me.XrLabel12.CanGrow = False
+        Me.XrLabel12.Font = New System.Drawing.Font("Times New Roman", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.XrLabel12.LocationFloat = New DevExpress.Utils.PointFloat(662.0!, 10.0!)
+        Me.XrLabel12.Name = "XrLabel12"
+        Me.XrLabel12.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel12.SizeF = New System.Drawing.SizeF(17.70654!, 23.00002!)
+        Me.XrLabel12.StylePriority.UseBorders = False
+        Me.XrLabel12.StylePriority.UseFont = False
+        Me.XrLabel12.StylePriority.UseTextAlignment = False
+        Me.XrLabel12.Text = "al"
+        Me.XrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
+        Me.XrLabel12.TextFormatString = "{0}"
         '
         'XrLabel18
         '
@@ -617,19 +647,14 @@ Partial Public Class DxStaEstratto
         Me.XrLabel18.Text = "XrLabel18"
         Me.XrLabel18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomLeft
         '
-        'firma
-        '
-        Me.firma.Description = "firma"
-        Me.firma.Name = "firma"
-        Me.firma.Visible = False
-        '
         'XrLabel16
         '
+        Me.XrLabel16.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TB17")})
         Me.XrLabel16.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.XrLabel16.LocationFloat = New DevExpress.Utils.PointFloat(82.99999!, 57.2917!)
+        Me.XrLabel16.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 57.29167!)
         Me.XrLabel16.Name = "XrLabel16"
         Me.XrLabel16.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel16.SizeF = New System.Drawing.SizeF(608.6979!, 23.0!)
+        Me.XrLabel16.SizeF = New System.Drawing.SizeF(695.7065!, 23.0!)
         Me.XrLabel16.StylePriority.UseFont = False
         Me.XrLabel16.Text = "RingraziandoVi per la collaborazione, distintamente Vi salutiamo."
         '
@@ -680,6 +705,12 @@ Partial Public Class DxStaEstratto
         Me.XrTableCell35.StylePriority.UseTextAlignment = False
         Me.XrTableCell35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
         Me.XrTableCell35.Weight = 1.1779613250153371R
+        '
+        'firma
+        '
+        Me.firma.Description = "firma"
+        Me.firma.Name = "firma"
+        Me.firma.Visible = False
         '
         'GroupHeader2
         '
@@ -854,86 +885,6 @@ Partial Public Class DxStaEstratto
         Me.Libero.ValueInfo = "False"
         Me.Libero.Visible = False
         '
-        'XrLabel7
-        '
-        Me.XrLabel7.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel7.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TB15")})
-        Me.XrLabel7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.XrLabel7.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 137.25!)
-        Me.XrLabel7.Name = "XrLabel7"
-        Me.XrLabel7.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel7.SizeF = New System.Drawing.SizeF(695.7065!, 82.37502!)
-        Me.XrLabel7.StylePriority.UseBorders = False
-        Me.XrLabel7.StylePriority.UseFont = False
-        Me.XrLabel7.StylePriority.UseTextAlignment = False
-        Me.XrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopJustify
-        '
-        'XrLabel12
-        '
-        Me.XrLabel12.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel12.CanGrow = False
-        Me.XrLabel12.Font = New System.Drawing.Font("Times New Roman", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.XrLabel12.LocationFloat = New DevExpress.Utils.PointFloat(662.0!, 10.0!)
-        Me.XrLabel12.Name = "XrLabel12"
-        Me.XrLabel12.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel12.SizeF = New System.Drawing.SizeF(17.70654!, 23.00002!)
-        Me.XrLabel12.StylePriority.UseBorders = False
-        Me.XrLabel12.StylePriority.UseFont = False
-        Me.XrLabel12.StylePriority.UseTextAlignment = False
-        Me.XrLabel12.Text = "al"
-        Me.XrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
-        Me.XrLabel12.TextFormatString = "{0}"
-        '
-        'XrLabel5
-        '
-        Me.XrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel5.CanGrow = False
-        Me.XrLabel5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.XrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 177.25!)
-        Me.XrLabel5.Name = "XrLabel5"
-        Me.XrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel5.SizeF = New System.Drawing.SizeF(22.0!, 18.0!)
-        Me.XrLabel5.StylePriority.UseBorders = False
-        Me.XrLabel5.StylePriority.UseFont = False
-        Me.XrLabel5.Text = "al"
-        Me.XrLabel5.Visible = False
-        '
-        'XrLabel6
-        '
-        Me.XrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel6.CanGrow = False
-        Me.XrLabel6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.XrLabel6.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 157.25!)
-        Me.XrLabel6.Name = "XrLabel6"
-        Me.XrLabel6.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel6.SizeF = New System.Drawing.SizeF(690.0!, 18.0!)
-        Me.XrLabel6.StylePriority.UseBorders = False
-        Me.XrLabel6.StylePriority.UseFont = False
-        Me.XrLabel6.StylePriority.UseTextAlignment = False
-        Me.XrLabel6.Text = "se  d'accordo,  provvedere  con  cortese  sollecitudine  in  merito  alle  partit" &
-    "e  che  risultano  scoperte"
-        Me.XrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-        Me.XrLabel6.Visible = False
-        Me.XrLabel6.WordWrap = False
-        '
-        'XrLabel20
-        '
-        Me.XrLabel20.Borders = DevExpress.XtraPrinting.BorderSide.None
-        Me.XrLabel20.CanGrow = False
-        Me.XrLabel20.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.XrLabel20.LocationFloat = New DevExpress.Utils.PointFloat(30.0!, 137.25!)
-        Me.XrLabel20.Name = "XrLabel20"
-        Me.XrLabel20.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel20.SizeF = New System.Drawing.SizeF(690.0!, 18.0!)
-        Me.XrLabel20.StylePriority.UseBorders = False
-        Me.XrLabel20.StylePriority.UseFont = False
-        Me.XrLabel20.StylePriority.UseTextAlignment = False
-        Me.XrLabel20.Text = "Vi diamo qui di seguito Estratto conto della Vostra posizione scoperta. Grati se " &
-    "vorrete controllare e,"
-        Me.XrLabel20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-        Me.XrLabel20.Visible = False
-        Me.XrLabel20.WordWrap = False
-        '
         'DxStaEstratto
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.PageHeader, Me.PageFooter, Me.GroupHeader1, Me.GroupFooter1, Me.GroupHeader2, Me.GroupHeader3, Me.TopMarginBand1, Me.BottomMarginBand1})
@@ -1007,7 +958,6 @@ Partial Public Class DxStaEstratto
     Friend WithEvents SqlDataSource1 As DevExpress.DataAccess.Sql.SqlDataSource
     Friend WithEvents XrPageInfo1 As DevExpress.XtraReports.UI.XRPageInfo
     Friend WithEvents XrLabel14 As DevExpress.XtraReports.UI.XRLabel
-    Friend WithEvents XrLabel16 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel18 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents Corr As DevExpress.XtraReports.Parameters.Parameter
     Friend WithEvents XrLabel22 As DevExpress.XtraReports.UI.XRLabel
@@ -1018,9 +968,7 @@ Partial Public Class DxStaEstratto
     Friend WithEvents dsca As DevExpress.XtraReports.Parameters.Parameter
     Friend WithEvents XrTableCell2 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell1 As DevExpress.XtraReports.UI.XRTableCell
-    Friend WithEvents XrLabel7 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel12 As DevExpress.XtraReports.UI.XRLabel
-    Friend WithEvents XrLabel6 As DevExpress.XtraReports.UI.XRLabel
-    Friend WithEvents XrLabel5 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel20 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel16 As DevExpress.XtraReports.UI.XRLabel
 End Class

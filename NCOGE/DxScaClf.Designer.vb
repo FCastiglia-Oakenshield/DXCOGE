@@ -958,8 +958,8 @@ Partial Class DxScaClf
         '
         'GroupControl8
         '
-        Me.GroupControl8.Controls.Add(Me.GridControl2)
         Me.GroupControl8.Controls.Add(Me.GridControl3)
+        Me.GroupControl8.Controls.Add(Me.GridControl2)
         Me.GroupControl8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl8.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl8.Name = "GroupControl8"

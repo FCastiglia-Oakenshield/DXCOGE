@@ -1944,19 +1944,34 @@ IIFine:
         Next
         Up = Up + 1
         RwKey("ProtCar") = Up
+
         For P = 1 To DsFcf.Tables(Ft).Rows.Count
             RwFRI = DsFcf.Tables(Ft).Rows(P - 1)
-            RwFRI("PriCausale") = 1
-            RwFRI("PriId") = ProgId
-            RwFRI("PriCoDare") = RwReg("RIvaCliCee")
-            RwFRI("PriCoAvere") = RwReg("RIvaCptCee")
-            RwFRI("PriRegIva") = RwReg("RIvaAutoFcee")
-            RwFRI("PriDesc") = Mid(Trim(TextEdit6.Text), 1, 24)
-            RwFRI("PriNumProt") = Up
-            RwFRI("PriFl08") = 0
-            RwFRI("PriFl04") = 0
+            If ControlloNatura(RwFRI("PriCodIva")) = True Then
+                RwFRI("PriCausale") = 1
+                RwFRI("PriId") = ProgId
+                RwFRI("PriCoDare") = RwReg("RIvaCliCee")
+                RwFRI("PriCoAvere") = RwReg("RIvaCptCee")
+                RwFRI("PriRegIva") = RwReg("RIvaAutoFcee")
+                RwFRI("PriDesc") = Mid(Trim(TextEdit6.Text), 1, 24)
+                RwFRI("PriNumProt") = Up
+                RwFRI("PriFl08") = 0
+                RwFRI("PriFl04") = 0
+            Else
+                TotaleFattura -= (RwFRI("PriImpDare") + RwFRI("PriImpAvere"))
+                RwFRI.Delete()
+            End If
         Next
+        DsFcf.Tables(Ft).AcceptChanges()
+
         RivalsaoCee = True
+    End Function
+    Function ControlloNatura(Cii As Int16) As Boolean
+        If Cii = 0 Then Return True : Exit Function
+        Dim Res As String = ""
+        Dim XXCMD As New SqlCommand("Select CiiNatura from TbCii where CiiNatura>'' and CiiCod=" & Cii, cnCo)
+        Res = XXCMD.ExecuteScalar
+        If Res Is Nothing Then Return False Else Return True
     End Function
     Function RicaricaCee() As String
         Dim P, Up As Int16

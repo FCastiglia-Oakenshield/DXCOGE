@@ -44,14 +44,4 @@ Public Class DxStaEstratto
         t3 = t1 - t2
         XrTableCell35.Text = Format(t3, "#,###,###,##0.00")
     End Sub
-    Private Sub XrLabel16_BeforePrint(sender As Object, e As System.Drawing.Printing.PrintEventArgs) Handles XrLabel16.BeforePrint
-        If Parameters.Item("Libero").Value = True Then
-            XrLabel16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-            XrLabel16.Text = Parameters.Item("TB17").Value
-        End If
-    End Sub
-
-    Private Sub XrLabel20_BeforePrint(sender As Object, e As System.Drawing.Printing.PrintEventArgs) Handles XrLabel20.BeforePrint
-        If Parameters.Item("Libero").Value = True Then XrLabel20.Text = Parameters.Item("TB15").Value
-    End Sub
 End Class

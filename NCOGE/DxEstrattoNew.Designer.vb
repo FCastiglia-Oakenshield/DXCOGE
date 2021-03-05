@@ -53,6 +53,13 @@ Partial Class DxEstrattoNew
         Me.MemoEdit1 = New DevExpress.XtraEditors.MemoEdit()
         Me.GroupControl10 = New DevExpress.XtraEditors.GroupControl()
         Me.MemoEdit3 = New DevExpress.XtraEditors.MemoEdit()
+        Me.Group31 = New DevExpress.XtraEditors.GroupControl()
+        Me.ImageComboB2 = New DevExpress.XtraEditors.ImageComboBoxEdit()
+        Me.ButtonPlus = New DevExpress.XtraEditors.SimpleButton()
+        Me.GroupControl11 = New DevExpress.XtraEditors.GroupControl()
+        Me.TextE26 = New DevExpress.XtraEditors.TextEdit()
+        Me.ButtonF3 = New DevExpress.XtraEditors.SimpleButton()
+        Me.GroupControl12 = New DevExpress.XtraEditors.GroupControl()
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
         Me.XtraTabPage1.SuspendLayout()
@@ -101,6 +108,14 @@ Partial Class DxEstrattoNew
         CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl10.SuspendLayout()
         CType(Me.MemoEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Group31, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Group31.SuspendLayout()
+        CType(Me.ImageComboB2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl11, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl11.SuspendLayout()
+        CType(Me.TextE26.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl12, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl12.SuspendLayout()
         Me.SuspendLayout()
         '
         'ImageList32
@@ -363,6 +378,7 @@ Partial Class DxEstrattoNew
         '
         'XtraTabPage1
         '
+        Me.XtraTabPage1.Controls.Add(Me.GroupControl12)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl10)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl9)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl6)
@@ -894,7 +910,7 @@ Partial Class DxEstrattoNew
         Me.GroupControl6.AppearanceCaption.Options.UseFont = True
         Me.GroupControl6.Controls.Add(Me.TextEdit12)
         Me.GroupControl6.Controls.Add(Me.GroupControl3)
-        Me.GroupControl6.Location = New System.Drawing.Point(515, 339)
+        Me.GroupControl6.Location = New System.Drawing.Point(515, 469)
         Me.GroupControl6.Name = "GroupControl6"
         Me.GroupControl6.Size = New System.Drawing.Size(480, 68)
         Me.GroupControl6.TabIndex = 4
@@ -920,7 +936,7 @@ Partial Class DxEstrattoNew
         Me.GroupControl9.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupControl9.AppearanceCaption.Options.UseFont = True
         Me.GroupControl9.Controls.Add(Me.MemoEdit1)
-        Me.GroupControl9.Location = New System.Drawing.Point(515, 161)
+        Me.GroupControl9.Location = New System.Drawing.Point(515, 211)
         Me.GroupControl9.Name = "GroupControl9"
         Me.GroupControl9.Size = New System.Drawing.Size(480, 98)
         Me.GroupControl9.TabIndex = 5
@@ -949,7 +965,7 @@ Partial Class DxEstrattoNew
         Me.GroupControl10.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupControl10.AppearanceCaption.Options.UseFont = True
         Me.GroupControl10.Controls.Add(Me.MemoEdit3)
-        Me.GroupControl10.Location = New System.Drawing.Point(515, 261)
+        Me.GroupControl10.Location = New System.Drawing.Point(515, 311)
         Me.GroupControl10.Name = "GroupControl10"
         Me.GroupControl10.Size = New System.Drawing.Size(480, 76)
         Me.GroupControl10.TabIndex = 6
@@ -969,6 +985,108 @@ Partial Class DxEstrattoNew
         Me.MemoEdit3.Properties.MaxLength = 200
         Me.MemoEdit3.Size = New System.Drawing.Size(476, 51)
         Me.MemoEdit3.TabIndex = 1
+        '
+        'Group31
+        '
+        Me.Group31.Controls.Add(Me.ImageComboB2)
+        Me.Group31.Location = New System.Drawing.Point(2, 20)
+        Me.Group31.Name = "Group31"
+        Me.Group31.Size = New System.Drawing.Size(218, 45)
+        Me.Group31.TabIndex = 243
+        Me.Group31.Text = "MODULO TESTO e PIEDE ESTRATTO"
+        '
+        'ImageComboB2
+        '
+        Me.ImageComboB2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ImageComboB2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ImageComboB2.EnterMoveNextControl = True
+        Me.ImageComboB2.Location = New System.Drawing.Point(2, 23)
+        Me.ImageComboB2.Name = "ImageComboB2"
+        Me.ImageComboB2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.ImageComboB2.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.ImageComboB2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.ImageComboB2.Properties.CaseSensitiveSearch = True
+        Me.ImageComboB2.Properties.DropDownRows = 30
+        Me.ImageComboB2.Properties.ImmediatePopup = True
+        Me.ImageComboB2.Properties.LargeImages = Me.imageList1
+        Me.ImageComboB2.Properties.MaxLength = 1
+        Me.ImageComboB2.Properties.SmallImages = Me.imageList1
+        Me.ImageComboB2.Properties.ValidateOnEnterKey = True
+        Me.ImageComboB2.Size = New System.Drawing.Size(214, 20)
+        Me.ImageComboB2.TabIndex = 0
+        '
+        'ButtonPlus
+        '
+        Me.ButtonPlus.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.ButtonPlus.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.ButtonPlus.Appearance.Options.UseFont = True
+        Me.ButtonPlus.Appearance.Options.UseForeColor = True
+        Me.ButtonPlus.Appearance.Options.UseTextOptions = True
+        Me.ButtonPlus.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.ButtonPlus.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.ButtonPlus.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonPlus.ImageOptions.ImageIndex = 39
+        Me.ButtonPlus.ImageOptions.ImageList = Me.ImageGly
+        Me.ButtonPlus.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonPlus.Location = New System.Drawing.Point(226, 5)
+        Me.ButtonPlus.Name = "ButtonPlus"
+        Me.ButtonPlus.Size = New System.Drawing.Size(32, 32)
+        Me.ButtonPlus.TabIndex = 244
+        Me.ButtonPlus.ToolTip = "Aggiungi Nuovo Modulo"
+        '
+        'GroupControl11
+        '
+        Me.GroupControl11.Controls.Add(Me.TextE26)
+        Me.GroupControl11.Location = New System.Drawing.Point(261, 20)
+        Me.GroupControl11.Name = "GroupControl11"
+        Me.GroupControl11.Size = New System.Drawing.Size(218, 45)
+        Me.GroupControl11.TabIndex = 245
+        Me.GroupControl11.Text = "NOME NUOVO MODULO"
+        '
+        'TextE26
+        '
+        Me.TextE26.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextE26.EnterMoveNextControl = True
+        Me.TextE26.Location = New System.Drawing.Point(2, 23)
+        Me.TextE26.Name = "TextE26"
+        Me.TextE26.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TextE26.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TextE26.Properties.MaxLength = 30
+        Me.TextE26.Size = New System.Drawing.Size(214, 20)
+        Me.TextE26.TabIndex = 1
+        Me.TextE26.TabStop = False
+        '
+        'ButtonF3
+        '
+        Me.ButtonF3.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.ButtonF3.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.ButtonF3.Appearance.Options.UseFont = True
+        Me.ButtonF3.Appearance.Options.UseForeColor = True
+        Me.ButtonF3.Appearance.Options.UseTextOptions = True
+        Me.ButtonF3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.ButtonF3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.ButtonF3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonF3.ImageOptions.ImageIndex = 2
+        Me.ButtonF3.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF3.Location = New System.Drawing.Point(226, 49)
+        Me.ButtonF3.Name = "ButtonF3"
+        Me.ButtonF3.Size = New System.Drawing.Size(32, 32)
+        Me.ButtonF3.TabIndex = 246
+        Me.ButtonF3.ToolTip = "Elimina Modulo dall'archivio"
+        '
+        'GroupControl12
+        '
+        Me.GroupControl12.Controls.Add(Me.Group31)
+        Me.GroupControl12.Controls.Add(Me.ButtonF3)
+        Me.GroupControl12.Controls.Add(Me.ButtonPlus)
+        Me.GroupControl12.Controls.Add(Me.GroupControl11)
+        Me.GroupControl12.Location = New System.Drawing.Point(515, 383)
+        Me.GroupControl12.Name = "GroupControl12"
+        Me.GroupControl12.ShowCaption = False
+        Me.GroupControl12.Size = New System.Drawing.Size(480, 84)
+        Me.GroupControl12.TabIndex = 247
+        Me.GroupControl12.Text = "GroupControl12"
         '
         'DxEstrattoNew
         '
@@ -1025,6 +1143,14 @@ Partial Class DxEstrattoNew
         CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl10.ResumeLayout(False)
         CType(Me.MemoEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Group31, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Group31.ResumeLayout(False)
+        CType(Me.ImageComboB2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl11, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl11.ResumeLayout(False)
+        CType(Me.TextE26.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl12, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl12.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1061,4 +1187,11 @@ Partial Class DxEstrattoNew
     Friend WithEvents CheckEdit3 As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents GroupControl7 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents DateEdit1 As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents GroupControl11 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents TextE26 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents ButtonPlus As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents Group31 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents ImageComboB2 As DevExpress.XtraEditors.ImageComboBoxEdit
+    Friend WithEvents GroupControl12 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents ButtonF3 As DevExpress.XtraEditors.SimpleButton
 End Class

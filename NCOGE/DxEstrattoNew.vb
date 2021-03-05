@@ -1,29 +1,29 @@
 Imports NPRINT
 Imports System.Data.SqlClient
 Imports DXBASE
-Imports NCCOM
 Imports CrystalDecisions.CrystalReports.Engine
 Imports DevExpress.XtraReports.UI
 
 Public Class DxEstrattoNew
-    Dim cli, ana As Boolean
-    Dim frm As New LpLp
-    Dim Rpt As ReportClass
-    Dim Rpt1 As New StEstratto
-    Dim Rpt2 As New StTabSCli
-    Dim Rpt3 As New StEstLib
+    Dim cli As Boolean
     Dim REPORT As New XtraReport
-    Dim dluogo, dscade, rag1, rag2, rag3, rag4, rag5, firma, Stringstring, string0, Scadenza, SELESTR As String
-    Dim corr, inte As Int16
+    Dim dscade As String
     Dim MiglioFo As Int32
     Dim Azienda As String = ""
-
+    Dim Rispondi As MsgBoxResult
+    Dim nn As New DevExpress.XtraEditors.Controls.ImageComboBoxItem
+    Dim StampaDefault As Integer = -1
     Dim TbEsc As DataTable
     Dim DsEsc As SqlDataAdapter
+
+    Dim TbTxt As DataTable
+    Dim DsTxt As SqlDataAdapter
+
 
     Private Sub DxEstratto_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
         PrimoMigliaio()
         Pulizia(True)
+        LeggiTesto()
         CheckEdit3.Enabled = False
     End Sub
 
@@ -35,6 +35,40 @@ Public Class DxEstrattoNew
         End While
         dataRd.Close()
     End Sub
+    Private Sub LeggiTesto()
+        ImageComboB2.Properties.Items.Clear()
+        Dim i As Int16 = -1
+        Dim SS As Int16 = 27
+        StampaDefault = 0
+        Dim Str As String = "SELECT * from TbPos order by PosId"
+        TbTxt = New DataTable
+        DsTxt = New SqlDataAdapter(Str, cnCo)
+        DsTxt.Fill(TbTxt)
+        For J As Int16 = 1 To TbTxt.Rows.Count
+            Rw = TbTxt.Rows(J - 1)
+            If Rw("PosId") = 0 Then SS = 63 Else SS = 64
+            nn = New DevExpress.XtraEditors.Controls.ImageComboBoxItem(Rw("PosNomeModulo"), Rw("PosNomeModulo"), SS)
+            ImageComboB2.Properties.Items.Add(nn)
+            If Rw("PosUltima") = True Then StampaDefault = J - 1
+        Next
+        ImageComboB2.SelectedIndex = StampaDefault
+    End Sub
+    Private Sub ImageComboB2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ImageComboB2.SelectedIndexChanged
+        If ImageComboB2.SelectedIndex > -1 Then
+            Rw = TbTxt.Rows(ImageComboB2.SelectedIndex)
+            MemoEdit1.EditValue = Rw("PosTesto")
+            MemoEdit3.EditValue = Rw("PosPiede")
+            TextE26.EditValue = Rw("PosNomeModulo")
+            If ImageComboB2.SelectedIndex > 0 Then ButtonF3.Enabled = True Else ButtonF3.Enabled = False
+        End If
+    End Sub
+
+    Private Sub ButtonPlus_Click(sender As Object, e As EventArgs) Handles ButtonPlus.Click
+        GroupControl11.Enabled = True
+        GroupControl9.Enabled = True
+        GroupControl10.Enabled = True
+    End Sub
+
     Private Sub Pulizia(ByVal Puliscitutto As Boolean)
         If Puliscitutto = True Then
             TextEdit1.EditValue = "00000"
@@ -50,7 +84,7 @@ Public Class DxEstrattoNew
             TextEdit11.EditValue = ""
             TextEdit12.EditValue = ""
             TextEdit14.EditValue = ""
-            'MemoEdit1.EditValue = ""
+            MemoEdit1.EditValue = ""
             MemoEdit3.EditValue = ""
             MemoEdit1.EnterMoveNextControl = False
             MemoEdit3.EnterMoveNextControl = False
@@ -58,10 +92,12 @@ Public Class DxEstrattoNew
             CheckEdit1.Checked = False
             CheckEdit2.Checked = False
             CheckEdit3.Checked = False
-            GroupControl9.Enabled = True
+            GroupControl9.Enabled = False
             GroupControl10.Enabled = False
+            GroupControl11.Enabled = False
             leggiazienda()
             DateEdit1.EditValue = CDate(Today)
+            ImageComboB2.SelectedIndex = -1
         End If
         If Puliscitutto = False Then
             TextEdit1.EditValue = "00000"
@@ -70,6 +106,7 @@ Public Class DxEstrattoNew
             TextEdit4.EditValue = ""
             TextEdit5.EditValue = ""
             TextEdit6.EditValue = ""
+            GroupControl11.Enabled = False
         End If
     End Sub
     Private Sub ButtonF5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF5.Click
@@ -95,7 +132,18 @@ Public Class DxEstrattoNew
         End While
         dataRd.Close()
     End Sub
+    Private Sub ButtonF3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF3.Click
+        Rispondi = MsgBox("ELIMINO COMPLETAMENTE IL MODULO '" & ImageComboB2.EditValue & "' DALL'ARCHIVIO ?", MsgBoxStyle.YesNo, "ELIMINA MODULO")
+        If Rispondi = MsgBoxResult.Yes Then
+            Cmd = New SqlCommand("delete from TbPos where PosId =" & ImageComboB2.SelectedIndex, cnCo)
+            Cmd.ExecuteNonQuery()
+            LeggiTesto()
+            GroupControl9.Enabled = False
+            GroupControl10.Enabled = False
+            GroupControl11.Enabled = False
+        End If
 
+    End Sub
 
     Private Sub ButtonF9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF9.Click
         If CheckEdit3.Checked = True Then
@@ -104,8 +152,13 @@ Public Class DxEstrattoNew
                 Exit Sub
             End If
         End If
+        If TextE26.EditValue.ToString.Length < 2 Then
+            TextE26.ErrorText = "INSERIRE NOME MODULO"
+            Exit Sub
+        End If
+
         dscade = CDate(DateEdit1.EditValue).ToShortDateString
-        '' Dim StrPrint As String = "Select * from VEstratto where PrkConto ='" & TextEdit1.EditValue & "' order by PrkDocAnn,PrkDocEst,Prkaammgg"
+
         Dim StrPrint As String = "EXEC XESTRATTO @CLIE='" & TextEdit1.EditValue & "',@AL='" & dscade & "'"
         Cursor.Current = Cursors.WaitCursor
         TbEsc = New DataTable
@@ -127,71 +180,72 @@ Public Class DxEstrattoNew
         REPORT.Parameters("dluogo").Value = TextEdit14.EditValue
         REPORT.Parameters("Corr").Value = CheckEdit1.Checked
         REPORT.Parameters("dsca").Value = dscade
-        REPORT.Parameters("Libero").Value = CheckEdit3.Checked
+        REPORT.Parameters("Libero").Value = True
         REPORT.Parameters("TB15").Value = MemoEdit1.EditValue.ToString
-        REPORT.Parameters("TB17").Value = MemoEdit3.EditValue
+        REPORT.Parameters("TB17").Value = MemoEdit3.EditValue.ToString
 
         REPORT.ShowPreview()
 
-
-
-
-        ''   frm = New LpLp
-        Stringstring = "" : string0 = "" : rag1 = "" : rag2 = "" : rag3 = "" : rag4 = ""
-        rag5 = "" : firma = "" : dluogo = "" : SELESTR = ""
-        ''   Rpt = New ReportClass
-        ''   Rpt1 = New StEstratto
-        ''  Rpt2 = New StTabSCli
-        ''    Rpt3 = New StEstLib
-        Dim selectformula As String
-        If RadioGroup1.SelectedIndex = 0 And CheckEdit3.Checked = False Then
-            ''      Rpt = Rpt1
-            ''    frm.Text = "Estratto Conto"
-            SELESTR = ""
-        ElseIf RadioGroup1.SelectedIndex = 0 And CheckEdit3.Checked = True Then
-            ''   Rpt = Rpt3
-            ''   frm.Text = "Estratto Conto"
-            SELESTR = ""
+        Rw = TbTxt.Rows(0)
+        If Rw("PosNomeModulo") <> Trim(TextE26.EditValue.ToString) Then
+            AggiornaTesti()
+            LeggiTesto()
+            GroupControl9.Enabled = False
+            GroupControl10.Enabled = False
+            GroupControl11.Enabled = False
         Else
-            ''   Rpt = Rpt2
-            ''   frm.Text = "Riepilogo Crediti"
-            SELESTR = " and {CRESTRATTO.ScaraPERTA}<> '1'"
+            Cmd = New SqlCommand("update TbPos set PosUltima=0", cnCo)
+            Cmd.ExecuteNonQuery()
+            Cmd = New SqlCommand("update TbPos set PosUltima=1 where PosId = 0", cnCo)
         End If
-        If TextEdit1.EditValue > "00000" Then Stringstring = " {CRESTRATTO.ScaConto} = '" & TextEdit1.EditValue & "' and "
-        ' dscade = DateEdit1.EditValue
-        'per utilizzo carta intestata - si seleziona carta intestata e io pulisco i valori rag1 rag2, ecc.
-        'If CheckEdit2.Checked = False Then
-        '    rag1 = TextEdit7.EditValue
-        '    rag2 = TextEdit8.EditValue
-        '    rag3 = TextEdit9.EditValue
-        '    rag4 = TextEdit10.EditValue
-        '    rag5 = TextEdit11.EditValue
-        'End If
-        'firma = TextEdit12.EditValue
-        'If CheckEdit1.Checked = True Then corr = 1 Else corr = 0
-        'dluogo = TextEdit14.EditValue
-        'Scadenza = "date(" & DateEdit1.EditValue.Year & "," & DateEdit1.EditValue.Month & "," & DateEdit1.EditValue.Day & ")"
-        'string0 = "{CRESTRATTO.ScaDSca} <= " & Scadenza & " and {CRESTRATTO.CLFOPI}= 'CL'"
-        'Stringstring = Stringstring & string0 & SELESTR
-        'selectformula = Stringstring
-        'Rpt.RecordSelectionFormula = selectformula
-        'Rpt.SetParameterValue("dluogo", dluogo)
-        'Rpt.SetParameterValue("dscade", dscade)
-        'Rpt.SetParameterValue("rag1", rag1)
-        'Rpt.SetParameterValue("rag2", rag2)
-        'Rpt.SetParameterValue("rag3", rag3)
-        'Rpt.SetParameterValue("rag4", rag4)
-        'Rpt.SetParameterValue("rag5", rag5)
-        'Rpt.SetParameterValue("firma", firma)
-        'Rpt.SetParameterValue("corr", corr)
-        'Rpt.SetParameterValue("Marchio", Marchio())
-        'If CheckEdit3.Checked = True Then
-        '    Rpt.SetParameterValue("TB15", MemoEdit1.EditValue)
-        '    Rpt.SetParameterValue("TB16", MemoEdit2.EditValue)
-        '    Rpt.SetParameterValue("TB17", MemoEdit3.EditValue)
-        'End If
-        'frm.reportsource = Rpt
-        'frm.Show()
+
+    End Sub
+    Sub RegistraUltima(N)
+        Cmd = New SqlCommand("update TbPos set PosUltima=0", cnCo)
+        Cmd.ExecuteNonQuery()
+        Cmd = New SqlCommand("update TbPos set PosUltima=1,PosTesto=@A,PosPiede=@B where PosId = " & N, cnCo)
+        Dim p1 As New SqlParameter("@A", SqlDbType.NVarChar)
+        Dim p2 As New SqlParameter("@B", SqlDbType.NVarChar)
+        p1.Value = Trim(MemoEdit1.EditValue)
+        p2.Value = Trim(MemoEdit3.EditValue)
+        Cmd.Parameters.Clear()
+        Cmd.Parameters.Add(p1)
+        Cmd.Parameters.Add(p2)
+        Cmd.ExecuteNonQuery()
+    End Sub
+    Sub AggiornaTesti()
+        Dim N As Int16 = 0
+        For J As Int16 = 2 To TbTxt.Rows.Count
+            Rw = TbTxt.Rows(J - 1)
+            If Rw("PosNomeModulo") = Trim(TextE26.EditValue.ToString) Then
+                RegistraUltima(J - 1)
+                Exit Sub
+            End If
+        Next
+        Cmd = New SqlCommand("Insert into TbPos(PosId,PosCauInsoluti,PosNomeModulo,PosTesto,PosPiede,PosUltima) values (@Id,@Ins,@NomeModulo,@Testo,@Piede,@Ultima)", cnCo)
+        Dim p0 As New SqlParameter("@Id", SqlDbType.TinyInt)
+        Dim p1 As New SqlParameter("@Ins", SqlDbType.SmallInt)
+        Dim p2 As New SqlParameter("@NomeModulo", SqlDbType.NVarChar)
+        Dim p3 As New SqlParameter("@Testo", SqlDbType.NVarChar)
+        Dim p4 As New SqlParameter("@Piede", SqlDbType.NVarChar)
+        Dim p5 As New SqlParameter("@Ultima", SqlDbType.Bit)
+
+        p0.Value = TbTxt.Rows.Count
+        p1.Value = -1
+        p2.Value = TextE26.EditValue
+        p3.Value = MemoEdit1.EditValue
+        p4.Value = MemoEdit3.EditValue
+        p5.Value = True
+
+        Cmd.Parameters.Clear()
+        Cmd.Parameters.Add(p0)
+        Cmd.Parameters.Add(p1)
+        Cmd.Parameters.Add(p2)
+        Cmd.Parameters.Add(p3)
+        Cmd.Parameters.Add(p4)
+        Cmd.Parameters.Add(p5)
+        Cmd.ExecuteNonQuery()
+
     End Sub
 
     Private Sub ButtonF8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF8.Click
@@ -282,4 +336,6 @@ Public Class DxEstrattoNew
     Private Sub MemoEdit3_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles MemoEdit3.Leave
         ButtonF9.Focus()
     End Sub
+
+
 End Class
