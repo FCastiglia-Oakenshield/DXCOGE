@@ -506,7 +506,7 @@ Partial Class DxEstrattoNew
         Me.GroupControl7.Controls.Add(Me.DateEdit1)
         Me.GroupControl7.Location = New System.Drawing.Point(24, 51)
         Me.GroupControl7.Name = "GroupControl7"
-        Me.GroupControl7.Size = New System.Drawing.Size(98, 43)
+        Me.GroupControl7.Size = New System.Drawing.Size(98, 47)
         Me.GroupControl7.TabIndex = 20
         Me.GroupControl7.Text = "AL"
         '

@@ -135,7 +135,7 @@ Public Class DxEstrattoNew
     Private Sub ButtonF3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF3.Click
         Rispondi = MsgBox("ELIMINO COMPLETAMENTE IL MODULO '" & ImageComboB2.EditValue & "' DALL'ARCHIVIO ?", MsgBoxStyle.YesNo, "ELIMINA MODULO")
         If Rispondi = MsgBoxResult.Yes Then
-            Cmd = New SqlCommand("delete from TbPos where PosId =" & ImageComboB2.SelectedIndex, cnCo)
+            Cmd = New SqlCommand("delete from TbPos where PosNomeModulo ='" & ImageComboB2.EditValue & "'", cnCo)
             Cmd.ExecuteNonQuery()
             LeggiTesto()
             GroupControl9.Enabled = False
@@ -218,7 +218,7 @@ Public Class DxEstrattoNew
         For J As Int16 = 2 To TbTxt.Rows.Count
             Rw = TbTxt.Rows(J - 1)
             If Rw("PosNomeModulo") = Trim(TextE26.EditValue.ToString) Then
-                RegistraUltima(J - 1)
+                RegistraUltima(Rw("PosId"))
                 Exit Sub
             End If
         Next
