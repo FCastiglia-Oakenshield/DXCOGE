@@ -835,6 +835,8 @@ esci:
                 DXMenu(New DxSp2019, "Esterometro Anno " & BarEditItem2.EditValue)
             Case "2020"
                 DXMenu(New DxSp2020, "Esterometro Anno " & BarEditItem2.EditValue)
+            Case "2021"
+                DXMenu(New DxSp2021, "Esterometro Anno " & BarEditItem2.EditValue)
         End Select
         BarEditItem2.EditValue = ""
         System.Windows.Forms.SendKeys.Send("{ENTER}")

@@ -796,7 +796,7 @@ Partial Class XMENU
         '
         Me.RepositoryItemComboBox1.AutoHeight = False
         Me.RepositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemComboBox1.Items.AddRange(New Object() {"2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010"})
+        Me.RepositoryItemComboBox1.Items.AddRange(New Object() {"2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010"})
         Me.RepositoryItemComboBox1.Name = "RepositoryItemComboBox1"
         '
         'BarButtonItem101

@@ -161,6 +161,12 @@
     <Compile Include="DxSp2020.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DxSp2021.designer.vb">
+      <DependentUpon>DxSp2021.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DxSp2021.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Insoluti.Designer.vb">
       <DependentUpon>Insoluti.vb</DependentUpon>
     </Compile>
@@ -691,6 +697,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DxSp2020.resx">
       <DependentUpon>DxSp2020.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DxSp2021.resx">
+      <DependentUpon>DxSp2021.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Insoluti.resx">
       <DependentUpon>Insoluti.vb</DependentUpon>
