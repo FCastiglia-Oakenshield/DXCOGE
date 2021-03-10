@@ -450,7 +450,7 @@ Public Class DxSp2021
         End If
 
         Dim P As New DxPwdDialog
-        DxPwdDialog.Password = "EST2020"
+        DxPwdDialog.Password = "EST2021"
         P.ShowDialog()
         Return DxPwdDialog.Esatta
     End Function
