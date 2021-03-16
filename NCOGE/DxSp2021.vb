@@ -1182,7 +1182,9 @@ Public Class DxSp2021
         Xtw.WriteEndElement()
 
         If Rw("Imposta") = 0 Then
-            Xtw.WriteElementString("Natura", Rw("Natura"))
+            If Mid(Rw("Natura"), 1, 2) <> "N6" Then
+                Xtw.WriteElementString("Natura", Rw("Natura"))
+            End If
         End If
         'If Rw("Detraibile" & i.ToString) > 0 Then
         '    Xtw.WriteElementString("Detraibile", Rw("Detraibile" & i.ToString))
@@ -1403,8 +1405,12 @@ Public Class DxSp2021
         Xtw.WriteEndElement()
 
         If Rw("Natura") <> "" Then
-            Xtw.WriteElementString("Natura", Rw("Natura"))
+            If Mid(Rw("Natura"), 1, 2) <> "N6" Then
+                Xtw.WriteElementString("Natura", Rw("Natura"))
+            End If
         End If
+
+
         'If Rw("Detraibile" & i.ToString) > 0 Then
         '    Xtw.WriteElementString("Detraibile", Rw("Detraibile" & i.ToString))
         'End If
