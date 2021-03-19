@@ -440,7 +440,7 @@ DopoLet:
     Private Sub ButtonF11_Click(sender As System.Object, e As System.EventArgs) Handles ButtonF11.Click
         If Controlla(0) = False Then Exit Sub
         RegistraRiparto()
-        Pulizia(0)
+        '' Pulizia(0)
         GridFatture(RadioGroup1.SelectedIndex)
     End Sub
     Function Controlla(n As Int16) As Boolean

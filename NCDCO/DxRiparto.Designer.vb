@@ -754,7 +754,6 @@ Partial Class DxRiparto
         GridLevelNode2.RelationName = "Dettaglio"
         Me.GridControl1.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode2})
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox10, Me.RepositoryItemImageComboBox5, Me.RepositoryItemTextEdit3, Me.RepositoryItemImageComboBox6})
@@ -858,7 +857,7 @@ Partial Class DxRiparto
         '
         Me.GridColumn26.Caption = "Nr. Doc."
         Me.GridColumn26.FieldName = "PriDocEst"
-        Me.GridColumn26.ImageAlignment = System.Drawing.StringAlignment.Center
+        Me.GridColumn26.ImageOptions.Alignment = System.Drawing.StringAlignment.Center
         Me.GridColumn26.Name = "GridColumn26"
         Me.GridColumn26.OptionsColumn.AllowEdit = False
         Me.GridColumn26.OptionsColumn.AllowMove = False
@@ -1117,7 +1116,6 @@ Partial Class DxRiparto
         GridLevelNode1.RelationName = "Dettaglio"
         Me.GridControl5.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode1})
         Me.GridControl5.Location = New System.Drawing.Point(495, 199)
-        Me.GridControl5.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl5.MainView = Me.GridView7
         Me.GridControl5.Name = "GridControl5"
         Me.GridControl5.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox13, Me.RepositoryItemImageComboBox11, Me.RepositoryItemTextEdit4, Me.RepositoryItemImageComboBox12})
@@ -1223,7 +1221,7 @@ Partial Class DxRiparto
         '
         Me.GridColumn57.Caption = "Nr. Doc."
         Me.GridColumn57.FieldName = "PriDocEst"
-        Me.GridColumn57.ImageAlignment = System.Drawing.StringAlignment.Center
+        Me.GridColumn57.ImageOptions.Alignment = System.Drawing.StringAlignment.Center
         Me.GridColumn57.Name = "GridColumn57"
         Me.GridColumn57.OptionsColumn.AllowEdit = False
         Me.GridColumn57.OptionsColumn.AllowMove = False
@@ -1353,7 +1351,7 @@ Partial Class DxRiparto
         Me.GroupControlT.Location = New System.Drawing.Point(0, 0)
         Me.GroupControlT.Name = "GroupControlT"
         Me.GroupControlT.ShowCaption = False
-        Me.GroupControlT.Size = New System.Drawing.Size(1002, 318)
+        Me.GroupControlT.Size = New System.Drawing.Size(1006, 322)
         Me.GroupControlT.TabIndex = 0
         Me.GroupControlT.Text = "GroupControlT"
         '
@@ -1364,7 +1362,7 @@ Partial Class DxRiparto
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl2.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(601, 314)
+        Me.GroupControl2.Size = New System.Drawing.Size(605, 318)
         Me.GroupControl2.TabIndex = 0
         Me.GroupControl2.TabStop = True
         '
@@ -1373,10 +1371,10 @@ Partial Class DxRiparto
         Me.CheckButton1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.CheckButton1.Checked = True
         Me.CheckButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton1.ImageIndex = 78
-        Me.CheckButton1.ImageList = Me.imageList1
-        Me.CheckButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.CheckButton1.Location = New System.Drawing.Point(107, 24)
+        Me.CheckButton1.ImageOptions.ImageIndex = 78
+        Me.CheckButton1.ImageOptions.ImageList = Me.imageList1
+        Me.CheckButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.CheckButton1.Location = New System.Drawing.Point(109, 26)
         Me.CheckButton1.Name = "CheckButton1"
         Me.CheckButton1.Size = New System.Drawing.Size(16, 16)
         Me.CheckButton1.TabIndex = 1
@@ -1388,12 +1386,11 @@ Partial Class DxRiparto
         '
         Me.GridControl4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl4.FormsUseDefaultLookAndFeel = True
-        Me.GridControl4.Location = New System.Drawing.Point(2, 21)
-        Me.GridControl4.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl4.Location = New System.Drawing.Point(2, 23)
         Me.GridControl4.MainView = Me.GridView4
         Me.GridControl4.Name = "GridControl4"
         Me.GridControl4.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemComboBox1, Me.RepositoryItemImageComboBox3, Me.RepositoryItemComboBox3, Me.RepositoryItemTextEdit1})
-        Me.GridControl4.Size = New System.Drawing.Size(597, 291)
+        Me.GridControl4.Size = New System.Drawing.Size(601, 293)
         Me.GridControl4.TabIndex = 0
         Me.GridControl4.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
         '
@@ -1583,9 +1580,9 @@ Partial Class DxRiparto
         Me.GroupControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl1.Controls.Add(Me.GridControl2)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl1.Location = New System.Drawing.Point(603, 2)
+        Me.GroupControl1.Location = New System.Drawing.Point(607, 2)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(397, 314)
+        Me.GroupControl1.Size = New System.Drawing.Size(397, 318)
         Me.GroupControl1.TabIndex = 1
         Me.GroupControl1.Text = "DA RIPARTIRE"
         '
@@ -1593,12 +1590,11 @@ Partial Class DxRiparto
         '
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl2.FormsUseDefaultLookAndFeel = True
-        Me.GridControl2.Location = New System.Drawing.Point(2, 21)
-        Me.GridControl2.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl2.Location = New System.Drawing.Point(2, 23)
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox7, Me.RepositoryItemImageComboBox8, Me.RepositoryItemCheckEdit3, Me.RepositoryItemImageComboBox9})
-        Me.GridControl2.Size = New System.Drawing.Size(393, 291)
+        Me.GridControl2.Size = New System.Drawing.Size(393, 293)
         Me.GridControl2.TabIndex = 0
         Me.GridControl2.TabStop = False
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
@@ -1767,8 +1763,8 @@ Partial Class DxRiparto
         Me.SimpleButton2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.SimpleButton2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.SimpleButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SimpleButton2.Image = CType(resources.GetObject("SimpleButton2.Image"), System.Drawing.Image)
-        Me.SimpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.SimpleButton2.Location = New System.Drawing.Point(333, 16)
         Me.SimpleButton2.Name = "SimpleButton2"
         Me.SimpleButton2.Size = New System.Drawing.Size(32, 32)
@@ -1786,8 +1782,8 @@ Partial Class DxRiparto
         Me.SimpleButton1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.SimpleButton1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.SimpleButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SimpleButton1.Image = CType(resources.GetObject("SimpleButton1.Image"), System.Drawing.Image)
-        Me.SimpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.SimpleButton1.Location = New System.Drawing.Point(272, 16)
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.Size = New System.Drawing.Size(32, 32)
@@ -1798,8 +1794,8 @@ Partial Class DxRiparto
         'ButtonHelp
         '
         Me.ButtonHelp.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonHelp.Image = Global.NCDCO.My.Resources.Resources.knowledgebasearticle_32x32
-        Me.ButtonHelp.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonHelp.ImageOptions.Image = Global.NCDCO.My.Resources.Resources.knowledgebasearticle_32x32
+        Me.ButtonHelp.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonHelp.Location = New System.Drawing.Point(292, 80)
         Me.ButtonHelp.Name = "ButtonHelp"
         Me.ButtonHelp.Size = New System.Drawing.Size(32, 32)
@@ -1816,8 +1812,8 @@ Partial Class DxRiparto
         Me.ButtonDEL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonDEL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonDEL.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonDEL.Image = CType(resources.GetObject("ButtonDEL.Image"), System.Drawing.Image)
-        Me.ButtonDEL.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonDEL.ImageOptions.Image = CType(resources.GetObject("ButtonDEL.ImageOptions.Image"), System.Drawing.Image)
+        Me.ButtonDEL.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonDEL.Location = New System.Drawing.Point(211, 16)
         Me.ButtonDEL.Name = "ButtonDEL"
         Me.ButtonDEL.Size = New System.Drawing.Size(32, 32)
@@ -1841,12 +1837,12 @@ Partial Class DxRiparto
         '
         Me.RadioGroup2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioGroup2.EditValue = CType(2, Short)
-        Me.RadioGroup2.Location = New System.Drawing.Point(2, 21)
+        Me.RadioGroup2.Location = New System.Drawing.Point(2, 23)
         Me.RadioGroup2.Name = "RadioGroup2"
         Me.RadioGroup2.Properties.Columns = 3
         Me.RadioGroup2.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.[Default]
         Me.RadioGroup2.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(0, Short), "DA RIPARTIRE"), New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(1, Short), "RIPARTITI"), New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(2, Short), "TUTTI")})
-        Me.RadioGroup2.Size = New System.Drawing.Size(385, 47)
+        Me.RadioGroup2.Size = New System.Drawing.Size(385, 45)
         Me.RadioGroup2.TabIndex = 1
         Me.RadioGroup2.TabStop = False
         '
@@ -1879,7 +1875,7 @@ Partial Class DxRiparto
         Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit3.EditValue = "0"
         Me.TextEdit3.EnterMoveNextControl = True
-        Me.TextEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1914,7 +1910,7 @@ Partial Class DxRiparto
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EditValue = "0"
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1949,7 +1945,7 @@ Partial Class DxRiparto
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EditValue = "0"
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1977,8 +1973,8 @@ Partial Class DxRiparto
         Me.ButtonPLUS.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonPLUS.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonPLUS.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonPLUS.Image = CType(resources.GetObject("ButtonPLUS.Image"), System.Drawing.Image)
-        Me.ButtonPLUS.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonPLUS.ImageOptions.Image = CType(resources.GetObject("ButtonPLUS.ImageOptions.Image"), System.Drawing.Image)
+        Me.ButtonPLUS.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonPLUS.Location = New System.Drawing.Point(150, 16)
         Me.ButtonPLUS.Name = "ButtonPLUS"
         Me.ButtonPLUS.Size = New System.Drawing.Size(32, 32)
@@ -1996,8 +1992,8 @@ Partial Class DxRiparto
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.Image = CType(resources.GetObject("ButtonF11.Image"), System.Drawing.Image)
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.Image = CType(resources.GetObject("ButtonF11.ImageOptions.Image"), System.Drawing.Image)
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(28, 16)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -2015,8 +2011,8 @@ Partial Class DxRiparto
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.Image = CType(resources.GetObject("ButtonF5.Image"), System.Drawing.Image)
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.Image = CType(resources.GetObject("ButtonF5.ImageOptions.Image"), System.Drawing.Image)
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(89, 16)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -2029,10 +2025,10 @@ Partial Class DxRiparto
         Me.GroupControlB.Controls.Add(Me.GroupControl4)
         Me.GroupControlB.Controls.Add(Me.GroupControl3)
         Me.GroupControlB.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControlB.Location = New System.Drawing.Point(0, 318)
+        Me.GroupControlB.Location = New System.Drawing.Point(0, 322)
         Me.GroupControlB.Name = "GroupControlB"
         Me.GroupControlB.ShowCaption = False
-        Me.GroupControlB.Size = New System.Drawing.Size(1002, 332)
+        Me.GroupControlB.Size = New System.Drawing.Size(1006, 332)
         Me.GroupControlB.TabIndex = 1
         Me.GroupControlB.Text = "GroupControl22"
         '
@@ -2045,7 +2041,7 @@ Partial Class DxRiparto
         Me.GroupControl4.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl4.Name = "GroupControl4"
         Me.GroupControl4.ShowCaption = False
-        Me.GroupControl4.Size = New System.Drawing.Size(601, 328)
+        Me.GroupControl4.Size = New System.Drawing.Size(605, 328)
         Me.GroupControl4.TabIndex = 1
         '
         'GridControl3
@@ -2053,11 +2049,10 @@ Partial Class DxRiparto
         Me.GridControl3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl3.FormsUseDefaultLookAndFeel = True
         Me.GridControl3.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl3.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl3.MainView = Me.GridView3
         Me.GridControl3.Name = "GridControl3"
         Me.GridControl3.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemTextEdit2, Me.RepositoryItemImageComboBox4})
-        Me.GridControl3.Size = New System.Drawing.Size(597, 324)
+        Me.GridControl3.Size = New System.Drawing.Size(601, 324)
         Me.GridControl3.TabIndex = 0
         Me.GridControl3.TabStop = False
         Me.GridControl3.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView3})
@@ -2151,7 +2146,7 @@ Partial Class DxRiparto
         '
         Me.GridColumn28.Caption = "Nr. Doc."
         Me.GridColumn28.FieldName = "PriDocEst"
-        Me.GridColumn28.ImageAlignment = System.Drawing.StringAlignment.Center
+        Me.GridColumn28.ImageOptions.Alignment = System.Drawing.StringAlignment.Center
         Me.GridColumn28.Name = "GridColumn28"
         Me.GridColumn28.OptionsColumn.AllowEdit = False
         Me.GridColumn28.OptionsColumn.AllowMove = False
@@ -2293,7 +2288,7 @@ Partial Class DxRiparto
         Me.GroupControl3.Controls.Add(Me.GroupControl5)
         Me.GroupControl3.Controls.Add(Me.RadioGroup1)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl3.Location = New System.Drawing.Point(603, 2)
+        Me.GroupControl3.Location = New System.Drawing.Point(607, 2)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.ShowCaption = False
         Me.GroupControl3.Size = New System.Drawing.Size(397, 328)
@@ -2330,7 +2325,7 @@ Partial Class DxRiparto
         Me.ImageComboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit1.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit1.Name = "ImageComboBoxEdit1"
         Me.ImageComboBoxEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImageComboBoxEdit1.Properties.Appearance.Options.UseFont = True
@@ -2361,7 +2356,7 @@ Partial Class DxRiparto
         Me.ComboBoxEdit2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit2.EnterMoveNextControl = True
-        Me.ComboBoxEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit2.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit2.Name = "ComboBoxEdit2"
         Me.ComboBoxEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxEdit2.Properties.Appearance.Options.UseFont = True
@@ -2404,7 +2399,7 @@ Partial Class DxRiparto
         Me.XtraTabPage2.Controls.Add(Me.GridControl1)
         Me.XtraTabPage2.Name = "XtraTabPage2"
         Me.XtraTabPage2.PageVisible = False
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1008, 657)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1006, 654)
         Me.XtraTabPage2.Text = "XtraTabPage2"
         '
         'DxRiparto
