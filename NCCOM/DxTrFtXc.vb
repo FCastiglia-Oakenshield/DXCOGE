@@ -942,11 +942,22 @@ VaiOltre:
         End While
         dataRd.Close()
     End Function
+    Function TestDoppio() As Integer
+        TestDoppio = RiW("DcgNumero")
+        Dim Str As String = "SELECT * from TBPRI WHERE PRICAUSALE = 3 AND PRIDOCEST = " & RiW("DcgNumero") & "  AND PRIDOCANN = " & CDate(RiW("DcgData")).Year & " AND PRICODARE='" & RiW("DcgCli") & "'"
+        Dim FTFO As New SqlCommand(Str, cnCo)
+        dataRd = FTFO.ExecuteReader
+        While dataRd.Read
+            TestDoppio = 200000 + RiW("DcgNumero")
+        End While
+        dataRd.Close()
+    End Function
     Sub ScriviVendite()
         Dim x, M, Y As Int16
         Dim UpWr As String
         Dim StrMCC = "SELECT * FROM TBDMC WHERE DCGMCID = "
         Dim QuestaSi As Boolean = False
+        Dim NN As Integer = 0
 
         Y = 0
         M = 12
@@ -963,7 +974,8 @@ VaiOltre:
             p6.Value = ""
             p8.Value = RiW("DcgRegistro")
             p11.Value = "" 'RiW("PriDesc")
-            p12.Value = RiW("DcgNumero")
+            NN = TestDoppio()
+            p12.Value = NN
             p13.Value = "" 'RiW("PriMeseSk")
             p14.Value = RiW("DcgData")
             p15.Value = "" 'RiW("PriDescB")
@@ -1039,7 +1051,7 @@ Oltre:
         Next
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         ResetIdP()
-        AssegnaNPartita()
+        AssegnaNPartita(NN)
         If RiW("DcgCodPag") > 0 Then EsegueSql(" EXEC XCREASCADENZE  @IDP = " & ProgId, cnCo)
         EsegueSql(" EXEC RiChiudePartita  @Id = " & ProgId & ",@Miglio=" & MiglioFo, cnCo)
         If OkUpdate = False Then
@@ -1478,7 +1490,7 @@ VaiOltre:
         Dim Dmd As New SqlCommand(Elimina, CnDc)
         Dmd.ExecuteNonQuery()
     End Sub
-    Sub AssegnaNPartita()
+    Sub AssegnaNPartita(NN As Integer)
         Dim Command As New SqlClient.SqlCommand("AssegnaPartita")
         Command.CommandType = CommandType.StoredProcedure
         Command.Connection = cnCo
@@ -1488,7 +1500,7 @@ VaiOltre:
         Dim q4 As New SqlParameter("@IMPORTO", SqlDbType.Decimal)
         q1.Value = RiW("DcgCli")
         q2.Value = CDate(RiW("DcgData")).Year
-        q3.Value = RiW("DcgNumero")
+        q3.Value = NN
         q4.Value = RiW("DcgRieTotFat")
         Command.Parameters.Clear()
         Command.Parameters.Add(q1)
