@@ -867,8 +867,14 @@ II:
         If Controlli() = False Then Exit Sub
         If DoppiaFtFo() = True Then
             TextEdit3.Focus()
-            ''ButtonF5.PerformClick()
             Exit Sub
+        End If
+        If RwReg("RivaRcharge") = True Then
+            If RDoppiaFtFo() = True Then
+                TextEdit3.Focus()
+                Exit Sub
+            End If
+
         End If
         REM MONDOMARINE
         If OkMondo = True Then
@@ -916,11 +922,14 @@ II:
     End Function
     Function DoppiaFtFo() As Boolean
         DoppiaFtFo = False
-        If RwReg("RIvaTipo") = 1 Or RwReg("RIvaTipo") = 3 Then Exit Function
         Dim ProtDup As Int32
         Dim ProtReg As Int16
         Dim ProtDub As String = ""
-        Dim Str As String = "SELECT * from TBPRI WHERE PRICAUSALE = 3 AND PRIDOCEST = " & Val(TextEdit3.EditValue) & " AND PRICOAVERE = '" & TextEdit5.Text _
+        Dim JobJob As String = "PRICOAVERE"
+        If RwReg("RIvaTipo") = 1 Or RwReg("RIvaTipo") = 3 Then JobJob = "PRICODARE"
+
+
+        Dim Str As String = "SELECT * from TBPRI WHERE PRICAUSALE = 3 AND PRIDOCEST = " & Val(TextEdit3.EditValue) & " AND " & JobJob & " = '" & TextEdit5.Text _
         & "' AND PRIDOCANN = DATEPART(YEAR,'" & DateEdit2.EditValue & "')"
         Dim FTFO As New SqlCommand(Str, cnCo)
         dataRd = FTFO.ExecuteReader
@@ -937,11 +946,37 @@ II:
             Exit Function
         End If
         Messaggio(0, "FATTURA DOPPIA - PROT N. " & ProtDup & ProtDub & " - REG.IVA N. " & ProtReg & Chr(13) & " CAMBIARE IL NUMERO DI DOCUMENTO !!!!!")
-        '  If Rispondi = MsgBoxResult. Then
-        ' DoppiaFtFo = False
-        '  Else
+
         DoppiaFtFo = True
-        '  End If
+
+    End Function
+    Function RDoppiaFtFo() As Boolean
+        RDoppiaFtFo = False
+        Dim ProtDup As Int32
+        Dim ProtReg As Int16
+        Dim ProtDub As String = ""
+        Dim JobJob As String = "PRICODARE"
+
+        Dim Str As String = "SELECT * from TBPRI WHERE PRICAUSALE = 3 AND PRIDOCEST = " & Val(TextEdit3.EditValue) & " AND " & JobJob & " = '" & RwReg("RivaCliCee") _
+        & "' AND PRIDOCANN = DATEPART(YEAR,'" & DateEdit2.EditValue & "')"
+        Dim FTFO As New SqlCommand(Str, cnCo)
+        dataRd = FTFO.ExecuteReader
+        While dataRd.Read
+            ProtDup = dataRd.Item("PriNumProt")
+            ProtDub = dataRd.Item("PriBisRet")
+            ProtReg = dataRd.Item("PriRegIva")
+            RDoppiaFtFo = True
+        End While
+        dataRd.Close()
+        If RDoppiaFtFo = False Then Exit Function
+        If ProtDup = Val(TextEdit1.EditValue) And Trim(ProtDub) = Trim(TextEdit2.EditValue) Then
+            RDoppiaFtFo = False
+            Exit Function
+        End If
+        Messaggio(0, "AUTOFATTURA DOPPIA - PROT N. " & ProtDup & ProtDub & " - REG.IVA N. " & RwReg("RIvaAutoFcee") & Chr(13) & " CAMBIARE IL NUMERO DI DOCUMENTO !!!!!")
+
+        RDoppiaFtFo = True
+
     End Function
     Function ControlloMondo() As Boolean
         REM MONDOMARINE
@@ -2517,7 +2552,7 @@ II:
         DateEdit2.EditValue = rw("FteData")
         NumeroAlfa = EstraiNumeri(rw("FteNumero"))
         If rw("FtePartiva") = "04394270013" Then NumeroAlfa = Mid(NumeroAlfa, 1, Len(NumeroAlfa) - 1)
-        If Len(NumeroAlfa) > 6 Then NumeroAlfa = Mid(NumeroAlfa, Len(NumeroAlfa) - 5, 6)
+        If Len(NumeroAlfa) > 7 Then NumeroAlfa = Mid(NumeroAlfa, Len(NumeroAlfa) - 6, 7)
         TextEdit3.EditValue = NumeroAlfa
         TextEdit13.EditValue = CDec(rw("FteTotFat"))
         Pcod = TextEdit5.EditValue

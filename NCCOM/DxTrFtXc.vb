@@ -948,7 +948,7 @@ VaiOltre:
         Dim FTFO As New SqlCommand(Str, cnCo)
         dataRd = FTFO.ExecuteReader
         While dataRd.Read
-            TestDoppio = 200000 + RiW("DcgNumero")
+            TestDoppio = RiW("DcgRegistro") * 100000 + RiW("DcgNumero")
         End While
         dataRd.Close()
     End Function

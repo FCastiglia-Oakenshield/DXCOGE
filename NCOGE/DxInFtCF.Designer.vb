@@ -876,7 +876,7 @@ Partial Class DxInFtCF
         '
         'TextEdit3
         '
-        Me.TextEdit3.EditValue = "0"
+        Me.TextEdit3.EditValue = "0000000"
         Me.TextEdit3.EnterMoveNextControl = True
         Me.TextEdit3.Location = New System.Drawing.Point(5, 23)
         Me.TextEdit3.Name = "TextEdit3"
@@ -887,10 +887,10 @@ Partial Class DxInFtCF
         Me.TextEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit3.Properties.Mask.BeepOnError = True
-        Me.TextEdit3.Properties.Mask.EditMask = "d6"
+        Me.TextEdit3.Properties.Mask.EditMask = "d7"
         Me.TextEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.TextEdit3.Properties.Mask.UseMaskAsDisplayFormat = True
-        Me.TextEdit3.Properties.MaxLength = 6
+        Me.TextEdit3.Properties.MaxLength = 7
         Me.TextEdit3.Size = New System.Drawing.Size(67, 22)
         Me.TextEdit3.TabIndex = 0
         '
