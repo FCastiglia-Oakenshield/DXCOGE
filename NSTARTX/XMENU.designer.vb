@@ -1420,6 +1420,7 @@ Partial Class XMENU
         Me.PictureEdit1.EditValue = CType(resources.GetObject("PictureEdit1.EditValue"), Object)
         Me.PictureEdit1.Location = New System.Drawing.Point(864, 600)
         Me.PictureEdit1.Name = "PictureEdit1"
+        Me.PictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom
         Me.PictureEdit1.Size = New System.Drawing.Size(120, 32)
         Me.PictureEdit1.TabIndex = 1
         '
