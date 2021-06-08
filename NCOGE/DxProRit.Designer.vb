@@ -147,6 +147,7 @@ Partial Class DxProRit
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCheckEdit1x, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridControl12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -184,7 +185,7 @@ Partial Class DxProRit
         CType(Me.ImageComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl24, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl24.SuspendLayout()
-        CType(Me.DateEdit5.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit5.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit5.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl25, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl25.SuspendLayout()
@@ -225,7 +226,7 @@ Partial Class DxProRit
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl10.SuspendLayout()
-        CType(Me.DateEdit2.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit2.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupContro4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupContro4.SuspendLayout()
@@ -233,11 +234,11 @@ Partial Class DxProRit
         Me.GroupControl7.SuspendLayout()
         CType(Me.GroupControl61, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl61.SuspendLayout()
-        CType(Me.DateEdit4.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit4.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl60, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl60.SuspendLayout()
-        CType(Me.DateEdit3.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit3.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl6.SuspendLayout()
@@ -253,7 +254,7 @@ Partial Class DxProRit
         CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl8.SuspendLayout()
-        CType(Me.DateEdit1.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabPage2.SuspendLayout()
         CType(Me.GroupControlBx, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -281,7 +282,7 @@ Partial Class DxProRit
         CType(Me.ImageComboBoxEdit1x.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl24x, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl24x.SuspendLayout()
-        CType(Me.DateEdit5x.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit5x.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit5x.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl14x, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl14x.SuspendLayout()
@@ -554,7 +555,7 @@ Partial Class DxProRit
         'XtraTabPage1
         '
         Me.XtraTabPage1.Controls.Add(Me.GroupControlC)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1003, 631)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1006, 631)
         Me.XtraTabPage1.Text = "Dati Compensi"
         '
         'ImageDx24
@@ -623,18 +624,47 @@ Partial Class DxProRit
         Me.ImageS16.Images.SetKeyName(10, "selection16_reset.png")
         Me.ImageS16.Images.SetKeyName(11, "F11.png")
         '
+        'ImageDxList32
+        '
+        Me.ImageDxList32.ImageStream = CType(resources.GetObject("ImageDxList32.ImageStream"), DevExpress.Utils.ImageCollectionStreamer)
+        Me.ImageDxList32.Images.SetKeyName(0, "F1_right.png")
+        Me.ImageDxList32.Images.SetKeyName(1, "F2_left.png")
+        Me.ImageDxList32.Images.SetKeyName(2, "F3_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(3, "F4.png")
+        Me.ImageDxList32.Images.SetKeyName(4, "F5_refresh.png")
+        Me.ImageDxList32.Images.SetKeyName(5, "F6_edit_edit.png")
+        Me.ImageDxList32.Images.SetKeyName(6, "F7_new.png")
+        Me.ImageDxList32.Images.SetKeyName(7, "F8_view.png")
+        Me.ImageDxList32.Images.SetKeyName(8, "F9_print.png")
+        Me.ImageDxList32.Images.SetKeyName(9, "keyboard_key_plus.png")
+        Me.ImageDxList32.Images.SetKeyName(10, "F11_ok.png")
+        Me.ImageDxList32.Images.SetKeyName(11, "information.png")
+        Me.ImageDxList32.Images.SetKeyName(12, "printer.png")
+        Me.ImageDxList32.Images.SetKeyName(13, "checkbox.png")
+        Me.ImageDxList32.Images.SetKeyName(14, "checkbox_unchecked.png")
+        Me.ImageDxList32.Images.SetKeyName(15, "Excel.png")
+        Me.ImageDxList32.Images.SetKeyName(16, "floppy_disk.png")
+        Me.ImageDxList32.Images.SetKeyName(17, "checks.png")
+        Me.ImageDxList32.Images.SetKeyName(18, "nav_refresh.png")
+        Me.ImageDxList32.Images.SetKeyName(19, "nav_undo.png")
+        Me.ImageDxList32.Images.SetKeyName(20, "scanner.png")
+        Me.ImageDxList32.Images.SetKeyName(21, "selection_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(22, "Scan Document 32 h p_add.png")
+        Me.ImageDxList32.Images.SetKeyName(23, "Scan Document 32 h p_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(24, "ok.png")
+        '
         'GridView13
         '
         Me.GridView13.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn7, Me.GridColumn8, Me.GridColumn9, Me.GridColumn10, Me.GridColumn11, Me.GridColumn13, Me.GridColumn14, Me.GridColumn15, Me.GridColumn17, Me.GridColumn16})
         Me.GridView13.CustomizationFormBounds = New System.Drawing.Rectangle(798, 454, 216, 178)
         Me.GridView13.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView13.GridControl = Me.GridControl12
-        Me.GridView13.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView13.GroupFormat = " {2}"
         Me.GridView13.Name = "GridView13"
         Me.GridView13.OptionsMenu.EnableFooterMenu = False
         Me.GridView13.OptionsView.EnableAppearanceEvenRow = True
         Me.GridView13.OptionsView.EnableAppearanceOddRow = True
+        Me.GridView13.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView13.OptionsView.ShowChildrenInGroupPanel = True
         Me.GridView13.OptionsView.ShowFooter = True
         Me.GridView13.OptionsView.ShowGroupPanel = False
@@ -841,13 +871,12 @@ Partial Class DxProRit
         GridLevelNode1.LevelTemplate = Me.GridView13
         GridLevelNode1.RelationName = "Dettaglio"
         Me.GridControl12.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode1})
-        Me.GridControl12.Location = New System.Drawing.Point(2, 24)
-        Me.GridControl12.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl12.Location = New System.Drawing.Point(2, 23)
         Me.GridControl12.MainView = Me.GridView12
         Me.GridControl12.Name = "GridControl12"
         Me.GridControl12.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1x})
         Me.GridControl12.ShowOnlyPredefinedDetails = True
-        Me.GridControl12.Size = New System.Drawing.Size(995, 544)
+        Me.GridControl12.Size = New System.Drawing.Size(998, 545)
         Me.GridControl12.TabIndex = 6
         Me.GridControl12.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView12, Me.GridView13})
         '
@@ -858,7 +887,6 @@ Partial Class DxProRit
         Me.GridView12.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
         Me.GridView12.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None
         Me.GridView12.GridControl = Me.GridControl12
-        Me.GridView12.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.VisibleAlways
         Me.GridView12.GroupFormat = "{1} "
         Me.GridView12.Name = "GridView12"
         Me.GridView12.OptionsBehavior.AutoExpandAllGroups = True
@@ -871,10 +899,11 @@ Partial Class DxProRit
         Me.GridView12.OptionsSelection.UseIndicatorForSelection = False
         Me.GridView12.OptionsView.EnableAppearanceEvenRow = True
         Me.GridView12.OptionsView.EnableAppearanceOddRow = True
+        Me.GridView12.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.VisibleAlways
+        Me.GridView12.OptionsView.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways
         Me.GridView12.OptionsView.ShowChildrenInGroupPanel = True
         Me.GridView12.OptionsView.ShowGroupPanel = False
         Me.GridView12.OptionsView.ShowIndicator = False
-        Me.GridView12.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways
         Me.GridView12.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.GridColumn18, DevExpress.Data.ColumnSortOrder.Descending)})
         '
         'GridColumn18
@@ -1091,7 +1120,7 @@ Partial Class DxProRit
         Me.GroupControlC.Location = New System.Drawing.Point(0, 0)
         Me.GroupControlC.Name = "GroupControlC"
         Me.GroupControlC.ShowCaption = False
-        Me.GroupControlC.Size = New System.Drawing.Size(1003, 631)
+        Me.GroupControlC.Size = New System.Drawing.Size(1006, 631)
         Me.GroupControlC.TabIndex = 0
         Me.GroupControlC.Text = "GroupControl1"
         '
@@ -1107,7 +1136,7 @@ Partial Class DxProRit
         Me.GroupControlB.Location = New System.Drawing.Point(2, 2)
         Me.GroupControlB.Name = "GroupControlB"
         Me.GroupControlB.ShowCaption = False
-        Me.GroupControlB.Size = New System.Drawing.Size(999, 331)
+        Me.GroupControlB.Size = New System.Drawing.Size(1002, 331)
         Me.GroupControlB.TabIndex = 0
         Me.GroupControlB.Text = "GroupControlB"
         '
@@ -1121,7 +1150,7 @@ Partial Class DxProRit
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl2.Location = New System.Drawing.Point(380, 2)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(617, 327)
+        Me.GroupControl2.Size = New System.Drawing.Size(620, 327)
         Me.GroupControl2.TabIndex = 1
         Me.GroupControl2.Text = "RITENUTE"
         '
@@ -1129,12 +1158,11 @@ Partial Class DxProRit
         '
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl2.FormsUseDefaultLookAndFeel = True
-        Me.GridControl2.Location = New System.Drawing.Point(2, 24)
-        Me.GridControl2.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl2.Location = New System.Drawing.Point(2, 23)
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1, Me.RepositoryItemCheckEdit3})
-        Me.GridControl2.Size = New System.Drawing.Size(613, 301)
+        Me.GridControl2.Size = New System.Drawing.Size(616, 302)
         Me.GridControl2.TabIndex = 6
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -1145,7 +1173,6 @@ Partial Class DxProRit
         Me.GridView2.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
         Me.GridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None
         Me.GridView2.GridControl = Me.GridControl2
-        Me.GridView2.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView2.Name = "GridView2"
         Me.GridView2.OptionsNavigation.EnterMoveNextColumn = True
         Me.GridView2.OptionsPrint.ExpandAllGroups = False
@@ -1155,9 +1182,9 @@ Partial Class DxProRit
         Me.GridView2.OptionsSelection.UseIndicatorForSelection = False
         Me.GridView2.OptionsView.EnableAppearanceEvenRow = True
         Me.GridView2.OptionsView.EnableAppearanceOddRow = True
+        Me.GridView2.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView2.OptionsView.ShowGroupPanel = False
         Me.GridView2.OptionsView.ShowIndicator = False
-        Me.GridView2.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.[Default]
         '
         'GridColumn12
         '
@@ -1335,12 +1362,11 @@ Partial Class DxProRit
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
-        Me.GridControl1.Location = New System.Drawing.Point(2, 24)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl1.Location = New System.Drawing.Point(2, 23)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(374, 301)
+        Me.GridControl1.Size = New System.Drawing.Size(374, 302)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.TabStop = False
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -1352,7 +1378,6 @@ Partial Class DxProRit
         Me.GridView1.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
         Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView1.GridControl = Me.GridControl1
-        Me.GridView1.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsNavigation.EnterMoveNextColumn = True
         Me.GridView1.OptionsPrint.ExpandAllGroups = False
@@ -1361,8 +1386,8 @@ Partial Class DxProRit
         Me.GridView1.OptionsSelection.MultiSelect = True
         Me.GridView1.OptionsView.EnableAppearanceEvenRow = True
         Me.GridView1.OptionsView.EnableAppearanceOddRow = True
+        Me.GridView1.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView1.OptionsView.ShowGroupPanel = False
-        Me.GridView1.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.[Default]
         '
         'GridColumn1
         '
@@ -1437,7 +1462,7 @@ Partial Class DxProRit
         Me.GroupControlT.Location = New System.Drawing.Point(2, 333)
         Me.GroupControlT.Name = "GroupControlT"
         Me.GroupControlT.ShowCaption = False
-        Me.GroupControlT.Size = New System.Drawing.Size(999, 296)
+        Me.GroupControlT.Size = New System.Drawing.Size(1002, 296)
         Me.GroupControlT.TabIndex = 1
         Me.GroupControlT.Text = "GroupControlT"
         '
@@ -1464,7 +1489,7 @@ Partial Class DxProRit
         Me.GroupControl26.Location = New System.Drawing.Point(2, 105)
         Me.GroupControl26.Name = "GroupControl26"
         Me.GroupControl26.ShowCaption = False
-        Me.GroupControl26.Size = New System.Drawing.Size(952, 189)
+        Me.GroupControl26.Size = New System.Drawing.Size(955, 189)
         Me.GroupControl26.TabIndex = 7
         '
         'GroupControl21
@@ -1483,7 +1508,7 @@ Partial Class DxProRit
         Me.TextEdit19.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit19.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit19.EnterMoveNextControl = True
-        Me.TextEdit19.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit19.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit19.Name = "TextEdit19"
         Me.TextEdit19.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit19.Properties.Appearance.Options.UseFont = True
@@ -1518,7 +1543,7 @@ Partial Class DxProRit
         Me.TextEdit18.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit18.EditValue = ""
         Me.TextEdit18.EnterMoveNextControl = True
-        Me.TextEdit18.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit18.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit18.Name = "TextEdit18"
         Me.TextEdit18.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit18.Properties.Appearance.Options.UseFont = True
@@ -1547,7 +1572,7 @@ Partial Class DxProRit
         Me.ImageComboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit1.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 22)
+        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit1.Name = "ImageComboBoxEdit1"
         Me.ImageComboBoxEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImageComboBoxEdit1.Properties.Appearance.Options.UseFont = True
@@ -1586,8 +1611,8 @@ Partial Class DxProRit
         Me.DateEdit5.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit5.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit5.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit5.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.DateEdit5.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit5.Size = New System.Drawing.Size(99, 22)
         Me.DateEdit5.TabIndex = 0
         '
@@ -1607,7 +1632,7 @@ Partial Class DxProRit
         Me.TextEdit17.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit17.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit17.EnterMoveNextControl = True
-        Me.TextEdit17.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit17.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit17.Name = "TextEdit17"
         Me.TextEdit17.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit17.Properties.Appearance.Options.UseFont = True
@@ -1642,7 +1667,7 @@ Partial Class DxProRit
         Me.TextEdit16.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit16.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit16.EnterMoveNextControl = True
-        Me.TextEdit16.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit16.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit16.Name = "TextEdit16"
         Me.TextEdit16.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit16.Properties.Appearance.Options.UseFont = True
@@ -1679,7 +1704,7 @@ Partial Class DxProRit
         Me.TextEdit15.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit15.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit15.EnterMoveNextControl = True
-        Me.TextEdit15.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit15.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit15.Name = "TextEdit15"
         Me.TextEdit15.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit15.Properties.Appearance.Options.UseFont = True
@@ -1714,7 +1739,7 @@ Partial Class DxProRit
         Me.TextEdit14.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit14.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit14.EnterMoveNextControl = True
-        Me.TextEdit14.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit14.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit14.Name = "TextEdit14"
         Me.TextEdit14.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit14.Properties.Appearance.Options.UseFont = True
@@ -1749,7 +1774,7 @@ Partial Class DxProRit
         Me.TextEdit13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit13.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit13.EnterMoveNextControl = True
-        Me.TextEdit13.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit13.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit13.Name = "TextEdit13"
         Me.TextEdit13.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit13.Properties.Appearance.Options.UseFont = True
@@ -1784,7 +1809,7 @@ Partial Class DxProRit
         Me.TextEdit12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit12.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit12.EnterMoveNextControl = True
-        Me.TextEdit12.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit12.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit12.Name = "TextEdit12"
         Me.TextEdit12.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit12.Properties.Appearance.Options.UseFont = True
@@ -1819,7 +1844,7 @@ Partial Class DxProRit
         Me.TextEdit11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit11.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit11.EnterMoveNextControl = True
-        Me.TextEdit11.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit11.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit11.Name = "TextEdit11"
         Me.TextEdit11.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit11.Properties.Appearance.Options.UseFont = True
@@ -1856,7 +1881,7 @@ Partial Class DxProRit
         Me.TextEdit10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit10.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit10.EnterMoveNextControl = True
-        Me.TextEdit10.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit10.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit10.Name = "TextEdit10"
         Me.TextEdit10.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit10.Properties.Appearance.Options.UseFont = True
@@ -1891,7 +1916,7 @@ Partial Class DxProRit
         Me.TextEdit9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit9.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit9.EnterMoveNextControl = True
-        Me.TextEdit9.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit9.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit9.Name = "TextEdit9"
         Me.TextEdit9.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit9.Properties.Appearance.Options.UseFont = True
@@ -1926,7 +1951,7 @@ Partial Class DxProRit
         Me.TextEdit8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit8.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit8.EnterMoveNextControl = True
-        Me.TextEdit8.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit8.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit8.Name = "TextEdit8"
         Me.TextEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit8.Properties.Appearance.Options.UseFont = True
@@ -1961,7 +1986,7 @@ Partial Class DxProRit
         Me.TextEdit7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit7.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit7.EnterMoveNextControl = True
-        Me.TextEdit7.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit7.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit7.Name = "TextEdit7"
         Me.TextEdit7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit7.Properties.Appearance.Options.UseFont = True
@@ -2055,8 +2080,8 @@ Partial Class DxProRit
         Me.DateEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit2.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.DateEdit2.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit2.Size = New System.Drawing.Size(107, 22)
         Me.DateEdit2.TabIndex = 0
         Me.DateEdit2.TabStop = False
@@ -2067,7 +2092,7 @@ Partial Class DxProRit
         Me.GroupContro4.Controls.Add(Me.ButtonF11)
         Me.GroupContro4.Controls.Add(Me.ButtonF3)
         Me.GroupContro4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupContro4.Location = New System.Drawing.Point(954, 2)
+        Me.GroupContro4.Location = New System.Drawing.Point(957, 2)
         Me.GroupContro4.Name = "GroupContro4"
         Me.GroupContro4.ShowCaption = False
         Me.GroupContro4.Size = New System.Drawing.Size(43, 292)
@@ -2084,9 +2109,9 @@ Partial Class DxProRit
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(5, 130)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -2104,9 +2129,9 @@ Partial Class DxProRit
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(5, 75)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -2121,9 +2146,9 @@ Partial Class DxProRit
         Me.ButtonF3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF3.ImageIndex = 2
-        Me.ButtonF3.ImageList = Me.ImageList32
-        Me.ButtonF3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF3.ImageOptions.ImageIndex = 2
+        Me.ButtonF3.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF3.Location = New System.Drawing.Point(5, 185)
         Me.ButtonF3.Name = "ButtonF3"
         Me.ButtonF3.Size = New System.Drawing.Size(32, 32)
@@ -2149,9 +2174,9 @@ Partial Class DxProRit
         Me.GroupControl61.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl61.Controls.Add(Me.DateEdit4)
         Me.GroupControl61.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl61.Location = New System.Drawing.Point(112, 22)
+        Me.GroupControl61.Location = New System.Drawing.Point(112, 23)
         Me.GroupControl61.Name = "GroupControl61"
-        Me.GroupControl61.Size = New System.Drawing.Size(110, 45)
+        Me.GroupControl61.Size = New System.Drawing.Size(110, 44)
         Me.GroupControl61.TabIndex = 9
         Me.GroupControl61.Text = "AL"
         '
@@ -2160,7 +2185,7 @@ Partial Class DxProRit
         Me.DateEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit4.EditValue = Nothing
         Me.DateEdit4.EnterMoveNextControl = True
-        Me.DateEdit4.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit4.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit4.Name = "DateEdit4"
         Me.DateEdit4.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2171,8 +2196,8 @@ Partial Class DxProRit
         Me.DateEdit4.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit4.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit4.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit4.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.DateEdit4.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit4.Size = New System.Drawing.Size(106, 22)
         Me.DateEdit4.TabIndex = 1
         Me.DateEdit4.TabStop = False
@@ -2183,9 +2208,9 @@ Partial Class DxProRit
         Me.GroupControl60.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl60.Controls.Add(Me.DateEdit3)
         Me.GroupControl60.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl60.Location = New System.Drawing.Point(2, 22)
+        Me.GroupControl60.Location = New System.Drawing.Point(2, 23)
         Me.GroupControl60.Name = "GroupControl60"
-        Me.GroupControl60.Size = New System.Drawing.Size(110, 45)
+        Me.GroupControl60.Size = New System.Drawing.Size(110, 44)
         Me.GroupControl60.TabIndex = 10
         Me.GroupControl60.Text = "DAL"
         '
@@ -2194,7 +2219,7 @@ Partial Class DxProRit
         Me.DateEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit3.EditValue = Nothing
         Me.DateEdit3.EnterMoveNextControl = True
-        Me.DateEdit3.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit3.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit3.Name = "DateEdit3"
         Me.DateEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2205,8 +2230,8 @@ Partial Class DxProRit
         Me.DateEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit3.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.DateEdit3.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit3.Size = New System.Drawing.Size(106, 22)
         Me.DateEdit3.TabIndex = 1
         Me.DateEdit3.TabStop = False
@@ -2227,7 +2252,7 @@ Partial Class DxProRit
         '
         Me.TextEdit5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit5.EnterMoveNextControl = True
-        Me.TextEdit5.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit5.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit5.Properties.Appearance.Options.UseFont = True
@@ -2282,7 +2307,7 @@ Partial Class DxProRit
         '
         Me.TextEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit4.EnterMoveNextControl = True
-        Me.TextEdit4.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit4.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit4.Properties.Appearance.Options.UseFont = True
@@ -2359,8 +2384,8 @@ Partial Class DxProRit
         Me.DateEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.DateEdit1.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit1.Size = New System.Drawing.Size(99, 22)
         Me.DateEdit1.TabIndex = 0
         '
@@ -2369,7 +2394,7 @@ Partial Class DxProRit
         Me.XtraTabPage2.Controls.Add(Me.GroupControlBx)
         Me.XtraTabPage2.Controls.Add(Me.GroupControlTx)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1003, 631)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1006, 631)
         Me.XtraTabPage2.Text = "Estremi Quietanze"
         '
         'GroupControlBx
@@ -2383,7 +2408,7 @@ Partial Class DxProRit
         Me.GroupControlBx.Location = New System.Drawing.Point(0, 0)
         Me.GroupControlBx.Name = "GroupControlBx"
         Me.GroupControlBx.ShowCaption = False
-        Me.GroupControlBx.Size = New System.Drawing.Size(1003, 574)
+        Me.GroupControlBx.Size = New System.Drawing.Size(1006, 574)
         Me.GroupControlBx.TabIndex = 4
         Me.GroupControlBx.Text = "GroupControlB"
         '
@@ -2397,7 +2422,7 @@ Partial Class DxProRit
         Me.GroupControl2x.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl2x.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl2x.Name = "GroupControl2x"
-        Me.GroupControl2x.Size = New System.Drawing.Size(999, 570)
+        Me.GroupControl2x.Size = New System.Drawing.Size(1002, 570)
         Me.GroupControl2x.TabIndex = 2
         Me.GroupControl2x.Text = "RITENUTE"
         '
@@ -2415,7 +2440,7 @@ Partial Class DxProRit
         Me.GroupControlTx.Location = New System.Drawing.Point(0, 574)
         Me.GroupControlTx.Name = "GroupControlTx"
         Me.GroupControlTx.ShowCaption = False
-        Me.GroupControlTx.Size = New System.Drawing.Size(1003, 57)
+        Me.GroupControlTx.Size = New System.Drawing.Size(1006, 57)
         Me.GroupControlTx.TabIndex = 5
         Me.GroupControlTx.Text = "GroupControlT"
         '
@@ -2435,7 +2460,7 @@ Partial Class DxProRit
         Me.TextEdit17x.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit17x.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit17x.EnterMoveNextControl = True
-        Me.TextEdit17x.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit17x.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit17x.Name = "TextEdit17x"
         Me.TextEdit17x.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit17x.Properties.Appearance.Options.UseFont = True
@@ -2470,7 +2495,7 @@ Partial Class DxProRit
         Me.TextEdit19x.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit19x.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit19x.EnterMoveNextControl = True
-        Me.TextEdit19x.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit19x.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit19x.Name = "TextEdit19x"
         Me.TextEdit19x.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit19x.Properties.Appearance.Options.UseFont = True
@@ -2505,7 +2530,7 @@ Partial Class DxProRit
         Me.TextEdit8x.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit8x.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit8x.EnterMoveNextControl = True
-        Me.TextEdit8x.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit8x.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit8x.Name = "TextEdit8x"
         Me.TextEdit8x.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit8x.Properties.Appearance.Options.UseFont = True
@@ -2542,7 +2567,7 @@ Partial Class DxProRit
         Me.TextEdit18x.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit18x.EditValue = ""
         Me.TextEdit18x.EnterMoveNextControl = True
-        Me.TextEdit18x.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit18x.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit18x.Name = "TextEdit18x"
         Me.TextEdit18x.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit18x.Properties.Appearance.Options.UseFont = True
@@ -2577,9 +2602,9 @@ Partial Class DxProRit
         Me.ButtonF5x.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5x.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5x.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5x.ImageIndex = 4
-        Me.ButtonF5x.ImageList = Me.ImageList32
-        Me.ButtonF5x.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5x.ImageOptions.ImageIndex = 4
+        Me.ButtonF5x.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5x.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5x.Location = New System.Drawing.Point(57, 12)
         Me.ButtonF5x.Name = "ButtonF5x"
         Me.ButtonF5x.Size = New System.Drawing.Size(32, 32)
@@ -2597,9 +2622,9 @@ Partial Class DxProRit
         Me.ButtonF11x.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11x.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11x.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11x.ImageIndex = 10
-        Me.ButtonF11x.ImageList = Me.ImageList32
-        Me.ButtonF11x.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11x.ImageOptions.ImageIndex = 10
+        Me.ButtonF11x.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11x.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11x.Location = New System.Drawing.Point(14, 12)
         Me.ButtonF11x.Name = "ButtonF11x"
         Me.ButtonF11x.Size = New System.Drawing.Size(32, 32)
@@ -2614,9 +2639,9 @@ Partial Class DxProRit
         Me.ButtonF9x.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF9x.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9x.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9x.ImageIndex = 9
-        Me.ButtonF9x.ImageList = Me.ImageDx24
-        Me.ButtonF9x.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9x.ImageOptions.ImageIndex = 9
+        Me.ButtonF9x.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9x.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9x.Location = New System.Drawing.Point(100, 12)
         Me.ButtonF9x.Name = "ButtonF9x"
         Me.ButtonF9x.Size = New System.Drawing.Size(32, 32)
@@ -2640,7 +2665,7 @@ Partial Class DxProRit
         Me.ImageComboBoxEdit1x.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit1x.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit1x.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit1x.Location = New System.Drawing.Point(2, 22)
+        Me.ImageComboBoxEdit1x.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit1x.Name = "ImageComboBoxEdit1x"
         Me.ImageComboBoxEdit1x.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImageComboBoxEdit1x.Properties.Appearance.Options.UseFont = True
@@ -2669,7 +2694,7 @@ Partial Class DxProRit
         Me.DateEdit5x.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit5x.EditValue = Nothing
         Me.DateEdit5x.EnterMoveNextControl = True
-        Me.DateEdit5x.Location = New System.Drawing.Point(2, 22)
+        Me.DateEdit5x.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit5x.Name = "DateEdit5x"
         Me.DateEdit5x.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit5x.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2680,8 +2705,8 @@ Partial Class DxProRit
         Me.DateEdit5x.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit5x.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.DateEdit5x.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit5x.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit5x.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.DateEdit5x.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit5x.Size = New System.Drawing.Size(116, 22)
         Me.DateEdit5x.TabIndex = 0
         '
@@ -2701,7 +2726,7 @@ Partial Class DxProRit
         Me.TextEdit7x.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit7x.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit7x.EnterMoveNextControl = True
-        Me.TextEdit7x.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit7x.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit7x.Name = "TextEdit7x"
         Me.TextEdit7x.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit7x.Properties.Appearance.Options.UseFont = True
@@ -2736,6 +2761,7 @@ Partial Class DxProRit
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCheckEdit1x, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridControl12, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2773,7 +2799,7 @@ Partial Class DxProRit
         CType(Me.ImageComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl24, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl24.ResumeLayout(False)
-        CType(Me.DateEdit5.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit5.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit5.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl25, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl25.ResumeLayout(False)
@@ -2814,7 +2840,7 @@ Partial Class DxProRit
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl10.ResumeLayout(False)
-        CType(Me.DateEdit2.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit2.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupContro4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupContro4.ResumeLayout(False)
@@ -2822,11 +2848,11 @@ Partial Class DxProRit
         Me.GroupControl7.ResumeLayout(False)
         CType(Me.GroupControl61, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl61.ResumeLayout(False)
-        CType(Me.DateEdit4.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit4.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl60, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl60.ResumeLayout(False)
-        CType(Me.DateEdit3.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit3.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl6.ResumeLayout(False)
@@ -2842,7 +2868,7 @@ Partial Class DxProRit
         CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl8.ResumeLayout(False)
-        CType(Me.DateEdit1.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabPage2.ResumeLayout(False)
         CType(Me.GroupControlBx, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2870,7 +2896,7 @@ Partial Class DxProRit
         CType(Me.ImageComboBoxEdit1x.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl24x, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl24x.ResumeLayout(False)
-        CType(Me.DateEdit5x.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit5x.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit5x.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl14x, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl14x.ResumeLayout(False)

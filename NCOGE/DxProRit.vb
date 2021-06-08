@@ -427,7 +427,7 @@ Public Class DxProRit
         If CDec(TextEdit7.EditValue) = 0 Then
             Errori.Add("<> Inserire il compenso lordo" & Chr(13))
         End If
-        If CDec(TextEdit8.EditValue) = 0 Then
+        If CDec(TextEdit8.EditValue) = 0 And CDec(TextEdit6.EditValue) > 0 Then
             Errori.Add("<> Inserire la ritenuta" & Chr(13))
         End If
         If Errori.Count > 0 Then
