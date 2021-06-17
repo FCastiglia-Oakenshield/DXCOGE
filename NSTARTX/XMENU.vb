@@ -139,7 +139,7 @@ Public Class XMENU
         End While
         dataRd.Close()
         If (UserId = "PASTAECO" Or UserId = "PASTANEW" Or UserId = "PASTAGROUP") Then BarButtonItem100.Visibility = BarItemVisibility.Always Else BarButtonItem100.Visibility = BarItemVisibility.Never
-        '' If UserId = "CSABOX" Then BarButtonItem113.Visibility = BarItemVisibility.Always Else BarButtonItem113.Visibility = BarItemVisibility.Never
+        If UserId = "CSABOX" Then BarButtonItem113.Visibility = BarItemVisibility.Always Else BarButtonItem113.Visibility = BarItemVisibility.Never
     End Sub
     Sub AbilitaGeve()
         Dim Source As String = cnDb.DataSource
