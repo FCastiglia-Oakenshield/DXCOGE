@@ -108,6 +108,7 @@ Public Class XMENU
                 OKCDC = True
             End If
         End If
+
         Userwin = GetUserName()
         AbilitaGeve()
         'CONNESSIONIGS()
@@ -138,6 +139,7 @@ Public Class XMENU
         End While
         dataRd.Close()
         If (UserId = "PASTAECO" Or UserId = "PASTANEW" Or UserId = "PASTAGROUP") Then BarButtonItem100.Visibility = BarItemVisibility.Always Else BarButtonItem100.Visibility = BarItemVisibility.Never
+        '' If UserId = "CSABOX" Then BarButtonItem113.Visibility = BarItemVisibility.Always Else BarButtonItem113.Visibility = BarItemVisibility.Never
     End Sub
     Sub AbilitaGeve()
         Dim Source As String = cnDb.DataSource
@@ -914,4 +916,7 @@ esci:
         DXMenu(New Insoluti, e.Item.Caption)
     End Sub
 
+    Private Sub BarButtonItem113_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BarButtonItem113.ItemClick
+        DXMenu(New DxStTotIcli, e.Item.Caption)
+    End Sub
 End Class
