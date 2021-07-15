@@ -13,6 +13,11 @@ Public Class DxFtOttica
             TotaleMerce = value
         End Set
     End Property
+    Public ReadOnly Property _TotaleDocumento As Decimal
+        Get
+            Return TotaleDocumento
+        End Get
+    End Property
 
     Public ReadOnly Property _TotaleResiduo As Decimal
         Get
@@ -59,7 +64,7 @@ Public Class DxFtOttica
     Dim CodFor As String = ""
     Dim Causale As Int16 = 2 '' PER ORA SOLO FATTURE FORNITORI
     Dim TC(2) As String
-    Dim TotaleMerce, X0, X1, X2, TotaleResiduo As Decimal
+    Dim TotaleMerce, X0, X1, X2, TotaleResiduo, TotaleDocumento As Decimal
     Dim Okfat As Boolean
     Dim OkCpt As Boolean = False
     Dim RwFat As DataRow
@@ -184,6 +189,7 @@ Inext:
         X1 = CDec(0.0)
         X0 = CDec(0.0)
         TotaleResiduo = CDec(0.0)
+        TotaleDocumento = CDec(0.0)
         Merce = 1
         ButtonF3.Enabled = False
     End Sub
@@ -343,6 +349,11 @@ Inext:
         End If
         '' TotaleIn()
     End Sub
+
+    Private Sub TextEdit3_EditValueChanged(sender As Object, e As EventArgs) Handles TextEdit3.EditValueChanged
+        TotaleDocumento = TextEdit3.EditValue
+    End Sub
+
     Sub CalcolaIva()
         Dim X3 As Decimal = 0
         For i As Int16 = (RwFat("PriProg") - 1) To 1 Step -1

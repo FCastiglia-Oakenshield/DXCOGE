@@ -2559,6 +2559,7 @@ II:
         Anagrafica()
         RIFERFTEP = rw("FteRif")
     End Sub
+
     Sub CaricaNuovoFornitore()
         FRMFO = New InsFoFte
         InsFoFte.NPARTITAIVA = FO_PARTITAIVA

@@ -139,9 +139,9 @@ Partial Class DxFtOttica
         Me.ButtonF3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonF3.Enabled = False
-        Me.ButtonF3.ImageIndex = 23
-        Me.ButtonF3.ImageList = Me.imageList1
-        Me.ButtonF3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF3.ImageOptions.ImageIndex = 23
+        Me.ButtonF3.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF3.Location = New System.Drawing.Point(832, 2)
         Me.ButtonF3.Name = "ButtonF3"
         Me.ButtonF3.Size = New System.Drawing.Size(22, 22)
@@ -285,9 +285,9 @@ Partial Class DxFtOttica
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 24
-        Me.ButtonF11.ImageList = Me.imageList1
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 24
+        Me.ButtonF11.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(807, 2)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(22, 22)
@@ -317,9 +317,9 @@ Partial Class DxFtOttica
         Me.ButtonF8.Appearance.Options.UseFont = True
         Me.ButtonF8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonF8.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonF8.ImageIndex = 105
-        Me.ButtonF8.ImageList = Me.imageList1
-        Me.ButtonF8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF8.ImageOptions.ImageIndex = 105
+        Me.ButtonF8.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF8.Location = New System.Drawing.Point(457, 2)
         Me.ButtonF8.Name = "ButtonF8"
         Me.ButtonF8.Size = New System.Drawing.Size(22, 22)
@@ -496,7 +496,7 @@ Partial Class DxFtOttica
         Me.TextEdit10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit10.EditValue = "000"
         Me.TextEdit10.EnterMoveNextControl = True
-        Me.TextEdit10.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit10.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit10.Name = "TextEdit10"
         Me.TextEdit10.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit10.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -533,7 +533,7 @@ Partial Class DxFtOttica
         Me.TextEdit13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit13.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit13.EnterMoveNextControl = True
-        Me.TextEdit13.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit13.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit13.Name = "TextEdit13"
         Me.TextEdit13.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit13.Properties.Appearance.Options.UseFont = True
@@ -577,7 +577,7 @@ Partial Class DxFtOttica
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit1.Properties.Appearance.Options.UseFont = True
@@ -621,7 +621,7 @@ Partial Class DxFtOttica
         Me.TextEdit14.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit14.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit14.EnterMoveNextControl = True
-        Me.TextEdit14.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit14.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit14.Name = "TextEdit14"
         Me.TextEdit14.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit14.Properties.Appearance.Options.UseFont = True
@@ -665,7 +665,7 @@ Partial Class DxFtOttica
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit2.Properties.Appearance.Options.UseFont = True
@@ -709,7 +709,7 @@ Partial Class DxFtOttica
         Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit3.EditValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.TextEdit3.EnterMoveNextControl = True
-        Me.TextEdit3.Location = New System.Drawing.Point(2, 22)
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit3.Properties.Appearance.Options.UseFont = True
@@ -786,7 +786,6 @@ Partial Class DxFtOttica
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
         Me.GridControl1.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
