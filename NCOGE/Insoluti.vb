@@ -80,21 +80,20 @@ Public Class Insoluti
             MiglioFo = dataRd.Item("GrpMigl")
         End While
         dataRd.Close()
-        Dim Str As String = "SELECT * from TbCii order by CiiCod"
+        Cmd = New SqlCommand("Select PosCauInsoluti from TbPos where PosId=0", cnCo)
+        Dim NS As Integer = Cmd.ExecuteScalar
+        Dim Str As String = "SELECT * from TbCii where CiiCod=" & NS
         Dim SS As String = ""
         ComboBoxEdit1.Properties.Items.Clear()
         ImageComboBoxEdit2.Properties.Items.Clear()
+
         Cmd = New SqlCommand(Str, cnCo)
         dataRd = Cmd.ExecuteReader
         While dataRd.Read
-            If dataRd.Item("CiiCod") > 3 Then
-                SS = dataRd.Item("CiiCod").ToString.PadRight(2, " ") & " " & dataRd.Item("CiiCau")
-                nn = New DevExpress.XtraEditors.Controls.ImageComboBoxItem(SS, dataRd.Item("CiiCod"), -1)
-                ImageComboBoxEdit2.Properties.Items.Add(nn)
-                If Trim(dataRd.Item("CiiCau")) = "INSOLUTO" Then
-                    ImageComboBoxEdit2.EditValue = dataRd.Item("CiiCod")
-                End If
-            End If
+            SS = dataRd.Item("CiiCod").ToString.PadRight(2, " ") & " " & dataRd.Item("CiiCau")
+            nn = New DevExpress.XtraEditors.Controls.ImageComboBoxItem(SS, dataRd.Item("CiiCod"), -1)
+            ImageComboBoxEdit2.Properties.Items.Add(nn)
+            ImageComboBoxEdit2.EditValue = dataRd.Item("CiiCod")
         End While
         dataRd.Close()
         ''' ' LEGGO DA TBPRI MAX DATAGIO E MAX NUMART
