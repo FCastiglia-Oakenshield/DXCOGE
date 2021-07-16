@@ -635,7 +635,6 @@
     <Compile Include="DxVersam.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GiroCRPn.vb" />
     <Compile Include="InsFoFte.Designer.vb">
       <DependentUpon>InsFoFte.vb</DependentUpon>
     </Compile>
