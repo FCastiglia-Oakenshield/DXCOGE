@@ -68,6 +68,8 @@ Public Class DxTrFtXc
     Dim BOXCONTO As New TextEdit
     Dim Rispondi As MsgBoxResult
 
+    Dim RegNcr As Int16 = 0
+
     Dim PathPrg, PathSto, PathTmp As String
 
     REM IVA PUBBLICA AMMINISTRAZIONE
@@ -191,6 +193,7 @@ Public Class DxTrFtXc
         OkOttica = False
         OkGruppoPasta = False
         OkZeroFt = True
+        LeggitaiGenerico()
         If UserId = "SELCO" Then OkSelco = True
         If UserId = "MONDOMARINE" Then OkMondo = True
         If UserId = "PASTAECO" Then OkOttica = True : OkZeroFt = True : OkGruppoPasta = True
@@ -203,8 +206,17 @@ Public Class DxTrFtXc
         If UserId = "DEFENDINI" Then LeggiTaiDefend()
         If UserId = "RICAMBI" Then LeggiTaiRicambi()
         If OkCorris = True Then VerificaCorrispettivi()
-        If UserId = "CSABOX" Then OkZeroFt = True
+        If UserId = "CSABOX" Then OkOttica = True : OkZeroFt = True
         PNotaMaxDat = CDate("01/01/2000")
+
+    End Sub
+    Sub LeggitaiGenerico()
+        Dim cmd As New SqlCommand("SELECT top 1 * FROM TbTai Order by TaiAnno Desc", cnDb)
+        dataRd = cmd.ExecuteReader
+        While dataRd.Read
+            RegNcr = dataRd.Item("TaiReg11")
+        End While
+        dataRd.Close()
     End Sub
     Sub LeggiTaiRicambi()
         Dim cmd As New SqlCommand("SELECT top 1 * FROM TbTai Order by TaiAnno Desc", cnDb)
@@ -1798,7 +1810,7 @@ VaiOltre:
         RwDoc("DocRifInterno") = "000000"
         RwDoc("DocAnno") = CDate(RwFat("FatData")).Year
         RwDoc("DocReg") = RwFat("FatNumReg")
-        If RwFat("FatNumReg") = 9 Then
+        If RwFat("FatNumReg") = RegNcr Then
             RwDoc("DocTipo") = "NC"
             RwDoc("DocDesc") = "NOTA CREDITO NR. " & RwFat("FatNum") & " DEL " & CDate(RwFat("FatData")).ToShortDateString
         Else
