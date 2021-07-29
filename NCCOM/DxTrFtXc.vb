@@ -1806,6 +1806,7 @@ VaiOltre:
         RwFat = TbFat.Rows(0)
         RwDoc = TbDoc.NewRow()
         Dim Nomefile As String = PathSto & "FC" & RiW("DcgNumRif") & ".pdf"
+        Dim NomefileNC As String = PathSto & "NC" & RiW("DcgNumRif") & ".pdf"
         Dim NCommesse As String = ""
         RwDoc("DocRifInterno") = "000000"
         RwDoc("DocAnno") = CDate(RwFat("FatData")).Year
@@ -1834,6 +1835,11 @@ VaiOltre:
         Try
             File.Copy(Nomefile, FILEOUT, True)
         Catch ex As Exception
+            Try
+                File.Copy(NomefileNC, FILEOUT, True)
+            Catch ex2 As Exception
+
+            End Try
         End Try
     End Function
 #End Region
