@@ -1652,7 +1652,7 @@ RipetiCee:
                 If RwFRI("PriFl04") > 0 And RwFRI("PriFl04") < 25 Then Sc = 1
             End If
             If CheckEdit1.Checked = True Then RwFRI("PriMeseSk") = "*" Else RwFRI("PriMeseSk") = ""
-            p1.Value = RwFRI("PriDataGio")
+            p1.Value = Format(RwFRI("PriDataGio"), "dd/MM/yyyy")
             p2.Value = RwFRI("PriCausale")
             p3.Value = RwFRI("PriCoDare")
             p4.Value = RwFRI("PriCoAvere")
