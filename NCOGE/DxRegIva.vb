@@ -32,6 +32,7 @@ Public Class DxRegIva
         iset = -1
         ComboBoxEdit2.SelectedIndex = 0
         ComboBoxEdit3.SelectedIndex = -1
+        ComboBoxEdit4.SelectedIndex = -1
         CheckEdit1.Checked = False
         CheckEdit2.Checked = False
         CheckEdit3.Checked = False
@@ -97,8 +98,11 @@ Public Class DxRegIva
     End Sub
     Private Sub CaricaDati()
         Dim CC As Int16
+        Dim DD As String = ""
         CC = IIf(dataRd.Item("RIvaAutoFCee") Is DBNull.Value, 0, dataRd.Item("RIvaAutoFCee")).ToString
         ComboBoxEdit3.SelectedIndex = SELEZIONAINDEX(CC)
+        DD = IIf(dataRd.Item("RIvaTipoDoc") Is DBNull.Value, "", dataRd.Item("RIvaTipoDoc")).ToString
+        ComboBoxEdit4.SelectedIndex = SELEZIONATD(DD)
         TextEdit9.EditValue = dataRd.Item("RIvaCliCee")
         TextEdit10.EditValue = dataRd.Item("RIvaCliDesc")
         TextEdit3.EditValue = dataRd.Item("RIvaCpt")
@@ -118,12 +122,20 @@ Public Class DxRegIva
         CheckEdit3.Checked = dataRd.Item("RIvaCh")
         If dataRd.Item("RIvaRCharge") Is DBNull.Value Then CheckEdit4.Checked = False Else CheckEdit4.Checked = CBool(dataRd.Item("RIvaRCharge"))
         CheckEdit5.Checked = dataRd.Item("RIvaFteP")
-
     End Sub
     Function SELEZIONAINDEX(ByVal CODICE As String) As Int16
         Dim x As Int16 = -1
         For x = 1 To ComboBoxEdit3.Properties.Items.Count
             If Val(Mid(ComboBoxEdit3.Properties.Items(x - 1), 1, 2)) = CODICE Then
+                Return (x - 1) : Exit Function
+            End If
+        Next
+        Return 0
+    End Function
+    Function SELEZIONATD(ByVal CODICE As String) As Int16
+        Dim x As Int16 = -1
+        For x = 1 To ComboBoxEdit4.Properties.Items.Count
+            If Mid(ComboBoxEdit4.Properties.Items(x - 1), 1, 4) = CODICE Then
                 Return (x - 1) : Exit Function
             End If
         Next
@@ -202,9 +214,9 @@ Public Class DxRegIva
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
         If Controllo() = False Then Return
         If EsisteRegistro = False Then
-            Str = "Insert into TbRegIva (RIvaAnno,RIvaNReg,RIvaSL,RIvaNumFog,RIvaTipo,RIvaPRata,RIvaDesc,RIvaCpt,RIvaAutoFCee,RIvaCptCee,RIvaCptSosp,RIvaCliCee,RIvaArt,RIvaInt,RIvaCh,RIvaRCharge,RIvaFteP) values (@RIvaAnno,@RIvaNReg,@RIvaSL,@RIvaNumFog,@RIvaTipo,@RIvaPRata,@RIvaDesc,@RIvaCpt,@RIvaAutoFCee,@RIvaCptCee,@RIvaCptSosp,@RIvaCliCee,@RIvaArt,@RIvaInt,@RIvaCh,@RIvaRCharge,@RIvaFteP)"
+            Str = "Insert into TbRegIva (RIvaAnno,RIvaNReg,RIvaSL,RIvaNumFog,RIvaTipo,RIvaPRata,RIvaDesc,RIvaCpt,RIvaAutoFCee,RIvaCptCee,RIvaCptSosp,RIvaCliCee,RIvaArt,RIvaInt,RIvaCh,RIvaRCharge,RIvaFteP,RIvaTipoDoc) values (@RIvaAnno,@RIvaNReg,@RIvaSL,@RIvaNumFog,@RIvaTipo,@RIvaPRata,@RIvaDesc,@RIvaCpt,@RIvaAutoFCee,@RIvaCptCee,@RIvaCptSosp,@RIvaCliCee,@RIvaArt,@RIvaInt,@RIvaCh,@RIvaRCharge,@RIvaFteP,@RIvaTipoDoc)"
         Else
-            Str = "Update TbRegIva set RIvaSL=@RIvaSL,RIvaNumFog=@RIvaNumFog,RIvaTipo=@RIvaTipo,RIvaPRata=@RIvaPRata,RIvaDesc=@RIvaDesc,RIvaCpt=@RIvaCpt,RIvaAutoFCee=@RIvaAutoFCee,RIvaCptCee=@RIvaCptCee,RIvaCptSosp=@RIvaCptSosp,RIvaCliCee=@RIvaCliCee,RIvaArt=@RIvaArt,RIvaInt=@RIvaInt,RIvaCh=@RIvaCh,RIvaRCharge=@RIvaRCharge,RIvaFteP=@RIvaFteP where RIvaAnno=@RIvaAnno and RIvaNReg=@RIvaNReg"
+            Str = "Update TbRegIva set RIvaSL=@RIvaSL,RIvaNumFog=@RIvaNumFog,RIvaTipo=@RIvaTipo,RIvaPRata=@RIvaPRata,RIvaDesc=@RIvaDesc,RIvaCpt=@RIvaCpt,RIvaAutoFCee=@RIvaAutoFCee,RIvaCptCee=@RIvaCptCee,RIvaCptSosp=@RIvaCptSosp,RIvaCliCee=@RIvaCliCee,RIvaArt=@RIvaArt,RIvaInt=@RIvaInt,RIvaCh=@RIvaCh,RIvaRCharge=@RIvaRCharge,RIvaFteP=@RIvaFteP,RIvaTipoDoc=@RIvaTipoDoc where RIvaAnno=@RIvaAnno and RIvaNReg=@RIvaNReg"
         End If
         Dim Cmd As New SqlCommand(Str, cnCo)
 
@@ -225,6 +237,7 @@ Public Class DxRegIva
         Dim p15 As New SqlParameter("@RIvaCh", SqlDbType.Bit)
         Dim p16 As New SqlParameter("@RIvaRCharge", SqlDbType.Bit)
         Dim p17 As New SqlParameter("@RIvaFteP", SqlDbType.Bit)
+        Dim p18 As New SqlParameter("@RIvaTipoDoc", SqlDbType.VarChar)
 
         p1.Value = ComboBoxEdit1.EditValue
         p2.Value = TextEdit101.EditValue
@@ -243,6 +256,7 @@ Public Class DxRegIva
         p15.Value = CheckEdit3.Checked
         p16.Value = CheckEdit4.Checked
         p17.Value = CheckEdit5.Checked
+        p18.Value = Mid(ComboBoxEdit4.EditValue, 1, 4) 'ComboBox4.SelectedIndex
         Cmd.Parameters.Add(p1)
         Cmd.Parameters.Add(p2)
         Cmd.Parameters.Add(p3)
@@ -260,6 +274,7 @@ Public Class DxRegIva
         Cmd.Parameters.Add(p15)
         Cmd.Parameters.Add(p16)
         Cmd.Parameters.Add(p17)
+        Cmd.Parameters.Add(p18)
         Cmd.ExecuteNonQuery()
 
         Dim Anno As Int16 = ComboBoxEdit1.SelectedIndex

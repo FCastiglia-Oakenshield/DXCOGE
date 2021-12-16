@@ -14,35 +14,43 @@ Public Class DxStProQuo
     Dim tt5 As Decimal = 0
     Dim tt6 As Decimal = 0
     Private Sub XrTableCell16_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles XrTableCell16.BeforePrint
+        If XrTableCell16.Text = "" Then Exit Sub
         If CDec(XrTableCell16.Text) = 0 Then XrTableCell16.Text = ""
     End Sub
     Private Sub XrTableCell18_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles XrTableCell18.BeforePrint
+        If XrTableCell18.Text = "" Then Exit Sub
         If CDec(XrTableCell18.Text) = 0 Then XrTableCell18.Text = ""
     End Sub
     Private Sub XrTableCell19_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles XrTableCell19.BeforePrint
+        If XrTableCell19.Text = "" Then Exit Sub
         t1 += CDec(XrTableCell19.Text)
         tt1 += CDec(XrTableCell19.Text)
     End Sub
     Private Sub XrTableCell20_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles XrTableCell20.BeforePrint
+        If XrTableCell20.Text = "" Then Exit Sub
         t2 += CDec(XrTableCell20.Text)
         tt2 += CDec(XrTableCell20.Text)
     End Sub
     Private Sub XrTableCell22_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles XrTableCell22.BeforePrint
+        If XrTableCell22.Text = "" Then Exit Sub
         t3 += CDec(XrTableCell22.Text)
         tt3 += CDec(XrTableCell22.Text)
         If CDec(XrTableCell22.Text) = 0 Then XrTableCell22.Text = ""
     End Sub
     Private Sub XrTableCell23_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles XrTableCell23.BeforePrint
+        If XrTableCell23.Text = "" Then Exit Sub
         t4 += CDec(XrTableCell23.Text)
         tt4 += CDec(XrTableCell23.Text)
         If CDec(XrTableCell23.Text) = 0 Then XrTableCell23.Text = ""
     End Sub
     Private Sub XrTableCell24_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles XrTableCell24.BeforePrint
+        If XrTableCell24.Text = "" Then Exit Sub
         t5 += CDec(XrTableCell24.Text)
         tt5 += CDec(XrTableCell24.Text)
         If CDec(XrTableCell24.Text) = 0 Then XrTableCell24.Text = ""
     End Sub
     Private Sub XrTableCell25_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles XrTableCell25.BeforePrint
+        If XrTableCell25.Text = "" Then Exit Sub
         t6 += CDec(XrTableCell25.Text)
         tt6 += CDec(XrTableCell25.Text)
         If CDec(XrTableCell25.Text) = 0 Then XrTableCell25.Text = ""

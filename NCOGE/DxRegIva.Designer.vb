@@ -40,6 +40,8 @@ Partial Class DxRegIva
         Me.CheckEdit1 = New DevExpress.XtraEditors.CheckEdit()
         Me.CheckEdit2 = New DevExpress.XtraEditors.CheckEdit()
         Me.GroupControl11 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl14 = New DevExpress.XtraEditors.GroupControl()
+        Me.ComboBoxEdit4 = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.GroupControl12 = New DevExpress.XtraEditors.GroupControl()
         Me.ComboBoxEdit3 = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
@@ -111,6 +113,9 @@ Partial Class DxRegIva
         CType(Me.CheckEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl11.SuspendLayout()
+        CType(Me.GroupControl14, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl14.SuspendLayout()
+        CType(Me.ComboBoxEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl12.SuspendLayout()
         CType(Me.ComboBoxEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -519,10 +524,10 @@ Partial Class DxRegIva
         Me.GroupControlC.Controls.Add(Me.GroupContro4)
         Me.GroupControlC.Controls.Add(Me.GroupControl2)
         Me.GroupControlC.Controls.Add(Me.GroupControl1)
-        Me.GroupControlC.Location = New System.Drawing.Point(52, 43)
+        Me.GroupControlC.Location = New System.Drawing.Point(52, 6)
         Me.GroupControlC.Name = "GroupControlC"
         Me.GroupControlC.ShowCaption = False
-        Me.GroupControlC.Size = New System.Drawing.Size(895, 560)
+        Me.GroupControlC.Size = New System.Drawing.Size(939, 632)
         Me.GroupControlC.TabIndex = 0
         Me.GroupControlC.Text = "GroupControl1"
         '
@@ -531,7 +536,7 @@ Partial Class DxRegIva
         Me.GroupControl6.Controls.Add(Me.ComboBoxEdit1)
         Me.GroupControl6.Location = New System.Drawing.Point(7, 7)
         Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(74, 43)
+        Me.GroupControl6.Size = New System.Drawing.Size(74, 48)
         Me.GroupControl6.TabIndex = 0
         Me.GroupControl6.Text = "ANNO"
         '
@@ -540,7 +545,7 @@ Partial Class DxRegIva
         Me.ComboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit1.EnterMoveNextControl = True
-        Me.ComboBoxEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit1.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit1.Name = "ComboBoxEdit1"
         Me.ComboBoxEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxEdit1.Properties.Appearance.Options.UseFont = True
@@ -557,7 +562,7 @@ Partial Class DxRegIva
         Me.GroupControl7.Controls.Add(Me.TbLeggi0)
         Me.GroupControl7.Location = New System.Drawing.Point(84, 7)
         Me.GroupControl7.Name = "GroupControl7"
-        Me.GroupControl7.Size = New System.Drawing.Size(335, 43)
+        Me.GroupControl7.Size = New System.Drawing.Size(335, 48)
         Me.GroupControl7.TabIndex = 1
         Me.GroupControl7.Text = "NR. REGISTRO  e  DESCRIZIONE"
         '
@@ -566,7 +571,7 @@ Partial Class DxRegIva
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EditValue = ""
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit2.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit2.Properties.Appearance.Options.UseFont = True
@@ -581,7 +586,7 @@ Partial Class DxRegIva
         Me.TextEdit101.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit101.EditValue = ""
         Me.TextEdit101.EnterMoveNextControl = True
-        Me.TextEdit101.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit101.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit101.Name = "TextEdit101"
         Me.TextEdit101.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit101.Properties.Appearance.Options.UseFont = True
@@ -595,7 +600,7 @@ Partial Class DxRegIva
         'TbLeggi0
         '
         Me.TbLeggi0.EnterMoveNextControl = True
-        Me.TbLeggi0.Location = New System.Drawing.Point(17, 22)
+        Me.TbLeggi0.Location = New System.Drawing.Point(17, 26)
         Me.TbLeggi0.Name = "TbLeggi0"
         Me.TbLeggi0.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TbLeggi0.Properties.Appearance.Options.UseFont = True
@@ -612,10 +617,10 @@ Partial Class DxRegIva
         Me.GroupContro4.Controls.Add(Me.ButtonF11)
         Me.GroupContro4.Controls.Add(Me.ButtonF3)
         Me.GroupContro4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupContro4.Location = New System.Drawing.Point(850, 2)
+        Me.GroupContro4.Location = New System.Drawing.Point(889, 2)
         Me.GroupContro4.Name = "GroupContro4"
         Me.GroupContro4.ShowCaption = False
-        Me.GroupContro4.Size = New System.Drawing.Size(43, 241)
+        Me.GroupContro4.Size = New System.Drawing.Size(48, 288)
         Me.GroupContro4.TabIndex = 3
         Me.GroupContro4.Text = "GroupControl3"
         '
@@ -629,10 +634,10 @@ Partial Class DxRegIva
         Me.ButtonF8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF8.ImageIndex = 7
-        Me.ButtonF8.ImageList = Me.ImageList32
-        Me.ButtonF8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF8.Location = New System.Drawing.Point(7, 184)
+        Me.ButtonF8.ImageOptions.ImageIndex = 7
+        Me.ButtonF8.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF8.Location = New System.Drawing.Point(7, 226)
         Me.ButtonF8.Name = "ButtonF8"
         Me.ButtonF8.Size = New System.Drawing.Size(32, 32)
         Me.ButtonF8.TabIndex = 3
@@ -649,10 +654,10 @@ Partial Class DxRegIva
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF5.Location = New System.Drawing.Point(7, 74)
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.Location = New System.Drawing.Point(7, 84)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
         Me.ButtonF5.TabIndex = 1
@@ -669,10 +674,10 @@ Partial Class DxRegIva
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF11.Location = New System.Drawing.Point(7, 19)
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.Location = New System.Drawing.Point(7, 13)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
         Me.ButtonF11.TabIndex = 0
@@ -686,10 +691,10 @@ Partial Class DxRegIva
         Me.ButtonF3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF3.ImageIndex = 2
-        Me.ButtonF3.ImageList = Me.ImageList32
-        Me.ButtonF3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF3.Location = New System.Drawing.Point(7, 129)
+        Me.ButtonF3.ImageOptions.ImageIndex = 2
+        Me.ButtonF3.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF3.Location = New System.Drawing.Point(7, 155)
         Me.ButtonF3.Name = "ButtonF3"
         Me.ButtonF3.Size = New System.Drawing.Size(32, 32)
         Me.ButtonF3.TabIndex = 2
@@ -710,7 +715,7 @@ Partial Class DxRegIva
         Me.GroupControl2.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.ShowCaption = False
-        Me.GroupControl2.Size = New System.Drawing.Size(848, 241)
+        Me.GroupControl2.Size = New System.Drawing.Size(887, 288)
         Me.GroupControl2.TabIndex = 2
         Me.GroupControl2.Text = "GroupControl2"
         '
@@ -721,93 +726,124 @@ Partial Class DxRegIva
         Me.GroupControl13.Controls.Add(Me.CheckEdit4)
         Me.GroupControl13.Controls.Add(Me.CheckEdit1)
         Me.GroupControl13.Controls.Add(Me.CheckEdit2)
-        Me.GroupControl13.Location = New System.Drawing.Point(340, 53)
+        Me.GroupControl13.Location = New System.Drawing.Point(340, 59)
         Me.GroupControl13.Name = "GroupControl13"
         Me.GroupControl13.ShowCaption = False
-        Me.GroupControl13.Size = New System.Drawing.Size(154, 172)
+        Me.GroupControl13.Size = New System.Drawing.Size(154, 187)
         Me.GroupControl13.TabIndex = 3
         Me.GroupControl13.Text = "NR. FOGLI"
         '
         'CheckEdit5
         '
         Me.CheckEdit5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckEdit5.Location = New System.Drawing.Point(8, 144)
+        Me.CheckEdit5.EnterMoveNextControl = True
+        Me.CheckEdit5.Location = New System.Drawing.Point(8, 145)
         Me.CheckEdit5.Name = "CheckEdit5"
         Me.CheckEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckEdit5.Properties.Appearance.Options.UseFont = True
         Me.CheckEdit5.Properties.Caption = "FTE PASSIVA"
         Me.CheckEdit5.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.CheckEdit5.Size = New System.Drawing.Size(130, 19)
+        Me.CheckEdit5.Size = New System.Drawing.Size(130, 20)
         Me.CheckEdit5.TabIndex = 4
         Me.CheckEdit5.ToolTip = "VISUALIZZA FATTURA ELETTRONICA PASSIVA"
         '
         'CheckEdit3
         '
         Me.CheckEdit3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckEdit3.Location = New System.Drawing.Point(8, 51)
+        Me.CheckEdit3.EnterMoveNextControl = True
+        Me.CheckEdit3.Location = New System.Drawing.Point(8, 52)
         Me.CheckEdit3.Name = "CheckEdit3"
         Me.CheckEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckEdit3.Properties.Appearance.Options.UseFont = True
         Me.CheckEdit3.Properties.Caption = "CHIUSURA"
         Me.CheckEdit3.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.CheckEdit3.Size = New System.Drawing.Size(130, 19)
+        Me.CheckEdit3.Size = New System.Drawing.Size(130, 20)
         Me.CheckEdit3.TabIndex = 1
         '
         'CheckEdit4
         '
         Me.CheckEdit4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckEdit4.Location = New System.Drawing.Point(8, 113)
+        Me.CheckEdit4.EnterMoveNextControl = True
+        Me.CheckEdit4.Location = New System.Drawing.Point(8, 114)
         Me.CheckEdit4.Name = "CheckEdit4"
         Me.CheckEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckEdit4.Properties.Appearance.Options.UseFont = True
         Me.CheckEdit4.Properties.Caption = "REVERSE CHARGE"
         Me.CheckEdit4.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.CheckEdit4.Size = New System.Drawing.Size(130, 19)
+        Me.CheckEdit4.Size = New System.Drawing.Size(130, 20)
         Me.CheckEdit4.TabIndex = 3
         '
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckEdit1.Location = New System.Drawing.Point(8, 82)
+        Me.CheckEdit1.EnterMoveNextControl = True
+        Me.CheckEdit1.Location = New System.Drawing.Point(8, 83)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckEdit1.Properties.Appearance.Options.UseFont = True
         Me.CheckEdit1.Properties.Caption = "SOGGETTO PRORATA"
         Me.CheckEdit1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.CheckEdit1.Size = New System.Drawing.Size(130, 19)
+        Me.CheckEdit1.Size = New System.Drawing.Size(130, 20)
         Me.CheckEdit1.TabIndex = 2
         '
         'CheckEdit2
         '
         Me.CheckEdit2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckEdit2.Location = New System.Drawing.Point(8, 20)
+        Me.CheckEdit2.EnterMoveNextControl = True
+        Me.CheckEdit2.Location = New System.Drawing.Point(8, 21)
         Me.CheckEdit2.Name = "CheckEdit2"
         Me.CheckEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckEdit2.Properties.Appearance.Options.UseFont = True
         Me.CheckEdit2.Properties.Caption = "INTESTAZIONE"
         Me.CheckEdit2.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.CheckEdit2.Size = New System.Drawing.Size(130, 19)
+        Me.CheckEdit2.Size = New System.Drawing.Size(130, 20)
         Me.CheckEdit2.TabIndex = 0
         '
         'GroupControl11
         '
         Me.GroupControl11.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupControl11.AppearanceCaption.Options.UseFont = True
+        Me.GroupControl11.Controls.Add(Me.GroupControl14)
         Me.GroupControl11.Controls.Add(Me.GroupControl12)
         Me.GroupControl11.Controls.Add(Me.GroupControl3)
         Me.GroupControl11.Controls.Add(Me.GroupControl4)
-        Me.GroupControl11.Location = New System.Drawing.Point(499, 53)
+        Me.GroupControl11.Location = New System.Drawing.Point(499, 59)
         Me.GroupControl11.Name = "GroupControl11"
-        Me.GroupControl11.Size = New System.Drawing.Size(342, 172)
+        Me.GroupControl11.Size = New System.Drawing.Size(380, 230)
         Me.GroupControl11.TabIndex = 5
         Me.GroupControl11.Text = "AUTOFATTURE CEE e REVERSE CHARGE"
+        '
+        'GroupControl14
+        '
+        Me.GroupControl14.Controls.Add(Me.ComboBoxEdit4)
+        Me.GroupControl14.Location = New System.Drawing.Point(6, 177)
+        Me.GroupControl14.Name = "GroupControl14"
+        Me.GroupControl14.Size = New System.Drawing.Size(370, 48)
+        Me.GroupControl14.TabIndex = 3
+        Me.GroupControl14.Text = "TIPO DOCUMENTO"
+        '
+        'ComboBoxEdit4
+        '
+        Me.ComboBoxEdit4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ComboBoxEdit4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComboBoxEdit4.EnterMoveNextControl = True
+        Me.ComboBoxEdit4.Location = New System.Drawing.Point(2, 23)
+        Me.ComboBoxEdit4.Name = "ComboBoxEdit4"
+        Me.ComboBoxEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBoxEdit4.Properties.Appearance.Options.UseFont = True
+        Me.ComboBoxEdit4.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.ComboBoxEdit4.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.ComboBoxEdit4.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.ComboBoxEdit4.Properties.Items.AddRange(New Object() {"", "TD17 Integrazione per Acquisto servizi dall'estero", "TD18 Integrazione per Acquisto di beni intracomunitari", "TD19 Integrazione per acquisto di beni ex art.17,c.2 D.P.R. 633/1972"})
+        Me.ComboBoxEdit4.Size = New System.Drawing.Size(366, 22)
+        Me.ComboBoxEdit4.TabIndex = 0
         '
         'GroupControl12
         '
         Me.GroupControl12.Controls.Add(Me.ComboBoxEdit3)
         Me.GroupControl12.Location = New System.Drawing.Point(5, 26)
         Me.GroupControl12.Name = "GroupControl12"
-        Me.GroupControl12.Size = New System.Drawing.Size(330, 43)
+        Me.GroupControl12.Size = New System.Drawing.Size(370, 48)
         Me.GroupControl12.TabIndex = 0
         Me.GroupControl12.Text = "NR. REGISTRO AUTOFATTURE CEE o REVERSE CHARGE"
         '
@@ -816,14 +852,14 @@ Partial Class DxRegIva
         Me.ComboBoxEdit3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit3.EnterMoveNextControl = True
-        Me.ComboBoxEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit3.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit3.Name = "ComboBoxEdit3"
         Me.ComboBoxEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxEdit3.Properties.Appearance.Options.UseFont = True
         Me.ComboBoxEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.ComboBoxEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.ComboBoxEdit3.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.ComboBoxEdit3.Size = New System.Drawing.Size(326, 22)
+        Me.ComboBoxEdit3.Size = New System.Drawing.Size(366, 22)
         Me.ComboBoxEdit3.TabIndex = 0
         '
         'GroupControl3
@@ -833,7 +869,7 @@ Partial Class DxRegIva
         Me.GroupControl3.Controls.Add(Me.TbLeggi2)
         Me.GroupControl3.Location = New System.Drawing.Point(5, 75)
         Me.GroupControl3.Name = "GroupControl3"
-        Me.GroupControl3.Size = New System.Drawing.Size(330, 43)
+        Me.GroupControl3.Size = New System.Drawing.Size(370, 48)
         Me.GroupControl3.TabIndex = 1
         Me.GroupControl3.Text = "CONTO  PER AUTOFATTURE CEE o REVERSE CHARGE"
         '
@@ -842,7 +878,7 @@ Partial Class DxRegIva
         Me.TextEdit5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit5.EditValue = ""
         Me.TextEdit5.EnterMoveNextControl = True
-        Me.TextEdit5.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit5.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit5.Properties.Appearance.Options.UseFont = True
@@ -850,7 +886,7 @@ Partial Class DxRegIva
         Me.TextEdit5.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit5.Properties.MaxLength = 32
         Me.TextEdit5.Properties.ReadOnly = True
-        Me.TextEdit5.Size = New System.Drawing.Size(283, 22)
+        Me.TextEdit5.Size = New System.Drawing.Size(323, 22)
         Me.TextEdit5.TabIndex = 1
         Me.TextEdit5.TabStop = False
         '
@@ -859,7 +895,7 @@ Partial Class DxRegIva
         Me.TextEdit6.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit6.EditValue = ""
         Me.TextEdit6.EnterMoveNextControl = True
-        Me.TextEdit6.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit6.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit6.Name = "TextEdit6"
         Me.TextEdit6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit6.Properties.Appearance.Options.UseFont = True
@@ -873,7 +909,7 @@ Partial Class DxRegIva
         'TbLeggi2
         '
         Me.TbLeggi2.EnterMoveNextControl = True
-        Me.TbLeggi2.Location = New System.Drawing.Point(17, 22)
+        Me.TbLeggi2.Location = New System.Drawing.Point(17, 26)
         Me.TbLeggi2.Name = "TbLeggi2"
         Me.TbLeggi2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TbLeggi2.Properties.Appearance.Options.UseFont = True
@@ -888,9 +924,9 @@ Partial Class DxRegIva
         Me.GroupControl4.Controls.Add(Me.TextEdit10)
         Me.GroupControl4.Controls.Add(Me.TextEdit9)
         Me.GroupControl4.Controls.Add(Me.TbLeggi4)
-        Me.GroupControl4.Location = New System.Drawing.Point(7, 127)
+        Me.GroupControl4.Location = New System.Drawing.Point(7, 126)
         Me.GroupControl4.Name = "GroupControl4"
-        Me.GroupControl4.Size = New System.Drawing.Size(330, 43)
+        Me.GroupControl4.Size = New System.Drawing.Size(370, 48)
         Me.GroupControl4.TabIndex = 2
         Me.GroupControl4.Text = "CLIENTE PER AUTOFATTURE CEE o REVERSE CHARGE"
         '
@@ -899,7 +935,7 @@ Partial Class DxRegIva
         Me.TextEdit10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit10.EditValue = ""
         Me.TextEdit10.EnterMoveNextControl = True
-        Me.TextEdit10.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit10.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit10.Name = "TextEdit10"
         Me.TextEdit10.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit10.Properties.Appearance.Options.UseFont = True
@@ -907,7 +943,7 @@ Partial Class DxRegIva
         Me.TextEdit10.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit10.Properties.MaxLength = 32
         Me.TextEdit10.Properties.ReadOnly = True
-        Me.TextEdit10.Size = New System.Drawing.Size(283, 22)
+        Me.TextEdit10.Size = New System.Drawing.Size(323, 22)
         Me.TextEdit10.TabIndex = 1
         Me.TextEdit10.TabStop = False
         '
@@ -916,7 +952,7 @@ Partial Class DxRegIva
         Me.TextEdit9.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit9.EditValue = ""
         Me.TextEdit9.EnterMoveNextControl = True
-        Me.TextEdit9.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit9.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit9.Name = "TextEdit9"
         Me.TextEdit9.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit9.Properties.Appearance.Options.UseFont = True
@@ -933,7 +969,7 @@ Partial Class DxRegIva
         'TbLeggi4
         '
         Me.TbLeggi4.EnterMoveNextControl = True
-        Me.TbLeggi4.Location = New System.Drawing.Point(17, 22)
+        Me.TbLeggi4.Location = New System.Drawing.Point(17, 25)
         Me.TbLeggi4.Name = "TbLeggi4"
         Me.TbLeggi4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TbLeggi4.Properties.Appearance.Options.UseFont = True
@@ -946,9 +982,9 @@ Partial Class DxRegIva
         'GroupControl10
         '
         Me.GroupControl10.Controls.Add(Me.TextEdit102)
-        Me.GroupControl10.Location = New System.Drawing.Point(773, 5)
+        Me.GroupControl10.Location = New System.Drawing.Point(802, 5)
         Me.GroupControl10.Name = "GroupControl10"
-        Me.GroupControl10.Size = New System.Drawing.Size(68, 43)
+        Me.GroupControl10.Size = New System.Drawing.Size(77, 46)
         Me.GroupControl10.TabIndex = 2
         Me.GroupControl10.Text = "NR. FOGLI"
         '
@@ -957,7 +993,7 @@ Partial Class DxRegIva
         Me.TextEdit102.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit102.EditValue = ""
         Me.TextEdit102.EnterMoveNextControl = True
-        Me.TextEdit102.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit102.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit102.Name = "TextEdit102"
         Me.TextEdit102.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit102.Properties.Appearance.Options.UseFont = True
@@ -967,7 +1003,7 @@ Partial Class DxRegIva
         Me.TextEdit102.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit102.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextEdit102.Properties.MaxLength = 3
-        Me.TextEdit102.Size = New System.Drawing.Size(64, 22)
+        Me.TextEdit102.Size = New System.Drawing.Size(73, 22)
         Me.TextEdit102.TabIndex = 0
         '
         'GroupControl9
@@ -975,7 +1011,7 @@ Partial Class DxRegIva
         Me.GroupControl9.Controls.Add(Me.TextEdit1)
         Me.GroupControl9.Location = New System.Drawing.Point(673, 5)
         Me.GroupControl9.Name = "GroupControl9"
-        Me.GroupControl9.Size = New System.Drawing.Size(94, 43)
+        Me.GroupControl9.Size = New System.Drawing.Size(123, 46)
         Me.GroupControl9.TabIndex = 1
         Me.GroupControl9.Text = "SERIE LETTERALE"
         '
@@ -984,7 +1020,7 @@ Partial Class DxRegIva
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EditValue = ""
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit1.Properties.Appearance.Options.UseFont = True
@@ -994,7 +1030,7 @@ Partial Class DxRegIva
         Me.TextEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit1.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextEdit1.Properties.MaxLength = 5
-        Me.TextEdit1.Size = New System.Drawing.Size(90, 22)
+        Me.TextEdit1.Size = New System.Drawing.Size(119, 22)
         Me.TextEdit1.TabIndex = 0
         '
         'GroupControl8
@@ -1002,7 +1038,7 @@ Partial Class DxRegIva
         Me.GroupControl8.Controls.Add(Me.ComboBoxEdit2)
         Me.GroupControl8.Location = New System.Drawing.Point(425, 5)
         Me.GroupControl8.Name = "GroupControl8"
-        Me.GroupControl8.Size = New System.Drawing.Size(244, 43)
+        Me.GroupControl8.Size = New System.Drawing.Size(244, 46)
         Me.GroupControl8.TabIndex = 0
         Me.GroupControl8.Text = "TIPO REGISTRO"
         '
@@ -1011,7 +1047,7 @@ Partial Class DxRegIva
         Me.ComboBoxEdit2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit2.EnterMoveNextControl = True
-        Me.ComboBoxEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit2.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit2.Name = "ComboBoxEdit2"
         Me.ComboBoxEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxEdit2.Properties.Appearance.Options.UseFont = True
@@ -1027,9 +1063,9 @@ Partial Class DxRegIva
         Me.GroupControl5.Controls.Add(Me.TextEdit7)
         Me.GroupControl5.Controls.Add(Me.TextEdit8)
         Me.GroupControl5.Controls.Add(Me.TbLeggi3)
-        Me.GroupControl5.Location = New System.Drawing.Point(5, 117)
+        Me.GroupControl5.Location = New System.Drawing.Point(5, 127)
         Me.GroupControl5.Name = "GroupControl5"
-        Me.GroupControl5.Size = New System.Drawing.Size(330, 43)
+        Me.GroupControl5.Size = New System.Drawing.Size(330, 48)
         Me.GroupControl5.TabIndex = 7
         Me.GroupControl5.Text = "CONTO IVA IN SOSPENSIONE"
         '
@@ -1038,7 +1074,7 @@ Partial Class DxRegIva
         Me.TextEdit7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit7.EditValue = ""
         Me.TextEdit7.EnterMoveNextControl = True
-        Me.TextEdit7.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit7.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit7.Name = "TextEdit7"
         Me.TextEdit7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit7.Properties.Appearance.Options.UseFont = True
@@ -1055,7 +1091,7 @@ Partial Class DxRegIva
         Me.TextEdit8.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit8.EditValue = ""
         Me.TextEdit8.EnterMoveNextControl = True
-        Me.TextEdit8.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit8.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit8.Name = "TextEdit8"
         Me.TextEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit8.Properties.Appearance.Options.UseFont = True
@@ -1069,7 +1105,7 @@ Partial Class DxRegIva
         'TbLeggi3
         '
         Me.TbLeggi3.EnterMoveNextControl = True
-        Me.TbLeggi3.Location = New System.Drawing.Point(17, 22)
+        Me.TbLeggi3.Location = New System.Drawing.Point(17, 26)
         Me.TbLeggi3.Name = "TbLeggi3"
         Me.TbLeggi3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TbLeggi3.Properties.Appearance.Options.UseFont = True
@@ -1082,9 +1118,9 @@ Partial Class DxRegIva
         'GroupControl87
         '
         Me.GroupControl87.Controls.Add(Me.ImageComboBoxEdit2)
-        Me.GroupControl87.Location = New System.Drawing.Point(5, 181)
+        Me.GroupControl87.Location = New System.Drawing.Point(5, 198)
         Me.GroupControl87.Name = "GroupControl87"
-        Me.GroupControl87.Size = New System.Drawing.Size(330, 44)
+        Me.GroupControl87.Size = New System.Drawing.Size(330, 48)
         Me.GroupControl87.TabIndex = 6
         Me.GroupControl87.Text = "CAUSALE GIROCONTO IVA CORRISPETTIVI"
         '
@@ -1093,7 +1129,7 @@ Partial Class DxRegIva
         Me.ImageComboBoxEdit2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit2.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit2.Name = "ImageComboBoxEdit2"
         Me.ImageComboBoxEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImageComboBoxEdit2.Properties.Appearance.Options.UseFont = True
@@ -1110,9 +1146,9 @@ Partial Class DxRegIva
         Me.GroupControl33.Controls.Add(Me.TextEdit4)
         Me.GroupControl33.Controls.Add(Me.TextEdit3)
         Me.GroupControl33.Controls.Add(Me.TbLeggi1)
-        Me.GroupControl33.Location = New System.Drawing.Point(5, 53)
+        Me.GroupControl33.Location = New System.Drawing.Point(5, 60)
         Me.GroupControl33.Name = "GroupControl33"
-        Me.GroupControl33.Size = New System.Drawing.Size(330, 43)
+        Me.GroupControl33.Size = New System.Drawing.Size(330, 48)
         Me.GroupControl33.TabIndex = 4
         Me.GroupControl33.Text = "CONTO I.V.A."
         '
@@ -1121,7 +1157,7 @@ Partial Class DxRegIva
         Me.TextEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit4.EditValue = ""
         Me.TextEdit4.EnterMoveNextControl = True
-        Me.TextEdit4.Location = New System.Drawing.Point(45, 21)
+        Me.TextEdit4.Location = New System.Drawing.Point(45, 23)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit4.Properties.Appearance.Options.UseFont = True
@@ -1138,7 +1174,7 @@ Partial Class DxRegIva
         Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit3.EditValue = ""
         Me.TextEdit3.EnterMoveNextControl = True
-        Me.TextEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit3.Properties.Appearance.Options.UseFont = True
@@ -1152,7 +1188,7 @@ Partial Class DxRegIva
         'TbLeggi1
         '
         Me.TbLeggi1.EnterMoveNextControl = True
-        Me.TbLeggi1.Location = New System.Drawing.Point(17, 22)
+        Me.TbLeggi1.Location = New System.Drawing.Point(17, 26)
         Me.TbLeggi1.Name = "TbLeggi1"
         Me.TbLeggi1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TbLeggi1.Properties.Appearance.Options.UseFont = True
@@ -1166,10 +1202,10 @@ Partial Class DxRegIva
         '
         Me.GroupControl1.Controls.Add(Me.GridControl1)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl1.Location = New System.Drawing.Point(2, 243)
+        Me.GroupControl1.Location = New System.Drawing.Point(2, 290)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(891, 315)
+        Me.GroupControl1.Size = New System.Drawing.Size(935, 340)
         Me.GroupControl1.TabIndex = 4
         Me.GroupControl1.Text = "GroupControl1"
         '
@@ -1178,11 +1214,10 @@ Partial Class DxRegIva
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
         Me.GridControl1.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1, Me.RepositoryItemCheckEdit2, Me.RepositoryItemCheckEdit3})
-        Me.GridControl1.Size = New System.Drawing.Size(887, 311)
+        Me.GridControl1.Size = New System.Drawing.Size(931, 336)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -1429,6 +1464,9 @@ Partial Class DxRegIva
         CType(Me.CheckEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl11.ResumeLayout(False)
+        CType(Me.GroupControl14, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl14.ResumeLayout(False)
+        CType(Me.ComboBoxEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl12, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl12.ResumeLayout(False)
         CType(Me.ComboBoxEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1535,4 +1573,6 @@ Partial Class DxRegIva
     Friend WithEvents RepositoryItemCheckEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
     Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents CheckEdit5 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents GroupControl14 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents ComboBoxEdit4 As DevExpress.XtraEditors.ComboBoxEdit
 End Class

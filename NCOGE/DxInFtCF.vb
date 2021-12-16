@@ -137,6 +137,9 @@ Public Class DxInFtCF
     Dim DaFte As SqlDataAdapter
     Dim TbFte As New DataTable
     Dim FRMFO As New InsFoFte
+    Dim BasePriId As Int32 = 300000000
+    Dim Estera As Boolean = False
+    Dim TD As String = ""
 
     Private Sub DxInFtCF_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown, ButtonF5.Click
         If Sw = 0 Then
@@ -569,6 +572,7 @@ Public Class DxInFtCF
             RwReg("RivaCliCee") = dataRd.Item("RivaCliCee")
             If dataRd.Item("RIvaRCharge") Is DBNull.Value Then RwReg("RivaRcharge") = False Else RwReg("RivaRcharge") = CBool(dataRd.Item("RIvaRCharge"))
             RwReg("RivaFteP") = dataRd.Item("RivaFteP")
+            RwReg("RivaTipoDoc") = dataRd.Item("RivaTipoDoc")
             DsReg.Tables(Ri).Rows.Add(RwReg)
             DsReg.Tables(Ri).AcceptChanges()
 DopoLet:
@@ -590,6 +594,7 @@ DopoLet:
     End Function
     Sub CaricaDati()
         Dim k As Int16
+        Estera = False
         For k = 1 To DsFat.Tables(Fa).Rows.Count()
             RwFat = DsFat.Tables(Fa).Rows(k - 1)
             If k = 1 Then
@@ -600,6 +605,7 @@ DopoLet:
                 TextEdit3.EditValue = RwFat("PriDocEst")
                 TextEdit4.EditValue = Trim(RwFat("PriDesc"))
                 LeggoPagamento()
+                Estera = LeggiFteEstera()
                 RwFat("PriCodPag") = OLDPAGAM
                 TextEdit12.EditValue = RwFat("PriCodPag") '''' PAGAMENTO ERRATO DEVE LEGGERLO DALLA CAUSALE 3 
                 ImageComboBoxEdit3.SelectedIndex = SettaComboImage(ImageComboBoxEdit3, Val(RwFat("PriLinea")))
@@ -617,12 +623,16 @@ DopoLet:
                     DateEdit1.ErrorText = ""
                     ButtonF3.Enabled = True
                 End If
-                If RwFat("PriIvaPrint") = True Then
-                    TextEdit1.ErrorText = "Fattura Stampata sul Registro I.v.a. In Bollo!!!"
+                If Estera = True Then
+                    TextEdit1.ErrorText = "Fattura Inviata ADE!!!"
                     ButtonF3.Enabled = False
                     BolloIva()
-                Else
-                    TextEdit1.ErrorText = ""
+                ElseIf RwFat("PriIvaPrint") = True Then
+                    TextEdit1.ErrorText = "Fattura Stampata sul Registro I.v.a. In Bollo!!!"
+                        ButtonF3.Enabled = False
+                        BolloIva()
+                    Else
+                        TextEdit1.ErrorText = ""
                     ButtonF3.Enabled = True
                     BolloIva()
                 End If
@@ -636,6 +646,17 @@ DopoLet:
         LeggoAnagrafica(TextEdit5.EditValue)
         If OkMondo = True Or OkLDP = True Then CaricaCheck()
     End Sub
+    Function LeggiFteEstera() As Boolean
+        Dim Numrif As Int32 = BasePriId + ProgId
+        Dim NInvio As Boolean = False
+        Dim p1 As New SqlParameter("@FteRif", SqlDbType.Int)
+        p1.Value = Numrif
+        Cmd = New SqlCommand("SELECT COUNT(*) FROM TbFte WHERE FteRif=" & Numrif, cnDb)
+        If Cmd.ExecuteScalar = 0 Then Return False : Exit Function
+        Cmd = New SqlCommand("SELECT FteDaInviare FROM TbFte WHERE FteRif=" & Numrif, cnDb)
+        NInvio = Cmd.ExecuteScalar
+        Return (Not NInvio)
+    End Function
     Sub AzzeraCheck()
         For I As Int16 = 1 To CheckedComboBoxEdit1.Properties.Items.Count
             Em = CheckedComboBoxEdit1.Properties.Items(I - 1)
@@ -644,7 +665,7 @@ DopoLet:
     End Sub
     Sub CaricaCheck()
         AzzeraCheck()
-        Dim Str As String = "select Distinct MccCogLdp from TBMCC where MccPrkid = " & ProgId
+        Dim Str As String = "Select Distinct MccCogLdp from TBMCC where MccPrkid = " & ProgId
         Cmd = New SqlCommand(Str, CnDc)
         dataRd = Cmd.ExecuteReader
         While dataRd.Read
@@ -673,12 +694,12 @@ II:
         TextEdit16.Properties.ReadOnly = Not (ButtonF3.Enabled)
         ImageComboBoxEdit4.Properties.ReadOnly = Not (ButtonF3.Enabled)
         TextEdit19.Properties.ReadOnly = Not (ButtonF3.Enabled)
-        If Causale = 2 Then Exit Sub
-        DateEdit2.Properties.ReadOnly = Not (ButtonF3.Enabled)
-        TextEdit3.Properties.ReadOnly = Not (ButtonF3.Enabled)
+        If Causale = 2 And Estera = False Then Exit Sub
+        DateEdit2.Properties.ReadOnly = Not (ButtonF3.Enabled) '' Data fattura
+        TextEdit3.Properties.ReadOnly = Not (ButtonF3.Enabled) '' Numero fattura
     End Sub
     Sub LeggoFlagCpt()
-        Dim Cmd As New SqlCommand("SELECT PiaFl04,PiaFl08 from TbPia where PiaCodCo = '" & RwFat("Cpt") & "'", cnCo)
+        Dim Cmd As New SqlCommand("Select PiaFl04, PiaFl08 from TbPia where PiaCodCo = '" & RwFat("Cpt") & "'", cnCo)
         dataRd = Cmd.ExecuteReader
         While dataRd.Read
             If dataRd.Item("PiaFl04") > 0 And dataRd.Item("PiaFl04") < 25 Then OLDCSP = 1
@@ -1736,6 +1757,7 @@ RipetiCee:
         Next
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         If RwReg("RIvaFteP") = True And RIFERFTEP > 0 Then RegistraFteP()
+        If Mid(RwReg("RIvaTipoDoc"), 1, 2) = "TD" And Estera = False Then Prepara_FE_EST(ProgId, RwReg("RIvaTipoDoc"))
         ResetIdP()
         '
         AssegnaNPartita()
