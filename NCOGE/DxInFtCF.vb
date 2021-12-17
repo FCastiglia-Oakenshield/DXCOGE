@@ -140,6 +140,7 @@ Public Class DxInFtCF
     Dim BasePriId As Int32 = 300000000
     Dim Estera As Boolean = False
     Dim TD As String = ""
+    Dim DupEst As Boolean = False
 
     Private Sub DxInFtCF_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown, ButtonF5.Click
         If Sw = 0 Then
@@ -182,6 +183,7 @@ Public Class DxInFtCF
         TextEdit12.ErrorText = ""
         Pcod = ""
         OkProt = False
+        DupEst = False
         AbilitaGroup(0)
         OLDPAGAM = 0 : OLDCONTO = "" : OLDTOTAL = 0 : OLDPANNO = 0 : OLDDOCUM = 0 : OLDCSP = 0 : OLDRIT = 0
         Fl04 = 0
@@ -1757,7 +1759,7 @@ RipetiCee:
         Next
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         If RwReg("RIvaFteP") = True And RIFERFTEP > 0 Then RegistraFteP()
-        If Mid(RwReg("RIvaTipoDoc"), 1, 2) = "TD" And Estera = False Then Prepara_FE_EST(ProgId, RwReg("RIvaTipoDoc"))
+        If Mid(RwReg("RIvaTipoDoc"), 1, 2) = "TD" And Estera = False And DupEst = False Then Prepara_FE_EST(ProgId, RwReg("RIvaTipoDoc")) : DupEst = True
         ResetIdP()
         '
         AssegnaNPartita()
@@ -1820,6 +1822,9 @@ DopoScad:
         Partita(0)
         Dim Cancella As String = "BEGIN Delete from TbPri where PriId = " & ProgId & " Delete from TbPrk where PrKId = " & ProgId & " END"
         Dim Dmd As New SqlCommand(Cancella, cnCo)
+        Dmd.ExecuteNonQuery()
+        Cancella = "Delete from TbFte where FteRif = " & ProgId + BasePriId
+        Dmd = New SqlCommand(Cancella, cnDb)
         Dmd.ExecuteNonQuery()
         Dim UPDMONDO As String = "BEGIN Update TbFat Set FatTrasf=0 where FatRif =" & DCGNUMRIF & " Update TbDcg Set DcgTrasf=0 where DcgNumRif =" & DCGNUMRIF & " END"
         Dim Umd As New SqlCommand(UPDMONDO, cnDb)
