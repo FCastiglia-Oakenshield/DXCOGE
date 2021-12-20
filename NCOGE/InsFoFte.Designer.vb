@@ -84,6 +84,8 @@ Partial Class InsFoFte
         Me.TextEdit24 = New DevExpress.XtraEditors.TextEdit()
         Me.GroupControl27 = New DevExpress.XtraEditors.GroupControl()
         Me.ComboBoxEdit4 = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.GroupControl18 = New DevExpress.XtraEditors.GroupControl()
+        Me.TextEdit9 = New DevExpress.XtraEditors.TextEdit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -153,6 +155,9 @@ Partial Class InsFoFte
         CType(Me.GroupControl27, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl27.SuspendLayout()
         CType(Me.ComboBoxEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl18, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl18.SuspendLayout()
+        CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupControl1
@@ -182,7 +187,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit3.EnterMoveNextControl = True
-        Me.TextEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit3.Properties.Appearance.Options.UseFont = True
@@ -206,7 +211,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit2.Properties.Appearance.Options.UseFont = True
@@ -231,7 +236,7 @@ Partial Class InsFoFte
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EditValue = ""
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit1.Properties.Appearance.Options.UseFont = True
@@ -243,6 +248,7 @@ Partial Class InsFoFte
         '
         'GroupControl5
         '
+        Me.GroupControl5.Controls.Add(Me.GroupControl18)
         Me.GroupControl5.Controls.Add(Me.GroupControl8)
         Me.GroupControl5.Controls.Add(Me.GroupControl9)
         Me.GroupControl5.Dock = System.Windows.Forms.DockStyle.Top
@@ -267,7 +273,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit5.EnterMoveNextControl = True
-        Me.TextEdit5.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit5.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit5.Properties.Appearance.Options.UseFont = True
@@ -291,7 +297,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit4.EnterMoveNextControl = True
-        Me.TextEdit4.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit4.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit4.Properties.Appearance.Options.UseFont = True
@@ -328,7 +334,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit8.EnterMoveNextControl = True
-        Me.TextEdit8.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit8.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit8.Name = "TextEdit8"
         Me.TextEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit8.Properties.Appearance.Options.UseFont = True
@@ -354,7 +360,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit7.EnterMoveNextControl = True
-        Me.TextEdit7.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit7.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit7.Name = "TextEdit7"
         Me.TextEdit7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit7.Properties.Appearance.Options.UseFont = True
@@ -378,7 +384,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit6.EnterMoveNextControl = True
-        Me.TextEdit6.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit6.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit6.Name = "TextEdit6"
         Me.TextEdit6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit6.Properties.Appearance.Options.UseFont = True
@@ -406,7 +412,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit00.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit00.EnterMoveNextControl = True
-        Me.TextEdit00.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit00.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit00.Name = "TextEdit00"
         Me.TextEdit00.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit00.Properties.Appearance.Options.UseFont = True
@@ -464,7 +470,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit15.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit15.EnterMoveNextControl = True
-        Me.TextEdit15.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit15.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit15.Name = "TextEdit15"
         Me.TextEdit15.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit15.Properties.Appearance.Options.UseFont = True
@@ -481,7 +487,7 @@ Partial Class InsFoFte
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Caption = "SOGGETTO RITENUTA"
         Me.CheckEdit1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.CheckEdit1.Size = New System.Drawing.Size(136, 19)
+        Me.CheckEdit1.Size = New System.Drawing.Size(136, 20)
         Me.CheckEdit1.TabIndex = 47
         Me.CheckEdit1.TabStop = False
         '
@@ -499,7 +505,7 @@ Partial Class InsFoFte
         '
         Me.TextEdit13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit13.EnterMoveNextControl = True
-        Me.TextEdit13.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit13.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit13.Name = "TextEdit13"
         Me.TextEdit13.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit13.Properties.Appearance.Options.UseFont = True
@@ -543,8 +549,8 @@ Partial Class InsFoFte
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.Image = CType(resources.GetObject("ButtonF11.Image"), System.Drawing.Image)
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.Image = CType(resources.GetObject("ButtonF11.ImageOptions.Image"), System.Drawing.Image)
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(746, 10)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -581,7 +587,7 @@ Partial Class InsFoFte
         '
         Me.BarStaticItem1.Caption = "BarStaticItem1"
         Me.BarStaticItem1.Id = 0
-        Me.BarStaticItem1.ImageIndex = 49
+        Me.BarStaticItem1.ImageOptions.ImageIndex = 49
         Me.BarStaticItem1.ItemAppearance.Normal.Options.UseFont = True
         Me.BarStaticItem1.Name = "BarStaticItem1"
         Me.BarStaticItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
@@ -592,63 +598,55 @@ Partial Class InsFoFte
         Me.BarStaticItem2.Caption = "BarStaticItem2"
         Me.BarStaticItem2.Id = 1
         Me.BarStaticItem2.Name = "BarStaticItem2"
-        Me.BarStaticItem2.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem3
         '
         Me.BarStaticItem3.Caption = "BarStaticItem3"
         Me.BarStaticItem3.Id = 2
         Me.BarStaticItem3.Name = "BarStaticItem3"
-        Me.BarStaticItem3.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem4
         '
         Me.BarStaticItem4.Caption = "BarStaticItem4"
         Me.BarStaticItem4.Id = 3
         Me.BarStaticItem4.Name = "BarStaticItem4"
-        Me.BarStaticItem4.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem5
         '
         Me.BarStaticItem5.Caption = "BarStaticItem5"
         Me.BarStaticItem5.Id = 4
         Me.BarStaticItem5.Name = "BarStaticItem5"
-        Me.BarStaticItem5.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem6
         '
         Me.BarStaticItem6.Caption = "BarStaticItem6"
         Me.BarStaticItem6.Id = 5
         Me.BarStaticItem6.Name = "BarStaticItem6"
-        Me.BarStaticItem6.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem7
         '
         Me.BarStaticItem7.Caption = "BarStaticItem7"
         Me.BarStaticItem7.Id = 6
         Me.BarStaticItem7.Name = "BarStaticItem7"
-        Me.BarStaticItem7.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem8
         '
         Me.BarStaticItem8.Caption = "BarStaticItem8"
         Me.BarStaticItem8.Id = 7
         Me.BarStaticItem8.Name = "BarStaticItem8"
-        Me.BarStaticItem8.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem9
         '
         Me.BarStaticItem9.Caption = "BarStaticItem9"
         Me.BarStaticItem9.Id = 8
         Me.BarStaticItem9.Name = "BarStaticItem9"
-        Me.BarStaticItem9.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarButtonItem1
         '
         Me.BarButtonItem1.Caption = "Richiama"
         Me.BarButtonItem1.Description = "Ultimo Cliente"
         Me.BarButtonItem1.Id = 9
-        Me.BarButtonItem1.ImageIndex = 52
+        Me.BarButtonItem1.ImageOptions.ImageIndex = 52
         Me.BarButtonItem1.Name = "BarButtonItem1"
         Me.BarButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
         Me.BarButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
@@ -658,28 +656,32 @@ Partial Class InsFoFte
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
+        Me.barDockControlTop.Manager = Me.BarManager1
         Me.barDockControlTop.Size = New System.Drawing.Size(782, 0)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 292)
-        Me.barDockControlBottom.Size = New System.Drawing.Size(782, 25)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 295)
+        Me.barDockControlBottom.Manager = Me.BarManager1
+        Me.barDockControlBottom.Size = New System.Drawing.Size(782, 22)
         '
         'barDockControlLeft
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 292)
+        Me.barDockControlLeft.Manager = Me.BarManager1
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 295)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(782, 0)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 292)
+        Me.barDockControlRight.Manager = Me.BarManager1
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 295)
         '
         'GroupControl13
         '
@@ -714,7 +716,7 @@ Partial Class InsFoFte
         Me.TextEdit18.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit18.EditValue = "0123456789012"
         Me.TextEdit18.EnterMoveNextControl = True
-        Me.TextEdit18.Location = New System.Drawing.Point(169, 21)
+        Me.TextEdit18.Location = New System.Drawing.Point(169, 23)
         Me.TextEdit18.Name = "TextEdit18"
         Me.TextEdit18.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit18.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -733,7 +735,7 @@ Partial Class InsFoFte
         Me.TextEdit19.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit19.EditValue = "06500"
         Me.TextEdit19.EnterMoveNextControl = True
-        Me.TextEdit19.Location = New System.Drawing.Point(121, 21)
+        Me.TextEdit19.Location = New System.Drawing.Point(121, 23)
         Me.TextEdit19.Name = "TextEdit19"
         Me.TextEdit19.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit19.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -754,7 +756,7 @@ Partial Class InsFoFte
         Me.TextEdit20.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit20.EditValue = "02008"
         Me.TextEdit20.EnterMoveNextControl = True
-        Me.TextEdit20.Location = New System.Drawing.Point(71, 21)
+        Me.TextEdit20.Location = New System.Drawing.Point(71, 23)
         Me.TextEdit20.Name = "TextEdit20"
         Me.TextEdit20.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit20.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -775,7 +777,7 @@ Partial Class InsFoFte
         Me.TextEdit21.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit21.EditValue = "G"
         Me.TextEdit21.EnterMoveNextControl = True
-        Me.TextEdit21.Location = New System.Drawing.Point(48, 21)
+        Me.TextEdit21.Location = New System.Drawing.Point(48, 23)
         Me.TextEdit21.Name = "TextEdit21"
         Me.TextEdit21.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit21.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -794,7 +796,7 @@ Partial Class InsFoFte
         Me.TextEdit22.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit22.EditValue = "64"
         Me.TextEdit22.EnterMoveNextControl = True
-        Me.TextEdit22.Location = New System.Drawing.Point(25, 21)
+        Me.TextEdit22.Location = New System.Drawing.Point(25, 23)
         Me.TextEdit22.Name = "TextEdit22"
         Me.TextEdit22.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit22.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -815,7 +817,7 @@ Partial Class InsFoFte
         Me.TextEdit23.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit23.EditValue = "IT"
         Me.TextEdit23.EnterMoveNextControl = True
-        Me.TextEdit23.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit23.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit23.Name = "TextEdit23"
         Me.TextEdit23.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit23.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -868,14 +870,14 @@ Partial Class InsFoFte
         Me.MemoEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MemoEdit2.EditValue = ""
         Me.MemoEdit2.EnterMoveNextControl = True
-        Me.MemoEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.MemoEdit2.Location = New System.Drawing.Point(2, 23)
         Me.MemoEdit2.Name = "MemoEdit2"
         Me.MemoEdit2.Properties.AcceptsReturn = False
         Me.MemoEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.MemoEdit2.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.MemoEdit2.Properties.MaxLength = 400
         Me.MemoEdit2.Properties.ReadOnly = True
-        Me.MemoEdit2.Size = New System.Drawing.Size(318, 21)
+        Me.MemoEdit2.Size = New System.Drawing.Size(318, 19)
         Me.MemoEdit2.TabIndex = 2
         Me.MemoEdit2.TabStop = False
         '
@@ -909,7 +911,7 @@ Partial Class InsFoFte
         Me.TextEdit24.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit24.EditValue = ""
         Me.TextEdit24.EnterMoveNextControl = True
-        Me.TextEdit24.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit24.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit24.Name = "TextEdit24"
         Me.TextEdit24.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit24.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -940,7 +942,7 @@ Partial Class InsFoFte
         Me.ComboBoxEdit4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit4.EnterMoveNextControl = True
-        Me.ComboBoxEdit4.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit4.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit4.Name = "ComboBoxEdit4"
         Me.ComboBoxEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxEdit4.Properties.Appearance.Options.UseFont = True
@@ -954,6 +956,30 @@ Partial Class InsFoFte
         Me.ComboBoxEdit4.Properties.ValidateOnEnterKey = True
         Me.ComboBoxEdit4.Size = New System.Drawing.Size(318, 22)
         Me.ComboBoxEdit4.TabIndex = 8
+        '
+        'GroupControl18
+        '
+        Me.GroupControl18.Controls.Add(Me.TextEdit9)
+        Me.GroupControl18.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl18.Location = New System.Drawing.Point(612, 2)
+        Me.GroupControl18.Name = "GroupControl18"
+        Me.GroupControl18.Size = New System.Drawing.Size(170, 44)
+        Me.GroupControl18.TabIndex = 8
+        Me.GroupControl18.Text = "PARTITA IVA ESTERA"
+        '
+        'TextEdit9
+        '
+        Me.TextEdit9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextEdit9.EnterMoveNextControl = True
+        Me.TextEdit9.Location = New System.Drawing.Point(2, 23)
+        Me.TextEdit9.Name = "TextEdit9"
+        Me.TextEdit9.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextEdit9.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit9.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TextEdit9.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TextEdit9.Properties.MaxLength = 20
+        Me.TextEdit9.Size = New System.Drawing.Size(166, 20)
+        Me.TextEdit9.TabIndex = 0
         '
         'InsFoFte
         '
@@ -1042,7 +1068,11 @@ Partial Class InsFoFte
         CType(Me.GroupControl27, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl27.ResumeLayout(False)
         CType(Me.ComboBoxEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl18, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl18.ResumeLayout(False)
+        CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
@@ -1108,4 +1138,6 @@ Partial Class InsFoFte
     Friend WithEvents CheckEdit1 As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents GroupControl25 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents TextEdit24 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents GroupControl18 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents TextEdit9 As DevExpress.XtraEditors.TextEdit
 End Class

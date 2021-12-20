@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 Imports System.IO
 
 Public Class InsFoFte
-    Private Shared FO_PARTITAIVA, FO_CODICEFISCALE, FO_DENOMINAZIONE, FO_COGNOME, FO_NOME, FO_INDIRIZZO, FO_CAP, FO_COMUNE, FO_PROVINCIA, FO_TELEFONO, FO_FAX, FO_EMAIL, FO_IBAN As String
+    Private Shared FO_PARTITAIVA, FO_CODICEFISCALE, FO_DENOMINAZIONE, FO_COGNOME, FO_NOME, FO_INDIRIZZO, FO_CAP, FO_COMUNE, FO_PROVINCIA, FO_TELEFONO, FO_FAX, FO_EMAIL, FO_IBAN, FO_PAESE As String
 
     Public Shared Property NPARTITAIVA As String
         Get
@@ -110,6 +110,14 @@ Public Class InsFoFte
             FO_IBAN = Value
         End Set
     End Property
+    Public Shared Property NPAESE As String
+        Get
+            Return FO_PAESE
+        End Get
+        Set(ByVal Value As String)
+            FO_PAESE = Value
+        End Set
+    End Property
     Structure gruppiclfo
         Dim CliMax As Integer
         Dim al() As Integer
@@ -186,7 +194,14 @@ Public Class InsFoFte
             TextEdit1.Text = Mid(CGNO, 1, 28)
             TextEdit2.Text = Mid(CGNO, 29, 28)
         End If
-        TextEdit3.Text = NPARTITAIVA
+        If FO_PAESE <> "IT" Then
+            TextEdit3.Text = ""
+            TextEdit9.Text = FO_PAESE & NPARTITAIVA
+        Else
+            TextEdit3.Text = NPARTITAIVA
+            TextEdit9.Text = ""
+        End If
+
         TextEdit4.Text = Mid(NINDIRIZZO, 1, 50)
         TextEdit5.Text = NCODICEFISCALE
         TextEdit6.Text = NCAP
@@ -337,7 +352,7 @@ Public Class InsFoFte
         p6.Value = TextEdit7.Text
         p7.Value = TextEdit8.Text
         p8.Value = TextEdit00.Text
-        p11.Value = ""
+        p11.Value = TextEdit9.Text
         p12.Value = TextEdit10.Text
         p13.Value = ""
         p14.Value = ""

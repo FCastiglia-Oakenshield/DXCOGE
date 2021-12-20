@@ -1823,7 +1823,7 @@ DopoScad:
         Dim Cancella As String = "BEGIN Delete from TbPri where PriId = " & ProgId & " Delete from TbPrk where PrKId = " & ProgId & " END"
         Dim Dmd As New SqlCommand(Cancella, cnCo)
         Dmd.ExecuteNonQuery()
-        Cancella = "Delete from TbFte where FteRif = " & ProgId + BasePriId
+        Cancella = "Delete from TbFte where FteRif = " & (ProgId + BasePriId)
         Dmd = New SqlCommand(Cancella, cnDb)
         Dmd.ExecuteNonQuery()
         Dim UPDMONDO As String = "BEGIN Update TbFat Set FatTrasf=0 where FatRif =" & DCGNUMRIF & " Update TbDcg Set DcgTrasf=0 where DcgNumRif =" & DCGNUMRIF & " END"
@@ -2278,6 +2278,7 @@ IIFine:
     Dim CH(13) As Int16
     Dim Finoal As String = ""
     Dim AZ_PARTITAIVA As String = ""
+    Dim FO_PAESE As String = ""
     Dim FO_PARTITAIVA As String = ""
     Dim FO_CODICEFISCALE As String = ""
     Dim FO_DENOMINAZIONE As String = ""
@@ -2553,10 +2554,18 @@ LABELINIT:
 OP:
         Dim QP As Int16 = 0
         REM da fornitore completare se esiste + volte
-        Cmd = New SqlCommand("select count(*) from TbAna where Anagrp='FO' and AnaPiva='" & rw("FtePartiva") & "'", cnVd)
+        Dim Str As String = "select count(*) from TbAna where Anagrp='FO' and AnaPiva='" & rw("FtePartiva") & "'"
+        Dim StrC As String = "select Anacod from TbAna where Anagrp='FO' and AnaPiva='" & rw("FtePartiva") & "'"
+        If FO_PAESE <> "IT" Then
+            Str = "select count(*) from TbAna where Anagrp='FO' and AnaPivaEst='" & FO_PAESE & rw("FtePartiva") & "'"
+            StrC = "select Anacod from TbAna where Anagrp='FO' and AnaPivaEst='" & FO_PAESE & rw("FtePartiva") & "'"
+        End If
+
+
+        Cmd = New SqlCommand(Str, cnVd)
         QP = Cmd.ExecuteScalar
         If QP = 0 Then
-            Messaggio(2, "PARTITA IVA NON IN ARCHIVIO '" & rw("FtePartiva") & "' INSERISCO NUOVO FORNITORE ?")
+            Messaggio(2, "PARTITA IVA NON IN ARCHIVIO '" & FO_PAESE & rw("FtePartiva") & "' INSERISCO NUOVO FORNITORE ?")
             If Rispondi = MsgBoxResult.No Then
                 IngressoFTE()
                 Exit Sub
@@ -2571,7 +2580,7 @@ OP:
             IngressoFTE()
             Exit Sub
         End If
-        Cmd = New SqlCommand("select Anacod from TbAna where Anagrp='FO' and AnaPiva='" & rw("FtePartiva") & "'", cnVd)
+        Cmd = New SqlCommand(StrC, cnVd)
         TextEdit5.EditValue = Cmd.ExecuteScalar
 II:
         Dim NumeroAlfa As String = rw("FteNumero")
@@ -2589,6 +2598,7 @@ II:
 
     Sub CaricaNuovoFornitore()
         FRMFO = New InsFoFte
+        InsFoFte.NPAESE = FO_PAESE
         InsFoFte.NPARTITAIVA = FO_PARTITAIVA
         InsFoFte.NCODICEFISCALE = FO_CODICEFISCALE
         InsFoFte.NDENOMINAZIONE = FO_DENOMINAZIONE
@@ -2607,8 +2617,12 @@ II:
     Function RitornoPivaPlus(AnaPiva) As String
         Dim Tb As DataTable
         Dim ad As SqlDataAdapter
+        Dim Str As String = "Select * from TbAna where Anagrp='FO' and AnaPiva='" & AnaPiva & "'"
+        If FO_PAESE <> "IT" Then
+            Str = "Select * from TbAna where Anagrp='FO' and AnaPivaEst='" & FO_PAESE & AnaPiva & "'"
+        End If
 
-        Cmd = New SqlCommand("select * from TbAna where Anagrp='FO' and AnaPiva='" & AnaPiva & "'", cnVd)
+        Cmd = New SqlCommand(Str, cnVd)
 
         Tb = New DataTable("TbAna")
         ad = New SqlDataAdapter(Cmd)
@@ -2640,7 +2654,7 @@ II:
         PanelControl5.Visible = False : PanelControl6.Visible = False
 
         FO_PARTITAIVA = "" : FO_CODICEFISCALE = "" : FO_DENOMINAZIONE = "" : FO_COGNOME = "" : FO_NOME = "" : FO_INDIRIZZO = "" : FO_CAP = "" : FO_COMUNE = ""
-        FO_PROVINCIA = "" : FO_TELEFONO = "" : FO_FAX = "" : FO_EMAIL = "" : FO_IBAN = ""
+        FO_PROVINCIA = "" : FO_TELEFONO = "" : FO_FAX = "" : FO_EMAIL = "" : FO_IBAN = "" : FO_PAESE = ""
 
 
         If ds.Tables("DatiGeneraliDocumento") IsNot Nothing Then
@@ -2684,6 +2698,8 @@ II:
         If DAT IsNot Nothing Then
             DAT = ECC.ChildNodes(0)
             If DAT IsNot Nothing Then
+                nodes = DAT.GetElementsByTagName("IdPaese")
+                If nodes.Count > 0 Then FO_PAESE = nodes(0).InnerText Else FO_PAESE = ""
                 nodes = DAT.GetElementsByTagName("IdCodice")
                 If nodes.Count > 0 Then FO_PARTITAIVA = nodes(0).InnerText Else FO_PARTITAIVA = ""
                 nodes = DAT.GetElementsByTagName("CodiceFiscale") '' CodiceFiscale controllare se codice fiscale dell'azienda
