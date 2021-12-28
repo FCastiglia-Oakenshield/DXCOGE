@@ -2559,6 +2559,10 @@ OP:
         If FO_PAESE <> "IT" Then
             Str = "select count(*) from TbAna where Anagrp='FO' and AnaPivaEst='" & FO_PAESE & rw("FtePartiva") & "'"
             StrC = "select Anacod from TbAna where Anagrp='FO' and AnaPivaEst='" & FO_PAESE & rw("FtePartiva") & "'"
+            If RwReg("RivaAutoFcee") = 0 Then
+                Messaggio(0, "REGISTRAZIONE ESTERA, REGISTRO NON COMPATIBILE, UTILIZZARE REGISTRO IVA CON AUTOFATTURA")
+                Exit Sub
+            End If
         End If
 
 

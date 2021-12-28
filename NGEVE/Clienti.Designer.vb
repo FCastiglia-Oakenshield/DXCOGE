@@ -503,7 +503,7 @@ Partial Class Clienti
         '
         Me.XtraTabPage1.Controls.Add(Me.GroupControl23)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl21)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1002, 600)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1006, 603)
         Me.XtraTabPage1.Text = "Archivio"
         '
         'ImageDx24
@@ -633,7 +633,7 @@ Partial Class Clienti
         '
         Me.BarStaticItem1.Caption = "BarStaticItem1"
         Me.BarStaticItem1.Id = 0
-        Me.BarStaticItem1.ImageIndex = 49
+        Me.BarStaticItem1.ImageOptions.ImageIndex = 49
         Me.BarStaticItem1.ItemAppearance.Normal.Options.UseFont = True
         Me.BarStaticItem1.Name = "BarStaticItem1"
         Me.BarStaticItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
@@ -644,63 +644,55 @@ Partial Class Clienti
         Me.BarStaticItem2.Caption = "BarStaticItem2"
         Me.BarStaticItem2.Id = 1
         Me.BarStaticItem2.Name = "BarStaticItem2"
-        Me.BarStaticItem2.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem3
         '
         Me.BarStaticItem3.Caption = "BarStaticItem3"
         Me.BarStaticItem3.Id = 2
         Me.BarStaticItem3.Name = "BarStaticItem3"
-        Me.BarStaticItem3.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem4
         '
         Me.BarStaticItem4.Caption = "BarStaticItem4"
         Me.BarStaticItem4.Id = 3
         Me.BarStaticItem4.Name = "BarStaticItem4"
-        Me.BarStaticItem4.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem5
         '
         Me.BarStaticItem5.Caption = "BarStaticItem5"
         Me.BarStaticItem5.Id = 4
         Me.BarStaticItem5.Name = "BarStaticItem5"
-        Me.BarStaticItem5.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem6
         '
         Me.BarStaticItem6.Caption = "BarStaticItem6"
         Me.BarStaticItem6.Id = 5
         Me.BarStaticItem6.Name = "BarStaticItem6"
-        Me.BarStaticItem6.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem7
         '
         Me.BarStaticItem7.Caption = "BarStaticItem7"
         Me.BarStaticItem7.Id = 6
         Me.BarStaticItem7.Name = "BarStaticItem7"
-        Me.BarStaticItem7.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem8
         '
         Me.BarStaticItem8.Caption = "BarStaticItem8"
         Me.BarStaticItem8.Id = 7
         Me.BarStaticItem8.Name = "BarStaticItem8"
-        Me.BarStaticItem8.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarStaticItem9
         '
         Me.BarStaticItem9.Caption = "BarStaticItem9"
         Me.BarStaticItem9.Id = 8
         Me.BarStaticItem9.Name = "BarStaticItem9"
-        Me.BarStaticItem9.TextAlignment = System.Drawing.StringAlignment.Near
         '
         'BarButtonItem1
         '
         Me.BarButtonItem1.Caption = "Richiama"
         Me.BarButtonItem1.Description = "Ultimo Cliente"
         Me.BarButtonItem1.Id = 9
-        Me.BarButtonItem1.ImageIndex = 52
+        Me.BarButtonItem1.ImageOptions.ImageIndex = 52
         Me.BarButtonItem1.Name = "BarButtonItem1"
         Me.BarButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
         Me.BarButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
@@ -710,28 +702,32 @@ Partial Class Clienti
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
+        Me.barDockControlTop.Manager = Me.BarManager1
         Me.barDockControlTop.Size = New System.Drawing.Size(1008, 0)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 629)
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1008, 27)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 630)
+        Me.barDockControlBottom.Manager = Me.BarManager1
+        Me.barDockControlBottom.Size = New System.Drawing.Size(1008, 26)
         '
         'barDockControlLeft
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 629)
+        Me.barDockControlLeft.Manager = Me.BarManager1
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 630)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(1008, 0)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 629)
+        Me.barDockControlRight.Manager = Me.BarManager1
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 630)
         '
         'ErrorProvider1
         '
@@ -762,7 +758,7 @@ Partial Class Clienti
         Me.GroupControl21.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl21.Name = "GroupControl21"
         Me.GroupControl21.ShowCaption = False
-        Me.GroupControl21.Size = New System.Drawing.Size(1002, 202)
+        Me.GroupControl21.Size = New System.Drawing.Size(1006, 202)
         Me.GroupControl21.TabIndex = 3
         '
         'GroupControl29
@@ -779,12 +775,12 @@ Partial Class Clienti
         Me.CheckEdit3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CheckEdit3.EnterMoveNextControl = True
-        Me.CheckEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.CheckEdit3.Location = New System.Drawing.Point(2, 23)
         Me.CheckEdit3.Name = "CheckEdit3"
         Me.CheckEdit3.Properties.AutoHeight = False
         Me.CheckEdit3.Properties.Caption = "BLACK LIST"
         Me.CheckEdit3.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.CheckEdit3.Size = New System.Drawing.Size(68, 22)
+        Me.CheckEdit3.Size = New System.Drawing.Size(68, 20)
         Me.CheckEdit3.TabIndex = 48
         Me.CheckEdit3.ToolTip = "BLACK LIST"
         '
@@ -878,9 +874,9 @@ Partial Class Clienti
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(82, 23)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -898,9 +894,9 @@ Partial Class Clienti
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(6, 23)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -918,9 +914,9 @@ Partial Class Clienti
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(100, 79)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -935,9 +931,9 @@ Partial Class Clienti
         Me.ButtonF3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF3.ImageIndex = 2
-        Me.ButtonF3.ImageList = Me.ImageList32
-        Me.ButtonF3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF3.ImageOptions.ImageIndex = 2
+        Me.ButtonF3.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF3.Location = New System.Drawing.Point(120, 23)
         Me.ButtonF3.Name = "ButtonF3"
         Me.ButtonF3.Size = New System.Drawing.Size(32, 32)
@@ -949,9 +945,9 @@ Partial Class Clienti
         '
         Me.CheckButton2.Checked = True
         Me.CheckButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton2.ImageIndex = 19
-        Me.CheckButton2.ImageList = Me.ImageDx24
-        Me.CheckButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.CheckButton2.ImageOptions.ImageIndex = 19
+        Me.CheckButton2.ImageOptions.ImageList = Me.ImageDx24
+        Me.CheckButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.CheckButton2.Location = New System.Drawing.Point(24, 79)
         Me.CheckButton2.Name = "CheckButton2"
         Me.CheckButton2.Size = New System.Drawing.Size(32, 32)
@@ -963,9 +959,9 @@ Partial Class Clienti
         'CheckButton1
         '
         Me.CheckButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton1.ImageIndex = 17
-        Me.CheckButton1.ImageList = Me.ImageDx24
-        Me.CheckButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.CheckButton1.ImageOptions.ImageIndex = 17
+        Me.CheckButton1.ImageOptions.ImageList = Me.ImageDx24
+        Me.CheckButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.CheckButton1.Location = New System.Drawing.Point(62, 79)
         Me.CheckButton1.Name = "CheckButton1"
         Me.CheckButton1.Size = New System.Drawing.Size(32, 32)
@@ -982,9 +978,9 @@ Partial Class Clienti
         Me.ButtonF6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF6.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Bottom
         Me.ButtonF6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF6.ImageIndex = 6
-        Me.ButtonF6.ImageList = Me.ImageDx24
-        Me.ButtonF6.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF6.ImageOptions.ImageIndex = 6
+        Me.ButtonF6.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF6.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF6.Location = New System.Drawing.Point(44, 23)
         Me.ButtonF6.Name = "ButtonF6"
         Me.ButtonF6.Size = New System.Drawing.Size(32, 32)
@@ -1340,7 +1336,7 @@ Partial Class Clienti
         Me.GroupControl23.Location = New System.Drawing.Point(0, 202)
         Me.GroupControl23.Name = "GroupControl23"
         Me.GroupControl23.ShowCaption = False
-        Me.GroupControl23.Size = New System.Drawing.Size(1002, 398)
+        Me.GroupControl23.Size = New System.Drawing.Size(1006, 401)
         Me.GroupControl23.TabIndex = 4
         '
         'GroupControl22
@@ -1356,12 +1352,11 @@ Partial Class Clienti
         '
         Me.GridControl3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl3.FormsUseDefaultLookAndFeel = True
-        Me.GridControl3.Location = New System.Drawing.Point(2, 21)
-        Me.GridControl3.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl3.Location = New System.Drawing.Point(2, 23)
         Me.GridControl3.MainView = Me.GridView4
         Me.GridControl3.Name = "GridControl3"
         Me.GridControl3.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl3.Size = New System.Drawing.Size(670, 373)
+        Me.GridControl3.Size = New System.Drawing.Size(670, 371)
         Me.GridControl3.TabIndex = 2
         Me.GridControl3.TabStop = False
         Me.GridControl3.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
@@ -1577,7 +1572,7 @@ Partial Class Clienti
         Me.ComboBoxEdit4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit4.EnterMoveNextControl = True
-        Me.ComboBoxEdit4.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit4.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit4.Name = "ComboBoxEdit4"
         Me.ComboBoxEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxEdit4.Properties.Appearance.Options.UseFont = True
@@ -1753,7 +1748,7 @@ Partial Class Clienti
         '
         Me.TextEdit24.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit24.EnterMoveNextControl = True
-        Me.TextEdit24.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit24.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit24.Name = "TextEdit24"
         Me.TextEdit24.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.TextEdit24.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1900,7 +1895,7 @@ Partial Class Clienti
         'XtraTabPage2
         '
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1002, 600)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1006, 603)
         Me.XtraTabPage2.Text = "Stampa"
         '
         'Clienti
@@ -2029,6 +2024,7 @@ Partial Class Clienti
         Me.GroupControl13.ResumeLayout(False)
         CType(Me.TextEdit14.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents BarManager1 As DevExpress.XtraBars.BarManager
