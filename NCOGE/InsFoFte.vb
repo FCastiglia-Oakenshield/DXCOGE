@@ -259,9 +259,10 @@ Public Class InsFoFte
         dataRd.Close()
     End Function
     Private Sub TbLeggiCod_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles TbLeggiCod.Enter
+        ''' If ControllaSeEsiste() = True Then Exit Sub-- SONO IN DUBBIO SE ABLITARLO
         Dim DupA As Boolean = False
         Dim DupF As Boolean = False
-        If Val(TextEdit00.Text) > gruppi.CliMax And Val(TextEdit00.Text) < 99999 Then
+        If Val(TextEdit00.Text) > MIGLIO And Val(TextEdit00.Text) < 99999 Then
             DupF = leggiFor(TextEdit00.Text)
             DupA = leggiAna(TextEdit00.Text)
             If DupF = True Or DupA = True Then
@@ -287,10 +288,25 @@ Public Class InsFoFte
             Return
         End If
         If ControllaCampi() = False Then Exit Sub
+        ''' If ControllaSeEsiste() = True Then Exit Sub'' SONO IN DUBBIO SE ABILITARLO
         registra()
         Me.Close()
     End Sub
-
+    Private Function ControllaSeEsiste() As Boolean
+        ControllaSeEsiste = False
+        Dim DupA As Boolean = False
+        Dim DupF As Boolean = False
+        If Val(TextEdit00.Text) > MIGLIO And Val(TextEdit00.Text) < 99999 Then
+            DupF = leggiFor(TextEdit00.Text)
+            DupA = leggiAna(TextEdit00.Text)
+            If DupF = True Or DupA = True Then
+                MsgBox("CODICE :" & TextEdit00.Text, MsgBoxStyle.Critical, "FORNITORE ESISTENTE")
+                TextEdit00.Focus()
+                Return True
+                Exit Function
+            End If
+        End If
+    End Function
     Private Function ControllaCampi() As Boolean
         Dim Mail As String = ""
         Dim cc As New Control

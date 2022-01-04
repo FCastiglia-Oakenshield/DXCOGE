@@ -82,6 +82,7 @@ Public Class DxInPrNo
 
     Dim AnnoOp As Int16
     Dim OkMondo As Boolean = False
+    Dim OkCSA As Boolean = False
     Dim OkLDP As Boolean = False
     Dim UserId As String = ""
     Dim Em As New DevExpress.XtraEditors.Controls.CheckedListBoxItem
@@ -211,7 +212,7 @@ Public Class DxInPrNo
         While dataRd.Read
             'MaxArt = dataRd.Item("PriNumProt")
             If ArtTerminale = 0 Then GroupLabel9.Text = dataRd.Item("PriNumProt")
-            MaxDat = dataRd.Item("PridataGio")
+            If OkCSA = False Then MaxDat = dataRd.Item("PridataGio")
         End While
         dataRd.Close()
         If ArtTerminale > 0 Then
@@ -303,6 +304,7 @@ Public Class DxInPrNo
         dataRd.Close()
         OkMondo = False
         OkLDP = False
+        If UserId = "CSABOX" Then OkCSA = True Else OkCSA = False
         If UserId.ToUpper = "PASTAECO" Or UserId.ToUpper = "PASTANEW" Or UserId.ToUpper = "PASTAGROUP" Then
             OkLDP = True
             ButtonEXP.ImageIndex = 5
