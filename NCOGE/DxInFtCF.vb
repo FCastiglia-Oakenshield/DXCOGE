@@ -139,7 +139,7 @@ Public Class DxInFtCF
     Dim FRMFO As New InsFoFte
     Dim BasePriId As Int32 = 300000000
     Dim Estera As Boolean = False
-    Dim TD As String = ""
+    ''Dim TD As String = ""
     Dim DupEst As Boolean = False
 
     Private Sub DxInFtCF_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown, ButtonF5.Click
@@ -2443,8 +2443,9 @@ IIFine:
         Dim AADATA As Date = Today
 
         Dim leggi As String = "SELECT *,TipoStampa= case when FtePrintM=0 and FtePrintA=0 then '' when  FtePrintM=1 and FtePrintA=0 then 'M' when FtePrintM=0 and FtePrintA=1 then 'A' else 'AM' end, " _
-                  & "Registrata= case when FteRifPri > 0 then CAST(1 as bit) else cast(0 as bit) end FROM  TbFte_passiva WHERE FteAnno = @ANNO AND FtePartiva <> @AZ_PIVA "
-        Dim Selec As String = "AND FteDataRicezione BETWEEN @DA_DATA AND @A_DATA and FteRifPri <=0 "
+                  & "Registrata= case when FteRifPri > 0 then CAST(1 as bit) else cast(0 as bit) end FROM  TbFte_passiva WHERE FteAnno = @ANNO AND FtePartiva <> @AZ_PIVA " _
+                  & " AND FteIdSDI NOT IN (SELECT FteIdSDI FROM TbFte) "
+        Dim Selec As String = "And FteDataRicezione BETWEEN @DA_DATA And @A_DATA And FteRifPri <=0 "
 
 
         If RadioGroup7.SelectedIndex = 0 Then
@@ -2455,7 +2456,7 @@ IIFine:
             '    DADATA = "01/" & CH(ImageComboBoxEdit5.SelectedIndex).ToString.PadLeft(2, "0") & "/" & ANNOP
             '    AADATA = DADATA.AddMonths(1)
             '    AADATA = AADATA.AddDays(-1)
-            '    Selec &= " AND FteData between '" & DADATA & "' AND '" & AADATA & "'"
+            '    Selec &= " And FteData between '" & DADATA & "' AND '" & AADATA & "'"
             '    GoTo POWER
             'End If
 POWER:
