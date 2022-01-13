@@ -260,6 +260,7 @@ DopoLet:
         End If
         DsFpn = New DataTable
         DaFpn = New SqlDataAdapter(Str, CnDc)
+        DirectCast(DirectCast(DaFpn, System.Data.Common.DbDataAdapter).SelectCommand, System.Data.SqlClient.SqlCommand).CommandTimeout = 500
         DaFpn.Fill(DsFpn)
         GridControl3.DataSource = DsFpn
         GridView3.ClearSelection()
@@ -560,9 +561,11 @@ DopoLet:
         ds = New DataSet
         TbPcm = New DataTable()
         DaPcm = New SqlDataAdapter(Str, CnDc)
+        DirectCast(DirectCast(DaPcm, System.Data.Common.DbDataAdapter).SelectCommand, System.Data.SqlClient.SqlCommand).CommandTimeout = 500
         DaPcm.Fill(ds, "TbPcm")
         TbCcm = New DataTable()
         DaCcm = New SqlDataAdapter(SStr, CnDc)
+        DirectCast(DirectCast(DaCcm, System.Data.Common.DbDataAdapter).SelectCommand, System.Data.SqlClient.SqlCommand).CommandTimeout = 500
         DaCcm.Fill(ds, "TbCcm")
         ds.Relations.Add("Dettaglio", ds.Tables("TbPcm").Columns("PriId"), ds.Tables("TbCcm").Columns("PRIID"))
         If n = 1 Then
