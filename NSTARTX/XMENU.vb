@@ -162,6 +162,7 @@ Oltre:
             BarButtonItem91.Visibility = BarItemVisibility.Never
             BarButtonItem92.Visibility = BarItemVisibility.Never
             BarButtonItem105.Visibility = BarItemVisibility.Never
+            BarButtonItem102.Visibility = BarItemVisibility.Never
 
         End If
         If WHY = "COMUNITA" Or WHY = "RSCOMUNITA" Then
