@@ -1759,7 +1759,7 @@ RipetiCee:
         Next
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         If RwReg("RIvaFteP") = True And RIFERFTEP > 0 Then RegistraFteP()
-        If Mid(RwReg("RIvaTipoDoc"), 1, 2) = "TD" And Estera = False And DupEst = False Then Prepara_FE_EST(ProgId, RwReg("RIvaTipoDoc")) : DupEst = True
+        If Mid(RwReg("RIvaTipoDoc"), 1, 2) = "TD" And Estera = False And DupEst = False And TextEdit1.ErrorText = "" Then Prepara_FE_EST(ProgId, RwReg("RIvaTipoDoc")) : DupEst = True
         ResetIdP()
         '
         AssegnaNPartita()
@@ -1823,9 +1823,11 @@ DopoScad:
         Dim Cancella As String = "BEGIN Delete from TbPri where PriId = " & ProgId & " Delete from TbPrk where PrKId = " & ProgId & " END"
         Dim Dmd As New SqlCommand(Cancella, cnCo)
         Dmd.ExecuteNonQuery()
-        Cancella = "Delete from TbFte where FteRif = " & (ProgId + BasePriId)
-        Dmd = New SqlCommand(Cancella, cnDb)
-        Dmd.ExecuteNonQuery()
+        If TextEdit1.ErrorText = "" Then
+            Cancella = "Delete from TbFte where FteRif = " & (ProgId + BasePriId)
+            Dmd = New SqlCommand(Cancella, cnDb)
+            Dmd.ExecuteNonQuery()
+        End If
         Dim UPDMONDO As String = "BEGIN Update TbFat Set FatTrasf=0 where FatRif =" & DCGNUMRIF & " Update TbDcg Set DcgTrasf=0 where DcgNumRif =" & DCGNUMRIF & " END"
         Dim Umd As New SqlCommand(UPDMONDO, cnDb)
         If OkMondo = True Then

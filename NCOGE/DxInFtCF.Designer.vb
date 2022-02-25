@@ -729,7 +729,7 @@ Partial Class DxInFtCF
         Me.GroupControl1.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(0, 65)
+        Me.GroupControl1.Size = New System.Drawing.Size(1006, 65)
         Me.GroupControl1.TabIndex = 0
         Me.GroupControl1.Text = "GroupControl1"
         '
@@ -1006,7 +1006,7 @@ Partial Class DxInFtCF
         Me.GroupControl5.Location = New System.Drawing.Point(0, 65)
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.ShowCaption = False
-        Me.GroupControl5.Size = New System.Drawing.Size(0, 150)
+        Me.GroupControl5.Size = New System.Drawing.Size(1006, 150)
         Me.GroupControl5.TabIndex = 1
         Me.GroupControl5.Text = "GroupControl5"
         '
@@ -1412,10 +1412,10 @@ Partial Class DxInFtCF
         Me.GroupControl7.Controls.Add(Me.TextEdit16)
         Me.GroupControl7.Controls.Add(Me.TextEdit15)
         Me.GroupControl7.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl7.Location = New System.Drawing.Point(0, -74)
+        Me.GroupControl7.Location = New System.Drawing.Point(0, 580)
         Me.GroupControl7.Name = "GroupControl7"
         Me.GroupControl7.ShowCaption = False
-        Me.GroupControl7.Size = New System.Drawing.Size(0, 74)
+        Me.GroupControl7.Size = New System.Drawing.Size(1006, 74)
         Me.GroupControl7.TabIndex = 2
         Me.GroupControl7.Text = "GroupControl7"
         '
@@ -1673,7 +1673,7 @@ Partial Class DxInFtCF
         Me.GroupControl11.Location = New System.Drawing.Point(0, 215)
         Me.GroupControl11.Name = "GroupControl11"
         Me.GroupControl11.ShowCaption = False
-        Me.GroupControl11.Size = New System.Drawing.Size(0, 0)
+        Me.GroupControl11.Size = New System.Drawing.Size(1006, 365)
         Me.GroupControl11.TabIndex = 3
         Me.GroupControl11.Text = "GroupControl11"
         '
@@ -1681,11 +1681,11 @@ Partial Class DxInFtCF
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
-        Me.GridControl1.Location = New System.Drawing.Point(0, 0)
+        Me.GridControl1.Location = New System.Drawing.Point(2, 2)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(0, 0)
+        Me.GridControl1.Size = New System.Drawing.Size(1002, 361)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -1921,7 +1921,7 @@ Partial Class DxInFtCF
         Me.SPCC.Panel1.Text = "Panel1"
         Me.SPCC.Panel2.Controls.Add(Me.SplitContainerControl1)
         Me.SPCC.Panel2.Text = "Panel2"
-        Me.SPCC.PanelVisibility = DevExpress.XtraEditors.SplitPanelVisibility.Panel2
+        Me.SPCC.PanelVisibility = DevExpress.XtraEditors.SplitPanelVisibility.Panel1
         Me.SPCC.Size = New System.Drawing.Size(1006, 654)
         Me.SPCC.SplitterPosition = 997
         Me.SPCC.TabIndex = 0
@@ -1945,7 +1945,7 @@ Partial Class DxInFtCF
         Me.SplitContainerControl1.Panel2.Controls.Add(Me.PanelControl14)
         Me.SplitContainerControl1.Panel2.Text = "Panel2"
         Me.SplitContainerControl1.PanelVisibility = DevExpress.XtraEditors.SplitPanelVisibility.Panel1
-        Me.SplitContainerControl1.Size = New System.Drawing.Size(1006, 654)
+        Me.SplitContainerControl1.Size = New System.Drawing.Size(0, 0)
         Me.SplitContainerControl1.SplitterPosition = 994
         Me.SplitContainerControl1.TabIndex = 25
         Me.SplitContainerControl1.Text = "SplitContainerControl1"
@@ -1956,7 +1956,7 @@ Partial Class DxInFtCF
         Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelControl1.Location = New System.Drawing.Point(0, 51)
         Me.PanelControl1.Name = "PanelControl1"
-        Me.PanelControl1.Size = New System.Drawing.Size(1006, 295)
+        Me.PanelControl1.Size = New System.Drawing.Size(0, 0)
         Me.PanelControl1.TabIndex = 23
         '
         'GridControl2
@@ -1966,12 +1966,12 @@ Partial Class DxInFtCF
         Me.GridControl2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         GridLevelNode1.RelationName = "Level1"
         Me.GridControl2.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode1})
-        Me.GridControl2.Location = New System.Drawing.Point(2, 2)
+        Me.GridControl2.Location = New System.Drawing.Point(0, 0)
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemMemoEdit2, Me.RepositoryItemButtonEdit2, Me.RepositoryItemCheckEdit1, Me.RepositoryItemTextEdit1, Me.RepositoryItemImageComboBox3})
-        Me.GridControl2.Size = New System.Drawing.Size(1002, 291)
+        Me.GridControl2.Size = New System.Drawing.Size(0, 0)
         Me.GridControl2.TabIndex = 22
         Me.GridControl2.TabStop = False
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
@@ -2239,19 +2239,19 @@ Partial Class DxInFtCF
         '
         Me.PanelControl6.Controls.Add(Me.GridControl6)
         Me.PanelControl6.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelControl6.Location = New System.Drawing.Point(0, 346)
+        Me.PanelControl6.Location = New System.Drawing.Point(0, -308)
         Me.PanelControl6.Name = "PanelControl6"
-        Me.PanelControl6.Size = New System.Drawing.Size(1006, 52)
+        Me.PanelControl6.Size = New System.Drawing.Size(0, 52)
         Me.PanelControl6.TabIndex = 27
         '
         'GridControl6
         '
         Me.GridControl6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl6.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.GridControl6.Location = New System.Drawing.Point(2, 2)
+        Me.GridControl6.Location = New System.Drawing.Point(1, 2)
         Me.GridControl6.MainView = Me.GridView6
         Me.GridControl6.Name = "GridControl6"
-        Me.GridControl6.Size = New System.Drawing.Size(1002, 48)
+        Me.GridControl6.Size = New System.Drawing.Size(0, 48)
         Me.GridControl6.TabIndex = 5
         Me.GridControl6.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView6})
         '
@@ -2270,19 +2270,19 @@ Partial Class DxInFtCF
         '
         Me.PanelControl5.Controls.Add(Me.GridControl5)
         Me.PanelControl5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelControl5.Location = New System.Drawing.Point(0, 398)
+        Me.PanelControl5.Location = New System.Drawing.Point(0, -256)
         Me.PanelControl5.Name = "PanelControl5"
-        Me.PanelControl5.Size = New System.Drawing.Size(1006, 52)
+        Me.PanelControl5.Size = New System.Drawing.Size(0, 52)
         Me.PanelControl5.TabIndex = 26
         '
         'GridControl5
         '
         Me.GridControl5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl5.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.GridControl5.Location = New System.Drawing.Point(2, 2)
+        Me.GridControl5.Location = New System.Drawing.Point(1, 2)
         Me.GridControl5.MainView = Me.GridView5
         Me.GridControl5.Name = "GridControl5"
-        Me.GridControl5.Size = New System.Drawing.Size(1002, 48)
+        Me.GridControl5.Size = New System.Drawing.Size(0, 48)
         Me.GridControl5.TabIndex = 4
         Me.GridControl5.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView5})
         '
@@ -2301,20 +2301,20 @@ Partial Class DxInFtCF
         '
         Me.PanelControl4.Controls.Add(Me.GridControl4)
         Me.PanelControl4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelControl4.Location = New System.Drawing.Point(0, 450)
+        Me.PanelControl4.Location = New System.Drawing.Point(0, -204)
         Me.PanelControl4.Name = "PanelControl4"
-        Me.PanelControl4.Size = New System.Drawing.Size(1006, 70)
+        Me.PanelControl4.Size = New System.Drawing.Size(0, 70)
         Me.PanelControl4.TabIndex = 25
         '
         'GridControl4
         '
         Me.GridControl4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl4.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.GridControl4.Location = New System.Drawing.Point(2, 2)
+        Me.GridControl4.Location = New System.Drawing.Point(1, 2)
         Me.GridControl4.MainView = Me.GridView4
         Me.GridControl4.Name = "GridControl4"
         Me.GridControl4.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemComboBox1, Me.RepositoryItemImageComboBox4})
-        Me.GridControl4.Size = New System.Drawing.Size(1002, 66)
+        Me.GridControl4.Size = New System.Drawing.Size(0, 66)
         Me.GridControl4.TabIndex = 3
         Me.GridControl4.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
         '
@@ -2416,19 +2416,19 @@ Partial Class DxInFtCF
         '
         Me.PanelControl3.Controls.Add(Me.GridControl3)
         Me.PanelControl3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelControl3.Location = New System.Drawing.Point(0, 520)
+        Me.PanelControl3.Location = New System.Drawing.Point(0, -134)
         Me.PanelControl3.Name = "PanelControl3"
-        Me.PanelControl3.Size = New System.Drawing.Size(1006, 90)
+        Me.PanelControl3.Size = New System.Drawing.Size(0, 90)
         Me.PanelControl3.TabIndex = 24
         '
         'GridControl3
         '
         Me.GridControl3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl3.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.GridControl3.Location = New System.Drawing.Point(2, 2)
+        Me.GridControl3.Location = New System.Drawing.Point(1, 2)
         Me.GridControl3.MainView = Me.GridView3
         Me.GridControl3.Name = "GridControl3"
-        Me.GridControl3.Size = New System.Drawing.Size(1002, 86)
+        Me.GridControl3.Size = New System.Drawing.Size(0, 86)
         Me.GridControl3.TabIndex = 2
         Me.GridControl3.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView3})
         '
@@ -2509,9 +2509,9 @@ Partial Class DxInFtCF
         Me.PanelControl13.Controls.Add(Me.ButtonREC)
         Me.PanelControl13.Controls.Add(Me.ButtonView)
         Me.PanelControl13.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelControl13.Location = New System.Drawing.Point(0, 610)
+        Me.PanelControl13.Location = New System.Drawing.Point(0, -44)
         Me.PanelControl13.Name = "PanelControl13"
-        Me.PanelControl13.Size = New System.Drawing.Size(1006, 44)
+        Me.PanelControl13.Size = New System.Drawing.Size(0, 44)
         Me.PanelControl13.TabIndex = 2
         '
         'ButtonREC
@@ -2520,7 +2520,7 @@ Partial Class DxInFtCF
         Me.ButtonREC.Dock = System.Windows.Forms.DockStyle.Left
         Me.ButtonREC.ImageOptions.Image = CType(resources.GetObject("ButtonREC.ImageOptions.Image"), System.Drawing.Image)
         Me.ButtonREC.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft
-        Me.ButtonREC.Location = New System.Drawing.Point(2, 2)
+        Me.ButtonREC.Location = New System.Drawing.Point(1, 2)
         Me.ButtonREC.Name = "ButtonREC"
         Me.ButtonREC.Size = New System.Drawing.Size(40, 40)
         Me.ButtonREC.TabIndex = 1
@@ -2534,7 +2534,7 @@ Partial Class DxInFtCF
         Me.ButtonView.Dock = System.Windows.Forms.DockStyle.Right
         Me.ButtonView.ImageOptions.Image = CType(resources.GetObject("ButtonView.ImageOptions.Image"), System.Drawing.Image)
         Me.ButtonView.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight
-        Me.ButtonView.Location = New System.Drawing.Point(767, 2)
+        Me.ButtonView.Location = New System.Drawing.Point(-238, 2)
         Me.ButtonView.Name = "ButtonView"
         Me.ButtonView.Size = New System.Drawing.Size(237, 40)
         Me.ButtonView.TabIndex = 0
@@ -2549,7 +2549,7 @@ Partial Class DxInFtCF
         Me.PanelControl9.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelControl9.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl9.Name = "PanelControl9"
-        Me.PanelControl9.Size = New System.Drawing.Size(1006, 51)
+        Me.PanelControl9.Size = New System.Drawing.Size(0, 51)
         Me.PanelControl9.TabIndex = 1
         '
         'GroupControl21
@@ -2558,7 +2558,7 @@ Partial Class DxInFtCF
         Me.GroupControl21.AppearanceCaption.Options.UseFont = True
         Me.GroupControl21.Controls.Add(Me.ImageComboBoxEdit5)
         Me.GroupControl21.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl21.Location = New System.Drawing.Point(314, 2)
+        Me.GroupControl21.Location = New System.Drawing.Point(313, 2)
         Me.GroupControl21.Name = "GroupControl21"
         Me.GroupControl21.Size = New System.Drawing.Size(213, 47)
         Me.GroupControl21.TabIndex = 7
@@ -2588,7 +2588,7 @@ Partial Class DxInFtCF
         '
         Me.RadioGroup7.Dock = System.Windows.Forms.DockStyle.Left
         Me.RadioGroup7.EditValue = CType(0, Short)
-        Me.RadioGroup7.Location = New System.Drawing.Point(82, 2)
+        Me.RadioGroup7.Location = New System.Drawing.Point(81, 2)
         Me.RadioGroup7.Name = "RadioGroup7"
         Me.RadioGroup7.Properties.Columns = 2
         Me.RadioGroup7.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(0, Short), "DA REGISTRARE"), New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(1, Short), "REGISTRATE")})
@@ -2602,7 +2602,7 @@ Partial Class DxInFtCF
         Me.GroupControl33.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl33.Controls.Add(Me.ComboBoxEdit3)
         Me.GroupControl33.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl33.Location = New System.Drawing.Point(2, 2)
+        Me.GroupControl33.Location = New System.Drawing.Point(1, 2)
         Me.GroupControl33.Name = "GroupControl33"
         Me.GroupControl33.Size = New System.Drawing.Size(80, 47)
         Me.GroupControl33.TabIndex = 0
