@@ -79,6 +79,44 @@ Partial Class DxPianoForm
         Me.RepositoryItemImageComboBox2 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
         Me.RepositoryItemCheckEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.RepositoryItemImageComboBox6 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
+        Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage()
+        Me.GroupControl17 = New DevExpress.XtraEditors.GroupControl()
+        Me.GridControl2 = New DevExpress.XtraGrid.GridControl()
+        Me.BandedGridView1 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridView()
+        Me.GridBand1 = New DevExpress.XtraGrid.Views.BandedGrid.GridBand()
+        Me.GridColumn14 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.GridColumn15 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.gridBand2 = New DevExpress.XtraGrid.Views.BandedGrid.GridBand()
+        Me.BandedGridColumn1 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.BandedGridColumn2 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.BandedGridColumn3 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.RepositoryItemImageComboBox7 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
+        Me.RepositoryItemImageComboBox3 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
+        Me.RepositoryItemImageComboBox4 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
+        Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
+        Me.RepositoryItemImageComboBox5 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
+        Me.GroupControl27 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl19 = New DevExpress.XtraEditors.GroupControl()
+        Me.ButtonXF9 = New DevExpress.XtraEditors.SimpleButton()
+        Me.ButtonXF5 = New DevExpress.XtraEditors.SimpleButton()
+        Me.GroupControl20 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl26 = New DevExpress.XtraEditors.GroupControl()
+        Me.ImageComboBoxEdit6 = New DevExpress.XtraEditors.ImageComboBoxEdit()
+        Me.GroupControl23 = New DevExpress.XtraEditors.GroupControl()
+        Me.ButtonXF11 = New DevExpress.XtraEditors.SimpleButton()
+        Me.GroupControl21 = New DevExpress.XtraEditors.GroupControl()
+        Me.TextEdit10 = New DevExpress.XtraEditors.TextEdit()
+        Me.GroupControl22 = New DevExpress.XtraEditors.GroupControl()
+        Me.TextEdit11 = New DevExpress.XtraEditors.TextEdit()
+        Me.TbLeggi3 = New DevExpress.XtraEditors.TextEdit()
+        Me.GroupControl24 = New DevExpress.XtraEditors.GroupControl()
+        Me.TextEdit7 = New DevExpress.XtraEditors.TextEdit()
+        Me.GroupControl25 = New DevExpress.XtraEditors.GroupControl()
+        Me.TextEdit8 = New DevExpress.XtraEditors.TextEdit()
+        Me.TbLeggi2 = New DevExpress.XtraEditors.TextEdit()
+        Me.Button0LEG = New DevExpress.XtraEditors.SimpleButton()
+        Me.Button1LEG = New DevExpress.XtraEditors.SimpleButton()
+        Me.Button2LEG = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
         Me.XtraTabPage1.SuspendLayout()
@@ -143,6 +181,41 @@ Partial Class DxPianoForm
         CType(Me.RepositoryItemImageComboBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemImageComboBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.XtraTabPage2.SuspendLayout()
+        CType(Me.GroupControl17, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl17.SuspendLayout()
+        CType(Me.GridControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BandedGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemImageComboBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemImageComboBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemImageComboBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemImageComboBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl27, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl27.SuspendLayout()
+        CType(Me.GroupControl19, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl19.SuspendLayout()
+        CType(Me.GroupControl20, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl20.SuspendLayout()
+        CType(Me.GroupControl26, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl26.SuspendLayout()
+        CType(Me.ImageComboBoxEdit6.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl23, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl23.SuspendLayout()
+        CType(Me.GroupControl21, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl21.SuspendLayout()
+        CType(Me.TextEdit10.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl22, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl22.SuspendLayout()
+        CType(Me.TextEdit11.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbLeggi3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl24, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl24.SuspendLayout()
+        CType(Me.TextEdit7.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl25, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl25.SuspendLayout()
+        CType(Me.TextEdit8.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbLeggi2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ImageList32
@@ -412,7 +485,15 @@ Partial Class DxPianoForm
         '
         'XtraTabControl1
         '
+        Me.XtraTabControl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.XtraTabControl1.Location = New System.Drawing.Point(4, 5)
+        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
+        Me.XtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.[Default]
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1059, 671)
+        Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage2})
+        Me.XtraTabControl1.Controls.SetChildIndex(Me.XtraTabPage2, 0)
+        Me.XtraTabControl1.Controls.SetChildIndex(Me.XtraTabPage1, 0)
         '
         'XtraTabPage1
         '
@@ -420,6 +501,10 @@ Partial Class DxPianoForm
         Me.XtraTabPage1.Controls.Add(Me.GroupControl8)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl2)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl3)
+        Me.XtraTabPage1.ImageOptions.SvgImage = CType(resources.GetObject("XtraTabPage1.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.XtraTabPage1.ImageOptions.SvgImageSize = New System.Drawing.Size(16, 16)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1057, 643)
+        Me.XtraTabPage1.Text = "Piano Dei Conti"
         '
         'ImageDx24
         '
@@ -543,7 +628,7 @@ Partial Class DxPianoForm
         Me.GroupControl2.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl2.Name = "GroupControl2"
         Me.GroupControl2.ShowCaption = False
-        Me.GroupControl2.Size = New System.Drawing.Size(955, 47)
+        Me.GroupControl2.Size = New System.Drawing.Size(1010, 47)
         Me.GroupControl2.TabIndex = 0
         '
         'GroupControl7
@@ -552,7 +637,7 @@ Partial Class DxPianoForm
         Me.GroupControl7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl7.Location = New System.Drawing.Point(790, 2)
         Me.GroupControl7.Name = "GroupControl7"
-        Me.GroupControl7.Size = New System.Drawing.Size(163, 43)
+        Me.GroupControl7.Size = New System.Drawing.Size(218, 43)
         Me.GroupControl7.TabIndex = 4
         Me.GroupControl7.Text = "CONTO"
         '
@@ -561,7 +646,7 @@ Partial Class DxPianoForm
         Me.ImageComboBoxEdit3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit3.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit3.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit3.Name = "ImageComboBoxEdit3"
         Me.ImageComboBoxEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.ImageComboBoxEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -569,7 +654,7 @@ Partial Class DxPianoForm
         Me.ImageComboBoxEdit3.Properties.DropDownRows = 10
         Me.ImageComboBoxEdit3.Properties.ImmediatePopup = True
         Me.ImageComboBoxEdit3.Properties.MaxLength = 1
-        Me.ImageComboBoxEdit3.Size = New System.Drawing.Size(159, 20)
+        Me.ImageComboBoxEdit3.Size = New System.Drawing.Size(214, 20)
         Me.ImageComboBoxEdit3.TabIndex = 2
         '
         'GroupControl5
@@ -587,7 +672,7 @@ Partial Class DxPianoForm
         Me.ImageComboBoxEdit2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit2.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit2.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit2.Name = "ImageComboBoxEdit2"
         Me.ImageComboBoxEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.ImageComboBoxEdit2.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -613,7 +698,7 @@ Partial Class DxPianoForm
         Me.ImageComboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit1.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit1.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit1.Name = "ImageComboBoxEdit1"
         Me.ImageComboBoxEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.ImageComboBoxEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -642,7 +727,7 @@ Partial Class DxPianoForm
         '
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit2.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -656,9 +741,9 @@ Partial Class DxPianoForm
         Me.ButtonC1.Appearance.Options.UseFont = True
         Me.ButtonC1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonC1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonC1.ImageIndex = 105
-        Me.ButtonC1.ImageList = Me.imageList1
-        Me.ButtonC1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonC1.ImageOptions.ImageIndex = 105
+        Me.ButtonC1.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonC1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonC1.Location = New System.Drawing.Point(72, 2)
         Me.ButtonC1.Name = "ButtonC1"
         Me.ButtonC1.Size = New System.Drawing.Size(22, 43)
@@ -683,7 +768,7 @@ Partial Class DxPianoForm
         '
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
@@ -697,7 +782,7 @@ Partial Class DxPianoForm
         'TbLeggi1
         '
         Me.TbLeggi1.EnterMoveNextControl = True
-        Me.TbLeggi1.Location = New System.Drawing.Point(17, 22)
+        Me.TbLeggi1.Location = New System.Drawing.Point(17, 25)
         Me.TbLeggi1.Name = "TbLeggi1"
         Me.TbLeggi1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TbLeggi1.Properties.Appearance.Options.UseFont = True
@@ -714,10 +799,10 @@ Partial Class DxPianoForm
         Me.GroupControl3.Controls.Add(Me.ButtonF11)
         Me.GroupControl3.Controls.Add(Me.ButtonF3)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl3.Location = New System.Drawing.Point(955, 0)
+        Me.GroupControl3.Location = New System.Drawing.Point(1010, 0)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.ShowCaption = False
-        Me.GroupControl3.Size = New System.Drawing.Size(47, 650)
+        Me.GroupControl3.Size = New System.Drawing.Size(47, 643)
         Me.GroupControl3.TabIndex = 3
         '
         'ButtonF9
@@ -730,9 +815,9 @@ Partial Class DxPianoForm
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(7, 121)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -750,9 +835,9 @@ Partial Class DxPianoForm
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(7, 83)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -770,9 +855,9 @@ Partial Class DxPianoForm
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(7, 7)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -787,9 +872,9 @@ Partial Class DxPianoForm
         Me.ButtonF3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF3.ImageIndex = 2
-        Me.ButtonF3.ImageList = Me.ImageList32
-        Me.ButtonF3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF3.ImageOptions.ImageIndex = 2
+        Me.ButtonF3.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF3.Location = New System.Drawing.Point(7, 45)
         Me.ButtonF3.Name = "ButtonF3"
         Me.ButtonF3.Size = New System.Drawing.Size(32, 32)
@@ -810,7 +895,7 @@ Partial Class DxPianoForm
         Me.GroupControl8.Location = New System.Drawing.Point(0, 47)
         Me.GroupControl8.Name = "GroupControl8"
         Me.GroupControl8.ShowCaption = False
-        Me.GroupControl8.Size = New System.Drawing.Size(955, 94)
+        Me.GroupControl8.Size = New System.Drawing.Size(1010, 94)
         Me.GroupControl8.TabIndex = 1
         '
         'GroupControl13
@@ -819,9 +904,9 @@ Partial Class DxPianoForm
         Me.GroupControl13.AppearanceCaption.Options.UseFont = True
         Me.GroupControl13.Controls.Add(Me.TextEdit6)
         Me.GroupControl13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl13.Location = New System.Drawing.Point(874, 2)
+        Me.GroupControl13.Location = New System.Drawing.Point(901, 2)
         Me.GroupControl13.Name = "GroupControl13"
-        Me.GroupControl13.Size = New System.Drawing.Size(79, 44)
+        Me.GroupControl13.Size = New System.Drawing.Size(107, 44)
         Me.GroupControl13.TabIndex = 5
         Me.GroupControl13.Text = "CLS.IRAP"
         '
@@ -829,13 +914,13 @@ Partial Class DxPianoForm
         '
         Me.TextEdit6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit6.EnterMoveNextControl = True
-        Me.TextEdit6.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit6.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit6.Name = "TextEdit6"
         Me.TextEdit6.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit6.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.TextEdit6.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit6.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.TextEdit6.Size = New System.Drawing.Size(75, 20)
+        Me.TextEdit6.Size = New System.Drawing.Size(103, 20)
         Me.TextEdit6.TabIndex = 0
         Me.TextEdit6.ToolTip = "PROSPETTO DI BILANCIO"
         '
@@ -845,7 +930,7 @@ Partial Class DxPianoForm
         Me.GroupControl14.Controls.Add(Me.ButtonC2)
         Me.GroupControl14.Controls.Add(Me.TextEdit4)
         Me.GroupControl14.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl14.Location = New System.Drawing.Point(429, 2)
+        Me.GroupControl14.Location = New System.Drawing.Point(456, 2)
         Me.GroupControl14.Name = "GroupControl14"
         Me.GroupControl14.Size = New System.Drawing.Size(445, 44)
         Me.GroupControl14.TabIndex = 4
@@ -855,7 +940,7 @@ Partial Class DxPianoForm
         '
         Me.TextEdit5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit5.EnterMoveNextControl = True
-        Me.TextEdit5.Location = New System.Drawing.Point(70, 21)
+        Me.TextEdit5.Location = New System.Drawing.Point(70, 23)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit5.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -871,12 +956,12 @@ Partial Class DxPianoForm
         Me.ButtonC2.Appearance.Options.UseFont = True
         Me.ButtonC2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonC2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ButtonC2.ImageIndex = 105
-        Me.ButtonC2.ImageList = Me.imageList1
-        Me.ButtonC2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonC2.Location = New System.Drawing.Point(48, 21)
+        Me.ButtonC2.ImageOptions.ImageIndex = 105
+        Me.ButtonC2.ImageOptions.ImageList = Me.imageList1
+        Me.ButtonC2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonC2.Location = New System.Drawing.Point(48, 23)
         Me.ButtonC2.Name = "ButtonC2"
-        Me.ButtonC2.Size = New System.Drawing.Size(22, 21)
+        Me.ButtonC2.Size = New System.Drawing.Size(22, 19)
         Me.ButtonC2.TabIndex = 6
         Me.ButtonC2.TabStop = False
         Me.ButtonC2.ToolTip = "Ricerca Cee"
@@ -886,7 +971,7 @@ Partial Class DxPianoForm
         Me.TextEdit4.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextEdit4.EditValue = 0
         Me.TextEdit4.EnterMoveNextControl = True
-        Me.TextEdit4.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit4.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit4.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
@@ -903,9 +988,9 @@ Partial Class DxPianoForm
         '
         Me.GroupControl9.Controls.Add(Me.TextEdit3)
         Me.GroupControl9.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl9.Location = New System.Drawing.Point(349, 2)
+        Me.GroupControl9.Location = New System.Drawing.Point(366, 2)
         Me.GroupControl9.Name = "GroupControl9"
-        Me.GroupControl9.Size = New System.Drawing.Size(80, 44)
+        Me.GroupControl9.Size = New System.Drawing.Size(90, 44)
         Me.GroupControl9.TabIndex = 3
         Me.GroupControl9.Text = "PROS.BILANC"
         '
@@ -913,14 +998,14 @@ Partial Class DxPianoForm
         '
         Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit3.EnterMoveNextControl = True
-        Me.TextEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.TextEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit3.Properties.MaxLength = 4
-        Me.TextEdit3.Size = New System.Drawing.Size(76, 20)
+        Me.TextEdit3.Size = New System.Drawing.Size(86, 20)
         Me.TextEdit3.TabIndex = 0
         Me.TextEdit3.ToolTip = "PROSPETTO DI BILANCIO"
         '
@@ -928,7 +1013,7 @@ Partial Class DxPianoForm
         '
         Me.GroupControl12.Controls.Add(Me.ComboBoxEdit6)
         Me.GroupControl12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl12.Location = New System.Drawing.Point(274, 2)
+        Me.GroupControl12.Location = New System.Drawing.Point(291, 2)
         Me.GroupControl12.Name = "GroupControl12"
         Me.GroupControl12.Size = New System.Drawing.Size(75, 44)
         Me.GroupControl12.TabIndex = 2
@@ -939,7 +1024,7 @@ Partial Class DxPianoForm
         Me.ComboBoxEdit6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit6.EnterMoveNextControl = True
-        Me.ComboBoxEdit6.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit6.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit6.Name = "ComboBoxEdit6"
         Me.ComboBoxEdit6.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.ComboBoxEdit6.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -956,7 +1041,7 @@ Partial Class DxPianoForm
         Me.GroupControl10.Dock = System.Windows.Forms.DockStyle.Left
         Me.GroupControl10.Location = New System.Drawing.Point(199, 2)
         Me.GroupControl10.Name = "GroupControl10"
-        Me.GroupControl10.Size = New System.Drawing.Size(75, 44)
+        Me.GroupControl10.Size = New System.Drawing.Size(92, 44)
         Me.GroupControl10.TabIndex = 1
         Me.GroupControl10.Text = "ULT.DETRAZ"
         '
@@ -965,7 +1050,7 @@ Partial Class DxPianoForm
         Me.ComboBoxEdit5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBoxEdit5.EnterMoveNextControl = True
-        Me.ComboBoxEdit5.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit5.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit5.Name = "ComboBoxEdit5"
         Me.ComboBoxEdit5.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.ComboBoxEdit5.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -973,7 +1058,7 @@ Partial Class DxPianoForm
         Me.ComboBoxEdit5.Properties.CaseSensitiveSearch = True
         Me.ComboBoxEdit5.Properties.ImmediatePopup = True
         Me.ComboBoxEdit5.Properties.Items.AddRange(New Object() {"0  (NO)", "1  (6% A)", "2  (6% B)", "3  (6% + 6%)"})
-        Me.ComboBoxEdit5.Size = New System.Drawing.Size(71, 20)
+        Me.ComboBoxEdit5.Size = New System.Drawing.Size(88, 20)
         Me.ComboBoxEdit5.TabIndex = 0
         '
         'GroupControl11
@@ -991,7 +1076,7 @@ Partial Class DxPianoForm
         Me.ImageComboBoxEdit4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit4.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit4.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit4.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit4.Name = "ImageComboBoxEdit4"
         Me.ImageComboBoxEdit4.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.ImageComboBoxEdit4.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -1016,7 +1101,7 @@ Partial Class DxPianoForm
         Me.GroupControl16.Location = New System.Drawing.Point(2, 46)
         Me.GroupControl16.Name = "GroupControl16"
         Me.GroupControl16.ShowCaption = False
-        Me.GroupControl16.Size = New System.Drawing.Size(951, 46)
+        Me.GroupControl16.Size = New System.Drawing.Size(1006, 46)
         Me.GroupControl16.TabIndex = 9
         Me.GroupControl16.Text = "GroupControl16"
         '
@@ -1035,7 +1120,7 @@ Partial Class DxPianoForm
         Me.ImageComboBoxEdit5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImageComboBoxEdit5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ImageComboBoxEdit5.EnterMoveNextControl = True
-        Me.ImageComboBoxEdit5.Location = New System.Drawing.Point(2, 21)
+        Me.ImageComboBoxEdit5.Location = New System.Drawing.Point(2, 23)
         Me.ImageComboBoxEdit5.Name = "ImageComboBoxEdit5"
         Me.ImageComboBoxEdit5.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.ImageComboBoxEdit5.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -1053,10 +1138,11 @@ Partial Class DxPianoForm
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
         Me.CheckEdit1.Location = New System.Drawing.Point(427, 15)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Caption = "SOGGETTO R.A."
-        Me.CheckEdit1.Size = New System.Drawing.Size(107, 19)
+        Me.CheckEdit1.Size = New System.Drawing.Size(107, 20)
         Me.CheckEdit1.TabIndex = 6
         Me.CheckEdit1.TabStop = False
         Me.CheckEdit1.ToolTip = "v= se Soggetto a ritenuta d'acconto"
@@ -1064,22 +1150,24 @@ Partial Class DxPianoForm
         'CheckEdit3
         '
         Me.CheckEdit3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit3.EnterMoveNextControl = True
         Me.CheckEdit3.Location = New System.Drawing.Point(741, 15)
         Me.CheckEdit3.Name = "CheckEdit3"
         Me.CheckEdit3.Properties.Caption = "CENTRI DI COSTO"
-        Me.CheckEdit3.Size = New System.Drawing.Size(165, 19)
+        Me.CheckEdit3.Size = New System.Drawing.Size(165, 20)
         Me.CheckEdit3.TabIndex = 8
         Me.CheckEdit3.TabStop = False
-        Me.CheckEdit3.ToolTip = "v=Flag utilizzato esclusivamente dagli utenti abilitati alla gestione per centri " & _
+        Me.CheckEdit3.ToolTip = "v=Flag utilizzato esclusivamente dagli utenti abilitati alla gestione per centri " &
     "di costo/commesse"
         '
         'CheckEdit2
         '
         Me.CheckEdit2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit2.EnterMoveNextControl = True
         Me.CheckEdit2.Location = New System.Drawing.Point(581, 15)
         Me.CheckEdit2.Name = "CheckEdit2"
         Me.CheckEdit2.Properties.Caption = "OPZ. PARTITARIO"
-        Me.CheckEdit2.Size = New System.Drawing.Size(115, 19)
+        Me.CheckEdit2.Size = New System.Drawing.Size(115, 20)
         Me.CheckEdit2.TabIndex = 7
         Me.CheckEdit2.TabStop = False
         Me.CheckEdit2.ToolTip = "v= se il conto e' utilizzato anche come partitario"
@@ -1095,7 +1183,7 @@ Partial Class DxPianoForm
         Me.GroupControl15.Location = New System.Drawing.Point(0, 141)
         Me.GroupControl15.Name = "GroupControl15"
         Me.GroupControl15.ShowCaption = False
-        Me.GroupControl15.Size = New System.Drawing.Size(955, 509)
+        Me.GroupControl15.Size = New System.Drawing.Size(1010, 502)
         Me.GroupControl15.TabIndex = 2
         Me.GroupControl15.Text = "PIANO DEI CONTI"
         '
@@ -1104,11 +1192,10 @@ Partial Class DxPianoForm
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
         Me.GridControl1.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(951, 505)
+        Me.GridControl1.Size = New System.Drawing.Size(1006, 498)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.TabStop = False
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -1330,11 +1417,522 @@ Partial Class DxPianoForm
         Me.RepositoryItemImageComboBox6.Name = "RepositoryItemImageComboBox6"
         Me.RepositoryItemImageComboBox6.ReadOnly = True
         '
+        'XtraTabPage2
+        '
+        Me.XtraTabPage2.Controls.Add(Me.GroupControl17)
+        Me.XtraTabPage2.Controls.Add(Me.GroupControl27)
+        Me.XtraTabPage2.Controls.Add(Me.GroupControl19)
+        Me.XtraTabPage2.Controls.Add(Me.GroupControl20)
+        Me.XtraTabPage2.ImageOptions.SvgImage = CType(resources.GetObject("XtraTabPage2.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.XtraTabPage2.ImageOptions.SvgImageSize = New System.Drawing.Size(16, 16)
+        Me.XtraTabPage2.Name = "XtraTabPage2"
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1057, 643)
+        Me.XtraTabPage2.Text = "Allinea Conti Consolidato"
+        '
+        'GroupControl17
+        '
+        Me.GroupControl17.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupControl17.Appearance.Options.UseFont = True
+        Me.GroupControl17.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupControl17.AppearanceCaption.Options.UseFont = True
+        Me.GroupControl17.Controls.Add(Me.GridControl2)
+        Me.GroupControl17.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupControl17.Location = New System.Drawing.Point(0, 89)
+        Me.GroupControl17.Name = "GroupControl17"
+        Me.GroupControl17.ShowCaption = False
+        Me.GroupControl17.Size = New System.Drawing.Size(1010, 554)
+        Me.GroupControl17.TabIndex = 3
+        Me.GroupControl17.Text = "PIANO DEI CONTI CONSOLIDATO"
+        '
+        'GridControl2
+        '
+        Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridControl2.FormsUseDefaultLookAndFeel = True
+        Me.GridControl2.Location = New System.Drawing.Point(2, 2)
+        Me.GridControl2.MainView = Me.BandedGridView1
+        Me.GridControl2.Name = "GridControl2"
+        Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox3, Me.RepositoryItemImageComboBox4, Me.RepositoryItemCheckEdit1, Me.RepositoryItemImageComboBox5, Me.RepositoryItemImageComboBox7})
+        Me.GridControl2.Size = New System.Drawing.Size(1006, 550)
+        Me.GridControl2.TabIndex = 0
+        Me.GridControl2.TabStop = False
+        Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.BandedGridView1})
+        '
+        'BandedGridView1
+        '
+        Me.BandedGridView1.ActiveFilterEnabled = False
+        Me.BandedGridView1.Bands.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.GridBand() {Me.GridBand1, Me.gridBand2})
+        Me.BandedGridView1.Columns.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn() {Me.GridColumn14, Me.GridColumn15, Me.BandedGridColumn1, Me.BandedGridColumn2, Me.BandedGridColumn3})
+        Me.BandedGridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None
+        Me.BandedGridView1.GridControl = Me.GridControl2
+        Me.BandedGridView1.GroupFormat = ""
+        Me.BandedGridView1.Name = "BandedGridView1"
+        Me.BandedGridView1.OptionsNavigation.EnterMoveNextColumn = True
+        Me.BandedGridView1.OptionsPrint.ExpandAllGroups = False
+        Me.BandedGridView1.OptionsPrint.PrintGroupFooter = False
+        Me.BandedGridView1.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.BandedGridView1.OptionsSelection.MultiSelect = True
+        Me.BandedGridView1.OptionsSelection.UseIndicatorForSelection = False
+        Me.BandedGridView1.OptionsView.EnableAppearanceEvenRow = True
+        Me.BandedGridView1.OptionsView.EnableAppearanceOddRow = True
+        Me.BandedGridView1.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
+        Me.BandedGridView1.OptionsView.ShowGroupPanel = False
+        '
+        'GridBand1
+        '
+        Me.GridBand1.AppearanceHeader.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.GridBand1.AppearanceHeader.Options.UseFont = True
+        Me.GridBand1.Caption = "PENSIONATO"
+        Me.GridBand1.Columns.Add(Me.GridColumn14)
+        Me.GridBand1.Columns.Add(Me.GridColumn15)
+        Me.GridBand1.Name = "GridBand1"
+        Me.GridBand1.OptionsBand.FixedWidth = True
+        Me.GridBand1.VisibleIndex = 0
+        Me.GridBand1.Width = 500
+        '
+        'GridColumn14
+        '
+        Me.GridColumn14.Caption = "DA COD"
+        Me.GridColumn14.FieldName = "DACONTO"
+        Me.GridColumn14.Name = "GridColumn14"
+        Me.GridColumn14.OptionsColumn.AllowEdit = False
+        Me.GridColumn14.OptionsColumn.AllowFocus = False
+        Me.GridColumn14.OptionsColumn.FixedWidth = True
+        Me.GridColumn14.OptionsColumn.ReadOnly = True
+        Me.GridColumn14.Visible = True
+        Me.GridColumn14.Width = 50
+        '
+        'GridColumn15
+        '
+        Me.GridColumn15.Caption = "DESCRIZIONE"
+        Me.GridColumn15.FieldName = "DADESCRIZIONE"
+        Me.GridColumn15.Name = "GridColumn15"
+        Me.GridColumn15.OptionsColumn.AllowEdit = False
+        Me.GridColumn15.OptionsColumn.AllowFocus = False
+        Me.GridColumn15.OptionsColumn.ReadOnly = True
+        Me.GridColumn15.Visible = True
+        Me.GridColumn15.Width = 450
+        '
+        'gridBand2
+        '
+        Me.gridBand2.AppearanceHeader.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.gridBand2.AppearanceHeader.Options.UseFont = True
+        Me.gridBand2.Caption = "COMUNITA'"
+        Me.gridBand2.Columns.Add(Me.BandedGridColumn1)
+        Me.gridBand2.Columns.Add(Me.BandedGridColumn2)
+        Me.gridBand2.Columns.Add(Me.BandedGridColumn3)
+        Me.gridBand2.Name = "gridBand2"
+        Me.gridBand2.VisibleIndex = 1
+        Me.gridBand2.Width = 520
+        '
+        'BandedGridColumn1
+        '
+        Me.BandedGridColumn1.Caption = "A COD "
+        Me.BandedGridColumn1.FieldName = "AACONTO"
+        Me.BandedGridColumn1.Name = "BandedGridColumn1"
+        Me.BandedGridColumn1.OptionsColumn.AllowEdit = False
+        Me.BandedGridColumn1.OptionsColumn.AllowFocus = False
+        Me.BandedGridColumn1.OptionsColumn.FixedWidth = True
+        Me.BandedGridColumn1.OptionsColumn.ReadOnly = True
+        Me.BandedGridColumn1.Visible = True
+        Me.BandedGridColumn1.Width = 50
+        '
+        'BandedGridColumn2
+        '
+        Me.BandedGridColumn2.Caption = "DESCRIZIONE"
+        Me.BandedGridColumn2.FieldName = "AADESCRIZIONE"
+        Me.BandedGridColumn2.Name = "BandedGridColumn2"
+        Me.BandedGridColumn2.OptionsColumn.AllowEdit = False
+        Me.BandedGridColumn2.OptionsColumn.AllowFocus = False
+        Me.BandedGridColumn2.OptionsColumn.ReadOnly = True
+        Me.BandedGridColumn2.Visible = True
+        Me.BandedGridColumn2.Width = 450
+        '
+        'BandedGridColumn3
+        '
+        Me.BandedGridColumn3.Caption = "T"
+        Me.BandedGridColumn3.ColumnEdit = Me.RepositoryItemImageComboBox7
+        Me.BandedGridColumn3.FieldName = "AASO"
+        Me.BandedGridColumn3.Name = "BandedGridColumn3"
+        Me.BandedGridColumn3.OptionsColumn.AllowEdit = False
+        Me.BandedGridColumn3.OptionsColumn.AllowFocus = False
+        Me.BandedGridColumn3.OptionsColumn.FixedWidth = True
+        Me.BandedGridColumn3.OptionsColumn.ReadOnly = True
+        Me.BandedGridColumn3.Visible = True
+        Me.BandedGridColumn3.Width = 20
+        '
+        'RepositoryItemImageComboBox7
+        '
+        Me.RepositoryItemImageComboBox7.AutoHeight = False
+        Me.RepositoryItemImageComboBox7.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemImageComboBox7.Items.AddRange(New DevExpress.XtraEditors.Controls.ImageComboBoxItem() {New DevExpress.XtraEditors.Controls.ImageComboBoxItem("CONTO UGUALE", CType(0, Byte), 66), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("CONTO NUOVO FITTIZIO", CType(1, Byte), 72), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("CONTO DIVERSO", CType(2, Byte), 80)})
+        Me.RepositoryItemImageComboBox7.LargeImages = Me.imageList1
+        Me.RepositoryItemImageComboBox7.Name = "RepositoryItemImageComboBox7"
+        Me.RepositoryItemImageComboBox7.SmallImages = Me.imageList1
+        '
+        'RepositoryItemImageComboBox3
+        '
+        Me.RepositoryItemImageComboBox3.AutoHeight = False
+        Me.RepositoryItemImageComboBox3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemImageComboBox3.Name = "RepositoryItemImageComboBox3"
+        '
+        'RepositoryItemImageComboBox4
+        '
+        Me.RepositoryItemImageComboBox4.AutoHeight = False
+        Me.RepositoryItemImageComboBox4.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemImageComboBox4.DropDownRows = 1
+        Me.RepositoryItemImageComboBox4.Items.AddRange(New DevExpress.XtraEditors.Controls.ImageComboBoxItem() {New DevExpress.XtraEditors.Controls.ImageComboBoxItem("EVASO TOTALE", 0, 31), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("CONSEGNATA < ORDINATA", 1, 35), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("CONSEGNATA > ORDINATA", 2, 36), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("MISTA ( + e - )", 3, 37), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("EVASO PARZIALE", 4, 28), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("INEVASO", 5, 42)})
+        Me.RepositoryItemImageComboBox4.Name = "RepositoryItemImageComboBox4"
+        Me.RepositoryItemImageComboBox4.ReadOnly = True
+        '
+        'RepositoryItemCheckEdit1
+        '
+        Me.RepositoryItemCheckEdit1.AutoHeight = False
+        Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
+        '
+        'RepositoryItemImageComboBox5
+        '
+        Me.RepositoryItemImageComboBox5.AutoHeight = False
+        Me.RepositoryItemImageComboBox5.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemImageComboBox5.DropDownRows = 1
+        Me.RepositoryItemImageComboBox5.Items.AddRange(New DevExpress.XtraEditors.Controls.ImageComboBoxItem() {New DevExpress.XtraEditors.Controls.ImageComboBoxItem("NORMALE", 0, 39), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("RAPIDO", 1, 40), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("INTEGRAZIONE", 2, 36), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("PRESTAZIONI M.O.", 3, 45)})
+        Me.RepositoryItemImageComboBox5.Name = "RepositoryItemImageComboBox5"
+        Me.RepositoryItemImageComboBox5.ReadOnly = True
+        '
+        'GroupControl27
+        '
+        Me.GroupControl27.AppearanceCaption.Options.UseTextOptions = True
+        Me.GroupControl27.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.GroupControl27.Controls.Add(Me.Button2LEG)
+        Me.GroupControl27.Controls.Add(Me.Button1LEG)
+        Me.GroupControl27.Controls.Add(Me.Button0LEG)
+        Me.GroupControl27.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GroupControl27.Location = New System.Drawing.Point(0, 47)
+        Me.GroupControl27.Name = "GroupControl27"
+        Me.GroupControl27.Size = New System.Drawing.Size(1010, 42)
+        Me.GroupControl27.TabIndex = 6
+        Me.GroupControl27.Text = "LEGENDA COLORI"
+        '
+        'GroupControl19
+        '
+        Me.GroupControl19.Controls.Add(Me.ButtonXF9)
+        Me.GroupControl19.Controls.Add(Me.ButtonXF5)
+        Me.GroupControl19.Dock = System.Windows.Forms.DockStyle.Right
+        Me.GroupControl19.Location = New System.Drawing.Point(1010, 47)
+        Me.GroupControl19.Name = "GroupControl19"
+        Me.GroupControl19.ShowCaption = False
+        Me.GroupControl19.Size = New System.Drawing.Size(47, 596)
+        Me.GroupControl19.TabIndex = 4
+        '
+        'ButtonXF9
+        '
+        Me.ButtonXF9.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.ButtonXF9.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.ButtonXF9.Appearance.Options.UseFont = True
+        Me.ButtonXF9.Appearance.Options.UseForeColor = True
+        Me.ButtonXF9.Appearance.Options.UseTextOptions = True
+        Me.ButtonXF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.ButtonXF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.ButtonXF9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonXF9.ImageOptions.ImageIndex = 9
+        Me.ButtonXF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonXF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF9.Location = New System.Drawing.Point(7, 83)
+        Me.ButtonXF9.Name = "ButtonXF9"
+        Me.ButtonXF9.Size = New System.Drawing.Size(32, 32)
+        Me.ButtonXF9.TabIndex = 3
+        Me.ButtonXF9.TabStop = False
+        Me.ButtonXF9.ToolTip = "F9-STAMPA"
+        '
+        'ButtonXF5
+        '
+        Me.ButtonXF5.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.ButtonXF5.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.ButtonXF5.Appearance.Options.UseFont = True
+        Me.ButtonXF5.Appearance.Options.UseForeColor = True
+        Me.ButtonXF5.Appearance.Options.UseTextOptions = True
+        Me.ButtonXF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.ButtonXF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.ButtonXF5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonXF5.ImageOptions.ImageIndex = 4
+        Me.ButtonXF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonXF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF5.Location = New System.Drawing.Point(7, 45)
+        Me.ButtonXF5.Name = "ButtonXF5"
+        Me.ButtonXF5.Size = New System.Drawing.Size(32, 32)
+        Me.ButtonXF5.TabIndex = 1
+        Me.ButtonXF5.TabStop = False
+        Me.ButtonXF5.ToolTip = "F5-RESET"
+        '
+        'GroupControl20
+        '
+        Me.GroupControl20.Controls.Add(Me.GroupControl26)
+        Me.GroupControl20.Controls.Add(Me.GroupControl23)
+        Me.GroupControl20.Controls.Add(Me.GroupControl21)
+        Me.GroupControl20.Controls.Add(Me.GroupControl22)
+        Me.GroupControl20.Controls.Add(Me.GroupControl24)
+        Me.GroupControl20.Controls.Add(Me.GroupControl25)
+        Me.GroupControl20.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GroupControl20.Location = New System.Drawing.Point(0, 0)
+        Me.GroupControl20.Name = "GroupControl20"
+        Me.GroupControl20.ShowCaption = False
+        Me.GroupControl20.Size = New System.Drawing.Size(1057, 47)
+        Me.GroupControl20.TabIndex = 5
+        '
+        'GroupControl26
+        '
+        Me.GroupControl26.Controls.Add(Me.ImageComboBoxEdit6)
+        Me.GroupControl26.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl26.Location = New System.Drawing.Point(978, 2)
+        Me.GroupControl26.Name = "GroupControl26"
+        Me.GroupControl26.Size = New System.Drawing.Size(30, 43)
+        Me.GroupControl26.TabIndex = 5
+        Me.GroupControl26.Text = "T"
+        '
+        'ImageComboBoxEdit6
+        '
+        Me.ImageComboBoxEdit6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ImageComboBoxEdit6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ImageComboBoxEdit6.EnterMoveNextControl = True
+        Me.ImageComboBoxEdit6.Location = New System.Drawing.Point(2, 23)
+        Me.ImageComboBoxEdit6.Name = "ImageComboBoxEdit6"
+        Me.ImageComboBoxEdit6.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.ImageComboBoxEdit6.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.ImageComboBoxEdit6.Properties.LargeImages = Me.imageList1
+        Me.ImageComboBoxEdit6.Properties.ReadOnly = True
+        Me.ImageComboBoxEdit6.Properties.ShowDropDown = DevExpress.XtraEditors.Controls.ShowDropDown.Never
+        Me.ImageComboBoxEdit6.Properties.SmallImages = Me.imageList1
+        Me.ImageComboBoxEdit6.Properties.UseReadOnlyAppearance = False
+        Me.ImageComboBoxEdit6.Size = New System.Drawing.Size(26, 20)
+        Me.ImageComboBoxEdit6.TabIndex = 0
+        Me.ImageComboBoxEdit6.TabStop = False
+        '
+        'GroupControl23
+        '
+        Me.GroupControl23.Controls.Add(Me.ButtonXF11)
+        Me.GroupControl23.Dock = System.Windows.Forms.DockStyle.Right
+        Me.GroupControl23.Location = New System.Drawing.Point(1008, 2)
+        Me.GroupControl23.Name = "GroupControl23"
+        Me.GroupControl23.ShowCaption = False
+        Me.GroupControl23.Size = New System.Drawing.Size(47, 43)
+        Me.GroupControl23.TabIndex = 4
+        Me.GroupControl23.Text = "GroupControl23"
+        '
+        'ButtonXF11
+        '
+        Me.ButtonXF11.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.ButtonXF11.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.ButtonXF11.Appearance.Options.UseFont = True
+        Me.ButtonXF11.Appearance.Options.UseForeColor = True
+        Me.ButtonXF11.Appearance.Options.UseTextOptions = True
+        Me.ButtonXF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.ButtonXF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.ButtonXF11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonXF11.ImageOptions.ImageIndex = 10
+        Me.ButtonXF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonXF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF11.Location = New System.Drawing.Point(7, 6)
+        Me.ButtonXF11.Name = "ButtonXF11"
+        Me.ButtonXF11.Size = New System.Drawing.Size(32, 32)
+        Me.ButtonXF11.TabIndex = 0
+        Me.ButtonXF11.ToolTip = "F11-REGISTRA DATABASE"
+        '
+        'GroupControl21
+        '
+        Me.GroupControl21.Controls.Add(Me.TextEdit10)
+        Me.GroupControl21.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl21.Location = New System.Drawing.Point(589, 2)
+        Me.GroupControl21.Name = "GroupControl21"
+        Me.GroupControl21.Size = New System.Drawing.Size(389, 43)
+        Me.GroupControl21.TabIndex = 3
+        Me.GroupControl21.Text = "DESCRIZIONE"
+        '
+        'TextEdit10
+        '
+        Me.TextEdit10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextEdit10.EnterMoveNextControl = True
+        Me.TextEdit10.Location = New System.Drawing.Point(2, 23)
+        Me.TextEdit10.Name = "TextEdit10"
+        Me.TextEdit10.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TextEdit10.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TextEdit10.Properties.MaxLength = 32
+        Me.TextEdit10.Size = New System.Drawing.Size(385, 20)
+        Me.TextEdit10.TabIndex = 0
+        '
+        'GroupControl22
+        '
+        Me.GroupControl22.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupControl22.AppearanceCaption.Options.UseFont = True
+        Me.GroupControl22.Controls.Add(Me.TextEdit11)
+        Me.GroupControl22.Controls.Add(Me.TbLeggi3)
+        Me.GroupControl22.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl22.Location = New System.Drawing.Point(513, 2)
+        Me.GroupControl22.Name = "GroupControl22"
+        Me.GroupControl22.Size = New System.Drawing.Size(76, 43)
+        Me.GroupControl22.TabIndex = 2
+        Me.GroupControl22.Text = "A  CODICE"
+        '
+        'TextEdit11
+        '
+        Me.TextEdit11.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextEdit11.EnterMoveNextControl = True
+        Me.TextEdit11.Location = New System.Drawing.Point(2, 23)
+        Me.TextEdit11.Name = "TextEdit11"
+        Me.TextEdit11.Properties.Appearance.Options.UseTextOptions = True
+        Me.TextEdit11.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.TextEdit11.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TextEdit11.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TextEdit11.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextEdit11.Properties.MaxLength = 5
+        Me.TextEdit11.Size = New System.Drawing.Size(72, 20)
+        Me.TextEdit11.TabIndex = 0
+        '
+        'TbLeggi3
+        '
+        Me.TbLeggi3.EnterMoveNextControl = True
+        Me.TbLeggi3.Location = New System.Drawing.Point(17, 25)
+        Me.TbLeggi3.Name = "TbLeggi3"
+        Me.TbLeggi3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TbLeggi3.Properties.Appearance.Options.UseFont = True
+        Me.TbLeggi3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TbLeggi3.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TbLeggi3.Size = New System.Drawing.Size(15, 16)
+        Me.TbLeggi3.TabIndex = 1
+        '
+        'GroupControl24
+        '
+        Me.GroupControl24.Controls.Add(Me.TextEdit7)
+        Me.GroupControl24.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl24.Location = New System.Drawing.Point(80, 2)
+        Me.GroupControl24.Name = "GroupControl24"
+        Me.GroupControl24.Size = New System.Drawing.Size(433, 43)
+        Me.GroupControl24.TabIndex = 1
+        Me.GroupControl24.Text = "DESCRIZIONE"
+        '
+        'TextEdit7
+        '
+        Me.TextEdit7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextEdit7.EnterMoveNextControl = True
+        Me.TextEdit7.Location = New System.Drawing.Point(2, 23)
+        Me.TextEdit7.Name = "TextEdit7"
+        Me.TextEdit7.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TextEdit7.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TextEdit7.Properties.MaxLength = 32
+        Me.TextEdit7.Properties.ReadOnly = True
+        Me.TextEdit7.Size = New System.Drawing.Size(429, 20)
+        Me.TextEdit7.TabIndex = 0
+        '
+        'GroupControl25
+        '
+        Me.GroupControl25.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupControl25.AppearanceCaption.Options.UseFont = True
+        Me.GroupControl25.Controls.Add(Me.TextEdit8)
+        Me.GroupControl25.Controls.Add(Me.TbLeggi2)
+        Me.GroupControl25.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl25.Location = New System.Drawing.Point(2, 2)
+        Me.GroupControl25.Name = "GroupControl25"
+        Me.GroupControl25.Size = New System.Drawing.Size(78, 43)
+        Me.GroupControl25.TabIndex = 0
+        Me.GroupControl25.Text = "DA CODICE"
+        '
+        'TextEdit8
+        '
+        Me.TextEdit8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextEdit8.EnterMoveNextControl = True
+        Me.TextEdit8.Location = New System.Drawing.Point(2, 23)
+        Me.TextEdit8.Name = "TextEdit8"
+        Me.TextEdit8.Properties.Appearance.Options.UseTextOptions = True
+        Me.TextEdit8.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.TextEdit8.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TextEdit8.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TextEdit8.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextEdit8.Properties.MaxLength = 5
+        Me.TextEdit8.Properties.ReadOnly = True
+        Me.TextEdit8.Size = New System.Drawing.Size(74, 20)
+        Me.TextEdit8.TabIndex = 0
+        '
+        'TbLeggi2
+        '
+        Me.TbLeggi2.EnterMoveNextControl = True
+        Me.TbLeggi2.Location = New System.Drawing.Point(17, 25)
+        Me.TbLeggi2.Name = "TbLeggi2"
+        Me.TbLeggi2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TbLeggi2.Properties.Appearance.Options.UseFont = True
+        Me.TbLeggi2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TbLeggi2.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TbLeggi2.Size = New System.Drawing.Size(15, 16)
+        Me.TbLeggi2.TabIndex = 1
+        '
+        'Button0LEG
+        '
+        Me.Button0LEG.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.Button0LEG.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.Button0LEG.Appearance.Options.UseFont = True
+        Me.Button0LEG.Appearance.Options.UseForeColor = True
+        Me.Button0LEG.Appearance.Options.UseTextOptions = True
+        Me.Button0LEG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.Button0LEG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.Button0LEG.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button0LEG.ImageOptions.ImageIndex = 66
+        Me.Button0LEG.ImageOptions.ImageList = Me.imageList1
+        Me.Button0LEG.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom
+        Me.Button0LEG.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.Button0LEG.Location = New System.Drawing.Point(1, 23)
+        Me.Button0LEG.Name = "Button0LEG"
+        Me.Button0LEG.Size = New System.Drawing.Size(320, 18)
+        Me.Button0LEG.TabIndex = 1
+        Me.Button0LEG.TabStop = False
+        Me.Button0LEG.Text = "CONTO PENSIONATO = CONTO COMUNITA'"
+        Me.Button0LEG.ToolTip = "CONTO PENSIONATO = CONTO COMUNITA'"
+        '
+        'Button1LEG
+        '
+        Me.Button1LEG.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.Button1LEG.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.Button1LEG.Appearance.Options.UseFont = True
+        Me.Button1LEG.Appearance.Options.UseForeColor = True
+        Me.Button1LEG.Appearance.Options.UseTextOptions = True
+        Me.Button1LEG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.Button1LEG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.Button1LEG.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1LEG.ImageOptions.ImageIndex = 72
+        Me.Button1LEG.ImageOptions.ImageList = Me.imageList1
+        Me.Button1LEG.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom
+        Me.Button1LEG.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.Button1LEG.Location = New System.Drawing.Point(337, 23)
+        Me.Button1LEG.Name = "Button1LEG"
+        Me.Button1LEG.Size = New System.Drawing.Size(320, 18)
+        Me.Button1LEG.TabIndex = 2
+        Me.Button1LEG.TabStop = False
+        Me.Button1LEG.Text = "CONTO PENSIONATO = CONTO NUOVO FITTIZIO COMUNITA'"
+        Me.Button1LEG.ToolTip = "CONTO PENSIONATO = CONTO NUOVO FITTIZIO COMUNITA'"
+        '
+        'Button2LEG
+        '
+        Me.Button2LEG.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.Button2LEG.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.Button2LEG.Appearance.Options.UseFont = True
+        Me.Button2LEG.Appearance.Options.UseForeColor = True
+        Me.Button2LEG.Appearance.Options.UseTextOptions = True
+        Me.Button2LEG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.Button2LEG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.Button2LEG.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2LEG.ImageOptions.ImageIndex = 80
+        Me.Button2LEG.ImageOptions.ImageList = Me.imageList1
+        Me.Button2LEG.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom
+        Me.Button2LEG.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.Button2LEG.Location = New System.Drawing.Point(673, 23)
+        Me.Button2LEG.Name = "Button2LEG"
+        Me.Button2LEG.Size = New System.Drawing.Size(320, 18)
+        Me.Button2LEG.TabIndex = 3
+        Me.Button2LEG.TabStop = False
+        Me.Button2LEG.Text = "CONTO PENSIONATO  DIVERSO CONTO COMUNITA'"
+        Me.Button2LEG.ToolTip = "CONTO PENSIONATO  DIVERSO CONTO COMUNITA'"
+        '
         'DxPianoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1008, 656)
+        Me.ClientSize = New System.Drawing.Size(1063, 677)
         Me.Name = "DxPianoForm"
         Me.Text = "DxPianoForm"
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1401,6 +1999,41 @@ Partial Class DxPianoForm
         CType(Me.RepositoryItemImageComboBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemImageComboBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.XtraTabPage2.ResumeLayout(False)
+        CType(Me.GroupControl17, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl17.ResumeLayout(False)
+        CType(Me.GridControl2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BandedGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemImageComboBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemImageComboBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemImageComboBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemImageComboBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl27, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl27.ResumeLayout(False)
+        CType(Me.GroupControl19, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl19.ResumeLayout(False)
+        CType(Me.GroupControl20, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl20.ResumeLayout(False)
+        CType(Me.GroupControl26, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl26.ResumeLayout(False)
+        CType(Me.ImageComboBoxEdit6.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl23, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl23.ResumeLayout(False)
+        CType(Me.GroupControl21, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl21.ResumeLayout(False)
+        CType(Me.TextEdit10.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl22, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl22.ResumeLayout(False)
+        CType(Me.TextEdit11.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbLeggi3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl24, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl24.ResumeLayout(False)
+        CType(Me.TextEdit7.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl25, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl25.ResumeLayout(False)
+        CType(Me.TextEdit8.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbLeggi2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1463,4 +2096,42 @@ Partial Class DxPianoForm
     Friend WithEvents GroupControl16 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents GroupControl18 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents ImageComboBoxEdit5 As DevExpress.XtraEditors.ImageComboBoxEdit
+    Friend WithEvents XtraTabPage2 As DevExpress.XtraTab.XtraTabPage
+    Friend WithEvents GroupControl17 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents GridControl2 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents RepositoryItemImageComboBox3 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
+    Friend WithEvents RepositoryItemImageComboBox4 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
+    Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
+    Friend WithEvents RepositoryItemImageComboBox5 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
+    Friend WithEvents GroupControl19 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents ButtonXF9 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents ButtonXF5 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents ButtonXF11 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents BandedGridView1 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridView
+    Friend WithEvents GridColumn14 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents GridColumn15 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents BandedGridColumn1 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents BandedGridColumn2 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents GroupControl20 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents GroupControl21 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents TextEdit10 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents GroupControl22 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents TextEdit11 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TbLeggi3 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents GroupControl24 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents TextEdit7 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents GroupControl25 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents TextEdit8 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TbLeggi2 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents GroupControl23 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents GridBand1 As DevExpress.XtraGrid.Views.BandedGrid.GridBand
+    Friend WithEvents gridBand2 As DevExpress.XtraGrid.Views.BandedGrid.GridBand
+    Friend WithEvents BandedGridColumn3 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents RepositoryItemImageComboBox7 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
+    Friend WithEvents GroupControl26 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents ImageComboBoxEdit6 As DevExpress.XtraEditors.ImageComboBoxEdit
+    Friend WithEvents GroupControl27 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents Button2LEG As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents Button1LEG As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents Button0LEG As DevExpress.XtraEditors.SimpleButton
 End Class

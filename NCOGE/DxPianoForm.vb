@@ -12,19 +12,30 @@ Public Class DxPianoForm
     Dim nn As New DevExpress.XtraEditors.Controls.ImageComboBoxItem
     Dim REPORT As New XtraReport
     Dim selectformula, SCRI As String
+
     Dim DsPia As DataTable
     Dim DaPia As SqlDataAdapter
+
+    Dim DsCns As DataTable
+    Dim DaCns As SqlDataAdapter
+    Dim RwCns As DataRow
+
     Dim Sw As Int16 = 0
     Dim OkLDP As Boolean = False
     Dim OkGruppoMondo As Boolean = False
     Dim UserId As String = ""
     Dim GlGroupAccount As String = ""
     Dim CCeeSt As String = ""
+    Dim Pagina As Int16 = 1
+    Dim CnAVVERSA As SqlClient.SqlConnection
+    Dim WhoAmI As String = ""
+    Dim Rosine As Boolean = False
     Private Sub DxPiaForm_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown, ButtonF5.Click
         If Sw = 0 Then
             LeggiAzienda() : GestioneUser()
             Sw = 1
         End If
+        Pagina = 1
         Pulizia(True)
         PopolaCb1()
         PopolaGrid()
@@ -50,7 +61,49 @@ Public Class DxPianoForm
             End If
 
         End If
+        If (UserId.ToUpper = "COMUNITA" Or UserId.ToUpper = "PENSIONATO") Then
+            XtraTabControl1.ShowTabHeader = True
+            Rosine = True
+            If ConnettiIDB() = False Then Me.Close()
+            CaricaSimboli
+            GroupControl20.Enabled = False
+        Else
+            XtraTabControl1.ShowTabHeader = False
+            Rosine = False
+        End If
     End Sub
+    Sub CaricaSimboli()
+        ImageComboBoxEdit6.Properties.Items.Clear()
+        For i As Int16 = 1 To RepositoryItemImageComboBox7.Items.Count
+            ImageComboBoxEdit6.Properties.Items.Add(RepositoryItemImageComboBox7.Items(i - 1))
+        Next
+        ImageComboBoxEdit6.SelectedIndex = -1
+    End Sub
+    Function ConnettiIDB() As Boolean
+        Dim BaseConn, CCOGE As String
+        Dim ISTSQL As String = ""
+
+        Cmd = New SqlCommand("Select * from TbIstanzaAvversa", cnDb)
+        dataRd = Cmd.ExecuteReader
+        If dataRd.Read Then
+            ISTSQL = dataRd.Item("IstanzaSQL")
+            WhoAmI = dataRd.Item("NomeDesc")
+        End If
+        dataRd.Close()
+
+        BaseConn = "Server=" & ISTSQL.Trim & ";Uid=selco;Pwd=1234Clienti;database="
+        CCOGE = BaseConn & "COGE"
+        CnAVVERSA = New SqlConnection(CCOGE)
+
+        Try
+            CnAVVERSA.Open()
+        Catch ex As Exception
+            MessageBox.Show("Impossibile connettersi con il server : " & WhoAmI & " !!!", "CONNESSIONE DATI CONSOLIDATO", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Return False
+        End Try
+
+        Return True
+    End Function
     Sub LeggiGruppoMondo()
         Dim str As String = "select distinct GLGroupAccount,GLGroupAccountDesc from TbGroup  order by GLGroupAccount"
         ImageComboBoxEdit5.Properties.Items.Clear()
@@ -288,6 +341,10 @@ Public Class DxPianoForm
         OldValue = TextEdit1.EditValue
         ButtonF5.PerformClick()
         FocusedGrid(OldValue)
+        If Rosine = True And UserId.ToUpper = "PENSIONATO" Then
+            XtraTabControl1.SelectedTabPageIndex = 1
+            FocusedBanded(OldValue)
+        End If
     End Sub
     Sub RegistraGruppoMondo()
         If Mid(TextEdit1.EditValue, 3, 3) = ".00" Then Exit Sub
@@ -384,6 +441,33 @@ Public Class DxPianoForm
         Cmd.Parameters.Add(p14)
 
         Cmd.ExecuteNonQuery()
+        If Rosine = False Then Exit Sub
+        If UserId.ToUpper = "COMUNITA" Then Exit Sub '' MANCA CONTROLLO SE DOPPIO IN ROSINE
+        Dim InsX As String = "Insert Into TbDaAa (DACONTO,DADESCRIZIONE,AACONTO,AADESCRIZIONE) values (@DAC,@DAD,@AAC,@AAD)"
+        Dim UpdX As String = "Update TbDaAa set DADESCRIZIONE=@DAD where DACONTO=@DAC"
+        Str = ""
+        Dim Q1 As New SqlParameter("@DAC", SqlDbType.VarChar)
+        Dim Q2 As New SqlParameter("@DAD", SqlDbType.VarChar)
+        Dim Q3 As New SqlParameter("@AAC", SqlDbType.VarChar)
+        Dim Q4 As New SqlParameter("@AAD", SqlDbType.VarChar)
+        If Insert = True Then Str = InsX Else Str = UpdX
+        Cmd = New SqlCommand(Str, CnAVVERSA)
+        Q1.Value = TextEdit1.EditValue
+        Q2.Value = TextEdit2.EditValue
+        Q3.Value = TextEdit1.EditValue
+        Q4.Value = TextEdit2.EditValue
+
+        Cmd.Parameters.Add(Q1)
+        Cmd.Parameters.Add(Q2)
+        If Insert = True Then
+            Cmd.Parameters.Add(Q3)
+            Cmd.Parameters.Add(Q4)
+        End If
+        Try
+            Cmd.ExecuteNonQuery()
+        Catch ex As Exception
+            '' REM NON REGISTRA PERCHè DOPPIO ELIMINATO E RICREATO
+        End Try
     End Sub
     Sub RegistraLDP()
         'Se non c'è flag deletta sul TbCog
@@ -424,19 +508,39 @@ Public Class DxPianoForm
         EliminaConto()
         ButtonF5.PerformClick()
     End Sub
-  
+
     Private Sub Form_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyUp
-        If e.KeyData = Keys.F5 Then
-            ButtonF5.PerformClick()
-            Exit Sub
+        If Pagina = 1 Then
+            If e.KeyData = Keys.F5 Then
+                ButtonF5.PerformClick()
+                Exit Sub
+            End If
+            If e.KeyData = Keys.F3 Then
+                ButtonF3.PerformClick()
+                Exit Sub
+            End If
+            If e.KeyData = Keys.F9 Then
+                ButtonF9.PerformClick()
+                Exit Sub
+            End If
+            If e.KeyData = Keys.F11 Then
+                ButtonF11.PerformClick()
+                Exit Sub
+            End If
         End If
-        If e.KeyData = Keys.F3 Then
-            ButtonF3.PerformClick()
-            Exit Sub
-        End If
-        If e.KeyData = Keys.F11 Then
-            ButtonF11.PerformClick()
-            Exit Sub
+        If Pagina = 2 Then
+            If e.KeyData = Keys.F5 Then
+                ButtonXF5.PerformClick()
+                Exit Sub
+            End If
+            If e.KeyData = Keys.F9 Then
+                ButtonXF9.PerformClick()
+                Exit Sub
+            End If
+            If e.KeyData = Keys.F11 Then
+                ButtonXF11.PerformClick()
+                Exit Sub
+            End If
         End If
     End Sub
     Private Sub ImageComboBoxEdit1_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles ImageComboBoxEdit1.Enter, ImageComboBoxEdit2.Enter, ImageComboBoxEdit3.Enter, ImageComboBoxEdit4.Enter, ComboBoxEdit5.Enter, ComboBoxEdit6.Enter
@@ -531,6 +635,10 @@ Public Class DxPianoForm
         If box <> DialogResult.Yes Then GoTo FineOp
         Cmd = New SqlCommand("delete from TbPia where PiaCodCo ='" & cod & "'", cnCo)
         Cmd.ExecuteNonQuery()
+        If Rosine = True And UserId.ToUpper = "PENSIONATO" Then
+            Cmd = New SqlCommand("delete from TbDaAa where DACONTO ='" & cod & "'", CnAVVERSA)
+            Cmd.ExecuteNonQuery()
+        End If
         If OkLDP = True Then
             Cmd = New SqlCommand("delete from TbCog where CogConto ='" & cod & "'", CnDc)
             Cmd.ExecuteNonQuery()
@@ -561,6 +669,152 @@ FineOp:
             MessageBox.Show("Conto Movimentato!!! Impossibile Variare il Flag" & Chr(13), "Commesse/Centri di costo", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Function
+#Region "PAGINA 2 CONSOLIDATO SOLO PER ROSINE"
+    Sub IIPagina()
+        '' Dim str As String = "SELECT * FROM TbDaAa order by DACONTO"
+        Dim str As String = "exec XLEGGIDAAA"
+        If UserId.ToUpper = "COMUNITA" Then
+            DaCns = New SqlDataAdapter(str, cnCo)
+        Else
+            DaCns = New SqlDataAdapter(str, CnAVVERSA)
+        End If
+        DsCns = New DataTable
+        DaCns.Fill(DsCns)
+        GridControl2.DataSource = DsCns
+        GridControl2.Refresh()
+        BandedGridView1.UnselectRow(0)
+        BandedGridView1.ClearSelection()
+    End Sub
+    Private Sub BandedGridView1_RowClick(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowClickEventArgs) Handles BandedGridView1.RowClick
+        If e.RowHandle > -1 Then
+            iset = e.RowHandle
+            RwCns = BandedGridView1.GetDataRow(iset)
+            CaricaDettagli()
+            GroupControl20.Enabled = True
+        Else
+            iset = -1
+            GroupControl20.Enabled = False
+        End If
+    End Sub
+    Function FocusedBanded(ByVal Cod As String) As Boolean
+        Dim OpzControl As Array = BandedGridView1.GetSelectedRows
+        For i As Int16 = 1 To BandedGridView1.SelectedRowsCount
+            BandedGridView1.UnselectRow(OpzControl(i - 1))
+        Next
+        For i As Int16 = 1 To BandedGridView1.RowCount
+            RwCns = BandedGridView1.GetDataRow(i - 1)
+            If RwCns("DACONTO") = Cod Then
+                BandedGridView1.FocusedRowHandle = i - 1
+                BandedGridView1.SelectRow(i - 1)
+                CaricaDettagli()
+                GroupControl20.Enabled = True
+                TextEdit11.Focus()
+                Exit Function
+            End If
+        Next
+    End Function
+    Sub CaricaDettagli()
+        TextEdit8.EditValue = RwCns("DACONTO")
+        TextEdit7.EditValue = RwCns("DADESCRIZIONE")
+        TextEdit11.EditValue = RwCns("AACONTO")
+        TextEdit10.EditValue = RwCns("AADESCRIZIONE")
+        ImageComboBoxEdit6.EditValue = RwCns("AASO")
+    End Sub
+    Private Sub TbLeggi2_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles TbLeggi2.Enter
+        If ControlloCodice(TextEdit8.EditValue) = False Then
+            TextEdit8.Focus()
+            Exit Sub
+        End If
+        '' CaricaDati()
+        TextEdit11.Focus()
+    End Sub
+    Private Sub TbLeggi3_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles TbLeggi3.Enter
+        If ControlloCodice(TextEdit11.EditValue) = False Then
+            TextEdit11.Focus()
+            Exit Sub
+        End If
+        If LeggiConto() = True Then
+            If TextEdit11.EditValue = TextEdit8.EditValue Then
+                ImageComboBoxEdit6.SelectedIndex = 0
+            Else
+                ImageComboBoxEdit6.SelectedIndex = 2
+            End If
+            ButtonXF11.Focus()
+        Else
+            ImageComboBoxEdit6.SelectedIndex = 1
+            TextEdit10.Focus()
+        End If
+    End Sub
+    Function LeggiConto() As Boolean
+        LeggiConto = False
+        Dim Str As String = "SELECT * from TbPia where PiaCodCo = '" & TextEdit11.EditValue & "'"
+        Dim Cmd As New SqlCommand(Str, cnCo)
+        If UserId.ToUpper = "COMUNITA" Then
+            Cmd = New SqlCommand(Str, cnCo)
+        Else
+            Cmd = New SqlCommand(Str, CnAVVERSA)
+        End If
 
-   
+        dataRd = Cmd.ExecuteReader
+        While dataRd.Read
+            TextEdit10.EditValue = dataRd("PiaAnaCo")
+            LeggiConto = True
+        End While
+        dataRd.Close()
+    End Function
+
+    Private Sub ButtonXF5_Click(sender As Object, e As EventArgs) Handles ButtonXF5.Click
+        TextEdit8.EditValue = ""
+        TextEdit7.EditValue = ""
+        TextEdit11.EditValue = ""
+        TextEdit10.EditValue = ""
+        ImageComboBoxEdit6.SelectedIndex = -1
+        IIPagina()
+    End Sub
+
+    Private Sub ButtonXF9_Click(sender As Object, e As EventArgs) Handles ButtonXF9.Click
+        DXANTEPRIMA(GridControl2, True, Printing.PaperKind.A4, XtraTabPage2.Text)
+    End Sub
+    Private Sub ButtonXF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonXF11.Click
+        If TextEdit10.EditValue = "*** ERRATO ***" Then Exit Sub
+        If Mid(TextEdit8.EditValue, 4, 2) = "00" And Mid(TextEdit11.EditValue, 4, 2) <> "00" Then TextEdit10.EditValue = "*** ERRATO ***" : Exit Sub
+        RegistraContoCons()
+        ButtonXF5.PerformClick()
+    End Sub
+    Sub RegistraContoCons()
+        Dim Str As String = "Update TbDaAa set AACONTO=@AAC,AADESCRIZIONE=@AAD where DACONTO=@DAC"
+        Dim Q1 As New SqlParameter("@DAC", SqlDbType.VarChar)
+        Dim Q3 As New SqlParameter("@AAC", SqlDbType.VarChar)
+        Dim Q4 As New SqlParameter("@AAD", SqlDbType.VarChar)
+        If UserId.ToUpper = "COMUNITA" Then
+            Cmd = New SqlCommand(Str, cnCo)
+        Else
+            Cmd = New SqlCommand(Str, CnAVVERSA)
+        End If
+        Q1.Value = TextEdit8.EditValue
+        Q3.Value = TextEdit11.EditValue
+        Q4.Value = TextEdit10.EditValue
+
+        Cmd.Parameters.Add(Q1)
+        Cmd.Parameters.Add(Q3)
+        Cmd.Parameters.Add(Q4)
+        Cmd.ExecuteNonQuery()
+    End Sub
+
+
+#End Region
+
+#Region "GESTIONE FONDO PAGINA"
+    Private Sub XtraTabControl1_SelectedPageChanged(ByVal sender As Object, ByVal e As DevExpress.XtraTab.TabPageChangedEventArgs) Handles XtraTabControl1.SelectedPageChanged
+        If XtraTabControl1.SelectedTabPageIndex = 0 Then
+            Pagina = 1
+            Exit Sub
+        End If
+        If XtraTabControl1.SelectedTabPageIndex = 1 Then
+            Pagina = 2
+            IIPagina()
+            Exit Sub
+        End If
+    End Sub
+#End Region
 End Class

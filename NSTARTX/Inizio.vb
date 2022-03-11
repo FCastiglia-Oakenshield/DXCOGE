@@ -19,7 +19,6 @@ Module Inizio
             If LogIn() = False Then Return
             Cursor.Current = Cursors.WaitCursor
             My.User.InitializeWithWindowsUser()
-            DevExpress.UserSkins.OfficeSkins.Register()
             DevExpress.UserSkins.BonusSkins.Register()
             Application.EnableVisualStyles()
             Application.Run(XMENU)

@@ -148,7 +148,8 @@ Public Class XMENU
         If WHY = Source Then GoTo Oltre
         WHY = Source.Split("\")(1)
 Oltre:
-        If WHY = "COMUNITA" Or WHY = "RSCOMUNITA" Or WHY = "RSPENSIONATO" Or WHY = "SVRRSN" Or WHY = "BIENNE" Then MenuGeve.Visibility = BarItemVisibility.Always Else MenuGeve.Visibility = BarItemVisibility.Never : GoTo CHIUDI
+        ''    If WHY = "COMUNITA" Or WHY = "RSCOMUNITA" Or WHY = "RSPENSIONATO" Or WHY = "SVRRSN" Or WHY = "BIENNE" Then MenuGeve.Visibility = BarItemVisibility.Always Else MenuGeve.Visibility = BarItemVisibility.Never : GoTo CHIUDI
+        If WHY = "BIENNE" Then MenuGeve.Visibility = BarItemVisibility.Always Else MenuGeve.Visibility = BarItemVisibility.Never : GoTo CHIUDI
         If WHY = "BIENNE" Then
             BarButtonItem84.Visibility = BarItemVisibility.Never
             BarButtonItem85.Visibility = BarItemVisibility.Never
@@ -165,27 +166,27 @@ Oltre:
             BarButtonItem102.Visibility = BarItemVisibility.Never
 
         End If
-        If WHY = "COMUNITA" Or WHY = "RSCOMUNITA" Then
-            EComunita = True
-        End If
-        If WHY = "COMUNITA" Then
-            BarButtonItem84.Visibility = BarItemVisibility.Never
-            BarButtonItem85.Visibility = BarItemVisibility.Never
-            BarButtonItem86.Visibility = BarItemVisibility.Never
-            BarButtonItem87.Visibility = BarItemVisibility.Never
-            BarButtonItem88.Visibility = BarItemVisibility.Never
-            BarButtonItem77.Visibility = BarItemVisibility.Never
-        End If
-        If WHY = "SVRRSN" Then
-            BarButtonItem61.Visibility = BarItemVisibility.Never
-            BarButtonItem82.Visibility = BarItemVisibility.Never
-            BarButtonItem83.Visibility = BarItemVisibility.Never
-            BarButtonItem90.Visibility = BarItemVisibility.Never
-            BarButtonItem91.Visibility = BarItemVisibility.Never
-            BarButtonItem92.Visibility = BarItemVisibility.Never
-            BarButtonItem77.Visibility = BarItemVisibility.Never
-            BarButtonItem105.Visibility = BarItemVisibility.Never
-        End If
+        'If WHY = "COMUNITA" Or WHY = "RSCOMUNITA" Then
+        '    EComunita = True
+        ' End If
+        'If WHY = "COMUNITA" Then
+        '    BarButtonItem84.Visibility = BarItemVisibility.Never
+        '    BarButtonItem85.Visibility = BarItemVisibility.Never
+        '    BarButtonItem86.Visibility = BarItemVisibility.Never
+        '    BarButtonItem87.Visibility = BarItemVisibility.Never
+        '    BarButtonItem88.Visibility = BarItemVisibility.Never
+        '    BarButtonItem77.Visibility = BarItemVisibility.Never
+        'End If
+        'If WHY = "SVRRSN" Then
+        '    BarButtonItem61.Visibility = BarItemVisibility.Never
+        '    BarButtonItem82.Visibility = BarItemVisibility.Never
+        '    BarButtonItem83.Visibility = BarItemVisibility.Never
+        '    BarButtonItem90.Visibility = BarItemVisibility.Never
+        '    BarButtonItem91.Visibility = BarItemVisibility.Never
+        '    BarButtonItem92.Visibility = BarItemVisibility.Never
+        '    BarButtonItem77.Visibility = BarItemVisibility.Never
+        '    BarButtonItem105.Visibility = BarItemVisibility.Never
+        'End If
 CHIUDI:
         REM disabilitazione provvisoria cli  for
         If UserId.ToUpper = "GSSPA" Then
