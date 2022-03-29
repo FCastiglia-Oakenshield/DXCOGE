@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABE
-        LQEAAk1TRnQBSQFMAgEBFgEAARwBAAHUAQIBHAEAARwBAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFw
+        LQEAAk1TRnQBSQFMAgEBFgEAARwBAAHkAQIBHAEAARwBAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFw
         AwABqAMAAQEBAAEgBgABJgEBEQABMwFJAbYB7AG0Ac8B9gH+AVsBjwL/ARwBQQHmAfoBIwEsAZUBywIo
         ATIBQgMCAQMUAAF6AUcBKwG1AagBTwEcAf8BqAFQASEB/wGnAU4BIAH/AaUBSwEfAf8BowFJAR8B/wGh
         AUcBHgH/AaABRgEdAf8BngFDAR0B/wGcAUIBHAH/AZsBQQEbAf8BmQE+ARsB/wGYAT0BGgH/AZYBOwEZ
@@ -1421,7 +1421,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABm
-        QAAAAk1TRnQBSQFMAgEBHAEAASQBAAHUAQIBIAEAASABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        QAAAAk1TRnQBSQFMAgEBHAEAASQBAAHkAQIBIAEAASABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABgAQAAQECAAEBAQABCAYAAYAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -1706,7 +1706,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD+
-        fAMAAk1TRnQBSQFMAgEBQAEAAZQBAAFgAQMBHAEAARwBAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFw
+        fAMAAk1TRnQBSQFMAgEBQAEAAZQBAAFwAQMBHAEAARwBAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFw
         AwAB3AEBAgABAQEAASAGAAFBAQP/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A
         /wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AOYA
         AwIBAwMFAQcDCwEPAxABFgMSARkDFAEbAxQBGwMSARkDEAEWAwsBDwMHAQkDAwEEAwABAf8AjQADBAEG
@@ -6605,7 +6605,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADC
-        awAAAk1TRnQBSQFMAgEBJwEAASwBAAHUAQIBEAEAARABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFA
+        awAAAk1TRnQBSQFMAgEBJwEAASwBAAHkAQIBEAEAARABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABoAMAAQEBAAEgBgABoJYAAyEBMAFXAkIBzAFXAkIBzAMaASQcAAMHAQkBVAJHAbYBSQIcAf8BUwJI
         Aa1SAAGAAf8CAAGAAf8CAAGAAf8CAAGAAf8CAAGAAf8CAAGAAf8CAAGAAf8sAAMQARYoAAFQAS4BLQHt
         AX0BMwERAf8BdQEsARUB/AFRATYBNAHmAxQBGxQAAwcBCQFUAUUBRAHCAVkBKAEZAfUBfQEcAQAB/wFQ
@@ -7074,88 +7074,6 @@
     <value>89</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="XMENU.IconOptions.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAABMLAAATCwAAAAAAAAAA
-        AACdm8U13Myl0+HTsubh07Lm4dOy5uHTsubg0rLm3tCt5t3Oq+bdzqvm3c6r5t3Oq+bdzqvm3c6r5t3O
-        q+bdzqvm3c6r5t3Oq+bdzqvm3c6r5t3Oq+bdzqvm3c6r5t3Oq+bczavm6Ny75LiZV6HbsSFu6unqDwAA
-        AAAAAAAAAAAAANuhSfD9xwb//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/+ur
-        Kvzez6Gs/ssDQQAAAAAAAAAA5aQz/P/MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP/Yq2DPAAAAAAAAAADjojf6/8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP/p3LCs////EeGiOfr/zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9+fQv/v5sXT4aI5+v/MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA//S2
-        H//cqXb//skE///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9e4kO7hojn6/8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD/38+x///////m2bz//MUK///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/2Kdp8eGi
-        Ofr/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA/+WlSv/89tz//////+3fw///zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP/XpWby4aI5+v/MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/93B
-        m//0th///8wA///MAP//zAD/7eDF///////069L/768t///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA/9emafHhojn6/8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP/9xgj///nf/97Jp///zAD//8wA/92qdf//+d///////9yyg///zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD/16Zp8eGiOfr/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA//e6Gf///////Pbc/92kaf/vri//8ujN///////v5Mn//cYI///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP/Xpmnx4aI5+v/MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD/6ag+////////////+vr//+zq/f//////+O/W/+SkTf//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9emafHhojn6/8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP/gpF/////////////////////////////m2Lv//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/16Zp8eGiOfr/zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/921h/////////////////////////////Pq
-        z//dtYf/3aZv/+CjWf/pqD7//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/Xpmnx4aI5+v/M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/5te6////////////////////
-        //////////////////////////nf/92/mf//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9em
-        afHhojn6/8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/y6M3/////////
-        ///////////////////////////////43//crHr//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD/16Zp8eGiOfr/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/87Qj//nx
-        2P/////////////////////////////////37dT/46RP///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP/Xpmnx4aI5+v/MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP/npkT//Pz/////////////////////////////697D/+6tMf//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA/9emafHhojn6/8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA/96kZf/+/v////////////////////nf/9/Jqf/7wg7//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/16Zp8eGiOfr/zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD/3LiN///////////////////53//crX3//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/Xpmnx4aI5+v/MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP/l17r////////////58Nb/36Nf///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9emafHhojn6/8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/+8MM//Xr0v//////7uLH/+inQP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/16Zp8eGi
-        Ofr/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/tqzX//////+LSs//5vhT//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP/Xpmnx4aI5+v/MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/+GjV//fyaf//skE///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA/9emafHkozX7/8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/+b4U///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD/16Zp8d2eQfj/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP/Xpmnx06h08v/MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9emafHq4MDT8LEi///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/16Zp8f///BHawo62/8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/XpmnxAAAAAAAA
-        AADfqEfe/8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9ai
-        YfUAAAAAAAAAAP7LAkvXw5Cx5KI5///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
-        AP/3uxf/2bSB3wAAAAAAAAAAAAAAANbW4A/v5sXR5tq55eTXt+Xk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTY
-        uOXk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTX
-        t+Xk2Ljl5Ne35eXYtNDb2uU1AAAABwAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAADAAAAAwAAAAOAAAAA=
-</value>
-  </data>
-  <metadata name="WorkspaceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>596, 17</value>
-  </metadata>
-  <metadata name="XtraTabbedMdiManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>888, 17</value>
-  </metadata>
   <data name="PictureEdit1.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAC+0AAALuCAYAAABhZxZMAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -8186,4 +8104,86 @@
         7Qjkw2YAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="XMENU.IconOptions.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAABMLAAATCwAAAAAAAAAA
+        AACdm8U13Myl0+HTsubh07Lm4dOy5uHTsubg0rLm3tCt5t3Oq+bdzqvm3c6r5t3Oq+bdzqvm3c6r5t3O
+        q+bdzqvm3c6r5t3Oq+bdzqvm3c6r5t3Oq+bdzqvm3c6r5t3Oq+bczavm6Ny75LiZV6HbsSFu6unqDwAA
+        AAAAAAAAAAAAANuhSfD9xwb//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/+ur
+        Kvzez6Gs/ssDQQAAAAAAAAAA5aQz/P/MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP/Yq2DPAAAAAAAAAADjojf6/8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP/p3LCs////EeGiOfr/zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9+fQv/v5sXT4aI5+v/MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA//S2
+        H//cqXb//skE///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9e4kO7hojn6/8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD/38+x///////m2bz//MUK///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/2Kdp8eGi
+        Ofr/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA/+WlSv/89tz//////+3fw///zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP/XpWby4aI5+v/MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/93B
+        m//0th///8wA///MAP//zAD/7eDF///////069L/768t///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA/9emafHhojn6/8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP/9xgj///nf/97Jp///zAD//8wA/92qdf//+d///////9yyg///zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD/16Zp8eGiOfr/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA//e6Gf///////Pbc/92kaf/vri//8ujN///////v5Mn//cYI///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP/Xpmnx4aI5+v/MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD/6ag+////////////+vr//+zq/f//////+O/W/+SkTf//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9emafHhojn6/8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP/gpF/////////////////////////////m2Lv//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/16Zp8eGiOfr/zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/921h/////////////////////////////Pq
+        z//dtYf/3aZv/+CjWf/pqD7//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/Xpmnx4aI5+v/M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/5te6////////////////////
+        //////////////////////////nf/92/mf//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9em
+        afHhojn6/8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/y6M3/////////
+        ///////////////////////////////43//crHr//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD/16Zp8eGiOfr/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/87Qj//nx
+        2P/////////////////////////////////37dT/46RP///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP/Xpmnx4aI5+v/MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP/npkT//Pz/////////////////////////////697D/+6tMf//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA/9emafHhojn6/8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA/96kZf/+/v////////////////////nf/9/Jqf/7wg7//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/16Zp8eGiOfr/zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD/3LiN///////////////////53//crX3//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/Xpmnx4aI5+v/MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP/l17r////////////58Nb/36Nf///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9emafHhojn6/8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/+8MM//Xr0v//////7uLH/+inQP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/16Zp8eGi
+        Ofr/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/tqzX//////+LSs//5vhT//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP/Xpmnx4aI5+v/MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/+GjV//fyaf//skE///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA/9emafHkozX7/8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/+b4U///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD/16Zp8d2eQfj/zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP/Xpmnx06h08v/MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9emafHq4MDT8LEi///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD/16Zp8f///BHawo62/8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP/XpmnxAAAAAAAA
+        AADfqEfe/8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA/9ai
+        YfUAAAAAAAAAAP7LAkvXw5Cx5KI5///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///MAP//zAD//8wA///M
+        AP/3uxf/2bSB3wAAAAAAAAAAAAAAANbW4A/v5sXR5tq55eTXt+Xk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTY
+        uOXk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTYuOXk2Ljl5Ni45eTX
+        t+Xk2Ljl5Ne35eXYtNDb2uU1AAAABwAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADAAAAAwAAAAOAAAAA=
+</value>
+  </data>
+  <metadata name="WorkspaceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>596, 17</value>
+  </metadata>
+  <metadata name="XtraTabbedMdiManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>888, 17</value>
+  </metadata>
 </root>

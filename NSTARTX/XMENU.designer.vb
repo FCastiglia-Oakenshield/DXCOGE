@@ -21,7 +21,7 @@ Partial Class XMENU
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(XMENU))
-        Dim PushTransition2 As DevExpress.Utils.Animation.PushTransition = New DevExpress.Utils.Animation.PushTransition()
+        Dim PushTransition1 As DevExpress.Utils.Animation.PushTransition = New DevExpress.Utils.Animation.PushTransition()
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar2 = New DevExpress.XtraBars.Bar()
         Me.BarSubItem1 = New DevExpress.XtraBars.BarSubItem()
@@ -80,6 +80,7 @@ Partial Class XMENU
         Me.BarButtonItem42 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem43 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem45 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem113 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem97 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarEditItem2 = New DevExpress.XtraBars.BarEditItem()
         Me.RepositoryItemComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
@@ -181,7 +182,6 @@ Partial Class XMENU
         Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
         Me.PictureEdit1 = New DevExpress.XtraEditors.PictureEdit()
         Me.BarLinkContainerItem1 = New DevExpress.XtraBars.BarLinkContainerItem()
-        Me.BarButtonItem113 = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -780,6 +780,12 @@ Partial Class XMENU
         Me.BarButtonItem45.Id = 418
         Me.BarButtonItem45.Name = "BarButtonItem45"
         '
+        'BarButtonItem113
+        '
+        Me.BarButtonItem113.Caption = "Stampa Totali da Registri Iva Clienti"
+        Me.BarButtonItem113.Id = 521
+        Me.BarButtonItem113.Name = "BarButtonItem113"
+        '
         'BarButtonItem97
         '
         Me.BarButtonItem97.Caption = "Ventilazione Annuale"
@@ -797,7 +803,7 @@ Partial Class XMENU
         '
         Me.RepositoryItemComboBox1.AutoHeight = False
         Me.RepositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemComboBox1.Items.AddRange(New Object() {"2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010"})
+        Me.RepositoryItemComboBox1.Items.AddRange(New Object() {"2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010"})
         Me.RepositoryItemComboBox1.Name = "RepositoryItemComboBox1"
         '
         'BarButtonItem101
@@ -1360,7 +1366,7 @@ Partial Class XMENU
         'WorkspaceManager1
         '
         Me.WorkspaceManager1.TargetControl = Me
-        Me.WorkspaceManager1.TransitionType = PushTransition2
+        Me.WorkspaceManager1.TransitionType = PushTransition1
         '
         'BarButtonItem103
         '
@@ -1430,12 +1436,6 @@ Partial Class XMENU
         Me.BarLinkContainerItem1.Caption = "a"
         Me.BarLinkContainerItem1.Id = 463
         Me.BarLinkContainerItem1.Name = "BarLinkContainerItem1"
-        '
-        'BarButtonItem113
-        '
-        Me.BarButtonItem113.Caption = "Stampa Totali da Registri Iva Clienti"
-        Me.BarButtonItem113.Id = 521
-        Me.BarButtonItem113.Name = "BarButtonItem113"
         '
         'XMENU
         '

@@ -841,6 +841,8 @@ esci:
                 DXMenu(New DxSp2020, "Esterometro Anno " & BarEditItem2.EditValue)
             Case "2021"
                 DXMenu(New DxSp2021, "Esterometro Anno " & BarEditItem2.EditValue)
+            Case "2022"
+                DXMenu(New DxSp2022, "Esterometro Anno " & BarEditItem2.EditValue)
         End Select
         BarEditItem2.EditValue = ""
         System.Windows.Forms.SendKeys.Send("{ENTER}")
@@ -921,4 +923,5 @@ esci:
     Private Sub BarButtonItem113_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BarButtonItem113.ItemClick
         DXMenu(New DxStTotIcli, e.Item.Caption)
     End Sub
+
 End Class
