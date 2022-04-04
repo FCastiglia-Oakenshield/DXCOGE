@@ -956,6 +956,7 @@ VaiOltre:
     End Function
     Function TestDoppio() As Integer
         TestDoppio = RiW("DcgNumero")
+        If OkRivGel = True Then Exit Function
         Dim Str As String = "SELECT * from TBPRI WHERE PRICAUSALE = 3 AND PRIDOCEST = " & RiW("DcgNumero") & "  AND PRIDOCANN = " & CDate(RiW("DcgData")).Year & " AND PRICODARE='" & RiW("DcgCli") & "'"
         Dim FTFO As New SqlCommand(Str, cnCo)
         dataRd = FTFO.ExecuteReader
