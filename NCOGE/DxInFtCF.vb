@@ -2499,6 +2499,7 @@ LABELINIT:
         P4.Value = AZ_PARTITAIVA
 
         DaFte = New SqlDataAdapter(leggi, cnDb)
+        DaFte.SelectCommand.CommandTimeout = 1200
         DaFte.SelectCommand.Parameters.Add(P1)
         DaFte.SelectCommand.Parameters.Add(P2)
         DaFte.SelectCommand.Parameters.Add(P3)
