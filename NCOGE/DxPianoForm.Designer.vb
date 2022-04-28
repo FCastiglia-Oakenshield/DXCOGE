@@ -96,6 +96,9 @@ Partial Class DxPianoForm
         Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.RepositoryItemImageComboBox5 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
         Me.GroupControl27 = New DevExpress.XtraEditors.GroupControl()
+        Me.Button2LEG = New DevExpress.XtraEditors.SimpleButton()
+        Me.Button1LEG = New DevExpress.XtraEditors.SimpleButton()
+        Me.Button0LEG = New DevExpress.XtraEditors.SimpleButton()
         Me.GroupControl19 = New DevExpress.XtraEditors.GroupControl()
         Me.ButtonXF9 = New DevExpress.XtraEditors.SimpleButton()
         Me.ButtonXF5 = New DevExpress.XtraEditors.SimpleButton()
@@ -114,9 +117,6 @@ Partial Class DxPianoForm
         Me.GroupControl25 = New DevExpress.XtraEditors.GroupControl()
         Me.TextEdit8 = New DevExpress.XtraEditors.TextEdit()
         Me.TbLeggi2 = New DevExpress.XtraEditors.TextEdit()
-        Me.Button0LEG = New DevExpress.XtraEditors.SimpleButton()
-        Me.Button1LEG = New DevExpress.XtraEditors.SimpleButton()
-        Me.Button2LEG = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
         Me.XtraTabPage1.SuspendLayout()
@@ -1612,6 +1612,72 @@ Partial Class DxPianoForm
         Me.GroupControl27.TabIndex = 6
         Me.GroupControl27.Text = "LEGENDA COLORI"
         '
+        'Button2LEG
+        '
+        Me.Button2LEG.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.Button2LEG.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.Button2LEG.Appearance.Options.UseFont = True
+        Me.Button2LEG.Appearance.Options.UseForeColor = True
+        Me.Button2LEG.Appearance.Options.UseTextOptions = True
+        Me.Button2LEG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.Button2LEG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.Button2LEG.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2LEG.ImageOptions.ImageIndex = 80
+        Me.Button2LEG.ImageOptions.ImageList = Me.imageList1
+        Me.Button2LEG.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom
+        Me.Button2LEG.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.Button2LEG.Location = New System.Drawing.Point(673, 23)
+        Me.Button2LEG.Name = "Button2LEG"
+        Me.Button2LEG.Size = New System.Drawing.Size(320, 18)
+        Me.Button2LEG.TabIndex = 3
+        Me.Button2LEG.TabStop = False
+        Me.Button2LEG.Text = "CONTO PENSIONATO  DIVERSO CONTO COMUNITA'"
+        Me.Button2LEG.ToolTip = "CONTO PENSIONATO  DIVERSO CONTO COMUNITA'"
+        '
+        'Button1LEG
+        '
+        Me.Button1LEG.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.Button1LEG.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.Button1LEG.Appearance.Options.UseFont = True
+        Me.Button1LEG.Appearance.Options.UseForeColor = True
+        Me.Button1LEG.Appearance.Options.UseTextOptions = True
+        Me.Button1LEG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.Button1LEG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.Button1LEG.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1LEG.ImageOptions.ImageIndex = 72
+        Me.Button1LEG.ImageOptions.ImageList = Me.imageList1
+        Me.Button1LEG.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom
+        Me.Button1LEG.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.Button1LEG.Location = New System.Drawing.Point(337, 23)
+        Me.Button1LEG.Name = "Button1LEG"
+        Me.Button1LEG.Size = New System.Drawing.Size(320, 18)
+        Me.Button1LEG.TabIndex = 2
+        Me.Button1LEG.TabStop = False
+        Me.Button1LEG.Text = "CONTO PENSIONATO = CONTO NUOVO FITTIZIO COMUNITA'"
+        Me.Button1LEG.ToolTip = "CONTO PENSIONATO = CONTO NUOVO FITTIZIO COMUNITA'"
+        '
+        'Button0LEG
+        '
+        Me.Button0LEG.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.Button0LEG.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.Button0LEG.Appearance.Options.UseFont = True
+        Me.Button0LEG.Appearance.Options.UseForeColor = True
+        Me.Button0LEG.Appearance.Options.UseTextOptions = True
+        Me.Button0LEG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.Button0LEG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.Button0LEG.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button0LEG.ImageOptions.ImageIndex = 66
+        Me.Button0LEG.ImageOptions.ImageList = Me.imageList1
+        Me.Button0LEG.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom
+        Me.Button0LEG.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.Button0LEG.Location = New System.Drawing.Point(1, 23)
+        Me.Button0LEG.Name = "Button0LEG"
+        Me.Button0LEG.Size = New System.Drawing.Size(320, 18)
+        Me.Button0LEG.TabIndex = 1
+        Me.Button0LEG.TabStop = False
+        Me.Button0LEG.Text = "CONTO PENSIONATO = CONTO COMUNITA'"
+        Me.Button0LEG.ToolTip = "CONTO PENSIONATO = CONTO COMUNITA'"
+        '
         'GroupControl19
         '
         Me.GroupControl19.Controls.Add(Me.ButtonXF9)
@@ -1861,72 +1927,6 @@ Partial Class DxPianoForm
         Me.TbLeggi2.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TbLeggi2.Size = New System.Drawing.Size(15, 16)
         Me.TbLeggi2.TabIndex = 1
-        '
-        'Button0LEG
-        '
-        Me.Button0LEG.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
-        Me.Button0LEG.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.Button0LEG.Appearance.Options.UseFont = True
-        Me.Button0LEG.Appearance.Options.UseForeColor = True
-        Me.Button0LEG.Appearance.Options.UseTextOptions = True
-        Me.Button0LEG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.Button0LEG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
-        Me.Button0LEG.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button0LEG.ImageOptions.ImageIndex = 66
-        Me.Button0LEG.ImageOptions.ImageList = Me.imageList1
-        Me.Button0LEG.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom
-        Me.Button0LEG.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.Button0LEG.Location = New System.Drawing.Point(1, 23)
-        Me.Button0LEG.Name = "Button0LEG"
-        Me.Button0LEG.Size = New System.Drawing.Size(320, 18)
-        Me.Button0LEG.TabIndex = 1
-        Me.Button0LEG.TabStop = False
-        Me.Button0LEG.Text = "CONTO PENSIONATO = CONTO COMUNITA'"
-        Me.Button0LEG.ToolTip = "CONTO PENSIONATO = CONTO COMUNITA'"
-        '
-        'Button1LEG
-        '
-        Me.Button1LEG.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
-        Me.Button1LEG.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.Button1LEG.Appearance.Options.UseFont = True
-        Me.Button1LEG.Appearance.Options.UseForeColor = True
-        Me.Button1LEG.Appearance.Options.UseTextOptions = True
-        Me.Button1LEG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.Button1LEG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
-        Me.Button1LEG.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1LEG.ImageOptions.ImageIndex = 72
-        Me.Button1LEG.ImageOptions.ImageList = Me.imageList1
-        Me.Button1LEG.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom
-        Me.Button1LEG.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.Button1LEG.Location = New System.Drawing.Point(337, 23)
-        Me.Button1LEG.Name = "Button1LEG"
-        Me.Button1LEG.Size = New System.Drawing.Size(320, 18)
-        Me.Button1LEG.TabIndex = 2
-        Me.Button1LEG.TabStop = False
-        Me.Button1LEG.Text = "CONTO PENSIONATO = CONTO NUOVO FITTIZIO COMUNITA'"
-        Me.Button1LEG.ToolTip = "CONTO PENSIONATO = CONTO NUOVO FITTIZIO COMUNITA'"
-        '
-        'Button2LEG
-        '
-        Me.Button2LEG.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
-        Me.Button2LEG.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.Button2LEG.Appearance.Options.UseFont = True
-        Me.Button2LEG.Appearance.Options.UseForeColor = True
-        Me.Button2LEG.Appearance.Options.UseTextOptions = True
-        Me.Button2LEG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.Button2LEG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
-        Me.Button2LEG.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2LEG.ImageOptions.ImageIndex = 80
-        Me.Button2LEG.ImageOptions.ImageList = Me.imageList1
-        Me.Button2LEG.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom
-        Me.Button2LEG.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.Button2LEG.Location = New System.Drawing.Point(673, 23)
-        Me.Button2LEG.Name = "Button2LEG"
-        Me.Button2LEG.Size = New System.Drawing.Size(320, 18)
-        Me.Button2LEG.TabIndex = 3
-        Me.Button2LEG.TabStop = False
-        Me.Button2LEG.Text = "CONTO PENSIONATO  DIVERSO CONTO COMUNITA'"
-        Me.Button2LEG.ToolTip = "CONTO PENSIONATO  DIVERSO CONTO COMUNITA'"
         '
         'DxPianoForm
         '

@@ -3,6 +3,7 @@ Imports DXBASE
 Imports NCCOM
 Imports NPRINT
 Imports DevExpress.XtraReports.UI
+Imports DevExpress.Utils
 
 Public Class DxPianoForm
     Dim RwX As DataRow
@@ -62,13 +63,13 @@ Public Class DxPianoForm
 
         End If
         If (UserId.ToUpper = "COMUNITA" Or UserId.ToUpper = "PENSIONATO") Then
-            XtraTabControl1.ShowTabHeader = True
+            XtraTabControl1.ShowTabHeader = DefaultBoolean.True
             Rosine = True
             If ConnettiIDB() = False Then Me.Close()
             CaricaSimboli
             GroupControl20.Enabled = False
         Else
-            XtraTabControl1.ShowTabHeader = False
+            XtraTabControl1.ShowTabHeader = DefaultBoolean.False
             Rosine = False
         End If
     End Sub
