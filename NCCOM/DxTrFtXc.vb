@@ -62,7 +62,7 @@ Public Class DxTrFtXc
 
     Dim Rc(10), Cau(10) As Int16
     Dim Cassa(10), RegDesc(10), CAUSALE, CONTO As String
-    Dim OkUpdate, OkCorris, OkFrascheri, OkRivGel, OkDefend, OkRicambi, OkRosine, OkGs, OkPn, OkMondo, OkSelco, OkOttica, OkZeroFt, OkGruppoPasta As Boolean
+    Dim OkUpdate, OkCorris, OkFrascheri, OkRivGel, OkDefend, OkRicambi, OkRosine, OkGs, OkPn, OkMondo, OkSelco, OkOttica, OkZeroFt, OkGruppoPasta, OkGcOmaggiPasta As Boolean
     Dim UserId As String
     Dim BOXCAUSALE As New TextEdit
     Dim BOXCONTO As New TextEdit
@@ -84,6 +84,12 @@ Public Class DxTrFtXc
     Dim TbTrasf, TbErr As DataTable
     Dim ErrBl, CbTrasf As SqlCommandBuilder
     ''DEFENDINI CASSETTE GTT
+
+    REM PASTAGROUP E NEWCO OMAGGI
+    Dim RIdxReg As Int16 = -1
+    Dim RIdxGirImp As String = "00.00"
+    Dim RIdxGirIva As String = "00.00"
+    Dim RIdxCausale As Int16 = -1
 
     Dim Scrivi As String = "INSERT INTO TbPri (PriId,PriProg,PriDataGio, PriCausale, PriCoDare, PriCoAvere, PriNumProt, PriBisRet, PriCodIva, PriRegIva, PriImpDare, PriImpavere, PriDesc, PriDocEst, PriMeseSk, PriDataEst, PriDescB, PriFl04, PriFl05, PriFl06, PriNsRif, PriSos, PriLinea, PriDocAnn, PriCodPag, PriValuta, PriArtFisc,PriIvaPrint,PriGStampa) " _
 & " values(@PriId,@PriProg,@PriDataGio, @PriCausale, @PriCoDare, @PriCoAvere, @PriNumProt, @PriBisRet, @PriCodIva, @PriRegIva, @PriImpDare, @PriImpavere, @PriDesc, @PriDocEst, @PriMeseSk, @PriDataEst, @PriDescB, @PriFl04, @PriFl05, @PriFl06, @PriNsRif, @PriSos, @PriLinea, @PriDocAnn, @PriCodPag, @PriValuta, @PriArtFisc,@PriIvaPrint,@PriGStampa)"
@@ -192,13 +198,14 @@ Public Class DxTrFtXc
         OkSelco = False
         OkOttica = False
         OkGruppoPasta = False
+        OkGcOmaggiPasta = False
         OkZeroFt = True
         LeggitaiGenerico()
         If UserId = "SELCO" Then OkSelco = True
         If UserId = "MONDOMARINE" Then OkMondo = True
-        If UserId = "PASTAECO" Then OkOttica = True : OkZeroFt = True : OkGruppoPasta = True
-        If UserId = "PASTANEW" Then OkOttica = True : OkZeroFt = True : OkGruppoPasta = True
-        If UserId = "PASTAGROUP" Then OkOttica = True : OkZeroFt = True : OkGruppoPasta = True
+        If UserId = "PASTAECO" Then OkOttica = True : OkZeroFt = True : OkGruppoPasta = True : OkGcOmaggiPasta = True
+        If UserId = "PASTANEW" Then OkOttica = True : OkZeroFt = True : OkGruppoPasta = True : OkGcOmaggiPasta = True
+        If UserId = "PASTAGROUP" Then OkOttica = True : OkZeroFt = True : OkGruppoPasta = True : OkGcOmaggiPasta = True
         If UserId = "GSSPA" Then OkGs = True
         If UserId = "PENSIONATO" Then OkRosine = True
         If UserId = "FRASCHERI" Then LeggiTaiFrascheri()
@@ -207,8 +214,20 @@ Public Class DxTrFtXc
         If UserId = "RICAMBI" Then LeggiTaiRicambi()
         If OkCorris = True Then VerificaCorrispettivi()
         If UserId = "CSABOX" Then OkOttica = True : OkZeroFt = True
+        If OkGcOmaggiPasta = True Then LeggiOmaggiPastaG()
         PNotaMaxDat = CDate("01/01/2000")
 
+    End Sub
+    Sub LeggiOmaggiPastaG()
+        Dim cmd As New SqlCommand("SELECT * FROM TbRegIdx", cnDb)
+        dataRd = cmd.ExecuteReader
+        While dataRd.Read
+            RIdxReg = dataRd.Item("RIdxReg")
+            RIdxGirImp = dataRd.Item("RIdxGirImp")
+            RIdxGirIva = dataRd.Item("RIdxGirIva")
+            RIdxCausale = dataRd.Item("RIdxCausale")
+        End While
+        dataRd.Close()
     End Sub
     Sub LeggitaiGenerico()
         Dim cmd As New SqlCommand("SELECT top 1 * FROM TbTai Order by TaiAnno Desc", cnDb)
@@ -279,6 +298,7 @@ Public Class DxTrFtXc
         Dim K, Ri As Int32
         FinoAl = CDate(DateEdit1.EditValue).ToShortDateString
         StrUno = "Select * from TbDcg where DcgRegistro > 0 and DcgTipo = 'F' and DcgTrasf = 0 and DcgNumero > 0 and DcgData <= '" & FinoAl & "' Order By  DcgRegistro,DcgData,DcgNumero"
+        '' prova gc pastagroup StrUno = "Select * from TbDcg where DcgRegistro =16 and DcgTipo = 'F' and DcgTrasf = 0 and DcgNumero > 0 and DcgData <= '" & FinoAl & "' Order By  DcgRegistro,DcgData,DcgNumero"
         IvaCpt = "99.99"
         TbDcg = New DataTable
         DaDcg = New SqlDataAdapter(StrUno, cnDb)
@@ -971,6 +991,8 @@ VaiOltre:
         Dim StrMCC = "SELECT * FROM TBDMC WHERE DCGMCID = "
         Dim QuestaSi As Boolean = False
         Dim NN As Integer = 0
+        Dim RiOmaggi As Boolean = False
+        If OkGcOmaggiPasta = True And RIdxReg = RiW("DcgRegistro") Then RiOmaggi = True
 
         Y = 0
         M = 12
@@ -1085,7 +1107,116 @@ Oltre:
         If OkGruppoPasta = True Then ScriviCDCaZERO()
         If OkSelco = True Then AggiornoVisualDoc()
         If OkOttica = True Then AggiornoVisualDoc()
+        If RiOmaggi = True Then PerGcOmaggiPastaG(ProgId)
     End Sub
+
+    Function PerGcOmaggiPastaG(ByVal Id As Int32) As Boolean
+        Dim Oggi As Date = CDate(Today).ToShortDateString
+        Dim Articolo As Int32 = -1
+        Dim Scheggia As Int16 = 1
+        Dim P As Int16 = -1
+        Dim X As Int16 = 0
+        Dim ProId As Int32 = -1
+        Dim StrReg As String = "SELECT * from TbPri where PriId = " & Id & " Order By PriProg"
+        Dim DsFce = New DataTable
+        Dim DaFce = New SqlDataAdapter(StrReg, cnCo)
+        Dim RwFce As DataRow
+        DaFce.Fill(DsFce)
+        For P = 1 To DsFce.Rows.Count
+            If ProId = -1 Then LeggiUltimo(CDate(Today).ToShortDateString) : ProId = ProgId
+            If Scheggia = 1 Then Articolo = RileggoLocked()
+            RwFce = DsFce.Rows(P - 1)
+            If RwFce("PriCausale") = 1 Then
+                p3.Value = RIdxGirImp
+                p4.Value = "00.10"
+                p9.Value = RwFce("PriImpDare")
+                p10.Value = 0
+                p11.Value = "Costi Ind. Omaggi"
+                p20.Value = RwFce("PriCoDare")
+                Aggiungi(X, Articolo, Scheggia, RwFce, ProId)
+            End If
+            If RwFce("PriCausale") = 3 Then
+                p3.Value = RIdxGirIva
+                p4.Value = "00.10"
+                p9.Value = RwFce("PriImpAvere")
+                p10.Value = 0
+                p11.Value = "Iva Ind. Omaggi"
+                p20.Value = RwFce("PriCoDare")
+                Aggiungi(X, Articolo, Scheggia, RwFce, ProId)
+            End If
+        Next
+        p3.Value = "00.10"
+        p4.Value = RwFce("PriCoDare")
+        p9.Value = 0
+        p10.Value = RwFce("PriImpDare")
+        p11.Value = ""
+        p20.Value = ""
+        Aggiungi(X, Articolo, Scheggia, RwFce, ProId)
+        REM
+        EsegueSql(" EXEC InitPrk  @ID = " & ProId, cnCo)
+        ResetIdP()
+        Partita(1, 0)
+    End Function
+    Sub Aggiungi(ByRef X As Int16, ByVal Articolo As Int32, ByRef Scheggia As Int16, ByRef RwFce As DataRow, ByRef Proid As Int32)
+        p1.Value = RwFce("PriDataGio")
+        p2.Value = RIdxCausale
+        p5.Value = Articolo
+        p6.Value = ""
+        p7.Value = 0
+        p8.Value = 0
+        p12.Value = RwFce("PriDocEst")
+        p13.Value = ""
+        p14.Value = RwFce("PriDataGio")
+        p15.Value = ""
+        p16.Value = 0
+        p17.Value = 0
+        p18.Value = 0
+        p19.Value = ""
+        p21.Value = ""
+        p22.Value = CDate(RwFce("PriDataEst")).Year
+        p23.Value = 0
+        p24.Value = 0
+        p25.Value = 0
+        p26.Value = Proid
+        X += 1
+        p27.Value = X
+        p28.Value = 0
+        p29.Value = 0
+        Wrd.Parameters.Clear()
+        Wrd.Parameters.Add(p1)
+        Wrd.Parameters.Add(p2)
+        Wrd.Parameters.Add(p3)
+        Wrd.Parameters.Add(p4)
+        Wrd.Parameters.Add(p5)
+        Wrd.Parameters.Add(p6)
+        Wrd.Parameters.Add(p7)
+        Wrd.Parameters.Add(p8)
+        Wrd.Parameters.Add(p9)
+        Wrd.Parameters.Add(p10)
+        Wrd.Parameters.Add(p11)
+        Wrd.Parameters.Add(p12)
+        Wrd.Parameters.Add(p13)
+        Wrd.Parameters.Add(p14)
+        Wrd.Parameters.Add(p15)
+        Wrd.Parameters.Add(p16)
+        Wrd.Parameters.Add(p17)
+        Wrd.Parameters.Add(p18)
+        Wrd.Parameters.Add(p19)
+        Wrd.Parameters.Add(p20)
+        Wrd.Parameters.Add(p21)
+        Wrd.Parameters.Add(p22)
+        Wrd.Parameters.Add(p23)
+        Wrd.Parameters.Add(p24)
+        Wrd.Parameters.Add(p25)
+        Wrd.Parameters.Add(p26)
+        Wrd.Parameters.Add(p27)
+        Wrd.Parameters.Add(p28)
+        Wrd.Parameters.Add(p29)
+        Wrd.ExecuteNonQuery()
+        If Scheggia = 1 Then Scheggia = SbloccoLocked()
+    End Sub
+
+
     Sub ScriviCDCaZERO()
         Dim M As Int16 = 0
         Dim P As Integer = 0
