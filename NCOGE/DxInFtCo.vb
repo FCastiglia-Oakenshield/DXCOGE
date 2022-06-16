@@ -295,14 +295,14 @@ DopoLet:
         GridControl2.Refresh()
         GridView2.ClearSelection()
     End Sub
-    Private Sub TextEdit1_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles TextEdit1.Validating
-        If RwReg IsNot Nothing Then
-            If Val(TextEdit1.EditValue) > RwReg("ProtCar") + 1 Then
-                TextEdit1.EditValue = RwReg("ProtCar") + 1
-                e.Cancel = True
-            End If
-        End If
-    End Sub
+    'Private Sub TextEdit1_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles TextEdit1.Validating
+    '    If RwReg IsNot Nothing Then
+    '        If Val(TextEdit1.EditValue) > RwReg("ProtCar") + 1 Then
+    '            TextEdit1.EditValue = RwReg("ProtCar") + 1
+    '            e.Cancel = True
+    '        End If
+    '    End If
+    'End Sub
     Private Sub DateEdit1_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles DateEdit1.Validating
         If RwReg IsNot Nothing Then
             If DateEdit1.EditValue < RwReg("DataCar") And TextEdit1.EditValue = RwReg("ProtCar") + 1 Then
@@ -345,10 +345,13 @@ DopoLet:
         If Sw = 0 Then Exit Sub
         If ControllaProtocollo(Val(TextEdit1.EditValue)) = False Then
             DateEdit1.Focus()
+        ElseIf TextEdit1.ErrorText > "" Then
+            TextEdit1.Focus()
         Else
             TextEdit4.Focus()
         End If
     End Sub
+
     Function ControllaProtocollo(ByVal n As Int32) As Boolean
         ControllaProtocollo = False
         OkProt = False
