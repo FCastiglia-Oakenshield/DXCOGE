@@ -2403,9 +2403,9 @@ IIFine:
         If esisteAziPa = False Then
             Exit Sub
         End If
-        If Directory.Exists(PASSIVE) = False Then
-            Directory.CreateDirectory(PASSIVE)
-        End If
+        '     If Directory.Exists(PASSIVE) = False Then
+        '     Directory.CreateDirectory(PASSIVE)
+        '    End If
     End Sub
     Private Sub PulisciBrowser()
         '' RAPP = WebBrowser2.Height / 860

@@ -1,10 +1,10 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ScaClAge
 
     Inherits DXBASE.XWinDxBa
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -18,7 +18,7 @@ Partial Class ScaClAge
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ScaClAge))
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
@@ -51,6 +51,7 @@ Partial Class ScaClAge
         Me.GridColumn35 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn36 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage()
         Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
         Me.GridControl2 = New DevExpress.XtraGrid.GridControl()
@@ -411,7 +412,7 @@ Partial Class ScaClAge
         '
         Me.XtraTabPage1.Controls.Add(Me.GroupControl2)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl1)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1002, 628)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1006, 631)
         Me.XtraTabPage1.Text = "Dettaglio"
         '
         'ImageDx24
@@ -522,10 +523,10 @@ Partial Class ScaClAge
         Me.GroupControl1.Controls.Add(Me.GroupControl4)
         Me.GroupControl1.Controls.Add(Me.GroupControl3)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl1.Location = New System.Drawing.Point(0, 581)
+        Me.GroupControl1.Location = New System.Drawing.Point(0, 584)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(1002, 47)
+        Me.GroupControl1.Size = New System.Drawing.Size(1006, 47)
         Me.GroupControl1.TabIndex = 2
         '
         'GroupControl9
@@ -544,7 +545,7 @@ Partial Class ScaClAge
         '
         Me.CheckedComboBoxEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CheckedComboBoxEdit3.EnterMoveNextControl = True
-        Me.CheckedComboBoxEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.CheckedComboBoxEdit3.Location = New System.Drawing.Point(2, 23)
         Me.CheckedComboBoxEdit3.Name = "CheckedComboBoxEdit3"
         Me.CheckedComboBoxEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.CheckedComboBoxEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -570,7 +571,7 @@ Partial Class ScaClAge
         '
         Me.CheckedComboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CheckedComboBoxEdit2.EnterMoveNextControl = True
-        Me.CheckedComboBoxEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.CheckedComboBoxEdit2.Location = New System.Drawing.Point(2, 23)
         Me.CheckedComboBoxEdit2.Name = "CheckedComboBoxEdit2"
         Me.CheckedComboBoxEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.CheckedComboBoxEdit2.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -597,7 +598,7 @@ Partial Class ScaClAge
         Me.CheckedComboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CheckedComboBoxEdit1.EditValue = "1, 2, 3, 4, 5, 6, 7, 8"
         Me.CheckedComboBoxEdit1.EnterMoveNextControl = True
-        Me.CheckedComboBoxEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.CheckedComboBoxEdit1.Location = New System.Drawing.Point(2, 23)
         Me.CheckedComboBoxEdit1.Name = "CheckedComboBoxEdit1"
         Me.CheckedComboBoxEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.CheckedComboBoxEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -618,9 +619,9 @@ Partial Class ScaClAge
         Me.ButtonF1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF1.ImageIndex = 0
-        Me.ButtonF1.ImageList = Me.ImageList32
-        Me.ButtonF1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF1.ImageOptions.ImageIndex = 0
+        Me.ButtonF1.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF1.Location = New System.Drawing.Point(838, 9)
         Me.ButtonF1.Name = "ButtonF1"
         Me.ButtonF1.Size = New System.Drawing.Size(32, 32)
@@ -637,9 +638,9 @@ Partial Class ScaClAge
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(958, 9)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -657,9 +658,9 @@ Partial Class ScaClAge
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(898, 9)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -684,7 +685,7 @@ Partial Class ScaClAge
         Me.DateEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit2.EditValue = New Date(2009, 4, 9, 15, 33, 42, 273)
         Me.DateEdit2.EnterMoveNextControl = True
-        Me.DateEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit2.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit2.Name = "DateEdit2"
         Me.DateEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateEdit2.Properties.Appearance.Options.UseFont = True
@@ -713,7 +714,7 @@ Partial Class ScaClAge
         Me.DateEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit1.EditValue = New Date(2009, 4, 9, 15, 33, 42, 273)
         Me.DateEdit1.EnterMoveNextControl = True
-        Me.DateEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit1.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit1.Name = "DateEdit1"
         Me.DateEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateEdit1.Properties.Appearance.Options.UseFont = True
@@ -731,23 +732,23 @@ Partial Class ScaClAge
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl2.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(1002, 581)
+        Me.GroupControl2.Size = New System.Drawing.Size(1006, 584)
         Me.GroupControl2.TabIndex = 2
         Me.GroupControl2.Text = "GroupControl2"
         '
         'GridControl1
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.Location = New System.Drawing.Point(2, 21)
+        Me.GridControl1.Location = New System.Drawing.Point(2, 23)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(998, 558)
+        Me.GridControl1.Size = New System.Drawing.Size(1002, 559)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
         'GridView1
         '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn11, Me.GridColumn12, Me.GridColumn13, Me.GridColumn14, Me.GridColumn15, Me.GridColumn16, Me.GridColumn9, Me.GridColumn10, Me.GridColumn17, Me.GridColumn35, Me.GridColumn36, Me.GridColumn2})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn11, Me.GridColumn12, Me.GridColumn13, Me.GridColumn14, Me.GridColumn15, Me.GridColumn16, Me.GridColumn9, Me.GridColumn10, Me.GridColumn17, Me.GridColumn35, Me.GridColumn36, Me.GridColumn2, Me.GridColumn3})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.GroupCount = 2
         Me.GridView1.GroupFormat = "[#image]{1} {2}"
@@ -935,6 +936,12 @@ Partial Class ScaClAge
         Me.GridColumn2.OptionsFilter.AllowFilter = False
         Me.GridColumn2.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "ScaScopRata", "{0:€ ###,###,##0.00}")})
         '
+        'GridColumn3
+        '
+        Me.GridColumn3.Caption = "Cliente di"
+        Me.GridColumn3.FieldName = "ClGruppoCli"
+        Me.GridColumn3.Name = "GridColumn3"
+        '
         'XtraTabPage2
         '
         Me.XtraTabPage2.Controls.Add(Me.GroupControl8)
@@ -942,7 +949,7 @@ Partial Class ScaClAge
         Me.XtraTabPage2.Name = "XtraTabPage2"
         Me.XtraTabPage2.PageEnabled = False
         Me.XtraTabPage2.PageVisible = False
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1002, 628)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1006, 631)
         Me.XtraTabPage2.Text = "Riepilogo"
         '
         'GroupControl8
@@ -952,17 +959,17 @@ Partial Class ScaClAge
         Me.GroupControl8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl8.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl8.Name = "GroupControl8"
-        Me.GroupControl8.Size = New System.Drawing.Size(1002, 581)
+        Me.GroupControl8.Size = New System.Drawing.Size(1006, 584)
         Me.GroupControl8.TabIndex = 3
         Me.GroupControl8.Text = "GroupControl8"
         '
         'GridControl2
         '
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl2.Location = New System.Drawing.Point(2, 21)
+        Me.GridControl2.Location = New System.Drawing.Point(2, 23)
         Me.GridControl2.MainView = Me.AdvBandedGridView1
         Me.GridControl2.Name = "GridControl2"
-        Me.GridControl2.Size = New System.Drawing.Size(998, 558)
+        Me.GridControl2.Size = New System.Drawing.Size(1002, 559)
         Me.GridControl2.TabIndex = 0
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.AdvBandedGridView1, Me.AdvBandedGridView2})
         '
@@ -1317,10 +1324,10 @@ Partial Class ScaClAge
         'GridControl3
         '
         Me.GridControl3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl3.Location = New System.Drawing.Point(2, 21)
+        Me.GridControl3.Location = New System.Drawing.Point(2, 23)
         Me.GridControl3.MainView = Me.AdvBandedGridView3
         Me.GridControl3.Name = "GridControl3"
-        Me.GridControl3.Size = New System.Drawing.Size(998, 558)
+        Me.GridControl3.Size = New System.Drawing.Size(1002, 559)
         Me.GridControl3.TabIndex = 1
         Me.GridControl3.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.AdvBandedGridView3, Me.AdvBandedGridView4})
         '
@@ -1577,10 +1584,10 @@ Partial Class ScaClAge
         Me.GroupControl5.Controls.Add(Me.RadioGroup3)
         Me.GroupControl5.Controls.Add(Me.RadioGroup2)
         Me.GroupControl5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl5.Location = New System.Drawing.Point(0, 581)
+        Me.GroupControl5.Location = New System.Drawing.Point(0, 584)
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.ShowCaption = False
-        Me.GroupControl5.Size = New System.Drawing.Size(1002, 47)
+        Me.GroupControl5.Size = New System.Drawing.Size(1006, 47)
         Me.GroupControl5.TabIndex = 2
         '
         'SimpleButton1
@@ -1593,9 +1600,9 @@ Partial Class ScaClAge
         Me.SimpleButton1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.SimpleButton1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.SimpleButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SimpleButton1.ImageIndex = 27
-        Me.SimpleButton1.ImageList = Me.ImageGly
-        Me.SimpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.SimpleButton1.ImageOptions.ImageIndex = 27
+        Me.SimpleButton1.ImageOptions.ImageList = Me.ImageGly
+        Me.SimpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.SimpleButton1.Location = New System.Drawing.Point(660, 8)
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.Size = New System.Drawing.Size(32, 32)
@@ -1613,9 +1620,9 @@ Partial Class ScaClAge
         Me.ButtonXF1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonXF1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonXF1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonXF1.ImageIndex = 0
-        Me.ButtonXF1.ImageList = Me.ImageList32
-        Me.ButtonXF1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF1.ImageOptions.ImageIndex = 0
+        Me.ButtonXF1.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonXF1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonXF1.Location = New System.Drawing.Point(853, 8)
         Me.ButtonXF1.Name = "ButtonXF1"
         Me.ButtonXF1.Size = New System.Drawing.Size(32, 32)
@@ -1632,9 +1639,9 @@ Partial Class ScaClAge
         Me.ButtonXF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonXF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonXF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonXF9.ImageIndex = 9
-        Me.ButtonXF9.ImageList = Me.ImageDx24
-        Me.ButtonXF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF9.ImageOptions.ImageIndex = 9
+        Me.ButtonXF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonXF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonXF9.Location = New System.Drawing.Point(961, 8)
         Me.ButtonXF9.Name = "ButtonXF9"
         Me.ButtonXF9.Size = New System.Drawing.Size(32, 32)
@@ -1652,9 +1659,9 @@ Partial Class ScaClAge
         Me.ButtonXF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonXF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonXF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonXF5.ImageIndex = 4
-        Me.ButtonXF5.ImageList = Me.ImageList32
-        Me.ButtonXF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonXF5.ImageOptions.ImageIndex = 4
+        Me.ButtonXF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonXF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonXF5.Location = New System.Drawing.Point(906, 8)
         Me.ButtonXF5.Name = "ButtonXF5"
         Me.ButtonXF5.Size = New System.Drawing.Size(32, 32)
@@ -1855,4 +1862,5 @@ Partial Class ScaClAge
     Friend WithEvents GroupControl9 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents CheckedComboBoxEdit3 As DevExpress.XtraEditors.CheckedComboBoxEdit
     Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
 End Class
