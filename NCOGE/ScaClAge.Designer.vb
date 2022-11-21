@@ -106,6 +106,7 @@ Partial Class ScaClAge
         Me.DateEdit3 = New DevExpress.XtraEditors.DateEdit()
         Me.RadioGroup3 = New DevExpress.XtraEditors.RadioGroup()
         Me.RadioGroup2 = New DevExpress.XtraEditors.RadioGroup()
+        Me.ButtonFF9 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
         Me.XtraTabPage1.SuspendLayout()
@@ -403,7 +404,9 @@ Partial Class ScaClAge
         'XtraTabControl1
         '
         Me.XtraTabControl1.Location = New System.Drawing.Point(3, 3)
+        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
         Me.XtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.[Default]
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1081, 656)
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage2})
         Me.XtraTabControl1.Controls.SetChildIndex(Me.XtraTabPage2, 0)
         Me.XtraTabControl1.Controls.SetChildIndex(Me.XtraTabPage1, 0)
@@ -412,7 +415,7 @@ Partial Class ScaClAge
         '
         Me.XtraTabPage1.Controls.Add(Me.GroupControl2)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl1)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1006, 631)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1079, 631)
         Me.XtraTabPage1.Text = "Dettaglio"
         '
         'ImageDx24
@@ -526,7 +529,7 @@ Partial Class ScaClAge
         Me.GroupControl1.Location = New System.Drawing.Point(0, 584)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(1006, 47)
+        Me.GroupControl1.Size = New System.Drawing.Size(1079, 47)
         Me.GroupControl1.TabIndex = 2
         '
         'GroupControl9
@@ -728,11 +731,12 @@ Partial Class ScaClAge
         '
         'GroupControl2
         '
+        Me.GroupControl2.Controls.Add(Me.ButtonFF9)
         Me.GroupControl2.Controls.Add(Me.GridControl1)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl2.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(1006, 584)
+        Me.GroupControl2.Size = New System.Drawing.Size(1079, 584)
         Me.GroupControl2.TabIndex = 2
         Me.GroupControl2.Text = "GroupControl2"
         '
@@ -742,7 +746,7 @@ Partial Class ScaClAge
         Me.GridControl1.Location = New System.Drawing.Point(2, 23)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1002, 559)
+        Me.GridControl1.Size = New System.Drawing.Size(1075, 559)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -949,7 +953,7 @@ Partial Class ScaClAge
         Me.XtraTabPage2.Name = "XtraTabPage2"
         Me.XtraTabPage2.PageEnabled = False
         Me.XtraTabPage2.PageVisible = False
-        Me.XtraTabPage2.Size = New System.Drawing.Size(1006, 631)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(1084, 631)
         Me.XtraTabPage2.Text = "Riepilogo"
         '
         'GroupControl8
@@ -959,7 +963,7 @@ Partial Class ScaClAge
         Me.GroupControl8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl8.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl8.Name = "GroupControl8"
-        Me.GroupControl8.Size = New System.Drawing.Size(1006, 584)
+        Me.GroupControl8.Size = New System.Drawing.Size(1084, 584)
         Me.GroupControl8.TabIndex = 3
         Me.GroupControl8.Text = "GroupControl8"
         '
@@ -969,7 +973,7 @@ Partial Class ScaClAge
         Me.GridControl2.Location = New System.Drawing.Point(2, 23)
         Me.GridControl2.MainView = Me.AdvBandedGridView1
         Me.GridControl2.Name = "GridControl2"
-        Me.GridControl2.Size = New System.Drawing.Size(1002, 559)
+        Me.GridControl2.Size = New System.Drawing.Size(1080, 559)
         Me.GridControl2.TabIndex = 0
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.AdvBandedGridView1, Me.AdvBandedGridView2})
         '
@@ -1327,7 +1331,7 @@ Partial Class ScaClAge
         Me.GridControl3.Location = New System.Drawing.Point(2, 23)
         Me.GridControl3.MainView = Me.AdvBandedGridView3
         Me.GridControl3.Name = "GridControl3"
-        Me.GridControl3.Size = New System.Drawing.Size(1002, 559)
+        Me.GridControl3.Size = New System.Drawing.Size(1080, 559)
         Me.GridControl3.TabIndex = 1
         Me.GridControl3.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.AdvBandedGridView3, Me.AdvBandedGridView4})
         '
@@ -1587,7 +1591,7 @@ Partial Class ScaClAge
         Me.GroupControl5.Location = New System.Drawing.Point(0, 584)
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.ShowCaption = False
-        Me.GroupControl5.Size = New System.Drawing.Size(1006, 47)
+        Me.GroupControl5.Size = New System.Drawing.Size(1084, 47)
         Me.GroupControl5.TabIndex = 2
         '
         'SimpleButton1
@@ -1721,11 +1725,23 @@ Partial Class ScaClAge
         Me.RadioGroup2.Size = New System.Drawing.Size(233, 43)
         Me.RadioGroup2.TabIndex = 1
         '
+        'ButtonFF9
+        '
+        Me.ButtonFF9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonFF9.ImageOptions.SvgImage = CType(resources.GetObject("ButtonFF9.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.ButtonFF9.ImageOptions.SvgImageSize = New System.Drawing.Size(22, 22)
+        Me.ButtonFF9.Location = New System.Drawing.Point(1031, 0)
+        Me.ButtonFF9.Name = "ButtonFF9"
+        Me.ButtonFF9.Size = New System.Drawing.Size(23, 23)
+        Me.ButtonFF9.TabIndex = 14
+        Me.ButtonFF9.TabStop = False
+        Me.ButtonFF9.ToolTip = "STAMPA VIDEATA"
+        '
         'ScaClAge
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1008, 656)
+        Me.ClientSize = New System.Drawing.Size(1086, 656)
         Me.Name = "ScaClAge"
         Me.Text = "DxScaClf"
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1863,4 +1879,5 @@ Partial Class ScaClAge
     Friend WithEvents CheckedComboBoxEdit3 As DevExpress.XtraEditors.CheckedComboBoxEdit
     Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents ButtonFF9 As DevExpress.XtraEditors.SimpleButton
 End Class

@@ -297,6 +297,11 @@ Glob:
         PuliziaRIEP()
         DateEdit3.Focus()
     End Sub
+
+    Private Sub ButtonFF9_Click(sender As Object, e As EventArgs) Handles ButtonFF9.Click
+        DXANTEPRIMA(GridControl1, True, System.Drawing.Printing.PaperKind.A4, "")
+    End Sub
+
     Private Sub ButtonXF9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonXF9.Click
         If Analitico = "A" Then
             DXANTEPRIMA(GridControl2, True, System.Drawing.Printing.PaperKind.A4, GroupControl8.Text)
