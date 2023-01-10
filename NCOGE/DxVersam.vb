@@ -165,6 +165,7 @@ Public Class DxVersam
     End Sub
 
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         If ComboBoxEdit2.SelectedIndex = 14 Then CheckEdit1.Checked = False
         ScriviVers()
     End Sub

@@ -75,6 +75,7 @@ Public Class DxLetInt
         End If
     End Sub
     Private Sub ButtonPlus_Click(sender As System.Object, e As System.EventArgs) Handles ButtonPlus.Click
+        If Lettura = True Then Exit Sub
         AggiungiAnno()
     End Sub
     Sub AggiungiAnno()
@@ -188,6 +189,7 @@ Public Class DxLetInt
     ''  End Sub
 
     Private Sub ButtonF11_Click(sender As System.Object, e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         If Controllacampi() = False Then Exit Sub
         Registra()
         ButtonF5.PerformClick()
@@ -330,6 +332,7 @@ USCITA:
     End Sub
 
     Private Sub ButtonF3_Click(sender As System.Object, e As System.EventArgs) Handles ButtonF3.Click
+        If Lettura = True Then Exit Sub
         If Rifer > 0 Then
             EliminaDichiarazione()
             ButtonF5.PerformClick()

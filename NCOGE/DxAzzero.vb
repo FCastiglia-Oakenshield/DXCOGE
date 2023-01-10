@@ -70,6 +70,7 @@ Public Class DxAzzero
     End Sub
 
     Private Sub ButtonF11_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         If RadioGroup1.SelectedIndex = 0 Then
             EsegueSql(" EXEC XAZZGIO  @UDATA = '" & CDate(DateEdit1.EditValue).ToShortDateString & "'", cnCo)
             Pulizia(False)

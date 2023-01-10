@@ -1512,6 +1512,7 @@ Inext:
         If Sw > 0 Then System.Windows.Forms.SendKeys.Send("{TAB}")
     End Sub
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         If ControllaConto() = False Then
             TextEdit20.Focus()
             Exit Sub

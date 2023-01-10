@@ -97,6 +97,7 @@ Public Class DxSchedC
         GroupControl6.Enabled = False
         GroupControl5.Enabled = True
         CheckEdit4.Checked = False
+        If Lettura = True Then CheckEdit4.Visible = False
         RadioGroup2.SelectedIndex = 0
         TextErr2.Visible = True : TextErr2.ErrorText = "REGISTRO IVA MANCANTE!"
     End Sub
@@ -208,7 +209,8 @@ Public Class DxSchedC
         End If
     End Sub
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click, ButtonFF11.Click
-        If pik = 0 Then EseguoOperazione() Else ChiudoPartitaManuale()
+        If pik = 0 Then EseguoOperazione() : Exit Sub
+        If Lettura = True Then Exit Sub Else ChiudoPartitaManuale()
     End Sub
     Sub ChiusuraPartiteAutomatica()
         If Test = 0 Then EseguoOperazione()

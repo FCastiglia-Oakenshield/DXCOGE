@@ -260,8 +260,9 @@ Public Class DxChiApe
         DateEdit1.EditValue = EseAl(x)
         DateEdit2.EditValue = EseAl(x)
     End Sub
-  
+
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         If Controlli() = False Then Exit Sub
         TextEdit11.Visible = True
         CREACHIUSURA()

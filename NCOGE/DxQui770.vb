@@ -111,6 +111,7 @@ III:
     End Sub
 
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11x.Click
+        If Lettura = True Then Exit Sub
         If Controlla() = False Then Exit Sub
         Aggiorna()
         ButtonF5x.PerformClick()

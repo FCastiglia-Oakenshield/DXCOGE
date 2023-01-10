@@ -19,10 +19,12 @@ Public Class XMENU
     Dim Line As String = ""
     Dim UserId As String
     Dim EComunita As Boolean = False
+    Dim Lettura As Boolean = False
 
     Private Sub XMENU_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Shown
         CaricaSkinCombo()
         Settaggi()
+        Lettura = SoloLettura()
         Me.Bar2.OptionsBar.MultiLine = False
     End Sub
     Private Sub CaricaSkinCombo()

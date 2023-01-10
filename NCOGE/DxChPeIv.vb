@@ -127,6 +127,7 @@ Public Class DxChPeIv
         TRI(4) = " IV^ TRIMESTRE "
         CheckEdit1.Checked = False
         CheckEdit2.Checked = False
+        If Lettura = True Then CheckEdit2.Visible = False
         Dim x As Int16
         Dim Cmd As New SqlCommand("SELECT distinct top 5 RivaAnno from TbRegIva Order by RivaAnno desc", cnCo)
         ComboBoxEdit1.Properties.Items.Clear()

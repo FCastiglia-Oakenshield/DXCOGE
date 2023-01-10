@@ -1039,6 +1039,7 @@ VaiOltre:
     End Sub
     Private Sub ButtonF3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF3.Click
         If OkProt = False Then Exit Sub
+        If Lettura = True Then Exit Sub
         Messaggio(2, "ELIMINO IL PROT N. " & Val(TextEdit1.EditValue) & " DEL " & DateEdit1.EditValue & " ? ")
         If Rispondi = MsgBoxResult.Yes Then
             EliminaProt()
@@ -1049,6 +1050,7 @@ VaiOltre:
     End Sub
 
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         RegistraFattura()
     End Sub
 

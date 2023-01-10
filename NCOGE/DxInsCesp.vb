@@ -403,6 +403,7 @@ Public Class DxInsCesp
 
 #Region "REGISTRA TABELLE"
     Private Sub ButtonF1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF1.Click
+        If Lettura = True Then Exit Sub
         If Controllo() = False Then Exit Sub
         ScriviCesp()
         EnableGroup()
@@ -644,6 +645,7 @@ Public Class DxInsCesp
         PuliziaStorico(True)
     End Sub
     Private Sub ButtonXF3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonXF3.Click
+        If Lettura = True Then Exit Sub
         If Cespite = False Or Storico = False Then Exit Sub
         If GridView2.RowCount > 0 Then
             MessageBox.Show("Eliminare Prima Le Variazioni!!!!" & Chr(13), "Elimina Storico", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -666,6 +668,7 @@ Public Class DxInsCesp
     End Sub
 
     Private Sub ButtonF3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles ButtonF3.Click
+        If Lettura = True Then Exit Sub
         If Cespite = False Then Return
         If MessageBox.Show("Vuoi  eliminare COMPLETAMENTE il Cespite " & TextEdit1.EditValue & " ?", "Elimina Cespite", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = DialogResult.Yes Then
             EliminaCespite()
@@ -829,6 +832,7 @@ Public Class DxInsCesp
         UltAnnoAmm = Cmd.ExecuteScalar
     End Function
     Private Sub ButtonYF3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonYF3.Click
+        If Lettura = True Then Exit Sub
         If Cespite = False Or CDec(TextEdit34.EditValue) = 0 Then Exit Sub
         If MessageBox.Show("Vuoi eliminare la Variazione selezionata?", "Elimina Variazione", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = DialogResult.Yes Then
             EliminaVariazione()

@@ -212,6 +212,7 @@ Public Class DxRegIva
     End Sub
 
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         If Controllo() = False Then Return
         If EsisteRegistro = False Then
             Str = "Insert into TbRegIva (RIvaAnno,RIvaNReg,RIvaSL,RIvaNumFog,RIvaTipo,RIvaPRata,RIvaDesc,RIvaCpt,RIvaAutoFCee,RIvaCptCee,RIvaCptSosp,RIvaCliCee,RIvaArt,RIvaInt,RIvaCh,RIvaRCharge,RIvaFteP,RIvaTipoDoc) values (@RIvaAnno,@RIvaNReg,@RIvaSL,@RIvaNumFog,@RIvaTipo,@RIvaPRata,@RIvaDesc,@RIvaCpt,@RIvaAutoFCee,@RIvaCptCee,@RIvaCptSosp,@RIvaCliCee,@RIvaArt,@RIvaInt,@RIvaCh,@RIvaRCharge,@RIvaFteP,@RIvaTipoDoc)"
@@ -346,6 +347,7 @@ Public Class DxRegIva
     End Sub
 
     Private Sub ButtonF3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF3.Click
+        If Lettura = True Then Exit Sub
         Try
             If TextEdit101.EditValue <= 0 Then Return
         Catch ex As Exception

@@ -463,6 +463,7 @@ Oltre:
 
     End Sub
     Private Sub ButtonFF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonFF11.Click
+        If Lettura = True Then Exit Sub
         If DsPno.Tables(Pn).Rows.Count = 0 Then
             Messaggio(1, "MANCANO INCASSI o PAGAMENTI")
             Exit Sub

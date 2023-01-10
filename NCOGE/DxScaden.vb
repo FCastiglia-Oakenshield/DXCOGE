@@ -322,6 +322,7 @@ Public Class DxScaden
     End Sub
 
     Private Sub ButtonF1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF1.Click
+        If Lettura = True Then Exit Sub
         If RwTbo Is Nothing Or RwCbo Is Nothing Then Exit Sub
         Dim Gsca As New DxScaRat
         Gsca.NAnaCod = RwTbo("SCACONTO")

@@ -196,6 +196,7 @@ Partial Public Class DxArtPers
         ImageComboBoxEdit1.Focus()
     End Sub
     Private Sub ButtonF3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonXF3.Click
+        If Lettura = True Then Exit Sub
         If Irow > -1 Then RwX.Delete()
         Pulizia(False)
     End Sub

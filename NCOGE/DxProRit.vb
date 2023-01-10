@@ -329,6 +329,7 @@ Public Class DxProRit
     End Sub
 
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         If ControlloCampi() = False Then Return
         Registra()
     End Sub
@@ -570,6 +571,7 @@ III:
     End Sub
 
     Private Sub ButtonF11x_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11x.Click
+        If Lettura = True Then Exit Sub
         If Controlla() = False Then Exit Sub
         Aggiorna()
         ButtonF5x.PerformClick()

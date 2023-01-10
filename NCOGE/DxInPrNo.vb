@@ -1020,6 +1020,7 @@ Aggiungi:
     End Function
     Private Sub ButtonF3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF3.Click
         If OkPn = False Then Exit Sub
+        If Lettura = True Then Exit Sub
         Messaggio(2, "ELIMINO L'ARTICOLO N. " & Val(TextEdit1.EditValue) & " DEL " & DateEdit2.EditValue & " ? ")
         If Rispondi = MsgBoxResult.Yes Then
             EliminaProt()
@@ -1500,6 +1501,7 @@ Attesa:
     End Sub
 
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         POSRIG = DsFat.Tables(Fa).Rows.Count
         RicalcoloFinale(POSRIG + 1)
         RegistraFattura()

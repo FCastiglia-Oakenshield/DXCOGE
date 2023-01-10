@@ -330,6 +330,7 @@ Public Class DxPianoForm
         End If
     End Sub
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         If ControlloCodice(TextEdit1.EditValue) = False Then Exit Sub
         If OkLDP = True Then
             If Flagmcc() = False Then CheckEdit3.Checked = True : CheckEdit3.Focus() : Exit Sub

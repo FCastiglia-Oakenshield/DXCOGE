@@ -150,6 +150,7 @@ Public Class DxRegQuo
     End Sub
 
     Private Sub ButtonF11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         If CheckEdit1.Checked = True Then
             If Controlli() = False Then Exit Sub
         End If
@@ -262,6 +263,7 @@ Public Class DxRegQuo
     End Function
 
     Private Sub ButtonXF11_Click(sender As System.Object, e As System.EventArgs) Handles ButtonXF11.Click
+        If Lettura = True Then Exit Sub
         If CheckEdit1.Checked = True Then RegistraPrimaNota()
         Me.Close()
     End Sub

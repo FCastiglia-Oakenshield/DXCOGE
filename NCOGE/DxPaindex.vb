@@ -69,6 +69,7 @@ II:
     End Function
 
     Private Sub ButtonF11_Click(sender As System.Object, e As System.EventArgs) Handles ButtonF11.Click
+        If Lettura = True Then Exit Sub
         RegistraModifiche()
         Me.Close()
     End Sub
