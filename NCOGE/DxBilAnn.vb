@@ -84,8 +84,13 @@ Public Class DxBilAnn
         d2 = CDate(DateEdit3.EditValue)
         q = 0
         CaricaSaldi()
-        SparaStampa(Rpt2, "Patrimoniale e Conto Economico", "{CrBilProg.TMSBLOCK} = ", False, True, "SitPpp", True)
-        SparaStampa(Rpt3, "Progressivo Clienti e Fornitori", "{CrBilClFo.TMCBLOCK} = ", True, False, "ProgCf", False)
+        If CheckEdit10.Checked = False Then
+            SparaStampa(Rpt2, "Patrimoniale e Conto Economico", "{CrBilProg.TMSBLOCK} = ", False, True, "SitPpp", True)
+            SparaStampa(Rpt3, "Progressivo Clienti e Fornitori", "{CrBilClFo.TMCBLOCK} = ", True, False, "ProgCf", False)
+        Else
+            SezioniContrapposte()
+        End If
+
         If CheckEdit6.Checked = True Then EsegueSole24Ore()
         If CheckEdit12.Checked = True Then
             For p As Int16 = 1 To 2
@@ -99,6 +104,22 @@ Public Class DxBilAnn
             BilancioCee()
         End If
         Me.Close()
+    End Sub
+    Sub SezioniContrapposte()
+        Cursor.Current = Cursors.WaitCursor
+        Dim Azienda As String = Marchio()
+        EsegueSql("EXEC XBILSEZ @BLOCK=" & IdBlk, cnCo)
+        Dim StrPrint As String = "select * from TMPSEZ ORDER BY TMPSID"
+        Dim DsSez = New DataTable
+        Dim DaSez = New SqlDataAdapter(StrPrint, cnCo)
+        DaSez.SelectCommand.CommandTimeout = 300
+        DaSez.Fill(DsSez)
+        REPORT = New XBilSez
+        REPORT.DataSource = DsSez
+        REPORT.DataMember = "DsSez"
+        REPORT.Parameters("Periodo").Value = CDate(DateEdit3.EditValue).ToShortDateString
+        REPORT.Parameters("Azienda").Value = Azienda
+        REPORT.ShowPreview()
     End Sub
     Sub RicaricaSaldi()
         If q = 1 Then IdBlk2 = semaforo("Bilancio AL " & Today.Date)

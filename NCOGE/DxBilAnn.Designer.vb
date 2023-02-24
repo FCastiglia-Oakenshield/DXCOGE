@@ -21,6 +21,7 @@ Partial Class DxBilAnn
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DxBilAnn))
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+        Me.CheckEdit10 = New DevExpress.XtraEditors.CheckEdit()
         Me.CheckEdit12 = New DevExpress.XtraEditors.CheckEdit()
         Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl7 = New DevExpress.XtraEditors.GroupControl()
@@ -43,6 +44,7 @@ Partial Class DxBilAnn
         CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
+        CType(Me.CheckEdit10.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CheckEdit12.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl6.SuspendLayout()
@@ -429,6 +431,7 @@ Partial Class DxBilAnn
         Me.GroupControl1.AppearanceCaption.Options.UseFont = True
         Me.GroupControl1.AppearanceCaption.Options.UseTextOptions = True
         Me.GroupControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.GroupControl1.Controls.Add(Me.CheckEdit10)
         Me.GroupControl1.Controls.Add(Me.CheckEdit12)
         Me.GroupControl1.Controls.Add(Me.GroupControl6)
         Me.GroupControl1.Controls.Add(Me.GroupControl4)
@@ -439,11 +442,23 @@ Partial Class DxBilAnn
         Me.GroupControl1.TabIndex = 1
         Me.GroupControl1.Text = "BILANCIO ESERCIZI PRECEDENTI CHIUSI"
         '
+        'CheckEdit10
+        '
+        Me.CheckEdit10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit10.EnterMoveNextControl = True
+        Me.CheckEdit10.Location = New System.Drawing.Point(335, 53)
+        Me.CheckEdit10.Name = "CheckEdit10"
+        Me.CheckEdit10.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckEdit10.Properties.Appearance.Options.UseFont = True
+        Me.CheckEdit10.Properties.Caption = "A SEZIONI CONTRAPPOSTE"
+        Me.CheckEdit10.Size = New System.Drawing.Size(179, 20)
+        Me.CheckEdit10.TabIndex = 10
+        '
         'CheckEdit12
         '
         Me.CheckEdit12.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckEdit12.EnterMoveNextControl = True
-        Me.CheckEdit12.Location = New System.Drawing.Point(352, 50)
+        Me.CheckEdit12.Location = New System.Drawing.Point(334, 27)
         Me.CheckEdit12.Name = "CheckEdit12"
         Me.CheckEdit12.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckEdit12.Properties.Appearance.Options.UseFont = True
@@ -639,6 +654,7 @@ Partial Class DxBilAnn
         CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl1.ResumeLayout(False)
+        CType(Me.CheckEdit10.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CheckEdit12.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl6.ResumeLayout(False)
@@ -676,4 +692,5 @@ Partial Class DxBilAnn
     Friend WithEvents GroupControl60 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents DateEdit2 As DevExpress.XtraEditors.DateEdit
     Friend WithEvents CheckEdit12 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents CheckEdit10 As DevExpress.XtraEditors.CheckEdit
 End Class

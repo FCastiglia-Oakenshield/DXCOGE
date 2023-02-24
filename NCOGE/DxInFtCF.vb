@@ -78,7 +78,7 @@ Public Class DxInFtCF
     Dim Sw As Int16 = 0
     Dim Xreg As Int16 = -1
     Dim NumReg, Causale, Righe, Fl04, Fl05, Fl06, POSRIG, R, Irow, DS As Int16
-    Dim GR(2), TC(2), Pcod, IvaCpt As String
+    Dim GR(2), TC(2), Pcod, IvaCpt, Grp(18) As String
     Dim TotaleFattura, X0, X1, TotaleReg, TotTransito, TotaleResiduo As Decimal
     Dim OkProt, OkFat, OkFcf, Fl08, Fl088, SOLOCPT As Boolean
     Dim ProgId, DCGNUMRIF As Int32
@@ -144,7 +144,7 @@ Public Class DxInFtCF
 
     Private Sub DxInFtCF_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown, ButtonF5.Click
         If Sw = 0 Then
-            Apertura() : PopolaCii() : CheckEdit2.Checked = False : MonitorOk = MonitorIdoneo()
+            Apertura() : PopolaCii() : Gruppi() : CheckEdit2.Checked = False : MonitorOk = MonitorIdoneo()
             Sw = 1
         End If
         Pulizia(0)
@@ -208,6 +208,47 @@ Public Class DxInFtCF
             End If
             TextEdit1.Focus()
         End If
+    End Sub
+    Sub GRUPPI()
+        Dim x, k As Int16
+        k = 0
+        Cmd = New SqlCommand("SELECT GrpMigl,GrpCpt1, GrpCpt2,GrpCpt3,GrpCpt4,GrpCpt5,GrpCpt6,GrpCpt7,GrpCpt8,GrpCpt9 FROM TbGrp Where GrpCod = 'FO' ", cnCo)
+        dataRd = Cmd.ExecuteReader
+        While dataRd.Read
+            MiglioFo = dataRd.Item("GrpMigl")
+            For x = 1 To 9
+                If dataRd.Item(x) > "00.00" Then
+                    k = k + 1
+                    Grp(k) = dataRd.Item(x)
+                End If
+            Next
+        End While
+        dataRd.Close()
+        Cmd = New SqlCommand("SELECT GrpMigl,GrpCpt1, GrpCpt2,GrpCpt3,GrpCpt4,GrpCpt5,GrpCpt6,GrpCpt7,GrpCpt8,GrpCpt9 FROM TbGrp Where GrpCod = 'CL' ", cnCo)
+        dataRd = Cmd.ExecuteReader
+        While dataRd.Read
+            For x = 1 To 9
+                If dataRd.Item(x) > "00.00" Then
+                    k = k + 1
+                    Grp(k) = dataRd.Item(x)
+                End If
+            Next
+        End While
+        dataRd.Close()
+        Array.Sort(Grp)
+        k = 1
+        For x = 2 To 18
+            If Grp(x) = Grp(k) Then
+                Grp(x) = ""
+            Else
+                k = k + 1
+                Grp(k) = Grp(x)
+            End If
+        Next
+        Grp(0) = k
+        For x = k + 1 To 18
+            Grp(x) = ""
+        Next
     End Sub
     Sub PulisciGrid()
         DsFat = New DataSet(Fa)
@@ -1428,6 +1469,14 @@ Inext:
         Fl08 = False
         LeggiConto = False
         AggiustaConto() ''''' verifica il punto se e' un sottoconto
+        REM CONTROLLO CONTI RAGGRUPPAMENTO CLIENTI E FORNITORI DA NON UTILIZZARE
+        For K As Int16 = 1 To Grp(0)
+            If Grp(K) = TextEdit20.Text Then
+                LeggiConto = False
+                Exit Function
+            End If
+        Next
+
         Dim Str As String = "SELECT * from TbPia where PiaCodCo = '" & TextEdit20.EditValue & "'"
         Dim Cmd As New SqlCommand(Str, cnCo)
         dataRd = Cmd.ExecuteReader
