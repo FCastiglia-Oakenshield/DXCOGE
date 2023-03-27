@@ -488,7 +488,6 @@ Partial Class DxPianoForm
         Me.XtraTabControl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.XtraTabControl1.Location = New System.Drawing.Point(4, 5)
-        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
         Me.XtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.[Default]
         Me.XtraTabControl1.Size = New System.Drawing.Size(1059, 671)
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage2})
