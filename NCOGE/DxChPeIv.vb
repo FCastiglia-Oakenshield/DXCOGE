@@ -27,7 +27,8 @@ Public Class DxChPeIv
     Dim RwPno As DataRow
     Dim nn As New DevExpress.XtraEditors.Controls.ImageComboBoxItem
     Dim OkPlafond As Boolean = False
-
+    Dim Userid As String = ""
+    Dim OkLDP As Boolean = False
 
     Private Sub DxChPeIv_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
         If Sw = 0 Then
@@ -37,6 +38,19 @@ Public Class DxChPeIv
             PopolaBanche()
             PopolaCorrispettivi()
             Sw = 1
+        End If
+    End Sub
+    Sub GestioneUser()
+        REM CDC PER ORA SOLO SU GRUPPO PASTA ATAVOLA
+        Cmd = New SqlCommand("SELECT * FROM TbSel Where SelId = 400", cnVd)
+        dataRd = Cmd.ExecuteReader
+        While dataRd.Read
+            UserId = dataRd.Item("Sel14")
+        End While
+        dataRd.Close()
+        OkLDP = False
+        If UserId.ToUpper = "PASTAECO" Or UserId.ToUpper = "PASTANEW" Or UserId.ToUpper = "PASTAGROUP" Then
+            OkLDP = True
         End If
     End Sub
     Sub LeggiPlafond()
@@ -609,6 +623,17 @@ Intesta:
         SbloccoLocked()
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         ResetIdP()
+        If OkLDP = True Then LancioCDC()
+    End Sub
+
+    Sub LancioCDC()
+        EsegueSql("exec XRECUPEROCDCCORRISPETTIVI @ID=" & ProgId & ", @LDP = 0", CnDc) '' PER ORA FISSO ATAVOLA NON CLASSIFICATO
+        '''RipCdc.PIIDD = ProgId
+        '''RipCdc.PNdoc = RwFRI("PriDocEst").ToString
+        '''RipCdc.PNreg = RwFRI("PriRegIva").ToString
+        '''RipCdc.PProt = RwFRI("PriNumProt").ToString
+        '''RipCdc.PDatDoc = CDate(RwFRI("PriDataEst")).ToShortDateString
+        '''Gesterna.ShowDialog()
     End Sub
     Private Function LeggiUltimo(ByVal dataGio As Date) As Boolean
         Dim ultimo As String = "INSERT INTO TbIDP (IDdata) values(@PriDataGio)"

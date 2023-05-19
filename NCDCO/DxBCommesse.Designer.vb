@@ -518,8 +518,8 @@ Partial Class DxBCommesse
         'CheckButton1
         '
         Me.CheckButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton1.ImageIndex = 26
-        Me.CheckButton1.ImageList = Me.ImageDx24
+        Me.CheckButton1.ImageOptions.ImageIndex = 26
+        Me.CheckButton1.ImageOptions.ImageList = Me.ImageDx24
         Me.CheckButton1.Location = New System.Drawing.Point(418, 380)
         Me.CheckButton1.Name = "CheckButton1"
         Me.CheckButton1.Size = New System.Drawing.Size(32, 32)
@@ -543,12 +543,11 @@ Partial Class DxBCommesse
         '
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl2.FormsUseDefaultLookAndFeel = True
-        Me.GridControl2.Location = New System.Drawing.Point(2, 24)
-        Me.GridControl2.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl2.Location = New System.Drawing.Point(2, 23)
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox3, Me.RepositoryItemImageComboBox4, Me.RepositoryItemCheckEdit1, Me.RepositoryItemImageComboBox5})
-        Me.GridControl2.Size = New System.Drawing.Size(374, 447)
+        Me.GridControl2.Size = New System.Drawing.Size(374, 448)
         Me.GridControl2.TabIndex = 4
         Me.GridControl2.TabStop = False
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
@@ -661,12 +660,11 @@ Partial Class DxBCommesse
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
-        Me.GridControl1.Location = New System.Drawing.Point(2, 24)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
+        Me.GridControl1.Location = New System.Drawing.Point(2, 23)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(374, 447)
+        Me.GridControl1.Size = New System.Drawing.Size(374, 448)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.TabStop = False
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -783,6 +781,7 @@ Partial Class DxBCommesse
         'CheckEdit8
         '
         Me.CheckEdit8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit8.EnterMoveNextControl = True
         Me.CheckEdit8.Location = New System.Drawing.Point(292, 85)
         Me.CheckEdit8.Name = "CheckEdit8"
         Me.CheckEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -861,7 +860,7 @@ Partial Class DxBCommesse
         Me.DateEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit3.EditValue = Nothing
         Me.DateEdit3.EnterMoveNextControl = True
-        Me.DateEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit3.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit3.Name = "DateEdit3"
         Me.DateEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -895,7 +894,7 @@ Partial Class DxBCommesse
         Me.DateEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit2.EditValue = Nothing
         Me.DateEdit2.EnterMoveNextControl = True
-        Me.DateEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit2.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit2.Name = "DateEdit2"
         Me.DateEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -934,9 +933,9 @@ Partial Class DxBCommesse
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(11, 8)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)

@@ -1,5 +1,5 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class DxBilCdc
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class LPDContoEconomico
     Inherits DXBASE.XWinDxBa
 
     'Form overrides dispose to clean up the component list.
@@ -19,39 +19,27 @@ Partial Class DxBilCdc
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DxBilCdc))
-        Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
-        Me.CheckButton1 = New DevExpress.XtraEditors.CheckButton()
-        Me.GroupControl5 = New DevExpress.XtraEditors.GroupControl()
-        Me.GridControl2 = New DevExpress.XtraGrid.GridControl()
-        Me.GridView2 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.RepositoryItemImageComboBox3 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
-        Me.RepositoryItemImageComboBox4 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
-        Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
-        Me.RepositoryItemImageComboBox5 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
-        Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
-        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
-        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.RepositoryItemImageComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
-        Me.RepositoryItemImageComboBox2 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
-        Me.RepositoryItemCheckEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
-        Me.RepositoryItemImageComboBox6 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
-        Me.GroupControl60 = New DevExpress.XtraEditors.GroupControl()
-        Me.CheckEdit8 = New DevExpress.XtraEditors.CheckEdit()
-        Me.GroupControl7 = New DevExpress.XtraEditors.GroupControl()
-        Me.DateEdit1 = New DevExpress.XtraEditors.DateEdit()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LPDContoEconomico))
         Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
-        Me.ComboBoxEdit1 = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.GroupControl4 = New DevExpress.XtraEditors.GroupControl()
+        Me.ButtonP = New DevExpress.XtraEditors.SimpleButton()
+        Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+        Me.ButtonST = New DevExpress.XtraEditors.SimpleButton()
+        Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
+        Me.DateEdit1 = New DevExpress.XtraEditors.DateEdit()
         Me.GroupControl61 = New DevExpress.XtraEditors.GroupControl()
         Me.DateEdit3 = New DevExpress.XtraEditors.DateEdit()
-        Me.GroupControl6 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl60 = New DevExpress.XtraEditors.GroupControl()
         Me.DateEdit2 = New DevExpress.XtraEditors.DateEdit()
-        Me.GroupControl4 = New DevExpress.XtraEditors.GroupControl()
-        Me.ButtonF9 = New DevExpress.XtraEditors.SimpleButton()
+        Me.ComboBoxEdit1 = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.GridControl11 = New DevExpress.XtraGrid.GridControl()
+        Me.GridView11 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridColumn126 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn127 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn128 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn119 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn120 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemTextEdit12 = New DevExpress.XtraEditors.Repository.RepositoryItemTextEdit()
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
         Me.XtraTabPage1.SuspendLayout()
@@ -59,44 +47,28 @@ Partial Class DxBilCdc
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl1.SuspendLayout()
-        CType(Me.GroupControl5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl5.SuspendLayout()
-        CType(Me.GridControl2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemImageComboBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemImageComboBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemImageComboBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl2.SuspendLayout()
-        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemImageComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemImageComboBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemImageComboBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GroupControl60, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl60.SuspendLayout()
-        CType(Me.CheckEdit8.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl7.SuspendLayout()
-        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl3.SuspendLayout()
-        CType(Me.ComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GroupControl4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl4.SuspendLayout()
+        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl1.SuspendLayout()
+        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl2.SuspendLayout()
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl61, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl61.SuspendLayout()
         CType(Me.DateEdit3.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl6.SuspendLayout()
+        CType(Me.GroupControl60, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl60.SuspendLayout()
         CType(Me.DateEdit2.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GroupControl4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl4.SuspendLayout()
+        CType(Me.ComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridControl11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemTextEdit12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ImageList32
@@ -129,10 +101,11 @@ Partial Class DxBilCdc
         Me.ImageList32.Images.SetKeyName(24, "")
         Me.ImageList32.Images.SetKeyName(25, "")
         Me.ImageList32.Images.SetKeyName(26, "")
-        Me.ImageList32.Images.SetKeyName(27, "")
+        Me.ImageList32.Images.SetKeyName(27, "Print_32x32_view.png")
         Me.ImageList32.Images.SetKeyName(28, "mainicon.ico")
-        Me.ImageList32.Images.SetKeyName(29, "printer_preferences.png")
+        Me.ImageList32.Images.SetKeyName(29, "Print_32x32.png")
         Me.ImageList32.Images.SetKeyName(30, "data_view32.png")
+        Me.ImageList32.Images.SetKeyName(31, "Union32.png")
         '
         'ImageGly
         '
@@ -240,6 +213,21 @@ Partial Class DxBilCdc
         Me.ImageGly.Images.SetKeyName(100, "Delete Database 24 h i32.ico")
         Me.ImageGly.Images.SetKeyName(101, "Database Rollback 24 h i32.ico")
         Me.ImageGly.Images.SetKeyName(102, "Database Commit 24 h i32.ico")
+        Me.ImageGly.Images.SetKeyName(103, "document_certificate.png")
+        Me.ImageGly.Images.SetKeyName(104, "registry_edit.png")
+        Me.ImageGly.Images.SetKeyName(105, "history2.png")
+        Me.ImageGly.Images.SetKeyName(106, "lock_add.png")
+        Me.ImageGly.Images.SetKeyName(107, "lock_open.png")
+        Me.ImageGly.Images.SetKeyName(108, "calendar_down.png")
+        Me.ImageGly.Images.SetKeyName(109, "calendar_up.png")
+        Me.ImageGly.Images.SetKeyName(110, "Delete User 3 32 h i32.ico")
+        Me.ImageGly.Images.SetKeyName(111, "currency_euro.png")
+        Me.ImageGly.Images.SetKeyName(112, "symbol_percent.png")
+        Me.ImageGly.Images.SetKeyName(113, "Task List 32 h i32.ico")
+        Me.ImageGly.Images.SetKeyName(114, "pda2_edit.png")
+        Me.ImageGly.Images.SetKeyName(115, "document_new.png")
+        Me.ImageGly.Images.SetKeyName(116, "pasta.png")
+        Me.ImageGly.Images.SetKeyName(117, "Factory 32 h p8.png")
         '
         'imageList1
         '
@@ -363,14 +351,28 @@ Partial Class DxBilCdc
         Me.imageList1.Images.SetKeyName(116, "selection_up.png")
         Me.imageList1.Images.SetKeyName(117, "selection_view.png")
         Me.imageList1.Images.SetKeyName(118, "undo.png")
-        '
-        'XtraTabControl1
-        '
-        Me.XtraTabControl1.Location = New System.Drawing.Point(3, 3)
+        Me.imageList1.Images.SetKeyName(119, "printer_view.png")
+        Me.imageList1.Images.SetKeyName(120, "hand_thumb_up.png")
+        Me.imageList1.Images.SetKeyName(121, "high.gif")
+        Me.imageList1.Images.SetKeyName(122, "pasta_16.png")
+        Me.imageList1.Images.SetKeyName(123, "ExportToCSV_16x16.png")
+        Me.imageList1.Images.SetKeyName(124, "ExportToDOC_16x16.png")
+        Me.imageList1.Images.SetKeyName(125, "ExportToDOCX_16x16.png")
+        Me.imageList1.Images.SetKeyName(126, "ExportToEPUB_16x16.png")
+        Me.imageList1.Images.SetKeyName(127, "ExportToHTML_16x16.png")
+        Me.imageList1.Images.SetKeyName(128, "ExportToIMG_16x16.png")
+        Me.imageList1.Images.SetKeyName(129, "ExportToPDF_16x16.png")
+        Me.imageList1.Images.SetKeyName(130, "ExportToRTF_16x16.png")
+        Me.imageList1.Images.SetKeyName(131, "ExportToTXT_16x16.png")
+        Me.imageList1.Images.SetKeyName(132, "ExportToXLS_16x16.png")
+        Me.imageList1.Images.SetKeyName(133, "ExportToXLSX_16x16.png")
+        Me.imageList1.Images.SetKeyName(134, "ExportToXML_16x16.png")
+        Me.imageList1.Images.SetKeyName(135, "ExportToXPS_16x16.png")
         '
         'XtraTabPage1
         '
-        Me.XtraTabPage1.Controls.Add(Me.GroupControl1)
+        Me.XtraTabPage1.Controls.Add(Me.GridControl11)
+        Me.XtraTabPage1.Controls.Add(Me.GroupControl3)
         '
         'ImageDx24
         '
@@ -415,25 +417,40 @@ Partial Class DxBilCdc
         Me.ImageDx24.Images.SetKeyName(37, "view.png")
         Me.ImageDx24.Images.SetKeyName(38, "arrow_down_red.png")
         Me.ImageDx24.Images.SetKeyName(39, "arrow_up_green.png")
+        Me.ImageDx24.Images.SetKeyName(40, "tasto prova3.png")
+        Me.ImageDx24.Images.SetKeyName(41, "money2_delete.png")
+        Me.ImageDx24.Images.SetKeyName(42, "money2_edit.png")
+        Me.ImageDx24.Images.SetKeyName(43, "f9blu24.png")
+        Me.ImageDx24.Images.SetKeyName(44, "f9giallo24.png")
+        Me.ImageDx24.Images.SetKeyName(45, "f10blu24.png")
+        Me.ImageDx24.Images.SetKeyName(46, "f10rosso24.png")
+        Me.ImageDx24.Images.SetKeyName(47, "f11blu24.png")
+        Me.ImageDx24.Images.SetKeyName(48, "f11giallo24.png")
+        Me.ImageDx24.Images.SetKeyName(49, "f11rosso24.png")
+        Me.ImageDx24.Images.SetKeyName(50, "f11verde24.png")
+        Me.ImageDx24.Images.SetKeyName(51, "Union24.png")
         '
         'ImageS32
         '
         Me.ImageS32.ImageStream = CType(resources.GetObject("ImageS32.ImageStream"), DevExpress.Utils.ImageCollectionStreamer)
-        Me.ImageS32.Images.SetKeyName(0, "Icona arancaione ca 10.png")
-        Me.ImageS32.Images.SetKeyName(1, "Icona arancione ca 1.png")
-        Me.ImageS32.Images.SetKeyName(2, "Icona arancione ca 2.png")
-        Me.ImageS32.Images.SetKeyName(3, "Icona arancione ca 3.png")
-        Me.ImageS32.Images.SetKeyName(4, "Icona arancaione ca 10.png")
-        Me.ImageS32.Images.SetKeyName(5, "Icona arancione ca 4.png")
-        Me.ImageS32.Images.SetKeyName(6, "Icona arancione ca 11.png")
-        Me.ImageS32.Images.SetKeyName(7, "Icona arancaione ca 10.png")
-        Me.ImageS32.Images.SetKeyName(8, "Icona arancione ca 5.png")
-        Me.ImageS32.Images.SetKeyName(9, "Icona arancione ca 6.png")
-        Me.ImageS32.Images.SetKeyName(10, "Icona arancione ca 9.png")
-        Me.ImageS32.Images.SetKeyName(11, "Icona  arancione ca 7.png")
-        Me.ImageS32.Images.SetKeyName(12, "Icona arancione ca 8.png")
-        Me.ImageS32.Images.SetKeyName(13, "Icona trasparente 2 - 32x32.png")
-        Me.ImageS32.Images.SetKeyName(14, "Icona trasparente 32x32.png")
+        Me.ImageS32.Images.SetKeyName(0, "f1_triangle_green.png")
+        Me.ImageS32.Images.SetKeyName(1, "f1_down.png")
+        Me.ImageS32.Images.SetKeyName(2, "f2_up.png")
+        Me.ImageS32.Images.SetKeyName(3, "f3_delete.png")
+        Me.ImageS32.Images.SetKeyName(4, "f4.png")
+        Me.ImageS32.Images.SetKeyName(5, "f5_reset.png")
+        Me.ImageS32.Images.SetKeyName(6, "f6_edit.png")
+        Me.ImageS32.Images.SetKeyName(7, "f7_new.png")
+        Me.ImageS32.Images.SetKeyName(8, "f8_view.png")
+        Me.ImageS32.Images.SetKeyName(9, "printer_view.png")
+        Me.ImageS32.Images.SetKeyName(10, "f10_add.png")
+        Me.ImageS32.Images.SetKeyName(11, "f11_ok.png")
+        Me.ImageS32.Images.SetKeyName(12, "f12_information.png")
+        Me.ImageS32.Images.SetKeyName(13, "printer_ok.png")
+        Me.ImageS32.Images.SetKeyName(14, "f7.png")
+        Me.ImageS32.Images.SetKeyName(15, "f9.png")
+        Me.ImageS32.Images.SetKeyName(16, "Excel.png")
+        Me.ImageS32.Images.SetKeyName(17, "save_as.png")
         '
         'ImageS16
         '
@@ -480,272 +497,97 @@ Partial Class DxBilCdc
         Me.ImageDxList32.Images.SetKeyName(23, "Scan Document 32 h p_delete.png")
         Me.ImageDxList32.Images.SetKeyName(24, "ok.png")
         '
+        'GroupControl3
+        '
+        Me.GroupControl3.Controls.Add(Me.GroupControl4)
+        Me.GroupControl3.Controls.Add(Me.GroupControl1)
+        Me.GroupControl3.Controls.Add(Me.GroupControl2)
+        Me.GroupControl3.Controls.Add(Me.GroupControl61)
+        Me.GroupControl3.Controls.Add(Me.GroupControl60)
+        Me.GroupControl3.Controls.Add(Me.ComboBoxEdit1)
+        Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.GroupControl3.Location = New System.Drawing.Point(0, 587)
+        Me.GroupControl3.Name = "GroupControl3"
+        Me.GroupControl3.Size = New System.Drawing.Size(1006, 67)
+        Me.GroupControl3.TabIndex = 239
+        Me.GroupControl3.Text = "E S E R C I Z I O"
+        '
+        'GroupControl4
+        '
+        Me.GroupControl4.Controls.Add(Me.ButtonP)
+        Me.GroupControl4.Dock = System.Windows.Forms.DockStyle.Right
+        Me.GroupControl4.Location = New System.Drawing.Point(950, 23)
+        Me.GroupControl4.Name = "GroupControl4"
+        Me.GroupControl4.ShowCaption = False
+        Me.GroupControl4.Size = New System.Drawing.Size(54, 42)
+        Me.GroupControl4.TabIndex = 239
+        '
+        'ButtonP
+        '
+        Me.ButtonP.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.ButtonP.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.ButtonP.Appearance.Options.UseFont = True
+        Me.ButtonP.Appearance.Options.UseForeColor = True
+        Me.ButtonP.Appearance.Options.UseTextOptions = True
+        Me.ButtonP.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.ButtonP.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.ButtonP.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonP.ImageOptions.Image = Global.NCDCO.My.Resources.Resources.print_32x32
+        Me.ButtonP.ImageOptions.ImageIndex = 9
+        Me.ButtonP.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonP.Location = New System.Drawing.Point(11, 6)
+        Me.ButtonP.Name = "ButtonP"
+        Me.ButtonP.Size = New System.Drawing.Size(32, 32)
+        Me.ButtonP.TabIndex = 236
+        Me.ButtonP.TabStop = False
+        Me.ButtonP.ToolTip = "AVVIA ANTEPRIMA"
+        '
         'GroupControl1
         '
-        Me.GroupControl1.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupControl1.AppearanceCaption.Options.UseFont = True
-        Me.GroupControl1.AppearanceCaption.Options.UseTextOptions = True
-        Me.GroupControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.GroupControl1.Controls.Add(Me.CheckButton1)
-        Me.GroupControl1.Controls.Add(Me.GroupControl5)
-        Me.GroupControl1.Controls.Add(Me.GroupControl2)
-        Me.GroupControl1.Controls.Add(Me.GroupControl60)
-        Me.GroupControl1.Controls.Add(Me.GroupControl4)
-        Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupControl1.Location = New System.Drawing.Point(0, 0)
+        Me.GroupControl1.Controls.Add(Me.ButtonST)
+        Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl1.Location = New System.Drawing.Point(447, 23)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(1006, 654)
-        Me.GroupControl1.TabIndex = 4
+        Me.GroupControl1.ShowCaption = False
+        Me.GroupControl1.Size = New System.Drawing.Size(54, 42)
+        Me.GroupControl1.TabIndex = 238
         '
-        'CheckButton1
+        'ButtonST
         '
-        Me.CheckButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton1.ImageOptions.ImageIndex = 26
-        Me.CheckButton1.ImageOptions.ImageList = Me.ImageDx24
-        Me.CheckButton1.Location = New System.Drawing.Point(485, 380)
-        Me.CheckButton1.Name = "CheckButton1"
-        Me.CheckButton1.Size = New System.Drawing.Size(32, 32)
-        Me.CheckButton1.TabIndex = 11
-        Me.CheckButton1.ToolTip = "INVIA in STAMPA"
-        '
-        'GroupControl5
-        '
-        Me.GroupControl5.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupControl5.AppearanceCaption.Options.UseFont = True
-        Me.GroupControl5.AppearanceCaption.Options.UseTextOptions = True
-        Me.GroupControl5.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.GroupControl5.Controls.Add(Me.GridControl2)
-        Me.GroupControl5.Location = New System.Drawing.Point(540, 154)
-        Me.GroupControl5.Name = "GroupControl5"
-        Me.GroupControl5.Size = New System.Drawing.Size(460, 473)
-        Me.GroupControl5.TabIndex = 10
-        Me.GroupControl5.Text = "IN STAMPA"
-        '
-        'GridControl2
-        '
-        Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl2.FormsUseDefaultLookAndFeel = True
-        Me.GridControl2.Location = New System.Drawing.Point(2, 23)
-        Me.GridControl2.MainView = Me.GridView2
-        Me.GridControl2.Name = "GridControl2"
-        Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox3, Me.RepositoryItemImageComboBox4, Me.RepositoryItemCheckEdit1, Me.RepositoryItemImageComboBox5})
-        Me.GridControl2.Size = New System.Drawing.Size(456, 448)
-        Me.GridControl2.TabIndex = 4
-        Me.GridControl2.TabStop = False
-        Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
-        '
-        'GridView2
-        '
-        Me.GridView2.ActiveFilterEnabled = False
-        Me.GridView2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn3, Me.GridColumn4})
-        Me.GridView2.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
-        Me.GridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView2.GridControl = Me.GridControl2
-        Me.GridView2.Name = "GridView2"
-        Me.GridView2.OptionsNavigation.EnterMoveNextColumn = True
-        Me.GridView2.OptionsPrint.ExpandAllGroups = False
-        Me.GridView2.OptionsPrint.PrintGroupFooter = False
-        Me.GridView2.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView2.OptionsSelection.MultiSelect = True
-        Me.GridView2.OptionsView.EnableAppearanceEvenRow = True
-        Me.GridView2.OptionsView.EnableAppearanceOddRow = True
-        Me.GridView2.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
-        Me.GridView2.OptionsView.ShowGroupPanel = False
-        '
-        'GridColumn3
-        '
-        Me.GridColumn3.Caption = "SIGLA"
-        Me.GridColumn3.FieldName = "LDPSIGLA"
-        Me.GridColumn3.MinWidth = 150
-        Me.GridColumn3.Name = "GridColumn3"
-        Me.GridColumn3.OptionsColumn.AllowEdit = False
-        Me.GridColumn3.OptionsColumn.AllowFocus = False
-        Me.GridColumn3.OptionsColumn.FixedWidth = True
-        Me.GridColumn3.OptionsColumn.ReadOnly = True
-        Me.GridColumn3.Visible = True
-        Me.GridColumn3.VisibleIndex = 0
-        Me.GridColumn3.Width = 50
-        '
-        'GridColumn4
-        '
-        Me.GridColumn4.Caption = "DESCRIZIONE"
-        Me.GridColumn4.FieldName = "LDPDESC"
-        Me.GridColumn4.Name = "GridColumn4"
-        Me.GridColumn4.OptionsColumn.AllowEdit = False
-        Me.GridColumn4.OptionsColumn.AllowFocus = False
-        Me.GridColumn4.OptionsColumn.ReadOnly = True
-        Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 1
-        Me.GridColumn4.Width = 415
-        '
-        'RepositoryItemImageComboBox3
-        '
-        Me.RepositoryItemImageComboBox3.AutoHeight = False
-        Me.RepositoryItemImageComboBox3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemImageComboBox3.Name = "RepositoryItemImageComboBox3"
-        '
-        'RepositoryItemImageComboBox4
-        '
-        Me.RepositoryItemImageComboBox4.AutoHeight = False
-        Me.RepositoryItemImageComboBox4.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemImageComboBox4.DropDownRows = 1
-        Me.RepositoryItemImageComboBox4.Items.AddRange(New DevExpress.XtraEditors.Controls.ImageComboBoxItem() {New DevExpress.XtraEditors.Controls.ImageComboBoxItem("EVASO TOTALE", 0, 31), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("CONSEGNATA < ORDINATA", 1, 35), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("CONSEGNATA > ORDINATA", 2, 36), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("MISTA ( + e - )", 3, 37), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("EVASO PARZIALE", 4, 28), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("INEVASO", 5, 42)})
-        Me.RepositoryItemImageComboBox4.Name = "RepositoryItemImageComboBox4"
-        Me.RepositoryItemImageComboBox4.ReadOnly = True
-        '
-        'RepositoryItemCheckEdit1
-        '
-        Me.RepositoryItemCheckEdit1.AutoHeight = False
-        Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
-        '
-        'RepositoryItemImageComboBox5
-        '
-        Me.RepositoryItemImageComboBox5.AutoHeight = False
-        Me.RepositoryItemImageComboBox5.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemImageComboBox5.DropDownRows = 1
-        Me.RepositoryItemImageComboBox5.Items.AddRange(New DevExpress.XtraEditors.Controls.ImageComboBoxItem() {New DevExpress.XtraEditors.Controls.ImageComboBoxItem("NORMALE", 0, 39), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("RAPIDO", 1, 40), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("INTEGRAZIONE", 2, 36), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("PRESTAZIONI M.O.", 3, 45)})
-        Me.RepositoryItemImageComboBox5.Name = "RepositoryItemImageComboBox5"
-        Me.RepositoryItemImageComboBox5.ReadOnly = True
+        Me.ButtonST.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
+        Me.ButtonST.Appearance.ForeColor = System.Drawing.Color.Black
+        Me.ButtonST.Appearance.Options.UseFont = True
+        Me.ButtonST.Appearance.Options.UseForeColor = True
+        Me.ButtonST.Appearance.Options.UseTextOptions = True
+        Me.ButtonST.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.ButtonST.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+        Me.ButtonST.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonST.ImageOptions.Image = Global.NCDCO.My.Resources.Resources.historyitem_32x32
+        Me.ButtonST.ImageOptions.ImageIndex = 9
+        Me.ButtonST.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonST.Location = New System.Drawing.Point(11, 6)
+        Me.ButtonST.Name = "ButtonST"
+        Me.ButtonST.Size = New System.Drawing.Size(32, 32)
+        Me.ButtonST.TabIndex = 237
+        Me.ButtonST.TabStop = False
+        Me.ButtonST.ToolTip = "AVVIA ELABORAZIONE"
         '
         'GroupControl2
         '
-        Me.GroupControl2.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupControl2.AppearanceCaption.Options.UseFont = True
-        Me.GroupControl2.AppearanceCaption.Options.UseTextOptions = True
-        Me.GroupControl2.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.GroupControl2.Controls.Add(Me.GridControl1)
-        Me.GroupControl2.Location = New System.Drawing.Point(2, 154)
+        Me.GroupControl2.Controls.Add(Me.DateEdit1)
+        Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl2.Location = New System.Drawing.Point(317, 23)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(460, 473)
-        Me.GroupControl2.TabIndex = 9
-        Me.GroupControl2.Text = "DISPONIBILI "
-        '
-        'GridControl1
-        '
-        Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.FormsUseDefaultLookAndFeel = True
-        Me.GridControl1.Location = New System.Drawing.Point(2, 23)
-        Me.GridControl1.MainView = Me.GridView1
-        Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(456, 448)
-        Me.GridControl1.TabIndex = 4
-        Me.GridControl1.TabStop = False
-        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
-        '
-        'GridView1
-        '
-        Me.GridView1.ActiveFilterEnabled = False
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2})
-        Me.GridView1.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
-        Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView1.GridControl = Me.GridControl1
-        Me.GridView1.Name = "GridView1"
-        Me.GridView1.OptionsNavigation.EnterMoveNextColumn = True
-        Me.GridView1.OptionsPrint.ExpandAllGroups = False
-        Me.GridView1.OptionsPrint.PrintGroupFooter = False
-        Me.GridView1.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView1.OptionsSelection.MultiSelect = True
-        Me.GridView1.OptionsView.EnableAppearanceEvenRow = True
-        Me.GridView1.OptionsView.EnableAppearanceOddRow = True
-        Me.GridView1.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
-        Me.GridView1.OptionsView.ShowGroupPanel = False
-        '
-        'GridColumn1
-        '
-        Me.GridColumn1.Caption = "SIGLA"
-        Me.GridColumn1.FieldName = "LDPSIGLA"
-        Me.GridColumn1.MinWidth = 150
-        Me.GridColumn1.Name = "GridColumn1"
-        Me.GridColumn1.OptionsColumn.AllowEdit = False
-        Me.GridColumn1.OptionsColumn.AllowFocus = False
-        Me.GridColumn1.OptionsColumn.FixedWidth = True
-        Me.GridColumn1.OptionsColumn.ReadOnly = True
-        Me.GridColumn1.Visible = True
-        Me.GridColumn1.VisibleIndex = 0
-        Me.GridColumn1.Width = 50
-        '
-        'GridColumn2
-        '
-        Me.GridColumn2.Caption = "DESCRIZIONE"
-        Me.GridColumn2.FieldName = "LDPDESC"
-        Me.GridColumn2.Name = "GridColumn2"
-        Me.GridColumn2.OptionsColumn.AllowEdit = False
-        Me.GridColumn2.OptionsColumn.AllowFocus = False
-        Me.GridColumn2.OptionsColumn.ReadOnly = True
-        Me.GridColumn2.Visible = True
-        Me.GridColumn2.VisibleIndex = 1
-        Me.GridColumn2.Width = 415
-        '
-        'RepositoryItemImageComboBox1
-        '
-        Me.RepositoryItemImageComboBox1.AutoHeight = False
-        Me.RepositoryItemImageComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemImageComboBox1.Name = "RepositoryItemImageComboBox1"
-        '
-        'RepositoryItemImageComboBox2
-        '
-        Me.RepositoryItemImageComboBox2.AutoHeight = False
-        Me.RepositoryItemImageComboBox2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemImageComboBox2.DropDownRows = 1
-        Me.RepositoryItemImageComboBox2.Items.AddRange(New DevExpress.XtraEditors.Controls.ImageComboBoxItem() {New DevExpress.XtraEditors.Controls.ImageComboBoxItem("EVASO TOTALE", 0, 31), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("CONSEGNATA < ORDINATA", 1, 35), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("CONSEGNATA > ORDINATA", 2, 36), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("MISTA ( + e - )", 3, 37), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("EVASO PARZIALE", 4, 28), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("INEVASO", 5, 42)})
-        Me.RepositoryItemImageComboBox2.Name = "RepositoryItemImageComboBox2"
-        Me.RepositoryItemImageComboBox2.ReadOnly = True
-        '
-        'RepositoryItemCheckEdit2
-        '
-        Me.RepositoryItemCheckEdit2.AutoHeight = False
-        Me.RepositoryItemCheckEdit2.Name = "RepositoryItemCheckEdit2"
-        '
-        'RepositoryItemImageComboBox6
-        '
-        Me.RepositoryItemImageComboBox6.AutoHeight = False
-        Me.RepositoryItemImageComboBox6.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemImageComboBox6.DropDownRows = 1
-        Me.RepositoryItemImageComboBox6.Items.AddRange(New DevExpress.XtraEditors.Controls.ImageComboBoxItem() {New DevExpress.XtraEditors.Controls.ImageComboBoxItem("NORMALE", 0, 39), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("RAPIDO", 1, 40), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("INTEGRAZIONE", 2, 36), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("PRESTAZIONI M.O.", 3, 45)})
-        Me.RepositoryItemImageComboBox6.Name = "RepositoryItemImageComboBox6"
-        Me.RepositoryItemImageComboBox6.ReadOnly = True
-        '
-        'GroupControl60
-        '
-        Me.GroupControl60.AppearanceCaption.Options.UseTextOptions = True
-        Me.GroupControl60.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.GroupControl60.Controls.Add(Me.CheckEdit8)
-        Me.GroupControl60.Controls.Add(Me.GroupControl7)
-        Me.GroupControl60.Controls.Add(Me.GroupControl3)
-        Me.GroupControl60.Location = New System.Drawing.Point(249, 25)
-        Me.GroupControl60.Name = "GroupControl60"
-        Me.GroupControl60.ShowCaption = False
-        Me.GroupControl60.Size = New System.Drawing.Size(504, 123)
-        Me.GroupControl60.TabIndex = 8
-        Me.GroupControl60.Text = "SELEZIONA"
-        '
-        'CheckEdit8
-        '
-        Me.CheckEdit8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckEdit8.EnterMoveNextControl = True
-        Me.CheckEdit8.Location = New System.Drawing.Point(316, 85)
-        Me.CheckEdit8.Name = "CheckEdit8"
-        Me.CheckEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckEdit8.Properties.Appearance.Options.UseFont = True
-        Me.CheckEdit8.Properties.Caption = "SCRITTURE di RETTIFICA"
-        Me.CheckEdit8.Size = New System.Drawing.Size(185, 20)
-        Me.CheckEdit8.TabIndex = 7
-        '
-        'GroupControl7
-        '
-        Me.GroupControl7.Controls.Add(Me.DateEdit1)
-        Me.GroupControl7.Location = New System.Drawing.Point(344, 8)
-        Me.GroupControl7.Name = "GroupControl7"
-        Me.GroupControl7.Size = New System.Drawing.Size(123, 50)
-        Me.GroupControl7.TabIndex = 6
-        Me.GroupControl7.Text = "STAMPA FINO AL"
+        Me.GroupControl2.Size = New System.Drawing.Size(130, 42)
+        Me.GroupControl2.TabIndex = 10
+        Me.GroupControl2.Text = "ELABORA FINO AL"
         '
         'DateEdit1
         '
+        Me.DateEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit1.EditValue = Nothing
         Me.DateEdit1.EnterMoveNextControl = True
-        Me.DateEdit1.Location = New System.Drawing.Point(7, 22)
+        Me.DateEdit1.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit1.Name = "DateEdit1"
         Me.DateEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -758,43 +600,18 @@ Partial Class DxBilCdc
         Me.DateEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.DateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.DateEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
-        Me.DateEdit1.Size = New System.Drawing.Size(108, 22)
+        Me.DateEdit1.Size = New System.Drawing.Size(126, 22)
         Me.DateEdit1.TabIndex = 0
-        '
-        'GroupControl3
-        '
-        Me.GroupControl3.Controls.Add(Me.ComboBoxEdit1)
-        Me.GroupControl3.Controls.Add(Me.GroupControl61)
-        Me.GroupControl3.Controls.Add(Me.GroupControl6)
-        Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl3.Location = New System.Drawing.Point(2, 2)
-        Me.GroupControl3.Name = "GroupControl3"
-        Me.GroupControl3.Size = New System.Drawing.Size(262, 119)
-        Me.GroupControl3.TabIndex = 5
-        Me.GroupControl3.Text = "E S E R C I Z I O"
-        '
-        'ComboBoxEdit1
-        '
-        Me.ComboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBoxEdit1.EnterMoveNextControl = True
-        Me.ComboBoxEdit1.Location = New System.Drawing.Point(93, 28)
-        Me.ComboBoxEdit1.Name = "ComboBoxEdit1"
-        Me.ComboBoxEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBoxEdit1.Properties.Appearance.Options.UseFont = True
-        Me.ComboBoxEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
-        Me.ComboBoxEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.ComboBoxEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.ComboBoxEdit1.Size = New System.Drawing.Size(74, 22)
-        Me.ComboBoxEdit1.TabIndex = 9
         '
         'GroupControl61
         '
         Me.GroupControl61.AppearanceCaption.Options.UseTextOptions = True
         Me.GroupControl61.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl61.Controls.Add(Me.DateEdit3)
-        Me.GroupControl61.Location = New System.Drawing.Point(138, 59)
+        Me.GroupControl61.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl61.Location = New System.Drawing.Point(207, 23)
         Me.GroupControl61.Name = "GroupControl61"
-        Me.GroupControl61.Size = New System.Drawing.Size(110, 44)
+        Me.GroupControl61.Size = New System.Drawing.Size(110, 42)
         Me.GroupControl61.TabIndex = 7
         Me.GroupControl61.Text = "AL"
         '
@@ -821,16 +638,17 @@ Partial Class DxBilCdc
         Me.DateEdit3.TabIndex = 1
         Me.DateEdit3.TabStop = False
         '
-        'GroupControl6
+        'GroupControl60
         '
-        Me.GroupControl6.AppearanceCaption.Options.UseTextOptions = True
-        Me.GroupControl6.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.GroupControl6.Controls.Add(Me.DateEdit2)
-        Me.GroupControl6.Location = New System.Drawing.Point(10, 58)
-        Me.GroupControl6.Name = "GroupControl6"
-        Me.GroupControl6.Size = New System.Drawing.Size(110, 44)
-        Me.GroupControl6.TabIndex = 8
-        Me.GroupControl6.Text = "DAL"
+        Me.GroupControl60.AppearanceCaption.Options.UseTextOptions = True
+        Me.GroupControl60.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.GroupControl60.Controls.Add(Me.DateEdit2)
+        Me.GroupControl60.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl60.Location = New System.Drawing.Point(97, 23)
+        Me.GroupControl60.Name = "GroupControl60"
+        Me.GroupControl60.Size = New System.Drawing.Size(110, 42)
+        Me.GroupControl60.TabIndex = 8
+        Me.GroupControl60.Text = "DAL"
         '
         'DateEdit2
         '
@@ -855,43 +673,149 @@ Partial Class DxBilCdc
         Me.DateEdit2.TabIndex = 1
         Me.DateEdit2.TabStop = False
         '
-        'GroupControl4
+        'ComboBoxEdit1
         '
-        Me.GroupControl4.Controls.Add(Me.ButtonF9)
-        Me.GroupControl4.Location = New System.Drawing.Point(818, 68)
-        Me.GroupControl4.Name = "GroupControl4"
-        Me.GroupControl4.ShowCaption = False
-        Me.GroupControl4.Size = New System.Drawing.Size(54, 48)
-        Me.GroupControl4.TabIndex = 1
-        Me.GroupControl4.Text = "GroupControl12"
+        Me.ComboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ComboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.ComboBoxEdit1.EnterMoveNextControl = True
+        Me.ComboBoxEdit1.Location = New System.Drawing.Point(2, 23)
+        Me.ComboBoxEdit1.Name = "ComboBoxEdit1"
+        Me.ComboBoxEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBoxEdit1.Properties.Appearance.Options.UseFont = True
+        Me.ComboBoxEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.ComboBoxEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.ComboBoxEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.ComboBoxEdit1.Size = New System.Drawing.Size(95, 42)
+        Me.ComboBoxEdit1.TabIndex = 9
         '
-        'ButtonF9
+        'GridControl11
         '
-        Me.ButtonF9.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonF9.Appearance.Font = New System.Drawing.Font("Arial Black", 7.0!, System.Drawing.FontStyle.Italic)
-        Me.ButtonF9.Appearance.ForeColor = System.Drawing.Color.Black
-        Me.ButtonF9.Appearance.Options.UseFont = True
-        Me.ButtonF9.Appearance.Options.UseForeColor = True
-        Me.ButtonF9.Appearance.Options.UseTextOptions = True
-        Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
-        Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageOptions.ImageIndex = 9
-        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF9.Location = New System.Drawing.Point(11, 8)
-        Me.ButtonF9.Name = "ButtonF9"
-        Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
-        Me.ButtonF9.TabIndex = 0
-        Me.ButtonF9.ToolTip = "F9-AVVIA ANTEPRIMA"
+        Me.GridControl11.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GridControl11.Location = New System.Drawing.Point(0, 0)
+        Me.GridControl11.MainView = Me.GridView11
+        Me.GridControl11.Name = "GridControl11"
+        Me.GridControl11.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemTextEdit12})
+        Me.GridControl11.Size = New System.Drawing.Size(998, 587)
+        Me.GridControl11.TabIndex = 240
+        Me.GridControl11.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView11})
         '
-        'DxBilCdc
+        'GridView11
+        '
+        Me.GridView11.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn126, Me.GridColumn127, Me.GridColumn128, Me.GridColumn119, Me.GridColumn120})
+        Me.GridView11.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None
+        Me.GridView11.GridControl = Me.GridControl11
+        Me.GridView11.Name = "GridView11"
+        Me.GridView11.OptionsBehavior.AutoSelectAllInEditor = False
+        Me.GridView11.OptionsBehavior.Editable = False
+        Me.GridView11.OptionsBehavior.ReadOnly = True
+        Me.GridView11.OptionsCustomization.AllowRowSizing = True
+        Me.GridView11.OptionsNavigation.AutoMoveRowFocus = False
+        Me.GridView11.OptionsPrint.EnableAppearanceEvenRow = True
+        Me.GridView11.OptionsPrint.EnableAppearanceOddRow = True
+        Me.GridView11.OptionsPrint.ExpandAllDetails = True
+        Me.GridView11.OptionsPrint.PrintFooter = False
+        Me.GridView11.OptionsPrint.PrintGroupFooter = False
+        Me.GridView11.OptionsPrint.UsePrintStyles = False
+        Me.GridView11.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView11.OptionsSelection.EnableAppearanceFocusedRow = False
+        Me.GridView11.OptionsSelection.UseIndicatorForSelection = False
+        Me.GridView11.OptionsView.AutoCalcPreviewLineCount = True
+        Me.GridView11.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.[True]
+        Me.GridView11.OptionsView.EnableAppearanceEvenRow = True
+        Me.GridView11.OptionsView.EnableAppearanceOddRow = True
+        Me.GridView11.OptionsView.RowAutoHeight = True
+        Me.GridView11.OptionsView.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowOnlyInEditor
+        Me.GridView11.OptionsView.ShowGroupPanel = False
+        Me.GridView11.OptionsView.ShowIndicator = False
+        '
+        'GridColumn126
+        '
+        Me.GridColumn126.Caption = "Conto"
+        Me.GridColumn126.FieldName = "MCCCOGCONTO"
+        Me.GridColumn126.Name = "GridColumn126"
+        Me.GridColumn126.OptionsColumn.AllowEdit = False
+        Me.GridColumn126.OptionsColumn.AllowFocus = False
+        Me.GridColumn126.OptionsColumn.FixedWidth = True
+        Me.GridColumn126.OptionsColumn.ReadOnly = True
+        Me.GridColumn126.Visible = True
+        Me.GridColumn126.VisibleIndex = 0
+        Me.GridColumn126.Width = 80
+        '
+        'GridColumn127
+        '
+        Me.GridColumn127.Caption = "Sottoconti"
+        Me.GridColumn127.FieldName = "CONTODES"
+        Me.GridColumn127.Name = "GridColumn127"
+        Me.GridColumn127.OptionsColumn.AllowEdit = False
+        Me.GridColumn127.OptionsColumn.AllowFocus = False
+        Me.GridColumn127.OptionsColumn.FixedWidth = True
+        Me.GridColumn127.OptionsColumn.ReadOnly = True
+        Me.GridColumn127.Visible = True
+        Me.GridColumn127.VisibleIndex = 1
+        Me.GridColumn127.Width = 200
+        '
+        'GridColumn128
+        '
+        Me.GridColumn128.Caption = "Linea di Prodotto"
+        Me.GridColumn128.FieldName = "LDPDESC"
+        Me.GridColumn128.Name = "GridColumn128"
+        Me.GridColumn128.OptionsColumn.AllowEdit = False
+        Me.GridColumn128.OptionsColumn.AllowFocus = False
+        Me.GridColumn128.OptionsColumn.FixedWidth = True
+        Me.GridColumn128.OptionsColumn.ReadOnly = True
+        Me.GridColumn128.Visible = True
+        Me.GridColumn128.VisibleIndex = 2
+        Me.GridColumn128.Width = 170
+        '
+        'GridColumn119
+        '
+        Me.GridColumn119.AppearanceCell.Options.UseTextOptions = True
+        Me.GridColumn119.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.GridColumn119.Caption = "Costi"
+        Me.GridColumn119.DisplayFormat.FormatString = "n2"
+        Me.GridColumn119.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn119.FieldName = "COSTO"
+        Me.GridColumn119.Name = "GridColumn119"
+        Me.GridColumn119.OptionsColumn.AllowEdit = False
+        Me.GridColumn119.OptionsColumn.AllowFocus = False
+        Me.GridColumn119.OptionsColumn.FixedWidth = True
+        Me.GridColumn119.OptionsColumn.ReadOnly = True
+        Me.GridColumn119.Visible = True
+        Me.GridColumn119.VisibleIndex = 3
+        Me.GridColumn119.Width = 105
+        '
+        'GridColumn120
+        '
+        Me.GridColumn120.AppearanceCell.Options.UseTextOptions = True
+        Me.GridColumn120.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.GridColumn120.Caption = "Ricavi"
+        Me.GridColumn120.DisplayFormat.FormatString = "n2"
+        Me.GridColumn120.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn120.FieldName = "RICAVO"
+        Me.GridColumn120.Name = "GridColumn120"
+        Me.GridColumn120.OptionsColumn.AllowEdit = False
+        Me.GridColumn120.OptionsColumn.AllowFocus = False
+        Me.GridColumn120.OptionsColumn.FixedWidth = True
+        Me.GridColumn120.OptionsColumn.ReadOnly = True
+        Me.GridColumn120.Visible = True
+        Me.GridColumn120.VisibleIndex = 4
+        Me.GridColumn120.Width = 105
+        '
+        'RepositoryItemTextEdit12
+        '
+        Me.RepositoryItemTextEdit12.AutoHeight = False
+        Me.RepositoryItemTextEdit12.Mask.EditMask = "c2"
+        Me.RepositoryItemTextEdit12.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
+        Me.RepositoryItemTextEdit12.Mask.UseMaskAsDisplayFormat = True
+        Me.RepositoryItemTextEdit12.Name = "RepositoryItemTextEdit12"
+        '
+        'LPDContoEconomico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1008, 656)
-        Me.Name = "DxBilCdc"
-        Me.Text = "DxBilCdc"
+        Me.Name = "LPDContoEconomico"
+        Me.Text = "LPDContoEconomico"
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabControl1.ResumeLayout(False)
         Me.XtraTabPage1.ResumeLayout(False)
@@ -899,77 +823,50 @@ Partial Class DxBilCdc
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl1.ResumeLayout(False)
-        CType(Me.GroupControl5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl5.ResumeLayout(False)
-        CType(Me.GridControl2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemImageComboBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemImageComboBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemImageComboBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl2.ResumeLayout(False)
-        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemImageComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemImageComboBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemImageComboBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GroupControl60, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl60.ResumeLayout(False)
-        CType(Me.CheckEdit8.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl7.ResumeLayout(False)
-        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl3.ResumeLayout(False)
-        CType(Me.ComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GroupControl4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl4.ResumeLayout(False)
+        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl1.ResumeLayout(False)
+        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl2.ResumeLayout(False)
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl61, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl61.ResumeLayout(False)
         CType(Me.DateEdit3.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GroupControl6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl6.ResumeLayout(False)
+        CType(Me.GroupControl60, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl60.ResumeLayout(False)
         CType(Me.DateEdit2.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GroupControl4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl4.ResumeLayout(False)
+        CType(Me.ComboBoxEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridControl11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemTextEdit12, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents CheckButton1 As DevExpress.XtraEditors.CheckButton
-    Friend WithEvents GroupControl5 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents GridControl2 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridView2 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents RepositoryItemImageComboBox3 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
-    Friend WithEvents RepositoryItemImageComboBox4 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
-    Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
-    Friend WithEvents RepositoryItemImageComboBox5 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
-    Friend WithEvents GroupControl2 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents RepositoryItemImageComboBox1 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
-    Friend WithEvents RepositoryItemImageComboBox2 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
-    Friend WithEvents RepositoryItemCheckEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
-    Friend WithEvents RepositoryItemImageComboBox6 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
-    Friend WithEvents GroupControl60 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents GroupControl4 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents ButtonF9 As DevExpress.XtraEditors.SimpleButton
+
     Friend WithEvents GroupControl3 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents ComboBoxEdit1 As DevExpress.XtraEditors.ComboBoxEdit
+    Friend WithEvents GroupControl4 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents ButtonP As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents ButtonST As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents GroupControl2 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents DateEdit1 As DevExpress.XtraEditors.DateEdit
     Friend WithEvents GroupControl61 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents DateEdit3 As DevExpress.XtraEditors.DateEdit
-    Friend WithEvents GroupControl6 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents GroupControl60 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents DateEdit2 As DevExpress.XtraEditors.DateEdit
-    Friend WithEvents GroupControl7 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents DateEdit1 As DevExpress.XtraEditors.DateEdit
-    Friend WithEvents CheckEdit8 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents ComboBoxEdit1 As DevExpress.XtraEditors.ComboBoxEdit
+    Friend WithEvents GridControl11 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GridView11 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridColumn126 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn127 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn128 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn119 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn120 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemTextEdit12 As DevExpress.XtraEditors.Repository.RepositoryItemTextEdit
 End Class

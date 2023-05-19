@@ -74,9 +74,12 @@ Public Class DxInFtCo
     Dim RwX As DataRow
     Dim errorT(1) As String
 
+    Dim OkLDP As Boolean = False
+    Dim UserId As String = ""
+
     Private Sub DxInFtCo_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown, ButtonF5.Click
         If Sw = 0 Then
-            Apertura() : PopolaCii()
+            Apertura() : PopolaCii() : GestioneUser()
             Sw = 1
         End If
         Pulizia(0)
@@ -131,6 +134,19 @@ Public Class DxInFtCo
             End If
         End While
         dataRd.Close()
+    End Sub
+    Sub GestioneUser()
+        REM CDC PER ORA SOLO SU GRUPPO PASTA ATAVOLA
+        Cmd = New SqlCommand("SELECT * FROM TbSel Where SelId = 400", cnVd)
+        dataRd = Cmd.ExecuteReader
+        While dataRd.Read
+            UserId = dataRd.Item("Sel14")
+        End While
+        dataRd.Close()
+        OkLDP = False
+        If UserId.ToUpper = "PASTAECO" Or UserId.ToUpper = "PASTANEW" Or UserId.ToUpper = "PASTAGROUP" Then
+            OkLDP = True
+        End If
     End Sub
     Sub ResetNumBox()
         TextEdit15.EditValue = 0
@@ -933,10 +949,10 @@ VaiOltre:
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         ResetIdP()
         RileggoUltimi()
-        If OKCDC = True Then LancioCDC()
+        If OkLDP = True Then LancioCDC()
     End Sub
     Sub LancioCDC()
-        '''Dim Gesterna As New RipCdc
+        EsegueSql("exec XRECUPEROCDCCORRISPETTIVI @ID=" & ProgId & ", @LDP = 0", CnDc) '' PER ORA FISSO ATAVOLA NON CLASSIFICATO
         '''RipCdc.PIIDD = ProgId
         '''RipCdc.PNdoc = RwFRI("PriDocEst").ToString
         '''RipCdc.PNreg = RwFRI("PriRegIva").ToString

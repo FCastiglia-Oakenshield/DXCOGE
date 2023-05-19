@@ -217,6 +217,12 @@
     <Compile Include="DxRiparto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LPDContoEconomico.Designer.vb">
+      <DependentUpon>LPDContoEconomico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LPDContoEconomico.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MONDOSbilve.Designer.vb">
       <DependentUpon>MONDOSbilve.vb</DependentUpon>
     </Compile>
@@ -305,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DxRiparto.resx">
       <DependentUpon>DxRiparto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LPDContoEconomico.resx">
+      <DependentUpon>LPDContoEconomico.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MONDOSbilve.resx">
       <DependentUpon>MONDOSbilve.vb</DependentUpon>

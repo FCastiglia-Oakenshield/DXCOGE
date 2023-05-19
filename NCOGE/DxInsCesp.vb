@@ -553,18 +553,40 @@ Public Class DxInsCesp
         If Not TextEdit7.EditValue.ToString.Length > 0 Then
             Text &= Chr(13) & "<> Manca la Descrizione del Cespite"
         End If
+        '''
+        If TextEdit11.EditValue Is Nothing Then
+            Text &= Chr(13) & "<> Manca Sottoconto Immobilizzazioni o Sottoconto non valido"
+            GoTo I
+        End If
         If Not TextEdit11.EditValue.ToString.Length > 0 Then
             Text &= Chr(13) & "<> Manca Sottoconto Immobilizzazioni o Sottoconto non valido"
+        End If
+I:
+        If TextEdit15.EditValue Is Nothing Then
+            Text &= Chr(13) & "<> Manca Sottoconto Quote Ammortamento o Sottoconto non valido"
+            GoTo II
         End If
         If Not TextEdit15.EditValue.ToString.Length > 0 Then
             Text &= Chr(13) & "<> Manca Sottoconto Quote Ammortamento o Sottoconto non valido"
         End If
+II:
+        If TextEdit13.EditValue Is Nothing Then
+            Text &= Chr(13) & "<> Manca Sottoconto Fondi o Sottoconto non valido"
+            GoTo III
+        End If
         If Not TextEdit13.EditValue.ToString.Length > 0 Then
             Text &= Chr(13) & "<> Manca Sottoconto Fondi o Sottoconto non valido"
+        End If
+III:
+        If TextEdit17.EditValue Is Nothing Then
+            Text &= Chr(13) & "<> Manca Sottoconto Quote Anticipate o Sottoconto non valido"
+            GoTo IV
         End If
         If Not TextEdit17.EditValue.ToString.Length > 0 Then
             Text &= Chr(13) & "<> Manca Sottoconto Quote Anticipate o Sottoconto non valido"
         End If
+IV:
+        '''
         If Not CDec(TextEdit9.EditValue) > 0 Then
             Text &= Chr(13) & "<> Inserire il Costo Storico"
         End If

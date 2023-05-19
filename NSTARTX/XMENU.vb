@@ -925,4 +925,7 @@ esci:
         DXMenu(New DxStTotIcli, e.Item.Caption)
     End Sub
 
+    Private Sub BarButtonItem114_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BarButtonItem114.ItemClick
+        DXMenu(New LPDContoEconomico, e.Item.Caption)
+    End Sub
 End Class
