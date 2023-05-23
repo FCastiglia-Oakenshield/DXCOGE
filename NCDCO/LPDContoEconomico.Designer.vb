@@ -25,6 +25,7 @@ Partial Class LPDContoEconomico
         Me.ButtonP = New DevExpress.XtraEditors.SimpleButton()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
         Me.ButtonST = New DevExpress.XtraEditors.SimpleButton()
+        Me.RadioGroup1 = New DevExpress.XtraEditors.RadioGroup()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
         Me.DateEdit1 = New DevExpress.XtraEditors.DateEdit()
         Me.GroupControl61 = New DevExpress.XtraEditors.GroupControl()
@@ -53,6 +54,7 @@ Partial Class LPDContoEconomico
         Me.GroupControl4.SuspendLayout()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
+        CType(Me.RadioGroup1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl2.SuspendLayout()
         CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -501,6 +503,7 @@ Partial Class LPDContoEconomico
         '
         Me.GroupControl3.Controls.Add(Me.GroupControl4)
         Me.GroupControl3.Controls.Add(Me.GroupControl1)
+        Me.GroupControl3.Controls.Add(Me.RadioGroup1)
         Me.GroupControl3.Controls.Add(Me.GroupControl2)
         Me.GroupControl3.Controls.Add(Me.GroupControl61)
         Me.GroupControl3.Controls.Add(Me.GroupControl60)
@@ -546,7 +549,7 @@ Partial Class LPDContoEconomico
         '
         Me.GroupControl1.Controls.Add(Me.ButtonST)
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl1.Location = New System.Drawing.Point(447, 23)
+        Me.GroupControl1.Location = New System.Drawing.Point(795, 23)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
         Me.GroupControl1.Size = New System.Drawing.Size(54, 42)
@@ -571,6 +574,17 @@ Partial Class LPDContoEconomico
         Me.ButtonST.TabIndex = 237
         Me.ButtonST.TabStop = False
         Me.ButtonST.ToolTip = "AVVIA ELABORAZIONE"
+        '
+        'RadioGroup1
+        '
+        Me.RadioGroup1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RadioGroup1.EditValue = True
+        Me.RadioGroup1.Location = New System.Drawing.Point(447, 23)
+        Me.RadioGroup1.Name = "RadioGroup1"
+        Me.RadioGroup1.Properties.Columns = 2
+        Me.RadioGroup1.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(0, Short), "Data Documenti Fatture"), New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(1, Short), "Data Giornale")})
+        Me.RadioGroup1.Size = New System.Drawing.Size(348, 42)
+        Me.RadioGroup1.TabIndex = 240
         '
         'GroupControl2
         '
@@ -829,6 +843,7 @@ Partial Class LPDContoEconomico
         Me.GroupControl4.ResumeLayout(False)
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl1.ResumeLayout(False)
+        CType(Me.RadioGroup1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl2.ResumeLayout(False)
         CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -869,4 +884,5 @@ Partial Class LPDContoEconomico
     Friend WithEvents GridColumn119 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn120 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents RepositoryItemTextEdit12 As DevExpress.XtraEditors.Repository.RepositoryItemTextEdit
+    Friend WithEvents RadioGroup1 As DevExpress.XtraEditors.RadioGroup
 End Class

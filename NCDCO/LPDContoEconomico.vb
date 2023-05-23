@@ -18,7 +18,7 @@ Public Class LPDContoEconomico
     Dim FO As String = ""
     Private Sub LPDContoEconomico_Shown(sender As Object, e As System.EventArgs) Handles Me.Shown
         If Sw = 0 Then
-            DateEdit1.EditValue = Today : Apertura() : Sw = 1
+            DateEdit1.EditValue = Today : Apertura() : RadioGroup1.SelectedIndex = 0 : Sw = 1
         End If
     End Sub
     Sub Apertura()
@@ -50,12 +50,14 @@ Public Class LPDContoEconomico
     End Sub
 
     Private Sub ButtonP_Click(sender As Object, e As EventArgs) Handles ButtonP.Click
-        DXANTEPRIMA(GridControl11, False, Printing.PaperKind.A4, "Anno " & ComboBoxEdit1.EditValue.ToString & " Conto Economico " & DateEdit2.EditValue & "-" & DateEdit1.EditValue)
+        Dim T As String = "" : If RadioGroup1.EditValue = 0 Then T = " -C"
+        DXANTEPRIMA(GridControl11, False, Printing.PaperKind.A4, "Anno " & ComboBoxEdit1.EditValue.ToString & " Conto Economico " & DateEdit2.EditValue & "-" & DateEdit1.EditValue & T)
     End Sub
 
     Sub PopolaStampa()
         Cursor = Cursors.WaitCursor
-        Dim Str As String = "XLDPCONTOECONOMICO  @DAL='" & CDate(DateEdit2.EditValue).ToShortDateString & "',@AL='" & CDate(DateEdit1.EditValue).ToShortDateString & "'"
+        Dim T As Int16 = RadioGroup1.EditValue
+        Dim Str As String = "XLDPCONTOECONOMICO  @DAL='" & CDate(DateEdit2.EditValue).ToShortDateString & "',@AL='" & CDate(DateEdit1.EditValue).ToShortDateString & "',@TIPO=" & T
         TbBil = New DataTable()
         DaBil = New SqlDataAdapter(Str, CnDc)
         DaBil.Fill(TbBil)
