@@ -1107,10 +1107,13 @@ Oltre:
         If OkGruppoPasta = True Then ScriviCDCaZERO()
         If OkSelco = True Then AggiornoVisualDoc()
         If OkOttica = True Then AggiornoVisualDoc()
-        If RiOmaggi = True Then PerGcOmaggiPastaG(ProgId)
+        If RiOmaggi = True Then
+            ProgId = PerGcOmaggiPastaG(ProgId)
+            ScriviCDCaZERO()
+        End If
     End Sub
 
-    Function PerGcOmaggiPastaG(ByVal Id As Int32) As Boolean
+    Function PerGcOmaggiPastaG(ByVal Id As Int32) As Int32
         Dim Oggi As Date = CDate(Today).ToShortDateString
         Dim Articolo As Int32 = -1
         Dim Scheggia As Int16 = 1
@@ -1156,6 +1159,7 @@ Oltre:
         EsegueSql(" EXEC InitPrk  @ID = " & ProId, cnCo)
         ResetIdP()
         Partita(1, 0)
+        Return ProId
     End Function
     Sub Aggiungi(ByRef X As Int16, ByVal Articolo As Int32, ByRef Scheggia As Int16, ByRef RwFce As DataRow, ByRef Proid As Int32)
         p1.Value = RwFce("PriDataGio")
