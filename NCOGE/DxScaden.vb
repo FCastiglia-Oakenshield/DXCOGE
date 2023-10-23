@@ -34,6 +34,10 @@ Public Class DxScaden
     Dim MiglioFo, Test, Corp, Rrat, Iset2, Irow, Srow, Rrow As Int32
     Dim StrUno, StrDue, StrTre, StrQua, StrCin, StrSei, StrPrint, LIMITI(6), StrD(12), StrLim, LimD, LimA As String
 
+    Dim OkPianiRientro As Boolean = False
+    Dim UserId As String = ""
+    Dim Rispondi As MsgBoxResult
+
     Private Sub DxScaden_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown, ButtonF5.Click
         If Sw = 0 Then
             PrimoMiglio()
@@ -82,6 +86,14 @@ Public Class DxScaden
         StrD(7) = "SELECT * FROM CRG1 WHERE SCATIPOCO+SCACONTO BETWEEN  "
         StrD(12) = "SELECT * FROM CRG1 WHERE SCACONTO = "
         CheckEdit2.Checked = True
+        REM ATAVOLA
+        Cmd = New SqlCommand("SELECT * FROM TbSel Where SelId = 400", cnVd)
+        dataRd = Cmd.ExecuteReader
+        While dataRd.Read
+            UserId = dataRd.Item("Sel14")
+        End While
+        dataRd.Close()
+        If UserId.ToUpper = "PASTAECO" Then OkPianiRientro = True Else OkPianiRientro = False
     End Sub
     Sub DisBottoni()
         ButtonF5.Enabled = True
@@ -323,7 +335,16 @@ Public Class DxScaden
 
     Private Sub ButtonF1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF1.Click
         If Lettura = True Then Exit Sub
+
         If RwTbo Is Nothing Or RwCbo Is Nothing Then Exit Sub
+
+        If OkPianiRientro = True Then
+            If VerificaPianoRientro() = True Then
+                Messaggio(1, "PIANO RIENTRO IMPOSTATO !!!")
+                Exit Sub
+            End If
+        End If
+
         Dim Gsca As New DxScaRat
         Gsca.NAnaCod = RwTbo("SCACONTO")
         Gsca.NAnaDesc = RwTbo("SCADESC")
@@ -343,5 +364,27 @@ Public Class DxScaden
         GridView2.SelectRow(Srow)
         RwTbo = GridView1.GetDataRow(Irow)
         RwCbo = GridView2.GetDataRow(Srow)
+    End Sub
+    Function VerificaPianoRientro() As Boolean
+        Dim str As String = "SELECT COUNT(*) from TMPPIANO WHERE IDDATAFAT='" & CDate(RwCbo("ScaDdoc")).ToShortDateString & "' And IDNRFAT = " & RwCbo("ScaNdoc") & " And IDCCLIE = '" & RwTbo("SCACONTO") & "'"
+        Dim FTPIR As New SqlCommand(str, cnCo)
+        Dim P As Int16 = -1
+        Try
+            P = FTPIR.ExecuteScalar
+        Catch ex As Exception
+            '' MANCA TABELLA TMPPIANO -> PER OVVIARE ALLA PROCEDURE DFI PASTAGROUP
+        End Try
+
+        If P > 0 Then Return True Else Return False
+    End Function
+    Sub Messaggio(ByVal Tipo As Int16, ByVal Mexage As String)
+        Dim msg(1) As String
+        Dim title As String
+        Dim style(2) As MsgBoxStyle
+        style(1) = MsgBoxStyle.Exclamation
+        style(0) = MsgBoxStyle.Critical
+        style(2) = MsgBoxStyle.YesNo
+        title = "INSERIMENTO FATTURE"
+        Rispondi = MsgBox(Mexage, style(Tipo), title)
     End Sub
 End Class

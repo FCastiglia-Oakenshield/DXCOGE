@@ -118,6 +118,7 @@ Public Class DxInFtCF
     Dim OkMondo As Boolean = False
     Dim OkOttica As Boolean = False
     Dim OkLDP As Boolean = False
+    Dim OkPianiRientro As Boolean = False
     Dim UserId As String = ""
     Dim DataInizio As String = "31/08/2008"
     Dim DataMondoCli As String = "31/12/2010"
@@ -286,6 +287,8 @@ Public Class DxInFtCF
                 dataRd.Close()
                 GroupControl18.Text = "SIGLA LDP"
                 GroupControl18.Visible = True
+                REM SOLO ATAVOLA PIANI DI RIENTRO
+                If UserId.ToUpper = "PASTAECO" Then OkPianiRientro = True Else OkPianiRientro = False
                 Exit Sub
             End If
             OkMondo = True
@@ -979,11 +982,30 @@ II:
             Messaggio(0, DateEdit1.ErrorText.ToUpper)
             Controlli = False
         End If
+        If OkPianiRientro = True Then
+            If VerificaPianoRientro() = True Then
+                Messaggio(1, "PIANO RIENTRO IMPOSTATO !!!")
+                Controlli = False : Exit Function
+            End If
+        End If
         If TextEdit1.ErrorText > "" Then
             Messaggio(0, TextEdit1.ErrorText.ToUpper)
             SOLOCPT = True
         End If
     End Function
+    Function VerificaPianoRientro() As Boolean
+        Dim str As String = "SELECT COUNT(*) from TMPPIANO WHERE IDDATAFAT='" & DateEdit2.EditValue & "' And IDNRFAT = " & Val(TextEdit3.EditValue) & " And IDCCLIE = '" & TextEdit5.Text & "'"
+        Dim FTPIR As New SqlCommand(str, cnCo)
+        Dim P As Int16 = -1
+        Try
+            P = FTPIR.ExecuteScalar
+        Catch ex As Exception
+            '' MANCA TABELLA TMPPIANO -> PER OVVIARE ALLA PROCEDURE DFI PASTAGROUP
+        End Try
+
+        If P > 0 Then Return True Else Return False
+    End Function
+
     Function DoppiaFtFo() As Boolean
         DoppiaFtFo = False
         Dim ProtDup As Int32
