@@ -748,7 +748,7 @@ II:
         Dim Cmd As New SqlCommand("Select PiaFl04, PiaFl08 from TbPia where PiaCodCo = '" & RwFat("Cpt") & "'", cnCo)
         dataRd = Cmd.ExecuteReader
         While dataRd.Read
-            If dataRd.Item("PiaFl04") > 0 And dataRd.Item("PiaFl04") < 25 Then OLDCSP = 1
+            If dataRd.Item("PiaFl04") > 0 And dataRd.Item("PiaFl04") < 100 Then OLDCSP = 1
             If dataRd.Item("PiaFl08") = True Then OLDRIT = 1
         End While
         dataRd.Close()
