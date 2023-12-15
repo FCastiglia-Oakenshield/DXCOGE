@@ -1744,7 +1744,7 @@ RipetiCee:
                 IvaPScadenze = IvaPScadenze + RwFRI("PriImpAvere")
 
                 If RwFRI("PriFl08") = 1 Then Sr = 1
-                If RwFRI("PriFl04") > 0 And RwFRI("PriFl04") < 25 Then Sc = 1
+                If RwFRI("PriFl04") > 0 And RwFRI("PriFl04") < 100 Then Sc = 1
             End If
             If CheckEdit1.Checked = True Then RwFRI("PriMeseSk") = "*" Else RwFRI("PriMeseSk") = ""
             p1.Value = Format(RwFRI("PriDataGio"), "dd/MM/yyyy")
