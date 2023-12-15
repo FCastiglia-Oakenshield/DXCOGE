@@ -19,12 +19,14 @@ Public Class XMENU
     Dim Line As String = ""
     Dim UserId As String
     Dim EComunita As Boolean = False
+    Dim ControlloLicenza As Int16 = 0
 
     Private Sub XMENU_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Shown
         CaricaSkinCombo()
         Settaggi()
         Lettura = SoloLettura()
         Me.Bar2.OptionsBar.MultiLine = False
+        LicenzaValida()
     End Sub
     Private Sub CaricaSkinCombo()
         For Each cnt As SkinContainer In SkinManager.Default.Skins
@@ -928,4 +930,25 @@ esci:
     Private Sub BarButtonItem114_ItemClick(sender As Object, e As ItemClickEventArgs) Handles BarButtonItem114.ItemClick
         DXMenu(New LPDContoEconomico, e.Item.Caption)
     End Sub
+
+#Region "CONTROLLO LICENZA"
+    Private Sub LicenzaValida()
+        Dim MESSAGGIO As String = ""
+        ControlloLicenza = ControllaLicenza()
+        If ControlloLicenza = 0 Then 'Privo di Licenza
+            MESSAGGIO = "PRIVO DI LICENZA"
+        ElseIf ControlloLicenza = 1 Then 'Licenza Errata
+            MESSAGGIO = "LICENZA ERRATA"
+        ElseIf ControlloLicenza = 2 Then 'OK
+            MESSAGGIO = ""
+        End If
+
+        If ControlloLicenza <> 2 Then
+            MessageBox.Show(MESSAGGIO, "CONTROLLO LICENZA", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Me.Close()
+        End If
+    End Sub
+
+
+#End Region
 End Class
