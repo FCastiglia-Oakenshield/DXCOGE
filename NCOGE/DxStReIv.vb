@@ -87,7 +87,7 @@ Public Class DxStReIv
         CheckEdit2.Checked = False
         If Lettura = True Then CheckEdit2.Visible = False
         ButtonF11.Enabled = False
-        Dim Cmd As New SqlCommand("SELECT distinct top 5 RivaAnno from TbRegIva Order by RivaAnno desc", cnCo)
+        Dim Cmd As New SqlCommand("SELECT distinct top 8 RivaAnno from TbRegIva Order by RivaAnno desc", cnCo)
         ComboBoxEdit1.Properties.Items.Clear()
         Dim x As Int16
         dataRd = Cmd.ExecuteReader

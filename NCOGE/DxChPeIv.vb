@@ -132,7 +132,8 @@ Public Class DxChPeIv
     End Sub
     Sub Apertura()
         GroupControl8.Visible = False
-        LIMITE = 25.82 '' IMPORTO MINIMO DI VERSAMENTO
+        '' LIMITE = 25.82 
+        LIMITE = 100.0 '' IMPORTO MINIMO DI VERSAMENTO dal 16022024 -- 100.00
         MT(0) = "MENSILE"
         MT(1) = "TRIMESTRALE"
         TRI(1) = " I^ TRIMESTRE "
@@ -143,7 +144,7 @@ Public Class DxChPeIv
         CheckEdit2.Checked = False
         If Lettura = True Then CheckEdit2.Visible = False
         Dim x As Int16
-        Dim Cmd As New SqlCommand("SELECT distinct top 5 RivaAnno from TbRegIva Order by RivaAnno desc", cnCo)
+        Dim Cmd As New SqlCommand("SELECT distinct top 8 RivaAnno from TbRegIva Order by RivaAnno desc", cnCo)
         ComboBoxEdit1.Properties.Items.Clear()
         ComboBoxEdit1.EditValue = ""
         dataRd = Cmd.ExecuteReader

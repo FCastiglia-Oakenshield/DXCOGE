@@ -469,8 +469,8 @@ Partial Class CoLiTrim
         '
         Me.XtraTabPage1.Controls.Add(Me.GroupControl1)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl2)
-        Me.XtraTabPage1.ImageIndex = 95
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1002, 625)
+        Me.XtraTabPage1.ImageOptions.ImageIndex = 95
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1006, 628)
         Me.XtraTabPage1.Text = "Liquidazioni Periodiche"
         '
         'ImageDx24
@@ -604,7 +604,7 @@ Partial Class CoLiTrim
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl1.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(1002, 564)
+        Me.GroupControl1.Size = New System.Drawing.Size(1006, 567)
         Me.GroupControl1.TabIndex = 3
         Me.GroupControl1.Text = "QUADRO VP RICALCOLATO"
         '
@@ -614,10 +614,10 @@ Partial Class CoLiTrim
         Me.GroupControl3.Controls.Add(Me.GroupControl4)
         Me.GroupControl3.Controls.Add(Me.VGridControl1)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl3.Location = New System.Drawing.Point(2, 21)
+        Me.GroupControl3.Location = New System.Drawing.Point(2, 23)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.ShowCaption = False
-        Me.GroupControl3.Size = New System.Drawing.Size(995, 541)
+        Me.GroupControl3.Size = New System.Drawing.Size(995, 542)
         Me.GroupControl3.TabIndex = 0
         Me.GroupControl3.Text = "GroupControl3"
         '
@@ -634,15 +634,15 @@ Partial Class CoLiTrim
         Me.GroupControl7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl7.Location = New System.Drawing.Point(2, 368)
         Me.GroupControl7.Name = "GroupControl7"
-        Me.GroupControl7.Size = New System.Drawing.Size(991, 46)
+        Me.GroupControl7.Size = New System.Drawing.Size(991, 47)
         Me.GroupControl7.TabIndex = 2
         Me.GroupControl7.Text = "DATI DA LIQUIDAZIONE"
         '
         'CheckButton4
         '
         Me.CheckButton4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton4.ImageIndex = 31
-        Me.CheckButton4.ImageList = Me.imageList1
+        Me.CheckButton4.ImageOptions.ImageIndex = 31
+        Me.CheckButton4.ImageOptions.ImageList = Me.imageList1
         Me.CheckButton4.Location = New System.Drawing.Point(736, 21)
         Me.CheckButton4.Name = "CheckButton4"
         Me.CheckButton4.Size = New System.Drawing.Size(24, 23)
@@ -652,8 +652,8 @@ Partial Class CoLiTrim
         'CheckButton3
         '
         Me.CheckButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton3.ImageIndex = 31
-        Me.CheckButton3.ImageList = Me.imageList1
+        Me.CheckButton3.ImageOptions.ImageIndex = 31
+        Me.CheckButton3.ImageOptions.ImageList = Me.imageList1
         Me.CheckButton3.Location = New System.Drawing.Point(708, 21)
         Me.CheckButton3.Name = "CheckButton3"
         Me.CheckButton3.Size = New System.Drawing.Size(24, 23)
@@ -663,8 +663,8 @@ Partial Class CoLiTrim
         'CheckButton1
         '
         Me.CheckButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton1.ImageIndex = 31
-        Me.CheckButton1.ImageList = Me.imageList1
+        Me.CheckButton1.ImageOptions.ImageIndex = 31
+        Me.CheckButton1.ImageOptions.ImageList = Me.imageList1
         Me.CheckButton1.Location = New System.Drawing.Point(680, 21)
         Me.CheckButton1.Name = "CheckButton1"
         Me.CheckButton1.Size = New System.Drawing.Size(24, 23)
@@ -739,7 +739,7 @@ Partial Class CoLiTrim
         Me.GroupControl4.Controls.Add(Me.GroupControl6)
         Me.GroupControl4.Controls.Add(Me.GroupControl5)
         Me.GroupControl4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl4.Location = New System.Drawing.Point(2, 414)
+        Me.GroupControl4.Location = New System.Drawing.Point(2, 415)
         Me.GroupControl4.Name = "GroupControl4"
         Me.GroupControl4.ShowCaption = False
         Me.GroupControl4.Size = New System.Drawing.Size(991, 125)
@@ -776,7 +776,7 @@ Partial Class CoLiTrim
         '
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit1.Properties.Appearance.Options.UseBackColor = True
@@ -802,7 +802,7 @@ Partial Class CoLiTrim
         Me.TextEdit16.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit16.EditValue = "1"
         Me.TextEdit16.EnterMoveNextControl = True
-        Me.TextEdit16.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit16.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit16.Name = "TextEdit16"
         Me.TextEdit16.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit16.Properties.Appearance.Options.UseBackColor = True
@@ -832,7 +832,7 @@ Partial Class CoLiTrim
         Me.TextEdit19.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit19.EditValue = "CSTTLD54S25H224A"
         Me.TextEdit19.EnterMoveNextControl = True
-        Me.TextEdit19.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit19.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit19.Name = "TextEdit19"
         Me.TextEdit19.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit19.Properties.Appearance.Options.UseBackColor = True
@@ -860,7 +860,7 @@ Partial Class CoLiTrim
         '
         Me.TextEdit11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit11.EnterMoveNextControl = True
-        Me.TextEdit11.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit11.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit11.Name = "TextEdit11"
         Me.TextEdit11.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit11.Properties.Appearance.Options.UseBackColor = True
@@ -889,7 +889,7 @@ Partial Class CoLiTrim
         Me.TextEdit10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit10.EditValue = "1234567890123456789012345678901234567890"
         Me.TextEdit10.EnterMoveNextControl = True
-        Me.TextEdit10.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit10.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit10.Name = "TextEdit10"
         Me.TextEdit10.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit10.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -927,9 +927,9 @@ Partial Class CoLiTrim
         '
         Me.GroupControl18.Controls.Add(Me.TextEdit2)
         Me.GroupControl18.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl18.Location = New System.Drawing.Point(438, 21)
+        Me.GroupControl18.Location = New System.Drawing.Point(438, 23)
         Me.GroupControl18.Name = "GroupControl18"
-        Me.GroupControl18.Size = New System.Drawing.Size(120, 43)
+        Me.GroupControl18.Size = New System.Drawing.Size(120, 41)
         Me.GroupControl18.TabIndex = 15
         Me.GroupControl18.Text = "Codice Fiscale"
         '
@@ -938,7 +938,7 @@ Partial Class CoLiTrim
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit2.EditValue = "CSTTLD54S25H224A"
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit2.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -951,9 +951,9 @@ Partial Class CoLiTrim
         '
         Me.GroupControl19.Controls.Add(Me.TextEdit3)
         Me.GroupControl19.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl19.Location = New System.Drawing.Point(348, 21)
+        Me.GroupControl19.Location = New System.Drawing.Point(348, 23)
         Me.GroupControl19.Name = "GroupControl19"
-        Me.GroupControl19.Size = New System.Drawing.Size(90, 43)
+        Me.GroupControl19.Size = New System.Drawing.Size(90, 41)
         Me.GroupControl19.TabIndex = 8
         Me.GroupControl19.Text = "Partita Iva"
         '
@@ -962,7 +962,7 @@ Partial Class CoLiTrim
         Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit3.EditValue = "04394270013"
         Me.TextEdit3.EnterMoveNextControl = True
-        Me.TextEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit3.Properties.Appearance.Options.UseBackColor = True
@@ -980,9 +980,9 @@ Partial Class CoLiTrim
         Me.GroupControl25.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.GroupControl25.Controls.Add(Me.TextEdit9)
         Me.GroupControl25.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl25.Location = New System.Drawing.Point(2, 21)
+        Me.GroupControl25.Location = New System.Drawing.Point(2, 23)
         Me.GroupControl25.Name = "GroupControl25"
-        Me.GroupControl25.Size = New System.Drawing.Size(346, 43)
+        Me.GroupControl25.Size = New System.Drawing.Size(346, 41)
         Me.GroupControl25.TabIndex = 7
         Me.GroupControl25.Text = "Denominazione"
         '
@@ -991,7 +991,7 @@ Partial Class CoLiTrim
         Me.TextEdit9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit9.EditValue = "123456789012345678901234567890123456789012345678901234567890"
         Me.TextEdit9.EnterMoveNextControl = True
-        Me.TextEdit9.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit9.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit9.Name = "TextEdit9"
         Me.TextEdit9.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.TextEdit9.Properties.Appearance.Options.UseBackColor = True
@@ -1018,21 +1018,21 @@ Partial Class CoLiTrim
         'RadioGroup2
         '
         Me.RadioGroup2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RadioGroup2.Location = New System.Drawing.Point(2, 21)
+        Me.RadioGroup2.Location = New System.Drawing.Point(2, 23)
         Me.RadioGroup2.Name = "RadioGroup2"
         Me.RadioGroup2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.0!)
         Me.RadioGroup2.Properties.Appearance.Options.UseFont = True
         Me.RadioGroup2.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(False, "PER PROPRIO CONTO"), New DevExpress.XtraEditors.Controls.RadioGroupItem(True, "TRAMITE INTERMEDIARIO")})
-        Me.RadioGroup2.Size = New System.Drawing.Size(168, 43)
+        Me.RadioGroup2.Size = New System.Drawing.Size(168, 41)
         Me.RadioGroup2.TabIndex = 11
         '
         'GroupControl29
         '
         Me.GroupControl29.Controls.Add(Me.TextEdit12)
         Me.GroupControl29.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl29.Location = New System.Drawing.Point(170, 21)
+        Me.GroupControl29.Location = New System.Drawing.Point(170, 23)
         Me.GroupControl29.Name = "GroupControl29"
-        Me.GroupControl29.Size = New System.Drawing.Size(134, 43)
+        Me.GroupControl29.Size = New System.Drawing.Size(134, 41)
         Me.GroupControl29.TabIndex = 6
         Me.GroupControl29.Text = "Codice Fiscale"
         '
@@ -1041,7 +1041,7 @@ Partial Class CoLiTrim
         Me.TextEdit12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit12.EditValue = "CSTTLD54S25H224A"
         Me.TextEdit12.EnterMoveNextControl = True
-        Me.TextEdit12.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit12.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit12.Name = "TextEdit12"
         Me.TextEdit12.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit12.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -1056,9 +1056,9 @@ Partial Class CoLiTrim
         Me.GroupControl31.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.GroupControl31.Controls.Add(Me.DateEdit1)
         Me.GroupControl31.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl31.Location = New System.Drawing.Point(304, 21)
+        Me.GroupControl31.Location = New System.Drawing.Point(304, 23)
         Me.GroupControl31.Name = "GroupControl31"
-        Me.GroupControl31.Size = New System.Drawing.Size(115, 43)
+        Me.GroupControl31.Size = New System.Drawing.Size(115, 41)
         Me.GroupControl31.TabIndex = 10
         Me.GroupControl31.Text = "Data dell' Impegno"
         '
@@ -1067,7 +1067,7 @@ Partial Class CoLiTrim
         Me.DateEdit1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit1.EditValue = Nothing
         Me.DateEdit1.EnterMoveNextControl = True
-        Me.DateEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit1.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit1.Name = "DateEdit1"
         Me.DateEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.DateEdit1.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -1080,7 +1080,7 @@ Partial Class CoLiTrim
         '
         'VGridControl1
         '
-        Me.VGridControl1.Cursor = System.Windows.Forms.Cursors.SizeWE
+        Me.VGridControl1.Cursor = System.Windows.Forms.Cursors.Default
         Me.VGridControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.VGridControl1.Font = New System.Drawing.Font("Tahoma", 10.0!)
         Me.VGridControl1.ImageList = Me.imageList1
@@ -1204,7 +1204,7 @@ Partial Class CoLiTrim
         Me.row17.Name = "row17"
         Me.row17.Properties.Caption = "VP1   SUBFORNITURE"
         Me.row17.Properties.FieldName = "VpSub"
-        Me.row17.Properties.ImageIndex = 91
+        Me.row17.Properties.ImageOptions.ImageIndex = 91
         Me.row17.Properties.ReadOnly = False
         Me.row17.Properties.RowEdit = Me.RepositoryItemCheckEdit1
         '
@@ -1216,7 +1216,7 @@ Partial Class CoLiTrim
         Me.row18.Name = "row18"
         Me.row18.Properties.Caption = "VP1   EVENTI ECCEZIONALI"
         Me.row18.Properties.FieldName = "VpEventi"
-        Me.row18.Properties.ImageIndex = 91
+        Me.row18.Properties.ImageOptions.ImageIndex = 91
         Me.row18.Properties.ReadOnly = False
         Me.row18.Properties.RowEdit = Me.RepositoryItemTextEdit3
         Me.row18.Properties.ToolTip = "VALORI AMMESSI ( spazio, 1,9 )"
@@ -1228,7 +1228,7 @@ Partial Class CoLiTrim
         Me.row16.Name = "row16"
         Me.row16.Properties.Caption = "VP1 OPERAZIONI STRAORDINARIE"
         Me.row16.Properties.FieldName = "VpOperazioni"
-        Me.row16.Properties.ImageIndex = 91
+        Me.row16.Properties.ImageOptions.ImageIndex = 91
         Me.row16.Properties.ReadOnly = False
         Me.row16.Properties.RowEdit = Me.RepositoryItemCheckEdit2
         '
@@ -1292,7 +1292,7 @@ Partial Class CoLiTrim
         Me.row7.Appearance.Font = New System.Drawing.Font("Tahoma", 10.0!)
         Me.row7.Appearance.Options.UseFont = True
         Me.row7.Name = "row7"
-        Me.row7.Properties.Caption = "VP7   DEBITO PERIODO PRECEDENTE NON SUPERIORE 25,82 € (+)"
+        Me.row7.Properties.Caption = "VP7   DEBITO PERIODO PRECEDENTE NON SUPERIORE 100,00 € (+)"
         Me.row7.Properties.FieldName = "Vp7"
         Me.row7.Properties.ReadOnly = False
         Me.row7.Properties.RowEdit = Me.RepositoryItemTextEdit1
@@ -1327,7 +1327,7 @@ Partial Class CoLiTrim
         Me.row10.Name = "row10"
         Me.row10.Properties.Caption = "VP10 VERSAMENTI AUTO CEE (-)"
         Me.row10.Properties.FieldName = "Vp10"
-        Me.row10.Properties.ImageIndex = 91
+        Me.row10.Properties.ImageOptions.ImageIndex = 91
         Me.row10.Properties.ReadOnly = False
         Me.row10.Properties.RowEdit = Me.RepositoryItemTextEdit4
         Me.row10.Properties.ToolTip = "INDICARE VERSAMENTI AUTO CEE CON SEGNO NEGATIVO"
@@ -1371,7 +1371,7 @@ Partial Class CoLiTrim
         Me.row19.Name = "row19"
         Me.row19.Properties.Caption = "VP13 METODO"
         Me.row19.Properties.FieldName = "VpMetodo"
-        Me.row19.Properties.ImageIndex = 91
+        Me.row19.Properties.ImageOptions.ImageIndex = 91
         Me.row19.Properties.ReadOnly = False
         Me.row19.Properties.RowEdit = Me.RepositoryItemTextEdit6
         Me.row19.Properties.ToolTip = "Valori Ammessi da 1 a 4 se VP13 ACCONTO DOVUTO COMPILATO"
@@ -1396,9 +1396,9 @@ Partial Class CoLiTrim
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(701, 25)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -1412,18 +1412,18 @@ Partial Class CoLiTrim
         Me.GroupControl2.Controls.Add(Me.ButtonF11)
         Me.GroupControl2.Controls.Add(Me.ComboBoxEdit1)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl2.Location = New System.Drawing.Point(0, 564)
+        Me.GroupControl2.Location = New System.Drawing.Point(0, 567)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(1002, 61)
+        Me.GroupControl2.Size = New System.Drawing.Size(1006, 61)
         Me.GroupControl2.TabIndex = 4
         Me.GroupControl2.Text = "ANNO di IMPOSTA e PERIODO"
         '
         'CheckButton2
         '
         Me.CheckButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckButton2.ImageIndex = 19
-        Me.CheckButton2.ImageList = Me.ImageDx24
-        Me.CheckButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.CheckButton2.ImageOptions.ImageIndex = 19
+        Me.CheckButton2.ImageOptions.ImageList = Me.ImageDx24
+        Me.CheckButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.CheckButton2.Location = New System.Drawing.Point(961, 25)
         Me.CheckButton2.Name = "CheckButton2"
         Me.CheckButton2.Size = New System.Drawing.Size(32, 32)
@@ -1435,13 +1435,13 @@ Partial Class CoLiTrim
         'RadioGroup1
         '
         Me.RadioGroup1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RadioGroup1.Location = New System.Drawing.Point(85, 21)
+        Me.RadioGroup1.Location = New System.Drawing.Point(85, 23)
         Me.RadioGroup1.Name = "RadioGroup1"
         Me.RadioGroup1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioGroup1.Properties.Appearance.Options.UseFont = True
         Me.RadioGroup1.Properties.Columns = 4
         Me.RadioGroup1.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(1, Short), "1° TRIMESTRE"), New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(2, Short), "2° TRIMESTRE"), New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(3, Short), "3° TRIMESTRE"), New DevExpress.XtraEditors.Controls.RadioGroupItem(CType(4, Short), "4° TRIMESTRE")})
-        Me.RadioGroup1.Size = New System.Drawing.Size(574, 38)
+        Me.RadioGroup1.Size = New System.Drawing.Size(574, 36)
         Me.RadioGroup1.TabIndex = 0
         '
         'ComboBoxEdit1
@@ -1449,7 +1449,7 @@ Partial Class CoLiTrim
         Me.ComboBoxEdit1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Left
         Me.ComboBoxEdit1.EnterMoveNextControl = True
-        Me.ComboBoxEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.ComboBoxEdit1.Location = New System.Drawing.Point(2, 23)
         Me.ComboBoxEdit1.Name = "ComboBoxEdit1"
         Me.ComboBoxEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxEdit1.Properties.Appearance.Options.UseFont = True
