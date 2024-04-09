@@ -200,6 +200,11 @@
       <DependentUpon>ConfSppp.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
     <Compile Include="RegIvaPdf2019.vb" />
     <Compile Include="RegIvaAghi2019.vb" />
     <Compile Include="DsPiaLDP.Designer.vb">
@@ -569,10 +574,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -765,16 +766,58 @@
       <DependentUpon>TabRic.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="XBanSca.Designer.vb">
+      <DependentUpon>XBanSca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XBanSca.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="XBilSez.Designer.vb">
       <DependentUpon>XBilSez.vb</DependentUpon>
     </Compile>
     <Compile Include="XBilSez.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="XClFoSca.Designer.vb">
+      <DependentUpon>XClFoSca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XClFoSca.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XEleCes.Designer.vb">
+      <DependentUpon>XEleCes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XEleCes.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XIntra1bis.Designer.vb">
+      <DependentUpon>XIntra1bis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XIntra1bis.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XInvent.Designer.vb">
+      <DependentUpon>XInvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XInvent.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XLpBuste.Designer.vb">
+      <DependentUpon>XLpBuste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XLpBuste.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="XScaClAge.Designer.vb">
       <DependentUpon>XScaClAge.vb</DependentUpon>
     </Compile>
     <Compile Include="XScaClAge.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XScade.Designer.vb">
+      <DependentUpon>XScade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XScade.vb">
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
@@ -1059,11 +1102,32 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TabRic.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="XBanSca.resx">
+      <DependentUpon>XBanSca.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XBilSez.resx">
       <DependentUpon>XBilSez.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XClFoSca.resx">
+      <DependentUpon>XClFoSca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XEleCes.resx">
+      <DependentUpon>XEleCes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XIntra1bis.resx">
+      <DependentUpon>XIntra1bis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XInvent.resx">
+      <DependentUpon>XInvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XLpBuste.resx">
+      <DependentUpon>XLpBuste.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XScaClAge.resx">
       <DependentUpon>XScaClAge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XScade.resx">
+      <DependentUpon>XScade.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

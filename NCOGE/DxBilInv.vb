@@ -5,6 +5,7 @@ Imports System.IO
 Imports System.Data.SqlClient
 Imports CrystalDecisions.CrystalReports.Engine
 Imports CrystalDecisions.Shared
+Imports DevExpress.XtraReports.UI    'Importa l'interfaccia grafica di DevExpress.
 
 
 Public Class DxBilInv
@@ -115,8 +116,16 @@ Public Class DxBilInv
         EsegueSql(" EXEC " & QualeP & "  @Anno =" & AnnoSta & ", @CAUCH= " & CauChiusura, cnCo)
     End Sub
 
-    Private Sub ButtonF9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF9.Click
-        ''If VERIFICA() = False Then Exit Sub
+    Private Sub ButtonF9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF9.Click 'ButtonF9 è il tasto stampa
+        ''If VERIFICA() = False Then Exit Sub 'Modificare.Sembra relativo a riga 192
+
+        StampaCr()         'Lancia  CRISTALREPORT
+        'StampaDevexp()    'Lancia DevExpress
+
+    End Sub
+
+    Private Sub StampaCr()         'Lancia  CRISTALREPORT
+
         If Val(TextEdit11.Text) = 0 Then Exit Sub
 
         EsegueProcedura("XF5", ANNOSTA, CauChiusura)
@@ -166,6 +175,85 @@ Public Class DxBilInv
         Next
         Me.Close()
     End Sub
+
+    Private Sub StampaDevexp()    'Lancia DevExpress
+
+        If Val(TextEdit11.Text) = 0 Then Exit Sub
+
+        EsegueProcedura("XF5", ANNOSTA, CauChiusura)
+        Cursor.Current = Cursors.WaitCursor
+        Dim REPORT As New XtraReport
+        
+        Dim StrPrint As String
+        Dim DsAgD As DataTable
+        Dim DaAgD As SqlDataAdapter
+
+        If RadioGroup1.SelectedIndex = 0 Then
+            REPORT = New XInvent                    'per XInvent
+        ElseIf RadioGroup1.SelectedIndex = 1 Then
+            Rpt = Rpt2                              'per InvNoCf.rpt
+        ElseIf RadioGroup1.SelectedIndex = 2 Then
+            Rpt = Rpt3                              'per InvPart.rpt
+        End If
+        If CheckEdit1.Checked = False Then NPAG = 0
+        'Rpt.RecordSelectionFormula = Selectformula
+
+        StrPrint = "select *from TMPBINV"
+        DsAgD = New DataTable
+        DaAgD = New SqlDataAdapter(StrPrint, cnCo)
+        DaAgD.SelectCommand.CommandTimeout = 300
+        DaAgD.Fill(DsAgD)
+        REPORT.DataSource = DsAgD
+        REPORT.DataMember = "DsAgD"
+
+        REPORT.Parameters.Item("periodo").Value = periodo
+        REPORT.Parameters.Item("Marchio").Value = Marchio()
+        REPORT.Parameters.Item("TB1").Value = TextEdit1.EditValue
+        REPORT.Parameters.Item("TB2").Value = TextEdit2.EditValue
+        REPORT.Parameters.Item("TB3").Value = TextEdit3.EditValue
+        REPORT.Parameters.Item("TB4").Value = TextEdit4.EditValue
+        REPORT.Parameters.Item("TB5").Value = TextEdit5.EditValue
+        REPORT.Parameters.Item("TB6").Value = TextEdit6.EditValue
+        REPORT.Parameters.Item("TB7").Value = TextEdit7.EditValue
+        REPORT.Parameters.Item("TB8").Value = TextEdit8.EditValue
+        REPORT.Parameters.Item("TB9").Value = TextEdit9.EditValue
+        REPORT.Parameters.Item("TB10").Value = TextEdit10.EditValue
+        REPORT.Parameters.Item("CUTI").Value = CUTI
+        REPORT.Parameters.Item("CPER").Value = CPER
+        REPORT.Parameters.Item("ANNOSTA").Value = ANNOSTA
+        REPORT.Parameters.Item("NPAG").Value = NPAG
+        REPORT.Parameters.Item("INTINV").Value = INTINV
+
+        Dim opt As New DevExpress.XtraPrinting.PdfExportOptions  'Da qui fino a End Sub prepara e crea il pdf
+        opt.Compressed = True
+        REPORT.CreateDocument()
+        REPORT.ShowPreviewDialog
+
+        'Dim FILE As String = LEGGIPATH() & "InvTmp.RTF"
+        'Rpt.ExportToDisk(ExportFormatType.RichText, FILE)    'Capire cos'è,sembra che togliendolo tutto funzioni senza problemi.
+        'RichTextBox1.LoadFile(FILE)
+        pg = ""
+        Dim x As Int32
+        For x = Len(RichTextBox1.Text) To 1 Step -1
+            If IsNumeric(Mid(RichTextBox1.Text, x, 1)) Then
+                pg = Mid(RichTextBox1.Text, x, 1) & pg
+            Else
+                Exit For
+            End If
+        Next
+        Me.Close()
+
+
+
+
+
+
+
+
+    End Sub
+
+
+
     Private Function LEGGIPATH() As String
         Dim Str As String = "Select Sel8 from TbSel where selId = 1"
         Cmd = New SqlCommand(Str, cnVd)

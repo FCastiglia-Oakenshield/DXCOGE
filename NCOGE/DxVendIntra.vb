@@ -4,6 +4,7 @@ Imports NPRINT
 Imports System.IO
 Imports System.Data.SqlClient
 Imports CrystalDecisions.CrystalReports.Engine
+Imports DevExpress.XtraReports.UI    'Importa l'interfaccia grafica di DevExpress.
 Public Class DxVendIntra
     Dim Rpt As ReportClass
     Dim Rpt1 As New Intra1bis
@@ -63,6 +64,14 @@ Public Class DxVendIntra
         Rispondi = MsgBox(Mexage, style(Tipo), title)
     End Sub
     Private Sub ButtonF9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF9.Click
+
+        'StampaCr()         'Lancia  CRISTALREPORT
+        StampaDevexp()    'Lancia DevExpress
+
+    End Sub
+
+    Private Sub StampaCr()
+
         If Controlli() = False Then DateEdit1.Focus() : Exit Sub
         periodo = " Cessioni Intracomunitarie di Beni periodo " & DateEdit1.EditValue & " - " & DateEdit2.EditValue
         CIVA = ImageComboBoxEdit4.SelectedIndex + 1
@@ -82,7 +91,47 @@ Public Class DxVendIntra
         frm.reportsource = Rpt
         frm.Text = Me.Text
         frm.Show()
+
     End Sub
+
+    Private Sub StampaDevexp()
+        Dim TipoDo As String = "IN"
+        Dim FileName As String = PathSto & TipoDo & ".pdf"
+
+        Dim REPORT As New XtraReport
+        REPORT = New XIntra1bis
+
+        If Controlli() = False Then DateEdit1.Focus() : Exit Sub
+        periodo = " Cessioni Intracomunitarie di Beni periodo " & DateEdit1.EditValue & " - " & DateEdit2.EditValue
+        preparaparametri()
+        CIVA = ImageComboBoxEdit4.SelectedIndex + 1
+        Dim TbOrd As DataTable
+        Dim DaOrd As SqlDataAdapter
+        DaOrd = New SqlDataAdapter("SELECT * FROM TMPINTRA", cnCo)
+        TbOrd = New DataTable("Ordini")     'Crea una nuova tabella
+        DaOrd.Fill(TbOrd)
+
+        Cursor.Current = Cursors.WaitCursor
+
+        Dim opt As New DevExpress.XtraPrinting.PdfExportOptions  'Da qui fino a End Sub prepara e crea il pdf
+        opt.Compressed = True
+
+
+        REPORT.Parameters.Item("desiva").Value = ImageComboBoxEdit4.EditValue.ToString
+        REPORT.Parameters.Item("Periodo").Value = periodo
+        REPORT.Parameters.Item("CIVA").Value = CIVA
+        REPORT.Parameters.Item("Marchio").Value = Marchio()
+
+        REPORT.DataSource = TbOrd
+        REPORT.DataMember = "Ordini"
+        REPORT.ShowPrintMarginsWarning = False
+        REPORT.CreateDocument()
+        REPORT.CreateDocument()
+        REPORT.ShowPreviewDialog
+
+    End Sub
+
+
     Private Sub Base_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyUp
         If e.KeyData = Keys.F5 Then
             e.Handled = True

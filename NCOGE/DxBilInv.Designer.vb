@@ -462,9 +462,9 @@ Partial Class DxBilInv
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(43, 16)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -474,6 +474,7 @@ Partial Class DxBilInv
         'CheckEdit1
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
         Me.CheckEdit1.Location = New System.Drawing.Point(27, 60)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -514,7 +515,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextEdit11.EnterMoveNextControl = True
-        Me.TextEdit11.Location = New System.Drawing.Point(2, 24)
+        Me.TextEdit11.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit11.Name = "TextEdit11"
         Me.TextEdit11.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit11.Properties.Appearance.Options.UseFont = True
@@ -541,7 +542,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit5.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit5.EnterMoveNextControl = True
-        Me.TextEdit5.Location = New System.Drawing.Point(2, 103)
+        Me.TextEdit5.Location = New System.Drawing.Point(2, 105)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Properties.Appearance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit5.Properties.Appearance.Options.UseFont = True
@@ -555,7 +556,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit4.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit4.EnterMoveNextControl = True
-        Me.TextEdit4.Location = New System.Drawing.Point(2, 83)
+        Me.TextEdit4.Location = New System.Drawing.Point(2, 85)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit4.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -567,7 +568,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit3.EnterMoveNextControl = True
-        Me.TextEdit3.Location = New System.Drawing.Point(2, 63)
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 65)
         Me.TextEdit3.Name = "TextEdit3"
         Me.TextEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -579,7 +580,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit2.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit2.EnterMoveNextControl = True
-        Me.TextEdit2.Location = New System.Drawing.Point(2, 43)
+        Me.TextEdit2.Location = New System.Drawing.Point(2, 45)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit2.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -591,7 +592,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit1.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit1.EnterMoveNextControl = True
-        Me.TextEdit1.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit1.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Appearance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit1.Properties.Appearance.Options.UseFont = True
@@ -618,7 +619,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit10.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit10.EnterMoveNextControl = True
-        Me.TextEdit10.Location = New System.Drawing.Point(2, 103)
+        Me.TextEdit10.Location = New System.Drawing.Point(2, 105)
         Me.TextEdit10.Name = "TextEdit10"
         Me.TextEdit10.Properties.Appearance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit10.Properties.Appearance.Options.UseFont = True
@@ -632,7 +633,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit9.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit9.EnterMoveNextControl = True
-        Me.TextEdit9.Location = New System.Drawing.Point(2, 83)
+        Me.TextEdit9.Location = New System.Drawing.Point(2, 85)
         Me.TextEdit9.Name = "TextEdit9"
         Me.TextEdit9.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit9.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -644,7 +645,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit8.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit8.EnterMoveNextControl = True
-        Me.TextEdit8.Location = New System.Drawing.Point(2, 63)
+        Me.TextEdit8.Location = New System.Drawing.Point(2, 65)
         Me.TextEdit8.Name = "TextEdit8"
         Me.TextEdit8.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit8.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -656,7 +657,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit7.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit7.EnterMoveNextControl = True
-        Me.TextEdit7.Location = New System.Drawing.Point(2, 43)
+        Me.TextEdit7.Location = New System.Drawing.Point(2, 45)
         Me.TextEdit7.Name = "TextEdit7"
         Me.TextEdit7.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit7.Properties.AppearanceFocused.Options.UseBackColor = True
@@ -668,7 +669,7 @@ Partial Class DxBilInv
         '
         Me.TextEdit6.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextEdit6.EnterMoveNextControl = True
-        Me.TextEdit6.Location = New System.Drawing.Point(2, 21)
+        Me.TextEdit6.Location = New System.Drawing.Point(2, 23)
         Me.TextEdit6.Name = "TextEdit6"
         Me.TextEdit6.Properties.Appearance.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit6.Properties.Appearance.Options.UseFont = True

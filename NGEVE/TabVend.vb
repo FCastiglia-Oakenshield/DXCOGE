@@ -388,6 +388,7 @@ Public Class TabVend
     End Sub
 
     Private Sub ButtonF9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF9.Click
+
         Cursor.Current = Cursors.WaitCursor
         Dim frm As New LpLp
         Dim tipod As String
@@ -410,7 +411,10 @@ Public Class TabVend
         frm.reportsource = Rpt
         frm.Text = Me.Text
         frm.Show()
+
     End Sub
+
+
 
     Private Sub Pulizia()
         TextBox1.Text = ""

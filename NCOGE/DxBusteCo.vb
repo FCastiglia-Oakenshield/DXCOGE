@@ -3,6 +3,7 @@ Imports System.Data.SqlClient
 Imports NCCOM
 Imports NPRINT
 Imports CrystalDecisions.CrystalReports.Engine
+Imports DevExpress.XtraReports.UI    'Importa l'interfaccia grafica di DevExpress.
 Public Class DxBusteCo
     Friend WithEvents prntDoc As System.Drawing.Printing.PrintDocument
     Dim prntDial As New PrintDialog
@@ -14,6 +15,7 @@ Public Class DxBusteCo
     Dim DsAgS As DataTable
     Dim DaAgS As SqlDataAdapter
     Dim RwAgS As DataRow
+    'Dim selezionato As String       'Definisco una variabile in cui copiare il contatto selezionato.Non serve.
 
     Dim DsAgD As DataTable
     Dim DaAgD As SqlDataAdapter
@@ -54,7 +56,7 @@ Public Class DxBusteCo
             PassaTutti()
         Else
             CheckButton1.ImageIndex = 26
-            CheckButton1.ToolTip = "INVIA in STAMPA"
+            CheckButton1.ToolTip = "INVIA in STAMPA"     'Passa tutta la tabella
             PopolaGrid()
         End If
     End Sub
@@ -82,17 +84,17 @@ Public Class DxBusteCo
         iset = hi.RowHandle
     End Sub
     Private Sub GridView1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles GridView1.Click
-        If iset > -1 Then
+        If iset > -1 Then                                   'Comanda inserimento del contatto
             RwAgS = GridView1.GetDataRow(iset)
             exButton79()
         End If
     End Sub
-    Sub exButton79()
+    Sub exButton79()                                    'Da qui seleziona il contatto.
         Dim x As Int16
         If iset > -1 Then
             RwAgD = DsAgD.NewRow()
             For x = 1 To RwAgS.ItemArray.Length
-                RwAgD(x - 1) = RwAgS(x - 1)
+                RwAgD(x - 1) = RwAgS(x - 1)               'RwAgS è una riga di un DataRow
             Next
             DsAgD.Rows.Add(RwAgD)
             DsAgD.AcceptChanges()
@@ -153,17 +155,45 @@ Public Class DxBusteCo
 
     Private Sub ButtonF9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF9.Click
         If DsAgD.Rows.Count = 0 Then Exit Sub
-        Stampa()
+        'StampaCr()         'Lancia  CRISTALREPORT
+        StampaDevexp()    'Lancia DevExpress
     End Sub
-    Sub Stampa()
+    Sub StampaCr()         'Lancia  CRISTALREPORT
         frm = New LpDs
         Rpt = New ReportClass
         Rpt1 = New LpBuste
         Rpt = Rpt1
-        Rpt.SetDataSource(DsAgD)
+        Rpt.SetDataSource(DsAgD)      'DataSource esistente che viene usato.
         frm.reportsource = Rpt
         frm.Text = Me.Text
         frm.Show()
     End Sub
+
+
+    Sub StampaDevexp()    'Lancia DevExpress
+
+        Dim REPORT As New XtraReport
+        REPORT = New XLpBuste
+
+        REPORT.DataSource = DsAgD          'Uso lo stesso DataSource esistente che viene usato da CRISTAL REPORT.
+        REPORT.DataMember = "DsAgD"
+
+        'Dim opt As New DevExpress.XtraPrinting.PdfExportOptions  'Da qui fino a End Sub prepara e crea il pdf
+        'opt.Compressed = True
+        REPORT.CreateDocument()
+        REPORT.ShowPreviewDialog
+
+
+        'Rpt.SetDataSource(DsAgD)
+
+
+    End Sub
+
+
+
+
+
+
+
 
 End Class

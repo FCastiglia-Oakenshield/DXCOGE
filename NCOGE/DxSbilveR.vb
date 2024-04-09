@@ -266,6 +266,98 @@ II:
         Sole24Ore(Trim(TextEdit1.EditValue), IdBlk)
     End Sub
     Sub SparaStampa(ByVal RRpt As ReportClass, ByVal Txt As String, ByVal Formula As String, ByVal Dettaglio As Boolean, ByVal QAmm As Boolean, ByVal TextPdf As String)
+
+        'StampaCr()         'Lancia  CRISTALREPORT    Chiedere come metterli,con parantesi vuote danno errori
+        'StampaDevexp()    'Lancia DevExpress
+
+        'Cursor.Current = Cursors.WaitCursor
+        'Rpt = New ReportClass
+        'frm = New LpLp
+        'Dim Selectformula, RR As String
+        'Dim Azienda As String = Marchio()
+        'If CheckEdit11.Checked = True Then Azienda &= " CONSOLIDATO"
+        'Rpt = RRpt
+        'Selectformula = Formula & IdBlk
+        'If CheckEdit8.Checked = True Then RR = T2 & "-R" Else RR = T2 & ""
+        'Rpt.RecordSelectionFormula = Selectformula
+        'Rpt.SetParameterValue("periodo", CDate(DateEdit1.EditValue).ToShortDateString & RR)
+        'Rpt.SetParameterValue("Marchio", Azienda)
+        'Rpt.SetParameterValue("Dettaglio", Dettaglio)
+        'Rpt.SetParameterValue("Intesta", Txt.ToUpper)
+
+        'If QAmm = True Then
+        '    Rpt.SetParameterValue("Ammortamenti", Ammortamenti)
+        '    Rpt.SetParameterValue("Quote", Quote)
+        'End If
+        'If CheckEdit7.Checked = True And Rpt Is Rpt4 Then
+        '    Rpt.SetParameterValue("P1", P1)
+        '    Rpt.SetParameterValue("P2", P2)
+        '    Rpt.SetParameterValue("P3", P3)
+        '    Rpt.SetParameterValue("P4", P4)
+        '    Rpt.SetParameterValue("P5", P5)
+        '    Rpt.SetParameterValue("P6", P6)
+        'End If
+
+        'If TipoStampa = 1 Then
+        '    PdfStart(Rpt, TextPdf & IdBlk)
+        '    Exit Sub
+        'End If
+
+
+        'frm.reportsource = Rpt
+        'frm.Text = Txt
+        'frm.Show()
+    End Sub
+
+
+    Sub StampaCr(ByVal RRpt As ReportClass, ByVal Txt As String, ByVal Formula As String, ByVal Dettaglio As Boolean, ByVal QAmm As Boolean, ByVal TextPdf As String)
+
+        Cursor.Current = Cursors.WaitCursor
+        Rpt = New ReportClass
+        frm = New LpLp
+        Dim Selectformula, RR As String
+        Dim Azienda As String = Marchio()
+        If CheckEdit11.Checked = True Then Azienda &= " CONSOLIDATO"
+        Rpt = RRpt
+        Selectformula = Formula & IdBlk
+        If CheckEdit8.Checked = True Then RR = T2 & "-R" Else RR = T2 & ""
+        Rpt.RecordSelectionFormula = Selectformula
+        Rpt.SetParameterValue("periodo", CDate(DateEdit1.EditValue).ToShortDateString & RR)
+        Rpt.SetParameterValue("Marchio", Azienda)
+        Rpt.SetParameterValue("Dettaglio", Dettaglio)
+        Rpt.SetParameterValue("Intesta", Txt.ToUpper)
+
+        If QAmm = True Then
+            Rpt.SetParameterValue("Ammortamenti", Ammortamenti)
+            Rpt.SetParameterValue("Quote", Quote)
+        End If
+        If CheckEdit7.Checked = True And Rpt Is Rpt4 Then
+            Rpt.SetParameterValue("P1", P1)
+            Rpt.SetParameterValue("P2", P2)
+            Rpt.SetParameterValue("P3", P3)
+            Rpt.SetParameterValue("P4", P4)
+            Rpt.SetParameterValue("P5", P5)
+            Rpt.SetParameterValue("P6", P6)
+        End If
+
+        If TipoStampa = 1 Then
+            PdfStart(Rpt, TextPdf & IdBlk)
+            Exit Sub
+        End If
+
+
+        frm.reportsource = Rpt
+        frm.Text = Txt
+        frm.Show()
+
+
+
+
+    End Sub
+
+
+    Sub StampaDevexp(ByVal RRpt As ReportClass, ByVal Txt As String, ByVal Formula As String, ByVal Dettaglio As Boolean, ByVal QAmm As Boolean, ByVal TextPdf As String)
+        'Modificare.
         Cursor.Current = Cursors.WaitCursor
         Rpt = New ReportClass
         frm = New LpLp
@@ -304,6 +396,20 @@ II:
         frm.Text = Txt
         frm.Show()
     End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     Sub CaricaSaldi()
         PuliziaFlash()
         If OkFlash = False Then
