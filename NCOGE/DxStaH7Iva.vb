@@ -42,7 +42,7 @@ Public Class DxStaH7Iva
             Exit Sub
         End If
 
-        str = "SELECT * FROM CRH7IVA where  ANNOIVA = " & TextEdit1.Text & " and PriRegIva = " & TextEdit2.Text & " AND PRINUMPROT between " & TextEdit6.Text & " AND " & TextEdit7.Text & " order by PriNumProt"
+        str = "SELECT * FROM CRH7IVA where  ANNOIVA = " & TextEdit1.Text & " and PriRegIva = " & TextEdit2.Text & " AND PRINUMPROT between " & TextEdit6.Text & " AND " & TextEdit7.Text & " order by ANNOIVA, PriRegIva, PriNumProt, PriId, PriProg"
         Titolo = "Anno " & TextEdit1.Text & " - Registro N. " & TextEdit2.Text & " " & TextEdit3.Text & " - Protocolli dal N. " & TextEdit6.Text & " al N. " & TextEdit7.Text
 
         DsAcVE = New DataTable()

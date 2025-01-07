@@ -481,8 +481,8 @@ Oltre:  TotaleIn()
         If LeggiConto(TextEdit20.EditValue, TextEdit21) = False Then TextEdit20.Focus() Else ButtonFF11.Focus()
     End Sub
     Private Sub ButtonF8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF8.Click
-        If TextEdit20.ContainsFocus = True Then
-            Dim Nc As String = ""
+        ''   If TextEdit20.ContainsFocus = True Then
+        Dim Nc As String = ""
             Nc = EstraiRicerca(TextEdit20.EditValue.ToUpper)
             If Nc > "00.00" Then
                 TextEdit20.EditValue = Nc
@@ -490,7 +490,7 @@ Oltre:  TotaleIn()
                 SelectNextControl(ButtonFF11, True, True, True, True)
             End If
             Exit Sub
-        End If
+        ''  End If
     End Sub
     Function EstraiRicerca(ByVal Tipo As String) As String
         Dim frm As New RicercaClFo
