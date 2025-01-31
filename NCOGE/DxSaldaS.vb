@@ -154,6 +154,7 @@ Public Class DxSaldaS
     End Sub
     Sub PulisciGrid()
         DsSco = New DataSet
+        GridView3.ActiveFilterCriteria = Nothing
         GridControl3.DataSource = DsSco.Tables(Ts)
         GridControl3.Refresh()
     End Sub
@@ -226,6 +227,7 @@ Public Class DxSaldaS
         Dim Ands As String = ""
         Dim StrPrint = ""
         Dim Ors As String = " OR SCATPAG = "
+        Dim OrsMP As String = " OR FatPagCodFE = "
         Dim C As Int16 = 0
         For x = 1 To CheckedComboBoxEdit3.Properties.Items.Count
             Em = CheckedComboBoxEdit3.Properties.Items(x - 1)
@@ -425,6 +427,8 @@ Oltre:
         End While
         dataRd.Close()
     End Function
+
+
     Function AggiustaConto(ByRef CodCo As String) As Boolean
         Dim x As Int16
         For x = 1 To Len(CodCo)
@@ -711,40 +715,48 @@ Attesa:
         If Scor > 0 Then SaldaTutto()
     End Sub
     Sub SaldaTutto()
+        ''  If GridView3.ActiveFilterCriteria IsNot Nothing Then CheckEdit1.Checked = False : Exit Sub
         PulisciPNota()
         Dim Q As Int16
-        For Q = 1 To DsSco.Tables(Ts).Rows.Count
-            RwSco = DsSco.Tables(Ts).Rows(Q - 1)
-            If CheckEdit1.Checked = True Then
-                RwPno = DsPno.Tables(Pn).NewRow()
-                RwPno("PrkConto") = RwSco("ScaConto")
-                RwPno("PrkDocAnn") = CDate(RwSco("ScaDDoc")).Year
-                RwPno("PrkDocEst") = RwSco("ScaNDoc")
-                RwSco("PrkPAperta") = 1
-                RwPno("PrkPAperta") = RwSco("PrkPAperta")
-                RwPno("AnaDesc") = RwSco("ScaDesc")
-                RwPno("SCOPERTO") = RwSco("ScaScopRata")
-                RwPno("DtValuta") = CDate(RwSco("ScaDDoc"))
-                RwPno("DtDoc") = CDate(RwSco("ScaDDoc"))
-                RwPno("FoAbi") = "00000"
-                RwPno("FoCab") = "00000"
-                RwPno("FoCC") = "000000000000"
-                RwPno("FoPaese") = "00"
-                RwPno("FoCinEur") = "00"
-                RwPno("FoCin") = "0"
-                RwPno("ScaNRata") = RwSco("ScaNRata")
+        If GridView3.RowCount > 0 Then
+            For I As Int16 = 1 To GridView3.RowCount
+                RwSco = GridView3.GetDataRow(I - 1)
+                ''     Next
+                ''  End If
 
-                If CF = "" Then
-                    If RwPno("PrkConto") > MiglioFo Then CF = "FO" Else CF = "CL"
+                ''            For Q = 1 To DsSco.Tables(Ts).Rows.Count
+                ''           RwSco = DsSco.Tables(Ts).Rows(Q - 1)
+                If CheckEdit1.Checked = True Then
+                    RwPno = DsPno.Tables(Pn).NewRow()
+                    RwPno("PrkConto") = RwSco("ScaConto")
+                    RwPno("PrkDocAnn") = CDate(RwSco("ScaDDoc")).Year
+                    RwPno("PrkDocEst") = RwSco("ScaNDoc")
+                    RwSco("PrkPAperta") = 1
+                    RwPno("PrkPAperta") = RwSco("PrkPAperta")
+                    RwPno("AnaDesc") = RwSco("ScaDesc")
+                    RwPno("SCOPERTO") = RwSco("ScaScopRata")
+                    RwPno("DtValuta") = CDate(RwSco("ScaDDoc"))
+                    RwPno("DtDoc") = CDate(RwSco("ScaDDoc"))
+                    RwPno("FoAbi") = "00000"
+                    RwPno("FoCab") = "00000"
+                    RwPno("FoCC") = "000000000000"
+                    RwPno("FoPaese") = "00"
+                    RwPno("FoCinEur") = "00"
+                    RwPno("FoCin") = "0"
+                    RwPno("ScaNRata") = RwSco("ScaNRata")
+
+                    If CF = "" Then
+                        If RwPno("PrkConto") > MiglioFo Then CF = "FO" Else CF = "CL"
+                    End If
+                    TextEdit8.EditValue = RwPno("SCOPERTO")
+                    '''' eventuale ricerca se fornitore soggetto ritenuta dell'importo al netto della ritenuta'''
+                    If CF = "FO" Then ControllaImportoFo()
+                    DsPno.Tables(Pn).Rows.Add(RwPno)
+                Else
+                    RwSco("PrkPAperta") = 0
                 End If
-                TextEdit8.EditValue = RwPno("SCOPERTO")
-                '''' eventuale ricerca se fornitore soggetto ritenuta dell'importo al netto della ritenuta'''
-                If CF = "FO" Then ControllaImportoFo()
-                DsPno.Tables(Pn).Rows.Add(RwPno)
-            Else
-                RwSco("PrkPAperta") = 0
-            End If
-        Next
+            Next
+        End If
         DsPno.AcceptChanges()
         TotaleIn()
 
