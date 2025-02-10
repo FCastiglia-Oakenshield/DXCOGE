@@ -725,7 +725,8 @@ Oltre:  TotaleIn()
         SbloccoLocked()
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         ResetIdP()
-        EsegueSql(" EXEC RiChiudePartita  @Id = " & ProgId & ",@Miglio=" & MiglioFo, cnCo)
+        Partita(0, ProgId)
+        Partita(1, 0)
         Dim ProgCdc As Int32
         ProgCdc = ProgId
         '''' SE ARTICOLO IRPEF AUTOMATICO MI SPORCA LA VARIABILE PROGID CON UN ALTRO ARTICOLO

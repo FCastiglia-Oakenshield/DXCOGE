@@ -379,13 +379,13 @@ Oltre:
     Private Sub ButtonF8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF8.Click
         '' If TextEdit20.ContainsFocus = True Then
         Dim Nc As String = ""
-            Nc = EstraiRicerca(TextEdit20.EditValue.ToUpper)
-            If Nc > "00.00" Then
-                TextEdit20.EditValue = Nc
-                LeggiConto(TextEdit20.EditValue, TextEdit21)
-                SelectNextControl(ButtonFF11, True, True, True, True)
-            End If
-            Exit Sub
+        Nc = EstraiRicerca(TextEdit20.EditValue.ToUpper)
+        If Nc > "00.00" Then
+            TextEdit20.EditValue = Nc
+            LeggiConto(TextEdit20.EditValue, TextEdit21)
+            SelectNextControl(ButtonFF11, True, True, True, True)
+        End If
+        Exit Sub
         ''   End If
     End Sub
     Function EstraiRicerca(ByVal Tipo As String) As String
@@ -630,7 +630,8 @@ Oltre:
         SbloccoLocked()
         EsegueSql(" EXEC InitPrk  @ID = " & ProgId, cnCo)
         ResetIdP()
-        EsegueSql(" EXEC RiChiudePartita  @Id = " & ProgId & ",@Miglio=" & MiglioFo, cnCo)
+        Partita(0, ProgId)
+        Partita(1, 0)
         If TP = 5 And CheckEdit2.Checked = True Then
             EseguiBonifico(Total, Articolo)
         End If
@@ -640,6 +641,13 @@ Oltre:
         If ComboBoxEdit1.Properties.Items.Count > 0 Then
             PagaEGiroconta()
             ComboBoxEdit1.Properties.Items.Clear()
+        End If
+    End Sub
+    Sub Partita(ByVal Tipo As Int16, ByVal AZ As Int32)
+        If Tipo = 0 Then
+            EsegueSql(" EXEC RiAprePartita  @Id = " & ProgId & ",@Az=" & AZ & ",@Miglio=" & MiglioFo, cnCo)
+        Else
+            EsegueSql(" EXEC RiChiudePartita  @Id = " & ProgId & ",@Miglio=" & MiglioFo, cnCo)
         End If
     End Sub
     Sub EseguiBonifico(ByVal TotaleD As Decimal, ByVal NArt As Int32)
@@ -797,7 +805,7 @@ Attesa:
         End While
         dataRd.Close()
     End Sub
-  
+
     Sub PagaEGiroconta()
         Dim K As Int16
         Dim PAG As String = ""
@@ -901,12 +909,4 @@ Attesa:
         ResetIdP()
         Partita(1, 0)
     End Function
-    Sub Partita(ByVal Tipo As Int16, ByVal AZ As Int32)
-        If Tipo = 0 Then
-            EsegueSql(" EXEC RiAprePartita  @Id = " & ProgId & ",@Az=" & AZ & ",@Miglio=" & MiglioFo, cnCo)
-        Else
-            EsegueSql(" EXEC RiChiudePartita  @Id = " & ProgId & ",@Miglio=" & MiglioFo, cnCo)
-        End If
-    End Sub
-
 End Class

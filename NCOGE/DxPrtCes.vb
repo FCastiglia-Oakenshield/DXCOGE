@@ -31,8 +31,8 @@ Public Class DxPrtCes
     End Sub
     Private Sub ButtonF9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonF9.Click
 
-        'StampaCr()         'Lancia  CRISTALREPORT
-        StampaDevexp()    'Lancia DevExpress
+        StampaCr()         'Lancia  CRISTALREPORT
+        ' StampaDevexp()    'Lancia DevExpress
 
     End Sub
 

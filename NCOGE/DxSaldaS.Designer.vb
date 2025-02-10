@@ -49,8 +49,8 @@ Partial Class DxSaldaS
         Me.DateEdit3 = New DevExpress.XtraEditors.DateEdit()
         Me.RadioGroup1 = New DevExpress.XtraEditors.RadioGroup()
         Me.GroupControl7 = New DevExpress.XtraEditors.GroupControl()
-        Me.CheckEdit1 = New DevExpress.XtraEditors.CheckEdit()
         Me.GroupControl11 = New DevExpress.XtraEditors.GroupControl()
+        Me.CheckEdit1 = New DevExpress.XtraEditors.CheckEdit()
         Me.CheckedComboBoxEdit3 = New DevExpress.XtraEditors.CheckedComboBoxEdit()
         Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
         Me.CheckEdit2 = New DevExpress.XtraEditors.CheckEdit()
@@ -121,9 +121,9 @@ Partial Class DxSaldaS
         CType(Me.RadioGroup1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl7.SuspendLayout()
-        CType(Me.CheckEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl11.SuspendLayout()
+        CType(Me.CheckEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CheckedComboBoxEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl8.SuspendLayout()
@@ -1042,17 +1042,6 @@ Partial Class DxSaldaS
         Me.GroupControl7.Size = New System.Drawing.Size(320, 314)
         Me.GroupControl7.TabIndex = 0
         '
-        'CheckEdit1
-        '
-        Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckEdit1.EnterMoveNextControl = True
-        Me.CheckEdit1.Location = New System.Drawing.Point(108, 54)
-        Me.CheckEdit1.Name = "CheckEdit1"
-        Me.CheckEdit1.Properties.AutoHeight = False
-        Me.CheckEdit1.Properties.Caption = "SALDA CONTI"
-        Me.CheckEdit1.Size = New System.Drawing.Size(113, 33)
-        Me.CheckEdit1.TabIndex = 16
-        '
         'GroupControl11
         '
         Me.GroupControl11.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -1070,6 +1059,17 @@ Partial Class DxSaldaS
         Me.GroupControl11.Size = New System.Drawing.Size(320, 97)
         Me.GroupControl11.TabIndex = 15
         Me.GroupControl11.Text = "TIPO PAGAMENTO"
+        '
+        'CheckEdit1
+        '
+        Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit1.EnterMoveNextControl = True
+        Me.CheckEdit1.Location = New System.Drawing.Point(108, 54)
+        Me.CheckEdit1.Name = "CheckEdit1"
+        Me.CheckEdit1.Properties.AutoHeight = False
+        Me.CheckEdit1.Properties.Caption = "SALDA CONTI"
+        Me.CheckEdit1.Size = New System.Drawing.Size(113, 33)
+        Me.CheckEdit1.TabIndex = 16
         '
         'CheckedComboBoxEdit3
         '
@@ -1778,9 +1778,9 @@ Partial Class DxSaldaS
         CType(Me.RadioGroup1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl7.ResumeLayout(False)
-        CType(Me.CheckEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl11.ResumeLayout(False)
+        CType(Me.CheckEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CheckedComboBoxEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl8.ResumeLayout(False)
