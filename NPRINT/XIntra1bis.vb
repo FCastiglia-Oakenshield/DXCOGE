@@ -6,6 +6,7 @@ Public Class XIntra1bis
 
     Private Sub Section11_BeforePrint(sender As Object, e As PrintEventArgs) Handles Section11.BeforePrint 'Comanda apparizione campo dopo 10 righe.
         Dim rw As DataRowView = Me.GetCurrentRow()
+        If rw Is Nothing Then Exit Sub
         Dim C1 As Int16 = rw("PROG") / 10
         Dim C2 As Int16 = C1 * 10
         If rw("PROG") <> C2 Then

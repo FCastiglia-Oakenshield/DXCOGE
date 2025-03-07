@@ -397,19 +397,6 @@ II:
         frm.Show()
     End Sub
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     Sub CaricaSaldi()
         PuliziaFlash()
         If OkFlash = False Then
@@ -430,9 +417,10 @@ II:
                 If EseDal(x) = UltimaApertura Then
                     D3 = EseDal(x)
                     D4 = EseAl(x)
+                    ''   If Me.Tag = "@C" Then d1 = D3 : Exit For ''' se competenza simulo apertura anche di competenza
                     EsegueProcedura("XF1P", D3, D4, IdBlk, Caus, 0, 0)
                     Exit For
-                End If
+                    End If
             Next
         Else
             Caus = 45
