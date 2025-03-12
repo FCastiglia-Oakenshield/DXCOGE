@@ -103,8 +103,8 @@ Public Class DxVendIntra
 
         If Controlli() = False Then DateEdit1.Focus() : Exit Sub
         periodo = " Cessioni Intracomunitarie di Beni periodo " & DateEdit1.EditValue & " - " & DateEdit2.EditValue
-        preparaparametri()
         CIVA = ImageComboBoxEdit4.SelectedIndex + 1
+        preparaparametri()
         Dim TbOrd As DataTable
         Dim DaOrd As SqlDataAdapter
         DaOrd = New SqlDataAdapter("SELECT * FROM TMPINTRA", cnCo)
@@ -125,7 +125,6 @@ Public Class DxVendIntra
         REPORT.DataSource = TbOrd
         REPORT.DataMember = "Ordini"
         REPORT.ShowPrintMarginsWarning = False
-        REPORT.CreateDocument()
         REPORT.CreateDocument()
         REPORT.ShowPreviewDialog
 
