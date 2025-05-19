@@ -6,6 +6,8 @@ Imports DevExpress.XtraEditors
 Imports DXFTELE
 Imports System.IO
 Imports System.Xml
+Imports DevExpress.XtraGrid.Views.Grid
+Imports DevExpress.Utils.Menu
 
 Public Class DxInFtCF
     Private Shared ERifProt, ERifAnno, ERifRiva As Integer
@@ -90,6 +92,8 @@ Public Class DxInFtCF
     Dim OLDPANNO, OLDPAGAM As Int16
     Dim OLDTOTAL As Decimal
     Dim OLDRIT, OLDCSP As Int16
+
+    Dim RwTool As DataRow
 
     Dim Fa As String = "FATT"
     Dim DsFat As DataSet
@@ -2491,7 +2495,12 @@ IIFine:
         ErrorProvider1.SetError(GroupControl37, "")
 
         Dim FileOutput As String = DirLocal & "TMPXMLP.xml"
-        File.Delete(FileOutput)
+        Try
+            File.Delete(FileOutput)
+        Catch ex As Exception
+
+        End Try
+
 
         GridControl2.DataSource = Nothing
         GridControl3.DataSource = Nothing
@@ -3002,6 +3011,52 @@ II:
         EsegueSql("Exec RecuperoRegistrazioni", cnDb)
         Cursor.Current = Cursors.Default
     End Sub
+
+
+
+#End Region
+#Region "CONTEXT MENU"
+    Private Sub GridView2_PopupMenuShowing(sender As Object, e As DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventArgs) Handles GridView2.PopupMenuShowing
+        If UserId <> "3KT" Then Exit Sub ''''CONTROLLARE SE SIAMO SU 3KT
+        Dim view As GridView = CType(sender, GridView)
+        If e.MenuType = DevExpress.XtraGrid.Views.Grid.GridMenuType.Row Then
+            Dim rowHandle As Integer = e.HitInfo.RowHandle
+            e.Menu.Items.Clear()
+            If GridView2.SelectedRowsCount <> 1 Then Exit Sub
+            RwTool = GridView2.GetDataRow(rowHandle)
+            If RwTool("FteRifPri") > 0 Then Exit Sub
+            Dim NewItem As New DXMenuItem("ELIMINA DOCUMENTO FISICO >  NR. " & RwTool("FteNumero") & " DEL " & RwTool("FteData"), AddressOf ELIMINAESTREMIClik, imageList1.Images(27))
+            NewItem.Tag = New RowInfo(view, rowHandle)
+            Dim item As DXMenuItem = NewItem
+            e.Menu.Items.Add(item)
+        End If
+    End Sub
+    REM PER GESTIRE EVENTUALMENTE LA RIGA E LA GRIDVIEW
+    Class RowInfo
+        Public View As GridView
+        Public RowHandle As Integer
+        Public Sub New(ByVal view As GridView, ByVal rowHandle As Integer)
+            Me.RowHandle = rowHandle
+            Me.View = view
+        End Sub
+    End Class
+#Region "ELIMINA DOCUMENTO FISICO"
+    Private Sub ELIMINAESTREMIClik(ByVal sender As Object, ByVal e As System.EventArgs)
+        If GridView2.SelectedRowsCount <> 1 Then Exit Sub
+        Dim mail As String = ""
+        Dim response As MsgBoxResult
+        '  If RwTool("FdcgNumero") IsNot DBNull.Value AndAlso RwTool("FdcgNumero") > 0 Then Exit Sub
+        mail = "ELIMINA   NR. " & RwTool("FteNumero") & " DEL " & RwTool("FteData")
+        response = MsgBox(mail, MsgBoxStyle.YesNo, "<ELIMINA DOCUMENTO>")
+        If response = MsgBoxResult.Yes Then EliminaDocumento()
+    End Sub
+    Sub EliminaDocumento()
+        Dim Str As String = "Delete from TbFte_passiva where FteRif = " & RwTool("FteRif")
+        EsegueSql(Str, cnDb)
+        RwTool.Delete()
+        RwTool.AcceptChanges()
+    End Sub
+#End Region
 #End Region
 
 End Class

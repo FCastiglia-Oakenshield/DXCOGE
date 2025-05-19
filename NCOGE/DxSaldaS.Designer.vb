@@ -20,6 +20,11 @@ Partial Class DxSaldaS
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DxSaldaS))
+        Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.GroupControlB = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
         Me.ButtonXF11 = New DevExpress.XtraEditors.SimpleButton()
@@ -38,7 +43,6 @@ Partial Class DxSaldaS
         Me.GridColumn52 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn53 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.RepositoryItemCheckEdit4 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
         Me.GroupControl5 = New DevExpress.XtraEditors.GroupControl()
         Me.ComboBoxEdit1 = New DevExpress.XtraEditors.ComboBoxEdit()
@@ -53,6 +57,8 @@ Partial Class DxSaldaS
         Me.CheckEdit1 = New DevExpress.XtraEditors.CheckEdit()
         Me.CheckedComboBoxEdit3 = New DevExpress.XtraEditors.CheckedComboBoxEdit()
         Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
+        Me.TextEdit3 = New DevExpress.XtraEditors.TextEdit()
         Me.CheckEdit2 = New DevExpress.XtraEditors.CheckEdit()
         Me.ButtonFF11 = New DevExpress.XtraEditors.SimpleButton()
         Me.GroupControl16 = New DevExpress.XtraEditors.GroupControl()
@@ -80,6 +86,8 @@ Partial Class DxSaldaS
         Me.GridColumn24 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn28 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn29 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemImageComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
         Me.GridColumn30 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn25 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn31 = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -87,6 +95,10 @@ Partial Class DxSaldaS
         Me.RepositoryItemCheckEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.GridColumn32 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemButtonEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
         Me.XtraTabPage1.SuspendLayout()
@@ -107,7 +119,6 @@ Partial Class DxSaldaS
         Me.GroupControl9.SuspendLayout()
         CType(Me.GridControl4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemCheckEdit4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl3.SuspendLayout()
         CType(Me.GroupControl5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -127,6 +138,9 @@ Partial Class DxSaldaS
         CType(Me.CheckedComboBoxEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl8.SuspendLayout()
+        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl2.SuspendLayout()
+        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CheckEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl16.SuspendLayout()
@@ -152,7 +166,9 @@ Partial Class DxSaldaS
         CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemImageComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCheckEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemButtonEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ImageList32
@@ -424,13 +440,13 @@ Partial Class DxSaldaS
         '
         Me.XtraTabControl1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.XtraTabControl1.Size = New System.Drawing.Size(1396, 690)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(1502, 690)
         '
         'XtraTabPage1
         '
         Me.XtraTabPage1.Controls.Add(Me.GridControl3)
         Me.XtraTabPage1.Controls.Add(Me.GroupControlB)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1394, 688)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(1500, 688)
         '
         'ImageDx24
         '
@@ -549,10 +565,10 @@ Partial Class DxSaldaS
         Me.GroupControlB.Controls.Add(Me.GroupControl3)
         Me.GroupControlB.Controls.Add(Me.GroupControl7)
         Me.GroupControlB.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControlB.Location = New System.Drawing.Point(0, 370)
+        Me.GroupControlB.Location = New System.Drawing.Point(0, 347)
         Me.GroupControlB.Name = "GroupControlB"
         Me.GroupControlB.ShowCaption = False
-        Me.GroupControlB.Size = New System.Drawing.Size(1394, 318)
+        Me.GroupControlB.Size = New System.Drawing.Size(1500, 341)
         Me.GroupControlB.TabIndex = 2
         '
         'GroupControl1
@@ -563,11 +579,11 @@ Partial Class DxSaldaS
         Me.GroupControl1.Controls.Add(Me.TextEdit6)
         Me.GroupControl1.Controls.Add(Me.TextEdit5)
         Me.GroupControl1.Controls.Add(Me.TextEdit4)
-        Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupControl1.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(1070, 26)
+        Me.GroupControl1.Size = New System.Drawing.Size(1176, 33)
         Me.GroupControl1.TabIndex = 20
         Me.GroupControl1.Text = "GroupControl4"
         '
@@ -578,7 +594,7 @@ Partial Class DxSaldaS
         Me.ButtonXF11.ImageOptions.ImageIndex = 24
         Me.ButtonXF11.ImageOptions.ImageList = Me.imageList1
         Me.ButtonXF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonXF11.Location = New System.Drawing.Point(662, 7)
+        Me.ButtonXF11.Location = New System.Drawing.Point(665, 10)
         Me.ButtonXF11.Name = "ButtonXF11"
         Me.ButtonXF11.Size = New System.Drawing.Size(20, 18)
         Me.ButtonXF11.TabIndex = 17
@@ -589,7 +605,7 @@ Partial Class DxSaldaS
         Me.TextEdit8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit8.EditValue = 0
         Me.TextEdit8.EnterMoveNextControl = True
-        Me.TextEdit8.Location = New System.Drawing.Point(568, 6)
+        Me.TextEdit8.Location = New System.Drawing.Point(571, 9)
         Me.TextEdit8.Name = "TextEdit8"
         Me.TextEdit8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit8.Properties.Appearance.Options.UseFont = True
@@ -615,10 +631,12 @@ Partial Class DxSaldaS
         Me.TextEdit7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit7.EditValue = ""
         Me.TextEdit7.EnterMoveNextControl = True
-        Me.TextEdit7.Location = New System.Drawing.Point(502, 6)
+        Me.TextEdit7.Location = New System.Drawing.Point(505, 9)
         Me.TextEdit7.Name = "TextEdit7"
         Me.TextEdit7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit7.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit7.Properties.Appearance.Options.UseTextOptions = True
+        Me.TextEdit7.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.TextEdit7.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
         Me.TextEdit7.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.TextEdit7.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
@@ -632,7 +650,7 @@ Partial Class DxSaldaS
         Me.TextEdit6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit6.EditValue = ""
         Me.TextEdit6.EnterMoveNextControl = True
-        Me.TextEdit6.Location = New System.Drawing.Point(458, 6)
+        Me.TextEdit6.Location = New System.Drawing.Point(461, 9)
         Me.TextEdit6.Name = "TextEdit6"
         Me.TextEdit6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit6.Properties.Appearance.Options.UseFont = True
@@ -649,7 +667,7 @@ Partial Class DxSaldaS
         Me.TextEdit5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit5.EditValue = ""
         Me.TextEdit5.EnterMoveNextControl = True
-        Me.TextEdit5.Location = New System.Drawing.Point(58, 6)
+        Me.TextEdit5.Location = New System.Drawing.Point(61, 9)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit5.Properties.Appearance.Options.UseFont = True
@@ -666,7 +684,7 @@ Partial Class DxSaldaS
         Me.TextEdit4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextEdit4.EditValue = ""
         Me.TextEdit4.EnterMoveNextControl = True
-        Me.TextEdit4.Location = New System.Drawing.Point(1, 6)
+        Me.TextEdit4.Location = New System.Drawing.Point(4, 9)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextEdit4.Properties.Appearance.Options.UseFont = True
@@ -682,10 +700,10 @@ Partial Class DxSaldaS
         '
         Me.GroupControl9.Controls.Add(Me.GridControl4)
         Me.GroupControl9.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl9.Location = New System.Drawing.Point(2, 28)
+        Me.GroupControl9.Location = New System.Drawing.Point(2, 36)
         Me.GroupControl9.Name = "GroupControl9"
         Me.GroupControl9.ShowCaption = False
-        Me.GroupControl9.Size = New System.Drawing.Size(1070, 228)
+        Me.GroupControl9.Size = New System.Drawing.Size(1176, 243)
         Me.GroupControl9.TabIndex = 19
         Me.GroupControl9.Text = "GroupControl4"
         '
@@ -696,8 +714,7 @@ Partial Class DxSaldaS
         Me.GridControl4.Location = New System.Drawing.Point(2, 2)
         Me.GridControl4.MainView = Me.GridView4
         Me.GridControl4.Name = "GridControl4"
-        Me.GridControl4.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit4})
-        Me.GridControl4.Size = New System.Drawing.Size(1066, 224)
+        Me.GridControl4.Size = New System.Drawing.Size(1172, 239)
         Me.GridControl4.TabIndex = 8
         Me.GridControl4.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
         '
@@ -880,10 +897,6 @@ Partial Class DxSaldaS
         Me.GridColumn1.FieldName = "ScaNRata"
         Me.GridColumn1.Name = "GridColumn1"
         '
-        'RepositoryItemCheckEdit4
-        '
-        Me.RepositoryItemCheckEdit4.Name = "RepositoryItemCheckEdit4"
-        '
         'GroupControl3
         '
         Me.GroupControl3.Controls.Add(Me.GroupControl5)
@@ -891,9 +904,9 @@ Partial Class DxSaldaS
         Me.GroupControl3.Controls.Add(Me.DateEdit3)
         Me.GroupControl3.Controls.Add(Me.RadioGroup1)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl3.Location = New System.Drawing.Point(2, 256)
+        Me.GroupControl3.Location = New System.Drawing.Point(2, 279)
         Me.GroupControl3.Name = "GroupControl3"
-        Me.GroupControl3.Size = New System.Drawing.Size(1070, 60)
+        Me.GroupControl3.Size = New System.Drawing.Size(1176, 60)
         Me.GroupControl3.TabIndex = 14
         Me.GroupControl3.Text = "SELEZIONA CONTI   e   PERIODO SCADENZE         DAL                               " &
     "    AL"
@@ -1036,10 +1049,10 @@ Partial Class DxSaldaS
         Me.GroupControl7.Controls.Add(Me.GroupControl11)
         Me.GroupControl7.Controls.Add(Me.GroupControl8)
         Me.GroupControl7.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupControl7.Location = New System.Drawing.Point(1072, 2)
+        Me.GroupControl7.Location = New System.Drawing.Point(1178, 2)
         Me.GroupControl7.Name = "GroupControl7"
         Me.GroupControl7.ShowCaption = False
-        Me.GroupControl7.Size = New System.Drawing.Size(320, 314)
+        Me.GroupControl7.Size = New System.Drawing.Size(320, 337)
         Me.GroupControl7.TabIndex = 0
         '
         'GroupControl11
@@ -1054,9 +1067,9 @@ Partial Class DxSaldaS
         Me.GroupControl11.CaptionLocation = DevExpress.Utils.Locations.Top
         Me.GroupControl11.Controls.Add(Me.CheckEdit1)
         Me.GroupControl11.Controls.Add(Me.CheckedComboBoxEdit3)
-        Me.GroupControl11.Location = New System.Drawing.Point(0, -2)
+        Me.GroupControl11.Location = New System.Drawing.Point(0, -6)
         Me.GroupControl11.Name = "GroupControl11"
-        Me.GroupControl11.Size = New System.Drawing.Size(320, 97)
+        Me.GroupControl11.Size = New System.Drawing.Size(320, 72)
         Me.GroupControl11.TabIndex = 15
         Me.GroupControl11.Text = "TIPO PAGAMENTO"
         '
@@ -1064,11 +1077,11 @@ Partial Class DxSaldaS
         '
         Me.CheckEdit1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckEdit1.EnterMoveNextControl = True
-        Me.CheckEdit1.Location = New System.Drawing.Point(108, 54)
+        Me.CheckEdit1.Location = New System.Drawing.Point(108, 45)
         Me.CheckEdit1.Name = "CheckEdit1"
         Me.CheckEdit1.Properties.AutoHeight = False
         Me.CheckEdit1.Properties.Caption = "SALDA CONTI"
-        Me.CheckEdit1.Size = New System.Drawing.Size(113, 33)
+        Me.CheckEdit1.Size = New System.Drawing.Size(113, 22)
         Me.CheckEdit1.TabIndex = 16
         '
         'CheckedComboBoxEdit3
@@ -1089,6 +1102,7 @@ Partial Class DxSaldaS
         '
         'GroupControl8
         '
+        Me.GroupControl8.Controls.Add(Me.GroupControl2)
         Me.GroupControl8.Controls.Add(Me.CheckEdit2)
         Me.GroupControl8.Controls.Add(Me.ButtonFF11)
         Me.GroupControl8.Controls.Add(Me.GroupControl16)
@@ -1100,12 +1114,38 @@ Partial Class DxSaldaS
         Me.GroupControl8.Controls.Add(Me.GroupControl33)
         Me.GroupControl8.Controls.Add(Me.GroupControl99)
         Me.GroupControl8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupControl8.Location = New System.Drawing.Point(2, 91)
+        Me.GroupControl8.Location = New System.Drawing.Point(2, 67)
         Me.GroupControl8.Name = "GroupControl8"
         Me.GroupControl8.ShowCaption = False
-        Me.GroupControl8.Size = New System.Drawing.Size(316, 221)
+        Me.GroupControl8.Size = New System.Drawing.Size(316, 268)
         Me.GroupControl8.TabIndex = 0
         Me.GroupControl8.Text = "GroupControl2"
+        '
+        'GroupControl2
+        '
+        Me.GroupControl2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupControl2.Controls.Add(Me.TextEdit3)
+        Me.GroupControl2.Location = New System.Drawing.Point(2, 136)
+        Me.GroupControl2.Name = "GroupControl2"
+        Me.GroupControl2.Size = New System.Drawing.Size(313, 44)
+        Me.GroupControl2.TabIndex = 16
+        Me.GroupControl2.Text = "DESCRIZIONE"
+        '
+        'TextEdit3
+        '
+        Me.TextEdit3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextEdit3.EditValue = ""
+        Me.TextEdit3.EnterMoveNextControl = True
+        Me.TextEdit3.Location = New System.Drawing.Point(2, 23)
+        Me.TextEdit3.Name = "TextEdit3"
+        Me.TextEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextEdit3.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TextEdit3.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TextEdit3.Properties.MaxLength = 56
+        Me.TextEdit3.Size = New System.Drawing.Size(309, 20)
+        Me.TextEdit3.TabIndex = 0
+        Me.TextEdit3.TabStop = False
         '
         'CheckEdit2
         '
@@ -1134,7 +1174,7 @@ Partial Class DxSaldaS
         Me.ButtonFF11.ImageOptions.ImageIndex = 10
         Me.ButtonFF11.ImageOptions.ImageList = Me.ImageList32
         Me.ButtonFF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonFF11.Location = New System.Drawing.Point(269, 141)
+        Me.ButtonFF11.Location = New System.Drawing.Point(269, 188)
         Me.ButtonFF11.Name = "ButtonFF11"
         Me.ButtonFF11.Size = New System.Drawing.Size(32, 32)
         Me.ButtonFF11.TabIndex = 5
@@ -1152,7 +1192,7 @@ Partial Class DxSaldaS
         Me.GroupControl16.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl16.CaptionLocation = DevExpress.Utils.Locations.Top
         Me.GroupControl16.Controls.Add(Me.TextEdit1)
-        Me.GroupControl16.Location = New System.Drawing.Point(2, 0)
+        Me.GroupControl16.Location = New System.Drawing.Point(2, 1)
         Me.GroupControl16.Name = "GroupControl16"
         Me.GroupControl16.Size = New System.Drawing.Size(197, 48)
         Me.GroupControl16.TabIndex = 14
@@ -1189,7 +1229,7 @@ Partial Class DxSaldaS
         '
         Me.GroupControl77.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupControl77.Controls.Add(Me.TextEdit2)
-        Me.GroupControl77.Location = New System.Drawing.Point(2, 48)
+        Me.GroupControl77.Location = New System.Drawing.Point(2, 49)
         Me.GroupControl77.Name = "GroupControl77"
         Me.GroupControl77.Size = New System.Drawing.Size(101, 44)
         Me.GroupControl77.TabIndex = 0
@@ -1228,7 +1268,7 @@ Partial Class DxSaldaS
         Me.ButtonFF5.ImageOptions.ImageIndex = 4
         Me.ButtonFF5.ImageOptions.ImageList = Me.ImageList32
         Me.ButtonFF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonFF5.Location = New System.Drawing.Point(213, 141)
+        Me.ButtonFF5.Location = New System.Drawing.Point(213, 188)
         Me.ButtonFF5.Name = "ButtonFF5"
         Me.ButtonFF5.Size = New System.Drawing.Size(32, 32)
         Me.ButtonFF5.TabIndex = 6
@@ -1241,7 +1281,7 @@ Partial Class DxSaldaS
         Me.GroupControl66.AppearanceCaption.Options.UseTextOptions = True
         Me.GroupControl66.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl66.Controls.Add(Me.DateEdit1)
-        Me.GroupControl66.Location = New System.Drawing.Point(104, 48)
+        Me.GroupControl66.Location = New System.Drawing.Point(104, 49)
         Me.GroupControl66.Name = "GroupControl66"
         Me.GroupControl66.Size = New System.Drawing.Size(110, 44)
         Me.GroupControl66.TabIndex = 1
@@ -1282,7 +1322,7 @@ Partial Class DxSaldaS
         Me.ButtonF8.ImageOptions.ImageIndex = 7
         Me.ButtonF8.ImageOptions.ImageList = Me.ImageList32
         Me.ButtonF8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.ButtonF8.Location = New System.Drawing.Point(158, 141)
+        Me.ButtonF8.Location = New System.Drawing.Point(158, 188)
         Me.ButtonF8.Name = "ButtonF8"
         Me.ButtonF8.Size = New System.Drawing.Size(32, 32)
         Me.ButtonF8.TabIndex = 12
@@ -1293,7 +1333,7 @@ Partial Class DxSaldaS
         '
         Me.GroupControl87.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupControl87.Controls.Add(Me.ImageComboBoxEdit2)
-        Me.GroupControl87.Location = New System.Drawing.Point(2, 92)
+        Me.GroupControl87.Location = New System.Drawing.Point(2, 94)
         Me.GroupControl87.Name = "GroupControl87"
         Me.GroupControl87.Size = New System.Drawing.Size(212, 44)
         Me.GroupControl87.TabIndex = 2
@@ -1322,7 +1362,7 @@ Partial Class DxSaldaS
         Me.GroupControl33.Controls.Add(Me.TextEdit21)
         Me.GroupControl33.Controls.Add(Me.TextEdit20)
         Me.GroupControl33.Controls.Add(Me.TbLeggi1)
-        Me.GroupControl33.Location = New System.Drawing.Point(3, 178)
+        Me.GroupControl33.Location = New System.Drawing.Point(3, 225)
         Me.GroupControl33.Name = "GroupControl33"
         Me.GroupControl33.Size = New System.Drawing.Size(300, 44)
         Me.GroupControl33.TabIndex = 4
@@ -1380,7 +1420,7 @@ Partial Class DxSaldaS
         Me.GroupControl99.AppearanceCaption.Options.UseTextOptions = True
         Me.GroupControl99.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GroupControl99.Controls.Add(Me.DateEdit2)
-        Me.GroupControl99.Location = New System.Drawing.Point(2, 134)
+        Me.GroupControl99.Location = New System.Drawing.Point(2, 181)
         Me.GroupControl99.Name = "GroupControl99"
         Me.GroupControl99.Size = New System.Drawing.Size(139, 44)
         Me.GroupControl99.TabIndex = 3
@@ -1414,15 +1454,15 @@ Partial Class DxSaldaS
         Me.GridControl3.Location = New System.Drawing.Point(0, 0)
         Me.GridControl3.MainView = Me.GridView3
         Me.GridControl3.Name = "GridControl3"
-        Me.GridControl3.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit3})
-        Me.GridControl3.Size = New System.Drawing.Size(1394, 370)
+        Me.GridControl3.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit3, Me.RepositoryItemButtonEdit1, Me.RepositoryItemImageComboBox1})
+        Me.GridControl3.Size = New System.Drawing.Size(1500, 347)
         Me.GridControl3.TabIndex = 10
         Me.GridControl3.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView3})
         '
         'GridView3
         '
         Me.GridView3.ActiveFilterEnabled = False
-        Me.GridView3.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn26, Me.GridColumn27, Me.GridColumn22, Me.GridColumn2, Me.GridColumn24, Me.GridColumn28, Me.GridColumn29, Me.GridColumn30, Me.GridColumn25, Me.GridColumn31, Me.GridColumn23, Me.GridColumn32, Me.GridColumn3})
+        Me.GridView3.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn26, Me.GridColumn27, Me.GridColumn22, Me.GridColumn2, Me.GridColumn24, Me.GridColumn28, Me.GridColumn29, Me.GridColumn7, Me.GridColumn30, Me.GridColumn25, Me.GridColumn31, Me.GridColumn23, Me.GridColumn32, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6})
         Me.GridView3.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
         Me.GridView3.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None
         Me.GridView3.GridControl = Me.GridControl3
@@ -1480,7 +1520,7 @@ Partial Class DxSaldaS
         Me.GridColumn27.OptionsColumn.TabStop = False
         Me.GridColumn27.Visible = True
         Me.GridColumn27.VisibleIndex = 1
-        Me.GridColumn27.Width = 434
+        Me.GridColumn27.Width = 678
         '
         'GridColumn22
         '
@@ -1598,6 +1638,36 @@ Partial Class DxSaldaS
         Me.GridColumn29.VisibleIndex = 7
         Me.GridColumn29.Width = 63
         '
+        'GridColumn7
+        '
+        Me.GridColumn7.Caption = "SD"
+        Me.GridColumn7.ColumnEdit = Me.RepositoryItemImageComboBox1
+        Me.GridColumn7.FieldName = "SD"
+        Me.GridColumn7.ImageOptions.Alignment = System.Drawing.StringAlignment.Center
+        Me.GridColumn7.Name = "GridColumn7"
+        Me.GridColumn7.OptionsColumn.AllowEdit = False
+        Me.GridColumn7.OptionsColumn.AllowFocus = False
+        Me.GridColumn7.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.[False]
+        Me.GridColumn7.OptionsColumn.AllowMove = False
+        Me.GridColumn7.OptionsColumn.AllowSize = False
+        Me.GridColumn7.OptionsColumn.FixedWidth = True
+        Me.GridColumn7.OptionsColumn.ReadOnly = True
+        Me.GridColumn7.OptionsColumn.TabStop = False
+        Me.GridColumn7.ToolTip = "SITUAZIONE DOCUMENTO"
+        Me.GridColumn7.Visible = True
+        Me.GridColumn7.VisibleIndex = 8
+        Me.GridColumn7.Width = 26
+        '
+        'RepositoryItemImageComboBox1
+        '
+        Me.RepositoryItemImageComboBox1.AutoHeight = False
+        Me.RepositoryItemImageComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemImageComboBox1.ImmediatePopup = True
+        Me.RepositoryItemImageComboBox1.Items.AddRange(New DevExpress.XtraEditors.Controls.ImageComboBoxItem() {New DevExpress.XtraEditors.Controls.ImageComboBoxItem("SITUAZIONE DOCUMENTO", "0", 64)})
+        Me.RepositoryItemImageComboBox1.LargeImages = Me.imageList1
+        Me.RepositoryItemImageComboBox1.Name = "RepositoryItemImageComboBox1"
+        Me.RepositoryItemImageComboBox1.SmallImages = Me.imageList1
+        '
         'GridColumn30
         '
         Me.GridColumn30.AppearanceCell.Font = New System.Drawing.Font("Tahoma", 9.75!)
@@ -1616,7 +1686,7 @@ Partial Class DxSaldaS
         Me.GridColumn30.OptionsColumn.ReadOnly = True
         Me.GridColumn30.OptionsColumn.TabStop = False
         Me.GridColumn30.Visible = True
-        Me.GridColumn30.VisibleIndex = 8
+        Me.GridColumn30.VisibleIndex = 9
         Me.GridColumn30.Width = 78
         '
         'GridColumn25
@@ -1643,8 +1713,8 @@ Partial Class DxSaldaS
         Me.GridColumn25.OptionsColumn.ReadOnly = True
         Me.GridColumn25.OptionsColumn.TabStop = False
         Me.GridColumn25.Visible = True
-        Me.GridColumn25.VisibleIndex = 9
-        Me.GridColumn25.Width = 108
+        Me.GridColumn25.VisibleIndex = 10
+        Me.GridColumn25.Width = 90
         '
         'GridColumn31
         '
@@ -1664,7 +1734,7 @@ Partial Class DxSaldaS
         Me.GridColumn31.OptionsColumn.ReadOnly = True
         Me.GridColumn31.OptionsColumn.TabStop = False
         Me.GridColumn31.Visible = True
-        Me.GridColumn31.VisibleIndex = 10
+        Me.GridColumn31.VisibleIndex = 11
         Me.GridColumn31.Width = 78
         '
         'GridColumn23
@@ -1691,7 +1761,7 @@ Partial Class DxSaldaS
         Me.GridColumn23.OptionsFilter.AllowFilter = False
         Me.GridColumn23.OptionsFilter.ImmediateUpdateAutoFilter = False
         Me.GridColumn23.Visible = True
-        Me.GridColumn23.VisibleIndex = 11
+        Me.GridColumn23.VisibleIndex = 12
         Me.GridColumn23.Width = 20
         '
         'RepositoryItemCheckEdit3
@@ -1737,11 +1807,97 @@ Partial Class DxSaldaS
         Me.GridColumn3.VisibleIndex = 4
         Me.GridColumn3.Width = 110
         '
+        'GridColumn4
+        '
+        Me.GridColumn4.AppearanceCell.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridColumn4.AppearanceCell.Options.UseFont = True
+        Me.GridColumn4.AppearanceCell.Options.UseTextOptions = True
+        Me.GridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.GridColumn4.AppearanceHeader.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridColumn4.AppearanceHeader.Options.UseFont = True
+        Me.GridColumn4.AppearanceHeader.Options.UseTextOptions = True
+        Me.GridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.GridColumn4.Caption = "ACCONTI"
+        Me.GridColumn4.DisplayFormat.FormatString = "n2"
+        Me.GridColumn4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn4.FieldName = "ACCONTI"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.OptionsColumn.AllowEdit = False
+        Me.GridColumn4.OptionsColumn.AllowFocus = False
+        Me.GridColumn4.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.[True]
+        Me.GridColumn4.OptionsColumn.AllowMove = False
+        Me.GridColumn4.OptionsColumn.AllowSize = False
+        Me.GridColumn4.OptionsColumn.FixedWidth = True
+        Me.GridColumn4.OptionsColumn.ReadOnly = True
+        Me.GridColumn4.OptionsColumn.TabStop = False
+        Me.GridColumn4.Width = 90
+        '
+        'GridColumn5
+        '
+        Me.GridColumn5.AppearanceCell.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridColumn5.AppearanceCell.Options.UseFont = True
+        Me.GridColumn5.AppearanceCell.Options.UseTextOptions = True
+        Me.GridColumn5.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.GridColumn5.AppearanceHeader.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridColumn5.AppearanceHeader.Options.UseFont = True
+        Me.GridColumn5.AppearanceHeader.Options.UseTextOptions = True
+        Me.GridColumn5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.GridColumn5.Caption = "TOTALE FT"
+        Me.GridColumn5.DisplayFormat.FormatString = "n2"
+        Me.GridColumn5.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn5.FieldName = "TOTALEDOC"
+        Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.OptionsColumn.AllowEdit = False
+        Me.GridColumn5.OptionsColumn.AllowFocus = False
+        Me.GridColumn5.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.[True]
+        Me.GridColumn5.OptionsColumn.AllowMove = False
+        Me.GridColumn5.OptionsColumn.AllowSize = False
+        Me.GridColumn5.OptionsColumn.FixedWidth = True
+        Me.GridColumn5.OptionsColumn.ReadOnly = True
+        Me.GridColumn5.OptionsColumn.TabStop = False
+        Me.GridColumn5.Width = 90
+        '
+        'GridColumn6
+        '
+        Me.GridColumn6.AppearanceCell.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridColumn6.AppearanceCell.Options.UseFont = True
+        Me.GridColumn6.AppearanceCell.Options.UseTextOptions = True
+        Me.GridColumn6.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.GridColumn6.AppearanceHeader.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.GridColumn6.AppearanceHeader.Options.UseFont = True
+        Me.GridColumn6.AppearanceHeader.Options.UseTextOptions = True
+        Me.GridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.GridColumn6.Caption = "RESIDUO"
+        Me.GridColumn6.DisplayFormat.FormatString = "n2"
+        Me.GridColumn6.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn6.FieldName = "RESIDUO"
+        Me.GridColumn6.Name = "GridColumn6"
+        Me.GridColumn6.OptionsColumn.AllowEdit = False
+        Me.GridColumn6.OptionsColumn.AllowFocus = False
+        Me.GridColumn6.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.[True]
+        Me.GridColumn6.OptionsColumn.AllowMove = False
+        Me.GridColumn6.OptionsColumn.AllowSize = False
+        Me.GridColumn6.OptionsColumn.FixedWidth = True
+        Me.GridColumn6.OptionsColumn.ReadOnly = True
+        Me.GridColumn6.OptionsColumn.TabStop = False
+        Me.GridColumn6.Width = 90
+        '
+        'RepositoryItemButtonEdit1
+        '
+        Me.RepositoryItemButtonEdit1.AutoHeight = False
+        EditorButtonImageOptions1.ImageIndex = 64
+        EditorButtonImageOptions1.ImageList = Me.imageList1
+        SerializableAppearanceObject1.Options.UseImage = True
+        SerializableAppearanceObject1.Options.UseTextOptions = True
+        SerializableAppearanceObject1.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.RepositoryItemButtonEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "SITUAZIONE DOCUMENTO", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "SITUAZIONE DOCUMENTO", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        Me.RepositoryItemButtonEdit1.Name = "RepositoryItemButtonEdit1"
+        '
         'DxSaldaS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1392, 690)
+        Me.ClientSize = New System.Drawing.Size(1503, 690)
         Me.Name = "DxSaldaS"
         Me.Text = "DxSaldaS"
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1764,7 +1920,6 @@ Partial Class DxSaldaS
         Me.GroupControl9.ResumeLayout(False)
         CType(Me.GridControl4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemCheckEdit4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl3.ResumeLayout(False)
         CType(Me.GroupControl5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1784,6 +1939,9 @@ Partial Class DxSaldaS
         CType(Me.CheckedComboBoxEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl8.ResumeLayout(False)
+        CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl2.ResumeLayout(False)
+        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CheckEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl16.ResumeLayout(False)
@@ -1809,7 +1967,9 @@ Partial Class DxSaldaS
         CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridControl3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemImageComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCheckEdit3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemButtonEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1853,7 +2013,6 @@ Partial Class DxSaldaS
     Friend WithEvents GridColumn50 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn52 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn53 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents RepositoryItemCheckEdit4 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
     Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents ButtonXF11 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents TextEdit8 As DevExpress.XtraEditors.TextEdit
@@ -1880,4 +2039,12 @@ Partial Class DxSaldaS
     Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GroupControl2 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents TextEdit3 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemButtonEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
+    Friend WithEvents RepositoryItemImageComboBox1 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
 End Class

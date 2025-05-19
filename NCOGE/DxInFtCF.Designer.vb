@@ -133,6 +133,8 @@ Partial Class DxInFtCF
         Me.GridColumn19 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn22 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
+        Me.GridColumn35 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn36 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemMemoEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
         Me.RepositoryItemButtonEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
         Me.RepositoryItemTextEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTextEdit()
@@ -1980,7 +1982,7 @@ Partial Class DxInFtCF
         '
         Me.GridView2.Appearance.HeaderPanel.Options.UseImage = True
         Me.GridView2.ColumnPanelRowHeight = 48
-        Me.GridView2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn15, Me.GridColumn17, Me.GridColumn18, Me.GridColumn20, Me.GridColumn21, Me.GridColumn27, Me.GridColumn28, Me.GridColumn32, Me.GridColumn33, Me.GridColumn5, Me.GridColumn34, Me.GridColumn19, Me.GridColumn22})
+        Me.GridView2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn15, Me.GridColumn17, Me.GridColumn18, Me.GridColumn20, Me.GridColumn21, Me.GridColumn27, Me.GridColumn28, Me.GridColumn32, Me.GridColumn33, Me.GridColumn5, Me.GridColumn34, Me.GridColumn19, Me.GridColumn22, Me.GridColumn35, Me.GridColumn36})
         Me.GridView2.GridControl = Me.GridControl2
         Me.GridView2.Name = "GridView2"
         Me.GridView2.OptionsCustomization.AllowColumnMoving = False
@@ -2205,6 +2207,18 @@ Partial Class DxInFtCF
         Me.RepositoryItemCheckEdit1.AutoHeight = False
         Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
         Me.RepositoryItemCheckEdit1.ReadOnly = True
+        '
+        'GridColumn35
+        '
+        Me.GridColumn35.Caption = "RIFERRIF"
+        Me.GridColumn35.FieldName = "FteRif"
+        Me.GridColumn35.Name = "GridColumn35"
+        '
+        'GridColumn36
+        '
+        Me.GridColumn36.Caption = "RIFERPRI"
+        Me.GridColumn36.FieldName = "FteRifPri"
+        Me.GridColumn36.Name = "GridColumn36"
         '
         'RepositoryItemMemoEdit2
         '
@@ -3058,4 +3072,6 @@ Partial Class DxInFtCF
     Friend WithEvents GroupControl21 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents ImageComboBoxEdit5 As DevExpress.XtraEditors.ImageComboBoxEdit
     Friend WithEvents GridColumn34 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn35 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn36 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

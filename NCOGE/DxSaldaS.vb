@@ -60,6 +60,7 @@ Public Class DxSaldaS
     Dim Em As New DevExpress.XtraEditors.Controls.CheckedListBoxItem
     Dim RwX As DataRow
     Dim RwY As DataRow
+    Dim RwTool As datarow
 
 
     Private Sub DxSaldaS_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown, ButtonF5.Click
@@ -170,6 +171,7 @@ Public Class DxSaldaS
         PPulisci()
     End Sub
     Sub PPulisci()
+        TextEdit3.EditValue = ""
         TextEdit4.EditValue = ""
         TextEdit5.EditValue = ""
         TextEdit6.EditValue = ""
@@ -428,7 +430,6 @@ Oltre:
         dataRd.Close()
     End Function
 
-
     Function AggiustaConto(ByRef CodCo As String) As Boolean
         Dim x As Int16
         For x = 1 To Len(CodCo)
@@ -578,10 +579,10 @@ Oltre:
             p6.Value = ""
             p7.Value = 0
             p8.Value = 0
-            p11.Value = ""
+            p11.Value = Mid(TextEdit3.EditValue, 1, 24)
             p13.Value = ""
             p14.Value = CDate(DateEdit2.EditValue)
-            p15.Value = ""
+            p15.Value = RTrim(Mid(TextEdit3.EditValue, 25, 32))
             p16.Value = 0
             p17.Value = 0
             p18.Value = 0
@@ -909,4 +910,27 @@ Attesa:
         ResetIdP()
         Partita(1, 0)
     End Function
+#Region "SITUAZIONE DEL DOCUMENTO"
+    Private Sub gridControl3_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles GridControl3.MouseMove
+        ShowHitInfo(GridView3.CalcHitInfo(New Point(e.X, e.Y)))
+    End Sub
+    Private Sub ShowHitInfo(ByVal hi As DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo)
+        Dim cgv As DevExpress.XtraGrid.Views.Base.ColumnView = CType(GridControl3.MainView, DevExpress.XtraGrid.Views.Base.ColumnView)
+        Dim IT As Integer = 0
+        iset = hi.RowHandle
+        If iset < 0 Then Exit Sub
+        If hi.Column Is Nothing Then Exit Sub
+        If hi.Column.FieldName = "SD" Then
+            RwTool = GridView3.GetDataRow(iset)
+            Dim Str As String = "Select * from CRG1 where ScaConto ='" & RwTool("ScaConto") & "' and ScaNdoc=" & RwTool("ScaNdoc") & " And ScaDdoc = '" & RwTool("ScaDdoc") & "'"
+            Cmd = New SqlCommand(Str, cnCo)
+            dataRd = Cmd.ExecuteReader
+            While dataRd.Read
+                RepositoryItemImageComboBox1.Items(0).Description = " (TOTALE DOCUMENTO € " & dataRd("TOTALEDOC") & " ACCONTI € " & dataRd("ACCONTI") & " RESIDUO € " & dataRd("RESIDUO") & ")"
+            End While
+            dataRd.Close()
+        End If
+    End Sub
+#End Region
+
 End Class

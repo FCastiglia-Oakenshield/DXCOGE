@@ -7,13 +7,13 @@ Imports DevExpress.XtraReports.UI
 
 Public Class DxBilBil
 
-    Dim sw, MaxEse, EseFormato(5), TipoStampa, EseBilChi(5), CauChiusura As Int16
+    Dim sw, MaxEse, EseFormato(10), TipoStampa, EseBilChi(10), CauChiusura As Int16
     Dim IdBlk As Int32
     Dim OkFlash As Boolean
     Dim Quote As Decimal = 0
     Dim Ammortamenti As String = ""
-    Dim EseDal(5), EseAl(5), UltimaApertura As Date
-    Dim EseProg(5), EseSppp(5), EseClFo(5), EseSdo(5), EseQuote(5) As Boolean
+    Dim EseDal(10), EseAl(10), UltimaApertura As Date
+    Dim EseProg(10), EseSppp(10), EseClFo(10), EseSdo(10), EseQuote(10) As Boolean
     Dim Rpt As New ReportClass
     Dim Rpt2 As New ConfSppp
     Dim frm As New LpLp
@@ -35,7 +35,7 @@ Public Class DxBilBil
             UltimaApertura = dataRd.Item(0)
         End While
         dataRd.Close()
-        Cmd = New SqlCommand("SELECT top 5 * from TbEse Order by EseAnno desc", cnCo)
+        Cmd = New SqlCommand("SELECT top 10 * from TbEse Order by EseAnno desc", cnCo)
         ComboBoxEdit1.Properties.Items.Clear()
         Dim x As Int16
         MaxEse = -1

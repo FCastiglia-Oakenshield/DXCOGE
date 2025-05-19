@@ -469,9 +469,9 @@ Partial Class DxBilBil
         Me.ButtonF9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF9.ImageIndex = 9
-        Me.ButtonF9.ImageList = Me.ImageDx24
-        Me.ButtonF9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF9.ImageOptions.ImageIndex = 9
+        Me.ButtonF9.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF9.Location = New System.Drawing.Point(594, 149)
         Me.ButtonF9.Name = "ButtonF9"
         Me.ButtonF9.Size = New System.Drawing.Size(32, 32)
@@ -481,6 +481,7 @@ Partial Class DxBilBil
         'CheckEdit12
         '
         Me.CheckEdit12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckEdit12.EnterMoveNextControl = True
         Me.CheckEdit12.Location = New System.Drawing.Point(549, 115)
         Me.CheckEdit12.Name = "CheckEdit12"
         Me.CheckEdit12.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -530,7 +531,7 @@ Partial Class DxBilBil
         Me.DateEdit7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit7.EditValue = Nothing
         Me.DateEdit7.EnterMoveNextControl = True
-        Me.DateEdit7.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit7.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit7.Name = "DateEdit7"
         Me.DateEdit7.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -564,7 +565,7 @@ Partial Class DxBilBil
         Me.DateEdit6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit6.EditValue = Nothing
         Me.DateEdit6.EnterMoveNextControl = True
-        Me.DateEdit6.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit6.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit6.Name = "DateEdit6"
         Me.DateEdit6.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -598,7 +599,7 @@ Partial Class DxBilBil
         Me.DateEdit5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit5.EditValue = Nothing
         Me.DateEdit5.EnterMoveNextControl = True
-        Me.DateEdit5.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit5.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit5.Name = "DateEdit5"
         Me.DateEdit5.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -632,7 +633,7 @@ Partial Class DxBilBil
         Me.DateEdit4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit4.EditValue = Nothing
         Me.DateEdit4.EnterMoveNextControl = True
-        Me.DateEdit4.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit4.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit4.Name = "DateEdit4"
         Me.DateEdit4.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -692,7 +693,7 @@ Partial Class DxBilBil
         Me.DateEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit3.EditValue = Nothing
         Me.DateEdit3.EnterMoveNextControl = True
-        Me.DateEdit3.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit3.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit3.Name = "DateEdit3"
         Me.DateEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -726,7 +727,7 @@ Partial Class DxBilBil
         Me.DateEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DateEdit2.EditValue = Nothing
         Me.DateEdit2.EnterMoveNextControl = True
-        Me.DateEdit2.Location = New System.Drawing.Point(2, 21)
+        Me.DateEdit2.Location = New System.Drawing.Point(2, 23)
         Me.DateEdit2.Name = "DateEdit2"
         Me.DateEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window
         Me.DateEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
