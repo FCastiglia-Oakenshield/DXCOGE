@@ -29,6 +29,8 @@ Partial Class InsFoFte
         Me.GroupControl4 = New DevExpress.XtraEditors.GroupControl()
         Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
         Me.GroupControl5 = New DevExpress.XtraEditors.GroupControl()
+        Me.GroupControl18 = New DevExpress.XtraEditors.GroupControl()
+        Me.TextEdit9 = New DevExpress.XtraEditors.TextEdit()
         Me.GroupControl8 = New DevExpress.XtraEditors.GroupControl()
         Me.TextEdit5 = New DevExpress.XtraEditors.TextEdit()
         Me.GroupControl9 = New DevExpress.XtraEditors.GroupControl()
@@ -84,8 +86,6 @@ Partial Class InsFoFte
         Me.TextEdit24 = New DevExpress.XtraEditors.TextEdit()
         Me.GroupControl27 = New DevExpress.XtraEditors.GroupControl()
         Me.ComboBoxEdit4 = New DevExpress.XtraEditors.ComboBoxEdit()
-        Me.GroupControl18 = New DevExpress.XtraEditors.GroupControl()
-        Me.TextEdit9 = New DevExpress.XtraEditors.TextEdit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,6 +99,9 @@ Partial Class InsFoFte
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl5.SuspendLayout()
+        CType(Me.GroupControl18, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl18.SuspendLayout()
+        CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl8.SuspendLayout()
         CType(Me.TextEdit5.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -155,9 +158,6 @@ Partial Class InsFoFte
         CType(Me.GroupControl27, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl27.SuspendLayout()
         CType(Me.ComboBoxEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GroupControl18, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupControl18.SuspendLayout()
-        CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupControl1
@@ -258,6 +258,30 @@ Partial Class InsFoFte
         Me.GroupControl5.Size = New System.Drawing.Size(782, 48)
         Me.GroupControl5.TabIndex = 1
         Me.GroupControl5.Text = "GroupControl5"
+        '
+        'GroupControl18
+        '
+        Me.GroupControl18.Controls.Add(Me.TextEdit9)
+        Me.GroupControl18.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupControl18.Location = New System.Drawing.Point(612, 2)
+        Me.GroupControl18.Name = "GroupControl18"
+        Me.GroupControl18.Size = New System.Drawing.Size(170, 44)
+        Me.GroupControl18.TabIndex = 8
+        Me.GroupControl18.Text = "PARTITA IVA ESTERA"
+        '
+        'TextEdit9
+        '
+        Me.TextEdit9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextEdit9.EnterMoveNextControl = True
+        Me.TextEdit9.Location = New System.Drawing.Point(2, 23)
+        Me.TextEdit9.Name = "TextEdit9"
+        Me.TextEdit9.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextEdit9.Properties.Appearance.Options.UseFont = True
+        Me.TextEdit9.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
+        Me.TextEdit9.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.TextEdit9.Properties.MaxLength = 20
+        Me.TextEdit9.Size = New System.Drawing.Size(166, 20)
+        Me.TextEdit9.TabIndex = 0
         '
         'GroupControl8
         '
@@ -424,6 +448,8 @@ Partial Class InsFoFte
         Me.TextEdit00.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.TextEdit00.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.TextEdit00.Properties.MaxLength = 5
+        Me.TextEdit00.Properties.ReadOnly = True
+        Me.TextEdit00.Properties.UseReadOnlyAppearance = False
         Me.TextEdit00.Size = New System.Drawing.Size(124, 20)
         Me.TextEdit00.TabIndex = 0
         '
@@ -957,30 +983,6 @@ Partial Class InsFoFte
         Me.ComboBoxEdit4.Size = New System.Drawing.Size(318, 22)
         Me.ComboBoxEdit4.TabIndex = 8
         '
-        'GroupControl18
-        '
-        Me.GroupControl18.Controls.Add(Me.TextEdit9)
-        Me.GroupControl18.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupControl18.Location = New System.Drawing.Point(612, 2)
-        Me.GroupControl18.Name = "GroupControl18"
-        Me.GroupControl18.Size = New System.Drawing.Size(170, 44)
-        Me.GroupControl18.TabIndex = 8
-        Me.GroupControl18.Text = "PARTITA IVA ESTERA"
-        '
-        'TextEdit9
-        '
-        Me.TextEdit9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextEdit9.EnterMoveNextControl = True
-        Me.TextEdit9.Location = New System.Drawing.Point(2, 23)
-        Me.TextEdit9.Name = "TextEdit9"
-        Me.TextEdit9.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextEdit9.Properties.Appearance.Options.UseFont = True
-        Me.TextEdit9.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Yellow
-        Me.TextEdit9.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.TextEdit9.Properties.MaxLength = 20
-        Me.TextEdit9.Size = New System.Drawing.Size(166, 20)
-        Me.TextEdit9.TabIndex = 0
-        '
         'InsFoFte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1012,6 +1014,9 @@ Partial Class InsFoFte
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl5.ResumeLayout(False)
+        CType(Me.GroupControl18, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl18.ResumeLayout(False)
+        CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl8.ResumeLayout(False)
         CType(Me.TextEdit5.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1068,9 +1073,6 @@ Partial Class InsFoFte
         CType(Me.GroupControl27, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl27.ResumeLayout(False)
         CType(Me.ComboBoxEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GroupControl18, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupControl18.ResumeLayout(False)
-        CType(Me.TextEdit9.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -127,6 +127,7 @@ Public Class InsFoFte
     Dim MIGLIO As Integer = -1
     Dim PagCod As Int16 = 0
     Dim Ultimo As String = ""
+    Dim UltCod As Int32 = 0
     Private Sub AnagFor_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
         LeggiTabelle()
         cargo_ultimi()
@@ -154,6 +155,7 @@ Public Class InsFoFte
         BarStaticItem7.Caption = gruppi.ult(6).ToString("00000;#;#")
         BarStaticItem8.Caption = gruppi.ult(7).ToString("00000;#;#")
         BarStaticItem9.Caption = gruppi.ult(8).ToString("00000;#;#")
+        UltCod = gruppi.ult(0)
     End Sub
     Private Function leggi_ultimi(ByVal CLFO As String) As gruppiclfo
         Dim strselect As String = "select * from TbGrp where GrpCod = '" & CLFO & "'"
@@ -222,6 +224,8 @@ Public Class InsFoFte
         End If
         If ComboBoxEdit4.Properties.Items.Count = 2 Then ComboBoxEdit4.SelectedIndex = 1 Else ComboBoxEdit4.SelectedIndex = 0
         CheckEdit1.Checked = False
+
+        TextEdit00.EditValue = UltCod + 1
     End Sub
     Private Function LeggiAbiCab(ByVal Abi As Int32, ByVal Cab As Int32) As String
         LeggiAbiCab = ""
@@ -327,6 +331,7 @@ Public Class InsFoFte
         MessageBox.Show(Mail, contesto, MessageBoxButtons.OK, MessageBoxIcon.Warning)
     End Sub
     Private Sub registra()
+        TextEdit00.EditValue = NuovoCodiceFornitore()
         ScriviAna()
         ScriviFor()
         scrivi_ultimi("FO")
@@ -509,5 +514,18 @@ Public Class InsFoFte
         Catch ex As Exception
         End Try
     End Sub
+#Region "CODICE FORNITORE AUTOMATICO"
+    Private Function NuovoCodiceFornitore() As String
+        Dim Ultimo As Int32
 
+        Cmd = New SqlCommand("SELECT GrpUl1 from TbGrp WHERE GrpCod = 'FO'", cnCo)
+        Ultimo = Cmd.ExecuteScalar
+
+        Ultimo = Ultimo + 1
+        Cmd = New SqlCommand("UPDATE TbGrp SET GrpUl1 = " & Ultimo & " WHERE GrpCod = 'FO'", cnCo)
+        Cmd.ExecuteNonQuery()
+
+        Return Ultimo.ToString.PadLeft(5, "0")
+    End Function
+#End Region
 End Class
