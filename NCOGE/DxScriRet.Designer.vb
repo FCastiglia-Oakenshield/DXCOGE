@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class DxScriRet
     Inherits DXBASE.XWinDxBa
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,7 +17,7 @@ Partial Class DxScriRet
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DxScriRet))
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
@@ -53,6 +53,7 @@ Partial Class DxScriRet
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,12 +65,15 @@ Partial Class DxScriRet
         CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl2.SuspendLayout()
         CType(Me.DateNavigator3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateNavigator3.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl88, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl88.SuspendLayout()
         CType(Me.DateNavigator2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateNavigator2.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl3.SuspendLayout()
         CType(Me.DateNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateNavigator1.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl7.SuspendLayout()
         CType(Me.GroupControl4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -338,7 +342,6 @@ Partial Class DxScriRet
         '
         Me.XtraTabPage1.Controls.Add(Me.GroupControl4)
         Me.XtraTabPage1.Controls.Add(Me.GroupControl1)
-        Me.XtraTabPage1.Size = New System.Drawing.Size(1002, 650)
         '
         'ImageDx24
         '
@@ -370,6 +373,73 @@ Partial Class DxScriRet
         Me.ImageDx24.Images.SetKeyName(24, "A3.png")
         Me.ImageDx24.Images.SetKeyName(25, "A4.png")
         '
+        'ImageS32
+        '
+        Me.ImageS32.ImageStream = CType(resources.GetObject("ImageS32.ImageStream"), DevExpress.Utils.ImageCollectionStreamer)
+        Me.ImageS32.Images.SetKeyName(0, "f1_triangle_green.png")
+        Me.ImageS32.Images.SetKeyName(1, "f1_down.png")
+        Me.ImageS32.Images.SetKeyName(2, "f2_up.png")
+        Me.ImageS32.Images.SetKeyName(3, "f3_delete.png")
+        Me.ImageS32.Images.SetKeyName(4, "f4.png")
+        Me.ImageS32.Images.SetKeyName(5, "f5_reset.png")
+        Me.ImageS32.Images.SetKeyName(6, "f6_edit.png")
+        Me.ImageS32.Images.SetKeyName(7, "f7_new.png")
+        Me.ImageS32.Images.SetKeyName(8, "f8_view.png")
+        Me.ImageS32.Images.SetKeyName(9, "printer_view.png")
+        Me.ImageS32.Images.SetKeyName(10, "f10_add.png")
+        Me.ImageS32.Images.SetKeyName(11, "f11_ok.png")
+        Me.ImageS32.Images.SetKeyName(12, "f12_information.png")
+        Me.ImageS32.Images.SetKeyName(13, "printer_ok.png")
+        Me.ImageS32.Images.SetKeyName(14, "f7.png")
+        Me.ImageS32.Images.SetKeyName(15, "f9.png")
+        Me.ImageS32.Images.SetKeyName(16, "Excel.png")
+        Me.ImageS32.Images.SetKeyName(17, "save_as.png")
+        '
+        'ImageS16
+        '
+        Me.ImageS16.ImageStream = CType(resources.GetObject("ImageS16.ImageStream"), DevExpress.Utils.ImageCollectionStreamer)
+        Me.ImageS16.Images.SetKeyName(0, "selection16_reset.png")
+        Me.ImageS16.Images.SetKeyName(1, "F1.png")
+        Me.ImageS16.Images.SetKeyName(2, "F2.png")
+        Me.ImageS16.Images.SetKeyName(3, "F3.png")
+        Me.ImageS16.Images.SetKeyName(4, "selection16_reset.png")
+        Me.ImageS16.Images.SetKeyName(5, "F5.png")
+        Me.ImageS16.Images.SetKeyName(6, "selection16_reset.png")
+        Me.ImageS16.Images.SetKeyName(7, "selection16_reset.png")
+        Me.ImageS16.Images.SetKeyName(8, "F8.png")
+        Me.ImageS16.Images.SetKeyName(9, "F9.png")
+        Me.ImageS16.Images.SetKeyName(10, "selection16_reset.png")
+        Me.ImageS16.Images.SetKeyName(11, "F11.png")
+        '
+        'ImageDxList32
+        '
+        Me.ImageDxList32.ImageStream = CType(resources.GetObject("ImageDxList32.ImageStream"), DevExpress.Utils.ImageCollectionStreamer)
+        Me.ImageDxList32.Images.SetKeyName(0, "F1_right.png")
+        Me.ImageDxList32.Images.SetKeyName(1, "F2_left.png")
+        Me.ImageDxList32.Images.SetKeyName(2, "F3_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(3, "F4.png")
+        Me.ImageDxList32.Images.SetKeyName(4, "F5_refresh.png")
+        Me.ImageDxList32.Images.SetKeyName(5, "F6_edit_edit.png")
+        Me.ImageDxList32.Images.SetKeyName(6, "F7_new.png")
+        Me.ImageDxList32.Images.SetKeyName(7, "F8_view.png")
+        Me.ImageDxList32.Images.SetKeyName(8, "F9_print.png")
+        Me.ImageDxList32.Images.SetKeyName(9, "keyboard_key_plus.png")
+        Me.ImageDxList32.Images.SetKeyName(10, "F11_ok.png")
+        Me.ImageDxList32.Images.SetKeyName(11, "information.png")
+        Me.ImageDxList32.Images.SetKeyName(12, "printer.png")
+        Me.ImageDxList32.Images.SetKeyName(13, "checkbox.png")
+        Me.ImageDxList32.Images.SetKeyName(14, "checkbox_unchecked.png")
+        Me.ImageDxList32.Images.SetKeyName(15, "Excel.png")
+        Me.ImageDxList32.Images.SetKeyName(16, "floppy_disk.png")
+        Me.ImageDxList32.Images.SetKeyName(17, "checks.png")
+        Me.ImageDxList32.Images.SetKeyName(18, "nav_refresh.png")
+        Me.ImageDxList32.Images.SetKeyName(19, "nav_undo.png")
+        Me.ImageDxList32.Images.SetKeyName(20, "scanner.png")
+        Me.ImageDxList32.Images.SetKeyName(21, "selection_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(22, "Scan Document 32 h p_add.png")
+        Me.ImageDxList32.Images.SetKeyName(23, "Scan Document 32 h p_delete.png")
+        Me.ImageDxList32.Images.SetKeyName(24, "ok.png")
+        '
         'GroupControl1
         '
         Me.GroupControl1.Controls.Add(Me.GridControl1)
@@ -377,7 +447,7 @@ Partial Class DxScriRet
         Me.GroupControl1.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl1.Name = "GroupControl1"
         Me.GroupControl1.ShowCaption = False
-        Me.GroupControl1.Size = New System.Drawing.Size(600, 650)
+        Me.GroupControl1.Size = New System.Drawing.Size(600, 654)
         Me.GroupControl1.TabIndex = 0
         Me.GroupControl1.Text = "GroupControl1"
         '
@@ -386,11 +456,10 @@ Partial Class DxScriRet
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.FormsUseDefaultLookAndFeel = True
         Me.GridControl1.Location = New System.Drawing.Point(2, 2)
-        Me.GridControl1.LookAndFeel.SkinName = "Office 2007 Black"
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemImageComboBox1, Me.RepositoryItemImageComboBox2, Me.RepositoryItemCheckEdit2, Me.RepositoryItemImageComboBox6})
-        Me.GridControl1.Size = New System.Drawing.Size(596, 646)
+        Me.GridControl1.Size = New System.Drawing.Size(596, 650)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.TabStop = False
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -402,7 +471,6 @@ Partial Class DxScriRet
         Me.GridView1.CustomizationFormBounds = New System.Drawing.Rectangle(798, 464, 216, 178)
         Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView1.GridControl = Me.GridControl1
-        Me.GridView1.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsNavigation.EnterMoveNextColumn = True
         Me.GridView1.OptionsPrint.ExpandAllGroups = False
@@ -411,8 +479,8 @@ Partial Class DxScriRet
         Me.GridView1.OptionsSelection.MultiSelect = True
         Me.GridView1.OptionsView.EnableAppearanceEvenRow = True
         Me.GridView1.OptionsView.EnableAppearanceOddRow = True
+        Me.GridView1.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.Hidden
         Me.GridView1.OptionsView.ShowGroupPanel = False
-        Me.GridView1.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.[Default]
         '
         'GridColumn21
         '
@@ -527,32 +595,83 @@ Partial Class DxScriRet
         Me.GroupControl2.Controls.Add(Me.GroupControl88)
         Me.GroupControl2.Controls.Add(Me.DateNavigator2)
         Me.GroupControl2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupControl2.Location = New System.Drawing.Point(2, 185)
+        Me.GroupControl2.Location = New System.Drawing.Point(2, 200)
         Me.GroupControl2.Name = "GroupControl2"
-        Me.GroupControl2.Size = New System.Drawing.Size(398, 141)
+        Me.GroupControl2.Size = New System.Drawing.Size(402, 176)
         Me.GroupControl2.TabIndex = 1
         Me.GroupControl2.Text = "DUPLICAZIONE SCRITTURE"
         '
         'DateNavigator3
         '
-        Me.DateNavigator3.AppearanceHeader.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateNavigator3.AppearanceHeader.Options.UseFont = True
+        Me.DateNavigator3.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateNavigator3.Appearance.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.Button.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.Button.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.ButtonHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.ButtonHighlighted.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.ButtonPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.ButtonPressed.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.CalendarHeader.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateNavigator3.CalendarAppearance.CalendarHeader.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCell.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCell.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellDisabled.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellDisabled.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellHighlighted.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellHoliday.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellHoliday.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellInactive.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellInactive.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellPressed.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellSelected.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellSelected.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellSpecial.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellSpecial.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellSpecialHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellSpecialHighlighted.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellSpecialPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellSpecialPressed.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellSpecialSelected.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellSpecialSelected.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.DayCellToday.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.DayCellToday.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.Header.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.Header.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.HeaderHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.HeaderHighlighted.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.HeaderPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.HeaderPressed.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.WeekDay.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.WeekDay.Options.UseFont = True
+        Me.DateNavigator3.CalendarAppearance.WeekNumber.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarAppearance.WeekNumber.Options.UseFont = True
+        Me.DateNavigator3.CalendarTimeProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarTimeProperties.Appearance.Options.UseFont = True
+        Me.DateNavigator3.CalendarTimeProperties.AppearanceDisabled.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarTimeProperties.AppearanceDisabled.Options.UseFont = True
+        Me.DateNavigator3.CalendarTimeProperties.AppearanceFocused.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarTimeProperties.AppearanceFocused.Options.UseFont = True
+        Me.DateNavigator3.CalendarTimeProperties.AppearanceReadOnly.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator3.CalendarTimeProperties.AppearanceReadOnly.Options.UseFont = True
+        Me.DateNavigator3.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateNavigator3.CellPadding = New System.Windows.Forms.Padding(2)
         Me.DateNavigator3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DateNavigator3.DateTime = New Date(2010, 3, 30, 0, 0, 0, 0)
-        Me.DateNavigator3.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateNavigator3.HotDate = Nothing
-        Me.DateNavigator3.Location = New System.Drawing.Point(20, 84)
-        Me.DateNavigator3.Multiselect = False
+        Me.DateNavigator3.EditValue = New Date(2010, 3, 30, 0, 0, 0, 0)
+        Me.DateNavigator3.FirstDayOfWeek = System.DayOfWeek.Monday
+        Me.DateNavigator3.Location = New System.Drawing.Point(20, 103)
         Me.DateNavigator3.Name = "DateNavigator3"
-        Me.DateNavigator3.CellPadding = New System.Windows.Forms.Padding(2)
-        Me.DateNavigator3.Size = New System.Drawing.Size(275, 32)
+        Me.DateNavigator3.SelectionMode = DevExpress.XtraEditors.Repository.CalendarSelectionMode.[Single]
+        Me.DateNavigator3.Size = New System.Drawing.Size(275, 49)
         Me.DateNavigator3.TabIndex = 4
         '
         'GroupControl88
         '
         Me.GroupControl88.Controls.Add(Me.ButtonFF1)
         Me.GroupControl88.Controls.Add(Me.ButtonFF5)
-        Me.GroupControl88.Location = New System.Drawing.Point(330, 29)
+        Me.GroupControl88.Location = New System.Drawing.Point(330, 43)
         Me.GroupControl88.Name = "GroupControl88"
         Me.GroupControl88.ShowCaption = False
         Me.GroupControl88.Size = New System.Drawing.Size(44, 95)
@@ -569,9 +688,9 @@ Partial Class DxScriRet
         Me.ButtonFF1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonFF1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonFF1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonFF1.ImageIndex = 0
-        Me.ButtonFF1.ImageList = Me.ImageS32
-        Me.ButtonFF1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonFF1.ImageOptions.ImageIndex = 0
+        Me.ButtonFF1.ImageOptions.ImageList = Me.ImageS32
+        Me.ButtonFF1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonFF1.Location = New System.Drawing.Point(6, 55)
         Me.ButtonFF1.Name = "ButtonFF1"
         Me.ButtonFF1.Size = New System.Drawing.Size(32, 32)
@@ -589,9 +708,9 @@ Partial Class DxScriRet
         Me.ButtonFF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonFF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonFF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonFF5.ImageIndex = 4
-        Me.ButtonFF5.ImageList = Me.ImageList32
-        Me.ButtonFF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonFF5.ImageOptions.ImageIndex = 4
+        Me.ButtonFF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonFF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonFF5.Location = New System.Drawing.Point(6, 8)
         Me.ButtonFF5.Name = "ButtonFF5"
         Me.ButtonFF5.Size = New System.Drawing.Size(32, 32)
@@ -601,17 +720,68 @@ Partial Class DxScriRet
         '
         'DateNavigator2
         '
-        Me.DateNavigator2.AppearanceHeader.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateNavigator2.AppearanceHeader.Options.UseFont = True
+        Me.DateNavigator2.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateNavigator2.Appearance.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.Button.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.Button.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.ButtonHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.ButtonHighlighted.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.ButtonPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.ButtonPressed.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.CalendarHeader.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateNavigator2.CalendarAppearance.CalendarHeader.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCell.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCell.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellDisabled.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellDisabled.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellHighlighted.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellHoliday.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellHoliday.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellInactive.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellInactive.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellPressed.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellSelected.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellSelected.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellSpecial.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellSpecial.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellSpecialHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellSpecialHighlighted.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellSpecialPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellSpecialPressed.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellSpecialSelected.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellSpecialSelected.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.DayCellToday.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.DayCellToday.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.Header.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.Header.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.HeaderHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.HeaderHighlighted.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.HeaderPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.HeaderPressed.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.WeekDay.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.WeekDay.Options.UseFont = True
+        Me.DateNavigator2.CalendarAppearance.WeekNumber.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarAppearance.WeekNumber.Options.UseFont = True
+        Me.DateNavigator2.CalendarTimeProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarTimeProperties.Appearance.Options.UseFont = True
+        Me.DateNavigator2.CalendarTimeProperties.AppearanceDisabled.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarTimeProperties.AppearanceDisabled.Options.UseFont = True
+        Me.DateNavigator2.CalendarTimeProperties.AppearanceFocused.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarTimeProperties.AppearanceFocused.Options.UseFont = True
+        Me.DateNavigator2.CalendarTimeProperties.AppearanceReadOnly.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator2.CalendarTimeProperties.AppearanceReadOnly.Options.UseFont = True
+        Me.DateNavigator2.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateNavigator2.CellPadding = New System.Windows.Forms.Padding(2)
         Me.DateNavigator2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DateNavigator2.DateTime = New Date(2010, 3, 30, 0, 0, 0, 0)
-        Me.DateNavigator2.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateNavigator2.HotDate = Nothing
-        Me.DateNavigator2.Location = New System.Drawing.Point(20, 37)
-        Me.DateNavigator2.Multiselect = False
+        Me.DateNavigator2.EditValue = New Date(2010, 3, 30, 0, 0, 0, 0)
+        Me.DateNavigator2.FirstDayOfWeek = System.DayOfWeek.Monday
+        Me.DateNavigator2.Location = New System.Drawing.Point(20, 31)
         Me.DateNavigator2.Name = "DateNavigator2"
-        Me.DateNavigator2.CellPadding = New System.Windows.Forms.Padding(2)
-        Me.DateNavigator2.Size = New System.Drawing.Size(275, 32)
+        Me.DateNavigator2.SelectionMode = DevExpress.XtraEditors.Repository.CalendarSelectionMode.[Single]
+        Me.DateNavigator2.Size = New System.Drawing.Size(275, 44)
         Me.DateNavigator2.TabIndex = 1
         '
         'GroupControl3
@@ -621,27 +791,78 @@ Partial Class DxScriRet
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupControl3.Location = New System.Drawing.Point(2, 2)
         Me.GroupControl3.Name = "GroupControl3"
-        Me.GroupControl3.Size = New System.Drawing.Size(398, 96)
+        Me.GroupControl3.Size = New System.Drawing.Size(402, 111)
         Me.GroupControl3.TabIndex = 2
         Me.GroupControl3.Text = "SCRITTURE di COMPETENZA"
         '
         'DateNavigator1
         '
-        Me.DateNavigator1.AppearanceHeader.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateNavigator1.AppearanceHeader.Options.UseFont = True
+        Me.DateNavigator1.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateNavigator1.Appearance.Options.UseFont = True
         Me.DateNavigator1.BoldAppointmentDates = False
+        Me.DateNavigator1.CalendarAppearance.Button.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.Button.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.ButtonHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.ButtonHighlighted.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.ButtonPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.ButtonPressed.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.CalendarHeader.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateNavigator1.CalendarAppearance.CalendarHeader.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCell.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCell.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellDisabled.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellDisabled.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellHighlighted.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellHoliday.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellHoliday.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellInactive.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellInactive.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellPressed.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellSelected.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellSelected.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellSpecial.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellSpecial.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellSpecialHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellSpecialHighlighted.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellSpecialPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellSpecialPressed.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellSpecialSelected.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellSpecialSelected.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.DayCellToday.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.DayCellToday.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.Header.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.Header.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.HeaderHighlighted.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.HeaderHighlighted.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.HeaderPressed.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.HeaderPressed.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.WeekDay.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.WeekDay.Options.UseFont = True
+        Me.DateNavigator1.CalendarAppearance.WeekNumber.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarAppearance.WeekNumber.Options.UseFont = True
+        Me.DateNavigator1.CalendarTimeProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarTimeProperties.Appearance.Options.UseFont = True
+        Me.DateNavigator1.CalendarTimeProperties.AppearanceDisabled.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarTimeProperties.AppearanceDisabled.Options.UseFont = True
+        Me.DateNavigator1.CalendarTimeProperties.AppearanceFocused.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarTimeProperties.AppearanceFocused.Options.UseFont = True
+        Me.DateNavigator1.CalendarTimeProperties.AppearanceReadOnly.Font = New System.Drawing.Font("Tahoma", 14.0!)
+        Me.DateNavigator1.CalendarTimeProperties.AppearanceReadOnly.Options.UseFont = True
+        Me.DateNavigator1.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateNavigator1.CellPadding = New System.Windows.Forms.Padding(2)
         Me.DateNavigator1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DateNavigator1.DateTime = New Date(2010, 3, 30, 0, 0, 0, 0)
-        Me.DateNavigator1.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateNavigator1.EditValue = New Date(2010, 3, 30, 0, 0, 0, 0)
+        Me.DateNavigator1.FirstDayOfWeek = System.DayOfWeek.Monday
         Me.DateNavigator1.HighlightHolidays = False
-        Me.DateNavigator1.HotDate = Nothing
-        Me.DateNavigator1.Location = New System.Drawing.Point(20, 38)
-        Me.DateNavigator1.Multiselect = False
+        Me.DateNavigator1.Location = New System.Drawing.Point(20, 36)
         Me.DateNavigator1.Name = "DateNavigator1"
-        Me.DateNavigator1.CellPadding = New System.Windows.Forms.Padding(2)
+        Me.DateNavigator1.SelectionMode = DevExpress.XtraEditors.Repository.CalendarSelectionMode.[Single]
         Me.DateNavigator1.ShowTodayButton = False
         Me.DateNavigator1.ShowWeekNumbers = False
-        Me.DateNavigator1.Size = New System.Drawing.Size(275, 34)
+        Me.DateNavigator1.Size = New System.Drawing.Size(275, 50)
         Me.DateNavigator1.TabIndex = 0
         '
         'GroupControl7
@@ -664,9 +885,9 @@ Partial Class DxScriRet
         Me.ButtonF11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
         Me.ButtonF11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF11.ImageIndex = 10
-        Me.ButtonF11.ImageList = Me.ImageList32
-        Me.ButtonF11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF11.ImageOptions.ImageIndex = 10
+        Me.ButtonF11.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF11.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF11.Location = New System.Drawing.Point(6, 4)
         Me.ButtonF11.Name = "ButtonF11"
         Me.ButtonF11.Size = New System.Drawing.Size(32, 32)
@@ -683,7 +904,7 @@ Partial Class DxScriRet
         Me.GroupControl4.Location = New System.Drawing.Point(600, 0)
         Me.GroupControl4.Name = "GroupControl4"
         Me.GroupControl4.ShowCaption = False
-        Me.GroupControl4.Size = New System.Drawing.Size(402, 650)
+        Me.GroupControl4.Size = New System.Drawing.Size(406, 654)
         Me.GroupControl4.TabIndex = 3
         Me.GroupControl4.Text = "GroupControl4"
         '
@@ -691,10 +912,10 @@ Partial Class DxScriRet
         '
         Me.GroupControl5.Controls.Add(Me.GroupControl8)
         Me.GroupControl5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupControl5.Location = New System.Drawing.Point(2, 98)
+        Me.GroupControl5.Location = New System.Drawing.Point(2, 113)
         Me.GroupControl5.Name = "GroupControl5"
         Me.GroupControl5.ShowCaption = False
-        Me.GroupControl5.Size = New System.Drawing.Size(398, 87)
+        Me.GroupControl5.Size = New System.Drawing.Size(402, 87)
         Me.GroupControl5.TabIndex = 3
         Me.GroupControl5.Text = "GroupControl5"
         '
@@ -720,9 +941,9 @@ Partial Class DxScriRet
         Me.ButtonF1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF1.ImageIndex = 0
-        Me.ButtonF1.ImageList = Me.ImageList32
-        Me.ButtonF1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF1.ImageOptions.ImageIndex = 0
+        Me.ButtonF1.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF1.Location = New System.Drawing.Point(14, 7)
         Me.ButtonF1.Name = "ButtonF1"
         Me.ButtonF1.Size = New System.Drawing.Size(32, 32)
@@ -740,9 +961,9 @@ Partial Class DxScriRet
         Me.ButtonF6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF6.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF6.ImageIndex = 6
-        Me.ButtonF6.ImageList = Me.ImageDx24
-        Me.ButtonF6.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF6.ImageOptions.ImageIndex = 6
+        Me.ButtonF6.ImageOptions.ImageList = Me.ImageDx24
+        Me.ButtonF6.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF6.Location = New System.Drawing.Point(115, 7)
         Me.ButtonF6.Name = "ButtonF6"
         Me.ButtonF6.Size = New System.Drawing.Size(32, 32)
@@ -760,9 +981,9 @@ Partial Class DxScriRet
         Me.ButtonF5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.ButtonF5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.ButtonF5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ButtonF5.ImageIndex = 4
-        Me.ButtonF5.ImageList = Me.ImageList32
-        Me.ButtonF5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ButtonF5.ImageOptions.ImageIndex = 4
+        Me.ButtonF5.ImageOptions.ImageList = Me.ImageList32
+        Me.ButtonF5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.ButtonF5.Location = New System.Drawing.Point(65, 7)
         Me.ButtonF5.Name = "ButtonF5"
         Me.ButtonF5.Size = New System.Drawing.Size(32, 32)
@@ -783,6 +1004,7 @@ Partial Class DxScriRet
         CType(Me.ImageDx24, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageS32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ImageS16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImageDxList32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl1.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -793,12 +1015,15 @@ Partial Class DxScriRet
         CType(Me.RepositoryItemImageComboBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl2.ResumeLayout(False)
+        CType(Me.DateNavigator3.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateNavigator3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl88, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl88.ResumeLayout(False)
+        CType(Me.DateNavigator2.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateNavigator2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl3.ResumeLayout(False)
+        CType(Me.DateNavigator1.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GroupControl7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl7.ResumeLayout(False)

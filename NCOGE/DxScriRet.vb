@@ -24,8 +24,9 @@ Public Class DxScriRet
         End While
         dataRd.Close()
         REM USO IL GIORNO 15 PER EVITARE DI SPOSTARE IL MESE NELLA SETTIMANA ULTIMA'''' MOLTO SOTTILE''''
-        DateNavigator1.DateTime = CDate("15/" & DataOperazione.Month & "/" & DataOperazione.Year).ToShortDateString
+
         GroupControl2.Visible = False
+        DateNavigator1.DateTime = CDate("15/" & DataOperazione.Month & "/" & DataOperazione.Year).ToShortDateString
         DisEnab(1)
     End Sub
     Sub DisEnab(ByVal n As Int16)
@@ -66,8 +67,10 @@ Public Class DxScriRet
         DxScriRPn.NDATAOPERA = DataOperazione.ToShortDateString
         Gesterna.WindowState = FormWindowState.Maximized
         Gesterna.ShowDialog()
-        Dim UpUp As New SqlCommand("Update TrRet set RetData=(select PRIDATAGIO FROM TRPRI WHERE RETID = PriId)", cnCo)
-        UpUp.ExecuteNonQuery()
+        If II > 0 Then
+            Dim UpUp As New SqlCommand("Update TrRet set RetData=(select distinct PRIDATAGIO FROM TRPRI WHERE RETID = PriId)", cnCo)
+            UpUp.ExecuteNonQuery()
+        End If
         Popolagrid() : Irow = -1
     End Sub
 
