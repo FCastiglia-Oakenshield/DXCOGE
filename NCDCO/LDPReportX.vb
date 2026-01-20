@@ -159,6 +159,7 @@ Public Class LDPReportX
         Dim Str As String = "XFATTFO @DAL='" & CDate(DateEdit6.EditValue).ToShortDateString & "',@AL='" & CDate(DateEdit4.EditValue).ToShortDateString & "'"
         TbPrint = New DataTable()
         DaPrint = New SqlDataAdapter(Str, CnDc)
+        DaPrint.SelectCommand.CommandTimeout = 900
         DaPrint.Fill(TbPrint)
         GridControl11.DataSource = TbPrint
         GridView11.ClearSelection()
@@ -176,6 +177,7 @@ Public Class LDPReportX
         Dim Str As String = "XREPORTONE @DAL='" & CDate(DateEdit2.EditValue).ToShortDateString & "',@AL='" & CDate(DateEdit1.EditValue).ToShortDateString & "'"
         TbPrint = New DataTable()
         DaPrint = New SqlDataAdapter(Str, CnDc)
+        DaPrint.SelectCommand.CommandTimeout = 900
         DaPrint.Fill(TbPrint)
         GridControlLP.DataSource = TbPrint
         GridViewLP.ClearSelection()
@@ -221,6 +223,7 @@ Public Class LDPReportX
         Dim Str As String = "Select * from DxReportOne1 order by [L D P],Avere,Dare"
         TbRep = New DataTable()
         DaRep = New SqlDataAdapter(Str, CnDc)
+        DaRep.SelectCommand.CommandTimeout = 900
         DaRep.Fill(TbRep)
         GridControl1.DataSource = TbRep
         GridView1.ClearSelection()
@@ -232,6 +235,7 @@ Public Class LDPReportX
         Dim Str As String = "Select * from DxReportOne2 order by [Tipologia],[Commessa],[Livello 1],Avere,Dare"
         TbRep = New DataTable()
         DaRep = New SqlDataAdapter(Str, CnDc)
+        DaRep.SelectCommand.CommandTimeout = 900
         DaRep.Fill(TbRep)
         GridControl2.DataSource = TbRep
         GridView2.ClearSelection()
@@ -243,6 +247,7 @@ Public Class LDPReportX
         Dim Str As String = "Select * from DxReportOne3 order by [Tipologia],[Commessa],[Livello 1],[Livello 2],Avere,Dare"
         TbRep = New DataTable()
         DaRep = New SqlDataAdapter(Str, CnDc)
+        DaRep.SelectCommand.CommandTimeout = 900
         DaRep.Fill(TbRep)
         GridControl3.DataSource = TbRep
         GridView3.ClearSelection()
@@ -254,6 +259,7 @@ Public Class LDPReportX
         Dim Str As String = "Select * from DxReportOne4 order by [Tipologia],[Commessa],[Livello 1],[Livello 2],[Repertorio],Avere,Dare"
         TbRep = New DataTable()
         DaRep = New SqlDataAdapter(Str, CnDc)
+        DaRep.SelectCommand.CommandTimeout = 900
         DaRep.Fill(TbRep)
         GridControl4.DataSource = TbRep
         GridView4.ClearSelection()
@@ -265,6 +271,7 @@ Public Class LDPReportX
         Dim Str As String = "Select * from DxReportOne5 order by [L D P],[Mastro],Avere,Dare"
         TbRep = New DataTable()
         DaRep = New SqlDataAdapter(Str, CnDc)
+        DaRep.SelectCommand.CommandTimeout = 900
         DaRep.Fill(TbRep)
         GridControl5.DataSource = TbRep
         GridView5.ClearSelection()
@@ -276,6 +283,7 @@ Public Class LDPReportX
         Dim Str As String = "Select * from DxReportOne6 order by [L D P],[Mastro],[Conto],Avere,Dare"
         TbRep = New DataTable()
         DaRep = New SqlDataAdapter(Str, CnDc)
+        DaRep.SelectCommand.CommandTimeout = 900
         DaRep.Fill(TbRep)
         GridControl6.DataSource = TbRep
         GridView6.ClearSelection()
