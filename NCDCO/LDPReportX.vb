@@ -314,7 +314,7 @@ Public Class LDPReportX
         Dim Str As String = "XDETTAGLIMOV @RCOM = " & Rif
         TbRp3 = New DataTable()
         DaRp3 = New SqlDataAdapter(Str, cnDb)
-        DaRp3.SelectCommand.CommandTimeout = 300
+        DaRp3.SelectCommand.CommandTimeout = 900
         DaRp3.Fill(TbRp3)
         GridControl7.DataSource = TbRp3
         GridView7.ClearSelection()
@@ -342,7 +342,7 @@ Public Class LDPReportX
         Dim Str As String = "XREPORTTWO"
         TbRp2 = New DataTable()
         DaRp2 = New SqlDataAdapter(Str, cnDb)
-        DaRp2.SelectCommand.CommandTimeout = 300
+        DaRp2.SelectCommand.CommandTimeout = 900
         DaRp2.Fill(TbRp2)
         GridControl8.DataSource = TbRp2
         GridView8.ClearSelection()
@@ -361,7 +361,7 @@ Public Class LDPReportX
         Dim Str As String = "XREPORTFOUR"
         TbRp4 = New DataTable()
         DaRp4 = New SqlDataAdapter(Str, cnDb)
-        DaRp4.SelectCommand.CommandTimeout = 300
+        DaRp4.SelectCommand.CommandTimeout = 900
         DaRp4.Fill(TbRp4)
         GridControl9.DataSource = TbRp4
         GridView9.ClearSelection()
@@ -388,7 +388,7 @@ Public Class LDPReportX
         Dim Str As String = "XREPORTTWOBIS"
         TbRp2Bis = New DataTable()
         DaRp2Bis = New SqlDataAdapter(Str, cnDb)
-        DaRp2Bis.SelectCommand.CommandTimeout = 300
+        DaRp2Bis.SelectCommand.CommandTimeout = 900
         DaRp2Bis.Fill(TbRp2Bis)
         GridControl10.DataSource = TbRp2Bis
         GridView10.ClearSelection()
@@ -443,7 +443,7 @@ Public Class LDPReportX
         Dim Str As String = "exec " & s & " @CM = " & CM & ",@FO = '" & FO & "'"
         TbAvl = New DataTable()
         DaAvl = New SqlDataAdapter(Str, cnDb)
-        DaAvl.SelectCommand.CommandTimeout = 300
+        DaAvl.SelectCommand.CommandTimeout = 900
         DaAvl.Fill(TbAvl)
         GridControl12.DataSource = TbAvl
         GridView12.ClearSelection()
