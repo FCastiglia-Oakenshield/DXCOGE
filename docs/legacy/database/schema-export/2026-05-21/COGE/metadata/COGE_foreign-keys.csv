@@ -1,0 +1,6 @@
+﻿database_name;foreign_key_name;parent_schema;parent_table;parent_column;referenced_schema;referenced_table;referenced_column
+COGE;FK_TbCom_TbProv;dbo;TbCom;ComProv;dbo;TbProv;ProvCod
+COGE;FK_TbProv_TbRegioni;dbo;TbProv;ProvReg;dbo;TbRegioni;RegCod
+COGE;FK_TbQuo_TbCesp;dbo;TbQuo;QuoNum;dbo;TbCesp;CespNum
+COGE;FK_TbVCesp_TbQuo;dbo;TbVCesp;VCespNum;dbo;TbQuo;QuoNum
+COGE;FK_TbVCesp_TbQuo;dbo;TbVCesp;VCespAnno;dbo;TbQuo;QuoAnno

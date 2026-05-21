@@ -1,0 +1,2 @@
+﻿database_name;foreign_key_name;parent_schema;parent_table;parent_column;referenced_schema;referenced_table;referenced_column
+VDOX;FK_TbUtenti_TbGrupLav;dbo;TbUtenti;GrupLavId;dbo;TbGrupLav;GrupLavId

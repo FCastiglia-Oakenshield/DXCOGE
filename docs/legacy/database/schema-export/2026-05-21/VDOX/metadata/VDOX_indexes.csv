@@ -1,0 +1,28 @@
+﻿database_name;schema_name;table_name;index_name;type_desc;is_unique;is_primary_key;is_unique_constraint;column_name;key_ordinal;is_included_column
+VDOX;dbo;sysdiagrams;PK__sysdiagr__C2B05B611C1D2798;CLUSTERED;1;1;0;diagram_id;1;0
+VDOX;dbo;sysdiagrams;UK_principal_name;NONCLUSTERED;1;0;1;principal_id;1;0
+VDOX;dbo;sysdiagrams;UK_principal_name;NONCLUSTERED;1;0;1;name;2;0
+VDOX;dbo;TbAna;<Name of Missing Index, sysname,>;NONCLUSTERED;0;0;0;AnaGrp;1;0
+VDOX;dbo;TbAna;<Name of Missing Index, sysname,>;NONCLUSTERED;0;0;0;AnaCod;2;0
+VDOX;dbo;TbAna;PK_TbAna;CLUSTERED;1;1;0;AnaProg;1;0
+VDOX;dbo;TbAnn;PK_TbAnn;CLUSTERED;1;1;0;AnnAnno;1;0
+VDOX;dbo;TbDoc;IX_DocNumRif;NONCLUSTERED;0;0;0;DocNumRif;1;0
+VDOX;dbo;TbDoc;PK_TbDoc;CLUSTERED;1;1;0;DocAnno;1;0
+VDOX;dbo;TbDoc;PK_TbDoc;CLUSTERED;1;1;0;DocTipo;2;0
+VDOX;dbo;TbDoc;PK_TbDoc;CLUSTERED;1;1;0;DocRifInterno;3;0
+VDOX;dbo;TbGrupLav;PK_TbGrupLav;CLUSTERED;1;1;0;GrupLavId;1;0
+VDOX;dbo;Tblaser;PK_Tblaser;CLUSTERED;1;1;0;LasId;1;0
+VDOX;dbo;TbNote;PK_TbNote;CLUSTERED;1;1;0;NoteDb;1;0
+VDOX;dbo;TbNote;PK_TbNote;CLUSTERED;1;1;0;NoteTipo;2;0
+VDOX;dbo;TbNote;PK_TbNote;CLUSTERED;1;1;0;NoteTab;3;0
+VDOX;dbo;TbPwd;PK_TbPwd;CLUSTERED;1;1;0;PwdId;1;0
+VDOX;dbo;TbSel;PK_TbSel;CLUSTERED;1;1;0;SelId;1;0
+VDOX;dbo;TbTabelle;PK_TbTabelle;CLUSTERED;1;1;0;TabDataBase;1;0
+VDOX;dbo;TbTabelle;PK_TbTabelle;CLUSTERED;1;1;0;TabTipo;2;0
+VDOX;dbo;TbTabelle;PK_TbTabelle;CLUSTERED;1;1;0;TabTabella;3;0
+VDOX;dbo;TbTabelle;PK_TbTabelle;CLUSTERED;1;1;0;TabPosizione;4;0
+VDOX;dbo;TbUtenti;PK_TbUtenti;CLUSTERED;1;1;0;Id;1;0
+VDOX;dbo;tmpTbTabelle;PK_tmpTbTabelle;CLUSTERED;1;1;0;tmpTabDataBase;1;0
+VDOX;dbo;tmpTbTabelle;PK_tmpTbTabelle;CLUSTERED;1;1;0;tmpTabTipo;2;0
+VDOX;dbo;tmpTbTabelle;PK_tmpTbTabelle;CLUSTERED;1;1;0;tmpTabTabella;3;0
+VDOX;dbo;tmpTbTabelle;PK_tmpTbTabelle;CLUSTERED;1;1;0;tmpTabPosizione;4;0
