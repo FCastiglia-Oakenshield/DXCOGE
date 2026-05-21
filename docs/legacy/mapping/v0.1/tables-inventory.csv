@@ -1,0 +1,5 @@
+database;tables;columns;views;foreign_keys;triggers;indexes;role_presumed
+COGE;121;1395;100;4;0;74;Contabile / amministrativo
+GEVE;115;1549;33;0;0;74;Gestionale collegato / tabelle operative condivise
+DCDC;11;61;5;0;0;7;Centri di costo / componente collegata
+VDOX;17;163;21;1;0;15;Documentale / utenti / servizi condivisi

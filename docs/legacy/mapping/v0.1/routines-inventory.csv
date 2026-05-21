@@ -1,0 +1,5 @@
+database;stored_procedures;functions;role_presumed
+COGE;102;9;Contabile / amministrativo
+GEVE;66;9;Gestionale collegato / tabelle operative condivise
+DCDC;15;3;Centri di costo / componente collegata
+VDOX;22;4;Documentale / utenti / servizi condivisi
